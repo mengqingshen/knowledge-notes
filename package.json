@@ -1,0 +1,64 @@
+{
+  "name": "knowledge-notes",
+  "version": "1.0.0",
+  "description": "书、课程、文档的阅读中留下的一些笔记，整理出来，分享",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config ./build/webpack.config.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:mengqingshen/knotes.git"
+  },
+  "keywords": [
+    "notes"
+  ],
+  "author": "mengqingshen",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "vue": "^2.5.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-helper-vue-jsx-merge-props": "^2.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-component": "^0.10.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.5.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "copy-webpack-plugin": "^4.2.3",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "expose-loader": "^0.7.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.4.0",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "vue-loader": "^13.5.0",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.9",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1"
+  }
+}

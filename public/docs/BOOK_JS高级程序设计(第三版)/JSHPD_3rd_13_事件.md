@@ -1,0 +1,1436 @@
+---
+title: 13 事件
+categories: [JS高级程序设计(第三版)]
+toc: true
+tag:
+    - js
+date:  2014-09-10 13:39:36
+---
+
+**历史：**
+
++ IE3和Netscape Navigator2: 作为分担服务器负载的一种手段；
++ IE4和Naviscape4:提供了相似却不相同的API；
++ DOM2规范制定:开始尝试标准化DOM事件；
++ DOM2实现: IE9、Firefox、Opera、Safari和Chrome全部实现‘DOM2级事件’核心部分
++ DOM3级出现  API变得更加繁琐。
+
+
+## 13.1    事件流
+### 13.1.1    事件冒泡：最具体的元素->...->document
+![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492716437.png)
+**支持情况**： 所有浏览器。
+
+| 浏览器                       | 表现                                       |
+| ------------------------- | ---------------------------------------- |
+| IE5.5---                  | 最具体的元素->...->body->document              |
+| IE9、Firefox、Chrome、Safari | 最具体的元素->...->body->html->document->window |
+### 13.1.2    事件捕获    ：      document->html->body->...->最具体的元素
+![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492766187.png)
+**说明：**DOM2级规范
+
++ 支持情况：IE9、Safari、Chrome、Opera、Firefox
++ 不支持情况： 所有老版本浏览器
+### 13.1.3    DOM事件流
+**支持情况：**    IE9、Safari、Chrome、Opera、Firefox
+1. 事件捕获阶段：    为截获事件提供机会
+2. 处于目标阶段：    实际的目标接收到事件
+3. 事件冒泡阶段：    冒泡阶段
+   ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492821788.png)
+## 13.2    事件处理程序
+### 13.2.1    HTML事件处理程序
+**特点**
+
++ 会创建一个封装着元素属性值的函数
+1. this    ：    当前dom
+2. event    :    事件对象
+
++ 扩展了作用域
+
+```js
+//形象说明作用域的扩展情况
+function(){
+    with(document){
+        with(this){
+            //HTML标签中的代码相当于在这里执行
+        }
+    }
+}
+//表单的情况
+function(){
+    with(document){
+        with(this.form){
+            with(this){
+                //HTML标签中的代码相当于在这里执行
+            }
+        }
+    }
+}
+```
+
+*方式一    :    直接在标签中嵌入JS代码*
+**注意：**不能使用未经转义的HTML语法字符！
+
+```html
+<input type='button' value='Click Me' onclick="alert('Clicked')" />
+```
+
+*方式二    ：    调用其他地方定义的脚本*
+
+```html
+<script>
+    function showMessage(){
+        alert('Hello world!');
+    }
+</script>
+<input type='button' value='Click Me' onclick="showMessage()" />
+```
+### 13.2.2    DOM0级事件处理程序    :    将函数赋值给一个事件处理程序属性
+**说明**
+
++ DOM0级方法指定的事件处理程序被认为是元素的方法，因此程序中的this引用当前元素；
++ 这种事件处理程序在事件流的冒泡阶段处理；
++ 每个元素(包括window和document)都有自己的的事件处理程序。
+
+```js
+var btn = document.getElementById('myBtn');
+btn.onclick = function(){
+    alert(this.id);    //'myBtn'
+};
+btn.onclick = null;    //删除通过DOM0级方法指定的事件处理程序 
+```
+### 13.2.3    DOM2级事件处理程序
+**兼容性：**IE9	Firefox	Safari	Chrome	Opera
+#### addEventListener()
+**说明：** 添加事件，3个参数，要处理的事件名、作为事件处理处理程序的函数、布尔值（true表示捕获阶段；false表示冒泡阶段）
+
++ 依附元素的作用域
++ 可以添加多个事件处理程序，事件触发后按添加的顺序执行
++ addEventListener()添加的事件处理程序只能使用removeEventListener()来移除
++ 移除时传入的参数与添加处理程序使用相同的参数
++ 添加的匿名函数无法移除
+
+#### removeEventListener()
+**说明：**移出addEventListener()添加的事件处理程序，参数和 addEventListener() 保持一致 
+**注意：**  将事件添加到事件的冒泡阶段而不是捕获阶段可以最大程度兼容各种浏览器，除非需要在事件到达目标之前截获事件。
+
+```c
+var btn = document.getElementById('myBtn');
+//添加多个事件处理程序
+btn.addEventListener('click', function(){
+    alert(this.id);
+},false);
+btn.addEventListener('click', function(){
+    alert('Hello World!');
+},false);
+//演示移除事件处理程序
+var handler = function(){
+    alert(this.id);
+};
+btn.addEventListener('click', handler, false);
+btn.removeEventListener('click', handler, false);
+```
+### 13.2.4    IE事件处理程序
+**注意：**该方法没有考虑只支持DOM0级浏览器只支持一个事件处理程序的问题，如果多次绑定处理程序，只有最后一个有效。
+#### attachEvent() 
+**说明：**添加事件，两个参数，事件处理程序名称、事件处理函数
+
++ IE8-只支持事件冒泡，因此会被添加到冒泡阶段
++ 事件名带`on`前缀
++ 事件处理程序在全局作用域中运行，`this`等于`window`
++ 可以添加多个事件处理程序，事件触发后按与添加的相反的顺序执行
++ 移除时传入的参数与添加处理程序使用相同的参数
++ 添加的匿名函数无法移除
++ `attachEvent`添加的事件处理程序只能使用`detachEvent`移除
+   ​
+#### detachEvent()
+**说明：**移除通过attachEvent()添加的事件处理函数
+
+```js
+var btn = document.getElementById('myBtn');
+var handler = function(){
+    alert(this == window);    //true
+};
+btn.attachEvent('onclick', handler);
+btn.detachEvent('onclick', handler);
+```
+IE	Opera
+
+### 13.2.5    跨浏览器的事件处理程序
+
+```
+/**
+* DOM2>IE>DOM0
+* param{object} element - dom节点对象
+* param{string} type - 事件名称
+* param{boolean} handler - 函数的引用
+*/
+var EventUtil = {
+    //添加事件处理程序
+    addHandler:    function(element, type, handler){
+        if(element.addEventListener){    //DOM2
+            element.addEventListener(type, handler, false)；
+        }else if(element.attachEvent){    //IE8---
+            element.attachEvent('on'+type, handler);
+        }else{    //DOM0
+            element['on'+type] = hanler;
+        }
+    },
+    //移除事件处理程序
+    removeHandler:    function(element, type, handler){
+        if(element.removeEventListener){    //DOM2
+            element.addEventListener(type, handler, false)；
+        }else if(element.detachEvent){    //IE8---
+            element.detachEvent('on'+type, handler);
+        }else{    //DOM0
+            element['on'+type] = null;
+        }
+    }
+};
+```
+## 13.3    事件对象
+**说明：** 触发DOM上的某个事件是会产生一个事件对象event（DOM0或DOM2），包含所有与时间有关的信息。
+**特点**
+
++ 所有浏览器都支持event对象，但支持方式不同
++ 只在事件处理程序执行期间存在，执行完毕后被销毁
++ 不同事件类型可用的属性和方法不同，都包括的成员如下
+  ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492907289.png)
+  ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492916457.png)
+
+  + event.type    ：    事件类型
+
+```js
+var btn = document.getElementById('myBtn');
+var handler = function(event){
+    switch(event.type){
+        case "click":
+            alert('Clicked');
+            break;
+        case "mouseover":
+            event.target.style.backgroundColor = 'red';
+            break;
+        case "mouseout":
+            event.target.style.backgroundColor = '';
+            break;
+    }
+};
+btn.onclick = handler;
+btn.onmouseover = handler;
+btn.onmouseout  = handler;
+```
+
++ event.target: 事件的实际目标（最具体的那个元素）
++ event.currentTarget: 和this相同，注册事件的那个元素
++ event.eventPhase ：事件当前所在的事件流的阶段
+1. 捕获阶段调用事件处理程序
+2. 事件处理程序处在目标对象上
+3. 冒泡阶段调用事件处理程序
+
+```js
+var btn = document.getElementById('myBtn');
+//捕获阶段
+document.body.addEventListener('click', function(event){
+    alert(event.eventPhase);    //1
+},true);
+//处于目标阶段
+btn.onclick = function(event){
+    alert(event.eventPhase);    //2
+};
+//冒泡阶段
+document.body.addEventListener('click', function(event){
+    alert(event.eventPhase);    //3
+},false);
+```
+
++ event.preventDefault()    :    取消默认行为
++ event.stopPropagation()    :    立即停止事件在DOM层次中的传播，即取消进一步的事件捕获或冒泡
+
+### 13.3.2    IE中的事件对象
+**说明：**访问IE中的event对象的方式取决于指定事件处理程序的方法
+#### window.event(DOM0级方法)
+
+```js
+var btn = document.getElementById('myBtn');
+btn.onclick = function(){
+    var event = window.event;
+    alert(event.type);    //'click'
+};
+```
+#### 作为参数对象（attachEvent()）
+
+```js
+var btn = document.getElementById('myBtn');
+btn.attachEvent('onclick', function(event){
+    alert(event.type);    //'click'
+});
+```
+#### 直接访问event（HTML中）
+
+```html
+<input tyep='button' value='Click Me' onclick='alert(event.type)' />
+```
+![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492978446.png)
+### 13.3.3    跨浏览器的事件对象
+**说明：**创建一个兼容的操作事件对象的工具对象：因为兼容IE不支持阻止事件捕获
+
+```js
+var EventUtil = {
+    /**
+    * 用来添加事件处理程序的方法
+    * param{object} element - dom
+    * param{string} type - 事件名称
+    * param{function} handler - 函数引用
+    */
+    addHandler:    function(element, type, handler){
+        if(element.addEventListener){    //DOM2
+            element.addEventListener(type, handler, false)；
+        }else if(element.attachEvent){    //IE8---
+            element.attachEvent('on'+type, handler);
+        }else{    //DOM0
+            element['on'+type] = hanler;
+        }
+    },
+     /**
+    * 用来移除事件处理程序的方法
+    * param{object} element - dom
+    * param{string} type - 事件名称
+    * param{function} handler - 函数引用
+    */
+    removeHandler:    function(element, type, handler){
+        if(element.removeEventListener){    //DOM2
+            element.addEventListener(type, handler, false)；
+        }else if(element.detachEvent){    //IE8---
+            element.detachEvent('on'+type, handler);
+        }else{    //DOM0
+            element['on'+type] = null;
+        }
+    },
+    /**
+    * 获得事件对象的方法
+    * param{object} event - 事件处理程序执行时产生的事件对象（如果有的话）
+    * return{object} 事件对象
+    */
+    getEvent:    function(event){
+        return event ? event : window.event;
+    },
+    /**
+    * 获得触发事件的目标的方法
+    * param{event} event    - 事件对象
+    * return{object} dom    - 触发事件的节点    
+    */
+    getTarget:    function(event){
+        return event.target || event.srcElement;
+    },
+    /**
+    * 取消默认动作
+    * param{object} event    -事件对象
+    */
+    preventDefault:    function(event){
+        if(event.preventDefault){
+            event.preventDefault();
+        }else{
+            event.returnValue = false;
+        }
+    },
+    /**
+    * 阻止事件冒泡（或捕获）
+    * param{object} event    -事件对象
+    */
+    stopPropagation:    function(event){
+        if(event.stopPropagation){
+            event.stopPropagation();
+        }else{
+            event.cancelBubble =  true;
+        }
+    }
+};
+    使用上述快跨览器的工具
+btn.onclick = function(event){
+    event = EventUtil.getEvent(event);    //    确保在不同浏览器都能获得event
+    var target = EventUtil.getTarget(event);    //确保获得target
+    EventUtil.preventDefault(event);    //确保清除默认动作
+    EventUtil.stopPropagatiom(event);    //阻止传播    
+};
+```
+## 13.4    事件类型
+
++ DOM2级事件
++ DOM3级事件（以DOM2为基础）
++ UI事件
++ 焦点事件
++ 鼠标事件
++ 滚轮事件
++ 文本事件
++ 键盘事件
++ 合成事件
++ 变动事件
++ 变动名称事件
+
++ HTML5定义的一组事件
++ DOM和BOM中实现的其它专有事件（没有规范）
+
+### 13.4.1    UI事件
+**历史：**出现在DOM规范之前，被规范保留。
+**分类：**现有的UI事件
+
+
+
+
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+	<tr><td>事件名称</td><td>DOM</td><td>触发时机</td><td>备注</td></tr>
+	<tr><td>DOMActive </td><td>任何元素</td><td>元素已经被用户操作激活</td><td>被DOM3废弃</td></tr>
+	<tr><td colspan="1" rowspan="4">load</td><td>window</td><td>页面加载完后</td><td colspan="1" rowspan="4">HTML事件</td></tr>
+	<tr><td>框架集</td><td>所有框架都加载完毕</td></tr>
+	<tr><td>&lt;img&gt;</td><td>图像加载完毕</td></tr>
+	<tr><td>&lt;object&gt;</td><td>嵌入的内容加载完毕</td></tr>
+	<tr><td colspan="1" rowspan="4">unload</td><td>window</td><td>页面完全卸载</td><td colspan="1" rowspan="4">HTML事件 </td></tr>
+	<tr><td colspan="1" >&lt;img&gt; </td><td colspan="1" >无法加载图片</td></tr>
+	<tr><td colspan="1" >框架集 </td><td colspan="1" >所有框架都卸载</td></tr>
+	<tr><td colspan="1" >&lt;object&gt; </td><td colspan="1" >嵌入的内容卸载完毕</td></tr>
+	<tr><td colspan="1" >abort</td><td colspan="1" >&lt;object&gt;  </td><td colspan="1" >用户停止下载，嵌入的内容没有加载完</td><td colspan="1" >HTML事件 </td></tr><tr><td colspan="1"  rowspan="4">error</td><td colspan="1" >window</td><td colspan="1" >JavaScript错误</td><td colspan="1"  rowspan="4">HTML事件 </td></tr>
+	<tr><td colspan="1" >&lt;img&gt;</td><td colspan="1" >无法加载图像</td></tr>
+	<tr><td colspan="1" >&lt;object&gt;</td><td colspan="1" >无法加载嵌入内容</td></tr>
+	<tr><td colspan="1" >框架集</td><td colspan="1" >有框架无法加载</td></tr>
+	<tr><td colspan="1" rowspan="2">select</td><td colspan="1" >&lt;input&gt;</td><td colspan="1" >用户选择文本框一个或多个字符</td><td colspan="1"  rowspan="2">HTML事件 </td></tr>
+	<tr><td colspan="1" >&lt;textarea&gt;</td><td colspan="1" >用户选择文本框一个或多个字符  </td></tr>
+	<tr><td colspan="1" >resize</td><td colspan="1" >window或框架</td><td colspan="1" >窗口或框架变化</td><td colspan="1" >HTML事件 </td></tr>
+	<tr><td colspan="1" >scroll</td><td colspan="1" >带滚动条的元素</td><td colspan="1" >用户滚动带滚动条的元素中的内容</td><td colspan="1" >HTML事件&lt;body&gt;元素中包含加载元素的滚动条</td></tr>
+</table>       
+#### 为UI事件定义事件处理程序
+#### 13.4.1.1	load事件
+**案例一：以body为例**
+*方式一：    JS（推荐）*
+
++ 使用了跨浏览器的脚本；
++ 传入的event不包含有关这个时间的任何附加信息；
++ 兼容DOM时，event.target会被设置为document;IE不会为其设置srcElement属性;
++ "DOM2级事件"规范应该在document上而不是window上触发load事件，但所有浏览器都在window上面实现了该事件（确保向后兼容）。
+
+```js
+EventUtil.addHandler(window, 'load', function(event){
+    alert('Loaded!');
+});
+```
+*方式二：    为元素添加onload属性*
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Load Event Example</title>
+</head>
+<body onload='alert('Loaded!')'>
+</body>
+</html>
+```
+**案例二：img**
+*方式一*
+
+```js
+var image = document.getElementById('myImage');
+EventUtil.addHandler(image, 'load', function(event){
+    event = EventUtil.getEvent(event);
+    alert(EventUtil.getTarget(event).src);
+});
+```
+*方式二*
+
+```html
+<img src='smile.gif' onload='alert('Image loaded.')'>
+```
+**案例三：创建新的	`<img>`元素,同时指定一个事件处理程序**
+
++ 要在window上的onload事件触发后才添加DOM中，否则document.body会报错；
++ 一旦设置了src属性，新创建的图像就开始加载图像，和是否添加到文档中无关；
+
+*方式一：    DOM的方式*
+**注意：**[IE8-]没有添加到DOM中的节点触发load事件时不会生成event对象。
+
+```js
+EventUtil.addHandler(window, 'load', function(event){
+    var image = document.createElement('img');
+    EventUtil.addHandler(image, 'load', function(event){
+        event = EventUtil.getEvent(event);
+        alert(EventUtil.getTarget(event).src);
+    });
+    document.body.appendChild(image);
+    image.src  = 'smile.gif';
+});
+```
+
+*方式二：    Image对象*
+
++ 可以像使用`<img>`元素一样使用Image对象（并非所有浏览器都将Image对象实现为`<img>`）；
++ 无法添加到DOM中；
++ 【IE8- 】Image对象触发load事件不会生成event对象。
+
+```js
+EventUtil.addHandler(window, 'load', function(){
+    var image = new Image();
+    EventUtil.addHandler(image, 'load', function(event){
+        alert('Imaeg loaded!');
+    });
+});
+```
+**案例四：    script元素**
+**说明：**指定src属性并将元素添加到文档后才开始下载。
+**兼容性问题**
+
+| 浏览器版本       | script元素onload事件 | event.target |
+| ----------- | ---------------- | ------------ |
+| 大多数浏览器      | 支持               | <script>节点   |
+| Firefox3--- | 支持               | document     |
+| IE8---      | 不支持              |              |
+
+```js
+EventUtil.addHandler(window, 'load', function(){
+    var script = document.createElement('script');
+    EventUtil.addHandler(script, 'load', function(event){
+        alert('Loaded');
+    });
+    script.src = 'exaple.js';
+    document.body.appendChild(script);
+});
+```
+**案例五：link属性**
+**说明：**和script类似
+**兼容性问题**IE	Opera
+#### 13.4.1.2    unload事件
+**发生时机举例：**只要用户从一个页面切换到另外一个页面，就会发生unload事件；
+**用途举例：**清除引用避免内存泄漏;
+**限制：**DOM2级事件规定应该在<body>元素而不是window对象上触发unload事件。
+*方式一：    JS*
+
+```js
+EventUtil.addHandler(window, 'unload', function(event){
+    alert('Unloaded');
+});
+```
+*方式二：    HTML*
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unloaded</title>
+</head>
+<body onunload="alert('unloaded!')">
+</body>
+</html>
+```
+#### 13.4.1.3.    resize事件
+**注意：**浏览器最大化最小化时也会触发resize事件。
+**event差异：**
+
+| 浏览器    | event.target | 备注   |
+| ------ | ------------ | ---- |
+| 兼容DOM的 | documen      |      |
+| IE8--- | event没有任何属性  |      |
+**行为差异：**
+
+| 浏览器                    | 触发时间        |
+| ---------------------- | ----------- |
+| IE、Safari、Chrome、Opera | 窗口变化1像素时    |
+| Firefox                | 用户停止调整窗口大小时 |
+
+*方式一：    JS*
+
+```js
+EventUtil.addHandler(window, 'resize', function(event){
+    alert('Resized');
+});
+```
+*方式二：    HTML*
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unloaded</title>
+</head>
+<body onresize="alert('resized!')">
+</body>
+</html>
+```
+#### 13.4.1.4    scroll事件
+**说明：**在window对象上触发，表现的是页面上元素的变化。
+
+
+
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+
+	<tr><td>模式</td><td>浏览器</td><td>元素</td><td>具体表现</td></tr>
+	<tr><td>混杂模式</td><td>所有</td><td>body</td><td>scrollLeft和scrollTop</td></tr>
+	<tr><td  colspan="1" rowspan="2">标准模式</td><td>Safari</td><td>body</td><td>跟踪滚动位置</td></tr>
+	<tr><td>其它</td><td>html</td><td>跟踪滚动位置</td></tr>
+</table>
+
+```c
+//输出页面的垂直滚动位置，根据不同模式使用不同的元素
+EventUtil.addHandler(window, 'scroll', function(event){
+    if(document.compatMode == 'CSSCompat'){
+        alert(document.documentElement.scrollTop);
+    }else{
+        alert(document.body.scrollTop);
+    }
+});
+```
+### 13.4.2    焦点事件
+**触发：**  页面获得或失去焦点
+**使用：** 利用这些事件并与`document.hasFocus()`方法及`document.activeElement`属性配合来知晓用户在页面上的行踪
+**顺序：**以焦点由A元素移动到B元素为例
+1. focusout(A)
+2. focusin(B)
+3. blur(A)
+4. DOMFocusOut(A)
+5. focus(B)
+6. DOMFocusIn(B)
+
+**兼容性：**
+
+```js
+var isSupported = document.implementaation.hasFeature('FocusEvent','3.0');
+```
+
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+	<tr><td><div>焦点事件名 </div></td><td>冒泡</td><td>触发</td><td>兼容性</td><td>备注</td></tr>
+	<tr><td>blur</td><td colspan="1" rowspan="2">否</td><td>失去焦点</td><td  colspan="1" rowspan="2">所有</td><td>DOM3级事件（来自IE）</td></tr>
+	<tr><td>focus</td><td>获得焦点</td><td>DOM3级事件（来自IE）</td></tr>
+	<tr><td>DOMFocusIn</td><td  colspan="1" rowspan="4">是</td><td>获得焦点</td><td  colspan="1" rowspan="2">Opera</td><td>DOM3级事件中用focusin取代</td></tr>
+	<tr><td>DOMFocusOut</td><td>失去焦点</td><td>DOM3级事件中用focusout取代</td></tr>
+	<tr><td>focusin</td><td>获得焦点</td><td colspan="1" rowspan="2">IE5.5+、Safari5.1+、Opera11.5+、Chrome</td><td></td></tr>
+	<tr><td>focusout</td><td>失去焦点</td><td></td></tr>
+</table>
+
+### 13.4.3    鼠标与滚轮事件
+**版本：**DOM3级
+**注意：**
+
++ 冒泡可以被取消，但会影响其他事件
++ click和dbclick事件会依赖其它先行事件的触发；mousedown和mouseup不受其它事件影响
+  **事件执行顺序（以双击鼠标主键为例）:**
+
+| 序号   | 标准        | IE8（会跳过括号中的事件） |
+| ---- | --------- | -------------- |
+| 1    | mousedown | mousedown      |
+| 2    | mouseup   | mouseup        |
+| 3    | click     | click          |
+| 4    | mousedown | (mousedown)    |
+| 5    | mouseup   | mouseup        |
+| 6    | click     | (click)        |
+| 7    | dbclick   | dbclick        |
+**兼容性检测：**
+
++ DOM2
+
+```js
+var isSupported = document.implementation.hasFeature('MouseEvents', '2.0');
+```
+
++ DOM3
+
+```js
+var isSupported = document.implementation.hasFeature('MouseEvent', '2.0'); 
+```
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+	<tr><td >鼠标/滚轮事件名称</td><td >冒泡</td><td>触发</td><td >兼容性</td><td >备注</td></tr>
+	<tr><td>click</td><td colspan="1" rowspan="3">是</td><td >单机主鼠标按钮（通常是左键）或键盘回车键</td><td ></td><td ></td></tr>
+	<tr><td >dbclick</td><td >双击主鼠标按钮</td><td >非DOM2</td><td ></td></tr><tr><td >mousedown</td><td >用户按下任意鼠标按钮时</td><td ></td><td ></td></tr>
+	<tr><td >mouseenter</td><td colspan="1" rowspan="2">否</td><td >鼠标光标从元素外部首次移动到元素范围之内</td><td colspan="1" rowspan="2">IE、Firefox9+、Opera（非DOM2）</td><td>非子元素</td></tr>
+	<tr><td >mouseleave</td><td >鼠标光标移动到元素之外</td><td></td></tr><tr><td >mousemove</td><td  colspan="1" rowspan="4">是</td><td >鼠标光标在元素内移动时重复触发</td><td></td><td colspan="1" rowspan="4">非键盘</td></tr>
+	<tr><td >mouseout</td><td >从一个元素移动到另一个元素（父/子/兄弟）</td><td ></td></tr>
+	<tr><td >mouseover</td><td >从目标元素外部移动到另一个元素边界内</td><td ></td></tr>
+	<tr><td >mouseup</td><td >释放鼠标按钮</td><td ></td></tr>
+</table>
+#### 鼠标事件信息 
+##### 1.    客户区(Client)坐标位置：浏览器视窗作为参照
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+	<tr><td>属性</td><td>作用</td><td>兼容性</td><td>特点</td></tr>
+	<tr><td>event.clientX</td><td>事件发生时鼠标指针在视口中的水平坐标</td><td colspan="1" rowspan="2">所有</td><td colspan="1" rowspan="2">不包括滚动的距离</td></tr>
+	<tr><td>event.clientY</td><td>事件发生时鼠标指针在视口中的垂直坐标</td></tr></table>
+
+```js
+ var div = document.getElementByid('myDiv');
+EventUtil.addHandler(div, 'click', function(event){
+    event = EventUtil.getEvent(event);
+    alert('Client coordinates:' + event.clientX + ',' + event.clientY);
+});
+```
+##### 2.    页面(Page)坐标位置
+<table cellspacing="0" cellpadding="0">
+		<tr><td>属性</td><td>作用</td><td>兼容性</td><td>特点</td></tr>
+		<tr><td>event.pageX</td><td>事件发生时鼠标指针在页面中的水平坐标</td><td colspan="1" rowspan="2">IE8-之外</td><td colspan="1" rowspan="2">包括滚动的距离</td></tr>
+		<tr><td>event.pageY</td><td>事件发生时鼠标指针在页面中的垂直坐标</td></tr></table>
+*方式一：兼容IE8-，兼容混杂模式（document.body）和标准模式*
+
+```js
+(document.documentElement)
+var div = document.getElementByid('myDiv');
+EventUtil.addHandler(div, 'click', function(event){
+    event = EventUtil.getEvent(event);
+    var pageX = event.pageX, pageY = event.pageY;
+    if(pageX === undefined){
+        pageX = event.clientX + (document.body.scrollLeft || document.documentElement.scrollLeft);
+         pageY = event.clientY + (document.body.scrollTop || document.documentElement.scrollTop);
+    }
+    alert('Page coordinates:' + pageX + ',' + pageY);
+});
+```
+*方式二：其它浏览器*
+
+```js
+var div = document.getElementByid('myDiv');
+EventUtil.addHandler(div, 'click', function(event){
+    event = EventUtil.getEvent(event);
+    alert('Page coordinates:' + event.pageX + ',' + event.pageY);
+});
+```
+##### 3.    屏幕(Screen)坐标位置
+
+```js
+var div = document.getElementByid('myDiv');
+EventUtil.addHandler(div, 'click', function(event){
+    event = EventUtil.getEvent(event);
+    alert('screen coordinates:' + event.screenX + ',' + event.screenY);
+});
+```
+##### 4.    修改键    ：    按下鼠标时键盘上的某些键会影响所要采取的操作
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+	<tr><td>修改键</td><td>DOM规定的对应属性</td><td>兼容性</td></tr>
+	<tr><td>Shift</td><td>event.shiftKey</td><td colspan="1" rowspan="4">所有（IE8-除外）</td></tr><tr><td>Ctrl</td><td>event.ctrlKey</td></tr>
+	<tr><td>Alt</td><td>event.altKey</td></tr>
+	<tr><td>meta(win或Cmd)</td><td>event.metaKey</td></tr>
+</table>
+
+```js
+//如果某个修改键被按下，event中对应的属性值为true
+var div = document.getElementById('mDiv');
+EventUtil.addHandl(div, 'click', function(event){
+    event = EventUtil.getEvent(event);
+    var keys = new Array();
+    if(event.shiftKey){
+        keys.push('shift');
+    }
+    if(event.altKey){
+        keys.push('alt');
+    }
+    if(event.ctrlKey){
+        keys.push('ctrl');
+    }
+    if(event.metaKey){
+        keys.push('meta');
+    }
+    alert('Keys:' + keys.join(',’));
+} );
+```
+##### 5.    相关元素    ：    mouseover和mouseout事件触发时，除住目标外还会涉及其它相关元素。
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+	<tr><td>event的属性</td><td>事件</td><td>属性值</td><td>触发时机</td><td>兼容性</td></tr><tr><td colspan="1" rowspan="2">relatedTarget</td><td>mouseover</td><td>A元素的dom</td><td>鼠标从A元素进入B（目标）元素</td><td colspan="1" rowspan="2">IE8-不支持</td></tr>
+	<tr><td>mouseout</td><td>B元素的dom</td><td>鼠标从A（目标）元素离开</td></tr>
+	<tr><td>fromElement</td><td>mouseover</td><td>A元素的dom</td><td>鼠标从A元素进入B（目标）元素</td><td colspan="1" rowspan="2">IE(包括IE8-)</td></tr>
+	<tr><td colspan="1">toElement</td><td colspan="1">mouseout</td><td colspan="1">B元素的dom</td><td colspan="1">鼠标从A（目标）元素离开 </td></tr></table>
+
+```js
+var EventUtil = {
+    //省略其它代码
+    
+    /**
+    * 跨浏览器获得相关元素的方法
+    */
+    getRelatedTarget: function(event){
+        if(event.relatedTarget){
+            return event.relatedTarget;
+        }else if(event.toElement){
+            return event.toElement;
+        }else if(event.fromElement){
+            return null;
+        }
+    },
+    //省略其它代码
+}；
+```
+
+```js
+var div = document.getElementById('myDiv');
+EventUtil.addHandler(div, 'mouseout'， function(){
+    event = EventUtil.getEvent(event);
+    var target = EventUtil.getTarget(event);
+    var relatedTarget = EventUtil.getRelatedTarget(event);
+    alert('Mouse out of ' + target.tagName + ' to ' + relatedTarget.tagName);
+});
+```
+##### 6.    鼠标按钮（mousedown 和 mouseup发生时了解哪些鼠标按钮被ianxia）
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+	<tr><td>event.button</td><td>DOM</td><td>IE8-</td></tr><tr><td>0</td><td>没有按下按钮</td><td>主</td></tr>
+	<tr><td>1</td><td>主</td><td>中</td></tr><tr><td>2</td><td>次</td><td>次</td></tr>
+	<tr><td>3</td><td>主+次</td><td></td></tr><tr><td>4</td><td>中</td><td></td></tr><tr><td>5</td><td>主+中</td><td></td></tr>
+	<tr><td>6</td><td>次+中</td><td></td></tr><tr><td>7</td><td>主+中+次</td><td></td></tr>
+</table>
+
+```js
+var EventUtil = {
+    //省略其它代码
+    /**
+    * 检测是否兼容DOM并规范化对相应的值规范化
+    */
+    getButton: function(event){
+        if(document.implementation.hasFeature('MouseEvents', '2.0')){
+            return event.button;
+        }else{
+            switch(event.button){
+                case 0:
+                case 1: 
+                case 3:
+                case 5:
+                case 7:
+                    return 0;
+                case 6:
+                    return 2;
+                case 4:
+                    return 1;
+                   
+            }
+        }
+    },
+    //省略其它代码
+};
+var div = document.getElementById('myDiv');
+EventUtil.addHandler(div, 'mousedown', function(event){
+    event = EventUtil.getElement(event);
+    alert(EventUtil.getButton(event));
+});
+```
+##### 7.    更多的事件信息
+<table cellspacing="0" cellpadding="0" style="width: 100%;">
+	<tr><td colspan="3" rowspan="1">DOM2级事件</td><td colspan="3" rowspan="1">IE</td></tr>
+	<tr><td>event属性</td><td>类型</td><td>备注</td><td>event属性</td><td>类型</td><td>备注</td></tr>
+	<tr><td>detail</td><td>number</td><td>给定位置上发生点击的数量</td><td>altLeft</td><td>boolean</td><td>是否按了Alt</td></tr><tr><td></td><td></td><td></td><td>ctrlLeft</td><td>boolean</td><td>是否按了Ctrl</td></tr>
+	<tr><td></td><td></td><td></td><td>offSetX</td><td>number</td><td>光标相对于目标元素边界的x坐标</td></tr><tr><td colspan="1"></td><td colspan="1"></td><td colspan="1"></td><td colspan="1">offSetY</td><td colspan="1">number</td><td colspan="1">光标相对于目标元素边界的y坐标 </td></tr>
+	<tr><td></td><td></td><td></td><td>shiftLeft</td><td>boolean</td><td>是否按下shift键</td></tr>
+</table>
+##### 8.    鼠标滚轮事件(mousewheel)
+**说明：** IE6首先实现
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>event属性</td><td>浏览器</td><td>冒泡到</td><td>表现</td></tr><tr><td colspan="1" rowspan="2">wheelDelta</td><td>IE8</td><td>document</td><td colspan="1" rowspan="2">向前滚动120的倍数；向后滚动-120的倍数</td></tr><tr><td colspan="1">IE9、Opera、Chrome、Safari</td><td colspan="1">window</td></tr></table>
+
+```js
+//解决Opera 9.5之前的版本wheelDelta值正负点到的问题
+EventUtil.addHandler(document, 'mousewheel', function(event){
+    event = EventUtil.getEvent(event);
+    var delta = (client.engine.opera && client.opera < 9.5 ?-event.wheelDelta.opera:event.wheelDelta);
+    alert(delta);
+});
+/**
+* 兼容opera9.5-的获取wheelDelta值得方法
+*/
+var EventUtil = {
+    //省略了其它代码
+    getWheelDelta: function(event){
+        if(event.wheelDelta){
+            return (client.engin.opera && client.engin.opra < 9.5 ? -event.wheelDelta : event.wheelDelta);
+        }else{
+            return -event.detal * 40;
+        }
+    },
+};
+```
+##### 9.    触摸设备
+
++ 不支持dbclick事件。双击浏览器窗口会放大画面，而且没有办法改变；
++ 轻击可单击元素会触发mousemove；
++ mousemove事件也会触发mouseover和mouseout事件；
++ 两个手指放在屏幕上且页面随手指一动而滚动时会触发mousewheel和scroll事件。
+##### 10.    无障碍性问题
+**拓展：**www.webaim.org
+
++ 不建议使用click之外的其他鼠标事件展示功能或引发代码执行；
++ 不建议使用onmousedown,因为屏幕阅读器中无法触发mousedown事件；
++ 不推荐使用的事件：
+  <table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>事件名</td><td>不推荐的原因</td></tr><tr><td>click之外的鼠标事件</td><td>无法通过键盘触发</td></tr><tr><td>onmousedown</td><td colspan="1" rowspan="2">屏幕阅读器无法触发该事件</td></tr><tr><td>onmouseover</td></tr><tr><td colspan="1">dbclick</td><td colspan="1">无法通过键盘触发</td></tr></table>
+
+### 13.4.4    键盘与文本事件
+**说明：**支持修改键，IE不支持metaKey.
+#### 键盘事件（3）
+**历史：**
+1. 位数  77DOM0    :    对键盘事件的支持主要遵循DOM0级；
+2. DOM2    :    最终定稿时删除了相应的内容；
+3. DOM3    :    为键盘事件制定了规范，IE9率先实现。
+
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>键盘事件</td><td>触发</td><td>表现</td><td>兼容性</td></tr><tr><td>keydown</td><td>按下任意键</td><td colspan="1" rowspan="2">按住不放会重复触发</td><td></td></tr><tr><td>keypress</td><td>按下字符键（包括Esc）</td><td>Safari3.1-(非字符键也会触发)</td></tr><tr><td>keyup</td><td>释放键盘上的键</td><td></td><td></td></tr></table>
+#### 文本事件（1）
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>文本事件</td><td>触发</td><td>表现</td><td>兼容性</td></tr><tr><td>textInput</td><td>文本插入文本框之前</td><td>keydown-&gt;keypress-&gt;textInput-&gt;keyup</td><td></td></tr></table>	
+**键码**
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>event属性</td><td>对应事件</td><td>值</td><td>兼容性</td></tr><tr><td>keyCode</td><td><span style="font-family: 'Microsoft YaHei UI';">keydown 和 keyup</span></td><td><span style="font-family: 'Microsoft YaHei UI';">ASCLL码中对应小写字母或数字的编码相同(分号按键存在兼容性问题)</span></td><td>DOM和IE</td></tr></table>
+
+```js
+var textbox = document.getElementById('myText');
+EventUtil.addHandler(textbox, 'keyup', function(event){
+        event = EventUtil.getEvent(event);
+        alert(event.keyCode);
+});
+```
+**字符编码**
+
+<table cellspacing="0" cellpadding="0" style="width: 790px;"><tr><td>event属性</td><td>对应事件</td><td>值</td><td>兼容性</td></tr><tr><td>charCode</td><td><span style="font-family: 'Microsoft YaHei UI';">keypress</span></td><td><font face="Microsoft YaHei UI">按下的键对应的ASCLL</font></td><td>IE9、Firefox、Chrome、Safari</td></tr></table>
+
+*不考虑兼容*
+
+```js
+var textbox = document.getElementById('myText');
+EventUtil.addHandler(textbox, 'keypress', function(event){
+        event = EventUtil.getEvent(event);
+        alert(event.charCode);
+});
+```
+*考虑兼容*
+
+```js
+var EventUtil = {
+    //省略的代码
+    
+    getCharCode: function(event){
+        if(typeof event.charCode == 'number'){
+            reutrn event.charCode;
+        }else{
+            reutrn event.keyCode;
+        }
+    },
+    
+    //省略的代码
+};
+```
+**DOM3级变化**
+*event中删除的成员*
+<table cellspacing="0" cellpadding="0" style="width: 790px;"><tr><td>event属性</td><td>对应事件</td><td>值</td><td>兼容性</td></tr><tr><td>charCode</td><td><span style="font-family: 'Microsoft YaHei UI';">keypress</span></td><td><font face="Microsoft YaHei UI">按下的键对应的ASCLL</font></td><td>IE9、Firefox、Chrome、Safar</td></tr></table>
+
+*event中添加的成员*
+<table cellspacing="0" cellpadding="0" style="width: 790px;"><tr><td>event成员</td><td>对应事件</td><td>值</td><td>兼容性</td></tr><tr><td>key</td><td colspan="1" rowspan="6"><span style="font-family: 'Microsoft YaHei UI';"></span><span style="font-family: 'Microsoft YaHei UI'; font-size: 10.5pt; line-height: 1.5;">keypress</span><span style="font-family: 'Microsoft YaHei UI';"></span></td><td><font face="Microsoft YaHei UI">文本字符或键的名字</font>（非字符）</td><td>IE9支持</td></tr><tr><td colspan="1">char</td><td colspan="1">文本字符或null（非字符）</td><td colspan="1">IE9不支持</td></tr><tr><td colspan="1">keyIdentifier(非DOM3)</td><td colspan="1">'U+000'字符串或键的名字（非字符）</td><td colspan="1">Sfari 5 和 Chrome</td></tr><tr><td colspan="1">location</td><td colspan="1">number（代表键盘区域的位置）</td><td colspan="1">IE9</td></tr><tr><td colspan="1">keyLocation</td><td colspan="1">有BUG</td><td colspan="1">Safari和Chrome</td></tr><tr><td colspan="1">getModifierState()</td><td colspan="1">boolean,检测某个修改键是否被按下</td><td colspan="1">IE9唯一支持</td></tr></table>
+
+```js
+//跨浏览器获得键盘字符
+var textbox = document.getElementById('myText');
+EventUtil.addHandler(textbox, 'keypress', function(event){
+    event = EventUtil.getEvent(event);
+    var identifier = event.key || event.keyIdentifier;
+    if(identifier){
+        alert(identifier);
+    }
+});
+//检测某个修改键是否被按下
+var textbox = document.getElementById('myText');
+EventUtil.addHandler(textbox, 'keypress', function(event){
+    event = EventUtil.getEvent(event);
+    if(event.getModifiedState){
+        alert( event.getModifiedState('Shift'));
+    }
+});
+```
+#### textInput事件
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>相关属性</td><td>有效元素</td><td>事件</td><td>值</td><td>来源</td><td>兼容性</td></tr><tr><td>event.data</td><td colspan="1" rowspan="2">可编辑区域</td><td colspan="1" rowspan="2">textInput(在可编辑区域输入字符时)</td><td>用户输入的字符（非字符编码）</td><td colspan="1" rowspan="2">DOM3级事件</td><td>IE9+、Safari、Chrome</td></tr><tr><td colspan="1">event.textInput</td><td colspan="1">0-9(表示输入到文本框中的方式)</td><td colspan="1">仅IE</td></tr></table>
+
+```js
+//获得用户输入的字符
+var textbox = document.getElementById('myText');
+EventUtil.addHandler(textbox, 'textInput', function(event){
+    event = EventUtil.getEvent(event);
+    alert(event.data);
+});
+```
+#### 设备中的键盘事件
+### 13.4.5    复合事件(缺少支持，用处不大)
+
+```js
+var isSupported = document.implementation.hasFeature('CompositionEvent');
+```
+### 13.4.6    变动事件
+**说明：**为XML或HTML DOM设计。
+
+**DOM2级变动事件**
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>变动事件</td><td>触发</td><td>补充</td></tr><tr><td>DOMSubtreeModified</td><td>在DOM结构中发生任何变化时</td><td>也就是说其它任何变动事件发生时都会触发</td></tr><tr><td>DOMNodeInstead</td><td>一个节点被作为子节点插入到另一个节点</td><td></td></tr><tr><td>DOMNodeRemoved</td><td>将节点从父节点移除时</td><td></td></tr><tr><td>DOMNodeInsertedIntoDocument</td><td>节点被插入文档或通过子树间接插入文档</td><td>在DOMNodeInstead之后触发 </td></tr><tr><td>DOMNodeRemovedFromDocument</td><td>节点从文档移除或通过子树间接移除之前</td><td>在DOMNodeRemoved之后触发</td></tr><tr><td>DOMAttrModified</td><td>特性被修改之后</td><td></td></tr><tr><td>DOMCharacterDataModified</td><td>文本节点的值发生变化</td><td></td></tr></table>
+
+```js
+// 监测浏览器对变动事件的支持
+var isSupported = document.implementation.hasFeature('MutationEvents', '2.0');
+```
+![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443501467636.png)
+#### 1. 删除节点
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>事件（按触发先后顺序）</td><td>相关属性</td><td>属性值</td><td>dom位置</td><td>触发时机</td><td>冒泡</td><td>备注</td></tr><tr><td colspan="1" rowspan="2">DOMNodeRemoved</td><td>event.realtedNode</td><td>父节点</td><td colspan="1" rowspan="2">可以在DOM的任何层次处理 </td><td>使用removeChild()或replaceChild()删除节点</td><td colspan="1" rowspan="2">是</td><td colspan="1" rowspan="2"></td></tr><tr><td colspan="1">event.target</td><td>被删除的节点</td><td colspan="1"></td></tr><tr><td colspan="1">DOMNodeRemovedFromDocument</td><td colspan="1"></td><td></td><td colspan="1">被删除的子节点本身</td><td colspan="1">被移除的所有子节点会相继触发</td><td colspan="1">否</td><td colspan="1">因为不会冒泡，所有必需给子节点指定事件处理程序才会触发</td></tr></table>
+#### 2. 插入节点
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>事件（按触发先后顺序）</td><td>相关属性</td><td>属性值</td><td>dom位置</td><td>冒泡</td><td>触发时机</td><td>备注</td></tr><tr><td>DOMNodeInserted</td><td>event.relatedNode</td><td>对父节点的引用</td><td>各个层次</td><td>是</td><td>appendChild()、replaceChild()、insertBefore()</td><td></td></tr><tr><td>DOMNodeInsertedIntoDocument</td><td>event.target</td><td>被插入的节点</td><td>被插入的节点</td><td>否</td><td></td><td>必须在插入节点前为其添加事件处理程序</td></tr><tr><td colspan="1">DOMSubtreeModified</td><td colspan="1"></td><td colspan="1"></td><td colspan="1">新插入节点的父节点</td><td colspan="1"></td><td colspan="1"></td><td colspan="1"></td></tr></table>
+### 13.4.7    HTML5事件
+#### 1. contextmenu事件
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tbody><tr><td>触发</td><td>用途</td><td>冒泡</td><td>屏蔽方式</td><td>备注</td></tr><tr><td>右键单击(win)；ctrl+单击(mac)</td><td>如何确定显示上下文菜单或如何自定义上下文菜单</td><td>是</td><td>DOM:event.preventDefault(); IE:event.returnValue = false;</td><td></td></tr></tbody></table>
+
+```js
+EventUtil.addHandler(window, 'load', function(event){
+    var div = document.getElementById('myDiv');
+    EventUtil.addHandler(div, 'contextmenu', function(event){
+        event = EventUtil.getEvent(event);
+        EventUtil.preventDefault(event);
+        var menu = document.getElementById('myMenu');
+        menu.style.left = event.clientX + 'px';
+        menu.style.top = event.clientY + 'px';
+        menu.style.visibility = ''visable;
+    });
+    EventUtil.addHandler(document, 'click', function(event){
+        document.getElementById('myMenu').style.visibility = 'hidden';
+    });
+});
+```
+#### 2. beforeunload事件
+**说明：** 这个事件会在浏览器卸载页面之前触发    ，可以通过它来取消卸载并继续使用原有页面。
+
+```js
+//为了显示这个弹出的对话框，必需将event.returnValue的值设置为要显示给用户的字符串。
+EventUtil.addHandler(window, 'beforeunload', function(event){
+    event = EventUtil.getEvent(event);
+    var message = '确定卸载页面吗？';
+    event.returnValue = message;
+    return message;
+});
+```
+#### 3. DOMContentLoaded事件
+**说明：**在形成完整的DOM树之后就会触发，不理会图像、JS文件、CSS文件或其它资源是否已经下载完毕。
+
++ 支持在页面下载的早期添加事件处理程序
++ 事件会冒泡到window，但目标实际上是document
++ event.target值为document，此外event没有额外的信息
+
+   **兼容性：**IE9+FirefoxChrome	Safari3.1+	Opera9+
+
+```js
+//会在load事件之前触发
+EventUtil.addHandler(document, 'DOMContentLoaded', function(event){
+    alert('Content loaded');
+});
+不支持DOMContentLoaded的浏览器：
+//在当前JS处理完后立即运行，无法保证在所有环境下都早于load事件被触发。
+setTime(function(){
+    //在此添加事件处理程序
+},0);
+```
+#### 4. readystatechange事件
+**说明：**提供与文档加载或元素加载状态有关的信息。
+**特点：**
+
++ 对象不一定经历所有阶段，属性变化也不总是连续的；
++ 因此readystatechange 事件经常会少于4次;
++ 与load事件一起使用时，无法预测两个事件触发的先后顺序。
+
+**注意：**可以很接近地模拟DOMContentLoaded事件，不能保证和load事件以相同的方式触发。
+**兼容性：**IE	Firefox4+	Opera
+
+| readyState属性值 | 含义               |
+| ------------- | ---------------- |
+| uninitialized | 对象存在但未初始化        |
+| loading       | 对象正在加载数据         |
+| loaded        | 对象加载数据完毕         |
+| interactive   | 可以操作对象了，但还没有完全加载 |
+| complete      | 对象已经加载完毕         |
+
+```js
+EventUtil.addHandler(document, 'readystateChange', function(event){
+    if(document.readyState == 'interactive'){
+         alert('Content loaded');
+    }
+});  
+```
+
+```js
+EventUtil.addHandler(document, 'readystatechange', function(event){
+    if(document.readyState == 'interactive' || document.readyState == 'complete'){
+        EventUtil.removeHandler(document, 'readystatechange', arguments.callee);
+        alert('Content loaded');
+    }
+});
+```
+#####link和script
+*script*
+
+```js
+EventUtil.addHandler(window, 'load', function(){
+    var script = document.createElement('script');
+    EventUtil.addHandler(script, 'readystatecange', function(event){
+        event = EventUtil.getEvent(event);
+        var target = EventUtil.getTarget(event);
+    
+        if(target.readyState == 'loaded'){
+            EventUtil.removeHandler(target, 'readystatechange', argument.callee);
+        } 
+    });
+    script.src = 'example.js';
+    docuemnt.body.appendChild(script);
+});
+```
+*link*
+
+```js
+EventUtil.addHandler(window, 'load', function(){
+    var link = document.createElement('link');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    EventUtil.addHandler(script, 'readystatecange', function(event){
+        event = EventUtil.getEvent(event);
+        var target = EventUtil.getTarget(event);
+ 
+        if(target.readyState == 'loaded'){
+            EventUtil.removeHandler(target, 'readystatechange', argument.callee);
+        }
+    });
+    link.href = 'example.css';
+    docuemnt.getElementsByTagName('head')[0].appendChild(link);
+});
+```
+#### 5. pageshow 和 pagehide事件
+ >**往返缓存：**Firefox和Opera的一个特性，这个缓存中保存着页面数据、DOM和JS状态，实际上将整个页面保存在内存里了。
+ >**注意：**指定了onunload事件处理程序的页面会被自动排除在bfcache之外。
+ ><table cellspacing="0" cellpadding="0" style="width: 100%;"><tbody><tr><td>事件名</td><td>触发</td><td>目标</td><td>绑定事件处理</td><td>event.persisted</td><td>兼容性</td></tr><tr><td colspan="1" rowspan="1">pageshow</td><td>重新加载：load事件触发后</td><td colspan="1" rowspan="3">document</td><td colspan="1" rowspan="3">window</td><td>false</td><td colspan="1" rowspan="3">FirefoxSafari5+ChromeOpera</td></tr><tr><td></td><td colspan="1">bfcache中的页面：页面状态完全恢复时</td><td colspan="1">true</td></tr><tr><td>pagehide</td><td>浏览器卸载页面时</td><td>会将该属性设为true</td></tr></tbody></table>
+ >*观察pageshow事件*
+
+```js
+(function(){
+    var showCount = 0;
+    EventUtil.addHandler(window, 'load', function(){
+        alert('Load fired');
+    });
+    EventUtil.addHandler(window, 'pageshow', function(){
+        showCount++;
+        alert('Show has been fired ' + showCount + ' times.');
+    });
+})();
+```
+*观察pagehide事件*
+
+```js
+EventUtil.addHandler(window, 'pagehide', function(event){
+    alert('Hiding.Persisted?' + event.persisted);
+});
+```
+#### 6. haschange事件
+**检测支持情况：**
+
+```js
+// 考虑了IE8和IE7在文档模式下运行会发生BUG的问题
+var isSupported = ('onhashchange' in window) &&（document.documentMode === undefined || document.documentMode > 7）;
+```
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tbody><tr><td>触发</td><td>对象</td><td>属性</td><td>属性值</td><td>来源</td><td>兼容性（属性）</td><td>兼容性(事件)</td></tr><tr><td colspan="1" rowspan="2">URL参数列表（包括后面的所有字符串）发生变化时</td><td colspan="1" rowspan="2">window</td><td>oldURL</td><td>变化前的URL</td><td colspan="1" rowspan="2">HTML5</td><td colspan="1" rowspan="2">Firefox6+、Chrome、Opera</td><td colspan="1" rowspan="2">IE8+、Firefox3.6+、Safari5+、Chrome、Opera10.6+</td></tr><tr><td colspan="1">newURL</td><td>变化后的URL</td></tr></tbody></table>
+
+```js
+//Firefox6+、Chrome、Opera
+EventUtil.addHandler(window, 'hashchange', function(event){
+    alert('Old URL:' + event.oldURL + '\nNew URL:' + event.newURL);
+});
+//使用location对象确定当前的参数列表(考虑兼容不支持oldURL和newURL的浏览器)
+EventUtil.addHandler(window, 'hashChange', function(event){
+    alert('Current hash:' + location.hash);
+});
+```
+### 13.4.8 设备事件
+**说明：**W3C从2011年开始着手指定一份关于设备事件的新草案，以涵盖不断增长的设备类型并为它们定义相关的事件。
+#### 1. orientationchange事件    
+
+| 触发           | 相关属性                | 支持     | 来源   |
+| ------------ | ------------------- | ------ | ---- |
+| 手机屏幕横纵切换方式变化 | window.oritentation | Safari | 苹果公司 |
+#####window.oritentation 属性
+
+| window.oritentation | 含义      | 备注   |
+| ------------------- | ------- | ---- |
+| 0                   | 肖像模式    |      |
+| 90                  | 向左旋转为横向 |      |
+
+|-90|向右旋转为横向|
+|180|头向下	|无设备支持|
+*方式一：*
+
+```js
+EventUtil.addHandler(window, 'load', function(event){
+    var div = document.getElementById('myDiv');
+    div.innerHTML = 'Current orentation is ' + window.orientation;
+    EventUtil.addHandler(window, 'orientationchange', function(event){
+        div.innerHTML = 'current orientation is ' + window.orientation;
+    });
+});
+```
+*方式二：指定<body>元素的onorientationchange特性来指定事件处理程序*
+
+#### 2. MozOrientation事件
+#### 3. deviceorientation事件
+### 13.4.9    触摸与手势事件
+#### 1. 触摸事件（IOS 2.0开始）
+**注意：**所有元素都可以触发下面的事件
+**触摸事件（和鼠标事件）发生顺序：**
+1. touchstart
+2. mouseover
+3. mousemove(一次)
+4. mousedown
+5. mouseup
+6. click
+7. touched
+
+**兼容性**
+<table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>设备类型</td><td>浏览器</td><td>多点触控支持</td></tr><tr><td colspan="1" rowspan="6">移动设备</td><td>ios的safari</td><td>是</td></tr><tr><td>Android版webkit</td><td colspan="1" rowspan="7">否</td></tr><tr><td>bada版Dolfin</td></tr><tr><td>os6+中的BlackBerry Webkit</td></tr><tr><td>Opera Mobile 10.1+</td></tr><tr><td>LG专有OD中的Phantom浏览器</td></tr><tr><td colspan="1" rowspan="2">PC</td><td>FireFox 6+</td></tr><tr><td>Chrome</td></tr></table>
+
+| 触摸事件        | 触发                            | 备注                                | 是否冒泡 |
+| ----------- | ----------------------------- | --------------------------------- | ---- |
+| touchstart  | 手指触摸屏幕时触发	即使已经有一个手指放在了屏幕上也会触发 | 是                                 |      |
+| touchmove   | 手指在屏幕上连续地触发                   | 在这个事件发生期间调用preventDefault()可以阻止滚动 | 是    |
+| touchend    | 手指从屏幕上移开时                     | 是                                 |      |
+| touchcancel | 系统停止跟踪触摸	文档没有明确说明             | 是                                 |      |
+
+*触摸事件额外属性（event.property）*
+
++ event.touches：当前跟踪的触摸操作的Touch对象数组
++ event.targetTouchs：特定于事件目标的Touch对象的数组
++ event.changeTouches：自从上次触摸以来发生了什么改变的Touch对象的数组
+
+*Touch对象：包含触摸目标DOM和相关信息*
+
++ clientX:触摸目标在视口中的x坐标
++ clientY:触摸目标在视口中的y坐标
++ identifier：标识触摸的唯一ID
++ pageX：触摸目标在页面中的x坐标
++ pageY：触摸目标在页面中的y坐标
++ screenX：触摸目标在屏幕中的x坐标
++ screenY：触摸目标在屏幕中的y坐标
++ target：触摸的DOM节点目标
+
+```js
+/**
+*跟踪屏幕上发生的一次触摸操作
+*/
+function handleTouchEvent(event){
+    //只跟踪一次触摸
+    if(event.touches.length == 1){
+        var output = document.getElementById('output');
+        switch(event.type){
+            case 'touchstart':
+                output.innerHTML = 'Touch started ('+ event.touches[0].clientX +','+ event.touches[0].clientY +')';
+                break;
+            case 'touchend':
+                output.innerHTML = 'Touch ended ('+ event.changedTouches[0].clientX +','+ event.changedTouches[0].clientY +')';   
+                break;
+            case 'touchmove':
+                event.preventDefault();
+                output.innerHTML += 'Touch moved ('+ event.changedTouches[0].clientX +','+ event.changedTouches[0].clientY +')';
+                break;
+        }
+    }
+    EventUtil.addHandler(document, 'touchstart', handleTouchEvent);
+    EventUtil.addHandler(document, 'touchend', handleTouchEvent);
+    EventUtil.addHandler(document, 'touchmove', handleTouchEvent);
+}
+```
+#### 2. 手势事件（IOS 2.0开始）
+**触发：**两个手指触摸屏幕时就会产生手势
+**用途：**
+1. 改变显示项的大小
+2. 旋转显示项
+   **注意：**
+
++ 两个手指必需同时位于接受容器（注册事件的元素）时才会触发
++ 触摸事件和手势事件之间存在一些关联
+  **事件**
+
+| 事件            | 说明                         |
+| ------------- | -------------------------- |
+| gesturestart  | 当一个手指已经按在屏幕上而另一个手指又触摸屏幕时触发 |
+| gesturechange | 当触摸屏幕的任何一个手指的位置发生变化时触发     |
+| gestureend    | 当任何一个手指从屏幕上面移开时触发          |
+**event事件对象额外的属性：**
+
++ **event.rotation**属性：手指变化引起的旋转角度，负值表示逆时针旋转，正值表示顺时针旋转（该值从0开始）
+
++ **event.scale**属性：两个手指间距离的变化，这个值从1开始，随距离拉大而增长，随距离缩短而减小
+
+```js
+function handleGestureEvent(event){
+    var output = document.getElementById('output');
+    switch(event.type){
+        case 'gesturestart':
+            output.innerHTML = 'Gesture started (rotation='+ event.rotation +',scale='+ event.scale +')';
+            break;
+        case 'gestureend':
+            output.innerHTML = 'Gesture ended (rotation='+ event.rotation +',scale='+ event.scale +')';
+            break;
+        case 'gesturechange':
+            output.innerHTML = 'Gesture changed (rotation='+ event.rotation +',scale='+ event.scale +')';
+            break;
+    }
+}
+document.addEventListener('gesturestart', handleGestureEvent, false);
+document.addEventListener('gestureend', handleGestureEvent, false);
+document.addEventListener('gesturechange', handleGestureEvent, false);
+```
+## 13.5    内存和性能
+### 13.5.1    事件委托
+**优点：**
+
++ 如果委托给document，无需等待DOMContentLoaded或load事件
++ 设置的事件处理程序更少
++ 占用内存少，提升整体性能
+
+**适合事件:**click、mousedown、mouseup、keydown、keyup、keypress
+
+```html
+<ul id="myLinks">
+    <li id="goSomewhere">Go somewhere</li>
+    <li id="doSomething">Do something</li>
+    <li id="sayHi">Say hi</li>
+</ul>
+```
+
+```js
+var list = document.getElementById('myLinks');
+EventUtil.addHandler(list, 'click', function(event){
+	event = EventUtil.getEvent();
+	var target = EventUtil.getTarget(event);
+	switch(target.id){
+		case 'doSomeing':
+			document.title = 'I changed the document\'s title';
+			break;
+		case 'goSomewhere':
+			location.href = 'http://www.wrox.com';
+			break;
+		case 'sayHi':
+			alert('hi');
+			break;
+	}
+});
+```
+### 13.5.2    移除事件处理程序
+#### 问题一：每个事件处理程序与绑定的元素之间存在连接，链接越多，页面越慢
+解决：
+
++ 采用事件委托限制连接数量
++ 在不需要时移除事件处理程序
+#### 问题二：空事件处理程序
+**起因：**
+1.    移除带有事件处理程序的元素：removeChild()、replaceChild()或编辑innerHTML;
+2.    卸载页面前没有清理干净事件处理程序
+
+**解决：**
+*方式1.    在移除元素前移除事件处理程序*
+
+```html
+<div id="myDiv">
+    <input type="button" id="myBtn" value="Click Me">
+</div>
+<script type="text/javascript">
+var btn = document.getElementById('myBtn');
+btn.onclick = function(){
+    //限执行操作
+    btn.onclick = null;//移除事件
+    document.getElementById('myDiv').innerHTML = 'Processing...';
+};
+</script>
+```
+*方式2.    为onunload事件绑定事件处理程序，移除所有事件处理程序*
+## 13.6    模拟事件
+**说明：**使用JS在任意时刻触发特定的事件，如同浏览器创建的时间一样。
+### 13.6.1    DOM中的事件模拟
+####（1）创建事件
+**document.createEvent()：创建event对象**
+**返回值：**事件对象
+**参数：**
+
+| DOM2           | DOM3          | 说明          | 备注                |
+| -------------- | ------------- | ----------- | ----------------- |
+| UIEvents       | UIEvent       | 一般化UI事件     | 鼠标事件和键盘事件都继承自UI事件 |
+| MouseEvents    | MouseEvent    | 一般化的鼠标事件    |                   |
+| MutationEvents | MutationEvent | 一般化的DOM变动事件 |                   |
+| HTMLEvents     | 被分散到其它类别      | 一般化HTML事件   |                   |
+
+####（2）触发事件
+**dom.dispatchEvent()：触发事件，dom是任何支持事件的dom节点**
+**参数：**document.createEvent()创建的事件对象
+### 13.6.1	模拟鼠标事件
+#### event.initMouseEvent():指定与鼠标事件有关的信息
+**调用者：**document.createEvent('MouseEvents')的返回值
+**参数（15）：**与鼠标事件中每个典型的属性一一对应
+**注意：**
+
++ 前4个参数对正确激发事件至关重要，因为浏览器要用到
++ 剩下的所有参数只在事件的处理程序中才会用到
++ 当把event对象传给dispatchEvent()方法时，这个对象的target属性会自动设置
+  <table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>参数</td><td>数据类型</td><td>表示</td><td>补充</td></tr><tr><td>type</td><td>string</td><td>要触发的事件类型</td><td>例如"click"</td></tr><tr><td>bubbles</td><td>boolean</td><td>是否冒泡</td><td>推荐设置为true</td></tr><tr><td>cancelables</td><td>boolean</td><td>事件是否可以取消</td><td>推荐设置为true</td></tr><tr><td>view</td><td>AvbstractView</td><td>与事件关联的视图</td><td>几乎总是要设置为document.defaultView</td></tr><tr><td>detail</td><td wiz_tag_attr_bk_color="rgb(184, 219, 255)" colspan="1" rowspan="5">整数<br><br><br><br></td><td>与事件相关的详细信息</td><td>一般只有事件处理程序使用，通常设置为0</td></tr><tr><td>screenX</td><td>事件相对于屏幕的X坐标</td><td><br></td></tr><tr><td>screenY</td><td>事件相对于屏幕的Y坐标</td><td><br></td></tr><tr><td>clientX</td><td>事件相对于视口的X坐标</td><td><br></td></tr><tr><td>clientyY</td><td>事件相对于视口的Y坐标<br></td><td><br></td></tr><tr><td>ctrlKey</td><td wiz_tag_attr_bk_color="rgb(184, 219, 255)" colspan="1" rowspan="4">boolean<br><br><br></td><td>是否按下ctrl键</td><td wiz_tag_attr_bk_color="rgb(184, 219, 255)" colspan="1" rowspan="4">默认false<br><br><br></td></tr><tr><td>altKey</td><td>是否按下alt键<br></td></tr><tr><td>shiftKey</td><td>是否按下shift键<br></td></tr><tr><td>metaKey</td><td>是否按下Meta键<br></td></tr><tr><td>button</td><td>整数</td><td>是否按下哪一个鼠标键<br></td><td>默认0</td></tr><tr><td>relatedTarget</td><td>object</td><td>与事件相关的对象</td><td>只在模拟mouseover或mouseout 时使用</td></tr></table>
+
+```js
+var btn = document.getElementById('myBtn');
+//创建事件对象
+var event = document.createEvent('MouseEvents');
+//初始化事件对象
+event.initMouseEvent('click', true, true, document.defaultView, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+//触发事件
+btn.dispatchEvent(event);
+```
+### 13.6.2	模拟键盘事件
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><Document></Document></title>
+	<link rel="stylesheet" href="test.css">
+</head>
+<body>
+	<div class="content">
+		<div class="active"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>	
+	</div>
+</body>
+<script src="test.js"></script>
+</html>
+```
+
+```css
+.content div {
+	background-color: red;
+	height: 50px;
+	border: 1px solid black;
+}
+.content .active {
+	background-color: black;
+}
+```
+
+```js
+document.body.addEventListener('keyup', function (e) {
+	console.log(e.keyCode);
+	if (e.keyCode == 40) {
+		var now = document.querySelector('.active');
+		var next = now.nextElementSibling;
+		if (next) {
+			now.className = '';
+			next.className = 'active';
+		}
+	}
+	else if (e.keyCode == 38) {
+		var now = document.querySelector('.active');
+		var prev = now.previousElementSibling;
+		if (prev) {
+			now.className = '';
+			prev.className = 'active';
+		}
+	}
+}, false);
+
+function troggleNext() {
+	var event = document.createEvent('Events');
+	event.initEvent('keyup', true, true);
+	event.view = document.defaultView;
+	event.altKey =  false;
+	event.ctrlKey = false;
+	event.shiftKey = false;
+	event.metaKey = false;
+	event.keyCode = 40;
+	event.charCode = 40;
+
+	document.body.dispatchEvent(event);
+}
+```
+
