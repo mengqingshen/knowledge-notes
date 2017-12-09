@@ -29,10 +29,12 @@ import A from './config/web-imooc'
 window.docute.init({
   url: '.',
   routerMode: 'hash',
-  home: './README.md',
   sidebar: true,
   disableSidebarToggle: true,
   tocVisibleDepth: 3,
+  landing: {
+    source: './README.md'
+  },
   nav: [
     {
       title: 'c/c++',

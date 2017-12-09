@@ -2,3 +2,4 @@ node_modules/
 public/js
 public/index.html
 public/README.me
+pm2.json

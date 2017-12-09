@@ -251,10 +251,10 @@ mulStr.replace(/^@\d/g, 'X')
 
 名称|正则|含义
 ---|---|---
-正向前瞻|exp(?=assert)|字符串匹配到`exp`部分还不够，后面的部分必需同时配`assert`
-负向前瞻|exp(?!assert)|字符串匹配到`exp`部分还不够，后面的部分必需同时不能匹配配`assert`
-正向后顾（JS不支持）|exp(?<=assert)|
-负向后顾（JS不支持）|exp(?<!assert)|
+正向前瞻|`exp(?=assert)`|字符串匹配到`exp`部分还不够，后面的部分必需同时配`assert`
+负向前瞻|`exp(?!assert)`|字符串匹配到`exp`部分还不够，后面的部分必需同时不能匹配`assert`
+正向后顾（JS不支持）|`exp(?<=assert)`|字符串匹配到`exp`部分还不够，前面面的部分必需同时配`assert`
+负向后顾（JS不支持）|`exp(?<!assert)`|字符串匹配到`exp`部分还不够，前面的部分必需同时不能匹配`assert`
 
 ```javascript
 'a2*34v8'.match(/\w(?=\d)/g)
