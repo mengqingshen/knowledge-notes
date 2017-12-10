@@ -750,7 +750,7 @@ $ sudo nginx -s reload
 
 (1) 在 [DNSPod](https://www.dnspod.cn) 拿到 DNS 根服务器
 
-首页 > 常见问题 > 功能介绍及使用教程 > 哥哥注册商修改域名 DNS 地址的方法 > [万网注册商域名修改DNS地址](https://support.dnspod.cn/Kb/showarticle/tsid/40/)
+首页 > 常见问题 > 功能介绍及使用教程 > 各个注册商修改域名 DNS 地址的方法 > [万网注册商域名修改DNS地址](https://support.dnspod.cn/Kb/showarticle/tsid/40/)
 
 ```bash
 f1g1ns1.dnspod.net

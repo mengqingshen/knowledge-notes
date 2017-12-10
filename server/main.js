@@ -1,7 +1,7 @@
 const reg = require('babel-register')
 require('babel-polyfill')
 
-process.env.PORT = 8082
+process.env.PORT = process.env.PORT || 8082
 
 global.__CLIENT__ = false
 
