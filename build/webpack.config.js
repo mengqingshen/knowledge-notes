@@ -7,7 +7,7 @@ const extractForIframes = new ExtractTextPlugin('[name].css')
 
 module.exports = {
   cache: true,
-  context: path.resolve(__dirname, '../src'),
+  context: path.resolve(__dirname, '../client'),
   entry: {
     'vendor': ['vue'],
     'main': './entry.js'

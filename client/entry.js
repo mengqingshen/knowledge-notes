@@ -30,11 +30,11 @@ window.docute.init({
   url: '.',
   routerMode: 'hash',
   sidebar: true,
-  disableSidebarToggle: true,
+  disableSidebarToggle: false,
   tocVisibleDepth: 3,
-  landing: {
-    source: './README.md'
-  },
+  // landing: {
+  //   source: './README.md'
+  // },
   nav: [
     {
       title: 'c/c++',
