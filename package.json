@@ -4,7 +4,7 @@
   "description": "书、课程、文档的阅读中留下的一些笔记，整理出来，分享",
   "main": "index.js",
   "scripts": {
-    "start": "supervisor -w server .babelrc ./server/main.js;webpack --config ./build/webpack.config.js -w"
+    "start": "supervisor -w server build .babelrc ./server/main.js;webpack --config ./build/webpack.config.js -w"
   },
   "repository": {
     "type": "git",
@@ -73,6 +73,7 @@
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.9",
     "webpack": "^3.10.0",
+    "webpack-browser-plugin": "^1.0.20",
     "webpack-merge": "^4.1.1"
   }
 }

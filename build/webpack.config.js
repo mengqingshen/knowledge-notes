@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const WebpackBrowserPlugin = require('webpack-browser-plugin')
 const extractForIframes = new ExtractTextPlugin('[name].css')
 
 module.exports = {
@@ -108,7 +109,12 @@ module.exports = {
       hash: true
     }),
     new webpack.BannerPlugin('这里是打包文件头部注释！'),
-    extractForIframes
+    extractForIframes,
+    new WebpackBrowserPlugin({
+      browser: 'Chrome',
+      port: 8082,
+      url: 'http://localhost'
+    })
   ],
   resolve: {
     // 指定可以被 import 的文件后缀
