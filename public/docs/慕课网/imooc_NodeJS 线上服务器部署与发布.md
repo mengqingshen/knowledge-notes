@@ -1511,6 +1511,7 @@ $ pm2 deploy ecosystem.json production
 ```
 
 ## 10.5 部署 ReactNative App 线上 API 服务
+
 1. 在 DNSPOD 为电影网站添加一条记录(子域 free.iblack7.com) ；
 2. 入口文件中端口改为 3002, MongoDB 连接参数确保没问题且兼容线上和线下环境；
 3. 创建 PM2 配置文件 ecosystem.json；

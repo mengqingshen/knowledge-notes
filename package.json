@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "supervisor -w server build .babelrc ./server/main.js;webpack --config ./build/webpack.config.js -w",
-    "build": "webpack --config ./build/webpack.config.js"
+    "build": "webpack --config ./build/webpack.config.js",
+    "setup": "pm2 deploy ecosystem.json production setup",
+    "deploy": "pm2 deploy ecosystem.json production"
   },
   "repository": {
     "type": "git",
