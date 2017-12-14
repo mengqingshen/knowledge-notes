@@ -41,9 +41,9 @@ window.docute.init({
   sidebar: true,
   disableSidebarToggle: false,
   tocVisibleDepth: 3,
-  landing: {
-    source: './README.md'
-  },
+  // landing: {
+  //   source: './README.md'
+  // },
   nav: [
     {
       title: 'c/c++',
