@@ -27,14 +27,23 @@ import z from './config/web-book-professional-javascript-for-web-3'
 import A from './config/web-imooc'
 
 window.docute.init({
+  icons: [{
+    icon: 'github',
+    label: 'Star me on GitHub',
+    link: 'https://github.com/mengqingshen'
+  }, {
+    icon: 'edit',
+    label: 'Edit this page',
+    link: 'https://github.com/mengqingshen/knowledge-notes/tree/master/public'
+  }],
   url: '.',
   routerMode: 'hash',
   sidebar: true,
   disableSidebarToggle: false,
   tocVisibleDepth: 3,
-  // landing: {
-  //   source: './README.md'
-  // },
+  landing: {
+    source: './README.md'
+  },
   nav: [
     {
       title: 'c/c++',
