@@ -1,24 +1,23 @@
 ---
 title: Sass和Compass必备技能之Sass篇
 categories: [慕课网学习笔记]
-toc: true
 tag:
     - sass
 date: 2015-05-12 22:04
 ---
 
-## 1	课程介绍
-### 1.1	课程介绍
+### 1	课程介绍
+#### 1.1	课程介绍
 **锤子和钉子**
 `有一位古人说过，如果你手里有一把锤子，那么你看什么都像钉子；也有一位今人说过，如果你手里有一颗钉子，你会满大街找钉子。`
-#### 1.1.1 sass、compass和css之间的关系
+##### 1.1.1 sass、compass和css之间的关系
 
 + sass：钉子
 
 + compass：锤子(在sass的基础上进行二次开发)
 
 + css：锤子和钉子完成的作品
-#### 1.1.2课程目标
+##### 1.1.2课程目标
 
 + 使用Sass和Compass写出更优秀的css
 
@@ -26,14 +25,14 @@ date: 2015-05-12 22:04
 
 + 有效组织样式，图片，字体等项目元素
 
-#### 1.1.3课程受众
+##### 1.1.3课程受众
 
 + 重构同学，写很多CSS，不知如何自动化。
 
 + 前端JS工程师，希望在项目周期内更好组织项目内容。
 
-## 2环境安装
-### 2.1	Sass简介
+### 2环境安装
+#### 2.1	Sass简介
   **用途：**更快的写出高可维护性的css
 
 ```flow
@@ -45,8 +44,8 @@ op3=>operation: 生成*.css
 cond=>condition: 是否有父类?
 st->op1->op2->op3->e
 ```
-### 2.2	Sass语法
-#### 2.2.1	扩展名
+#### 2.2	Sass语法
+##### 2.2.1	扩展名
 
 + 类ruby形式：`.sass`
 
@@ -68,8 +67,8 @@ h1{
 	background:#fff;
 }
 ```
-#### 2.2.2	安装
-##### 2.2.2.1	RVM
+##### 2.2.2	安装
+###### 2.2.2.1	RVM
 **rvm：**http://rvm.io/
 **pgp：** pretty good privacy
 **gpg：**GunPG
@@ -94,15 +93,15 @@ $ rvm list known
 //列出安装的所有ruby版本
 $ rvm list
 ```
-### 2.3	Compass简介和安装
+#### 2.3	Compass简介和安装
 
 ```powershell
 $ gem install compass
 //初始化创建一个sass项目
 $ compass create learn-compass-init
 ```
-## 3	sass语法介绍（基础篇）
-### 3.1	sass和scss格式相互转换
+### 3	sass语法介绍（基础篇）
+#### 3.1	sass和scss格式相互转换
 
 ```scss
 $ vim main.scss
@@ -118,7 +117,7 @@ $ cat sass
   padding: 0
 ```
 
-### 3.2	创建compass项目
+#### 3.2	创建compass项目
 
 ```scss
 $ compass create learn-sass-syntax
@@ -127,20 +126,20 @@ $ cd learn-sass-syntax
 $ compass watch
 ```
 
-### 3.3	 声明编码（不推荐使用）
+#### 3.3	 声明编码（不推荐使用）
 
 ```scss
 @charset "UTF-8";
 ```
 
-### 3.4	局部文件
+#### 3.4	局部文件
 **命名方式：**添加`_`前缀
 
 ```scss
 $ vim _variables.scss
 ```
 
-### 3.5	引入文件(重新定义`@import`)
+#### 3.5	引入文件(重新定义`@import`)
 
 |   比较 | scss的import | css的import |
 | ---: | :---------: | :--------- |
@@ -161,16 +160,16 @@ $ vim _variables.scss
 + **重置所有默认样式**：`@import "compass/reset"`
    导致所有默认样式都失效（存在造成效率低下的问题，不推荐，推荐`Normalize`）	
 
-### 3.6注释
+#### 3.6注释
    **注意：**无论是否添加了注释，sass都会默认在编译时添加一些用语调试的注释信息
 
 + `/**/`：会被放到编译好的`css`文件中(当`config.rb`中的设置`output_style = :compressed`时除外)
 + `//`：不会被放到编译好的`css`文件中
 + `/*! */`：注释在任何情况下都会被保留（适合在开源项目中使用）
 
-### 3.7选择器包含和属性包含
+#### 3.7选择器包含和属性包含
 
-#### 3.7.1选择器包含
+##### 3.7.1选择器包含
 
 + **直接子类加权：**`&`
 
@@ -204,7 +203,7 @@ a *:hover {
 }
 ```
 
-#### 3.7.2	属性包含
+##### 3.7.2	属性包含
 
 ```scss
 //页面主题样式
@@ -225,8 +224,8 @@ a *:hover {
 }
 ```
 
-## 4	sass语法介绍（进阶篇）
-### 4.1	变量的操作
+### 4	sass语法介绍（进阶篇）
+#### 4.1	变量的操作
 
 1. 直接操作变量，即变量表达式
    `+  -  x  /  >  <  >=  <=  ==  !=  ()`
@@ -240,12 +239,12 @@ a *:hover {
 1. 使用时以拷贝的方式存在：`@include`的方式调用
 2. 使用时以组合的方式使用：`@extend`的方式调用 
 
-### 4.2函数
+#### 4.2函数
 
 `@function`
 `@mixin`
 
-#### 4.2.1	声明
+##### 4.2.1	声明
 
 ```scss
 $ vim _mixin.scss
@@ -254,7 +253,7 @@ $ vim _mixin.scss
 	float: left;
 }
 ```
-#### 4.2.2	调用
+##### 4.2.2	调用
 
 ```scss
 $ vim screen.scss
@@ -275,7 +274,7 @@ $ vim screen.scss
   background-color: #f5f5f5;
 }
 ```
-### 4.3	继承
+#### 4.3	继承
 **关键字：**`@extend`
 **特点：**
 
@@ -329,9 +328,9 @@ $ vim screen.scss
 }
 ```
 
-## 5	sass语法介绍（高级篇）
-### 5.1	响应式布局
-#### 5.1.1	sass和css区别之`media query`
+### 5	sass语法介绍（高级篇）
+#### 5.1	响应式布局
+##### 5.1.1	sass和css区别之`media query`
 **说明：**`sass`中的`media query`可以内嵌在`css`规则中，在生成`css`的时候，`media query`才会被提到样式的最该层级。
 **优点：**避免重复书写选择器，避免打乱样式
 
@@ -343,7 +342,7 @@ $ vim screen.scss
 }
 ```
 
-### 5.2	样式嵌套
+#### 5.2	样式嵌套
 **副作用：**
 
 1. 增加了样式修饰的权重
@@ -374,7 +373,7 @@ $ vim screen.scss
 }
 ```
 
-### 5.3	内置函数的使用
+#### 5.3	内置函数的使用
 
 ```scss
 @mixin col-6{
@@ -405,10 +404,10 @@ $ vim screen.scss
 	}
 }
 ```
-### 5.4	config.ruby
+#### 5.4	config.ruby
 
-## 综合案例：
-### _mixin.scss
+### 综合案例：
+#### _mixin.scss
 
 ```scss
 @mixin col-6{
@@ -440,7 +439,7 @@ $ vim screen.scss
 }
 ```
 
-### screen.scss
+#### screen.scss
 
 ```scss
 /**
