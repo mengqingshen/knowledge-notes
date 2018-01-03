@@ -1,7 +1,6 @@
 ---
 title: 01 Nginx 安装
 categories: [Nginx网站架构]
-toc: true
 tag:
   - nginx
 date: 2015-02-01 08:43:40

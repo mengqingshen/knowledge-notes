@@ -1,7 +1,6 @@
 ---
 title: 02 Nginx 虚拟主机和相关配置
 categories: [Nginx网站架构]
-toc: true
 tag:
   - nginx
 date: 2015-02-04 09:59:39
