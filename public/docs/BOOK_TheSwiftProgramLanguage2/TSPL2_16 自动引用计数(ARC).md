@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 
 >**说明：**`Swift` 使用自动引用计数`（ARC）`机制来跟踪和管理你的应用程序的内存。

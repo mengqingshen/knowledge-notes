@@ -1,7 +1,7 @@
 ---
 title: 01 JavaScript简介
 categories: [JS高级程序设计(第三版)]
-toc: true
+
 tag:
     - js
 date: 2014-08-26 14:31:52

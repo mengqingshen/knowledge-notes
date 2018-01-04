@@ -3,7 +3,7 @@ title: 5 使用Linux环境变量
 categories: [Linux命令行和Shell脚本编程大全]
 tag:
   - shell
-toc: true
+
 date: 2015-07-09 21:33
 ---
 

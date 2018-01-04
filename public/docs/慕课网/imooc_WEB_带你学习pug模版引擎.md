@@ -5,7 +5,7 @@ categories:
 tag:
 	- pug
     - 模版引擎
-toc: true
+
 ---
 
 # 1	课程简介

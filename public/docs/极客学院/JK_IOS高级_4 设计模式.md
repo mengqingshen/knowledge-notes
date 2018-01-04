@@ -2,7 +2,7 @@
 title: 4 设计模式
 categories:
   - 极客学院_ios高级
-toc: true
+
 ---
 
 ## 4.1	iOS设计模式简介

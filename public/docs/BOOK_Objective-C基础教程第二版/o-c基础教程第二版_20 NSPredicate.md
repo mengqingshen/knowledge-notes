@@ -2,7 +2,7 @@
 title: 20 NSpredicate
 categories:
   - Objective-C基础教程第二版
-toc: true
+
 ---
 
 >**说明：**`Cocoa`提供了一个名为`NSPredicate`的类，用于指定过滤器的条件。

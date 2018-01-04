@@ -1,7 +1,7 @@
 ---
 title: 05 引用类型
 categories: [JS高级程序设计(第三版)]
-toc: true
+
 tag:
     - js
 date: 2014-09-01 10:10:46

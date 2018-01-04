@@ -1,7 +1,7 @@
 ---
 title: 12 Dom扩展
 categories: [JS高级程序设计(第三版)]
-toc: true
+
 tag:
     - js
 date: 2017-04-13

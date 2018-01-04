@@ -1,7 +1,7 @@
 ---
 title: MongoDB入门
 categories: [慕课网学习笔记]
-toc: true
+
 tag:
     - MongoDB
     - nodejs

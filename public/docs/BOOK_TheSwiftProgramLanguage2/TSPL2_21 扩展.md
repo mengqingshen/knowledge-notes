@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 
 >**说明：**`扩展`就是为一个已有的`类`、`结构体`、`枚举类型`或者`协议类型`添加新功能(包括没有权限获取原始源代码的情况)。

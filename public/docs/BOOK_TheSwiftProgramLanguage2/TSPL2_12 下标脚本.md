@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 
 >**用途**：访问对象、集合、序列的快捷方式，可以使用下标脚本的索引设置和获取值，不需要再调用对应的存取方法
