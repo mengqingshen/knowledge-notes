@@ -1,9 +1,8 @@
 ---
-title: Notehub
+title: notehub
 sidebar: true
 ---
 
-# Notehub
 One of Sean's website which keeping him notes about some knowledge he might thought need be be taken seriously.
 
 ## 由来
