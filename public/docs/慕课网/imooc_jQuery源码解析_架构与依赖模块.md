@@ -1,7 +1,7 @@
 ---
 title: jQuery源码解析（架构与依赖模块）
 categories: [慕课网学习笔记]
-toc: true
+
 tag:
     - jQuery
 date: 2017-04-07

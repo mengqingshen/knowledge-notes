@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 
 >**说明：**泛型代码可以让你编写`适用自定义需求以及任意类型`的`灵活可重用`的`函数`和`类型`。

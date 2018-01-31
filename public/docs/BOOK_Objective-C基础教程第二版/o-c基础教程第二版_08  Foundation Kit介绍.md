@@ -2,7 +2,7 @@
 title: 8 Foundation Kit介绍
 categories:
   - Objective-C基础教程第二版
-toc: true
+
 ---
 
 >**说明：**`Cocoa`的几个重要框架

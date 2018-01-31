@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 
 >**说明：**`错误处理`是响应错误以及从错误中恢复的过程。`可选类型`可用来表示值缺失，但是当某个操作失败时，最好能得知失败的原因，从而可以作出相应的应对。

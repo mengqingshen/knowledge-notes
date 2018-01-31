@@ -5,7 +5,7 @@ categories:
   - React Native开发指南
       tag:
   - ReactNative
-      toc: true
+      
 ---
 ## 3.1 搭建环境
 

@@ -1,5 +1,5 @@
 {
-  "name": "knowledge-notes",
+  "name": "notehub",
   "version": "1.0.0",
   "description": "书、课程、文档的阅读中留下的一些笔记，整理出来，分享",
   "main": "index.js",

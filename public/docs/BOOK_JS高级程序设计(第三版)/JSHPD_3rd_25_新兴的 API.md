@@ -1,7 +1,7 @@
 ---
 title: 25 新兴的 API
 categories: [JS高级程序设计(第三版)]
-toc: true
+
 tag:
     - js
 date:  2016-12-06 21:14

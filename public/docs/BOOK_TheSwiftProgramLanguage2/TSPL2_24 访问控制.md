@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 
 >**说明：**访问控制可以限定其他源文件或模块中的代码对你的代码的访问级别。

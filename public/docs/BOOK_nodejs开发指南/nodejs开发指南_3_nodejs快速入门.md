@@ -3,7 +3,7 @@ title: 3 nodejs快速入门
 categories: [nodejs开发指南]
 tag:
   - nodejs
-toc: true
+
 date: 2015-01-26 12:31:36
 ---
 

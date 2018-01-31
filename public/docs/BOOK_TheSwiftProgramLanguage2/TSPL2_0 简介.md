@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 ## 0.1	关于Swift(About Swift)
 **用途：**编写`IOS`、`OS X`、`watchOS`应用程序

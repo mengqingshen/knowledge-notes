@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 
 >**说明**：一个类可以继承另一个类的方法,属性和其它特性

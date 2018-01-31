@@ -4,7 +4,7 @@ categories:
     - 慕课网学习笔记
 tag:
   - js
-toc: true
+
 ---
 
 [原生 JS 实现帧动画库视频教程-慕课网](http://www.imooc.com/learn/659)

@@ -4,7 +4,7 @@ categories:
     - 慕课网学习笔记
 tag:
     - js
-toc: true
+
 ---
 
 [Velocity.js实现弹出式相框-慕课网](http://www.imooc.com/learn/471)

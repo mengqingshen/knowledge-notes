@@ -4,7 +4,7 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-toc: true
+
 ---
 
 >**说明：**`Array、Sets、Dictionary`(Swift将这3中类型使纤维范型集合)

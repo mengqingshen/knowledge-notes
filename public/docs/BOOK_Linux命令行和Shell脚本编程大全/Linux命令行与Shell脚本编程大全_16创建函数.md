@@ -3,7 +3,7 @@ title: 16	创建函数
 categories: [Linux命令行和Shell脚本编程大全]
 tag:
   - shell
-toc: true
+
 date: 2015-07-09 21:33
 ---
 

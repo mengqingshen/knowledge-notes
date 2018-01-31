@@ -1,7 +1,7 @@
 ---
 title: 22 高级技巧
 categories: [JS高级程序设计(第三版)]
-toc: true
+
 tag:
     - js
 date:  2015-06-30 16:09

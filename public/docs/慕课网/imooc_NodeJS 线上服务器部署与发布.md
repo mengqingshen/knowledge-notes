@@ -5,13 +5,13 @@ categories:
 tag:
   - nodejs
   - MongoDB
-toc: true
+
 typora-copy-images-to: ipic
 ---
 
 [网址](http://coding.imooc.com/class/95.html)
 
-# 0 课程介绍
+## 0 课程介绍
 
 ## 实战项目
 
@@ -55,11 +55,11 @@ typora-copy-images-to: ipic
 
 
 
-# 1 课程预热
+## 1 课程预热
 
-## 1.1 为什么是全栈最后一公里
+### 1.1 为什么是全栈最后一公里
 
-## 1.2 搭建线上生产环境需要做什么
+### 1.2 搭建线上生产环境需要做什么
 
 ☑ 购买自己的域名
 
@@ -74,9 +74,9 @@ typora-copy-images-to: ipic
 ☑ 项目远程部署发布与更新
 
 
-# 2 待部署的 5 个本地 Nodejs 项目
+## 2 待部署的 5 个本地 Nodejs 项目
 
-## 2.1 快速搭建一个纯静态简易站点
+### 2.1 快速搭建一个纯静态简易站点
 
 https://coding.net/u/eli01/p/imooc_nodejs_deploy/git/tree/master/website
 
@@ -150,7 +150,7 @@ $ node app.js
 
 ![65CB39FB-0290-47F9-A838-03FF523FCAC2](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-65CB39FB-0290-47F9-A838-03FF523FCAC2.png)
 
-## 2.2 Nodejs 电影网站项目上线准备
+### 2.2 Nodejs 电影网站项目上线准备
 
 **使用老课程里的一个项目-电影网站项目**
 
@@ -158,7 +158,7 @@ $ node app.js
 
 [源码](https://coding.net/u/eli01/p/imooc_nodejs_deploy/git/tree/master/movie)
 
-### 2.2.1 升级下老旧的模块
+#### 2.2.1 升级下老旧的模块
 
 ```bash
 # 先升级个别模块
@@ -170,7 +170,7 @@ $ npm --registry=https://registry.npm.taobao.org install mongoose@4.8.2 --save
 $ npm --registry=https://registry.npm.taobao.org install
 ```
 
-### 2.2.2 mongodb
+#### 2.2.2 mongodb
 
 一言难尽，瞎折腾了一下，废了一整天的时间。
 
@@ -230,7 +230,7 @@ $ sudo systemctl stop mongodb
 $ mongo -u neo -p xxx --authenticationDatabase movies --host [IP 地址]
 ```
 
-### 2.2.3 项目修改并测试
+#### 2.2.3 项目修改并测试
 
 #### 本地启动
 
@@ -290,7 +290,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 ![0FDFDC79-8AAE-42F3-93E5-6748F2F0AFE0](http://o6ul1xz4z.bkt.clouddn.com/2017-04-23-0FDFDC79-8AAE-42F3-93E5-6748F2F0AFE0.png)
 
-## 2.3 狗狗说 React Native 开发的 App 后台项目分析
+### 2.3 狗狗说 React Native 开发的 App 后台项目分析
 
 [慕课网-React Native 贯穿全栈开发 App](http://coding.imooc.com/class/56.html)
 
@@ -298,7 +298,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 
 
-## 2.4 微信小程序的项目介绍
+### 2.4 微信小程序的项目介绍
 
 ☑ 后端采用 koa 
 
@@ -306,19 +306,19 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 
 
-## 2.5 电影微信公众号的项目概况
+### 2.5 电影微信公众号的项目概况
 
 [慕课网-Node.js 7天搞定微信公众号](http://coding.imooc.com/class/38.html)
 
 
 
-## 2.6 从一个故事理解整个部署思路
+### 2.6 从一个故事理解整个部署思路
 
 ![7A834090-215B-421E-89F4-9D8D2221407B](http://o6ul1xz4z.bkt.clouddn.com/2017-04-24-7A834090-215B-421E-89F4-9D8D2221407B.png)
 
-# 3 选购域名服务器及备案
+## 3 选购域名服务器及备案
 
-## 3.1 选购域名的经验分享
+### 3.1 选购域名的经验分享
 
 ### 相关网站
 
@@ -338,7 +338,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 + 无论在哪里购买的域名，都需要到[DNSPOD](https://www.dnspod.cn/)这个网站设置域名解析指向。
 
 
-## 3.2 主机选择
+### 3.2 主机选择
 
 ☑ 相关运营商
 
@@ -359,7 +359,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 讲师提供了一个优惠码: 1abqbf
 
-## 3.3 域名备案流程走起来
+### 3.3 域名备案流程走起来
 
 ### 注意事项
 
@@ -383,9 +383,9 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 2. 在 ICP 代备案管理系统中进行备案。
 3. 等 3 周左右在阿里云查看备案是否通过。
 
-# 4 远程登录服务器
+## 4 远程登录服务器
 
-## 4.1 第一次 ssh 远程登录服务器
+### 4.1 第一次 ssh 远程登录服务器
 
 1. 设置密码
 2. 登录
@@ -396,7 +396,7 @@ $ ssh root@[IP ID地址]
 
 
 
-## 4.2 配置 root 及应用账号权限
+### 4.2 配置 root 及应用账号权限
 
 ```bash
 $ adduser imooc_manager # 自动加入群组 imooc_manager，生成 /home/imooc_manager
@@ -417,7 +417,7 @@ $ ssh imooc_manager@[外网 IP]
 
 
 
-## 4.3 配置本地无密码 SSH 登录
+### 4.3 配置本地无密码 SSH 登录
 
 ![FD361328-37D6-41F4-81DD-EFD7B1775F3A](http://o6ul1xz4z.bkt.clouddn.com/2017-04-26-FD361328-37D6-41F4-81DD-EFD7B1775F3A.png)
 
@@ -455,9 +455,9 @@ $ sudo service ssh restart
 
 
 
-# 5 增强服务安全等级
+## 5 增强服务安全等级
 
-## 5.1 修改服务器默认ssh登录端口
+### 5.1 修改服务器默认ssh登录端口
 
 注意：远程修改 ssh 的配置文件有可能不小心就导致当前 ssh 连接断线，再也不能用 ssh 远程登录。因此可以多开一个 ssh 登录服务器。
 
@@ -477,7 +477,7 @@ $ sudo service ssh restart
 
 
 
-## 5.2 配置 iptables 和 Fall2Ban 增强安全等级
+### 5.2 配置 iptables 和 Fall2Ban 增强安全等级
 
 ### iptables
 
@@ -589,9 +589,9 @@ $ sudo servive fail2ban stop
 
 
 
-# 6 搭建 Nodejs 生产环境
+## 6 搭建 Nodejs 生产环境
 
-## 6.1 搭建服务器的 Nodejs 环境
+### 6.1 搭建服务器的 Nodejs 环境
 
 ### 依赖环境
 
@@ -648,7 +648,7 @@ $ npm i pm2 webpack gulp grunt-cli -g
 
 
 
-## 6.2 借助 pm2 让 Nodejs 服务常驻
+### 6.2 借助 pm2 让 Nodejs 服务常驻
 
 ```bash
 # 启动 nodejs 程序
@@ -664,7 +664,7 @@ $ pm2 show app
 $ pm2 logs
 ```
 
-# 7 配置 nginx 实现反向代理
+## 7 配置 nginx 实现反向代理
 
 ## 删除 apache2
 
@@ -733,11 +733,11 @@ $ sudo nginx start
 $ sudo nginx -s reload
 ```
 
-# 8 利用 DNSPod 管理域名解析
+## 8 利用 DNSPod 管理域名解析
 
-## 8.1 更改域名的 DNS 根服务器
+### 8.1 更改域名的 DNS 根服务器
 
-### 8.1.1 为什么要更改 DNS 根服务器？
+#### 8.1.1 为什么要更改 DNS 根服务器？
 
 **阿里云的云解析 vs DNSPod**
 
@@ -746,7 +746,7 @@ $ sudo nginx -s reload
 
 
 
-### 8.1.2 步骤
+#### 8.1.2 步骤
 
 (1) 在 [DNSPod](https://www.dnspod.cn) 拿到 DNS 根服务器
 
@@ -767,7 +767,7 @@ f1g1ns2.dnspod.net
 
 (3) 使用 DNSPod 的域名解析功能，解析在阿里云买的域名
 
-## 8.2 配置解析项目的域名 A 记录和 CNAME
+### 8.2 配置解析项目的域名 A 记录和 CNAME
 
 ![D77D9188-AC9B-4A2E-AB09-1481B359BB5B](http://o6ul1xz4z.bkt.clouddn.com/2017-04-30-D77D9188-AC9B-4A2E-AB09-1481B359BB5B.png)
 
@@ -777,13 +777,13 @@ f1g1ns2.dnspod.net
 
 DNSPod 的域名解析服务不但可以解析到具体的 ip ，也可以解析到其它服务。比如配合[七牛](https://www.qiniu.com)的对象存储提供的`融合 CDN 加速域名`就可以解析到图床中的图片地址。
 
-# 9 服务器配置安装 MongoDB
+## 9 服务器配置安装 MongoDB
 
 注意： 因为成本原因，MongoDB 和 Web 服务在同一个 ECS 实例上，在商业实践中，为了解耦，应当放在不同的实例中。或者有条件的话，可以购买阿里云专门的 MongoDB 数据库服务。
 
-## 9.1 在 Ubuntu 14.04 上安装 MongoDB
+### 9.1 在 Ubuntu 14.04 上安装 MongoDB
 
-### 9.1.1 安装
+#### 9.1.1 安装
 
 参考 MongoDB 官网 [Install on Ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
@@ -804,7 +804,7 @@ $ sudo apt-get install -y mongodb-org
 # deb [ arch=amd64,arm64 ] http://mirrors.aliyun.com/apt/ubuntu trusty/mongodb-org/3.4 multiverse
 ```
 
-### 9.1.2 配置
+#### 9.1.2 配置
 
 #### MongoDB 配置
 
@@ -833,7 +833,7 @@ $ sudo service mongod restart
 $ sudo iptables-restore < /etc/iptables.up.rules 
 ```
 
-### 9.1.3 启动&关闭
+#### 9.1.3 启动&关闭
 
 ```bash
 # mongodb 的日志文件
@@ -849,17 +849,17 @@ $ sudo service mongod restart
 $ sudo service mongod status
 ```
 
-### 9.1.4 连接
+#### 9.1.4 连接
 
 ```bash
 $ mongo --port 27018
 ```
 
-## 9.2 往线上 MongoDB 导入单表数据或数据库
+### 9.2 往线上 MongoDB 导入单表数据或数据库
 
 ☑ 技巧: 导入的时机一般是在数据库软件安装好之后，数据库用户创建前。从而避免用户权限带来的一些麻烦。
 
-### 9.2.1 项目预览
+#### 9.2.1 项目预览
 
 讲师以自己的微信小程序为例，钥匙往线上 MongoDB 导数据，该小程序没有课程出来，通过下面的启动过程一窥微信小程序面貌。
 
@@ -873,7 +873,7 @@ $ wept
 
 ![77C5FC78-04E7-42EB-93A4-94BF00F698C0](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-77C5FC78-04E7-42EB-93A4-94BF00F698C0.png)
 
-### 9.2.2 整个数据库
+#### 9.2.2 整个数据库
 
 **本地导出、打包、上传**
 
@@ -910,7 +910,7 @@ $ mongo --port [mongoDB 服务端口]
 > show tables
 ```
 
-### 9.2.3 单表
+#### 9.2.3 单表
 
 **本地导出、打包、上传**
 
@@ -946,9 +946,9 @@ users
 $ mongo --host 127.0.0.1:[mongoDB 服务端口] imooc-movie --eval "db.dropDatabase()"
 ```
 
-## 9.3 为上线项目配置 MongoDB 数据库读写权限
+### 9.3 为上线项目配置 MongoDB 数据库读写权限
 
-### 9.3.1 创建 MongoDB 账号
+#### 9.3.1 创建 MongoDB 账号
 
 **MongoDB 账户注意事项**
 
@@ -1028,7 +1028,7 @@ $ mongo [IP 地址]:[MongoDB 服务端口]/imooc-movie -u imooc_movie_runner -p 
 
 
 
-## 9.4 从一台服务器迁移数据到另一个线上 MongoDB 中
+### 9.4 从一台服务器迁移数据到另一个线上 MongoDB 中
 
 为什么会需要这么做？比如说
 
@@ -1118,11 +1118,11 @@ $ mongo 127.0.0.1:[MongoDB 端口号]/indust-app-target -u indust_app_target -p 
 > db.categories.find({})
 ```
 
-## 9.4 为数据库实现定时备份方案
+### 9.4 为数据库实现定时备份方案
 **说明**: 为数据库做备份有很多种方法，有很多不同级别的容灾机制，我们探讨一种比较容易理解也比较容易实现的方法，那就是利用系统的任务，通过自动定时为数据库备份。
 **建议**: 针对每个数据库都建立一个本分脚本，而不是都写到一个脚本中，从而避免一个数据库备份失败连累其它数据库。
 
-### 9.4.1 编写定时任务脚本
+#### 9.4.1 编写定时任务脚本
 ```bash
 $ mkdir tasks && cd tasks
 $ vim movie.backup.sh
@@ -1143,7 +1143,7 @@ tar zcvf $backFileName.tar.gz $backFileName
 rm -rf $backFileName
 ```
 
-### 9.4.2 设置定时任务规则
+#### 9.4.2 设置定时任务规则
 
 ```bash
 $ crontab -e
@@ -1155,7 +1155,7 @@ $ crontab -e
 13 00 * * * sh /path/to/tasks/movie.backup.sh
 ```
 
-### 9.4.3 上传数据库备份到七牛私有云
+#### 9.4.3 上传数据库备份到七牛私有云
 (1) 编写 nodejs 脚本实现上传功能；
 [上传代码](https://developer.qiniu.com/kodo/sdk/1289/nodejs)
 需要修改的地方
@@ -1245,7 +1245,7 @@ $ crontab -e
 00 4 * * * sh /path/to/tasks/movie.backup.sh
 00 8 * * * sh /path/to/tasks/movie.backup.sh
 ```
-### 9.4.4 扩展(安装 mysql)
+#### 9.4.4 扩展(安装 mysql)
 
 ```bash
 # 安装
@@ -1255,8 +1255,8 @@ $ sudo apt-get install mysql-server mysql-client
 $ mysql -u root -p
 ```
 
-# 10 项服务器正式部署和发布上线 Nodejs 项目
-## 10.1 上传项目代码到线上私有 Git 仓库
+## 10 项服务器正式部署和发布上线 Nodejs 项目
+### 10.1 上传项目代码到线上私有 Git 仓库
 ☑ 自己搭建
 
 + 单纯的 Git 服务
@@ -1295,10 +1295,10 @@ $ git push -u origin master
 $ git clone git@git.oschina.net:wolf18387/backend-website.git
 ```
 
-## 10.2 配置 PM2 一键部署线上项目结构
+### 10.2 配置 PM2 一键部署线上项目结构
 使用 PM2，并采用[配置文件](http://pm2.keymetrics.io/docs/usage/deployment/)的方式来部署项目。
 
-### 10.2.1 服务端准备
+#### 10.2.1 服务端准备
 (1) 准备好程序所在的文件夹
 
 ```bash
@@ -1306,7 +1306,7 @@ $ sudo mkdir -p /www/website
 $ sudo chmod 777 /www/website
 ```
 
-### 10.2.2 从客户端发布
+#### 10.2.2 从客户端发布
 (1) 本地在项目中创建PM2 配置文件
 
 **website-server/ecosystem.json**
@@ -1348,11 +1348,11 @@ $ sudo chmod 777 /www/website
 $ pm2 deploy ecosystem.json production setup
 ```
 
-## 10.3 从本地发布上线和更新服务器的 Nodejs 项目
+### 10.3 从本地发布上线和更新服务器的 Nodejs 项目
 
 使用 PM2 实现本地控制远端代码更新和服务重启。
 
-### 10.3.1 服务端准备
+#### 10.3.1 服务端准备
 
 **~/.bashrc**
 
@@ -1370,20 +1370,20 @@ $ pm2 deploy ecosystem.json production setup
 $ source ~/.bashrc
 ```
 
-### 10.3.2 从客户端发布到服务端并启动应用
+#### 10.3.2 从客户端发布到服务端并启动应用
 
 ```bash
 $ pm2 deploy ecosystem.json production
 ```
 
-## 10.4 部署发布电影网站并连接线上 MongoDB
+### 10.4 部署发布电影网站并连接线上 MongoDB
 1. 在 DNSPOD 为电影网站添加一条记录(子域 movie.iblack7.com) ；
 2. 连接 MongoDB 的代码需要兼容开发环境和线上环境；
 3. npm 包的药保证版本足够新；
 4. Nginx 支持静态问价的访问能力。
 
 
-### 10.4.1 修改入口的代码
+#### 10.4.1 修改入口的代码
 
 **imooc_nodejs_deploy/movie/app.js**
 
@@ -1414,7 +1414,7 @@ mongoose.connect(dbUrl)
 ...
 ```
 
-### 10.4.2 PM2 配置文件
+#### 10.4.2 PM2 配置文件
 
 **imooc_nodejs_deploy/movie/ecosystem.json**
 
@@ -1454,7 +1454,7 @@ mongoose.connect(dbUrl)
 }
 ```
 
-### 10.4.3 服务端
+#### 10.4.3 服务端
 (1) 创建个需要的目录
 
 ```bash
@@ -1502,7 +1502,7 @@ server {
 $ sudo iptables-restore < /etc/iptables.up.rules
 ```
 
-### 10.4.4 本地使用 PM2 部署
+#### 10.4.4 本地使用 PM2 部署
 
 ```bash
 $ cd imooc_nodejs_deploy/movie
@@ -1510,14 +1510,14 @@ $ git add . && git commit -m "select mongodb besed on env" && git push origin ma
 $ pm2 deploy ecosystem.json production
 ```
 
-## 10.5 部署 ReactNative App 线上 API 服务
+### 10.5 部署 ReactNative App 线上 API 服务
 
 1. 在 DNSPOD 为电影网站添加一条记录(子域 free.iblack7.com) ；
 2. 入口文件中端口改为 3002, MongoDB 连接参数确保没问题且兼容线上和线下环境；
 3. 创建 PM2 配置文件 ecosystem.json；
 4. 配置好服务器配置。
 
-### 10.5.1 项目准备好相关配置文件
+#### 10.5.1 项目准备好相关配置文件
 
 (1) 创建 PM2 配置文件 ecosystem.json
 
@@ -1584,7 +1584,7 @@ exports.homePage = function *(next) {
 const baseUrl = 'http://free.ibblack7.com/'
 ```
 
-### 10.5.2 配置好服务器配置
+#### 10.5.2 配置好服务器配置
 (1) 准备好文件夹
 
 ```bash
@@ -1632,7 +1632,7 @@ server {
 $ sudo iptables-restore < /etc/iptables.up.rules
 ```
 
-### 10.5.3 部署到服务器
+#### 10.5.3 部署到服务器
 
 ```bash
 $ git add .
@@ -1642,14 +1642,14 @@ $ pm2 deploy ecosystem.json production setup # (第一次)部署到服务器
 $ pm2 deploy ecosystem.json production # 启动服务
 ```
 
-## 10.6 部署微信程序线上 API 服务
+### 10.6 部署微信程序线上 API 服务
 
 1. 在 DNSPOD 为电影网站添加一条记录(子域 mini.iblack7.com)；
 2. 入口文件中端口改为 3003, MongoDB 连接参数确保没问题且兼容线上和线下环境；
 3. 创建 PM2 配置文件 ecosystem.json；
 4. 配置好服务器配置。
 
-### 10.6.1 项目准备好相关配置文件
+#### 10.6.1 项目准备好相关配置文件
 
 (1) 创建 PM2 配置文件 ecosystem.json
 
@@ -1726,7 +1726,7 @@ exports.homePage = function *(next) {
 const base = 'https://mini.ibblack7.com/api/'
 ```
 
-### 10.6.2 配置好服务器配置
+#### 10.6.2 配置好服务器配置
 (1) 准备好文件夹
 
 ```bash
@@ -1774,7 +1774,7 @@ server {
 $ sudo iptables-restore < /etc/iptables.up.rules
 ```
 
-### 10.6.3 部署到服务器
+#### 10.6.3 部署到服务器
 
 ```bash
 $ git add .
@@ -1784,14 +1784,14 @@ $ pm2 deploy ecosystem.json production setup # (第一次)部署到服务器
 $ pm2 deploy ecosystem.json production # 启动服务
 ```
 
-## 10.7 部署配置微信公众号项目后台
+### 10.7 部署配置微信公众号项目后台
 
 1. 在 DNSPOD 为电影网站添加一条记录(子域 wechat.iblack7.com)；
 2. 入口文件中端口改为 3003, MongoDB 连接参数确保没问题且兼容线上和线下环境；
 3. 创建 PM2 配置文件 ecosystem.json；
 4. 配置好服务器配置。
 
-### 10.7.1 项目准备好相关配置文件
+#### 10.7.1 项目准备好相关配置文件
 
 
 (1) 创建 PM2 配置文件 ecosystem.json
@@ -1869,7 +1869,7 @@ exports.homePage = function *(next) {
 const baseUrl = 'http://wechat.ibblack7.com/'
 ```
 
-### 10.7.2 配置好服务器配置
+#### 10.7.2 配置好服务器配置
 (1) 准备好文件夹
 
 ```bash
@@ -1917,7 +1917,7 @@ server {
 $ sudo iptables-restore < /etc/iptables.up.rules
 ```
 
-### 10.7.3 部署到服务器
+#### 10.7.3 部署到服务器
 
 ```bash
 $ git add .
@@ -1929,12 +1929,12 @@ $ pm2 deploy ecosystem.json production # 启动服务
 
 
 
-### 10.7.4 微信公众号后台配置
+#### 10.7.4 微信公众号后台配置
 
 ![578BF6DF-6610-4D46-ABE5-68140E9535A6](http://o6ul1xz4z.bkt.clouddn.com/2017-05-06-578BF6DF-6610-4D46-ABE5-68140E9535A6.png)
 
-# 11 使用和配置更安全的 HTTPS 协议
-## 11.1 选购申请 SSL 证书的一些建议
+## 11 使用和配置更安全的 HTTPS 协议
+### 11.1 选购申请 SSL 证书的一些建议
 ### 为什么要使用 HTTPS?
 
 + 从 2017 年开始，Chrome 会将 HTTP 的网站标记为不安全的网站。
@@ -1964,8 +1964,8 @@ $ pm2 deploy ecosystem.json production # 启动服务
 + [GeoTrust](https://www.geotrust.com/): 全球第二大 SSL 证书颁发机构。
 + [亚洲诚信](https://www.trustasia.com/): 和赛门铁克有合作，根证书来自赛门铁克，国内用得比较多。
 
-## 11.2 云平台申请免费证书及 Nginx 配置
-### 11.2.1 云平台申请免费证书
+### 11.2 云平台申请免费证书及 Nginx 配置
+#### 11.2.1 云平台申请免费证书
 **注意**: 申请证书的域名必需是备案过的。
 #### 又拍云
 可以在 [又拍云](https://www.upyun.com/https) 购买免费或付费的 SSL 证书，具体流程见[官方文档](http://docs.upyun.com/cdn/ssl/#ssl)。大致流程为：
@@ -2008,7 +2008,7 @@ $ pm2 deploy ecosystem.json production # 启动服务
 
 ![](./_image/2017-05-07-00-47-02.jpg)
 
-### 11.2.2 Nginx 配置
+#### 11.2.2 Nginx 配置
 (1) 将 SSL 证书文件上传到服务器
 
 + mini.iblack7.com 域名的 SSL 证书相关文件
@@ -2121,7 +2121,7 @@ server {
 $ sudo nginx -t
 $ sudo nginx -s reload
 ```
-## 11.3 聊一聊运维安全和应对思路
+### 11.3 聊一聊运维安全和应对思路
 
 这一期的课程到这里正式告一段落，相信大家看完之后会有一个实际执行的思路。沿着这个思路，大家要去多尝试，多充点，这样才不会很快忘记。
 

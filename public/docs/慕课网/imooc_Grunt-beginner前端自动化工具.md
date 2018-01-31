@@ -1,7 +1,7 @@
 ---
 title: Grunt-beginner前端自动化工具
 categories: [慕课网学习笔记]
-toc: true
+
 tag:
     - grunt
 date: 2015-05-02 23:01

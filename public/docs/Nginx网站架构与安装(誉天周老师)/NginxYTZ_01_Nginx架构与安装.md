@@ -90,15 +90,15 @@ $ netstat -tunlp | grep nginx    # 查看默认监听的端口
 ### 关闭
 
 ```bash
-$ kill -QUIT $(cat /var/run/ngin/nginx.pid)    # 从容关闭（正常关闭）
-$ kill-TERM $(cat /var/run/ngin/nginx.pid)    # 快速关闭
+$ kill -QUIT $(cat /var/run/nginx/nginx.pid)    # 从容关闭（正常关闭）
+$ kill-TERM $(cat /var/run/nginx/nginx.pid)    # 快速关闭
 $ kill -9 nginx    # 强制结束所有的nginx进程
 ```
 
 ### 重启
 
 ```bash
-$ kill -HUP $(cat /var/run/ngin/nginx.pid)
+$ kill -HUP $(cat /var/run/nginx/nginx.pid)
 ```
 
 ### 检测配置文件语法
