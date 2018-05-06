@@ -118,5 +118,14 @@ window.docute.init({
         ...s
       ]
     }
+  ],
+  plugins: [
+    // docsearch({
+    //   apiKey: 'You API Key',
+    //   indexName: 'Your Index Name',
+    //   // this plugin requires a url too
+    //   // it indicates where docsearch fetches contents
+    //   url: 'http://notehub.mengqingshen.com'
+    // })
   ]
 })

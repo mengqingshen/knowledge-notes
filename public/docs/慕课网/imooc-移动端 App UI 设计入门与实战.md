@@ -278,5 +278,49 @@ UI 设计“狮”：强烈自尊、傲娇
 
 
 
-  
+  ![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-050054.png)
+
+
+
+![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-050135.png)
+
+### 3.5 知识详情页线框图绘制
+
+![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-054250.png)
+
+
+
+![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-054108.png)
+
+
+
+### 3.6 	知识专栏列表页线框图绘制
+
+
+
+#### 知识专栏列表页
+
+![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-152106.png)
+
+#### 知识专栏页
+
+![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-152238.png)
+
+![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-152310.png)
+
+#### 知识频道.页面流程图
+
+![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-152412.png)
+
+
+
+### 3.7 问吧专栏问答页线框图绘制
+
+![42757898-37A4-4B2E-9FC8-E0D7AC3A9071](http://o6ul1xz4z.bkt.clouddn.com/2018-02-04-42757898-37A4-4B2E-9FC8-E0D7AC3A9071.png)
+
+
+
+![09222ABB-E22A-4014-80FB-3845032959BE](http://o6ul1xz4z.bkt.clouddn.com/2018-02-04-09222ABB-E22A-4014-80FB-3845032959BE.png)
+
+### 3.8 问吧专栏列表页线框图绘制
 

@@ -16,13 +16,13 @@
   "deploy": {
     "production": {
       "user": "saber",
-      "host": ["47.93.14.9"],
+      "host": ["140.143.59.137"],
       "port": "2012",
       "ref": "origin/master",
       "repo": "https://github.com/mengqingshen/knowledge-notes.git",
       "path": "/www/notehub.mengqingshen.com",
       "ssh_options": "StrictHostKeyChecking=no",
-      "post-deploy": "npm install --registry=https://registry.npm.taobao.org && npm run build && pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "which npm && npm install --registry=https://registry.npm.taobao.org && npm run build && pm2 startOrRestart ecosystem.json --env production",
       "env": {
         "NODE_ENV": "production"
       }
