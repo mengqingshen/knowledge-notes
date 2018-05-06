@@ -549,7 +549,7 @@ function factorial(num){
         return num * arguments.callee(num-1);
     }
 }
-
+```
 
 **arguments.caller(或者 caller)**(ECMAScript 5)
 
