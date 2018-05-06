@@ -85,7 +85,10 @@ function(){
 </script>
 <input type='button' value='Click Me' onclick="showMessage()" />
 ```
+
+
 ### 13.2.2    DOM0级事件处理程序    :    将函数赋值给一个事件处理程序属性
+
 **说明**
 
 + DOM0级方法指定的事件处理程序被认为是元素的方法，因此程序中的this引用当前元素；
@@ -99,7 +102,10 @@ btn.onclick = function(){
 };
 btn.onclick = null;    //删除通过DOM0级方法指定的事件处理程序 
 ```
+
+
 ### 13.2.3    DOM2级事件处理程序
+
 **兼容性：**IE9	Firefox	Safari	Chrome	Opera
 #### addEventListener()
 **说明：** 添加事件，3个参数，要处理的事件名、作为事件处理处理程序的函数、布尔值（true表示捕获阶段；false表示冒泡阶段）
@@ -372,6 +378,7 @@ btn.onclick = function(event){
 
 ### 13.4.1    UI事件
 **历史：**出现在DOM规范之前，被规范保留。
+
 **分类：**现有的UI事件
 
 
@@ -397,9 +404,21 @@ btn.onclick = function(event){
 	<tr><td colspan="1" >resize</td><td colspan="1" >window或框架</td><td colspan="1" >窗口或框架变化</td><td colspan="1" >HTML事件 </td></tr>
 	<tr><td colspan="1" >scroll</td><td colspan="1" >带滚动条的元素</td><td colspan="1" >用户滚动带滚动条的元素中的内容</td><td colspan="1" >HTML事件&lt;body&gt;元素中包含加载元素的滚动条</td></tr>
 </table>       
+
+
+
 #### 为UI事件定义事件处理程序
+
+
+
 #### 13.4.1.1	load事件
+
+
+
 **案例一：以body为例**
+
+
+
 *方式一：    JS（推荐）*
 
 + 使用了跨浏览器的脚本；
@@ -474,7 +493,9 @@ EventUtil.addHandler(window, 'load', function(){
 });
 ```
 **案例四：    script元素**
+
 **说明：**指定src属性并将元素添加到文档后才开始下载。
+
 **兼容性问题**
 
 | 浏览器版本       | script元素onload事件 | event.target |
@@ -493,13 +514,23 @@ EventUtil.addHandler(window, 'load', function(){
     document.body.appendChild(script);
 });
 ```
+
+
 **案例五：link属性**
 **说明：**和script类似
+
 **兼容性问题**IE	Opera
+
+
+
 #### 13.4.1.2    unload事件
+
+
+
 **发生时机举例：**只要用户从一个页面切换到另外一个页面，就会发生unload事件；
 **用途举例：**清除引用避免内存泄漏;
 **限制：**DOM2级事件规定应该在<body>元素而不是window对象上触发unload事件。
+
 *方式一：    JS*
 
 ```js
@@ -507,6 +538,8 @@ EventUtil.addHandler(window, 'unload', function(event){
     alert('Unloaded');
 });
 ```
+
+
 *方式二：    HTML*
 
 ```html
@@ -519,7 +552,10 @@ EventUtil.addHandler(window, 'unload', function(event){
 </body>
 </html>
 ```
+
+
 #### 13.4.1.3.    resize事件
+
 **注意：**浏览器最大化最小化时也会触发resize事件。
 **event差异：**
 
@@ -553,7 +589,10 @@ EventUtil.addHandler(window, 'resize', function(event){
 </body>
 </html>
 ```
+
+
 #### 13.4.1.4    scroll事件
+
 **说明：**在window对象上触发，表现的是页面上元素的变化。
 
 
@@ -576,7 +615,10 @@ EventUtil.addHandler(window, 'scroll', function(event){
     }
 });
 ```
+
+
 ### 13.4.2    焦点事件
+
 **触发：**  页面获得或失去焦点
 **使用：** 利用这些事件并与`document.hasFocus()`方法及`document.activeElement`属性配合来知晓用户在页面上的行踪
 **顺序：**以焦点由A元素移动到B元素为例
@@ -603,7 +645,10 @@ var isSupported = document.implementaation.hasFeature('FocusEvent','3.0');
 	<tr><td>focusout</td><td>失去焦点</td><td></td></tr>
 </table>
 
+
+
 ### 13.4.3    鼠标与滚轮事件
+
 **版本：**DOM3级
 **注意：**
 
@@ -643,7 +688,11 @@ var isSupported = document.implementation.hasFeature('MouseEvent', '2.0');
 	<tr><td >mouseover</td><td >从目标元素外部移动到另一个元素边界内</td><td ></td></tr>
 	<tr><td >mouseup</td><td >释放鼠标按钮</td><td ></td></tr>
 </table>
-#### 鼠标事件信息 
+
+
+
+#### 鼠标事件信息
+
 ##### 1.    客户区(Client)坐标位置：浏览器视窗作为参照
 <table cellspacing="0" cellpadding="0" style="width: 100%;">
 	<tr><td>属性</td><td>作用</td><td>兼容性</td><td>特点</td></tr>
@@ -657,7 +706,10 @@ EventUtil.addHandler(div, 'click', function(event){
     alert('Client coordinates:' + event.clientX + ',' + event.clientY);
 });
 ```
+
+
 ##### 2.    页面(Page)坐标位置
+
 <table cellspacing="0" cellpadding="0">
 		<tr><td>属性</td><td>作用</td><td>兼容性</td><td>特点</td></tr>
 		<tr><td>event.pageX</td><td>事件发生时鼠标指针在页面中的水平坐标</td><td colspan="1" rowspan="2">IE8-之外</td><td colspan="1" rowspan="2">包括滚动的距离</td></tr>
@@ -686,6 +738,8 @@ EventUtil.addHandler(div, 'click', function(event){
     alert('Page coordinates:' + event.pageX + ',' + event.pageY);
 });
 ```
+
+
 ##### 3.    屏幕(Screen)坐标位置
 
 ```js
@@ -695,7 +749,10 @@ EventUtil.addHandler(div, 'click', function(event){
     alert('screen coordinates:' + event.screenX + ',' + event.screenY);
 });
 ```
+
+
 ##### 4.    修改键    ：    按下鼠标时键盘上的某些键会影响所要采取的操作
+
 <table cellspacing="0" cellpadding="0" style="width: 100%;">
 	<tr><td>修改键</td><td>DOM规定的对应属性</td><td>兼容性</td></tr>
 	<tr><td>Shift</td><td>event.shiftKey</td><td colspan="1" rowspan="4">所有（IE8-除外）</td></tr><tr><td>Ctrl</td><td>event.ctrlKey</td></tr>
@@ -724,8 +781,14 @@ EventUtil.addHandl(div, 'click', function(event){
     alert('Keys:' + keys.join(',’));
 } );
 ```
+
+
 ##### 5.    相关元素    ：    mouseover和mouseout事件触发时，除住目标外还会涉及其它相关元素。
+
+
+
 <table cellspacing="0" cellpadding="0" style="width: 100%;">
+
 	<tr><td>event的属性</td><td>事件</td><td>属性值</td><td>触发时机</td><td>兼容性</td></tr><tr><td colspan="1" rowspan="2">relatedTarget</td><td>mouseover</td><td>A元素的dom</td><td>鼠标从A元素进入B（目标）元素</td><td colspan="1" rowspan="2">IE8-不支持</td></tr>
 	<tr><td>mouseout</td><td>B元素的dom</td><td>鼠标从A（目标）元素离开</td></tr>
 	<tr><td>fromElement</td><td>mouseover</td><td>A元素的dom</td><td>鼠标从A元素进入B（目标）元素</td><td colspan="1" rowspan="2">IE(包括IE8-)</td></tr>
@@ -760,7 +823,10 @@ EventUtil.addHandler(div, 'mouseout'， function(){
     alert('Mouse out of ' + target.tagName + ' to ' + relatedTarget.tagName);
 });
 ```
+
+
 ##### 6.    鼠标按钮（mousedown 和 mouseup发生时了解哪些鼠标按钮被ianxia）
+
 <table cellspacing="0" cellpadding="0" style="width: 100%;">
 	<tr><td>event.button</td><td>DOM</td><td>IE8-</td></tr><tr><td>0</td><td>没有按下按钮</td><td>主</td></tr>
 	<tr><td>1</td><td>主</td><td>中</td></tr><tr><td>2</td><td>次</td><td>次</td></tr>
@@ -801,7 +867,10 @@ EventUtil.addHandler(div, 'mousedown', function(event){
     alert(EventUtil.getButton(event));
 });
 ```
+
+
 ##### 7.    更多的事件信息
+
 <table cellspacing="0" cellpadding="0" style="width: 100%;">
 	<tr><td colspan="3" rowspan="1">DOM2级事件</td><td colspan="3" rowspan="1">IE</td></tr>
 	<tr><td>event属性</td><td>类型</td><td>备注</td><td>event属性</td><td>类型</td><td>备注</td></tr>
@@ -809,7 +878,11 @@ EventUtil.addHandler(div, 'mousedown', function(event){
 	<tr><td></td><td></td><td></td><td>offSetX</td><td>number</td><td>光标相对于目标元素边界的x坐标</td></tr><tr><td colspan="1"></td><td colspan="1"></td><td colspan="1"></td><td colspan="1">offSetY</td><td colspan="1">number</td><td colspan="1">光标相对于目标元素边界的y坐标 </td></tr>
 	<tr><td></td><td></td><td></td><td>shiftLeft</td><td>boolean</td><td>是否按下shift键</td></tr>
 </table>
+
+
+
 ##### 8.    鼠标滚轮事件(mousewheel)
+
 **说明：** IE6首先实现
 <table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>event属性</td><td>浏览器</td><td>冒泡到</td><td>表现</td></tr><tr><td colspan="1" rowspan="2">wheelDelta</td><td>IE8</td><td>document</td><td colspan="1" rowspan="2">向前滚动120的倍数；向后滚动-120的倍数</td></tr><tr><td colspan="1">IE9、Opera、Chrome、Safari</td><td colspan="1">window</td></tr></table>
 
@@ -834,13 +907,18 @@ var EventUtil = {
     },
 };
 ```
+
+
 ##### 9.    触摸设备
 
 + 不支持dbclick事件。双击浏览器窗口会放大画面，而且没有办法改变；
 + 轻击可单击元素会触发mousemove；
 + mousemove事件也会触发mouseover和mouseout事件；
 + 两个手指放在屏幕上且页面随手指一动而滚动时会触发mousewheel和scroll事件。
+
+
 ##### 10.    无障碍性问题
+
 **拓展：**www.webaim.org
 
 + 不建议使用click之外的其他鼠标事件展示功能或引发代码执行；
@@ -848,7 +926,10 @@ var EventUtil = {
 + 不推荐使用的事件：
   <table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>事件名</td><td>不推荐的原因</td></tr><tr><td>click之外的鼠标事件</td><td>无法通过键盘触发</td></tr><tr><td>onmousedown</td><td colspan="1" rowspan="2">屏幕阅读器无法触发该事件</td></tr><tr><td>onmouseover</td></tr><tr><td colspan="1">dbclick</td><td colspan="1">无法通过键盘触发</td></tr></table>
 
+
+
 ### 13.4.4    键盘与文本事件
+
 **说明：**支持修改键，IE不支持metaKey.
 #### 键盘事件（3）
 **历史：**
