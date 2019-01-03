@@ -12,22 +12,22 @@ tag:
 ### 2.1.1 React 的一个特 点:Virtual DOM
 **用途：**执行 Virtual DOM 的计算,减少浏览器 DOM 的重复渲染
 **潜力：**潜力在于提供了强大的抽象能力。在开 发者的代码与实际的渲染之间加入一个抽象层,这带来了很多可能性。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473752946136.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473752946136.png)
 
 ### 2.1.2 React Native 工作原理
 + 调用 Objective-C 的 API 去渲染 iOS 组件
 + 调用 Java 接口去渲染 Android 组件
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473753026098.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473753026098.png)
 
 ## 2.2 渲染周期
 **说明：** `React`的
 **注意：**至于 `React Native`,生命周期与 `React` 基本相同,但渲染过程有一些区别
 **React 组件挂载过程**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473753275389.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473753275389.png)
 
 **React 组件重新渲染过程**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473753282710.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473753282710.png)
 
 ## 2.3 在React Native中创建组件
 

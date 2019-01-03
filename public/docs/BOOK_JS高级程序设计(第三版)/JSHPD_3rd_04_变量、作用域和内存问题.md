@@ -18,13 +18,13 @@ var num1 = 5;
 var num2 = num1;
 ```
 
-![9E15E73E-57B9-4A82-9AF6-F619470AB564](http://o6ul1xz4z.bkt.clouddn.com/2017-04-08-9E15E73E-57B9-4A82-9AF6-F619470AB564.png)
+![9E15E73E-57B9-4A82-9AF6-F619470AB564](http://cdn.mengqingshen.com/2017-04-08-9E15E73E-57B9-4A82-9AF6-F619470AB564.png)
 
 
 
 **引用类型：拷贝指针的副本**
 
-![BBD15824-0BDE-4894-8B7C-7104DD7F7F9A](http://o6ul1xz4z.bkt.clouddn.com/2017-04-08-BBD15824-0BDE-4894-8B7C-7104DD7F7F9A.png)
+![BBD15824-0BDE-4894-8B7C-7104DD7F7F9A](http://cdn.mengqingshen.com/2017-04-08-BBD15824-0BDE-4894-8B7C-7104DD7F7F9A.png)
 
 
 ## 1.3 传递参数
@@ -74,7 +74,7 @@ changeColor();
 alert('Color is now ' + color);
 ```
 
-![9DD6793A-AFF4-4321-8F25-DAF54871B000](http://o6ul1xz4z.bkt.clouddn.com/2017-04-08-9DD6793A-AFF4-4321-8F25-DAF54871B000.png)
+![9DD6793A-AFF4-4321-8F25-DAF54871B000](http://cdn.mengqingshen.com/2017-04-08-9DD6793A-AFF4-4321-8F25-DAF54871B000.png)
 
 ## 2.1 延长作用域链
 

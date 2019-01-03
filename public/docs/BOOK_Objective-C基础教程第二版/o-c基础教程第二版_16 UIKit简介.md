@@ -26,7 +26,7 @@ categories:
 >+ 复选框：不选择`Use Storyboard`和`Include Unit Tests`，选中`Use Automatic Reference Counting`
 >+ `Device Family`：选择`Universal`（意味着可以同时运行在`iPhone`、`iPod`、`iPad`上）
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-26%20%E4%B8%8B%E5%8D%8811.15.54.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-26%20%E4%B8%8B%E5%8D%8811.15.54.png)
 
 *AppDelegate.h*
 

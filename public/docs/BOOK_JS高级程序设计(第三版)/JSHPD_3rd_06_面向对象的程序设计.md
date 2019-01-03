@@ -333,7 +333,7 @@ alert(persion1.sayName == persion2.sayName);    //true
 
 **prototype、constractor、_proto_**
 
-![EA780712-C5EF-42E1-AA40-DE5447B24F84](http://o6ul1xz4z.bkt.clouddn.com/2017-04-09-EA780712-C5EF-42E1-AA40-DE5447B24F84.png)
+![EA780712-C5EF-42E1-AA40-DE5447B24F84](http://cdn.mengqingshen.com/2017-04-09-EA780712-C5EF-42E1-AA40-DE5447B24F84.png)
 
 ```js
 //实例对象访问其构造函数的prototype中的属性（非标准）
@@ -522,7 +522,7 @@ Persion.prototype = {
 friend.sayName();    //error
 ```
 
-![B41C999C-6783-4FEA-A757-EAFD81FC6F68](http://o6ul1xz4z.bkt.clouddn.com/2017-04-09-B41C999C-6783-4FEA-A757-EAFD81FC6F68.png)
+![B41C999C-6783-4FEA-A757-EAFD81FC6F68](http://cdn.mengqingshen.com/2017-04-09-B41C999C-6783-4FEA-A757-EAFD81FC6F68.png)
 
 ### 原生对象的原型
 
@@ -661,7 +661,7 @@ friend.sayName();    //'Nicholas'
 ## 3.1 原型链
 实现原型链的一种基本模式：
 
-![C71C6BF1-7718-4DB5-AF08-8B9187226DF0](http://o6ul1xz4z.bkt.clouddn.com/2017-04-09-C71C6BF1-7718-4DB5-AF08-8B9187226DF0.png)
+![C71C6BF1-7718-4DB5-AF08-8B9187226DF0](http://cdn.mengqingshen.com/2017-04-09-C71C6BF1-7718-4DB5-AF08-8B9187226DF0.png)
 
 ```js
 //父对象
@@ -695,7 +695,7 @@ alert(instance.getSuperValue());    //true
 **别忘记默认的原型**
 所有引用类型的默认原型都是 Object 的实例。
 
-![A2600352-8D8D-4654-A551-CD32ED745F2E](http://o6ul1xz4z.bkt.clouddn.com/2017-04-09-A2600352-8D8D-4654-A551-CD32ED745F2E.png)
+![A2600352-8D8D-4654-A551-CD32ED745F2E](http://cdn.mengqingshen.com/2017-04-09-A2600352-8D8D-4654-A551-CD32ED745F2E.png)
 
 **确定原型和实例的关系**
 + instanceof
@@ -952,5 +952,5 @@ SubType.prototype.sayAge = function(){
 };
 ```
 
-![45B71140-EF40-45B3-A64D-2695A6089203](http://o6ul1xz4z.bkt.clouddn.com/2017-04-09-45B71140-EF40-45B3-A64D-2695A6089203.png)
+![45B71140-EF40-45B3-A64D-2695A6089203](http://cdn.mengqingshen.com/2017-04-09-45B71140-EF40-45B3-A64D-2695A6089203.png)
 

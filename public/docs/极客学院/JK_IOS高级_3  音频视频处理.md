@@ -10,7 +10,7 @@ categories:
 >**注意：**`MPMoviePlayerViewController`在`iOS9中`过时了
 
 ### 3.1.1	播放视频
-![Alt text|200x350](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_video1.gif)
+![Alt text|200x350](http://cdn.mengqingshen.com/img/JK_IOS_video1.gif)
 
 ```swift
 import UIKit

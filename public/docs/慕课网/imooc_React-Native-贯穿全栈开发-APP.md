@@ -25,51 +25,51 @@ typora-copy-images-to: ipic
 
 想独立创业，但公司技术人员有限，需要一种能力通吃前后端开发。
 
-![882D0CDB-DB4D-4AC5-B1A1-92C80B1CFB19](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-882D0CDB-DB4D-4AC5-B1A1-92C80B1CFB19.png)
+![882D0CDB-DB4D-4AC5-B1A1-92C80B1CFB19](http://cdn.mengqingshen.com/2017-05-01-882D0CDB-DB4D-4AC5-B1A1-92C80B1CFB19.png)
 
 
 
 **适用人群**
 
-![AED8B097-DB89-4C53-8CB2-E3139B18D44A](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-AED8B097-DB89-4C53-8CB2-E3139B18D44A.png)
+![AED8B097-DB89-4C53-8CB2-E3139B18D44A](http://cdn.mengqingshen.com/2017-05-01-AED8B097-DB89-4C53-8CB2-E3139B18D44A.png)
 
 ## 0.2 实战项目介绍
 
 **完整的 APP 开发流程**
 
-![570D9EFE-A0CC-469F-BCA4-91C211CA3979](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-570D9EFE-A0CC-469F-BCA4-91C211CA3979.png)
+![570D9EFE-A0CC-469F-BCA4-91C211CA3979](http://cdn.mengqingshen.com/2017-05-01-570D9EFE-A0CC-469F-BCA4-91C211CA3979.png)
 
 ## 0.3 APP 功能介绍
 
 ### 桌面图标和启动画面
 
-![2F3BB186-3327-4570-9A2E-E5A045F7B577](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-2F3BB186-3327-4570-9A2E-E5A045F7B577.png)
+![2F3BB186-3327-4570-9A2E-E5A045F7B577](http://cdn.mengqingshen.com/2017-05-01-2F3BB186-3327-4570-9A2E-E5A045F7B577.png)
 
 ### 过度页面和轮播效果
 
-![18A3986C-D085-4AB6-9ADF-840A6F430F78](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-18A3986C-D085-4AB6-9ADF-840A6F430F78.png)
+![18A3986C-D085-4AB6-9ADF-840A6F430F78](http://cdn.mengqingshen.com/2017-05-01-18A3986C-D085-4AB6-9ADF-840A6F430F78.png)
 
 ### 注册登录和账户管理
 
-![130F9764-04B8-4F04-9ED5-AF3AB490607C](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-130F9764-04B8-4F04-9ED5-AF3AB490607C.png)![52A268EC-E64E-4474-9165-F49A79918AAD](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-52A268EC-E64E-4474-9165-F49A79918AAD.png)![F9E03C12-AB29-4BC0-85DD-39C1CD318FCD](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-F9E03C12-AB29-4BC0-85DD-39C1CD318FCD.png)  
+![130F9764-04B8-4F04-9ED5-AF3AB490607C](http://cdn.mengqingshen.com/2017-05-01-130F9764-04B8-4F04-9ED5-AF3AB490607C.png)![52A268EC-E64E-4474-9165-F49A79918AAD](http://cdn.mengqingshen.com/2017-05-01-52A268EC-E64E-4474-9165-F49A79918AAD.png)![F9E03C12-AB29-4BC0-85DD-39C1CD318FCD](http://cdn.mengqingshen.com/2017-05-01-F9E03C12-AB29-4BC0-85DD-39C1CD318FCD.png)  
 
 ### 视频的配音制作页面
 
-![FB55C162-8EEB-4D53-BFBF-84D8088EB6D5](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-D01D4730-8B82-4239-BBE2-36F344EC6C70.png)![673134D8-1109-491F-8847-F350D1C15D21](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-673134D8-1109-491F-8847-F350D1C15D21.png)
+![FB55C162-8EEB-4D53-BFBF-84D8088EB6D5](http://cdn.mengqingshen.com/2017-05-01-D01D4730-8B82-4239-BBE2-36F344EC6C70.png)![673134D8-1109-491F-8847-F350D1C15D21](http://cdn.mengqingshen.com/2017-05-01-673134D8-1109-491F-8847-F350D1C15D21.png)
 
 
 
-​    ![DDB6085D-A10F-4F77-B3DD-88CA39E4B307](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-DDB6085D-A10F-4F77-B3DD-88CA39E4B307.png)  ![1AC37DB1-5952-4F98-948A-652E76AA26F1](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-1AC37DB1-5952-4F98-948A-652E76AA26F1.png) 
+​    ![DDB6085D-A10F-4F77-B3DD-88CA39E4B307](http://cdn.mengqingshen.com/2017-05-01-DDB6085D-A10F-4F77-B3DD-88CA39E4B307.png)  ![1AC37DB1-5952-4F98-948A-652E76AA26F1](http://cdn.mengqingshen.com/2017-05-01-1AC37DB1-5952-4F98-948A-652E76AA26F1.png) 
 
 
 
 ### 展现所有制作完毕的创意视频列表
 
-![9D5AE200-A2A3-493F-98F7-E556D9A0E7F6](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-9D5AE200-A2A3-493F-98F7-E556D9A0E7F6.png)![F5A2E11D-8BCE-41F9-910B-ED6ED175665A](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-F5A2E11D-8BCE-41F9-910B-ED6ED175665A.png)![CAE44957-D7E2-49C9-9AFF-C62A01C947BD](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-CAE44957-D7E2-49C9-9AFF-C62A01C947BD.png)
+![9D5AE200-A2A3-493F-98F7-E556D9A0E7F6](http://cdn.mengqingshen.com/2017-05-01-9D5AE200-A2A3-493F-98F7-E556D9A0E7F6.png)![F5A2E11D-8BCE-41F9-910B-ED6ED175665A](http://cdn.mengqingshen.com/2017-05-01-F5A2E11D-8BCE-41F9-910B-ED6ED175665A.png)![CAE44957-D7E2-49C9-9AFF-C62A01C947BD](http://cdn.mengqingshen.com/2017-05-01-CAE44957-D7E2-49C9-9AFF-C62A01C947BD.png)
 
 ## 0.4 APP 后台
 
-![A91AFC02-5CD0-4503-9F50-0D7FD254E490](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-A91AFC02-5CD0-4503-9F50-0D7FD254E490.png)  
+![A91AFC02-5CD0-4503-9F50-0D7FD254E490](http://cdn.mengqingshen.com/2017-05-01-A91AFC02-5CD0-4503-9F50-0D7FD254E490.png)  
 
 
 
@@ -77,17 +77,17 @@ typora-copy-images-to: ipic
 
 ### 环境搭建
 
-![557CE284-84C8-48C0-912E-B785D565264F](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-557CE284-84C8-48C0-912E-B785D565264F.png)
+![557CE284-84C8-48C0-912E-B785D565264F](http://cdn.mengqingshen.com/2017-05-01-557CE284-84C8-48C0-912E-B785D565264F.png)
 
 ### 服务器端
 
 
 
-![17B2329A-63D9-4F63-B913-719BD59CFE20](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-17B2329A-63D9-4F63-B913-719BD59CFE20.png)
+![17B2329A-63D9-4F63-B913-719BD59CFE20](http://cdn.mengqingshen.com/2017-05-01-17B2329A-63D9-4F63-B913-719BD59CFE20.png)
 
 ### 前后端连调
 
-![5B6CDA95-0E79-4BA9-923F-71673D97C9F9](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-5B6CDA95-0E79-4BA9-923F-71673D97C9F9.png)
+![5B6CDA95-0E79-4BA9-923F-71673D97C9F9](http://cdn.mengqingshen.com/2017-05-01-5B6CDA95-0E79-4BA9-923F-71673D97C9F9.png)
 
 
 
@@ -107,7 +107,7 @@ React 是 Facebook 推出的一种解决页面组建的抽象和形态的技术�
 
 ### React Native 的性能
 
-![B37DFE6F-B67F-4087-B827-0BD00621E4EA](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-B37DFE6F-B67F-4087-B827-0BD00621E4EA.png)
+![B37DFE6F-B67F-4087-B827-0BD00621E4EA](http://cdn.mengqingshen.com/2017-05-01-B37DFE6F-B67F-4087-B827-0BD00621E4EA.png)
 
 **Hybrid 混合应用**
 
@@ -119,7 +119,7 @@ React 是 Facebook 推出的一种解决页面组建的抽象和形态的技术�
 
 原生的部分只是一个壳子，开发用的全是 WEB 技术，比如 PhoneGap ，一次编写，到处使用。相比原生应用，一些复杂的页面有明显的性能问题。
 
-![5A927112-FBB2-4237-87DA-552ED6984037](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-5A927112-FBB2-4237-87DA-552ED6984037.png)
+![5A927112-FBB2-4237-87DA-552ED6984037](http://cdn.mengqingshen.com/2017-05-01-5A927112-FBB2-4237-87DA-552ED6984037.png)
 
 **React Native**
 
@@ -131,17 +131,17 @@ RN 可以看作是基于 React 之上的一种针对特定平台的技术开发�
 
 ☑ 职业发展
 
-![535E8284-335C-4DB4-9652-BDA122A9F6EB](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-535E8284-335C-4DB4-9652-BDA122A9F6EB.png)
+![535E8284-335C-4DB4-9652-BDA122A9F6EB](http://cdn.mengqingshen.com/2017-05-01-535E8284-335C-4DB4-9652-BDA122A9F6EB.png)
 
 
 
 ☑ 优秀的核心思想
 
-![FFAA5529-FE25-4BD1-AC20-0A77ECD232E4](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-FFAA5529-FE25-4BD1-AC20-0A77ECD232E4.png)
+![FFAA5529-FE25-4BD1-AC20-0A77ECD232E4](http://cdn.mengqingshen.com/2017-05-01-FFAA5529-FE25-4BD1-AC20-0A77ECD232E4.png)
 
 ☑ 刚毕业或刚入行的新人，会感觉跟不上市场对前端技术的需求。因为你们可能没有兼容过 IE6、7、8、火狐那个年代，每一行代码都断点调试，对 JS 的内部机制，DOM 的性能等细小的技术点没有那么多时间实践和研究，也没有经历过打包、组件抽象和构建，各种异步加载起的折腾，如果现在花时间重新走一遍，反而跟不上市场的脚步。预期为这个历史买单，到不如投资未来，直接切入到 React 和 React Native 的中，反而没有历史包袱。利用这个机会可以弯道超车，直接进入前端开发或者 APP 开发这个职业。职业发展是阶段性的，技术学习是终身的，现在市场上活下来，再沉淀，直到切入到更细分的技术选型。
 
-![9598C18F-AC6B-4711-BD81-CE085B720691](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-9598C18F-AC6B-4711-BD81-CE085B720691.png)
+![9598C18F-AC6B-4711-BD81-CE085B720691](http://cdn.mengqingshen.com/2017-05-01-9598C18F-AC6B-4711-BD81-CE085B720691.png)
 
 
 
@@ -159,7 +159,7 @@ RN 可以看作是基于 React 之上的一种针对特定平台的技术开发�
 
 ## 1.3 RN 适合你吗？
 
-![DBAAAD84-B012-49AD-A19A-D3CE9237EEE3](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-DBAAAD84-B012-49AD-A19A-D3CE9237EEE3.png)
+![DBAAAD84-B012-49AD-A19A-D3CE9237EEE3](http://cdn.mengqingshen.com/2017-05-01-DBAAAD84-B012-49AD-A19A-D3CE9237EEE3.png)
 
 # 2 初识 React Native
 
@@ -227,7 +227,7 @@ $ react-native -v
 $ react-native init imoocApp
 ```
 
-![ADD36C2F-99A1-4216-95F8-48D2BB0F210A](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-ADD36C2F-99A1-4216-95F8-48D2BB0F210A.png)
+![ADD36C2F-99A1-4216-95F8-48D2BB0F210A](http://cdn.mengqingshen.com/2017-05-01-ADD36C2F-99A1-4216-95F8-48D2BB0F210A.png)
 
 
 
@@ -236,7 +236,7 @@ $ react-native init imoocApp
 $ cd imoocApp && react-native run-ios
 ```
 
-![BA5FE45C-6DD0-49FE-9737-3E22901464AF](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-BA5FE45C-6DD0-49FE-9737-3E22901464AF.png)
+![BA5FE45C-6DD0-49FE-9737-3E22901464AF](http://cdn.mengqingshen.com/2017-05-01-BA5FE45C-6DD0-49FE-9737-3E22901464AF.png)
 
 
 
@@ -334,7 +334,7 @@ React 的思想主要是通过构建可复用组件来构建用户界面。可�
 
 先不管父亲儿子孙子这种多层嵌套的组件，先来看一下一个单一组件的生命周期。如下
 
-![39579D57-7B5C-49D2-B860-0C852E5DC9E6](http://o6ul1xz4z.bkt.clouddn.com/2017-05-10-39579D57-7B5C-49D2-B860-0C852E5DC9E6.png)
+![39579D57-7B5C-49D2-B860-0C852E5DC9E6](http://cdn.mengqingshen.com/2017-05-10-39579D57-7B5C-49D2-B860-0C852E5DC9E6.png)
 
 **1 初始化: 渲染 > 装载**
 
@@ -456,7 +456,7 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('imoocApp', () => imoocApp);
 ```
 
-![0B4E47F3-1143-419B-8205-1D7AC00E4C8D](http://o6ul1xz4z.bkt.clouddn.com/2017-05-10-0B4E47F3-1143-419B-8205-1D7AC00E4C8D.png)
+![0B4E47F3-1143-419B-8205-1D7AC00E4C8D](http://cdn.mengqingshen.com/2017-05-10-0B4E47F3-1143-419B-8205-1D7AC00E4C8D.png)
 
 
 
@@ -639,29 +639,29 @@ AppRegistry.registerComponent('imoocApp', () => imoocApp)
 
 
 
-![4DCEEEE1-4B7D-44BB-8E04-8A5FFEFE3F64](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-4DCEEEE1-4B7D-44BB-8E04-8A5FFEFE3F64.png)
+![4DCEEEE1-4B7D-44BB-8E04-8A5FFEFE3F64](http://cdn.mengqingshen.com/2017-05-11-4DCEEEE1-4B7D-44BB-8E04-8A5FFEFE3F64.png)
 
-![25C37AA9-39B8-4473-98DA-53673A993F2C](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-25C37AA9-39B8-4473-98DA-53673A993F2C.png)
+![25C37AA9-39B8-4473-98DA-53673A993F2C](http://cdn.mengqingshen.com/2017-05-11-25C37AA9-39B8-4473-98DA-53673A993F2C.png)
 
 **(2) 子组件的初始渲染和加载**
 
-![7581DC8D-FC75-4CE0-9A7F-03A0576598E5](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-7581DC8D-FC75-4CE0-9A7F-03A0576598E5.png)
+![7581DC8D-FC75-4CE0-9A7F-03A0576598E5](http://cdn.mengqingshen.com/2017-05-11-7581DC8D-FC75-4CE0-9A7F-03A0576598E5.png)
 
-![FB3C5ECD-85BE-4DE6-9D1C-1CEEEFE66648](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-FB3C5ECD-85BE-4DE6-9D1C-1CEEEFE66648.png)
+![FB3C5ECD-85BE-4DE6-9D1C-1CEEEFE66648](http://cdn.mengqingshen.com/2017-05-11-FB3C5ECD-85BE-4DE6-9D1C-1CEEEFE66648.png)
 
-![5EE7ACF3-2FDB-491C-AA39-A981B0FADF9E](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-5EE7ACF3-2FDB-491C-AA39-A981B0FADF9E.png)
+![5EE7ACF3-2FDB-491C-AA39-A981B0FADF9E](http://cdn.mengqingshen.com/2017-05-11-5EE7ACF3-2FDB-491C-AA39-A981B0FADF9E.png)
 
 **(3) 子组件 state 变化**
 
-![88901F07-9679-4B04-ABB9-8367DCF60E4D](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-88901F07-9679-4B04-ABB9-8367DCF60E4D.png)
+![88901F07-9679-4B04-ABB9-8367DCF60E4D](http://cdn.mengqingshen.com/2017-05-11-88901F07-9679-4B04-ABB9-8367DCF60E4D.png)
 
-![62E6F933-DEDF-4B80-8D65-823FA7569057](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-62E6F933-DEDF-4B80-8D65-823FA7569057.png)
+![62E6F933-DEDF-4B80-8D65-823FA7569057](http://cdn.mengqingshen.com/2017-05-11-62E6F933-DEDF-4B80-8D65-823FA7569057.png)
 
 **(4) 父组件 state 变化 > 组件件 props 变化**
 
-![9FC5DD40-F8B2-4DCA-A225-09BA3F63AAFC](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-9FC5DD40-F8B2-4DCA-A225-09BA3F63AAFC.png)
+![9FC5DD40-F8B2-4DCA-A225-09BA3F63AAFC](http://cdn.mengqingshen.com/2017-05-11-9FC5DD40-F8B2-4DCA-A225-09BA3F63AAFC.png)
 
-![EC2B84EF-FDA1-4C15-8066-760CA1D96BE3](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-EC2B84EF-FDA1-4C15-8066-760CA1D96BE3.png)
+![EC2B84EF-FDA1-4C15-8066-760CA1D96BE3](http://cdn.mengqingshen.com/2017-05-11-EC2B84EF-FDA1-4C15-8066-760CA1D96BE3.png)
 
 
 
@@ -1092,7 +1092,7 @@ $ react-native run-ios
 
 **(1) Semantic Issue**
 
-![F507C0C1-45D1-4027-BE25-C364B8125CE5](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-F507C0C1-45D1-4027-BE25-C364B8125CE5.png)
+![F507C0C1-45D1-4027-BE25-C364B8125CE5](http://cdn.mengqingshen.com/2017-05-11-F507C0C1-45D1-4027-BE25-C364B8125CE5.png)
 
 删除`-Werror`和`-Wall`。
 
@@ -1256,19 +1256,19 @@ uploadContainer: {
 
 
 
-![D49EBA1A-7626-49FF-9346-83D5A5B8D8D1](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-D49EBA1A-7626-49FF-9346-83D5A5B8D8D1.png)
+![D49EBA1A-7626-49FF-9346-83D5A5B8D8D1](http://cdn.mengqingshen.com/2017-05-11-D49EBA1A-7626-49FF-9346-83D5A5B8D8D1.png)
 
-![2E271031-FFC4-40B9-9D0B-DB01613B85E8](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-2E271031-FFC4-40B9-9D0B-DB01613B85E8.png)
+![2E271031-FFC4-40B9-9D0B-DB01613B85E8](http://cdn.mengqingshen.com/2017-05-11-2E271031-FFC4-40B9-9D0B-DB01613B85E8.png)
 
-![8F9195B0-DF0D-43DB-8D1E-7C0B7D336ACC](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-8F9195B0-DF0D-43DB-8D1E-7C0B7D336ACC.png)
+![8F9195B0-DF0D-43DB-8D1E-7C0B7D336ACC](http://cdn.mengqingshen.com/2017-05-11-8F9195B0-DF0D-43DB-8D1E-7C0B7D336ACC.png)
 
-![3501449C-9A19-49EA-B726-D6FAEB9CF951](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-3501449C-9A19-49EA-B726-D6FAEB9CF951.png)
+![3501449C-9A19-49EA-B726-D6FAEB9CF951](http://cdn.mengqingshen.com/2017-05-11-3501449C-9A19-49EA-B726-D6FAEB9CF951.png)
 
-![0F99F927-3486-4087-9003-EDB6D5E67F8E](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-0F99F927-3486-4087-9003-EDB6D5E67F8E.png)
+![0F99F927-3486-4087-9003-EDB6D5E67F8E](http://cdn.mengqingshen.com/2017-05-11-0F99F927-3486-4087-9003-EDB6D5E67F8E.png)
 
 ## 5.2 TabBarIOS 开启 App 首页
 
-![D49EBA1A-7626-49FF-9346-83D5A5B8D8D1](http://o6ul1xz4z.bkt.clouddn.com/2017-05-11-D49EBA1A-7626-49FF-9346-83D5A5B8D8D1.png)
+![D49EBA1A-7626-49FF-9346-83D5A5B8D8D1](http://cdn.mengqingshen.com/2017-05-11-D49EBA1A-7626-49FF-9346-83D5A5B8D8D1.png)
 
 从大往小作，一开始不要纠结样式、功能等琐碎的小细节，先把大框架描出来。放眼整个 APP，先把几个主要的视图界面狑出来 ，然后组合一下，再对着这个大的结构进行更加详细的功能模块的拆解和具体方案的架构。
 
@@ -1281,7 +1281,7 @@ uploadContainer: {
 
 [Github 地址](https://github.com/rnpm/rnpm)
 
-![614E0AEB-15F3-484F-8BBE-14D57E2A54A8](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-614E0AEB-15F3-484F-8BBE-14D57E2A54A8.png)
+![614E0AEB-15F3-484F-8BBE-14D57E2A54A8](http://cdn.mengqingshen.com/2017-05-12-614E0AEB-15F3-484F-8BBE-14D57E2A54A8.png)
 
 
 显然 rnpm 已经被合并到了 react-native core ，用法和 rnpm 类似，[以 react-native-vector-icons 为例](http://www.jianshu.com/p/188c19387853)
@@ -1301,7 +1301,7 @@ $ react-native upgrade
 ## 5.3 TabBarIOS 开启 APP 首页(2)
 
 ### 5.3.1 使用 react-native-vector-icons
-![9B23DCB1-CE53-45DF-BF53-95F3640FAF02](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-9B23DCB1-CE53-45DF-BF53-95F3640FAF02.png)
+![9B23DCB1-CE53-45DF-BF53-95F3640FAF02](http://cdn.mengqingshen.com/2017-05-12-9B23DCB1-CE53-45DF-BF53-95F3640FAF02.png)
 
 项目中具体使用的是 [Ionicons](http://ionicons.com)图标库。
 
@@ -1318,12 +1318,12 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 为了让大家印象更加深刻，先来对 APP 的功能进行一下细化，过一下用户的交互流程。
 
 
-![8ED42960-E255-4E4F-B77D-AF81B3DAC6F6](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-8ED42960-E255-4E4F-B77D-AF81B3DAC6F6.png)
+![8ED42960-E255-4E4F-B77D-AF81B3DAC6F6](http://cdn.mengqingshen.com/2017-05-12-8ED42960-E255-4E4F-B77D-AF81B3DAC6F6.png)
 
 ## 5.5 页面重构
 将 Tab 对应的视图分别放在单独文件中。
 
-![B1F170F2-BD34-4B34-ACB2-D18C948BCBCF](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-B1F170F2-BD34-4B34-ACB2-D18C948BCBCF.png)
+![B1F170F2-BD34-4B34-ACB2-D18C948BCBCF](http://cdn.mengqingshen.com/2017-05-12-B1F170F2-BD34-4B34-ACB2-D18C948BCBCF.png)
 
 ## 5.6 飞速创建后台和 Mock 假数据
 ### 5.6.1 传统 Mock 假数据
@@ -1347,17 +1347,17 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 
 (1) 在 [Rap官网](http://rapapi.org) 配置好某个请求的Mock规则。
 
-![708E7778-BACE-4086-99C5-D2175D23BFEF](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-708E7778-BACE-4086-99C5-D2175D23BFEF.png)
+![708E7778-BACE-4086-99C5-D2175D23BFEF](http://cdn.mengqingshen.com/2017-05-12-708E7778-BACE-4086-99C5-D2175D23BFEF.png)
 
 (2) 产看请求的 Mock 数据
 
-![C4A2C36C-4E7A-43C4-BF47-6902EB43028F](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-C4A2C36C-4E7A-43C4-BF47-6902EB43028F.png)
+![C4A2C36C-4E7A-43C4-BF47-6902EB43028F](http://cdn.mengqingshen.com/2017-05-12-C4A2C36C-4E7A-43C4-BF47-6902EB43028F.png)
 
 其实也可以在 [Mockjs 官网](http://mockjs.com/)可以试下规则的解析结果，如下
 
 
 
-![FDD9C85D-6D12-4D46-AA2D-4140F3E22ADB](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-FDD9C85D-6D12-4D46-AA2D-4140F3E22ADB.png)
+![FDD9C85D-6D12-4D46-AA2D-4140F3E22ADB](http://cdn.mengqingshen.com/2017-05-12-FDD9C85D-6D12-4D46-AA2D-4140F3E22ADB.png)
 
 
 
@@ -1367,7 +1367,7 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 
 
 
-![9E15FAF0-4397-418C-BE0E-D177ABB003BA](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-9E15FAF0-4397-418C-BE0E-D177ABB003BA.png)
+![9E15FAF0-4397-418C-BE0E-D177ABB003BA](http://cdn.mengqingshen.com/2017-05-12-9E15FAF0-4397-418C-BE0E-D177ABB003BA.png)
 
 ## 6.2 视频列表挖坑开发(2)
 
@@ -1376,11 +1376,11 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 2. fontSize 的单位是什么？
 3. 如果通过请求获取线上数据？
 
-![C88BC6E4-8DDC-4492-9101-0FA459384A9F](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-C88BC6E4-8DDC-4492-9101-0FA459384A9F.png)
+![C88BC6E4-8DDC-4492-9101-0FA459384A9F](http://cdn.mengqingshen.com/2017-05-12-C88BC6E4-8DDC-4492-9101-0FA459384A9F.png)
 
 ## 6.3 RN 的异步请求与封装
 ### 6.3.1 RN 的 3 种异步请求方式
-![B6D9792B-84CC-4A93-8B3E-AA17DA78ABDB](http://o6ul1xz4z.bkt.clouddn.com/2017-05-12-B6D9792B-84CC-4A93-8B3E-AA17DA78ABDB.png)
+![B6D9792B-84CC-4A93-8B3E-AA17DA78ABDB](http://cdn.mengqingshen.com/2017-05-12-B6D9792B-84CC-4A93-8B3E-AA17DA78ABDB.png)
 
 在 RN 中获取网络数据常见的有上面[3种方式](http://facebook.github.io/react-native/docs/network.html)，分别说明下。
 
@@ -1417,7 +1417,7 @@ $ npm i mockjs -S
 
 ## 6.4-6.5 列表页上滑预加载和下拉刷新效果
 
-![dig_talk_list](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-dig_talk_list.gif)
+![dig_talk_list](http://cdn.mengqingshen.com/2017-05-13-dig_talk_list.gif)
 
 ## 6.6 iOS 屏幕尺寸及分辨率知识点解析
 
@@ -1425,25 +1425,25 @@ $ npm i mockjs -S
 
 **显示单元**
 
-![8F5A96B4-7D69-407D-836F-448F87C2040F](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-8F5A96B4-7D69-407D-836F-448F87C2040F.png)
+![8F5A96B4-7D69-407D-836F-448F87C2040F](http://cdn.mengqingshen.com/2017-05-13-8F5A96B4-7D69-407D-836F-448F87C2040F.png)
 
 **英寸(inch)和厘米(cm)**
 
-![E6892C1C-FDCF-4C0B-A10B-F0F83F4186C6](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-E6892C1C-FDCF-4C0B-A10B-F0F83F4186C6.png)
+![E6892C1C-FDCF-4C0B-A10B-F0F83F4186C6](http://cdn.mengqingshen.com/2017-05-13-E6892C1C-FDCF-4C0B-A10B-F0F83F4186C6.png)
 
 ### 6.6.2 iphone 6
 
 **屏幕尺寸**
 
-![CC8BA961-F966-4B0C-BBCC-59E454E9794F](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-CC8BA961-F966-4B0C-BBCC-59E454E9794F.png)
+![CC8BA961-F966-4B0C-BBCC-59E454E9794F](http://cdn.mengqingshen.com/2017-05-13-CC8BA961-F966-4B0C-BBCC-59E454E9794F.png)
 
 **逻辑分辨率 & 设备分辨率 & 设备像素比 & PPI**
 
-![3FB67D4A-A0ED-49AD-9873-209D0C05FA0B](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-3FB67D4A-A0ED-49AD-9873-209D0C05FA0B.png)
+![3FB67D4A-A0ED-49AD-9873-209D0C05FA0B](http://cdn.mengqingshen.com/2017-05-13-3FB67D4A-A0ED-49AD-9873-209D0C05FA0B.png)
 
 ### 6.6.3 iphone 6 plus
 
-![3297081A-DCD1-4CB1-85B2-AE09391D60D0](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-3297081A-DCD1-4CB1-85B2-AE09391D60D0.png)
+![3297081A-DCD1-4CB1-85B2-AE09391D60D0](http://cdn.mengqingshen.com/2017-05-13-3297081A-DCD1-4CB1-85B2-AE09391D60D0.png)
 
 **down sampled**
 
@@ -1453,7 +1453,7 @@ $ npm i mockjs -S
 
 市面上有很多中高清屏，像素密度不同，像素比也不同，有1倍的、1.5倍的、4倍的。相关的概念有很多，这里不一一涉及。关于苹果设备的分辨率，下面提供一个像素表。基本包括所有我们需要关心的参数。
 
-![CA41CECC-BD8C-44B4-A089-0C1FDD807CF3](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-CA41CECC-BD8C-44B4-A089-0C1FDD807CF3.png)
+![CA41CECC-BD8C-44B4-A089-0C1FDD807CF3](http://cdn.mengqingshen.com/2017-05-13-CA41CECC-BD8C-44B4-A089-0C1FDD807CF3.png)
 
 对开发者带来了一些苦恼，好在用户对苹果设备的更新换代速度比较快，所以放在 2016 的当下，我们可以以 iPhone 6 作为基本设备，可以不考虑 iPhone 4 ，向上兼容到 iPhone6 P，向下兼容到 iPhone 5。
 
@@ -1475,7 +1475,7 @@ $ npm i mockjs -S
 ## 6.8 RN 导航器 Navigator 的用法
 利用 [Navigator](http://reactnative.cn/docs/0.44/navigation.html#content) 实现从列表页跳转到详情页的功能。
 
-![navigate_from_list_to_detail](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-navigate_from_list_to_detail.gif)
+![navigate_from_list_to_detail](http://cdn.mengqingshen.com/2017-05-13-navigate_from_list_to_detail.gif)
 
 ## 6.9 详情页视频播放控制
 
@@ -1484,7 +1484,7 @@ $ npm i -S react-native-video
 $ react-native link react-native-video
 ```
 
-![1B3A7CAD-DBEC-4669-95AD-DDC92206FB03](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-1B3A7CAD-DBEC-4669-95AD-DDC92206FB03.png)
+![1B3A7CAD-DBEC-4669-95AD-DDC92206FB03](http://cdn.mengqingshen.com/2017-05-13-1B3A7CAD-DBEC-4669-95AD-DDC92206FB03.png)
 
 ## 6.10 详情页视频播放控制 loading-进度条 -重播功能
 (1) 视频载入前显示 loading 图标
@@ -1497,18 +1497,18 @@ $ react-native link react-native-video
 
 ## 6.12 详情页视频播放控制--容错处理、返回导航
 
-![1EBF2D97-BC73-44B1-8603-6AFD12601ED7](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-1EBF2D97-BC73-44B1-8603-6AFD12601ED7.png)
+![1EBF2D97-BC73-44B1-8603-6AFD12601ED7](http://cdn.mengqingshen.com/2017-05-13-1EBF2D97-BC73-44B1-8603-6AFD12601ED7.png)
 
 ## 6.13 详情页视频信息补全
 
-![C302B147-4C39-4B10-B7B1-470758992807](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-C302B147-4C39-4B10-B7B1-470758992807.png)
+![C302B147-4C39-4B10-B7B1-470758992807](http://cdn.mengqingshen.com/2017-05-13-C302B147-4C39-4B10-B7B1-470758992807.png)
 
 ## 6.14 获取视频评论列表(1)
 详情页
 (1) 在 componentDidMount 时异步加载数据评论；
 (2) 使用 ListView 外实现评论列表。
 
-![9EE0C411-9DAE-422B-A349-9309C8CBE507](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-9EE0C411-9DAE-422B-A349-9309C8CBE507.png)
+![9EE0C411-9DAE-422B-A349-9309C8CBE507](http://cdn.mengqingshen.com/2017-05-13-9EE0C411-9DAE-422B-A349-9309C8CBE507.png)
 
 ## 6.15 获取视频评论列表(2)
 详情页
@@ -1518,11 +1518,11 @@ $ react-native link react-native-video
 ## 6.16 RN 里面提交评论表单(1)
 (1) 评论列表顶部添加评论框；
 
-![EA055CC9-F6FF-4047-A891-A41A76302A0A](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-EA055CC9-F6FF-4047-A891-A41A76302A0A.png)
+![EA055CC9-F6FF-4047-A891-A41A76302A0A](http://cdn.mengqingshen.com/2017-05-13-EA055CC9-F6FF-4047-A891-A41A76302A0A.png)
 
 (2) 获得焦点时，用 RN 的 Modal 组件实现在浮层中显示评论编辑；
 
-![6CF1C956-66FF-4347-AE7F-1F99D564D36D](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-6CF1C956-66FF-4347-AE7F-1F99D564D36D.png)
+![6CF1C956-66FF-4347-AE7F-1F99D564D36D](http://cdn.mengqingshen.com/2017-05-13-6CF1C956-66FF-4347-AE7F-1F99D564D36D.png)
 
 ## 6.17 RN 里面提交评论表单
 (1) 使用 react-native-button 组件创建评论提交按钮
@@ -1532,42 +1532,42 @@ $ react-native link react-native-video
 $ npm i -S react-native-button
 ```
 
-![D6A29161-9413-438F-81D7-5E6FDA5AEC50](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-D6A29161-9413-438F-81D7-5E6FDA5AEC50.png)
+![D6A29161-9413-438F-81D7-5E6FDA5AEC50](http://cdn.mengqingshen.com/2017-05-13-D6A29161-9413-438F-81D7-5E6FDA5AEC50.png)
 
 (2) 添加提交评论的接口，并在提交完成后关闭评论浮层。
 遇到一个诡异的问题，如果先设置 state 中的 content 为空字符串，再关闭浮层，就会崩溃；反过来顺序就没事儿。
 
-![D58D76CE-3E13-4090-95F1-ABC1799EDD95](http://o6ul1xz4z.bkt.clouddn.com/2017-05-13-D58D76CE-3E13-4090-95F1-ABC1799EDD95.png)
+![D58D76CE-3E13-4090-95F1-ABC1799EDD95](http://cdn.mengqingshen.com/2017-05-13-D58D76CE-3E13-4090-95F1-ABC1799EDD95.png)
 
 # 7 RN 知识进阶串讲
 
 ## 7.1 React 与 MVC
 
-![BB444226-6690-4063-AA7C-D31047EAB84F](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-BB444226-6690-4063-AA7C-D31047EAB84F.png)
+![BB444226-6690-4063-AA7C-D31047EAB84F](http://cdn.mengqingshen.com/2017-05-14-BB444226-6690-4063-AA7C-D31047EAB84F.png)
 
 React 革新了传统的 MVC 架构模式。
 
 **MVC 架构模式**
 
-![84E70B6A-82A4-4E05-A8E2-E9E6E16B2C3C](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-84E70B6A-82A4-4E05-A8E2-E9E6E16B2C3C.png)
+![84E70B6A-82A4-4E05-A8E2-E9E6E16B2C3C](http://cdn.mengqingshen.com/2017-05-14-84E70B6A-82A4-4E05-A8E2-E9E6E16B2C3C.png)
 
-![834EA6C8-DEF9-41D0-BAC7-8EB7DF02A54B](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-834EA6C8-DEF9-41D0-BAC7-8EB7DF02A54B.png)
+![834EA6C8-DEF9-41D0-BAC7-8EB7DF02A54B](http://cdn.mengqingshen.com/2017-05-14-834EA6C8-DEF9-41D0-BAC7-8EB7DF02A54B.png)
 
 **React 架构模式**
 
-![C901DF12-E053-400D-B314-7B500473706B](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-C901DF12-E053-400D-B314-7B500473706B.png)
+![C901DF12-E053-400D-B314-7B500473706B](http://cdn.mengqingshen.com/2017-05-14-C901DF12-E053-400D-B314-7B500473706B.png)
 
 React 并不是清清白白的 View，因为每一个组件的内部都可以自行控制数据的变化，也就是 C 的作用。
 
-![B3B9A8EB-0651-4C97-A7A5-4647B4EAAD70](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-B3B9A8EB-0651-4C97-A7A5-4647B4EAAD70.png)
+![B3B9A8EB-0651-4C97-A7A5-4647B4EAAD70](http://cdn.mengqingshen.com/2017-05-14-B3B9A8EB-0651-4C97-A7A5-4647B4EAAD70.png)
 
 也就是说，React 组件充当了 View 和 Controller 两种角色。而且组件之间是独立的，组件内部是耦合的，因此组件可以看成 VC 而不是一个简单的 V 。
 
-![2954407D-CC97-40AF-AB7F-58EF436BA678](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-2954407D-CC97-40AF-AB7F-58EF436BA678.png)
+![2954407D-CC97-40AF-AB7F-58EF436BA678](http://cdn.mengqingshen.com/2017-05-14-2954407D-CC97-40AF-AB7F-58EF436BA678.png)
 
 **React 组件数据传递**
 
-![520EFCE0-6500-4B8A-8487-672A09457A84](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-520EFCE0-6500-4B8A-8487-672A09457A84.png)
+![520EFCE0-6500-4B8A-8487-672A09457A84](http://cdn.mengqingshen.com/2017-05-14-520EFCE0-6500-4B8A-8487-672A09457A84.png)
 
 ## 7.2 RN 的 30+ 组件
 ### 7.2.1 组件
@@ -1616,23 +1616,23 @@ $ cd react-native && npm install
 $ cd RNTester && open .
 ```
 
-![2B9F739E-2C27-4FEB-A5DD-6EEEB6D818BA](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-2B9F739E-2C27-4FEB-A5DD-6EEEB6D818BA.png)
+![2B9F739E-2C27-4FEB-A5DD-6EEEB6D818BA](http://cdn.mengqingshen.com/2017-05-14-2B9F739E-2C27-4FEB-A5DD-6EEEB6D818BA.png)
 
-![93C08351-31F6-40C4-B208-A87255889259](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-93C08351-31F6-40C4-B208-A87255889259.png)
+![93C08351-31F6-40C4-B208-A87255889259](http://cdn.mengqingshen.com/2017-05-14-93C08351-31F6-40C4-B208-A87255889259.png)
 
-![B6539CF5-B6AA-4F64-B64C-D562B1401E9C](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-B6539CF5-B6AA-4F64-B64C-D562B1401E9C.png)
+![B6539CF5-B6AA-4F64-B64C-D562B1401E9C](http://cdn.mengqingshen.com/2017-05-14-B6539CF5-B6AA-4F64-B64C-D562B1401E9C.png)
 
-![F948F4E2-D122-4224-A4BC-01D55FB84763](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-F948F4E2-D122-4224-A4BC-01D55FB84763.png)
+![F948F4E2-D122-4224-A4BC-01D55FB84763](http://cdn.mengqingshen.com/2017-05-14-F948F4E2-D122-4224-A4BC-01D55FB84763.png)
 
-![CEBB97A5-3C64-4EAF-A1AB-E9A96DC31F79](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-CEBB97A5-3C64-4EAF-A1AB-E9A96DC31F79.png)
+![CEBB97A5-3C64-4EAF-A1AB-E9A96DC31F79](http://cdn.mengqingshen.com/2017-05-14-CEBB97A5-3C64-4EAF-A1AB-E9A96DC31F79.png)
 
-![D758664D-50B0-4D05-9FAC-F0ED2AF61EBA](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-D758664D-50B0-4D05-9FAC-F0ED2AF61EBA.png)
+![D758664D-50B0-4D05-9FAC-F0ED2AF61EBA](http://cdn.mengqingshen.com/2017-05-14-D758664D-50B0-4D05-9FAC-F0ED2AF61EBA.png)
 
 示例程序中有每种组件的各种用法演示，比图  View
 
-![2A2EE967-F031-4983-AA3A-4BA8129F529E](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-2A2EE967-F031-4983-AA3A-4BA8129F529E.png)
+![2A2EE967-F031-4983-AA3A-4BA8129F529E](http://cdn.mengqingshen.com/2017-05-14-2A2EE967-F031-4983-AA3A-4BA8129F529E.png)
 
-![752FD120-9182-456E-9803-A7651ADF4DB7](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-752FD120-9182-456E-9803-A7651ADF4DB7.png)
+![752FD120-9182-456E-9803-A7651ADF4DB7](http://cdn.mengqingshen.com/2017-05-14-752FD120-9182-456E-9803-A7651ADF4DB7.png)
 
 
 
@@ -1688,7 +1688,7 @@ RN 使用的是 flexbox (弹性盒子伸缩布局，或者叫伸缩容器布局)
 ### alignSelf
 类似 alignItems，不同的地方在于它声明在子元素上也作用在子元素。覆盖在父元素上设置的 alignItems 对子元素的作用。
 
-![7DEE610A-EEC2-4962-A55A-DC69C9A4E8F3](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-7DEE610A-EEC2-4962-A55A-DC69C9A4E8F3.png)
+![7DEE610A-EEC2-4962-A55A-DC69C9A4E8F3](http://cdn.mengqingshen.com/2017-05-14-7DEE610A-EEC2-4962-A55A-DC69C9A4E8F3.png)
 
 ```jsx
 /**
@@ -1830,7 +1830,7 @@ const styles = StyleSheet.create({
 以 imoocApp 这个项目为例:
 **imoocApp/ios/imoocApp/AppDelegate.m**
 
-![06A34D33-B556-43A7-B417-EBA2B557B443](http://o6ul1xz4z.bkt.clouddn.com/2017-05-14-06A34D33-B556-43A7-B417-EBA2B557B443.png) 
+![06A34D33-B556-43A7-B417-EBA2B557B443](http://cdn.mengqingshen.com/2017-05-14-06A34D33-B556-43A7-B417-EBA2B557B443.png) 
 
 (4) Xcode 选择 iphone 真机来启动
 
@@ -1838,7 +1838,7 @@ const styles = StyleSheet.create({
 
 ## 8.1 伪造 Rap 注册登录接口
 
-![92F80514-7EE1-439A-BA4C-77F915B1BF8D](http://o6ul1xz4z.bkt.clouddn.com/2017-05-16-92F80514-7EE1-439A-BA4C-77F915B1BF8D.png)
+![92F80514-7EE1-439A-BA4C-77F915B1BF8D](http://cdn.mengqingshen.com/2017-05-16-92F80514-7EE1-439A-BA4C-77F915B1BF8D.png)
 
 
 
@@ -1858,7 +1858,7 @@ const styles = StyleSheet.create({
 
 登录流程
 
-![C9BDDE9C-DAB5-4939-B7F5-31E8B337C5BB](http://o6ul1xz4z.bkt.clouddn.com/2017-05-21-C9BDDE9C-DAB5-4939-B7F5-31E8B337C5BB.png)
+![C9BDDE9C-DAB5-4939-B7F5-31E8B337C5BB](http://cdn.mengqingshen.com/2017-05-21-C9BDDE9C-DAB5-4939-B7F5-31E8B337C5BB.png)
 
 
 
@@ -1880,7 +1880,7 @@ const styles = StyleSheet.create({
 
 (1) 在 cloudinary.com [配置好空间信息]( https://cloudinary.com/console/settings/account)
 
-![7EE44700-7980-4222-8195-FF44685DE6B2](http://o6ul1xz4z.bkt.clouddn.com/2017-05-25-7EE44700-7980-4222-8195-FF44685DE6B2.png)
+![7EE44700-7980-4222-8195-FF44685DE6B2](http://cdn.mengqingshen.com/2017-05-25-7EE44700-7980-4222-8195-FF44685DE6B2.png)
 
 (2) 在 RAP 创建假的签名验证接口，然后在项目中中模拟签名验证过程
 (3) 项目中实现上传逻辑
@@ -1896,17 +1896,17 @@ const styles = StyleSheet.create({
 
 安装 [react-native-progress](https://github.com/oblador/react-native-progress) 组件，并通过 xcode 手动添加到工程中（ART 不支持通过 `react-native link` 引入）
 
-![F6CF9482-1C97-4EB8-B747-587D15CBEF39](http://o6ul1xz4z.bkt.clouddn.com/2017-05-26-F6CF9482-1C97-4EB8-B747-587D15CBEF39.png)
+![F6CF9482-1C97-4EB8-B747-587D15CBEF39](http://cdn.mengqingshen.com/2017-05-26-F6CF9482-1C97-4EB8-B747-587D15CBEF39.png)
 
 (1) 在 xcode 中手动添加 ART 到 iOS 工程中
 
-![B11C2C42-8E91-4B50-8190-79806B7CC84C](http://o6ul1xz4z.bkt.clouddn.com/2017-05-26-B11C2C42-8E91-4B50-8190-79806B7CC84C.png)
+![B11C2C42-8E91-4B50-8190-79806B7CC84C](http://cdn.mengqingshen.com/2017-05-26-B11C2C42-8E91-4B50-8190-79806B7CC84C.png)
 
-![A07E9217-B50D-4030-953B-A5AF0D1585A4](http://o6ul1xz4z.bkt.clouddn.com/2017-05-26-A07E9217-B50D-4030-953B-A5AF0D1585A4.png)
+![A07E9217-B50D-4030-953B-A5AF0D1585A4](http://cdn.mengqingshen.com/2017-05-26-A07E9217-B50D-4030-953B-A5AF0D1585A4.png)
 (2) 配置引入的 ART 库
-![CFAEDF54-24C6-493A-9EF3-505795880056](http://o6ul1xz4z.bkt.clouddn.com/2017-05-26-CFAEDF54-24C6-493A-9EF3-505795880056.png)
+![CFAEDF54-24C6-493A-9EF3-505795880056](http://cdn.mengqingshen.com/2017-05-26-CFAEDF54-24C6-493A-9EF3-505795880056.png)
 
-![5DEF9FE5-504B-4222-86F4-A21A02DF8E16](http://o6ul1xz4z.bkt.clouddn.com/2017-05-26-5DEF9FE5-504B-4222-86F4-A21A02DF8E16.png)
+![5DEF9FE5-504B-4222-86F4-A21A02DF8E16](http://cdn.mengqingshen.com/2017-05-26-5DEF9FE5-504B-4222-86F4-A21A02DF8E16.png)
 
 (3) 重启调试环境，包括 `run-ios`、模拟器
 
@@ -2024,7 +2024,7 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 
 (3) 在管理台中添加短信模版
 
-![6C92A268-6A76-487C-A70F-D221F743E5B8](http://o6ul1xz4z.bkt.clouddn.com/2017-05-30-6C92A268-6A76-487C-A70F-D221F743E5B8.png)
+![6C92A268-6A76-487C-A70F-D221F743E5B8](http://cdn.mengqingshen.com/2017-05-30-6C92A268-6A76-487C-A70F-D221F743E5B8.png)
 
 (4) 查看接口文档的[示例](https://luosimao.com/docs/api/30)
 
@@ -2042,7 +2042,7 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 **说明**: DHC 看样子改名为 Restlet Client 了。
 (1) 根据从 RAP 到处的接口文档实现后台接口，然后通过 Restlet Client  测试接口能否正常工作。以 `用户资料更新`接口为例：
 
-![60254477-FCA7-4E96-945C-FAB63847C73C](http://o6ul1xz4z.bkt.clouddn.com/2017-05-31-60254477-FCA7-4E96-945C-FAB63847C73C.png)
+![60254477-FCA7-4E96-945C-FAB63847C73C](http://cdn.mengqingshen.com/2017-05-31-60254477-FCA7-4E96-945C-FAB63847C73C.png)
 
 (2) 通过定义中间件实现对请求的统一校验
 (3) 注意看看是否都进行了xss 处理
@@ -2064,7 +2064,7 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 
 (1) 在七牛的对象存储中新建一个空间，拿到测试域名
 
-![FB49560C-6477-40C9-81FF-91EF7FE3C44E](http://o6ul1xz4z.bkt.clouddn.com/2017-06-06-FB49560C-6477-40C9-81FF-91EF7FE3C44E.png)
+![FB49560C-6477-40C9-81FF-91EF7FE3C44E](http://cdn.mengqingshen.com/2017-06-06-FB49560C-6477-40C9-81FF-91EF7FE3C44E.png)
 
 (2) 在七牛[个人中心->秘钥管理](https://portal.qiniu.com/user/key)拿到其 AccessKey 和 SecretKey, 配置到后端代码中。
 
@@ -2079,9 +2079,9 @@ $ npm i qiniu -S
 
 # 11 开发视频配音页面
 
-![FB63992D-F55C-496E-A9EE-D158F2654E19](http://o6ul1xz4z.bkt.clouddn.com/2017-06-08-FB63992D-F55C-496E-A9EE-D158F2654E19.png)
+![FB63992D-F55C-496E-A9EE-D158F2654E19](http://cdn.mengqingshen.com/2017-06-08-FB63992D-F55C-496E-A9EE-D158F2654E19.png)
 
-![3D9347CA-8904-4E17-8972-F47DD2278486](http://o6ul1xz4z.bkt.clouddn.com/2017-06-08-3D9347CA-8904-4E17-8972-F47DD2278486.png)
+![3D9347CA-8904-4E17-8972-F47DD2278486](http://cdn.mengqingshen.com/2017-06-08-3D9347CA-8904-4E17-8972-F47DD2278486.png)
 
 ## 11.1-11.2 视频选择器与视频预览
 
@@ -2148,7 +2148,7 @@ http://org5nla9w.bkt.clouddn.com/tif2A2xwqtgaelwOgLOIfPiOteo=/FqzqKrAA25Sj4apuKm
 
 (2) 由于七牛没有提供合并视频和音频的服务，因此后面需要曲线救国，把视频和音频同步到 cloudinary 进行合并。最后同步回七牛。
 
-![E2D3F0B3-C389-477D-AAAF-34276FDFFE86](http://o6ul1xz4z.bkt.clouddn.com/2017-06-13-E2D3F0B3-C389-477D-AAAF-34276FDFFE86.png)
+![E2D3F0B3-C389-477D-AAAF-34276FDFFE86](http://cdn.mengqingshen.com/2017-06-13-E2D3F0B3-C389-477D-AAAF-34276FDFFE86.png)
 
 
 
@@ -2178,7 +2178,7 @@ $ react-native link react-native-audio react-native-sound
 
 ## 11.10-11.11 上传音频到云空间
 
-![EA6EFEC3-4747-4689-9AD0-994FAC892318](http://o6ul1xz4z.bkt.clouddn.com/2017-06-25-EA6EFEC3-4747-4689-9AD0-994FAC892318.png)
+![EA6EFEC3-4747-4689-9AD0-994FAC892318](http://cdn.mengqingshen.com/2017-06-25-EA6EFEC3-4747-4689-9AD0-994FAC892318.png)
 
 (1) 重构客户端上传逻辑，兼容视频和音频的上传
 
@@ -2274,13 +2274,13 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 1. 将图标资源（包括 `Content.json`）拷贝到`ios/imoocApp/Images.xcassets/AppIcon.appiconset`下
 
-![9694804C-49E6-4483-BCDB-036C7F4CCF26](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-9694804C-49E6-4483-BCDB-036C7F4CCF26.png)
+![9694804C-49E6-4483-BCDB-036C7F4CCF26](http://cdn.mengqingshen.com/2017-07-02-9694804C-49E6-4483-BCDB-036C7F4CCF26.png)
 
 1. 在 xcode 中打开项目，配置 App Icons Source
 
-![E35CE2CE-9F2E-4E07-9D16-EFF412E19DB4](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-E35CE2CE-9F2E-4E07-9D16-EFF412E19DB4.png)
+![E35CE2CE-9F2E-4E07-9D16-EFF412E19DB4](http://cdn.mengqingshen.com/2017-07-02-E35CE2CE-9F2E-4E07-9D16-EFF412E19DB4.png)
 
-![100EECC1-9A3D-44A4-BD4C-0DDBD3D2171B](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-100EECC1-9A3D-44A4-BD4C-0DDBD3D2171B.png)
+![100EECC1-9A3D-44A4-BD4C-0DDBD3D2171B](http://cdn.mengqingshen.com/2017-07-02-100EECC1-9A3D-44A4-BD4C-0DDBD3D2171B.png)
 
 
 
@@ -2288,7 +2288,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 拷贝一个通用的图标（比如83.5x83.5）到所有图标所在的文件夹下。修改 `Contents.json`
 
-![D3E9648F-D5D2-4BB6-9561-CE5BE70E62E8](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-D3E9648F-D5D2-4BB6-9561-CE5BE70E62E8.png)
+![D3E9648F-D5D2-4BB6-9561-CE5BE70E62E8](http://cdn.mengqingshen.com/2017-07-02-D3E9648F-D5D2-4BB6-9561-CE5BE70E62E8.png)
 
 
 
@@ -2310,7 +2310,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 (4) PS 打开解压好的 `App Icon Template/App Icon Template.psd`文件（保留图层）
 
-![446E7DC2-A13A-4A43-B825-3E3970817B13](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-446E7DC2-A13A-4A43-B825-3E3970817B13.png)
+![446E7DC2-A13A-4A43-B825-3E3970817B13](http://cdn.mengqingshen.com/2017-07-02-446E7DC2-A13A-4A43-B825-3E3970817B13.png)
 
 (5) 进入需要编辑的图层
 
@@ -2330,21 +2330,21 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 1. 保存(6) tab，关闭窗口，回到模版
 2. 发现改动已经同步过来了
 
-![5040465E-61E0-4746-A3F8-F577D83E52C6](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-5040465E-61E0-4746-A3F8-F577D83E52C6.png)
+![5040465E-61E0-4746-A3F8-F577D83E52C6](http://cdn.mengqingshen.com/2017-07-02-5040465E-61E0-4746-A3F8-F577D83E52C6.png)
 
 (8) 导出
 
 1. 打开动作窗口(窗口>动作)
 
-   ![013EA8C6-E145-47BC-B844-845F0279A1BE](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-013EA8C6-E145-47BC-B844-845F0279A1BE.png)
+   ![013EA8C6-E145-47BC-B844-845F0279A1BE](http://cdn.mengqingshen.com/2017-07-02-013EA8C6-E145-47BC-B844-845F0279A1BE.png)
 
 2. 选中需要的图标对应的动作，然后点击底部播放按钮
 
-![0D7B19EF-AA65-41B1-A00E-27D1B878AC16](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-0D7B19EF-AA65-41B1-A00E-27D1B878AC16.png)
+![0D7B19EF-AA65-41B1-A00E-27D1B878AC16](http://cdn.mengqingshen.com/2017-07-02-0D7B19EF-AA65-41B1-A00E-27D1B878AC16.png)
 
 1. 存储到指定文件夹
 
-![E4102DA6-84C6-46F7-A418-46B98F9D371E](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-E4102DA6-84C6-46F7-A418-46B98F9D371E.png)
+![E4102DA6-84C6-46F7-A418-46B98F9D371E](http://cdn.mengqingshen.com/2017-07-02-E4102DA6-84C6-46F7-A418-46B98F9D371E.png)
 
 ### 12.1.2 方式二：在线傻瓜式导出
 
@@ -2358,7 +2358,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 (3) 在邮箱中下载并解压
 
-![C91AA2DF-1852-4167-BA61-3D1FDB5C3528](http://o6ul1xz4z.bkt.clouddn.com/2017-07-02-C91AA2DF-1852-4167-BA61-3D1FDB5C3528.png)
+![C91AA2DF-1852-4167-BA61-3D1FDB5C3528](http://cdn.mengqingshen.com/2017-07-02-C91AA2DF-1852-4167-BA61-3D1FDB5C3528.png)
 
 
 
@@ -2368,11 +2368,11 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 (1) 修改 `ios/imoocApp/Info.plist`
 
-![5C899A02-00F3-4F2D-BCB3-03BECB754D85](http://o6ul1xz4z.bkt.clouddn.com/2017-07-06-5C899A02-00F3-4F2D-BCB3-03BECB754D85.png)
+![5C899A02-00F3-4F2D-BCB3-03BECB754D85](http://cdn.mengqingshen.com/2017-07-06-5C899A02-00F3-4F2D-BCB3-03BECB754D85.png)
 
 (2) 重新 build
 
-![F7E182E5-AA7C-436D-9A79-47BBC4D88CC6](http://o6ul1xz4z.bkt.clouddn.com/2017-07-06-F7E182E5-AA7C-436D-9A79-47BBC4D88CC6.png)
+![F7E182E5-AA7C-436D-9A79-47BBC4D88CC6](http://cdn.mengqingshen.com/2017-07-06-F7E182E5-AA7C-436D-9A79-47BBC4D88CC6.png)
 
 ### 12.2.2 启动画面
 
@@ -2444,7 +2444,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 - 服务优秀
 - [文档](https://www.pgyer.com/doc)丰富
 
-![4D016D45-7C2E-4408-B89D-B981621DDC29](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-4D016D45-7C2E-4408-B89D-B981621DDC29.png)
+![4D016D45-7C2E-4408-B89D-B981621DDC29](http://cdn.mengqingshen.com/2017-07-13-4D016D45-7C2E-4408-B89D-B981621DDC29.png)
 
 
 
@@ -2452,7 +2452,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 （2）购买 [Apple 开发者账号](https://developer.apple.com/)
 
-![902E3686-7C95-4556-A598-FFD7274C7C13](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-902E3686-7C95-4556-A598-FFD7274C7C13.png)
+![902E3686-7C95-4556-A598-FFD7274C7C13](http://cdn.mengqingshen.com/2017-07-13-902E3686-7C95-4556-A598-FFD7274C7C13.png)
 
 
 
@@ -2461,33 +2461,33 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 - 获取 iOS 设备的 [UDID](https://www.pgyer.com/udid)
 - 添加设备（Apple 开发者中心 > Account > Program Resources > Cerficates, IDs & Profiles > Devices > All）
 
-![3324DB26-BFEC-4B61-89A1-14AE6011C674](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-3324DB26-BFEC-4B61-89A1-14AE6011C674.png)
+![3324DB26-BFEC-4B61-89A1-14AE6011C674](http://cdn.mengqingshen.com/2017-07-13-3324DB26-BFEC-4B61-89A1-14AE6011C674.png)
 
 
 
-![08711E65-0FF3-4548-974F-8C57D73E3715](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-08711E65-0FF3-4548-974F-8C57D73E3715.png)
+![08711E65-0FF3-4548-974F-8C57D73E3715](http://cdn.mengqingshen.com/2017-07-13-08711E65-0FF3-4548-974F-8C57D73E3715.png)
 
 - 创建需要的证书（如果还没创建的话。注意，至少有一个 Distribution  类型的证书，比如）
 
-![4B6D4454-D186-418B-9630-3C55C2C23E70](http://o6ul1xz4z.bkt.clouddn.com/2017-07-16-4B6D4454-D186-418B-9630-3C55C2C23E70.png)
+![4B6D4454-D186-418B-9630-3C55C2C23E70](http://cdn.mengqingshen.com/2017-07-16-4B6D4454-D186-418B-9630-3C55C2C23E70.png)
 
 - 为设备生成证书（Provisioning Profiles > Distribution）
 
-![D3D419C8-4EF1-4BDB-9734-208C8DC9B293](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-D3D419C8-4EF1-4BDB-9734-208C8DC9B293.png)
+![D3D419C8-4EF1-4BDB-9734-208C8DC9B293](http://cdn.mengqingshen.com/2017-07-13-D3D419C8-4EF1-4BDB-9734-208C8DC9B293.png)
 
 除非是企业账号或者要正式发布到 Apple Store ，否则选择 `Ad Hoc`那一项。
 
 - 下载证书
 
-![C171A52D-4A3A-476E-8BBC-4A0B005A3DCF](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-C171A52D-4A3A-476E-8BBC-4A0B005A3DCF.png)
+![C171A52D-4A3A-476E-8BBC-4A0B005A3DCF](http://cdn.mengqingshen.com/2017-07-13-C171A52D-4A3A-476E-8BBC-4A0B005A3DCF.png)
 
 （4）项目准备
 
 - 修改`imoocApp/ios/imoocApp/AppDelegate.m`（注意！这个方式只针对 RN 0.29.0 ，之后的[看这里](http://www.jianshu.com/p/330eb37a71c3)）
 
-![3D184B93-2265-425F-9297-74F354FC08EF](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-3D184B93-2265-425F-9297-74F354FC08EF.png)
+![3D184B93-2265-425F-9297-74F354FC08EF](http://cdn.mengqingshen.com/2017-07-13-3D184B93-2265-425F-9297-74F354FC08EF.png)
 
-![FC2ED94F-8FEA-4457-B78E-223F1BF067B6](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-FC2ED94F-8FEA-4457-B78E-223F1BF067B6.png)
+![FC2ED94F-8FEA-4457-B78E-223F1BF067B6](http://cdn.mengqingshen.com/2017-07-13-FC2ED94F-8FEA-4457-B78E-223F1BF067B6.png)
 
 
 
@@ -2499,57 +2499,57 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 *过去的方式*
 
-![C1B53361-3C71-448B-A8B5-0A481E44C155](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-C1B53361-3C71-448B-A8B5-0A481E44C155.png)
+![C1B53361-3C71-448B-A8B5-0A481E44C155](http://cdn.mengqingshen.com/2017-07-13-C1B53361-3C71-448B-A8B5-0A481E44C155.png)
 
 *新的方式*
 
-![33C1EBF0-0241-4366-BF38-6BB0D65991BF](http://o6ul1xz4z.bkt.clouddn.com/2017-07-16-33C1EBF0-0241-4366-BF38-6BB0D65991BF.png)
+![33C1EBF0-0241-4366-BF38-6BB0D65991BF](http://cdn.mengqingshen.com/2017-07-16-33C1EBF0-0241-4366-BF38-6BB0D65991BF.png)
 
 （6）打包
 
 - 重新编译项目（`command + b`)，如果又必要重启一下 xcode 
 - 打包（设备选择 Generic iOS Device）
 
-![77D31FB3-66A5-4930-AE58-84D6597E3DC2](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-77D31FB3-66A5-4930-AE58-84D6597E3DC2.png)
+![77D31FB3-66A5-4930-AE58-84D6597E3DC2](http://cdn.mengqingshen.com/2017-07-13-77D31FB3-66A5-4930-AE58-84D6597E3DC2.png)
 
 - 有弹窗的话，点击“允许”
 
 （7）导出可安装文件(.ipa)到本地
 
-![394E3DEC-26EC-4FCB-8D52-43BD432F5467](http://o6ul1xz4z.bkt.clouddn.com/2017-07-16-394E3DEC-26EC-4FCB-8D52-43BD432F5467.png)
+![394E3DEC-26EC-4FCB-8D52-43BD432F5467](http://cdn.mengqingshen.com/2017-07-16-394E3DEC-26EC-4FCB-8D52-43BD432F5467.png)
 
 如果遇到[Your account already has a valid Developer ID Application certificate，按照该链接给出的方法修复。](https://stackoverflow.com/questions/33651758/your-account-already-has-a-valid-developer-id-application-certificate)
 
-![C5367DB3-D40F-4BF3-9464-3F645FF1DCAA](http://o6ul1xz4z.bkt.clouddn.com/2017-07-16-C5367DB3-D40F-4BF3-9464-3F645FF1DCAA.png)
+![C5367DB3-D40F-4BF3-9464-3F645FF1DCAA](http://cdn.mengqingshen.com/2017-07-16-C5367DB3-D40F-4BF3-9464-3F645FF1DCAA.png)
 
-![76F93A8C-714F-4C91-9D2B-FCC82A9A89A2](http://o6ul1xz4z.bkt.clouddn.com/2017-07-16-76F93A8C-714F-4C91-9D2B-FCC82A9A89A2.png)
+![76F93A8C-714F-4C91-9D2B-FCC82A9A89A2](http://cdn.mengqingshen.com/2017-07-16-76F93A8C-714F-4C91-9D2B-FCC82A9A89A2.png)
 
-![C6A49E48-C530-4D6C-A026-CE141C9A8E5A](http://o6ul1xz4z.bkt.clouddn.com/2017-07-16-C6A49E48-C530-4D6C-A026-CE141C9A8E5A.png)
+![C6A49E48-C530-4D6C-A026-CE141C9A8E5A](http://cdn.mengqingshen.com/2017-07-16-C6A49E48-C530-4D6C-A026-CE141C9A8E5A.png)
 
 
 
-![FE68F4DA-5362-4EB0-BC80-7FE0855280A3](http://o6ul1xz4z.bkt.clouddn.com/2017-07-16-FE68F4DA-5362-4EB0-BC80-7FE0855280A3.png)
+![FE68F4DA-5362-4EB0-BC80-7FE0855280A3](http://cdn.mengqingshen.com/2017-07-16-FE68F4DA-5362-4EB0-BC80-7FE0855280A3.png)
 
 （8）上传到蒲公英
 
-![6AA191CD-F623-4BD5-9603-4E2ED58CEAF3](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-6AA191CD-F623-4BD5-9603-4E2ED58CEAF3.png)
+![6AA191CD-F623-4BD5-9603-4E2ED58CEAF3](http://cdn.mengqingshen.com/2017-07-13-6AA191CD-F623-4BD5-9603-4E2ED58CEAF3.png)
 
 
 
-![6B3AFB60-9636-4D00-99AD-7C6C02B30BC4](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-6B3AFB60-9636-4D00-99AD-7C6C02B30BC4.png)
+![6B3AFB60-9636-4D00-99AD-7C6C02B30BC4](http://cdn.mengqingshen.com/2017-07-13-6B3AFB60-9636-4D00-99AD-7C6C02B30BC4.png)
 
 （9）将可下载安装包的网页链接发送给测试者
 
 
 
-![B420B1A9-B0D3-4104-9697-81DF74533406](http://o6ul1xz4z.bkt.clouddn.com/2017-07-13-B420B1A9-B0D3-4104-9697-81DF74533406.png)
+![B420B1A9-B0D3-4104-9697-81DF74533406](http://cdn.mengqingshen.com/2017-07-13-B420B1A9-B0D3-4104-9697-81DF74533406.png)
 
 ## 12.5 利用蒲公英做 BUG 探索测试
 
 - 测试覆盖率高
 - 测试报告很详尽
 
-![EAD302AA-631B-447B-BF1B-D49D02707514](http://o6ul1xz4z.bkt.clouddn.com/2017-07-16-EAD302AA-631B-447B-BF1B-D49D02707514.png)
+![EAD302AA-631B-447B-BF1B-D49D02707514](http://cdn.mengqingshen.com/2017-07-16-EAD302AA-631B-447B-BF1B-D49D02707514.png)
 
 # 13 二期课程-初识 Redux 框架
 
@@ -2628,7 +2628,7 @@ a === b // false
 
 ### 生命周期
 
-![895B60EC-1169-4555-A9C1-649E6A045070](http://o6ul1xz4z.bkt.clouddn.com/2017-07-05-895B60EC-1169-4555-A9C1-649E6A045070.png)
+![895B60EC-1169-4555-A9C1-649E6A045070](http://cdn.mengqingshen.com/2017-07-05-895B60EC-1169-4555-A9C1-649E6A045070.png)
 
 ### state(状态) 和 props(属性)
 
@@ -2637,7 +2637,7 @@ a === b // false
 
 ### 数据流
 
-![71CDB834-A9EB-442B-B5AA-48217B0AE5FE](http://o6ul1xz4z.bkt.clouddn.com/2017-07-05-71CDB834-A9EB-442B-B5AA-48217B0AE5FE.png)
+![71CDB834-A9EB-442B-B5AA-48217B0AE5FE](http://cdn.mengqingshen.com/2017-07-05-71CDB834-A9EB-442B-B5AA-48217B0AE5FE.png)
 
 如果子组件需要修改父组件的状态，可以通过 props 从父组件传递函数引用来达到目的。更进一步，如果兄弟组件之间要同步状态，也可以利用这个办法，只需要父组件和两个子组件都通过 props 传递状态进去，结合回调函数就可以实现。不过，仍然是很麻烦。
 
@@ -2700,7 +2700,7 @@ AppRegistry.registerComponent('App', () => App)
 
 ## 13.3 理解 Redux 工作原理和基本用法
 
-![EB0B0649-445B-4B89-9D53-34D37F951A12](http://o6ul1xz4z.bkt.clouddn.com/2017-07-05-EB0B0649-445B-4B89-9D53-34D37F951A12.png)
+![EB0B0649-445B-4B89-9D53-34D37F951A12](http://cdn.mengqingshen.com/2017-07-05-EB0B0649-445B-4B89-9D53-34D37F951A12.png)
 
 Redux 通过 Actions 监听所有动作，发送动作所携带的信息。然后 Reducers 来匹配到动作，内部消化并生成新的数据对象，再给 Store，Store 通过 Provider 这个虚拟容器分发给所有有关系的组件。
 
@@ -2860,7 +2860,7 @@ redux-thunk@2.0.1										\
 
 react-native-video 需要安装最新的还没有发布的版本，所以可以通过 github 地址来安装：
 
--![2A62A3BB-898B-4AB7-918E-8E7ACEC044DB](http://o6ul1xz4z.bkt.clouddn.com/2017-07-17-2A62A3BB-898B-4AB7-918E-8E7ACEC044DB.png)
+-![2A62A3BB-898B-4AB7-918E-8E7ACEC044DB](http://cdn.mengqingshen.com/2017-07-17-2A62A3BB-898B-4AB7-918E-8E7ACEC044DB.png)
 
 - 需要手动加载的依赖(ART)
 
@@ -2868,9 +2868,9 @@ react-native-video 需要安装最新的还没有发布的版本，所以可以�
 
 2> 添加
 
-![D193A546-8AF4-4F0C-B417-E6CBFD418398](http://o6ul1xz4z.bkt.clouddn.com/2017-07-17-D193A546-8AF4-4F0C-B417-E6CBFD418398.png)
+![D193A546-8AF4-4F0C-B417-E6CBFD418398](http://cdn.mengqingshen.com/2017-07-17-D193A546-8AF4-4F0C-B417-E6CBFD418398.png)
 
-![F006EB6D-F028-4D1A-8CC3-84C2C691B160](http://o6ul1xz4z.bkt.clouddn.com/2017-07-17-F006EB6D-F028-4D1A-8CC3-84C2C691B160.png)
+![F006EB6D-F028-4D1A-8CC3-84C2C691B160](http://cdn.mengqingshen.com/2017-07-17-F006EB6D-F028-4D1A-8CC3-84C2C691B160.png)
 
 - 需要修改源码才能通过编译的依赖(react-native-sk-countdown，这货代码台老旧了)
 
@@ -2983,7 +2983,7 @@ $ npm i eslint eslint-plugin-react babel-eslint --save-dev
 $ eslint --init
 ```
 
-![22B52F15-CB24-4194-9378-D16CE8DF80AC](http://o6ul1xz4z.bkt.clouddn.com/2017-08-05-22B52F15-CB24-4194-9378-D16CE8DF80AC.png)
+![22B52F15-CB24-4194-9378-D16CE8DF80AC](http://cdn.mengqingshen.com/2017-08-05-22B52F15-CB24-4194-9378-D16CE8DF80AC.png)
 
 ```js
 module.exports = {
@@ -3048,7 +3048,7 @@ module.exports = {
 }
 ```
 
-![F0E8CE23-D686-4701-AD9C-441FD7A4CC4D](http://o6ul1xz4z.bkt.clouddn.com/2017-08-05-F0E8CE23-D686-4701-AD9C-441FD7A4CC4D.png)
+![F0E8CE23-D686-4701-AD9C-441FD7A4CC4D](http://cdn.mengqingshen.com/2017-08-05-F0E8CE23-D686-4701-AD9C-441FD7A4CC4D.png)
 
 （2）使用 react-navigation 重构 Tab
 
@@ -3072,7 +3072,7 @@ module.exports = {
 
 ## 14.11 抽象主要页面的容器组件
 
-![B993348E-F26A-4B43-B946-2EE3252F5DD1](http://o6ul1xz4z.bkt.clouddn.com/2017-10-15-B993348E-F26A-4B43-B946-2EE3252F5DD1.png)
+![B993348E-F26A-4B43-B946-2EE3252F5DD1](http://cdn.mengqingshen.com/2017-10-15-B993348E-F26A-4B43-B946-2EE3252F5DD1.png)
 
 ## 14.12 实现评论与详情页的跳转和数据更新
 
@@ -3124,11 +3124,11 @@ rm -rf /usr/local/opt/android-sdk
 
 （5）Android Studio
 
-![606AFCED-4B44-4AAE-A095-3EF0ABAF7326](http://o6ul1xz4z.bkt.clouddn.com/2017-11-06-606AFCED-4B44-4AAE-A095-3EF0ABAF7326.png)
+![606AFCED-4B44-4AAE-A095-3EF0ABAF7326](http://cdn.mengqingshen.com/2017-11-06-606AFCED-4B44-4AAE-A095-3EF0ABAF7326.png)
 
-![44142CD3-8957-429A-9A74-B6796BECB678](http://o6ul1xz4z.bkt.clouddn.com/2017-11-06-44142CD3-8957-429A-9A74-B6796BECB678.png)
+![44142CD3-8957-429A-9A74-B6796BECB678](http://cdn.mengqingshen.com/2017-11-06-44142CD3-8957-429A-9A74-B6796BECB678.png)
 
-![44C44FC0-4AE9-4693-9343-3CD291A18054](http://o6ul1xz4z.bkt.clouddn.com/2017-11-06-44C44FC0-4AE9-4693-9343-3CD291A18054.png)
+![44C44FC0-4AE9-4693-9343-3CD291A18054](http://cdn.mengqingshen.com/2017-11-06-44C44FC0-4AE9-4693-9343-3CD291A18054.png)
 
 
 
@@ -3153,11 +3153,11 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 有因为 GFW 需要设置代理的情况。以我的情况为例，自建的 SS 服务，客户端用 [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG/releases/)（mac），本地 Sock5 情况如下：
 
-![64046913-3407-4605-B5A4-4329D30BD93C](http://o6ul1xz4z.bkt.clouddn.com/2017-11-05-64046913-3407-4605-B5A4-4329D30BD93C.png)
+![64046913-3407-4605-B5A4-4329D30BD93C](http://cdn.mengqingshen.com/2017-11-05-64046913-3407-4605-B5A4-4329D30BD93C.png)
 
 因此代理配置如下：
 
-![542244D0-3A48-4316-A243-D4EC8D73FBB4](http://o6ul1xz4z.bkt.clouddn.com/2017-11-05-542244D0-3A48-4316-A243-D4EC8D73FBB4.png)
+![542244D0-3A48-4316-A243-D4EC8D73FBB4](http://cdn.mengqingshen.com/2017-11-05-542244D0-3A48-4316-A243-D4EC8D73FBB4.png)
 
 
 
@@ -3177,7 +3177,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 **注意：**可能会遇到 HAXM 问题，如下：
 
-![9F50865F-B4A1-4877-94DD-C80FD752DA32](http://o6ul1xz4z.bkt.clouddn.com/2017-11-06-9F50865F-B4A1-4877-94DD-C80FD752DA32.png)
+![9F50865F-B4A1-4877-94DD-C80FD752DA32](http://cdn.mengqingshen.com/2017-11-06-9F50865F-B4A1-4877-94DD-C80FD752DA32.png)
 
 
 
@@ -3188,9 +3188,9 @@ $ cd ~/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager
 $ open .
 ```
 
-![AA72B00B-9522-4D35-84AB-BF44D7AA62A5](http://o6ul1xz4z.bkt.clouddn.com/2017-11-06-AA72B00B-9522-4D35-84AB-BF44D7AA62A5.png)
+![AA72B00B-9522-4D35-84AB-BF44D7AA62A5](http://cdn.mengqingshen.com/2017-11-06-AA72B00B-9522-4D35-84AB-BF44D7AA62A5.png)
 
-![7C59FDD1-4A03-413E-8DB3-0EF9FE5E97CE](http://o6ul1xz4z.bkt.clouddn.com/2017-11-06-7C59FDD1-4A03-413E-8DB3-0EF9FE5E97CE.png)
+![7C59FDD1-4A03-413E-8DB3-0EF9FE5E97CE](http://cdn.mengqingshen.com/2017-11-06-7C59FDD1-4A03-413E-8DB3-0EF9FE5E97CE.png)
 
 
 
@@ -3207,7 +3207,7 @@ sdk.dir=/Users/tonyearth/Library/Android/sdk
 
 **注意**：启动过程中会首先下载一些文件，其中如果某些文件下载特别慢，可以自己手动下载下来。以我的为例
 
-![C1D87B4D-C6AA-4D83-91ED-7E2A2E7784B5](http://o6ul1xz4z.bkt.clouddn.com/2017-11-07-C1D87B4D-C6AA-4D83-91ED-7E2A2E7784B5.png)
+![C1D87B4D-C6AA-4D83-91ED-7E2A2E7784B5](http://cdn.mengqingshen.com/2017-11-07-C1D87B4D-C6AA-4D83-91ED-7E2A2E7784B5.png)
 
 下载 `gradle-2.14.1-all.zip `虽然很慢，但最后还是下载成功了，因为代理的问题最后还是启动失败了，为了第二次启动不要浪费太多时间，直接通过迅雷下载，然后
 
@@ -3241,7 +3241,7 @@ $ adb reverse tcp:1234 tcp:1234
 
 - 呼出启动 debug menu: `command + m`
 
-![DE81535F-227A-482C-A0E0-31E078CB7D85](http://o6ul1xz4z.bkt.clouddn.com/2017-11-07-DE81535F-227A-482C-A0E0-31E078CB7D85.png)
+![DE81535F-227A-482C-A0E0-31E078CB7D85](http://cdn.mengqingshen.com/2017-11-07-DE81535F-227A-482C-A0E0-31E078CB7D85.png)
 
 
 
@@ -3276,7 +3276,7 @@ dependencies {
 
 `Tools>Android>Android Device Monitor`
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2017-11-13-190730.png)
+![](http://cdn.mengqingshen.com/2017-11-13-190730.png)
 
 # 总结
 

@@ -425,7 +425,7 @@ for(let x of iterTree(tree)) {
 ```
 
 *Demo3: 使用`yield*`语句遍历完全二叉树*
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-09%20%E4%B8%8B%E5%8D%884.38.35.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-09%20%E4%B8%8B%E5%8D%884.38.35.png)
 
 
 ```javascript

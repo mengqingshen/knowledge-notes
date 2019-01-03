@@ -13,7 +13,7 @@ categories:
 **课程说明：** Flexbox 布局的基本原理和方法
 **说明：**`Flexbox`是`css3`里边引入的布局模型－弹性盒子模型，旨在通过弹性的方式来对齐和分布容器中内容的空间，使其能够适应不同屏幕的高度。`React Native`中`Flexbox`是这个规范的一个子集。
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473689485972.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473689485972.png)
 
 ### 1.1 Flexbox解决了什么问题？
 + 浮动布局
@@ -21,7 +21,7 @@ categories:
 + 宽度自动分配
 + 水平垂直居中
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473689609237.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473689609237.png)
 
 ### 1.2 Flexbox 属性
 
@@ -35,17 +35,17 @@ justifyContent|enum(`flex-start`、`flex-end`、`center`、`space-between`、`sp
 
 ***
 **（1）flexDirection**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473689934368.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473689934368.png)
 ***
 **（2）flexWrap**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473690320187.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473690320187.png)
 
 ***
 **（3）alignItems**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473690365231.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473690365231.png)
 ***
 **（4）justifyContent**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473690550451.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473690550451.png)
 
 #### 1.2.2 容器属性
 元素属性|类型|说明
@@ -54,7 +54,7 @@ flex|number|item 在 `main axis`方向上占用空间大小
 alignSelf|enum(`flext-start`、`flex-end`、`center`、`stretch`)|针对单一的item 在`cross axis`方向上的`alignItems`
 
 **（1）flex**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473690728595.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473690728595.png)
 
 **（2）alignSelf**
 
@@ -122,7 +122,7 @@ var pixelRation = PixelRatio.get();
 
 ### 2.3 盒子模型
 `w3c盒模型`的子集
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473742982007.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473742982007.png)
 
 ### 2.4 定位模式
 **说明：**支持`absolute`和`relative`定位
@@ -181,7 +181,7 @@ var pixelRation = PixelRatio.get();
 
 ### 本地图片
 **（1）使用静态资源，先将静态资源引入项目，重新编译**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473757025709.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473757025709.png)
 
 **（2）通过 `require('image!name')`的方式引入**
 ```javascript
@@ -196,7 +196,7 @@ var pixelRation = PixelRatio.get();
 -|-|-
 resizeMode|enum(`cover`, `contain`, `stretch`)|改变图片显示效果，类似`css`的背景模式
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473757592882.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473757592882.png)
 
 ### 3.3 Image 嵌套其它组件
 **说明：**不同于`html`中的`Image`元素，`Reactive Native`中的`Image`可嵌套其它元素

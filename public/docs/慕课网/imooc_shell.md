@@ -184,8 +184,8 @@ $ unalias ls
 
 ### 1.5.2	输出重定向
 **注意：**`2>>`和`2>`两边不能带空格。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8A%E5%8D%888.18.42.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8A%E5%8D%888.26.33.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8A%E5%8D%888.18.42.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8A%E5%8D%888.26.33.png)
 
 ### 1.5.3	输入重定向
 `wc [选项] ［文件名］`：
@@ -238,7 +238,7 @@ $ wc << endflag
 ## 1.6	管道符
 
 ### 1.6.1	命令执行的判断依据
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8A%E5%8D%888.48.32.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8A%E5%8D%888.48.32.png)
 
 ```bash
 #如果存在/tmp/abc就创建/tmp/abc/hehe，否则不创建
@@ -291,7 +291,7 @@ $ last | tee -a last.list | cut -d ' ' -f 1
 ```
 
 ## 1.7	通配符
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8B%E5%8D%8810.57.06.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8B%E5%8D%8810.57.06.png)
 
 ```bash
 $ ls index*
@@ -299,7 +299,7 @@ $ ls index*
 ```
 
 ## 1.8	Bash中的其他特殊符号
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8B%E5%8D%8811.03.32.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-03%20%E4%B8%8B%E5%8D%8811.03.32.png)
 
 
 # 2	Bash变量与变量分类
@@ -438,7 +438,7 @@ $ locale -a | more
 3. 如果纯字符界面，必须使用第三方插件（如zhcon等）
 
 ## 2.5	位置参数变量
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-04%20%E4%B8%8B%E5%8D%881.33.53.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-04%20%E4%B8%8B%E5%8D%881.33.53.png)
 
 ```bash
 $ vim sum.sh
@@ -477,7 +477,7 @@ $ bash test.sh 1 3 4 5
 ```
 
 ## 2.6	预定义变量
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-04%20%E4%B8%8B%E5%8D%884.44.07.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-04%20%E4%B8%8B%E5%8D%884.44.07.png)
 
 ```bash
 $ echo $$
@@ -629,13 +629,13 @@ $ echo $ff
 
 ## 3.3 运算符
 `优先级递减`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-05%20%E4%B8%8A%E5%8D%889.19.23.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-05%20%E4%B8%8A%E5%8D%889.19.23.png)
 
 
 ## 3.4 变量测试
 **优点：**语法简单，效率高
 **缺点：** 理解困难
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-05%20%E4%B8%8B%E5%8D%883.21.28.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-05%20%E4%B8%8B%E5%8D%883.21.28.png)
 
 ```bash
 $ unset y
@@ -663,7 +663,7 @@ $ echo $x
 6. for循环
 7. while循环和util循环
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-05%20%E4%B8%8B%E5%8D%8811.22.09.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-05%20%E4%B8%8B%E5%8D%8811.22.09.png)
 
 ```bash
 $ [ -e ./sum.sh ] && echo yes || echo no
@@ -675,10 +675,10 @@ $ echo $?
 ```
 
 ### 4.1.3	按文件权限判断
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%889.49.39.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%889.49.39.png)
 
 ### 4.1.4	两个文件之间的比较
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%8810.51.23.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%8810.51.23.png)
 
 ```bash
 #创建硬链接
@@ -690,7 +690,7 @@ $ [ /root/student.txt -ef /tmp/stu.txt ] && echo yes || echo no
 ```
 
 ### 4.1.5	两个整数之间的比较
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%8810.57.02.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%8810.57.02.png)
 
 ```bash
 $ [ 23 -ge 22 ] && echo yes || echo no
@@ -705,7 +705,7 @@ $ shell  [ 23 -le 22 ] && echo yes || echo no
 1. 判断字符串是否相等也可以使用`=`代替`==`，但容易和赋值操作混淆，因此不推荐。
 2. 用`$变量`访问变量如果出现异常可以尝试在外面加上`"`
 3. 比较数字大小一般也可以用比较字串来替代
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%8811.02.12.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%8811.02.12.png)
 
 ```bash
 $ name=gui
@@ -725,7 +725,7 @@ yes
 ```
 
 ### 4.1.7	多重条件判断
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%8811.11.00.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-06-06%20%E4%B8%8A%E5%8D%8811.11.00.png)
 
 ```bash
 $ a=22

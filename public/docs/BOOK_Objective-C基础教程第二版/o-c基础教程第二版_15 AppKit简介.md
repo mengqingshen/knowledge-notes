@@ -35,7 +35,7 @@ categories:
 >+ **nib文件：**编译时，`.xib`(`XML`格式)文件会被编译为`nib(NeXT Interface Builder)`文件，它是包含了压缩对象的二进制文件，
 >+ **对象库：**包含了大量可以拖入窗口的不同类型的对象。
 >
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-25%20%E4%B8%8B%E5%8D%8810.17.36.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-25%20%E4%B8%8B%E5%8D%8810.17.36.png)
 
 
 ## 15.4	设计用户界面
@@ -44,7 +44,7 @@ categories:
 >2. 拖入一个`Label`
 >3. 拖入一个`push button`
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-25%20%E4%B8%8B%E5%8D%8810.42.36.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-25%20%E4%B8%8B%E5%8D%8810.42.36.png)
 
 
 ## 15.5	创建连接

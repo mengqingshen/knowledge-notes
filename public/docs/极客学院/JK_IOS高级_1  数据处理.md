@@ -16,7 +16,7 @@ categories:
 >**课程说明：**本课讲解如何解析plist数组。
 
 *TestArr.plist*
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-16%20%E4%B8%8B%E5%8D%8811.46.38.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-16%20%E4%B8%8B%E5%8D%8811.46.38.png)
 
 *ViewController.swift*
 
@@ -43,7 +43,7 @@ Optional((
 >**课程说明：**本课讲解如何解析`plist`字典。
 
 *TestDic.plist*
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1460822236961.png)
+![Alt text](http://cdn.mengqingshen.com/img/1460822236961.png)
 *ViewController.swift*
 
 ```swift
@@ -68,11 +68,11 @@ Optional({
 
 ### SQLite
 >**官网：**http://sqlite.org/
->![案例| 200x150](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_coredata.gif)
+>![案例| 200x150](http://cdn.mengqingshen.com/img/JK_IOS_coredata.gif)
 
 ### 1.2.1	创建使用`CoreData`的项目
 >**课程说明：**本课介绍`SQLite`以及如何创建一个使用`CoreData`的项目。
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%883.32.25.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%883.32.25.png)
 
 ```swift
 // 操作sqlite的上下文环境
@@ -81,7 +81,7 @@ let context = (UIApplication.sharedApplication().delegate as! AppDelegate).manag
 
 ### 1.2.2	设计数据结构
 >**课程说明：**本课介绍如何使用`Xcode`设计数据库的结构。
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%883.40.34.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%883.40.34.png)
 
 
 ### 1.2.3	插入数据 
@@ -120,7 +120,7 @@ class ViewController: UIViewController {
 ```
 
 #### 1.2.3.2	查看`SQLite`文件地址
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%886.00.14.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%886.00.14.png)
 *AppDelegate.swift*
 
 ```swift
@@ -396,7 +396,7 @@ class ViewController: UIViewController, NSXMLParserDelegate {
 
 ### 1.5.2	存储用户首选项数据
 >**课程说明：**本课讲解如何存储用户首选项数据
->![Alt text|200x350](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_shouxuanxiang.gif)
+>![Alt text|200x350](http://cdn.mengqingshen.com/img/JK_IOS_shouxuanxiang.gif)
 
 *ViewController.swift*
 
@@ -445,7 +445,7 @@ class ViewController: UIViewController {
 
 ### 1.5.4	启动时小贴士实例
 >**课程说明：**本课用一个小实例演示用户首选项数据的使用场景
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_tip.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_tip.gif)
 
 ```swift
 import UIKit

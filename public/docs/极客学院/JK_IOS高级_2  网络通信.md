@@ -92,7 +92,7 @@ class ViewController: UIViewController {
 #### 2.2.3.1	安装 Apache Tomcat
 >**下载 Apache Tomcat：**http://tomcat.apache.org/download-80.cgi
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.30.32.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.30.32.png)
 
 ```bash
 $ sudo mkdir -p /usr/local
@@ -111,19 +111,19 @@ $ sudo chown -R  tonyearth /Library/Tomcat8/bin/*.sh
 
 ##### 创建Dynamic Web Project
 1. 开始创建新项目
-![Alt text|300x150](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.35.45.png)
+![Alt text|300x150](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.35.45.png)
 2. New Runtime
-![Alt text|300x200](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.35.56.png)
+![Alt text|300x200](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.35.56.png)
 3. 选择前面安装好的 Tomecat8 的安装目录
-![Alt text|300x120](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.35.17.png)
+![Alt text|300x120](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.35.17.png)
 4. 创建 JSP文件 测试
-![Alt text|300x200](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.39.14.png)
+![Alt text|300x200](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.39.14.png)
 
 
 ### 2.2.4	通过GET/POST方式与服务器通信
 
 #### 2.2.4.1	后端
-![Alt text|200x200](http://o6ul1xz4z.bkt.clouddn.com/img/1461253557430.png)
+![Alt text|200x200](http://cdn.mengqingshen.com/img/1461253557430.png)
 
 *returnParas.jsp*
 
@@ -145,7 +145,7 @@ else {
 #### 2.2.4.2	客户端
 >**注意：**下面请求使用的`API`在`iOS9`中已过时
 >**技巧：**网络请求交给子线程而不是主线程处理，不占用主线程的资源，从而不带来界面卡顿的问题
-![Alt text|300x200](http://o6ul1xz4z.bkt.clouddn.com/img/1462710986603_get.gif)
+![Alt text|300x200](http://cdn.mengqingshen.com/img/1462710986603_get.gif)
 
 ```swift
 import UIKit

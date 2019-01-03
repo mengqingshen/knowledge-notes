@@ -29,21 +29,21 @@ typora-copy-images-to: ipic
 
 ## 1.1 /etc/passwd
 
-![0C2B36EE-892B-4015-9C48-94CC8B3B0F96](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-0C2B36EE-892B-4015-9C48-94CC8B3B0F96.png)
+![0C2B36EE-892B-4015-9C48-94CC8B3B0F96](http://cdn.mengqingshen.com/2017-04-21-0C2B36EE-892B-4015-9C48-94CC8B3B0F96.png)
 
-![B3B403F4-B85D-4F01-B3F8-A744B904FF97](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-B3B403F4-B85D-4F01-B3F8-A744B904FF97.png)
+![B3B403F4-B85D-4F01-B3F8-A744B904FF97](http://cdn.mengqingshen.com/2017-04-21-B3B403F4-B85D-4F01-B3F8-A744B904FF97.png)
 
-![C187449A-BD80-42BE-B19A-CC015189480C](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-C187449A-BD80-42BE-B19A-CC015189480C.png)
+![C187449A-BD80-42BE-B19A-CC015189480C](http://cdn.mengqingshen.com/2017-04-21-C187449A-BD80-42BE-B19A-CC015189480C.png)
 
 ## 1.2 /etc/shadow
 
-![4AF8EA21-281D-4410-8122-4E7C95FD0A27](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-4AF8EA21-281D-4410-8122-4E7C95FD0A27.png)
+![4AF8EA21-281D-4410-8122-4E7C95FD0A27](http://cdn.mengqingshen.com/2017-04-21-4AF8EA21-281D-4410-8122-4E7C95FD0A27.png)
 
-![41ADC233-E4D6-4FE1-BAAA-66AA46E59734](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-41ADC233-E4D6-4FE1-BAAA-66AA46E59734.png)
+![41ADC233-E4D6-4FE1-BAAA-66AA46E59734](http://cdn.mengqingshen.com/2017-04-21-41ADC233-E4D6-4FE1-BAAA-66AA46E59734.png)
 
 ## 1.3  找回丢失的密码
 
-![4D06D232-DC7E-442A-9BE3-4EB790C03732](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-4D06D232-DC7E-442A-9BE3-4EB790C03732.png)
+![4D06D232-DC7E-442A-9BE3-4EB790C03732](http://cdn.mengqingshen.com/2017-04-21-4D06D232-DC7E-442A-9BE3-4EB790C03732.png)
 
 # 2 改变默认 home 目录
 
@@ -52,11 +52,11 @@ typora-copy-images-to: ipic
 # 3 /sbin/nologin
 
 `/sbin/nologin`这个sheel可以让用户在不获得sheel环境，可以用来做为纯pop邮件帐号
-![C2355F13-6CFA-4600-8209-793FC5E5C02F](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-C2355F13-6CFA-4600-8209-793FC5E5C02F.png)
+![C2355F13-6CFA-4600-8209-793FC5E5C02F](http://cdn.mengqingshen.com/2017-04-21-C2355F13-6CFA-4600-8209-793FC5E5C02F.png)
 
-![1C1DEC0B-A048-48E8-A8F1-BBDAA1D50781](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-1C1DEC0B-A048-48E8-A8F1-BBDAA1D50781.png)
+![1C1DEC0B-A048-48E8-A8F1-BBDAA1D50781](http://cdn.mengqingshen.com/2017-04-21-1C1DEC0B-A048-48E8-A8F1-BBDAA1D50781.png)
 
-![BE41DC14-1FF2-4227-9E74-79EB5B2E80F8](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-BE41DC14-1FF2-4227-9E74-79EB5B2E80F8.png)
+![BE41DC14-1FF2-4227-9E74-79EB5B2E80F8](http://cdn.mengqingshen.com/2017-04-21-BE41DC14-1FF2-4227-9E74-79EB5B2E80F8.png)
 
 # 4 关于群组
 
@@ -64,7 +64,7 @@ typora-copy-images-to: ipic
 
 ## 4.1 /etc/group
 
-![62A6A107-D3C8-433F-9BCF-D06991BBF9E0](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-62A6A107-D3C8-433F-9BCF-D06991BBF9E0.png)
+![62A6A107-D3C8-433F-9BCF-D06991BBF9E0](http://cdn.mengqingshen.com/2017-04-21-62A6A107-D3C8-433F-9BCF-D06991BBF9E0.png)
 
 
 ```bash
@@ -91,7 +91,7 @@ $ useradd vbird1
 $ sudo passwd vbird1 # 设置密码
 ```
 
-![1F45EE06-677C-4702-A678-20B75DA9AD73](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-1F45EE06-677C-4702-A678-20B75DA9AD73.png)
+![1F45EE06-677C-4702-A678-20B75DA9AD73](http://cdn.mengqingshen.com/2017-04-21-1F45EE06-677C-4702-A678-20B75DA9AD73.png)
 
 **-u /-g**
 
@@ -108,7 +108,7 @@ $ useadd -r bird3   # 创建系统账号，不会主动建立家目录
 **4.useradd参考档**
 查看useradd的默认情况
 
-![E37231C6-1C72-4300-B1D8-8501D3AA5E7B](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-E37231C6-1C72-4300-B1D8-8501D3AA5E7B.png)
+![E37231C6-1C72-4300-B1D8-8501D3AA5E7B](http://cdn.mengqingshen.com/2017-04-21-E37231C6-1C72-4300-B1D8-8501D3AA5E7B.png)
 
 ```bash
 GROUP=100
@@ -122,11 +122,11 @@ CREATE_MAIL_SPOOL=no     # ==no时不会在/var/spool/mail下建立文档
 
 **5.UID/GID默认参考档:/etc/login.defs**
 
-![00C22494-F641-4F8A-8759-93F11BA4D8D9](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-00C22494-F641-4F8A-8759-93F11BA4D8D9.png)
+![00C22494-F641-4F8A-8759-93F11BA4D8D9](http://cdn.mengqingshen.com/2017-04-21-00C22494-F641-4F8A-8759-93F11BA4D8D9.png)
 
-![6B065755-B4F5-4B7A-9C4D-BCC9D1295CD3](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-6B065755-B4F5-4B7A-9C4D-BCC9D1295CD3.png)
+![6B065755-B4F5-4B7A-9C4D-BCC9D1295CD3](http://cdn.mengqingshen.com/2017-04-21-6B065755-B4F5-4B7A-9C4D-BCC9D1295CD3.png)
 
-![D9F62C51-2C09-4342-A448-2794D3AAE392](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-D9F62C51-2C09-4342-A448-2794D3AAE392.png)
+![D9F62C51-2C09-4342-A448-2794D3AAE392](http://cdn.mengqingshen.com/2017-04-21-D9F62C51-2C09-4342-A448-2794D3AAE392.png)
 
 
 # 5.使用standard input建立用户的密码
@@ -135,7 +135,7 @@ CREATE_MAIL_SPOOL=no     # ==no时不会在/var/spool/mail下建立文档
 $ sudo echo "truman"  | passwd --stdin vbird1
 ```
 
-![83479858-21B6-4F64-A157-733AD7BF70DD](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-83479858-21B6-4F64-A157-733AD7BF70DD.png)
+![83479858-21B6-4F64-A157-733AD7BF70DD](http://cdn.mengqingshen.com/2017-04-21-83479858-21B6-4F64-A157-733AD7BF70DD.png)
 
 # 6. passwd命令
 
@@ -165,7 +165,7 @@ $ sudo grep yxl /etc/shadow
 $ sudo chage -l yxl # 查看yxl的详细密码属性信息（比passwd -S好用多了）
 ```
 
-![0E372DCD-3F35-46C4-80BF-9F67F1A4D2F7](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-0E372DCD-3F35-46C4-80BF-9F67F1A4D2F7.png)
+![0E372DCD-3F35-46C4-80BF-9F67F1A4D2F7](http://cdn.mengqingshen.com/2017-04-21-0E372DCD-3F35-46C4-80BF-9F67F1A4D2F7.png)
 
 
 ## 案例1
@@ -178,7 +178,7 @@ $ sudo sudo chage -d 0 nemo
 ```
 # 8.usermod
 
-![1AC96545-A23D-4D96-AC7F-9625F4D221BC](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-1AC96545-A23D-4D96-AC7F-9625F4D221BC.png)
+![1AC96545-A23D-4D96-AC7F-9625F4D221BC](http://cdn.mengqingshen.com/2017-04-21-1AC96545-A23D-4D96-AC7F-9625F4D221BC.png)
 
 **案例一: 修改yxl的说明栏**
 
@@ -204,7 +204,7 @@ $ sudo chmod 700 /home/nemo    # 改变目录的权限
 
 # 9 userdel
 
-![3AF64043-2EC7-4163-8828-AF924FD4358C](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-3AF64043-2EC7-4163-8828-AF924FD4358C.png)
+![3AF64043-2EC7-4163-8828-AF924FD4358C](http://cdn.mengqingshen.com/2017-04-21-3AF64043-2EC7-4163-8828-AF924FD4358C.png)
 
 ☑ 注意：如果只是暂时不想让该用户存在，可以考虑将密码帐号有效剩余天数（`/etc/shadow`）设为0或者`passwd -d username`删掉密码。只有确定可以完全清楚哦某个账户时 才考虑userdel.
 
@@ -215,7 +215,7 @@ $ sudo userdel -r vbird1 # 连同vbird1的home目录一起清除
 
 # 10 finger
 
-![64C5B158-6C77-4981-961F-E3058C9595DA](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-64C5B158-6C77-4981-961F-E3058C9595DA.png)
+![64C5B158-6C77-4981-961F-E3058C9595DA](http://cdn.mengqingshen.com/2017-04-21-64C5B158-6C77-4981-961F-E3058C9595DA.png)
 
 ## 案例一
 
@@ -402,7 +402,7 @@ $ mount |grep acl
 
 ## 15.2 acl的使用技巧
 
-![4C0A45BA-615E-4B83-910C-A0A7D311908A](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-4C0A45BA-615E-4B83-910C-A0A7D311908A.png)
+![4C0A45BA-615E-4B83-910C-A0A7D311908A](http://cdn.mengqingshen.com/2017-04-21-4C0A45BA-615E-4B83-910C-A0A7D311908A.png)
 
 ### 案例一
 在 test 中创建一个文档 acl_test1 并使用 setfacl对acl_test1 的权限进行设置
@@ -466,7 +466,7 @@ $ sudo -u yxl sh -c "mkdir ~yxl/www;cd ~yxl/www; echo 'This is index.html file' 
 
 ### 15.3.3 visudo和/etc/sudoers
 
-![EDB11C6A-7F64-4570-970C-E9EA30B93AD7](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-EDB11C6A-7F64-4570-970C-E9EA30B93AD7.png)
+![EDB11C6A-7F64-4570-970C-E9EA30B93AD7](http://cdn.mengqingshen.com/2017-04-21-EDB11C6A-7F64-4570-970C-E9EA30B93AD7.png)
 
 **案例一**：让 yxl 可以通过 sudo 切换为 root ，限制仅可以使用 passwd 帮助 anderson 修改帐号的密码，但不能修改 anderson 的密码
 
@@ -502,7 +502,7 @@ $ sudo visudo
 
 ### 15.4.2  passwd呼叫PAM接口的过程
 
-   ![A1D7EE37-F0CA-4094-AEA1-E0B7B8630812](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-A1D7EE37-F0CA-4094-AEA1-E0B7B8630812.png)
+   ![A1D7EE37-F0CA-4094-AEA1-E0B7B8630812](http://cdn.mengqingshen.com/2017-04-21-A1D7EE37-F0CA-4094-AEA1-E0B7B8630812.png)
 
 ----
 **以下的学习平台更换为centos 6.4 on vmware 10.0.1**
@@ -539,18 +539,18 @@ pam_limits.so
 
 
 
-![2E16B4A0-AD06-43D9-B9A5-7251C76D33DA](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-2E16B4A0-AD06-43D9-B9A5-7251C76D33DA.png)
+![2E16B4A0-AD06-43D9-B9A5-7251C76D33DA](http://cdn.mengqingshen.com/2017-04-21-2E16B4A0-AD06-43D9-B9A5-7251C76D33DA.png)
 
-![AAE51217-F441-4A91-825D-6E4DAC4B1C5B](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-AAE51217-F441-4A91-825D-6E4DAC4B1C5B.png)
+![AAE51217-F441-4A91-825D-6E4DAC4B1C5B](http://cdn.mengqingshen.com/2017-04-21-AAE51217-F441-4A91-825D-6E4DAC4B1C5B.png)
 
 #### 案例
 
 为什么root无法以telnet远程登录系统，但是却可以使用ssh直接登入？
-![0E1903FC-C609-4615-8FF1-AEE5735024C5](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-0E1903FC-C609-4615-8FF1-AEE5735024C5.png)
+![0E1903FC-C609-4615-8FF1-AEE5735024C5](http://cdn.mengqingshen.com/2017-04-21-0E1903FC-C609-4615-8FF1-AEE5735024C5.png)
 
 ### 15.4.5 pam验证机制流程
 
-   ![FC4B8898-2421-489B-9E08-AD9641CD4C62](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-FC4B8898-2421-489B-9E08-AD9641CD4C62.png)
+   ![FC4B8898-2421-489B-9E08-AD9641CD4C62](http://cdn.mengqingshen.com/2017-04-21-FC4B8898-2421-489B-9E08-AD9641CD4C62.png)
 
 ### 15.4.6 其它pam相关档案及其设定
 **/etc/security/limits.conf**
@@ -595,7 +595,7 @@ $ last  # 查最近一个月的登录记录
 $ lastlog # 查看所有账号最近一次的登陆
 ```
 
-![9AAF82B7-4E27-41FF-AFF4-5BCED362A3A7](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-9AAF82B7-4E27-41FF-AFF4-5BCED362A3A7.png)
+![9AAF82B7-4E27-41FF-AFF4-5BCED362A3A7](http://cdn.mengqingshen.com/2017-04-21-9AAF82B7-4E27-41FF-AFF4-5BCED362A3A7.png)
 
 ### 15.5.2 不同账号之间对话 write,mesg,wall
 案例一：打开两个终端，向另一个终端上的自己发送信息：hi,don't do anything stuipid!
@@ -647,7 +647,7 @@ $ mail    <==>  $ mail -f /var/mail/anderson
 
 几个常见的指令：h d s x q
 
-![DC216841-F268-4F11-A36B-D98E875054E6](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-DC216841-F268-4F11-A36B-D98E875054E6.png)
+![DC216841-F268-4F11-A36B-D98E875054E6](http://cdn.mengqingshen.com/2017-04-21-DC216841-F268-4F11-A36B-D98E875054E6.png)
 
 ## 15.6 手动建立帐号
 ### 15.6.1 帐号检查工具
@@ -683,7 +683,7 @@ $ sudo chown -R nobody:nobodyteam   /home/nobody
 $ sudo chmod 700 /home/nobody 
 ```
 
-![47ABA6C2-B19A-4EF9-8B5B-EF5E539F69E0](http://o6ul1xz4z.bkt.clouddn.com/2017-04-21-47ABA6C2-B19A-4EF9-8B5B-EF5E539F69E0.png)
+![47ABA6C2-B19A-4EF9-8B5B-EF5E539F69E0](http://cdn.mengqingshen.com/2017-04-21-47ABA6C2-B19A-4EF9-8B5B-EF5E539F69E0.png)
 
 案例二：大量建立账号脚本
 

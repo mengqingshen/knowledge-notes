@@ -15,7 +15,7 @@ tag:
 |集合（Sets）|无序无重复数据的集|
 |字典（Dictionaries）|无序的键值对的值|
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-11-25%20%E4%B8%8B%E5%8D%8811.16.16.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-11-25%20%E4%B8%8B%E5%8D%8811.16.16.png)
 
 ## 4.1	集合的可变性
 >**说明：**集合的可变性依赖于声明为常量或变量。
@@ -422,7 +422,7 @@ for genre in favoriteGenres.sort() {
 |差|exclusive|
 |并|union|
 |补|subtract|
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-11-29%20%E4%B8%8B%E5%8D%884.04.29.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-11-29%20%E4%B8%8B%E5%8D%884.04.29.png)
 
 ```swift
 // 奇数

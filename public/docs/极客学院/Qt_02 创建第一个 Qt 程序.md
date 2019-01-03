@@ -106,7 +106,7 @@ ework QtGui -framework QtCore -framework DiskArbitration -framework IOKit -frame
 $ open l01_HelloQt.app
 ```
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872304136613.jpg)
+![](http://cdn.mengqingshen.com/14872304136613.jpg)
 
 ## 1.3 Qt 程序编译方式
 
@@ -145,22 +145,22 @@ $ qmake -spec macx-g++ hello.pro # 在 /Applications/Qt/5.8/clang_64/mkspecs 下
 
 #### 创建项目
 第一步：创建哪种应用类型
-![](http://o6ul1xz4z.bkt.clouddn.com/14872500173981.jpg)
+![](http://cdn.mengqingshen.com/14872500173981.jpg)
 
 第二步：项目名称和存储位置
-![](http://o6ul1xz4z.bkt.clouddn.com/14872503914274.jpg)
+![](http://cdn.mengqingshen.com/14872503914274.jpg)
 
 第三步：使用哪些工具集
-![](http://o6ul1xz4z.bkt.clouddn.com/14872512629027.jpg)
+![](http://cdn.mengqingshen.com/14872512629027.jpg)
 
 第四步：初始化时的项目文件名等细节
-![](http://o6ul1xz4z.bkt.clouddn.com/14872516089598.jpg)
+![](http://cdn.mengqingshen.com/14872516089598.jpg)
 
 第五步：项目管理（版本管理等）
-![](http://o6ul1xz4z.bkt.clouddn.com/14872531853436.jpg)
+![](http://cdn.mengqingshen.com/14872531853436.jpg)
 
 #### 项目开发
-![](http://o6ul1xz4z.bkt.clouddn.com/14872534456245.jpg)
+![](http://cdn.mengqingshen.com/14872534456245.jpg)
 
 *mainwindow.cpp*
 
@@ -183,21 +183,21 @@ MainWindow::~MainWindow()
 ```
 
 #### 运行效果
-![](http://o6ul1xz4z.bkt.clouddn.com/14872538489953.jpg)
+![](http://cdn.mengqingshen.com/14872538489953.jpg)
 
 ### 2.1.2 使用 QtDesigner
 #### 创建项目
 **说明：** 创建项目时`勾选创建界面`即可使用 QtDesigner。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872580908438.jpg)
+![](http://cdn.mengqingshen.com/14872580908438.jpg)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872584518084.jpg)
+![](http://cdn.mengqingshen.com/14872584518084.jpg)
 
 #### 项目开发
 
 (1) 双击 .ui 文件， QtCreator 会自动进入设计模式，通过简单拖动就可以添加一些组件。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872591011165.jpg)
+![](http://cdn.mengqingshen.com/14872591011165.jpg)
 
 (2) 可以在代码中对 .ui 文件创建的组件进行进一步处理。
 
@@ -226,7 +226,7 @@ MainWindow::~MainWindow()
 
 (3) 运行
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872591649212.jpg)
+![](http://cdn.mengqingshen.com/14872591649212.jpg)
 
 ## 2.2 Qt 项目文件
 
@@ -308,10 +308,10 @@ FORMS    += mainwindow.ui # UI 文件
 ## 2.4 与示例程序的使用
 ### 2.4.1 Qt帮助文档
 #### QtAssistant
-![](http://o6ul1xz4z.bkt.clouddn.com/14872608521228.jpg)
+![](http://cdn.mengqingshen.com/14872608521228.jpg)
 
 **说明：**Qt 专门提供的一个查看帮助文档的浏览器，可以方便地定制自己程序的帮助文档，为用户提供本地文档和在线帮助。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872608984254.jpg)
+![](http://cdn.mengqingshen.com/14872608984254.jpg)
 **特性：**
 
 + 快速查找
@@ -320,19 +320,19 @@ FORMS    += mainwindow.ui # UI 文件
 + 书签
 
 #### QtCreator 帮助
-![](http://o6ul1xz4z.bkt.clouddn.com/14872610159366.jpg)
+![](http://cdn.mengqingshen.com/14872610159366.jpg)
 
 
 ## 2.2 编译运行示例程序
 （1）示例程序的帮助文件
-![](http://o6ul1xz4z.bkt.clouddn.com/14872611358629.jpg)
+![](http://cdn.mengqingshen.com/14872611358629.jpg)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872613668782.jpg)
+![](http://cdn.mengqingshen.com/14872613668782.jpg)
 
 （2）编译运行
-![](http://o6ul1xz4z.bkt.clouddn.com/14872614324619.jpg)
+![](http://cdn.mengqingshen.com/14872614324619.jpg)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872615318710.jpg)
+![](http://cdn.mengqingshen.com/14872615318710.jpg)
 
 # 3 Qt Designer 与窗口组件
 本课时将演示如何使用 Qt Design 创建可供创建 C++ GUI 程序时使用的UI文件，并讲解 Qt Design 的用法并演示 Qt Design 中常用的窗口组件。  
@@ -341,59 +341,59 @@ FORMS    += mainwindow.ui # UI 文件
 **注意：** UI 文件本质上是一个 xml 文件，但只能在设计模式下修改。
 
 (1)新建文件或项目
-![](http://o6ul1xz4z.bkt.clouddn.com/14872624708495.jpg)
+![](http://cdn.mengqingshen.com/14872624708495.jpg)
 
 (2) 选择 Qt Designer Form
- ![](http://o6ul1xz4z.bkt.clouddn.com/14872625475227.jpg)
+ ![](http://cdn.mengqingshen.com/14872625475227.jpg)
 
 (3) Form Template
-![](http://o6ul1xz4z.bkt.clouddn.com/14872626561978.jpg)
+![](http://cdn.mengqingshen.com/14872626561978.jpg)
 
 (4) Location
-![](http://o6ul1xz4z.bkt.clouddn.com/14872627000555.jpg)
+![](http://cdn.mengqingshen.com/14872627000555.jpg)
 
 (5) summary
-![](http://o6ul1xz4z.bkt.clouddn.com/14872627280920.jpg)
+![](http://cdn.mengqingshen.com/14872627280920.jpg)
 
 ## 3.2 Designer
 
 ### 设计模式
-![](http://o6ul1xz4z.bkt.clouddn.com/14872629059819.jpg)
+![](http://cdn.mengqingshen.com/14872629059819.jpg)
 
 ### qss 样式表
 **说明：**
  类似 css 样式表。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872631095854.jpg)
+![](http://cdn.mengqingshen.com/14872631095854.jpg)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872632464144.jpg)
+![](http://cdn.mengqingshen.com/14872632464144.jpg)
 
 
 ### 预览当前编辑的 UI 界面
 
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872634712081.jpg)
+![](http://cdn.mengqingshen.com/14872634712081.jpg)
 
 ### 工具提示
 **说明：** 鼠标悬浮在组件上时的提示。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872684661068.jpg)
+![](http://cdn.mengqingshen.com/14872684661068.jpg)
 
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872684393225.jpg)
+![](http://cdn.mengqingshen.com/14872684393225.jpg)
 
 ### 组件分组
-![](http://o6ul1xz4z.bkt.clouddn.com/14872638875483.jpg)
+![](http://cdn.mengqingshen.com/14872638875483.jpg)
 
 ## 3.2 常见组件
 
 ### Buttons
 #### Push Button
 用的最多的`普通按钮`，可以理解为命令按钮。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872688736499.jpg)
+![](http://cdn.mengqingshen.com/14872688736499.jpg)
 
 例如
-![](http://o6ul1xz4z.bkt.clouddn.com/14872688210036.jpg)
+![](http://cdn.mengqingshen.com/14872688210036.jpg)
 ---
 
 #### Tool Button
@@ -401,10 +401,10 @@ FORMS    += mainwindow.ui # UI 文件
 `工具按钮`。相比 Push Button，应用场景更加具体，可以用来做详细设置或命令的快速入口。
 细设置或命令的快速入口。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872693135557.jpg)
+![](http://cdn.mengqingshen.com/14872693135557.jpg)
 
 例如
-![](http://o6ul1xz4z.bkt.clouddn.com/14872690963412.jpg)
+![](http://cdn.mengqingshen.com/14872690963412.jpg)
 
 
 #### Radio Button
@@ -412,22 +412,22 @@ FORMS    += mainwindow.ui # UI 文件
 `单选`。
 注意：会自动作为一组。同一分组的 Radio Button 只能有一个被选中。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872695856964.jpg)
+![](http://cdn.mengqingshen.com/14872695856964.jpg)
 
 
 #### Check Box
 `复选`。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872695967015.jpg)
+![](http://cdn.mengqingshen.com/14872695967015.jpg)
 
 #### Command Link Button
 从 windows vista 开始引入的一种新的控制按钮。类似一个单选按钮，可以用它在一个互斥的选项中选择一个，而不是直接使用这个按钮本身。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872697984636.jpg)
+![](http://cdn.mengqingshen.com/14872697984636.jpg)
 
 #### Button Box
 严格说来，这个组件是一个`按钮组`，不是单个按钮，包含了两个按钮，一般用在对话框。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872698849866.jpg)
+![](http://cdn.mengqingshen.com/14872698849866.jpg)
 
 ### Item Views(Model-Based)
 说明：每个单元需要自己定义，自己维护，因此需要对 Model 框架比较了解。优势是可以很大程度降低数据冗余，提高效率
@@ -436,118 +436,118 @@ FORMS    += mainwindow.ui # UI 文件
 每个单元都是 Item ，相比 Item Views 更简单，可以满足大部分场景。
 #### List Widget
 `列表控件`。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872705496414.jpg)
+![](http://cdn.mengqingshen.com/14872705496414.jpg)
 
 
 双击开始编辑列表控件
-![](http://o6ul1xz4z.bkt.clouddn.com/14872704352800.jpg)
+![](http://cdn.mengqingshen.com/14872704352800.jpg)
 
 有两种模式可以选择
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872705328382.jpg)
+![](http://cdn.mengqingshen.com/14872705328382.jpg)
 
 
 #### Tree Widget
 `树状列表`。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872707055148.jpg)
+![](http://cdn.mengqingshen.com/14872707055148.jpg)
 
 #### Table Widget
 `表格`。
- ![](http://o6ul1xz4z.bkt.clouddn.com/14872707520822.jpg)
+ ![](http://cdn.mengqingshen.com/14872707520822.jpg)
 
 ### Containers
 让组件在窗体中更好地布局，更有条理，避免在内容多的时候显得凌乱。可以随意地把其它组件加到一个容器中，容器中的组件只会在范围内显示，不会超出范围。
 
 #### Group Box
 `组件框`，带有一个标题。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872710742169.jpg)
+![](http://cdn.mengqingshen.com/14872710742169.jpg)
 
 #### Scroll Area
 `滚动区域`，内容溢出会出现滚动条（器它容器会隐藏）
 。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872713809149.jpg)
+![](http://cdn.mengqingshen.com/14872713809149.jpg)
 
 #### Tool Box
 `抽屉`。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872712998584.jpg)
+![](http://cdn.mengqingshen.com/14872712998584.jpg)
 
 
 #### Tab Widget
 带标题的`选项卡`切换。选项卡中的内容都是独立的。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872714115848.jpg)
+![](http://cdn.mengqingshen.com/14872714115848.jpg)
 
 #### Stacked Widget
 也是一个 `选项卡`组件，不过没有选显卡标题，可以通过程序自己来维护内容的切换。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872715240144.jpg)
+![](http://cdn.mengqingshen.com/14872715240144.jpg)
 
 这是一个相当常用的功能，例如 OS X 的设置程序，
-![](http://o6ul1xz4z.bkt.clouddn.com/14872716822704.jpg)
+![](http://cdn.mengqingshen.com/14872716822704.jpg)
 
 通过点击不同的图标，可以进入不同的设置界面。
 
 #### Frame 
 一个`边框组件`，可以用来实现不同的边框效果（比如形状和阴影）。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872718306392.jpg)
+![](http://cdn.mengqingshen.com/14872718306392.jpg)
 
 #### Widget
 所有用户界面的基类，可以在一个 Widget 中嵌套另一个 Widget 。
 
 #### MDIArea
 提供了一个可以绘制多个窗口地区域。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872722073152.jpg)
+![](http://cdn.mengqingshen.com/14872722073152.jpg)
 
 添加子窗口
-![](http://o6ul1xz4z.bkt.clouddn.com/14872722306488.jpg)
+![](http://cdn.mengqingshen.com/14872722306488.jpg)
 
 每个窗口都可以自由拖动，且可以很方便地切换
-![](http://o6ul1xz4z.bkt.clouddn.com/14872723341344.jpg)
+![](http://cdn.mengqingshen.com/14872723341344.jpg)
 
 #### Dock Widget
 一个比较特殊也比较实用的组件，提供了一个可以锁定在主窗口中，或者作为一个顶层组件、自由悬浮的窗口。大多数时候做为工具面板。
 
 例如，PhotoShop、各种继承开发环境包括 QtCreator 中有用到。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872727971161.jpg)
+![](http://cdn.mengqingshen.com/14872727971161.jpg)
 
 ### Input Widgets
 
 #### Combo Box
 `下拉列表`
-![](http://o6ul1xz4z.bkt.clouddn.com/14872728984142.jpg)
+![](http://cdn.mengqingshen.com/14872728984142.jpg)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872729089219.jpg)
+![](http://cdn.mengqingshen.com/14872729089219.jpg)
 
 #### Font Combo Box
 选择字体的下拉列表，默认使用系统的字体作为选项。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872729393128.jpg)
+![](http://cdn.mengqingshen.com/14872729393128.jpg)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872730085199.jpg)
+![](http://cdn.mengqingshen.com/14872730085199.jpg)
 
 
 #### Line Edit
 一个`单行文本编辑框`。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872730970087.jpg)
+![](http://cdn.mengqingshen.com/14872730970087.jpg)
 
 **输入模式**
 有多种输入模式可以选择
-![](http://o6ul1xz4z.bkt.clouddn.com/14872731217394.jpg)
+![](http://cdn.mengqingshen.com/14872731217394.jpg)
 
 
 **一键清除**
 可以显示一个一键清除的按钮
-![](http://o6ul1xz4z.bkt.clouddn.com/14872732417715.jpg)
+![](http://cdn.mengqingshen.com/14872732417715.jpg)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872732272718.jpg)
+![](http://cdn.mengqingshen.com/14872732272718.jpg)
 
 #### Text Edit
 一个强大的，单页面，多信息文本编辑器。支持 HTML 标记，所见即所得。对大文档的显示进行了优化。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14872733850288.jpg)
+![](http://cdn.mengqingshen.com/14872733850288.jpg)
 
 #### Text Edit
 指针对纯文本文档。对大文档的显示进行了优化。
@@ -556,60 +556,60 @@ FORMS    += mainwindow.ui # UI 文件
 
 #### Spin Box
 整数输入组件。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872735778773.jpg)
+![](http://cdn.mengqingshen.com/14872735778773.jpg)
 
 
 #### Double Pin Box
 
 小数输入组件。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872735869848.jpg)
+![](http://cdn.mengqingshen.com/14872735869848.jpg)
 #### Time Edit
-![](http://o6ul1xz4z.bkt.clouddn.com/14872736634065.jpg)
+![](http://cdn.mengqingshen.com/14872736634065.jpg)
 
 可以提供激活日历选择器。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872738001500.jpg)
+![](http://cdn.mengqingshen.com/14872738001500.jpg)
 
 #### Date Edit
-![](http://o6ul1xz4z.bkt.clouddn.com/14872737393536.jpg)
+![](http://cdn.mengqingshen.com/14872737393536.jpg)
 
 可以提供激活日历选择器。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872738023740.jpg)
+![](http://cdn.mengqingshen.com/14872738023740.jpg)
 
 
 
 #### Date/Time Edit
-![](http://o6ul1xz4z.bkt.clouddn.com/14872739124794.jpg)
+![](http://cdn.mengqingshen.com/14872739124794.jpg)
 
 
 可以提供激活日历选择器。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872738092103.jpg)
-![](http://o6ul1xz4z.bkt.clouddn.com/14872738240116.jpg)
+![](http://cdn.mengqingshen.com/14872738092103.jpg)
+![](http://cdn.mengqingshen.com/14872738240116.jpg)
 
 #### Dial
 可以做表盘或用来进行控制的旋钮。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872739352830.jpg)
+![](http://cdn.mengqingshen.com/14872739352830.jpg)
 
 #### Horizontal Scroll Bar
-![](http://o6ul1xz4z.bkt.clouddn.com/14872740126419.jpg)
+![](http://cdn.mengqingshen.com/14872740126419.jpg)
 
 #### Vertical Scroll Bar
-![](http://o6ul1xz4z.bkt.clouddn.com/14872740248898.jpg)
+![](http://cdn.mengqingshen.com/14872740248898.jpg)
 #### Horizontal Slider
-![](http://o6ul1xz4z.bkt.clouddn.com/14872741029837.jpg)
+![](http://cdn.mengqingshen.com/14872741029837.jpg)
 
 #### Vertical Slider
-![](http://o6ul1xz4z.bkt.clouddn.com/14872741334720.jpg)
+![](http://cdn.mengqingshen.com/14872741334720.jpg)
 
 #### Key Sequence Edit
 
 快捷键序列编辑器。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872741926786.jpg)
+![](http://cdn.mengqingshen.com/14872741926786.jpg)
 
 
 ### Display Widgets
 仅仅提供显示功能的组件，不能交互。
 #### Label
-![](http://o6ul1xz4z.bkt.clouddn.com/14872744320649.jpg)
+![](http://cdn.mengqingshen.com/14872744320649.jpg)
 
 #### Text Browser
 支持 HTML 标记，所见即所得。
@@ -618,21 +618,21 @@ FORMS    += mainwindow.ui # UI 文件
 可以显示大量 2D 图像，支持旋转、缩放。
 
 #### Canlendar
-![](http://o6ul1xz4z.bkt.clouddn.com/14872745503988.jpg)
+![](http://cdn.mengqingshen.com/14872745503988.jpg)
 
 #### LCD Number
 用来显示一些数字和特殊的符号，用的是一种 LCD 显示屏的风格。类似计算机。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872747765698.jpg)
+![](http://cdn.mengqingshen.com/14872747765698.jpg)
 
 #### Progress Bar
 进度条。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872748074727.jpg)
+![](http://cdn.mengqingshen.com/14872748074727.jpg)
 
 #### Horizontal Line
-![](http://o6ul1xz4z.bkt.clouddn.com/14872748281999.jpg)
+![](http://cdn.mengqingshen.com/14872748281999.jpg)
 
 #### Vertical Line
-![](http://o6ul1xz4z.bkt.clouddn.com/14872748375230.jpg)
+![](http://cdn.mengqingshen.com/14872748375230.jpg)
 
 #### Open GL Widget
 显示 3D 绘图。
@@ -648,11 +648,11 @@ QtWebKit 的主要组件，可以显示 HTML 文档（可以是本地的，也�
 
 #### Vertical Layout
 纵向布局。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872754574437.jpg)
+![](http://cdn.mengqingshen.com/14872754574437.jpg)
 
 #### Horizontal Layout
 横向布局。
-![](http://o6ul1xz4z.bkt.clouddn.com/14872754908870.jpg)
+![](http://cdn.mengqingshen.com/14872754908870.jpg)
 
 #### Grid Layout
 网格布局。
@@ -663,9 +663,9 @@ QtWebKit 的主要组件，可以显示 HTML 文档（可以是本地的，也�
 弹簧组件，用于处理布局中的间隔。会自动根据空间大小和样式调整间隔,以及组件的高度或宽度。
 
 #### Vertical Spacer
-![](http://o6ul1xz4z.bkt.clouddn.com/14872756762059.jpg)
+![](http://cdn.mengqingshen.com/14872756762059.jpg)
 
 #### Horiaontal Spacer
-![](http://o6ul1xz4z.bkt.clouddn.com/14872756860690.jpg)
+![](http://cdn.mengqingshen.com/14872756860690.jpg)
 
 

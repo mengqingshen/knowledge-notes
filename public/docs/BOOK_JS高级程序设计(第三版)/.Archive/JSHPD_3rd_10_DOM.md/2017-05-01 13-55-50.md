@@ -38,7 +38,7 @@ date: 2014-10-07 16:40:28
 </body>
 </html>
 ```
-![91A4B32B-788D-402E-BB53-87C0ADE3E9A1](http://o6ul1xz4z.bkt.clouddn.com/2017-04-11-91A4B32B-788D-402E-BB53-87C0ADE3E9A1.png)
+![91A4B32B-788D-402E-BB53-87C0ADE3E9A1](http://cdn.mengqingshen.com/2017-04-11-91A4B32B-788D-402E-BB53-87C0ADE3E9A1.png)
 
 ## 1.1 Node类型
 
@@ -148,7 +148,7 @@ if(someNode.nextSibling === null){
 }
 ```
 
-![A9518300-5B03-4EE5-A244-0DBE0A710CFD](http://o6ul1xz4z.bkt.clouddn.com/2017-04-11-A9518300-5B03-4EE5-A244-0DBE0A710CFD.png)
+![A9518300-5B03-4EE5-A244-0DBE0A710CFD](http://cdn.mengqingshen.com/2017-04-11-A9518300-5B03-4EE5-A244-0DBE0A710CFD.png)
 
 **ownerDocument属性**
 
@@ -542,7 +542,7 @@ var radios = document.getElementsByName('color');
 var hasXmlDom = document.implementation.hasFeature("XML","1.0");
 ```
 
-![C8E4D61B-9AE3-48A2-9BFD-D6D3907A1DE5](http://o6ul1xz4z.bkt.clouddn.com/2017-04-11-C8E4D61B-9AE3-48A2-9BFD-D6D3907A1DE5.png)
+![C8E4D61B-9AE3-48A2-9BFD-D6D3907A1DE5](http://cdn.mengqingshen.com/2017-04-11-C8E4D61B-9AE3-48A2-9BFD-D6D3907A1DE5.png)
 
 ### 1.2.6 文档写入
 
@@ -656,9 +656,9 @@ console.log(div.dir);    //"ltr"
 
 所有HTML元素都是由 HTMLElement 或更具体的子类型来表示（斜体指不推荐）：
 
-![CE9F1E79-0245-4A66-BEBF-3B83927813DD](http://o6ul1xz4z.bkt.clouddn.com/2017-04-11-CE9F1E79-0245-4A66-BEBF-3B83927813DD.png)
+![CE9F1E79-0245-4A66-BEBF-3B83927813DD](http://cdn.mengqingshen.com/2017-04-11-CE9F1E79-0245-4A66-BEBF-3B83927813DD.png)
 
-![2D7C17AF-ABB5-45AE-9CEE-AD6E7EC1105F](http://o6ul1xz4z.bkt.clouddn.com/2017-04-11-2D7C17AF-ABB5-45AE-9CEE-AD6E7EC1105F.png)
+![2D7C17AF-ABB5-45AE-9CEE-AD6E7EC1105F](http://cdn.mengqingshen.com/2017-04-11-2D7C17AF-ABB5-45AE-9CEE-AD6E7EC1105F.png)
 
 ### 1.3.2 取得特性
 

@@ -228,4 +228,4 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('RN_FOR_JK_HelloWorld', () => RN_FOR_JK_HelloWorld);
 
 ```
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1473688744773.png)
+![Alt text](http://cdn.mengqingshen.com/img/1473688744773.png)

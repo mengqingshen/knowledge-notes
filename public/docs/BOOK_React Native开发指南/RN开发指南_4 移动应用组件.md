@@ -206,7 +206,7 @@ View.props.onResponderGrant|图现在正在响应触摸事件。这个时候要�
 View.props.onResponderReject|其它的视图获得了响应并且不会释放
 View.props.onStartShouldSetResponderCapture|是否防止子视图在触摸`开始`时成为应答器？
 View.props.onMoveShouldSetResponderCapture|是否防止子视图在触摸`移动`时成为应答器？
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1474365554788.png)
+![Alt text](http://cdn.mengqingshen.com/img/1474365554788.png)
 
 ****
 **事件处理钩子**
@@ -248,7 +248,7 @@ numberActiveTouches|当前屏幕上的有效触摸点数量
 
 #### 实例
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/panresponder.gif)
+![Alt text](http://cdn.mengqingshen.com/img/panresponder.gif)
 
 ### 4.2.4 PK
 PanResponder|PanResponder(基于GestureResponder)

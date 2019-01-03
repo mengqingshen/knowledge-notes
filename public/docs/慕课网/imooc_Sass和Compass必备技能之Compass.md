@@ -479,7 +479,7 @@ $use-mozilla-ellipsis-binding:true;
 ### 5.2	Tygography模块（下）
 #### 5.2.1	Vertical Rhythm
 **用途：**做网页布局的参照（尤其是行高问题）
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/imooc/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-05-17%20%E4%B8%8B%E5%8D%881.09.57.png)
+![Alt text](http://cdn.mengqingshen.com/imooc/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-05-17%20%E4%B8%8B%E5%8D%881.09.57.png)
 
 ```scss
 

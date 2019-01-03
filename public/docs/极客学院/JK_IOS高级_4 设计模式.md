@@ -40,13 +40,13 @@ categories:
 >+ 创建抽象适配器模式
 >+ 适配器与视图层建立输出联系
 >+ 类适配器与对象适配器
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8A%E5%8D%8811.48.25.png)![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462074739914.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8A%E5%8D%8811.48.25.png)![Alt text](http://cdn.mengqingshen.com/img/1462074739914.png)
 
 
 #### 4.2.3.1	类适配器
 >**说明：**为每种数据模型都创建相应的适配器，用到哪种数据就使用相应的适配器。
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8A%E5%8D%8811.30.25.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462073700393.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8A%E5%8D%8811.30.25.png)
+![Alt text](http://cdn.mengqingshen.com/img/1462073700393.png)
 
 ```objective-c
 // 1. 创建商务名片实例
@@ -81,8 +81,8 @@ BusinessCardAdapter *modelAdapter = [[ModelAdapter alloc] initWithData:model];
 
 #### 4.2.3.2		对象适配器
 >**说明：**每种数据模型都使用同一个适配器，适配器中承担为每种数据模型都提供适配的任务。
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8A%E5%8D%8811.31.00.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8A%E5%8D%8811.38.40.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8A%E5%8D%8811.31.00.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8A%E5%8D%8811.38.40.png)
 
 ```objective-c
 // 1. 创建商务名片实例
@@ -126,15 +126,15 @@ BusinessCardAdapter *modelAdapter = [[CardAdapter alloc] initWithData:model];
 
 ### 4.3.2	策略模式的原理
 >**课程说明：**策略模式的基本原理以及定义的条件。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462093482279.png)
+![Alt text](http://cdn.mengqingshen.com/img/1462093482279.png)
 
 
 ### 4.3.3	策略模式的使用
 >**课程说明：**怎样将策略模式用到 `UITextField` 的验证逻辑上。
 >+ 如何抽象出策略
 >+ 制定协议来维护输出信息
-![Alt text|200x100](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8B%E5%8D%889.41.29.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462113251890.png)
+![Alt text|200x100](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8B%E5%8D%889.41.29.png)
+![Alt text](http://cdn.mengqingshen.com/img/1462113251890.png)
 
 *ViewController.m*
 
@@ -241,7 +241,7 @@ BusinessCardAdapter *modelAdapter = [[CardAdapter alloc] initWithData:model];
 >2. 找到后，提供个人住址等相关信息
 >3. 发行商在一般每月的固定时间发送刊物
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8B%E5%8D%8811.30.22.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-05-01%20%E4%B8%8B%E5%8D%8811.30.22.png)
 
 ### 4.4.2	通知中心的抽象设计
 >**课程说明：**本课时根据订阅杂志的实例，讲解如何将抽象的模型转换成代码。
@@ -566,11 +566,11 @@ static NSString *SCIENCE = @"SCIENCE";
 
 #### 4.5.1.2	原型模式的原理
 >**说明：**定义一个协议，采纳该协议个类要实现`clone`方法，也就是具备拷贝自身的能力。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462191691369.png)
+![Alt text](http://cdn.mengqingshen.com/img/1462191691369.png)
 
 ##### 案例
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462192387967.png)
+![Alt text](http://cdn.mengqingshen.com/img/1462192387967.png)
 
 *PrototypeCopyProtocol.h*
 
@@ -659,7 +659,7 @@ static NSString *SCIENCE = @"SCIENCE";
 >**注意：**
 >+ 深拷贝与浅拷贝
 >+ 不支持`NSCopying`协议的对象
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462199219485.png)
+![Alt text](http://cdn.mengqingshen.com/img/1462199219485.png)
 
 
 
@@ -673,11 +673,11 @@ static NSString *SCIENCE = @"SCIENCE";
 
 #### 4.5.2.2	外观模式的原理
 >**说明：**就是将细节封装了起来，使用时不需要了解细节
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462186013642.png)
+![Alt text](http://cdn.mengqingshen.com/img/1462186013642.png)
 
 
 #### 4.5.2.3	如何绘制复杂的图形
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1462201625961.png)
+![Alt text](http://cdn.mengqingshen.com/img/1462201625961.png)
 
 
 ## 4.6	装饰
@@ -691,10 +691,10 @@ static NSString *SCIENCE = @"SCIENCE";
 ### 4.6.2	装饰模式的原理
 
 > 基本原理
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463410189425.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463410189425.png)
 
 > 装饰起模式的优点
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463410420677.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463410420677.png)
 
 >  装饰模式的使用场景
 
@@ -702,8 +702,8 @@ static NSString *SCIENCE = @"SCIENCE";
 
 ### 4.6.3	实现装饰模式
 >**课程说明：**通过一个扩展游戏机手柄行为的事例，来实现装饰模式。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463490224877.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463495040772.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463490224877.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463495040772.png)
 
 
 ### 4.6.4	category的使用
@@ -880,7 +880,7 @@ static const NSString *_coinStr = @"_coinStr";
 
 ### 4.7.1	制造手机与使用手机
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463587653123.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463587653123.png)
 
 
 ### 4.7.2	简单工厂
@@ -889,18 +889,18 @@ static const NSString *_coinStr = @"_coinStr";
 > 2. 隔离生产产品的细节
 > 3. 不同类型产品之间有着一些共同的功能
 > 4. 一个具体的工厂
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463799288205.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463799288205.png)
 
 
 #### 案例：通过简单工厂获取手机实例
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463798863229.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463798863229.png)
 
 >源码结构
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463743818102.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463743818102.png)
 
 >类图：通过
 
-![Alt text|500x500](http://o6ul1xz4z.bkt.clouddn.com/img/1463715567130.png)
+![Alt text|500x500](http://cdn.mengqingshen.com/img/1463715567130.png)
 
 >使用
 
@@ -939,10 +939,10 @@ static const NSString *_coinStr = @"_coinStr";
 
 #### 案例：通过工厂管理器获取定制的具体工厂，并通过具体的工厂获取产品
 > 源码结构
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463816866737.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463816866737.png)
 
 > 类图
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463816799001.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463816799001.png)
 
 > 使用
 
@@ -982,7 +982,7 @@ NSLog(@"%c", [floatValue charValue]);
 
 ### 4.8.1 遥控器与电视机
 >**例子：**为遥控器和电视机分别定义了协议，采纳了协议的具体的遥控器和电视机之间只需完成各自的实现。
-![Alt text|400x250](http://o6ul1xz4z.bkt.clouddn.com/img/1463818469080.png)
+![Alt text|400x250](http://cdn.mengqingshen.com/img/1463818469080.png)
 
 
 ### 4.8.2 桥接模式原理
@@ -991,18 +991,18 @@ NSLog(@"%c", [floatValue charValue]);
 >**实现层：**定义了供抽象层使用的底层接口。
 >**桥接：**实现类的引用被封装到抽象层的实例中，桥接就形成了。
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463839147515.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463839147515.png)
 
 
 ### 4.8.3 设计游戏机模拟器
 + 游戏机模拟器的功能定义
 + 按钮协议的制定
 + 游戏机模拟器的实现
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463839248044.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463839248044.png)
 
 
 #### 案例
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463845234221.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463845234221.png)
 
 ```objective-c
 /* GBA系统 ＋ GBA执行器 */
@@ -1030,13 +1030,13 @@ pspSystem.implementor = [[PSPImplementor alloc] init];
 >**说明：**当一个对象和另一个对象必然耦合的时候，为了降低这种耦合，可以选择和代理对象耦和。代理对象可以是实现了代理协议的任意对象，由于采纳代理协议的对象相比具体对象更灵活且可配置，从而降低了耦和度。
 >**注意：**代理对象建议修饰为`weak`，从而有助于减低消耗。
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464019108656.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464019108656.png)
 
 
 #### 案例：顾客和经销商
 >顾客的购买行为代理给经销商
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463899846934.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463899846934.png)
 
 *Customer.h*
 
@@ -1142,7 +1142,7 @@ pspSystem.implementor = [[PSPImplementor alloc] init];
 
 
 #### 案例：单纯使用协议
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1463922342138.png)
+![Alt text](http://cdn.mengqingshen.com/img/1463922342138.png)
 
 *TCPProtocol.h*
 > **说明：**定义协议
@@ -1236,7 +1236,7 @@ pspSystem.implementor = [[PSPImplementor alloc] init];
 
 #### 案例
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464018921308.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464018921308.png)
 
 ```objective-c
 // 创建代理
@@ -1254,7 +1254,7 @@ proxy.delegate = self;
 ### 4.10.1 单例模式
 
 #### 单例模式的基本原理
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464186654392.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464186654392.png)
 
 #### 单例模式用以解决何种问题
 > 保证某个类只会存在一个全局的实例，全局共享
@@ -1400,12 +1400,12 @@ NSLog(@"%@", [[UserInfoManagerCenter alloc] init]);// 试图直接调用构造�
 > **扩展：**使用[ FastCoding ](https://github.com/nicklockwood/FastCoding)替代`NSCoding`存储数据
 > **注意：**启用`ARC`时`FastCoding`运行会比较慢，建议关闭
 > + 文件启用了`ARC`是代码给出了警告
-> ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464361708327.png)
+> ![Alt text](http://cdn.mengqingshen.com/img/1464361708327.png)
 > + 通过关闭`FastCoder`对应的文件的`ARC`清除警告
-> ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464362026510.png)
+> ![Alt text](http://cdn.mengqingshen.com/img/1464362026510.png)
 
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464364328834.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464364328834.png)
 
 ```objective-c
 // 将相对复杂的对象数据存储到用户首选项（借由对象的扩展）
@@ -1430,11 +1430,11 @@ NSLog(@"%@", tmpStudent.datas);
 + 存储记录的必要性
 + 记录的唯一标识符
 + 存储纪录和取出记录
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464447294270.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464447294270.png)
 
 
 ### 4.11.2 备忘录模式
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464417280472.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464417280472.png)
 + 设计存储中心
 + 制定存储接口
 + 实现存储机制
@@ -1444,7 +1444,7 @@ NSLog(@"%@", tmpStudent.datas);
 + 统一存储规范
 + 实现灵活多变的存储机制
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464445381861.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464445381861.png)
 
 ```objective-c
 // 创建对象
@@ -1496,17 +1496,17 @@ demoView.frame = CGRectMake(100, 100, 100, 100);
 >+ 不需要知道细节
 >+ 模块化处理
 >+ 很好的组合特性
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464934489331%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464934489331%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F.png)
 
 
 ### 4.12.2 生成器模式
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464447882554.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464447882554.png)
 
 
 ### 4.12.3 制造汽车的流程
 >**说明：**使用生成器模式来制造一辆汽车。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464500610532.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464500840393.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464500610532.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464500840393.png)
 
 ```objective-c
 // 创建组装着（指挥者）
@@ -1528,7 +1528,7 @@ NSLog(@"%@", self.builder.productsInfo);
 >**命令模式：**在软件系统中，`行为请求者`与`行为执行者`通常呈现一种“紧耦合”。但在某些场合，比如要对行为进行`记录、撤销/重做、事务`等处理，这种无法抵御变化的紧耦合是不合适的。在这种情况下，如何将`行为请求者`与`行为执行者`解耦，将行为抽象成对象，实现两者之间的松耦合，这就是我们这门课程所要讲的`命令模式`。 
 
 ### 4.13.1 电视机、遥控器与接收器之间的关系
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464934489331%E5%85%B3%E7%B3%BB%E5%9B%BE.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464934489331%E5%85%B3%E7%B3%BB%E5%9B%BE.png)
 
 
 + 遥控器与接收器并非必要的设备
@@ -1539,13 +1539,13 @@ NSLog(@"%@", self.builder.productsInfo);
 + 命令的发送者和命令的执行者之间完全解耦
 + 命令可以回退（撤销）
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464515129490.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464515129490.png)
 
 
 
 ### 4.13.3 改变一个视图的明暗程度
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464934489331xcode.gif)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464531258992.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464934489331xcode.gif)
+![Alt text](http://cdn.mengqingshen.com/img/1464531258992.png)
 
 ```objective-c
 #import "ViewController.h"
@@ -1673,7 +1673,7 @@ typedef enum : NSInteger {
 + 简易的二叉树
 + 用递归遍历树形结构节点
 
-![Alt text|200x300](http://o6ul1xz4z.bkt.clouddn.com/img/1464533251952.png)
+![Alt text|200x300](http://cdn.mengqingshen.com/img/1464533251952.png)
 
 *Node.h*
 
@@ -1807,7 +1807,7 @@ typedef enum : NSInteger {
 ```
 
 ### 4.14.2	组合模式
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464611058484.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464611058484.png)
 
 *Node.h*
 
@@ -1964,8 +1964,8 @@ typedef enum : NSInteger {
 ```
 
 ### 4.14.3 编写文件夹系统
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464616045947.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464676034326.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464616045947.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464676034326.png)
 
 
 ## 4.15	迭代器
@@ -1976,17 +1976,17 @@ typedef enum : NSInteger {
 > **课程说明：**讲解常用线性表基本原理，对于理解何为迭代器模式很有帮助。
 > **线性表：**线性表中数据元素之间的关系是一对一的关系，即除了第一个和最后一个数据元素之外，其它数据元素都是首尾相接的（注意，这句话只适用大部分线性表，而不是全部。比如，循环链表逻辑层次上也是一种线性表（存储层次上属于链式存储），但是把最后一个数据元素的尾指针指向了哨位结点）。
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464700648380.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464700648380.png)
 
 > 栈和队列就是典型的线性表
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464700681237.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464700681237.png)
 
 
 
 ### 4.15.2 迭代器模式
 > **课程说明：**讲解迭代器模式基本原理，并简单介绍下 `Cocoa` 框架已经实现的迭代器。
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464708309582.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464708309582.png)
 
 ```objective-c
 /* 系统自身的集合和迭代器 */
@@ -2021,7 +2021,7 @@ while (node = [linkedIterator nextObject]) {
 
 ### 4.15.3 实现组合对象的迭代器
 > **课程说明：**实现一个组合对象的迭代器，并遍历出该组合对象中我们需要关心的元素。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1464751736763.png)
+![Alt text](http://cdn.mengqingshen.com/img/1464751736763.png)
 
 ```objective-c
 CustomUIView *customUIView = [[CustomUIView alloc] initWithFrame:self.view.bounds];

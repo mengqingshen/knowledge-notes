@@ -62,12 +62,12 @@ VARS := $(sort $(filter srcs-% cflags-%, $(.VARIABLES)))
 ```
 
 **程序结构**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/CC65EAA8-844D-4C1E-9D39-F69302AB2232.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/CC65EAA8-844D-4C1E-9D39-F69302AB2232.png)
 
 **依赖关系图**
 连线代表依赖关系，依赖的标的可以是`源文件`、`中间文件` 甚至是 `其它规则`。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/58DB091B-B53C-44F7-A4FC-08F1C2495228.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/58DB091B-B53C-44F7-A4FC-08F1C2495228.png)
 
 **规则描述文件**
 
@@ -346,7 +346,7 @@ all:
 
 ## 1.6 理解构造程序执行流程
 ### 1.6.1 make 命令调用后
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/618FBFA5-B926-482E-8385-01C96C88A858.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/618FBFA5-B926-482E-8385-01C96C88A858.png)
 
 强调一下，变量在第一阶段赋值，shell 命令在第二阶段执行！
 
@@ -386,7 +386,7 @@ endif
 
 ### 1.6.3 依赖关系图生成算法
 
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/64A00628-C75E-481A-B21C-42122EB3B7A2.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/64A00628-C75E-481A-B21C-42122EB3B7A2.png)
 
 ## 1.7 进一步阅读资料
 [在线文档](http://www.gnu.org/software/make/)
@@ -496,7 +496,7 @@ $(PROG):$(OBJS)
 
 需要的进行如下所示的构造过程。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/4BF1FB3B-F143-471A-9711-9A0AADE9F732.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/4BF1FB3B-F143-471A-9711-9A0AADE9F732.png)
 
 ### (1) 方案 a：最简单
 **说明：** 以单个目录中的方案为基础编写 makefile ，需要文件都带有目录路径。
@@ -793,9 +793,9 @@ gcc -o calculator calc.o ../libmath/libmath.a ../libprint/libprint.a
 
 示例， [book_software_build_system_demos/part2/06_make/0602_scene/scene2_mult_dir_c/src at master · laputa-er/book_software_build_system_demos · GitHub](https://github.com/laputa-er/book_software_build_system_demos/tree/master/part2/06_make/0602_scene/scene2_mult_dir_c/src)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/B26F6B55-26A7-46BB-A49D-ADF85FBEA46F.png)
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/DAE6E76E-FFA0-4067-A28A-8A9ABF1D7083.png)
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/32441DCC-E092-40BB-930F-AE1005D5E51B.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/B26F6B55-26A7-46BB-A49D-ADF85FBEA46F.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/DAE6E76E-FFA0-4067-A28A-8A9ABF1D7083.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/32441DCC-E092-40BB-930F-AE1005D5E51B.png)
 
 **全功能构造系统**
 上面的例子仅仅是为了说明包含式 make 方案的核心，要做出一个全功能的构造系统，需要增加一下功能。
@@ -843,10 +843,10 @@ equations.dl equations.c: equations.math equ1.mathinc equ2.mathinc
 ```
 
 **构造过程**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/822F7514-D4E2-4A0F-B2BE-F5C5F3B649C3.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/822F7514-D4E2-4A0F-B2BE-F5C5F3B649C3.png)
 
 **依赖关系图**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/2A4A5092-50A0-4D26-94E6-196CD62B606E.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/2A4A5092-50A0-4D26-94E6-196CD62B606E.png)
 
 
 *Makefile*
@@ -905,10 +905,10 @@ $(PROG): $(OBJS)
 ```
 
 ### 交叉构造过程示意图
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/19CFF532-32E7-42D3-87D7-C26F388C70CC.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/19CFF532-32E7-42D3-87D7-C26F388C70CC.png)
 
 ### 依赖关系图
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/B612B82D-4D36-46E0-AE4B-BC595952CAC8.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/B612B82D-4D36-46E0-AE4B-BC595952CAC8.png)
 
 ### Makefile 实现
 
@@ -1191,7 +1191,7 @@ gcc  -g  -o calculator add.o calc.o mult.o sub.o
 ## 4.1 Berkeley Make 工具 
 **诞生：** 20 世纪 70 年代。
 **应用平台：**  BSD 系统（包括其它变体 BSD 系统）。
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_06%20Make/69A824BA-56FE-45BD-B0D5-3307DFE2CB8B.png)
+![](http://cdn.mengqingshen.com/SBS_06%20Make/69A824BA-56FE-45BD-B0D5-3307DFE2CB8B.png)
 
 ### 用法
 **说明：** 与 GNU Make 基本相同，差异体主要体现在一下两点

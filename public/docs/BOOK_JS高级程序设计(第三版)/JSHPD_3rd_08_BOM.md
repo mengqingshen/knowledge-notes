@@ -55,7 +55,7 @@ alert(window.color);  //undefined
     </frameset>
 </html>
 ```
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1435053808143.png)
+![Alt text](http://cdn.mengqingshen.com/1435053808143.png)
 ### 8.1.3 窗口位置
 |和框架位置相关的属性（无法跨浏览器获得精确坐标|含义|最返回外层框架坐标|返回框架相对屏幕精确坐标|
 |---|---|---|---|
@@ -139,7 +139,7 @@ window.open('http://www.wrox.com', topFrame);    //如果有一个名为'topFram
 ```
 #### 8.1.5.1 弹出窗口
 **特性字符串（第3个参数）**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1435055363375.png)
+![Alt text](http://cdn.mengqingshen.com/1435055363375.png)
 **相关属性**
 
 |closed属性|窗口是否已经关闭布尔值|
@@ -305,7 +305,7 @@ if(result != null){
 ####print():显示“打印”对话框（异步）
 ####find()：显示“查找”对话框（异步）
 ## 8.2 location对象
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1435058568055.png)
+![Alt text](http://cdn.mengqingshen.com/1435058568055.png)
            
 ### 8.2.1 查询字符串参数
 
@@ -388,8 +388,8 @@ location.port = 8080;
 
 ### 属性
 **注意：**通常用于检测显示网页的浏览器类型。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/屏幕快照 2015-06-23 下午9.32.00.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/屏幕快照 2015-06-23 下午9.32.25.png)
+![Alt text](http://cdn.mengqingshen.com/屏幕快照 2015-06-23 下午9.32.00.png)
+![Alt text](http://cdn.mengqingshen.com/屏幕快照 2015-06-23 下午9.32.25.png)
 ### 8.3.1	检测插件
 #### 8.3.1.1	navigator.plugins数组
 **说明：**数组中的每一项都包含下列属性。
@@ -501,8 +501,8 @@ navigator.registerProtocolHandler("mailto", "http://www.somemailclient.com?cmd=%
 ## 8.4	screen对象
 **用途：**多用来表明客户端的能力，其中包括浏览器窗口外部的显示器的信息，如像素宽度和高度等。
 **属性：**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/屏幕快照 2015-06-24 下午12.30.06.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/屏幕快照 2015-06-24 下午12.31.25.png)
+![Alt text](http://cdn.mengqingshen.com/屏幕快照 2015-06-24 下午12.30.06.png)
+![Alt text](http://cdn.mengqingshen.com/屏幕快照 2015-06-24 下午12.31.25.png)
 **举个栗子：**调整浏览器窗口的大小，使其占据屏幕的可用空间。
 
 ```js

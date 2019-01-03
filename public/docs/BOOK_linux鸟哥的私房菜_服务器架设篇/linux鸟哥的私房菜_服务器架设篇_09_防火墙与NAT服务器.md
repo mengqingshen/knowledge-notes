@@ -57,15 +57,15 @@ typora-copy-images-to: ipic
 ## 1.4 防火墙的一般网络布线示意图
 ☑ 1 单一网域，仅有一个路由器
 
-![2177B981-C6B6-4A85-995A-108C53E071F6](http://o6ul1xz4z.bkt.clouddn.com/2017-04-30-2177B981-C6B6-4A85-995A-108C53E071F6.png)
+![2177B981-C6B6-4A85-995A-108C53E071F6](http://cdn.mengqingshen.com/2017-04-30-2177B981-C6B6-4A85-995A-108C53E071F6.png)
 
 ☑ 2 内部网络包含安全性更高的子网，需内部防火墙切开子网
 
-![5F5990E5-2D62-4AB1-BC99-1CDE53DC71E3](http://o6ul1xz4z.bkt.clouddn.com/2017-04-30-5F5990E5-2D62-4AB1-BC99-1CDE53DC71E3.png)
+![5F5990E5-2D62-4AB1-BC99-1CDE53DC71E3](http://cdn.mengqingshen.com/2017-04-30-5F5990E5-2D62-4AB1-BC99-1CDE53DC71E3.png)
 
 ☑ 3 在防火墙的后面架设网络服务器主机（在两个防火墙中间）
 
-![7CD55EC1-2DC0-4BA9-8150-0C15D3373C0A](http://o6ul1xz4z.bkt.clouddn.com/2017-04-30-7CD55EC1-2DC0-4BA9-8150-0C15D3373C0A.png)
+![7CD55EC1-2DC0-4BA9-8150-0C15D3373C0A](http://cdn.mengqingshen.com/2017-04-30-7CD55EC1-2DC0-4BA9-8150-0C15D3373C0A.png)
 
 ## 1.5 防火墙的使用限制 
 ☑ 1. 拒绝让Internet的封包进入主机的某些端口
@@ -144,7 +144,7 @@ rsync:ALL
 ☑ **version2.4/2.6**:    iptables(主要)
 
 ## 3.2 封包进入流程：规则顺序的重要性     
-![FD376D93-3290-4B66-AEDC-506F32AE3025](http://o6ul1xz4z.bkt.clouddn.com/2017-04-30-FD376D93-3290-4B66-AEDC-506F32AE3025.png)
+![FD376D93-3290-4B66-AEDC-506F32AE3025](http://cdn.mengqingshen.com/2017-04-30-FD376D93-3290-4B66-AEDC-506F32AE3025.png)
 
 ## 3.3 iptables的表格(table)与链（chain）
 ☑ 注意：Linux的iptables至少有三个表格     

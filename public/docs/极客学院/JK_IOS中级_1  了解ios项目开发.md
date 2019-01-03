@@ -64,7 +64,7 @@ categories:
 2014年推出OS X 10.10
 
 >**OS X系统结构**
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1451260954919.png)
+>![Alt text](http://cdn.mengqingshen.com/img/1451260954919.png)
 
 
 ### 1.1.3    苹果ios操作系统
@@ -78,7 +78,7 @@ categories:
 2014年发布ios8
 
 >**ios系统结构**
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1451260989517.png)
+>![Alt text](http://cdn.mengqingshen.com/img/1451260989517.png)
 
         
 
@@ -171,15 +171,15 @@ Xcode 6.0+
 >+ Game
 
 ### 1.3.1	Master-Detail Application
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.26.53.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.26.53.png)
 
 
 ### 1.3.2	Page-Based Application
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.38.45.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.38.45.png)
 
 
 ### 1.3.3	Tabbed Application
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.56.30.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.56.30.png)
 
 
 ## 1.4	ios用户界面开发基本流程
@@ -188,24 +188,24 @@ Xcode 6.0+
 >**说明：**`Storybiard(故事版)`是`Xcode4.2`才开始支持的，为了使设计`View`更加容易。
 
 + 可以在`Info.plist`文件中设置应用启动时首次加载的`storyboard`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-04%20%E4%B8%8B%E5%8D%885.08.53.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-04%20%E4%B8%8B%E5%8D%885.08.53.png)
 + 一个应用中可以有多个`storyboard`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-06%20%E4%B8%8B%E5%8D%8810.48.12.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-06%20%E4%B8%8B%E5%8D%8810.48.12.png)
 + `storyboard`中指出了首先会被加载的`view`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-06%20%E4%B8%8B%E5%8D%8811.42.10.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-06%20%E4%B8%8B%E5%8D%8811.42.10.png)
 + 查看视图控制器绑定的类
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-06%20%E4%B8%8B%E5%8D%8811.48.33.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-06%20%E4%B8%8B%E5%8D%8811.48.33.png)
 + 在多个视图之间建立动作关联
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-storyboard-1.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-storyboard-1.gif)
 
 
 ### 1.4.2	图片控件
 >**说明：**在`xcode`中图片控件的创建和使用
 
 1. 将本地的图片拖入到项目中
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-img.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-img.gif)
 2. 创建`Image View`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-img-02.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-img-02.gif)
 
 ### 1.4.3	ios UI界面设计中传统方法和Assistant editor绑定代码
 >**说明：**`程序`和`控件`的绑定，有两种方式
@@ -216,7 +216,7 @@ Xcode 6.0+
 >2. 通过拖动建立`@IBOutlet`引用的控件和属性所在类文件之间的关联
 >3. 在`Controller`中通过`@IBOutlet`属性使用控件
 >
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-bind.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-bind.gif)
 
 #### 方式2：借助`Assistant editor`绑定代码
 >**说明：**步骤如下
@@ -225,7 +225,7 @@ Xcode 6.0+
 >3. 设置关联
 >4. connect
 >
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-bond2.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-bond2.gif)
 
 
 ### 1.4.4	ios Story Board控制事件绑定
@@ -233,7 +233,7 @@ Xcode 6.0+
 >1. 编写`@IBAction`
 >2. 在`storyboard`中通过拖动在控件与`controller`中相应的`IBAction`之间建立关联
 >
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-event.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-event.gif)
 
 ```objective-c
 import UIKit
@@ -250,7 +250,7 @@ class ViewController: UIViewController {
 ### 1.4.5	iOS Storyboard控件与Swift类绑定
 >**说明：**新添加的`Storyboard`控件默认并没有和自定义的类绑定，和自定义的类绑定就可以通过代码自定义该控件
 >1. 设置绑定的类的类名
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-09%20%E4%B8%8B%E5%8D%8811.53.07.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-09%20%E4%B8%8B%E5%8D%8811.53.07.png)
 >2. 对应的自定义类中要实现父类的必要构造器（如果有的话）
 
 ```objective-c
@@ -286,23 +286,23 @@ class MyViewController: UIViewController {
 
 ### 1.4.7	ios浏览器开发制作
 >**说明：**需要解决`http`请求受限的问题
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8A%E5%8D%881.55.08.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8A%E5%8D%881.55.08.png)
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8A%E5%8D%881.54.48.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8A%E5%8D%881.54.48.png)
 ![Alt text](./屏幕快照 2016-02-10 上午1.59.15.png)
 
 ## 1.5	ios自定义控件实例
 
 ### 1.5.1	配置iOS自定义控件属性
 >**说明：**`Xcode`提供的所有控件都可以在`Storyboard`中进行一系列的配置。
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8B%E5%8D%886.02.15.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8B%E5%8D%886.02.15.png)
 
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-button.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-button.gif)
 
 ### 1.5.2	自定义原型进度指示控件实例
 >**说明：**使用绘图`API`编写自定义一个进度条控件
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8B%E5%8D%8811.38.03.png)![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-progress.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8B%E5%8D%8811.38.03.png)![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-progress.gif)
 
 `ProgressBar.swift`
 
@@ -402,9 +402,9 @@ class ViewController: UIViewController {
 |`@IBInspectable`|属性|使被修饰的属性可以在`Storyboard`中设置|
 
 1. 在`Project`中创建新`target`（自定义需要在单独的`target`中才能被`Storyboard`管理）
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-custom.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-custom.gif)
 2. 在新创建的`target`中创建自定义控件的类（`@IBDesignable`），类中可以设置一些可在`Storyboard`设置的属性（`@IBInspectable`）
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-12%20%E4%B8%8A%E5%8D%8812.13.21.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-12%20%E4%B8%8A%E5%8D%8812.13.21.png)
 
 *MyView.swift*
 
@@ -443,7 +443,7 @@ import UIKit
 }
 ```
 3. 在`Storyboard`中添加一个`View`（控件），并设置关联的类
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-12%20%E4%B8%8A%E5%8D%8812.04.07.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-12%20%E4%B8%8A%E5%8D%8812.04.07.png)
 
 
 
@@ -451,10 +451,10 @@ import UIKit
 
 ### 1.6.1	用iOS Storyboard做界面跳转
 >**说明：**跳转到下一个`view`并且能够返回
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_switch.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_switch.gif)
 
 #### 1.6.1.2	跳转到下一页
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_next.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_next.gif)
 
 #### 1.6.1.3	返回
 >**说明：**使用`IBAction`结合`dismissViewControllerAnimated`方法，步骤如下
@@ -484,7 +484,7 @@ class ImgViewController: UIViewController {
 ### 1.6.2	使用nib文件做iOS界面设计
 >**说明：**`Xcode4`之后`IB(Interface Builder)`和`Xcode`才集成在一起。使用方式如下
 >1. 创建`Cocoa class`时勾选`Alse create XIB File`
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-12%20%E4%B8%8B%E5%8D%885.22.14.png) ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8810.47.13.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-12%20%E4%B8%8B%E5%8D%885.22.14.png) ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8810.47.13.png)
 
 >2. 使用`presentModalViewController方法`从`Storyboard`管理的`view`跳转到`nib`管理的`view`
 >
@@ -492,7 +492,7 @@ class ImgViewController: UIViewController {
 
 ***
 *ViewControllew.swift*
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8810.58.26.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8810.58.26.png)
 
 ```objective-c
 import UIKit
@@ -509,7 +509,7 @@ class ViewController: UIViewController {
 
 ***
 *MyViewController.swift*
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8810.59.55.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8810.59.55.png)
 
 ```objective-c
 import UIKit
@@ -528,7 +528,7 @@ class MyViewController: UIViewController {
 >**说明：**本质上只是为和下一个`view`绑定的`controller`设置一个属性。
 >**扩展：**也可以在后一个`view`通过`parentViewController`访问前一个`view`
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8811.16.29.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8811.16.29.png)
 
 *ViewControllew.swift：设置信息*
 
@@ -579,9 +579,9 @@ class MyViewController: UIViewController {
 
 ### 1.7.1	匹配父级容器
 >**说明：**就是让`目标容器`以他的`父级容器`为参照系进行设置
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8811.56.36.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8811.56.36.png)
 >**扩展：**控件`UIImageVIew`可以设置其中图片的铺排模式
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-14%20%E4%B8%8A%E5%8D%8812.00.37.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-14%20%E4%B8%8A%E5%8D%8812.00.37.png)
 
 
 ### 1.7.2	分割父级容器
@@ -595,26 +595,26 @@ class MyViewController: UIViewController {
 >+ 左边`View`：`leading`、`top`
 >+ 右边`View`：`tailing`、`top`
 
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-20%20%E4%B8%8B%E5%8D%887.47.12.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-20%20%E4%B8%8B%E5%8D%887.47.12.png)
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-20%20%E4%B8%8B%E5%8D%888.00.01.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-20%20%E4%B8%8B%E5%8D%888.00.01.png)
 
 #### 1.7.2.2	多个`View`按比例
 >**说明：**2个或更多个`View`的宽度（或高度）按一定比例分割父级容器的剩余空间
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8A%E5%8D%889.51.01.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8A%E5%8D%889.51.01.png)
 
-![Alt text](./http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-20%20%E4%B8%8B%E5%8D%887.47.27.png)
+![Alt text](./http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-20%20%E4%B8%8B%E5%8D%887.47.27.png)
 
 
 ### 1.7.3	复杂布局适配
 >**说明：**上部左右均分，下部占用剩余部分
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%888.53.19.png) ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%886.05.43.png) 
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%888.53.19.png) ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%886.05.43.png) 
 
 *底层*
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%888.58.22.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%888.58.22.png)
 
 *顶层*
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%889.41.32.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%889.41.32.png)
 
 
 
@@ -954,7 +954,7 @@ class ViewController: UIViewController {
 ```
 
 ### 1.9.3	缩放图片实例
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_touch.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_touch.gif)
 *ViewController.swift*
 
 ```objective-c
@@ -1011,7 +1011,7 @@ class ViewController: UIViewController {
 
 ### 1.10.1	打开网页
 >**说明：**在`Safari`中打开指定连接
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S_call.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S_call.gif)
 >**相关类：**`UIApplication`
 
 *ViewController.swift*
@@ -1057,11 +1057,11 @@ class ViewController: UIViewController {
 ### 1.10.3	自定义打开协议
 >**说明：**可以通过自定一些`URL`协议
 >**案例：**通过自定义的`URL`协议`ime`打开另一个`App`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_handler.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_handler.gif)
 
 #### 1.10.3.1	注册协议的app
 1. 在`Info.list`中设置一个`URL Schemes`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-25%20%E4%B8%8B%E5%8D%889.42.43.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-25%20%E4%B8%8B%E5%8D%889.42.43.png)
 
 2. 创建要被协议打开的`View`（带有`xib`）
 *LabelViewController.swift*
@@ -1075,7 +1075,7 @@ class LabelViewController: UIViewController {
 }
 ```
 *LabelViewController.xib*
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-26%20%E4%B8%8A%E5%8D%889.55.25.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-26%20%E4%B8%8A%E5%8D%889.55.25.png)
 
 3. `AppDelegate.swift`：实现通过URL打开该`App`的构造函数
 
@@ -1099,7 +1099,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 
 #### 1.10.3.2	通过协议打开app
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-26%20%E4%B8%8A%E5%8D%889.58.00.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-26%20%E4%B8%8A%E5%8D%889.58.00.png)
 
 *viewcontroller.swift*
 

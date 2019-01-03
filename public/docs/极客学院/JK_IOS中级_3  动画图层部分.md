@@ -138,7 +138,7 @@ categories:
 + 懒加载的使用
 
 #### 案例
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_anime.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_anime.gif)
 
 *LineUIView.h*
 
@@ -506,7 +506,7 @@ tmpView = [[SubUIView2 alloc] init];
 >+ `CoreImage`是苹果用来简化图片处理的框架
 >+ `CIImage`、`CIFilter`与`CIContext`三者之间的联系
 >+ `CIGaussianBlur`中可以设置的参数
-![Alt text|200x400](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-04%20%E4%B8%8B%E5%8D%881.08.34.png)
+![Alt text|200x400](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-04%20%E4%B8%8B%E5%8D%881.08.34.png)
 
 ```objective-c
  // 1. 原始图片
@@ -561,7 +561,7 @@ imageView.center = self.view.center;
 + 性能更好
 + 可以局部模糊
 + 更加易用
-![Alt text|200x350](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-04%20%E4%B8%8B%E5%8D%8810.02.55.png)
+![Alt text|200x350](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-04%20%E4%B8%8B%E5%8D%8810.02.55.png)
 
 ```objective-c
 #import "ViewController.h"
@@ -597,7 +597,7 @@ imageView.center = self.view.center;
 >**说明：**`UIVisyalEffectView`的模糊效果是即时渲染的，效率非常高
 >**注意：**在`UIVisualEffectView`之上的文本显示需要特殊处理
 >**兼容性：**`iOS8+`
->**案例：**![Alt text|100x100](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_effective.gif)
+>**案例：**![Alt text|100x100](http://cdn.mengqingshen.com/img/JK_IOS_S3_effective.gif)
 
 ```objective-c
 /*--- 1. 环境 ----*/
@@ -766,7 +766,7 @@ subEffectView.frame = effecView.bounds;
 
 ### 3.3.1	maskView(maskLayer)的基本原理
 >**说明：**本课时主要讲解 `maskView(maskLayer)`的基本原理，并用示例演示。
-![Alt text|100x200](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-06%20%E4%B8%8B%E5%8D%883.14.40.png)
+![Alt text|100x200](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-06%20%E4%B8%8B%E5%8D%883.14.40.png)
 
 ```objective-c
 CGFloat width = 120;
@@ -796,7 +796,7 @@ self.addImageView.maskView = mask;
 
 ### 3.3.2	maskView配合 CAGradientLayer的使用
 >**说明：**本课时讲解如何在 maskView 中加载 `CAGradientLayer`。
->![Alt text|100x100](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_ga.gif)
+>![Alt text|100x100](http://cdn.mengqingshen.com/img/JK_IOS_S3_ga.gif)
 
 >**要点：**
 + 用`CAGradientLayer`直接产生带透明像素通道的`layer`
@@ -840,7 +840,7 @@ imageView.maskView = containerView;
 >+ 可以使用技巧在`maskView`上添加多张图片
 >+ 在`maskView`中做简单的动画
 
-![Alt text|100x100](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_mask.gif)
+![Alt text|100x100](http://cdn.mengqingshen.com/img/JK_IOS_S3_mask.gif)
 
 ```objective-c
 // 遮罩图片1
@@ -893,7 +893,7 @@ baseView.maskView = mask;
 >+ 封装`CAGradientLayer`用以提供`mask`遮罩
 >+ 动画样式的分析与设计
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_text.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_text.gif)
 
 
 #### 3.3.4.1	文本横向渐变消失的控件
@@ -1098,7 +1098,7 @@ baseView.maskView = mask;
 >**比较：**
 >1. 使用`POP`动画与使用`CALayer`动画非常相似
 >2. `POP`动画的执行没有中间状态：相比POP动画，`CALayer`动画有中间状态：实际动画角色是立即到达结束时的位置的，中间状态指的是是“虚拟”的动画
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-07%2018.44.12.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-07%2018.44.12.png)
 
 >3. `POP`动画是对`CALayer`动画的扩充，但不能实现所有的`CALayer`的动画效果
 >4. `POP`动画可以作用在任何对象上，不仅仅是`CALayer`
@@ -1111,7 +1111,7 @@ baseView.maskView = mask;
 >>**方式1：**使用[cocoapods](http://www.jianshu.com/p/071d30a3af02)安装
 >>**方式2：**直接导入源码（可以配合`pch`文件）
 >>教程：http://www.jianshu.com/p/67ce72c4ad6c
->>![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-07%2018.53.54.png)
+>>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-07%2018.53.54.png)
 >>**方式3：**二进制文件`.framework`
 
 
@@ -1131,7 +1131,7 @@ $ pod install# 安装依赖
 ```
 
 #### 3.4.2.1	比较CALayer和POP CAlayer
-![Alt text|150x200](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_pop.gif)
+![Alt text|150x200](http://cdn.mengqingshen.com/img/JK_IOS_S3_pop.gif)
 
 *ViewController.m*
 
@@ -1236,7 +1236,7 @@ $ pod install# 安装依赖
 >1. 衰减动画由`POPDecayAnimation`来实现
 >2. 需要精确计算停止运动瞬间的加速度才能用衰减动画做出真实的效果
 
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_decay.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_decay.gif)
 
 *ViewController.m*
 
@@ -1320,7 +1320,7 @@ $ pod install# 安装依赖
 >**要点：**
 >1. 弹簧动画由`POPSpringAnimation`
 >2. 弹簧的质量、速度、时间等值都是可以设置的
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_spring.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_spring.gif)
 
 ```objective-c
 #import "ViewController.h"
@@ -1381,10 +1381,10 @@ $ pod install# 安装依赖
 
 
 #### 3.5.1.1	缓动函数类型
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-09%20%E4%B8%8B%E5%8D%8810.52.45.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-09%20%E4%B8%8B%E5%8D%8810.52.45.png)
 
 #### 3.5.1.2	缓动效果示例
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_easing.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_easing.gif)
 
 
 ### 3.5.2	缓动函数与关键帧动画的联系
@@ -1392,7 +1392,7 @@ $ pod install# 安装依赖
 >1. 关键帧动画需要提供很多的帧来完善动画效果
 >2. 关键帧动画的帧可以通过一定的数学计算来提供需要的帧数
 >3. `关键帧动画只需要提供起始点、结束点，就可以通过缓动函数来计算中间“缺失”的帧`
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-10%20%E4%B8%8B%E5%8D%8812.00.12.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-10%20%E4%B8%8B%E5%8D%8812.00.12.png)
 >4. 缓动函数可以指定计算出多少帧
 >5. 帧数越多，动画越流畅，但同时耗费更多GPU性能
 
@@ -1472,7 +1472,7 @@ $ pod install# 安装依赖
 
 ### 3.5.3	用缓动函数模拟弹簧效果
 >**课程说明：**本课时用缓动函数结合关键帧动画实现弹簧效果，并模拟秒表摆动效果。
->![Alt text|100x90](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_time.gif)
+>![Alt text|100x90](http://cdn.mengqingshen.com/img/JK_IOS_S3_time.gif)
 
 ```objective-c
 #import "ViewController.h"
@@ -1543,7 +1543,7 @@ $ pod install# 安装依赖
 >2. 将`easeOutBounce`创建出来的帧数组添加到关键帧动画中
 >3. 碰撞效果用途
 
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_bounce.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_bounce.gif)
 
 ```objective-c
 #import "ViewController.h"
@@ -1589,7 +1589,7 @@ $ pod install# 安装依赖
 >2. 将`easeOutCubic`创建出来的的帧数组添加到关键帧动画中
 >3. 衰减效果用途
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_cubic.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_cubic.gif)
 
 ```objective-c
 #import "ViewController.h"
@@ -1642,7 +1642,7 @@ $ pod install# 安装依赖
 >+ `CAEmitterLayer`的用途：实现粒子效果
 >+ `CAEmitterLayer`参数
 >+ `CAEmitterLayer`优点：使用`GPU`渲染，不占用`CPU`资源，远优于使用大量的随机`View`来实现。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_emitter.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_emitter.gif)
 
 ```objective-c
 // 1. CAEmitterLayer
@@ -1747,7 +1747,7 @@ emitterLayer.emitterCells = @[cell];
 >+ 从封装`CAEmitterLayer`的“抽象”父类继承的原因
 >+ 下雪、下雨效果参数的设置
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_rain.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_rain.gif)
 
 *ViewController.m*
 >**说明：**使用控件
@@ -1787,26 +1787,26 @@ rainView.maskView = alphaView2;
 >3. 大部分情况下，`CAGradientLayer`都是与`CAShapeLayer`配合使用的
 >4. `CAGradientLayer`可以用作`png`遮罩效果
 
-![Alt text|100x100](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_exam1.gif) `CAShapeLayer`作为`CAGradientLayer`的遮罩实现的效果
+![Alt text|100x100](http://cdn.mengqingshen.com/img/JK_IOS_S3_exam1.gif) `CAShapeLayer`作为`CAGradientLayer`的遮罩实现的效果
 
-![Alt text|100x100](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_exam2.gif)旋转`CAGradientLayer`实现的效果
+![Alt text|100x100](http://cdn.mengqingshen.com/img/JK_IOS_S3_exam2.gif)旋转`CAGradientLayer`实现的效果
 
-![Alt text|100x160](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_exam3.gif) 色差动画效果
+![Alt text|100x160](http://cdn.mengqingshen.com/img/JK_IOS_S3_exam3.gif) 色差动画效果
 
-![Alt text|100x160](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_exam4.gif)作为`png`图片遮罩动画效果
+![Alt text|100x160](http://cdn.mengqingshen.com/img/JK_IOS_S3_exam4.gif)作为`png`图片遮罩动画效果
 
 
 ### 3.7.2	CAGradientLayer 坐标系统
 >**课程说明：**本课讲解 CAGradientLayer 的坐标系统，并延伸讲解了坐标系统影响如何颜色分配、动画效果。
 >1. `CAGradientLayer`的坐标系统是从坐标（0, 0）到（1, 1）绘制的矩形
->![Alt text|200x180](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-11%20%E4%B8%8B%E5%8D%8811.44.12.png)
+>![Alt text|200x180](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-11%20%E4%B8%8B%E5%8D%8811.44.12.png)
 >2. `CAGradientLayer`的`frame`值的`size`不为正方形的话，坐标系统会被拉伸
 >3. `CAGradientLayer`的`startPoint`与`endPoint`会直接影响颜色的绘制方向
 >4. `CAGradientLayer`的颜色分割线是以0到1的比例来计算的
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-11%20%E4%B8%8B%E5%8D%8811.45.28.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-11%20%E4%B8%8B%E5%8D%8811.45.28.png)
 
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_gra.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_gra.gif)
 
 ```objective-c
 #import "ViewController.h"
@@ -1864,7 +1864,7 @@ rainView.maskView = alphaView2;
 >2. 设定两种颜色，其中一种是透明色，另外一种是自定义颜色
 >3. 设定好`location`颜色分割点
 >4. `CAGradientLayer`的颜色分割点是0到1的比例来计算的
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_colors.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_colors.gif)
 
 ```objective-c
 #import "ViewController.h"
@@ -1929,7 +1929,7 @@ rainView.maskView = alphaView2;
 >2. 去定意义做动画的参数
 >3. 重写`setter`做动画
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_last.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_last.gif)
 
 #### 3.7.4.1	封装好的视图
 >**说明：**将对视图的渐变层的设置工作整合到`setter`中。
@@ -2084,18 +2084,18 @@ typedef enum : NSUInteger {
 >3. 使用`CAShapeLayer`与贝塞尔曲线可以实现不在`view`的`drawRect`方法中画出一些想要的图形
 >4. `CAShapeLayer`属于`CoreAnimation`框架，其动画渲染直接提交到手机的`GPU`当中，相较于`view`的`srawRect`方法使用`CPU`渲染而言，其效率极高，能大大优化内存使用情况。
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_path.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_path.gif)
 
 
 ### 3.8.2	贝塞尔曲线与 CAShapeLayer 的关系
 >**课程说明：**本课介绍多阶贝塞尔曲线的用途，并详细讲解贝塞尔曲线与 `CAShapeLayer` 之间的关系，以及使用贝塞尔曲线的一些注意事项。
 >1. `CAShapeLayer`中有`Shape`这个单词，顾名思义，它需要一个形状才能生效
 >2. 贝赛尔曲线可以创建基于矢量的路径
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_beisaier.gif)
+>![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_beisaier.gif)
 >3. 贝塞尔曲线给`CAShaperLayer`提供路径，`CAShpaeLayer`在提供的路径中进行渲染，路径会闭环，所以路径绘制出了`Shape`
 >4. 用于`CAShapeLayer`的贝赛尔曲线作为`path`，其中`path`是一个首尾相接的闭环的曲线，即使该贝赛尔曲线不是一个闭环的曲线。
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-12%2019.14.35.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-12%2019.14.35.png)
 
 *ViewCnotroller.m*
 
@@ -2142,7 +2142,7 @@ typedef enum : NSUInteger {
 >4. 将`strokeStart`的值设定成0，然后让`strokeEnd`的值变化触发隐式动画
 >
 >**注意：**同时设置`strokeStart`和`strokeEnd`时，前者不能大于后者。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_animeTwo.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_animeTwo.gif)
 
 ```objective-c
 #import "ViewController.h"
@@ -2215,7 +2215,7 @@ typedef enum : NSUInteger {
 >2. 实现细节
 >3. 进行测试
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_circle.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_circle.gif)
 
 #### 3.8.4.1	圆形进度条控件
 *CircleUIView.h*
@@ -2382,11 +2382,11 @@ layer.frame = CGRectMake(0, 0, 100, 5);
 // 触发隐式动画
 layer.frame = CGRectMake(0,0, 200, 5);
 ```
-![Alt text|200x120](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-13%2010.29.42.png)
+![Alt text|200x120](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-13%2010.29.42.png)
 
 
 #### 3.9.1.2	实战
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S1_xcode-progress.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-progress.gif)
 
 
 ### 3.9.2	用 CALayer 定制 UIImageView 淡入淡出切换图片效果
@@ -2395,7 +2395,7 @@ layer.frame = CGRectMake(0,0, 200, 5);
 >2. 修改`UIImageView`的`CALayer`中的`contents`属性实现切换图片的动画
 >3. 用`CAAnimationGroup`将`bounds`动画与`contents`动画组合起来
 >4. 将上述效果封装进`UIView`的子类中生成控件
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_fade.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_fade.gif)
 
 
 #### 3.9.2.1	封装动画效果
@@ -2486,8 +2486,8 @@ layer.frame = CGRectMake(0,0, 200, 5);
 >1. 遮罩原理分析
 >2. 用`png`图片作为`CALayer`中`mask`属性的遮罩`Layer`
 >3. 移动该`CALayer`的`mask`的`frame`值实现遮罩`Layer`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-14%20%E4%B8%8A%E5%8D%8812.01.58.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_mask.gif)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-14%20%E4%B8%8A%E5%8D%8812.01.58.png)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_mask.gif)
 
 ```objective-c
 #import "ViewController.h"
@@ -2538,7 +2538,7 @@ layer.frame = CGRectMake(0,0, 200, 5);
 ## 3.10	iOS绘图 API 绘制线条／文字／几何图形
 
 ### 3.10.1	绘制线条
-![Alt text|100x150](http://o6ul1xz4z.bkt.clouddn.com/img/1460642543336.png)
+![Alt text|100x150](http://cdn.mengqingshen.com/img/1460642543336.png)
 *DrawLines.swift*
 
 ```swift
@@ -2575,7 +2575,7 @@ class DrawLinesView: UIView {
 
 ### 3.10.2	绘制矩形
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-14%20%E4%B8%8B%E5%8D%8810.36.09.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-14%20%E4%B8%8B%E5%8D%8810.36.09.png)
 *DrawRectView.swift*
 
 ```swift
@@ -2607,7 +2607,7 @@ class DrawRectView: UIView {
 
 
 ### 3.10.3	绘制圆形
-![Alt text|100x150](http://o6ul1xz4z.bkt.clouddn.com/img/1460644510040.png)
+![Alt text|100x150](http://cdn.mengqingshen.com/img/1460644510040.png)
 *DrawCircleView.swift*
 
 ```swift
@@ -2644,7 +2644,7 @@ class DrawCircleView: UIView {
 ```
 
 ### 3.10.4	绘制图片
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-14%20%E4%B8%8B%E5%8D%8811.43.57.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-14%20%E4%B8%8B%E5%8D%8811.43.57.png)
 
 ```swift
 import UIKit
@@ -2679,7 +2679,7 @@ class DrawImageView: UIView {
 ```
 
 ### 3.10.5	画板实例
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/JK_IOS_S3_panel.gif)
+![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_panel.gif)
 *DrawBoardView.swift*
 
 ```swift

@@ -25,10 +25,10 @@ tag:
 
 ## 依赖关系图
 程序有两个类，Plane 和 Bird，他们继承了一个公共的抽象类 Flayable。
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_02%20%E5%9F%BA%E4%BA%8E%20make%20%20%E7%9A%84%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F/5930A389-B098-4396-A7B2-834A5AA83817.png)
+![](http://cdn.mengqingshen.com/SBS_02%20%E5%9F%BA%E4%BA%8E%20make%20%20%E7%9A%84%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F/5930A389-B098-4396-A7B2-834A5AA83817.png)
 
 依赖关系是一种数学结构，展示了构造树中文件之间的关系。如果某个文件依赖于另一个文件，那么对源文件内容的任何更改，都可能引起目标文件的重新生成。
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_02%20%E5%9F%BA%E4%BA%8E%20make%20%20%E7%9A%84%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F/0D4E3353-A787-46BF-B5A1-1E272856CF03.png)
+![](http://cdn.mengqingshen.com/SBS_02%20%E5%9F%BA%E4%BA%8E%20make%20%20%E7%9A%84%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F/0D4E3353-A787-46BF-B5A1-1E272856CF03.png)
 其中，`.cpp(.c)`文件都有对应的 .o 文件，但 `.h` 文件没有对应的目标文件，而是被引入到 `.cpp(.c)`文件中。
 
 # 2 创建一个简单的 makefile

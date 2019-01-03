@@ -290,7 +290,7 @@ export default CustomizableText;
 **限制：**没有 `z-index` 属性，一般来说,一组视图的最后一个元素有最高的优先级
 
 ### 5.3.3 学以致用
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1474774560955.png)
+![Alt text](http://cdn.mengqingshen.com/img/1474774560955.png)
 
 *AbsoluteDemo/index.js*
 ```javascript

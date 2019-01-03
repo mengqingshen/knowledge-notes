@@ -15,17 +15,17 @@ typora-copy-images-to: ipic
 
 ## 实战项目
 
-![3FD89E7B-FC0E-4B84-89B7-502E642CB745](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-3FD89E7B-FC0E-4B84-89B7-502E642CB745.png)
+![3FD89E7B-FC0E-4B84-89B7-502E642CB745](http://cdn.mengqingshen.com/2017-04-22-3FD89E7B-FC0E-4B84-89B7-502E642CB745.png)
 
-![0BD1730A-1F74-4203-A5EB-A9BFF8BCB92E](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-0BD1730A-1F74-4203-A5EB-A9BFF8BCB92E.png)
+![0BD1730A-1F74-4203-A5EB-A9BFF8BCB92E](http://cdn.mengqingshen.com/2017-04-22-0BD1730A-1F74-4203-A5EB-A9BFF8BCB92E.png)
 
 ## 环境和工具
 
-![3A533661-987A-443A-8F7A-9BE227D19B8F](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-3A533661-987A-443A-8F7A-9BE227D19B8F.png)
+![3A533661-987A-443A-8F7A-9BE227D19B8F](http://cdn.mengqingshen.com/2017-04-22-3A533661-987A-443A-8F7A-9BE227D19B8F.png)
 
 ## 课程步骤
 
-![AA7D06D7-76C7-4058-B593-3ECE38FC6C24](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-AA7D06D7-76C7-4058-B593-3ECE38FC6C24.png)
+![AA7D06D7-76C7-4058-B593-3ECE38FC6C24](http://cdn.mengqingshen.com/2017-04-22-AA7D06D7-76C7-4058-B593-3ECE38FC6C24.png)
 
 ----
 
@@ -51,7 +51,7 @@ typora-copy-images-to: ipic
 
 ## 最终效果
 
-![947E24CE-F03B-4CDD-8519-5D4EE7EFCAC1](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-947E24CE-F03B-4CDD-8519-5D4EE7EFCAC1.png)
+![947E24CE-F03B-4CDD-8519-5D4EE7EFCAC1](http://cdn.mengqingshen.com/2017-04-22-947E24CE-F03B-4CDD-8519-5D4EE7EFCAC1.png)
 
 
 
@@ -148,7 +148,7 @@ $ node app.js
 
 **浏览**
 
-![65CB39FB-0290-47F9-A838-03FF523FCAC2](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-65CB39FB-0290-47F9-A838-03FF523FCAC2.png)
+![65CB39FB-0290-47F9-A838-03FF523FCAC2](http://cdn.mengqingshen.com/2017-04-22-65CB39FB-0290-47F9-A838-03FF523FCAC2.png)
 
 ### 2.2 Nodejs 电影网站项目上线准备
 
@@ -250,15 +250,15 @@ $ grunt
 
 **首页**
 
-![0B4E68B4-15DB-4845-A430-B445A0753AD2](http://o6ul1xz4z.bkt.clouddn.com/2017-04-23-0B4E68B4-15DB-4845-A430-B445A0753AD2.png)
+![0B4E68B4-15DB-4845-A430-B445A0753AD2](http://cdn.mengqingshen.com/2017-04-23-0B4E68B4-15DB-4845-A430-B445A0753AD2.png)
 
-![A77C3832-A33F-4071-B632-6F356E426F82](http://o6ul1xz4z.bkt.clouddn.com/2017-04-23-A77C3832-A33F-4071-B632-6F356E426F82.png)
+![A77C3832-A33F-4071-B632-6F356E426F82](http://cdn.mengqingshen.com/2017-04-23-A77C3832-A33F-4071-B632-6F356E426F82.png)
 
 **用户列表页**
 
 1. 注册一个新用户，然后设置这个用户为**超级用户**。
 
-![6FD47491-4730-4E0D-881D-C0E2A5CEF8A0](http://o6ul1xz4z.bkt.clouddn.com/2017-04-23-6FD47491-4730-4E0D-881D-C0E2A5CEF8A0.png)
+![6FD47491-4730-4E0D-881D-C0E2A5CEF8A0](http://cdn.mengqingshen.com/2017-04-23-6FD47491-4730-4E0D-881D-C0E2A5CEF8A0.png)
 
 ```bash
 $ mongo -u neo -p xxx --authenticationDatabase movies --host [mongoDB IP 地址]
@@ -276,7 +276,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 2. 用该**超级用户**用户登陆，并查看用户列表。
 
-   ![88DC5498-2EA6-49DB-BE68-3E0B3EE6977F](http://o6ul1xz4z.bkt.clouddn.com/2017-04-23-88DC5498-2EA6-49DB-BE68-3E0B3EE6977F.png)
+   ![88DC5498-2EA6-49DB-BE68-3E0B3EE6977F](http://cdn.mengqingshen.com/2017-04-23-88DC5498-2EA6-49DB-BE68-3E0B3EE6977F.png)
 
 
 
@@ -284,11 +284,11 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 ☑ 简介: 在**豆瓣同步**中输入 ID(比如`7054604`) ，可以自动获取豆瓣相应电影并完成填充。
 
-![2873AE79-479D-467F-8FFF-90F87AC33C87](http://o6ul1xz4z.bkt.clouddn.com/2017-04-23-2873AE79-479D-467F-8FFF-90F87AC33C87.png)
+![2873AE79-479D-467F-8FFF-90F87AC33C87](http://cdn.mengqingshen.com/2017-04-23-2873AE79-479D-467F-8FFF-90F87AC33C87.png)
 
 **详情页**
 
-![0FDFDC79-8AAE-42F3-93E5-6748F2F0AFE0](http://o6ul1xz4z.bkt.clouddn.com/2017-04-23-0FDFDC79-8AAE-42F3-93E5-6748F2F0AFE0.png)
+![0FDFDC79-8AAE-42F3-93E5-6748F2F0AFE0](http://cdn.mengqingshen.com/2017-04-23-0FDFDC79-8AAE-42F3-93E5-6748F2F0AFE0.png)
 
 ### 2.3 狗狗说 React Native 开发的 App 后台项目分析
 
@@ -314,7 +314,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 ### 2.6 从一个故事理解整个部署思路
 
-![7A834090-215B-421E-89F4-9D8D2221407B](http://o6ul1xz4z.bkt.clouddn.com/2017-04-24-7A834090-215B-421E-89F4-9D8D2221407B.png)
+![7A834090-215B-421E-89F4-9D8D2221407B](http://cdn.mengqingshen.com/2017-04-24-7A834090-215B-421E-89F4-9D8D2221407B.png)
 
 ## 3 选购域名服务器及备案
 
@@ -355,7 +355,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 
 
-![9187181B-E182-482B-BE3C-69022E8E34B1](http://o6ul1xz4z.bkt.clouddn.com/2017-04-24-9187181B-E182-482B-BE3C-69022E8E34B1.png)
+![9187181B-E182-482B-BE3C-69022E8E34B1](http://cdn.mengqingshen.com/2017-04-24-9187181B-E182-482B-BE3C-69022E8E34B1.png)
 
 讲师提供了一个优惠码: 1abqbf
 
@@ -419,7 +419,7 @@ $ ssh imooc_manager@[外网 IP]
 
 ### 4.3 配置本地无密码 SSH 登录
 
-![FD361328-37D6-41F4-81DD-EFD7B1775F3A](http://o6ul1xz4z.bkt.clouddn.com/2017-04-26-FD361328-37D6-41F4-81DD-EFD7B1775F3A.png)
+![FD361328-37D6-41F4-81DD-EFD7B1775F3A](http://cdn.mengqingshen.com/2017-04-26-FD361328-37D6-41F4-81DD-EFD7B1775F3A.png)
 
 (1) 客户端配置
 
@@ -763,13 +763,13 @@ f1g1ns2.dnspod.net
 
 管理控制台 > 域名 > 域名列表 > (某个域名的) 管理 > DNS 修改
 
-![8782E41E-3983-4F69-A558-820E5D7B90CE](http://o6ul1xz4z.bkt.clouddn.com/2017-04-30-8782E41E-3983-4F69-A558-820E5D7B90CE.png)
+![8782E41E-3983-4F69-A558-820E5D7B90CE](http://cdn.mengqingshen.com/2017-04-30-8782E41E-3983-4F69-A558-820E5D7B90CE.png)
 
 (3) 使用 DNSPod 的域名解析功能，解析在阿里云买的域名
 
 ### 8.2 配置解析项目的域名 A 记录和 CNAME
 
-![D77D9188-AC9B-4A2E-AB09-1481B359BB5B](http://o6ul1xz4z.bkt.clouddn.com/2017-04-30-D77D9188-AC9B-4A2E-AB09-1481B359BB5B.png)
+![D77D9188-AC9B-4A2E-AB09-1481B359BB5B](http://cdn.mengqingshen.com/2017-04-30-D77D9188-AC9B-4A2E-AB09-1481B359BB5B.png)
 
 
 
@@ -871,7 +871,7 @@ $ cd indust-app
 $ wept
 ```
 
-![77C5FC78-04E7-42EB-93A4-94BF00F698C0](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-77C5FC78-04E7-42EB-93A4-94BF00F698C0.png)
+![77C5FC78-04E7-42EB-93A4-94BF00F698C0](http://cdn.mengqingshen.com/2017-05-01-77C5FC78-04E7-42EB-93A4-94BF00F698C0.png)
 
 #### 9.2.2 整个数据库
 
@@ -885,7 +885,7 @@ $ cd deploy-projects
 $ mongodump -h 127.0.0.1:27017 -d indust-app -o indust-app-backup
 ```
 
-![D8174179-AE4F-4C2A-8097-9752AB6FB211](http://o6ul1xz4z.bkt.clouddn.com/2017-05-01-D8174179-AE4F-4C2A-8097-9752AB6FB211.png)
+![D8174179-AE4F-4C2A-8097-9752AB6FB211](http://cdn.mengqingshen.com/2017-05-01-D8174179-AE4F-4C2A-8097-9752AB6FB211.png)
 
 ```bash
 # 打包 MongoDB 数据库数据并压缩
@@ -1223,7 +1223,7 @@ NODE_ENV=$backUpFolder@$backFileName node /path/to/tasks/upload.js
 
 (3) 在[七牛](https://portal.qiniu.com/create)添加一个新的对象存储空间 imoocdeploydb
 
-![3315EC54-A689-41E9-AE53-CE84CE12E99A](http://o6ul1xz4z.bkt.clouddn.com/2017-05-05-3315EC54-A689-41E9-AE53-CE84CE12E99A.png)
+![3315EC54-A689-41E9-AE53-CE84CE12E99A](http://cdn.mengqingshen.com/2017-05-05-3315EC54-A689-41E9-AE53-CE84CE12E99A.png)
 
 (4) 安装七牛模块, 测试备份脚本能不能备份到到七牛
 
@@ -1931,7 +1931,7 @@ $ pm2 deploy ecosystem.json production # 启动服务
 
 #### 10.7.4 微信公众号后台配置
 
-![578BF6DF-6610-4D46-ABE5-68140E9535A6](http://o6ul1xz4z.bkt.clouddn.com/2017-05-06-578BF6DF-6610-4D46-ABE5-68140E9535A6.png)
+![578BF6DF-6610-4D46-ABE5-68140E9535A6](http://cdn.mengqingshen.com/2017-05-06-578BF6DF-6610-4D46-ABE5-68140E9535A6.png)
 
 ## 11 使用和配置更安全的 HTTPS 协议
 ### 11.1 选购申请 SSL 证书的一些建议

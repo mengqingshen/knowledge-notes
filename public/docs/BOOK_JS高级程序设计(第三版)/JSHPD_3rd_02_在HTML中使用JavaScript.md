@@ -66,20 +66,20 @@ date: 2014-08-26 14
 ### 2.1.4    在XHTML中的用法（可以跳过这一节，因为HTML5标准正快速占领市场）     
 
 **错误方式：**<(小于号)在XHTML中被当作开始一个新标签来解析。                                                                                                      
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450428411211.png)
+![Alt text](http://cdn.mengqingshen.com/1450428411211.png)
                        
 
 **正确方式**   
 
 - 方式一：    使用HTML实体替代尖括号（比如&lt替换<）          
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450428430947.png)
+![Alt text](http://cdn.mengqingshen.com/1450428430947.png)
 
 -  方式二：    CData片段+JavaScript注释
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450428447412.png)
+![Alt text](http://cdn.mengqingshen.com/1450428447412.png)
 
                                                                                                                                                                             
 ### 2.1.5    不推荐使用的语法（早期）     
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450428543661.png)
+![Alt text](http://cdn.mengqingshen.com/1450428543661.png)
 
                   
 ## 2.2    嵌入代码与外部文件
@@ -97,13 +97,13 @@ date: 2014-08-26 14
 **类型：**
 
 - 混杂模式：   不推荐，如果不适用hack技术，不同浏览器差异可能非常大 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450428919678.png)
+![Alt text](http://cdn.mengqingshen.com/1450428919678.png)
 
 - 标准模式：    行为相对一致
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450428816811.png)
+![Alt text](http://cdn.mengqingshen.com/1450428816811.png)
 
 - 准标准模式：    有两种触发方式，和标准模式非常接近，行为符合标准（处理图片间隙除外）
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450428869793.png)
+![Alt text](http://cdn.mengqingshen.com/1450428869793.png)
 
 ## 2.4   noscript 元素：    不支持JS的浏览器平稳退化的方式
 

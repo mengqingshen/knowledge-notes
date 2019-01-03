@@ -26,13 +26,13 @@ tag:
 * `发布打包和目标机器`：软件打包、分发给最终用户、在目标机器安装的方法。
 
 **编译型语言的传统构造系统示意图**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/FA9CB8E8-FB94-49A9-A8EB-AE680F43F86C.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/FA9CB8E8-FB94-49A9-A8EB-AE680F43F86C.png)
 
 ## 1.2 解释型语言
 解释型语言的源代码不用编译成目标代码，因此无须目标树。
 
 **解释型语言的构造系统示意图**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/ADE2C6DD-BD78-4BCE-96C1-9D9BBB0392D6.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/ADE2C6DD-BD78-4BCE-96C1-9D9BBB0392D6.png)
 
 ## 1.3 web应用
 用于 web 应用的构造系统是一种混合体，包含编译型代码、解释型代码以及配置文件和数据文件。
@@ -42,26 +42,26 @@ tag:
 * Java 源文件
 
 **web 应用软件的构造系统示意图**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/AB538FB2-B508-4AA2-B3DB-CBE4A215DD71.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/AB538FB2-B508-4AA2-B3DB-CBE4A215DD71.png)
 
 
 ## 1.4 单元测试
 事实上，单元测试构造系统只是标准构造系统的变体。这种构造系统不生成可在目标机器上安装的发布包，而是生成许多更小的单元测试包。
 
 **生成单元测试包的构造系统示意图**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/0BF99DEB-7A0D-4217-A907-F56A83AE3788.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/0BF99DEB-7A0D-4217-A907-F56A83AE3788.png)
 
 ## 1.5 静态分析
 与常规构造系统类似，静态分析系统的输入也是同样是源代码。不过，它不生成 `目标树` 和 `发布包`，而是输出某种类型的缺陷报告文档。
 
 **用于静态分析的构造系统示意图**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/42C6AC7E-D38E-44E2-AA70-4A55A2C85A55.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/42C6AC7E-D38E-44E2-AA70-4A55A2C85A55.png)
 
 ## 1.6 文档生成
 该构造系统的输出是  PDF 文件，或是 HTML 页面和图形图像的集合，或是任何其他可视为文档的东西。
 
 **生成文档的构造系统示意图**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/EFE821F6-AF70-482A-B9C4-4E5C89DAB49D.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/EFE821F6-AF70-482A-B9C4-4E5C89DAB49D.png)
 
 # 2 构造系统的各个组成部分
 ## 2.1 版本控制工具
@@ -103,7 +103,7 @@ tag:
 + 原生编译（native compilation）：软件的`构造`和`运行`，在同类的机器上。
 * 跨平台编译（cross-compilation）：软件的`构造`和`运行`，是分别在不同操作系统或不同 cpu 的两类机器上进行的。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/E9954D5B-1701-4999-A383-6C7E7A117EA9.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/E9954D5B-1701-4999-A383-6C7E7A117EA9.png)
 
 ## 2.5 发布打包与目标机器
 直接把一堆可执行程序和数据文件交给用户，指望他们能够自行安装和配置，这种想法是不现实的。
@@ -125,7 +125,7 @@ tag:
 构造工具调用各个编译工具来完成一连串事件，这个过程就是所谓的`构造过程`（build process）。
 
 **面向编译型语言的构造系统示意图**
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/B01C5AC7-5906-4396-B9C7-5869926605B4.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/B01C5AC7-5906-4396-B9C7-5869926605B4.png)
 
 ## 构造描述
 对构造工具来说，需要以文本格式编写`构造描述`（build description）。
@@ -137,7 +137,7 @@ Progam("stock", ["ticker.c", "currency.c"])
 ```
 
 
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/0852206B-5607-4CD0-B660-8A67D4A9AAAA.png)
+![](http://cdn.mengqingshen.com/SBS_01%20%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/0852206B-5607-4CD0-B660-8A67D4A9AAAA.png)
 
 # 4 如何使用构造系统
 根据构造的`频度`和构造的程序的`用途`，可以分三种使用场景：

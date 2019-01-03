@@ -423,7 +423,7 @@ cp instanceof Point // true
 + 作为一个对象，子类的原型（__proto__属性）是父类
 + 作为一个构造函数，子类的原型（prototype属性）是父类的实例
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-19%20%E4%B8%8B%E5%8D%8811.08.01.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-19%20%E4%B8%8B%E5%8D%8811.08.01.png)
 
 
 ```javascript
@@ -447,7 +447,7 @@ B.prototype.__proto__ === A.prototype // true
 
 #### （1）子类继承 `Object` 类
 **说明：**和普通情况类似，只不过父类换成了 `Object`，平淡无奇
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-21%20%E4%B8%8A%E5%8D%8812.16.39.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-21%20%E4%B8%8A%E5%8D%8812.16.39.png)
 
 *特性展示*
 
@@ -463,7 +463,7 @@ A.prototype.__proto__ === Object.prototype // true
 #### （2）不存在任何继承
 **说明：**这种类的实例基本可以看作 `Object` 的实例（或者类比对象字面量）
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-20%20%E4%B8%8B%E5%8D%8811.41.50.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-20%20%E4%B8%8B%E5%8D%8811.41.50.png)
 
 *特性展示*
 
@@ -478,7 +478,7 @@ A.prototype.__proto__ === Object.prototype // true
 #### （3）子类继承 null
 **说明：**这种类的实例不继承任何属性和方法
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-21%20%E4%B8%8A%E5%8D%8812.22.19.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-21%20%E4%B8%8A%E5%8D%8812.22.19.png)
 
 *特性展示*
 

@@ -26,7 +26,7 @@ tag:
 ＃举例：匹配邮箱
 `^(a-zA-Z0-9_-)+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$`
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471072343598.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471072343598.png)
 
 # 2 认识正则表达式
 ## 2.1 RegExp对象
@@ -71,13 +71,13 @@ m|multiple lines。 多行搜索，在存在`\n`的字符串中会影响表达�
 
 元字符中的转义字符|含义
 ---|---
-\t|水平制表符![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471075632133.png)
-\v|垂直制表符![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471075663582.png)
-\n|换行符![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471075688304.png)
-\r|回车符![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471075717069.png)
-\0|空字符![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471075742302.png)
-\f|换页符![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471075759837.png)
-\cX|与X对应的控制字符（ctrl + X）![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471075779742.png)
+\t|水平制表符![Alt text](http://cdn.mengqingshen.com/img/1471075632133.png)
+\v|垂直制表符![Alt text](http://cdn.mengqingshen.com/img/1471075663582.png)
+\n|换行符![Alt text](http://cdn.mengqingshen.com/img/1471075688304.png)
+\r|回车符![Alt text](http://cdn.mengqingshen.com/img/1471075717069.png)
+\0|空字符![Alt text](http://cdn.mengqingshen.com/img/1471075742302.png)
+\f|换页符![Alt text](http://cdn.mengqingshen.com/img/1471075759837.png)
+\cX|与X对应的控制字符（ctrl + X）![Alt text](http://cdn.mengqingshen.com/img/1471075779742.png)
 
 ## 2.3 字符类
 ### 2.3.1 基础
@@ -86,7 +86,7 @@ m|multiple lines。 多行搜索，在存在`\n`的字符串中会影响表达�
 
 **举例**
 `[abc]`，把字符`a`或`b`或`c`归为一类，表达式可以匹配这类的字符。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471076119291.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471076119291.png)
 
 ```javascript
 // "X1X2X3d4"
@@ -104,7 +104,7 @@ m|multiple lines。 多行搜索，在存在`\n`的字符串中会影响表达�
 ```
 ## 2.4 范围类
 正则表达式还提供了`范围类`。例如，可以使用`[a-z]`来连接两个字符表示*从 a 到 z 的任意字符*，这是个闭区间，也就是包涵 a 和 z 本身。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471076736409.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471076736409.png)
 
 ```javascript
 'a1b2c3d4Hello'.replace(/[a-z]/g, 'X')
@@ -171,7 +171,7 @@ mulStr.replace(/^@\d/g, 'X')
 
 **举例**
 `\d{20}\w\d?\w+\d*\d{3}\w{3,5}\d{3,}`
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471090337589.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471090337589.png)
 
  技巧：最多出现 n 次可以这样表示`{0, n}`
 ## 2.7 贪婪模式与非贪婪模式
@@ -196,7 +196,7 @@ mulStr.replace(/^@\d/g, 'X')
 使用`()`可以达到分组的功能，使量词作用于分组。
 
 **例子**
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471097284500.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471097284500.png)
 
 ```javascript
 'a1b2c3d4'.match(/([a-z]\d){3}/g)
@@ -208,10 +208,10 @@ mulStr.replace(/^@\d/g, 'X')
 
 **例子**
 `/Byr(on|Ca)sper/g`：
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471097817285.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471097817285.png)
 
 `/Byron|Casper/g`：
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471097772183.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471097772183.png)
 
 ```javascript
 // 有分组
@@ -229,7 +229,7 @@ mulStr.replace(/^@\d/g, 'X')
 2016-8-13 => 8/13/2016
 
 `/(\d+)-(\d+)-(\d+)/g`：
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471098062069.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471098062069.png)
 
 ```javascript
 '2016-8-13'.replace(/(\d+)-(\d+)-(\d+)/g, '$2/$3/$1')
@@ -239,7 +239,7 @@ mulStr.replace(/^@\d/g, 'X')
 ### 2.8.4 忽略分组
 不希望捕获某些分组，只需要在分组內加上`?:`就可以
 `(?:Byron).(ok)`：
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1471098192119.png)
+![Alt text](http://cdn.mengqingshen.com/img/1471098192119.png)
 
 ## 2.9 前瞻
  **说明：**正则表达式从文本头部向尾部解析，文本尾部方向，称为`前`。`前瞻`就是在正则表达式匹配到规则的时候，向前检查是否符合断言，`后顾/后瞻`方向和`前瞻`相反。符合和不符合特定断言称为`肯定/正向`匹配和`否定/负向`匹配。

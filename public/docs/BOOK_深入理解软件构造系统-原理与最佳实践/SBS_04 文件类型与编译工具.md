@@ -8,7 +8,7 @@ tag:
 ---
 
 传统编译型软件的总体示意图，展示了源文件被编译成目标文件
-![](http://o6ul1xz4z.bkt.clouddn.com/SBS_04%20%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E4%B8%8E%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/E5ADC1DD-4985-413D-B2A2-49935E2C4992.png)
+![](http://cdn.mengqingshen.com/SBS_04%20%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E4%B8%8E%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/E5ADC1DD-4985-413D-B2A2-49935E2C4992.png)
 
 # 1 c/c++
  **C 语言简介**

@@ -57,7 +57,7 @@ IE3加入名为JScript的JavaScript实现
 
 - 浏览器对象模型（BOM）
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450418191884.png)
+![Alt text](http://cdn.mengqingshen.com/1450418191884.png)
 
 ###  1.2.1    ECMAScript
 
@@ -125,7 +125,7 @@ try-catch
 
 #### 3、WEB浏览器对ECMAScript的支持
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450418168335.png)
+![Alt text](http://cdn.mengqingshen.com/1450418168335.png)
 
 ### 1.2.2    文档对象模型（DOM）
 
@@ -159,7 +159,7 @@ DOM3:    引入以统一方式加载和保存文档的方法，开始支持XML1.
 - SMIL(同步多媒体集成语言)
 
 #### 4、WEB浏览器对DOM的支持
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450418504322.png)
+![Alt text](http://cdn.mengqingshen.com/1450418504322.png)
 
 ### 1.2.3    浏览器对象模型（BOM）
 **基本：**
@@ -178,7 +178,7 @@ DOM3:    引入以统一方式加载和保存文档的方法，开始支持XML1.
 
 
 ## 1.3    JavaScript版本（Netscape/Mozilla）
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450426145664.png)
+![Alt text](http://cdn.mengqingshen.com/1450426145664.png)
 
 
 

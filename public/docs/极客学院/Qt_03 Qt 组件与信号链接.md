@@ -14,14 +14,14 @@ tag:
 
 ## 1.1 一个简单的例子
 例如，通过信号槽实现点击 Push Button 实现 Label 的显示和隐藏。
-![psuhbuttonclicked](http://o6ul1xz4z.bkt.clouddn.com/psuhbuttonclicked.gif)
+![psuhbuttonclicked](http://cdn.mengqingshen.com/psuhbuttonclicked.gif)
 
 ### 第一步：界面设计
 添加 Push Button 被 Label 。
 ### 第二步：使用信号槽
 **方式一：在 UI 文件中实现**
 在 Singnals && Editor 面板中添加信号。
-![](http://o6ul1xz4z.bkt.clouddn.com/14873082599746.jpg)
+![](http://cdn.mengqingshen.com/14873082599746.jpg)
 
 **方式二：在代码中实现**
 也可以用代码实现，如下
@@ -169,13 +169,13 @@ class Example: public QObject
 **元对象系统**
 Qt的`元对象系统`是用来处理对象间通信的信号和槽，它运行信息类型和动态属性。Qt 的源对象系统包括3个部分：
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14873166654930.jpg)
+![](http://cdn.mengqingshen.com/14873166654930.jpg)
 
 **MOC 工作原理**
 
 元对象编译器读取C++源文件时，如果发现在文件中类的声明中含有 `Q_OBJECT` 宏，元对象编译器就会给含有 `Q_OBJECT` 宏的类生成另一个含有元对象代码的 C++ 源文件，这个生成的源文件必须与这个类的实现一起编译和链接。
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14873209758999.jpg)
+![](http://cdn.mengqingshen.com/14873209758999.jpg)
 
 ### QObject
 **说明：**QObject 定义了一系列函数和 一个静态的QObjectMeta 对象，这些函数会由 MOC 在生成的 c++ 源文件中实现
@@ -311,16 +311,16 @@ connect(this,
 
 ### 第一步：创建项目
 ### 第二步：设计布局
-![](http://o6ul1xz4z.bkt.clouddn.com/14873319229850.jpg)
+![](http://cdn.mengqingshen.com/14873319229850.jpg)
 
 ### 第三步：注册事件（信号槽）
 
 **说明：** 使用方式二（响应交互事件）
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14873319405996.jpg)
+![](http://cdn.mengqingshen.com/14873319405996.jpg)
 
 
-![](http://o6ul1xz4z.bkt.clouddn.com/14873319619945.jpg)
+![](http://cdn.mengqingshen.com/14873319619945.jpg)
 
 
 

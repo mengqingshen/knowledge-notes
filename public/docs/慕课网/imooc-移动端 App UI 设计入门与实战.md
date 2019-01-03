@@ -112,27 +112,27 @@ UI 设计“狮”：强烈自尊、傲娇
 
 ### 1.2 产品开发流程
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2017-12-27-000347.png)
+![](http://cdn.mengqingshen.com/2017-12-27-000347.png)
 
 #### (1) BOSS
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2017-12-27-000700.png)
+![](http://cdn.mengqingshen.com/2017-12-27-000700.png)
 
 #### (2) 产品经理
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2017-12-27-000830.png)
+![](http://cdn.mengqingshen.com/2017-12-27-000830.png)
 
 #### (3) 产品经理
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2017-12-27-001003.png)
+![](http://cdn.mengqingshen.com/2017-12-27-001003.png)
 
 #### (4) UI 设计师
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2017-12-27-001327.png)
+![](http://cdn.mengqingshen.com/2017-12-27-001327.png)
 
 #### (5) 程序员
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2017-12-27-001417.png)
+![](http://cdn.mengqingshen.com/2017-12-27-001417.png)
 
 ## 2 产品需求解析
 
@@ -148,7 +148,7 @@ UI 设计“狮”：强烈自尊、傲娇
 
 功能服务：产品提供 **问答**、**知识** 和 **积分商城** 三个主模块。
 
-![AF44472E-2177-4E88-816E-88FE0D945A67](http://o6ul1xz4z.bkt.clouddn.com/2017-12-30-AF44472E-2177-4E88-816E-88FE0D945A67.png)
+![AF44472E-2177-4E88-816E-88FE0D945A67](http://cdn.mengqingshen.com/2017-12-30-AF44472E-2177-4E88-816E-88FE0D945A67.png)
 
 ### 2.2 产品需求解析
 
@@ -162,7 +162,7 @@ UI 设计“狮”：强烈自尊、傲娇
 
 
 
-![77ED0918-9CBE-4AE1-912A-F3B81595CEE9](http://o6ul1xz4z.bkt.clouddn.com/2017-12-30-77ED0918-9CBE-4AE1-912A-F3B81595CEE9.png)
+![77ED0918-9CBE-4AE1-912A-F3B81595CEE9](http://cdn.mengqingshen.com/2017-12-30-77ED0918-9CBE-4AE1-912A-F3B81595CEE9.png)
 
 
 
@@ -170,7 +170,7 @@ UI 设计“狮”：强烈自尊、傲娇
 
 + 认证教师用户发起知识问答，学员用户支付慕币参与
 
-  ![D72EDE85-80B0-4D59-9C2E-A78DB32D5C5D](http://o6ul1xz4z.bkt.clouddn.com/2017-12-30-D72EDE85-80B0-4D59-9C2E-A78DB32D5C5D.png)
+  ![D72EDE85-80B0-4D59-9C2E-A78DB32D5C5D](http://cdn.mengqingshen.com/2017-12-30-D72EDE85-80B0-4D59-9C2E-A78DB32D5C5D.png)
 
 
 
@@ -178,7 +178,7 @@ UI 设计“狮”：强烈自尊、傲娇
 
 + 用户所获积分，可在积分商城兑换礼品（如慕币）
 
-![9A0C054A-DA11-419F-A152-AD39A21E4CD5](http://o6ul1xz4z.bkt.clouddn.com/2017-12-30-9A0C054A-DA11-419F-A152-AD39A21E4CD5.png)
+![9A0C054A-DA11-419F-A152-AD39A21E4CD5](http://cdn.mengqingshen.com/2017-12-30-9A0C054A-DA11-419F-A152-AD39A21E4CD5.png)
 
 
 
@@ -190,43 +190,43 @@ UI 设计“狮”：强烈自尊、傲娇
 
 积分可通过参与活动、问答等形式获得。
 
-![5197EA04-8E66-465B-8507-23581468E729](http://o6ul1xz4z.bkt.clouddn.com/2017-12-30-5197EA04-8E66-465B-8507-23581468E729.png)
+![5197EA04-8E66-465B-8507-23581468E729](http://cdn.mengqingshen.com/2017-12-30-5197EA04-8E66-465B-8507-23581468E729.png)
 
 慕币可通过充值以及积分商城兑换获得。
 
-![33630F13-D2DF-4F52-8819-40194424C3B2](http://o6ul1xz4z.bkt.clouddn.com/2017-12-30-33630F13-D2DF-4F52-8819-40194424C3B2.png)
+![33630F13-D2DF-4F52-8819-40194424C3B2](http://cdn.mengqingshen.com/2017-12-30-33630F13-D2DF-4F52-8819-40194424C3B2.png)
 
 
 
 业务流程梳理如下：
 
-![C562134B-7941-4715-AAF9-7581B9CD6583](http://o6ul1xz4z.bkt.clouddn.com/2017-12-30-C562134B-7941-4715-AAF9-7581B9CD6583.png)
+![C562134B-7941-4715-AAF9-7581B9CD6583](http://cdn.mengqingshen.com/2017-12-30-C562134B-7941-4715-AAF9-7581B9CD6583.png)
 
 #### 2.2.3 业务流程总结
 
-![9A0900F1-22D9-4DAB-B43C-FF65E33A14A9](http://o6ul1xz4z.bkt.clouddn.com/2017-12-30-9A0900F1-22D9-4DAB-B43C-FF65E33A14A9.png)
+![9A0900F1-22D9-4DAB-B43C-FF65E33A14A9](http://cdn.mengqingshen.com/2017-12-30-9A0900F1-22D9-4DAB-B43C-FF65E33A14A9.png)
 
 
 
 ###  2.3  产品草图绘制
 
-![0DCF8046-9BF2-4044-AE2B-F7FDEE5B98CE](http://o6ul1xz4z.bkt.clouddn.com/2017-12-31-0DCF8046-9BF2-4044-AE2B-F7FDEE5B98CE.png)
+![0DCF8046-9BF2-4044-AE2B-F7FDEE5B98CE](http://cdn.mengqingshen.com/2017-12-31-0DCF8046-9BF2-4044-AE2B-F7FDEE5B98CE.png)
 
 
 
 #### 问答
 
-![80B60E76-EC28-47B5-9F86-9375FC3841D1](http://o6ul1xz4z.bkt.clouddn.com/2017-12-31-80B60E76-EC28-47B5-9F86-9375FC3841D1.png)
+![80B60E76-EC28-47B5-9F86-9375FC3841D1](http://cdn.mengqingshen.com/2017-12-31-80B60E76-EC28-47B5-9F86-9375FC3841D1.png)
 
 
 
 #### 知识
 
-![E69E11F2-A5E1-453A-8755-2F9E5CF4E957](http://o6ul1xz4z.bkt.clouddn.com/2017-12-31-E69E11F2-A5E1-453A-8755-2F9E5CF4E957.png)
+![E69E11F2-A5E1-453A-8755-2F9E5CF4E957](http://cdn.mengqingshen.com/2017-12-31-E69E11F2-A5E1-453A-8755-2F9E5CF4E957.png)
 
 #### 积分商城
 
-![14D9042B-5FB1-42BF-8A70-23A8B8601591](http://o6ul1xz4z.bkt.clouddn.com/2017-12-31-14D9042B-5FB1-42BF-8A70-23A8B8601591.png)
+![14D9042B-5FB1-42BF-8A70-23A8B8601591](http://cdn.mengqingshen.com/2017-12-31-14D9042B-5FB1-42BF-8A70-23A8B8601591.png)
 
 ### 2.4 产品结构图绘制
 
@@ -236,21 +236,21 @@ UI 设计“狮”：强烈自尊、傲娇
 
 
 
-![947F6877-413A-4AE9-9C47-2D9FE284B543](http://o6ul1xz4z.bkt.clouddn.com/2017-12-31-947F6877-413A-4AE9-9C47-2D9FE284B543.png)
+![947F6877-413A-4AE9-9C47-2D9FE284B543](http://cdn.mengqingshen.com/2017-12-31-947F6877-413A-4AE9-9C47-2D9FE284B543.png)
 
 
 
 #### 首页
 
-![E34009B6-43C2-46F9-B15B-347F805BEE87](http://o6ul1xz4z.bkt.clouddn.com/2017-12-31-E34009B6-43C2-46F9-B15B-347F805BEE87.png)
+![E34009B6-43C2-46F9-B15B-347F805BEE87](http://cdn.mengqingshen.com/2017-12-31-E34009B6-43C2-46F9-B15B-347F805BEE87.png)
 
 #### 问答专栏（新增）
 
-![50D08915-E32A-4E71-AFE0-FC79DD820F6F](http://o6ul1xz4z.bkt.clouddn.com/2017-12-31-50D08915-E32A-4E71-AFE0-FC79DD820F6F.png)
+![50D08915-E32A-4E71-AFE0-FC79DD820F6F](http://cdn.mengqingshen.com/2017-12-31-50D08915-E32A-4E71-AFE0-FC79DD820F6F.png)
 
 #### 知识专栏（新增）
 
-![4DF274EB-4936-499B-8F82-AF15658C987D](http://o6ul1xz4z.bkt.clouddn.com/2017-12-31-4DF274EB-4936-499B-8F82-AF15658C987D.png)
+![4DF274EB-4936-499B-8F82-AF15658C987D](http://cdn.mengqingshen.com/2017-12-31-4DF274EB-4936-499B-8F82-AF15658C987D.png)
 
 
 
@@ -262,35 +262,35 @@ UI 设计“狮”：强烈自尊、傲娇
 
 ### 3.1 问吧分类页线框图绘制
 
-![A5D9D07C-0A2A-4081-972C-71968DF4DC8D](http://o6ul1xz4z.bkt.clouddn.com/2018-01-01-A5D9D07C-0A2A-4081-972C-71968DF4DC8D.png)
+![A5D9D07C-0A2A-4081-972C-71968DF4DC8D](http://cdn.mengqingshen.com/2018-01-01-A5D9D07C-0A2A-4081-972C-71968DF4DC8D.png)
 
 ### 3.2 问吧分类列表页线框图绘制
 
-![42724350-0999-46E2-BD4D-8340597365C0](http://o6ul1xz4z.bkt.clouddn.com/2018-01-01-42724350-0999-46E2-BD4D-8340597365C0.png)
+![42724350-0999-46E2-BD4D-8340597365C0](http://cdn.mengqingshen.com/2018-01-01-42724350-0999-46E2-BD4D-8340597365C0.png)
 
 ### 3.3 问吧详情页线框图绘制
 
-![95F46901-9DA1-4D19-A371-D8D3CDC62F0A](http://o6ul1xz4z.bkt.clouddn.com/2018-01-01-95F46901-9DA1-4D19-A371-D8D3CDC62F0A.png)
+![95F46901-9DA1-4D19-A371-D8D3CDC62F0A](http://cdn.mengqingshen.com/2018-01-01-95F46901-9DA1-4D19-A371-D8D3CDC62F0A.png)
 
-![E6355094-B8C6-43FC-ABDB-38C3550021B3](http://o6ul1xz4z.bkt.clouddn.com/2018-01-01-E6355094-B8C6-43FC-ABDB-38C3550021B3.png)
+![E6355094-B8C6-43FC-ABDB-38C3550021B3](http://cdn.mengqingshen.com/2018-01-01-E6355094-B8C6-43FC-ABDB-38C3550021B3.png)
 
 ### 3.4 知识列表页线框图绘制
 
 
 
-  ![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-050054.png)
+  ![](http://cdn.mengqingshen.com/2018-01-07-050054.png)
 
 
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-050135.png)
+![](http://cdn.mengqingshen.com/2018-01-07-050135.png)
 
 ### 3.5 知识详情页线框图绘制
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-054250.png)
+![](http://cdn.mengqingshen.com/2018-01-07-054250.png)
 
 
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-054108.png)
+![](http://cdn.mengqingshen.com/2018-01-07-054108.png)
 
 
 
@@ -300,27 +300,27 @@ UI 设计“狮”：强烈自尊、傲娇
 
 #### 知识专栏列表页
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-152106.png)
+![](http://cdn.mengqingshen.com/2018-01-07-152106.png)
 
 #### 知识专栏页
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-152238.png)
+![](http://cdn.mengqingshen.com/2018-01-07-152238.png)
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-152310.png)
+![](http://cdn.mengqingshen.com/2018-01-07-152310.png)
 
 #### 知识频道.页面流程图
 
-![](http://o6ul1xz4z.bkt.clouddn.com/2018-01-07-152412.png)
+![](http://cdn.mengqingshen.com/2018-01-07-152412.png)
 
 
 
 ### 3.7 问吧专栏问答页线框图绘制
 
-![42757898-37A4-4B2E-9FC8-E0D7AC3A9071](http://o6ul1xz4z.bkt.clouddn.com/2018-02-04-42757898-37A4-4B2E-9FC8-E0D7AC3A9071.png)
+![42757898-37A4-4B2E-9FC8-E0D7AC3A9071](http://cdn.mengqingshen.com/2018-02-04-42757898-37A4-4B2E-9FC8-E0D7AC3A9071.png)
 
 
 
-![09222ABB-E22A-4014-80FB-3845032959BE](http://o6ul1xz4z.bkt.clouddn.com/2018-02-04-09222ABB-E22A-4014-80FB-3845032959BE.png)
+![09222ABB-E22A-4014-80FB-3845032959BE](http://cdn.mengqingshen.com/2018-02-04-09222ABB-E22A-4014-80FB-3845032959BE.png)
 
 ### 3.8 问吧专栏列表页线框图绘制
 

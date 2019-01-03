@@ -18,7 +18,7 @@ date:  2014-09-10 13:39:36
 
 ## 13.1    事件流
 ### 13.1.1    事件冒泡：最具体的元素->...->document
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492716437.png)
+![Alt text](http://cdn.mengqingshen.com/1443492716437.png)
 **支持情况**： 所有浏览器。
 
 | 浏览器                       | 表现                                       |
@@ -26,7 +26,7 @@ date:  2014-09-10 13:39:36
 | IE5.5---                  | 最具体的元素->...->body->document              |
 | IE9、Firefox、Chrome、Safari | 最具体的元素->...->body->html->document->window |
 ### 13.1.2    事件捕获    ：      document->html->body->...->最具体的元素
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492766187.png)
+![Alt text](http://cdn.mengqingshen.com/1443492766187.png)
 **说明：**DOM2级规范
 
 + 支持情况：IE9、Safari、Chrome、Opera、Firefox
@@ -36,7 +36,7 @@ date:  2014-09-10 13:39:36
 1. 事件捕获阶段：    为截获事件提供机会
 2. 处于目标阶段：    实际的目标接收到事件
 3. 事件冒泡阶段：    冒泡阶段
-   ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492821788.png)
+   ![Alt text](http://cdn.mengqingshen.com/1443492821788.png)
 ## 13.2    事件处理程序
 ### 13.2.1    HTML事件处理程序
 **特点**
@@ -201,8 +201,8 @@ var EventUtil = {
 + 所有浏览器都支持event对象，但支持方式不同
 + 只在事件处理程序执行期间存在，执行完毕后被销毁
 + 不同事件类型可用的属性和方法不同，都包括的成员如下
-  ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492907289.png)
-  ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492916457.png)
+  ![Alt text](http://cdn.mengqingshen.com/1443492907289.png)
+  ![Alt text](http://cdn.mengqingshen.com/1443492916457.png)
 
   + event.type    ：    事件类型
 
@@ -276,7 +276,7 @@ btn.attachEvent('onclick', function(event){
 ```html
 <input tyep='button' value='Click Me' onclick='alert(event.type)' />
 ```
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443492978446.png)
+![Alt text](http://cdn.mengqingshen.com/1443492978446.png)
 ### 13.3.3    跨浏览器的事件对象
 **说明：**创建一个兼容的操作事件对象的工具对象：因为兼容IE不支持阻止事件捕获
 
@@ -1033,7 +1033,7 @@ var isSupported = document.implementation.hasFeature('CompositionEvent');
 // 监测浏览器对变动事件的支持
 var isSupported = document.implementation.hasFeature('MutationEvents', '2.0');
 ```
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1443501467636.png)
+![Alt text](http://cdn.mengqingshen.com/1443501467636.png)
 #### 1. 删除节点
 <table cellspacing="0" cellpadding="0" style="width: 100%;"><tr><td>事件（按触发先后顺序）</td><td>相关属性</td><td>属性值</td><td>dom位置</td><td>触发时机</td><td>冒泡</td><td>备注</td></tr><tr><td colspan="1" rowspan="2">DOMNodeRemoved</td><td>event.realtedNode</td><td>父节点</td><td colspan="1" rowspan="2">可以在DOM的任何层次处理 </td><td>使用removeChild()或replaceChild()删除节点</td><td colspan="1" rowspan="2">是</td><td colspan="1" rowspan="2"></td></tr><tr><td colspan="1">event.target</td><td>被删除的节点</td><td colspan="1"></td></tr><tr><td colspan="1">DOMNodeRemovedFromDocument</td><td colspan="1"></td><td></td><td colspan="1">被删除的子节点本身</td><td colspan="1">被移除的所有子节点会相继触发</td><td colspan="1">否</td><td colspan="1">因为不会冒泡，所有必需给子节点指定事件处理程序才会触发</td></tr></table>
 #### 2. 插入节点

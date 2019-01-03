@@ -229,8 +229,8 @@ alert(null == undefined);//true
 **两个字面值:    true和false**区分大小写
 **各种类型转换为Boolean类型：**
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450437407740.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450437420236.png)
+![Alt text](http://cdn.mengqingshen.com/1450437407740.png)
+![Alt text](http://cdn.mengqingshen.com/1450437420236.png)
 
 
 ### 3.4.5 Number 类型
@@ -288,7 +288,7 @@ alert(NaN == NaN);//false
 #### 4. 数值转换（非数值->数值）
 
 - 任何类型->数值：    Number()
-  ![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450437456592.png)
+  ![Alt text](http://cdn.mengqingshen.com/1450437456592.png)
 
 - 字符串->整数：    parseInt()
 - 字符串->浮点数：    parseFloat()
@@ -300,7 +300,7 @@ alert(NaN == NaN);//false
 **注意：**以单引号开头必需以单引号结尾，双引号亦。
 
 #### 1. 字面直接量
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1450437474657.png)
+![Alt text](http://cdn.mengqingshen.com/1450437474657.png)
 
 
 #### 2. 字符串的特点

@@ -18,16 +18,16 @@ categories:
 |调试器面板|位于底部居中位置|调试器运行的时候，堆栈和调试器控制器会出现在这里|
 |库面板|隐藏在窗口右下角|列有项目资源、对象、代码片段和其他在项目中可能会用到的东西|
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-03%20%E4%B8%8B%E5%8D%8810.16.15.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-03%20%E4%B8%8B%E5%8D%8810.16.15.png)
 
 ## 7.2	改变公司名称
 >**说明：**公司的名称会出现在创建文件时自动生成的注释中。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-04%20%E4%B8%8A%E5%8D%8810.02.06.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-04%20%E4%B8%8A%E5%8D%8810.02.06.png)
 
 
 ## 7.3	使用编辑器的技巧
 >**说明：**列举一下不同区域的使用的技巧
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-03%20%E4%B8%8B%E5%8D%8810.16.15.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-03%20%E4%B8%8B%E5%8D%8810.16.15.png)
 
 
 ### 7.3.1	导航器面板
@@ -93,7 +93,7 @@ categories:
 >2. 点击它，右边出现一个向下的箭头，点击箭头出现一个菜单
 >3. 选择菜单，选择Edit all in Scope
 
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%20%E4%B8%8A%E5%8D%888.14.05.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%20%E4%B8%8A%E5%8D%888.14.05.png)
 >**注意：**如果Xcode中的语法高亮功能被关闭或改动很多，`Edit in all Scope`功能也许就会拒绝工作
 
 #### Xcode内置的重构工具
@@ -107,7 +107,7 @@ categories:
 
 #### 快捷键
 >**说明：**源自`emacs`，同时适用于Xcode、TextEdit、Safari的地址栏和文本域、Pages和Keynote文本域。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%20%E4%B8%8A%E5%8D%888.44.02.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%20%E4%B8%8A%E5%8D%888.44.02.png)
 
 #### 快速打开
 >**说明：**大致有2种方式
@@ -126,12 +126,12 @@ categories:
 |聚焦栏|代码折叠|**显示聚焦栏：**`Xcode(菜单)->Preferences...->Text Editing->勾选Code folding ribbon`；**更多代码折叠操作：**`Editor->Code Folding`|
 
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%20%E4%B8%8A%E5%8D%889.13.08.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%20%E4%B8%8A%E5%8D%889.13.08.png)
 
 
 ### 7.4.7	使用导航条
 >**说明：**里面的很多空间可以让你在项目中的原文件之间快速切换。
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%2011.05.05.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%2011.05.05.png)
 
 
 #### `#pragma`指令
@@ -149,7 +149,7 @@ categories:
 >+ `!!!:说明`
 >+ `???:说明`
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%2013.13.37.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%2013.13.37.png)
 
 ```objective-c
 - (id) init
@@ -170,7 +170,7 @@ categories:
 ### 7.4.8	获取信息
 
 #### 7.4.8.1	获得帮助
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%2013.52.23.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-05%2013.52.23.png)
 
 #### 7.4.8.2	文档管理程序
 >**说明：**访问苹果官方API文档有以下方式
@@ -206,7 +206,7 @@ categories:
 >2. 运行程序
 >3. 调试
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-06%20%E4%B8%8A%E5%8D%8810.52.03.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-06%20%E4%B8%8A%E5%8D%8810.52.03.png)
 
 
 ### 7.5.5	检查程序
@@ -214,8 +214,8 @@ categories:
 
 ## 7.6	备忘表
 >**说明：**Xcode键盘快捷键
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-06%20%E4%B8%8B%E5%8D%8812.14.31.png)
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-06%20%E4%B8%8B%E5%8D%8812.15.11.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-06%20%E4%B8%8B%E5%8D%8812.14.31.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-06%20%E4%B8%8B%E5%8D%8812.15.11.png)
 
 
 ## 7.7	小结

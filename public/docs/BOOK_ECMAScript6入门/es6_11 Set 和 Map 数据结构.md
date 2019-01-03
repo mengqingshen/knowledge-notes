@@ -392,7 +392,7 @@ map.forEach(function(value, key, map) {
 ```
 
 ### 11.3.4 与其他数据结构的互相转换
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-07%20%E4%B8%8B%E5%8D%882.59.57.png)
+![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-07%20%E4%B8%8B%E5%8D%882.59.57.png)
 
 
 (1) `Map`转为`数组`：使用扩展运算符

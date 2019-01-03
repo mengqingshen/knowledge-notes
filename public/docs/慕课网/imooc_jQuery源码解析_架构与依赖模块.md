@@ -50,7 +50,7 @@ date: 2017-04-07
 
 ### 1.4.2 模块依赖网
 
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1432773215952.png)
+![Alt text](http://cdn.mengqingshen.com/1432773215952.png)
 
 ### 1.4.3	 重要变革
   ☑  1.2.3 版发布，引入数据缓存，解决循环引用与大数据保存的问题
@@ -195,7 +195,7 @@ if (typeof module === "object" && typeof module.exports === "object") {
 
 ### 1.6.2 自己实现类似的对象数组
 **jQuery类数组对象结构：**通过对象键值对的关系保存着属性，原型保存着方法。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/1436330348548.png)
+![Alt text](http://cdn.mengqingshen.com/1436330348548.png)
 **采用的设计模式：**是软件工程领域中的广为人知的设计模式-工厂方法。
 **核心：**
 
@@ -2468,7 +2468,7 @@ var cache = {
 
 如图如示：
 
-![595BBEE3-3675-49CB-A05A-8D0750CC0D35](http://o6ul1xz4z.bkt.clouddn.com/2017-04-08-595BBEE3-3675-49CB-A05A-8D0750CC0D35.png)
+![595BBEE3-3675-49CB-A05A-8D0750CC0D35](http://cdn.mengqingshen.com/2017-04-08-595BBEE3-3675-49CB-A05A-8D0750CC0D35.png)
 
  
 
@@ -2495,7 +2495,7 @@ cache缓存对象中开辟一个新的空间用于存储foo数据，this.cache[ 
 
 流程图：
 
-![A1F993B9-1E96-46A3-9510-1BDF810981AB](http://o6ul1xz4z.bkt.clouddn.com/2017-04-08-A1F993B9-1E96-46A3-9510-1BDF810981AB.png)
+![A1F993B9-1E96-46A3-9510-1BDF810981AB](http://cdn.mengqingshen.com/2017-04-08-A1F993B9-1E96-46A3-9510-1BDF810981AB.png)
 
 
 

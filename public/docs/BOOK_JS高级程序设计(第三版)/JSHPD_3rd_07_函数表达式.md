@@ -103,7 +103,7 @@ function cpmpare(value1, value2){
 }
 var result = cpmpare(5, 10);
 ```
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/a470427e-ea7b-4102-bc99-e6799b430085.png)
+![Alt text](http://cdn.mengqingshen.com/img/a470427e-ea7b-4102-bc99-e6799b430085.png)
 
 #### 创建闭包：创建闭包的常见方式就是在一个函数内部创建另一个函数。
 **问题：**会携带外部函数的作用域，因此占用更多内存。
@@ -140,7 +140,7 @@ var result = compare({name:'Nicholas'}, {name:'Greg'});
 外部函数的本地活动对象|外部函数被执行后|闭包失去引用|1|`prototyName`   
 本地活动对象|闭包被调用时|闭包执行完毕|0|`this`、`arguments`、`value1`、`value2`
 
-![](http://o6ul1xz4z.bkt.clouddn.com/img/6776dbda-034b-47d6-82a3-73c3f81364fb.png)
+![](http://cdn.mengqingshen.com/img/6776dbda-034b-47d6-82a3-73c3f81364fb.png)
 #### 7.2.1 闭包与变量
 **闭包局限性：**闭包只能取得任何变量的最后一个值。
 

@@ -18,7 +18,7 @@ typora-copy-images-to: ipic
 
 ## 1.1 daemon与sevice的区别   
 
-![36C6EA0D-B63A-40C1-83BF-4352BE78A6F9](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-36C6EA0D-B63A-40C1-83BF-4352BE78A6F9.png)
+![36C6EA0D-B63A-40C1-83BF-4352BE78A6F9](http://cdn.mengqingshen.com/2017-04-22-36C6EA0D-B63A-40C1-83BF-4352BE78A6F9.png)
 
 ## 1.2 daemon的分类
 
@@ -26,7 +26,7 @@ typora-copy-images-to: ipic
 ☑ stand alone: 自行单独启动
 ☑ super daemon: 由一只特殊的daemon管理
 
-![66C18705-F480-4A09-9D02-7F7F6FA02C79](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-66C18705-F480-4A09-9D02-7F7F6FA02C79.png)
+![66C18705-F480-4A09-9D02-7F7F6FA02C79](http://cdn.mengqingshen.com/2017-04-22-66C18705-F480-4A09-9D02-7F7F6FA02C79.png)
 
 + multi-threaded(多重线程)
 + single-threaded(单线程)
@@ -46,7 +46,7 @@ $ cat /etc/services  # 查看daemon对应的端口<daemon port> <port/封包协�
 
 ## 1.5 daemon的启动脚本与启动方式
 
-![B2A66C2F-B986-46CE-B28E-06B59A4E0230](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-B2A66C2F-B986-46CE-B28E-06B59A4E0230.png)
+![B2A66C2F-B986-46CE-B28E-06B59A4E0230](http://cdn.mengqingshen.com/2017-04-22-B2A66C2F-B986-46CE-B28E-06B59A4E0230.png)
 
 **Stand alone启动方式**
 方式1: `/etc/init.d/* [status|stop|restart|restart|condreatart]`
@@ -59,7 +59,7 @@ $ /etc/init.d/syslog restart # 重新读取配置文件
 
 方式2: `/sbin/service`
 
-![F0FEE94B-D303-4AE8-A55A-4787FA6ABE93](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-F0FEE94B-D303-4AE8-A55A-4787FA6ABE93.png)
+![F0FEE94B-D303-4AE8-A55A-4787FA6ABE93](http://cdn.mengqingshen.com/2017-04-22-F0FEE94B-D303-4AE8-A55A-4787FA6ABE93.png)
 
 ```bash
 $ service crond restart
@@ -85,23 +85,23 @@ $ vim /etc/xintd.conf    # super daemon的默认配置文件
 $ vim /etc/xintd.d  # super daemon 的服务参数档（上面的配置文件为默认值，这里为实际设置的位置）
 ```
 
-![395BA54E-995F-408C-89A3-F148F4FC8CBC](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-395BA54E-995F-408C-89A3-F148F4FC8CBC.png)
+![395BA54E-995F-408C-89A3-F148F4FC8CBC](http://cdn.mengqingshen.com/2017-04-22-395BA54E-995F-408C-89A3-F148F4FC8CBC.png)
 
-![5637DBC4-53FA-4BD2-8036-067AEE673FCF](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-5637DBC4-53FA-4BD2-8036-067AEE673FCF.png)
+![5637DBC4-53FA-4BD2-8036-067AEE673FCF](http://cdn.mengqingshen.com/2017-04-22-5637DBC4-53FA-4BD2-8036-067AEE673FCF.png)
 
-![DFB4B764-9CD9-4CE1-BE40-384C0FC8965C](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-DFB4B764-9CD9-4CE1-BE40-384C0FC8965C.png)
+![DFB4B764-9CD9-4CE1-BE40-384C0FC8965C](http://cdn.mengqingshen.com/2017-04-22-DFB4B764-9CD9-4CE1-BE40-384C0FC8965C.png)
 
-![5E7C2395-A5C0-438A-BF94-9FD4E32E6FC8](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-5E7C2395-A5C0-438A-BF94-9FD4E32E6FC8.png)
+![5E7C2395-A5C0-438A-BF94-9FD4E32E6FC8](http://cdn.mengqingshen.com/2017-04-22-5E7C2395-A5C0-438A-BF94-9FD4E32E6FC8.png)
 
-![064AA05F-5606-48FE-8C7F-D5ED93CC240A](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-064AA05F-5606-48FE-8C7F-D5ED93CC240A.png)
+![064AA05F-5606-48FE-8C7F-D5ED93CC240A](http://cdn.mengqingshen.com/2017-04-22-064AA05F-5606-48FE-8C7F-D5ED93CC240A.png)
 
-![5E2325FE-9E38-4DA5-9D67-5774BEB64EDB](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-5E2325FE-9E38-4DA5-9D67-5774BEB64EDB.png)
+![5E2325FE-9E38-4DA5-9D67-5774BEB64EDB](http://cdn.mengqingshen.com/2017-04-22-5E2325FE-9E38-4DA5-9D67-5774BEB64EDB.png)
 
 ## 1.6 通过 server 的管理使 daemon 对不同 client 拥有不同权限
 
 ### 案例一：一个简单的rsync（提供同步文件夹服务）案例
 
-![A093C11A-6C10-41D6-A8E6-9615F74DD113](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-A093C11A-6C10-41D6-A8E6-9615F74DD113.png)
+![A093C11A-6C10-41D6-A8E6-9615F74DD113](http://cdn.mengqingshen.com/2017-04-22-A093C11A-6C10-41D6-A8E6-9615F74DD113.png)
 
 ```bash
 $ cat /etc/xinetd.d/rsync  # 查看一下原来的设置
@@ -184,9 +184,9 @@ $ vim /etc/host.deny
 rsync:ALL
 ```
 
-![2C8EE69F-A3CB-42D1-A34A-83C49A2E9E61](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-2C8EE69F-A3CB-42D1-A34A-83C49A2E9E61.png)
+![2C8EE69F-A3CB-42D1-A34A-83C49A2E9E61](http://cdn.mengqingshen.com/2017-04-22-2C8EE69F-A3CB-42D1-A34A-83C49A2E9E61.png)
 
-![64F66592-031A-4B04-9C18-5657627D6136](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-64F66592-031A-4B04-9C18-5657627D6136.png)
+![64F66592-031A-4B04-9C18-5657627D6136](http://cdn.mengqingshen.com/2017-04-22-64F66592-031A-4B04-9C18-5657627D6136.png)
 
 
 
@@ -198,15 +198,15 @@ $ rpm -q tcp_wrapper  # 查看是否安装了tcp_wrapper
 
 **案例一**
 
-![883EAE56-8D17-44A8-9771-D77D021A9FF0](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-883EAE56-8D17-44A8-9771-D77D021A9FF0.png)
+![883EAE56-8D17-44A8-9771-D77D021A9FF0](http://cdn.mengqingshen.com/2017-04-22-883EAE56-8D17-44A8-9771-D77D021A9FF0.png)
 
 ```bash
 $ vim /etc/hosts.deny
 ```
 
-![71E03E04-7D3C-49EB-B5D4-2C7CC8247B1E](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-71E03E04-7D3C-49EB-B5D4-2C7CC8247B1E.png)
+![71E03E04-7D3C-49EB-B5D4-2C7CC8247B1E](http://cdn.mengqingshen.com/2017-04-22-71E03E04-7D3C-49EB-B5D4-2C7CC8247B1E.png)
 
-![F9400128-215E-4A40-881F-8A32C8965BD0](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-F9400128-215E-4A40-881F-8A32C8965BD0.png)
+![F9400128-215E-4A40-881F-8A32C8965BD0](http://cdn.mengqingshen.com/2017-04-22-F9400128-215E-4A40-881F-8A32C8965BD0.png)
 
 
 
@@ -237,11 +237,11 @@ $ netstat --status-all  # 观察所有的服务状态
 ## 3.2 设定开机启动的方法
 ### 系统开机流程
 
-![26ADA42B-FD7F-4244-893C-16B973590437](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-26ADA42B-FD7F-4244-893C-16B973590437.png)
+![26ADA42B-FD7F-4244-893C-16B973590437](http://cdn.mengqingshen.com/2017-04-22-26ADA42B-FD7F-4244-893C-16B973590437.png)
 
 ### chkconfig: 管理系统服务默认开机启动与否
 
-![A678F144-3A5A-4C1D-B9B6-3E3F243EE602](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-A678F144-3A5A-4C1D-B9B6-3E3F243EE602.png)
+![A678F144-3A5A-4C1D-B9B6-3E3F243EE602](http://cdn.mengqingshen.com/2017-04-22-A678F144-3A5A-4C1D-B9B6-3E3F243EE602.png)
 
 ```bash
 $ chkconfig --list | more  # 列出目前系统上所有被chkconfig管理的服务
@@ -270,11 +270,11 @@ $ /etc/init.d/xinetd restart;netstat -tlup| grep rsync      # 重启xinetd对sup
 
 ### chkconfig:  设定自定义系统服务
 
-![5774EAC0-7268-49A3-9138-BC9B809BE576](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-5774EAC0-7268-49A3-9138-BC9B809BE576.png)
+![5774EAC0-7268-49A3-9138-BC9B809BE576](http://cdn.mengqingshen.com/2017-04-22-5774EAC0-7268-49A3-9138-BC9B809BE576.png)
 
 案例一
 
-![D7580D53-1447-413E-983F-398A2B161537](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-D7580D53-1447-413E-983F-398A2B161537.png)
+![D7580D53-1447-413E-983F-398A2B161537](http://cdn.mengqingshen.com/2017-04-22-D7580D53-1447-413E-983F-398A2B161537.png)
 
 ```bash
 $ vim /etc/init.d/mySystemService
@@ -282,7 +282,7 @@ $ vim /etc/init.d/mySystemService
 
 
 
-![713BB125-6162-4B81-B9E9-B3AD7464EAEE](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-713BB125-6162-4B81-B9E9-B3AD7464EAEE.png)
+![713BB125-6162-4B81-B9E9-B3AD7464EAEE](http://cdn.mengqingshen.com/2017-04-22-713BB125-6162-4B81-B9E9-B3AD7464EAEE.png)
 
 ```bash
 #!/bin/bash
@@ -301,31 +301,31 @@ $ rm /etc/init.d/mySystemService  # 删除那个脚本
 
 ### ntsysv: 类图型接口管理模式（redhat系列发行版特有）
 
-![9DDE5DE6-87BE-415E-A266-77EE4807DD6C](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-9DDE5DE6-87BE-415E-A266-77EE4807DD6C.png)
+![9DDE5DE6-87BE-415E-A266-77EE4807DD6C](http://cdn.mengqingshen.com/2017-04-22-9DDE5DE6-87BE-415E-A266-77EE4807DD6C.png)
 
-![9F2F61C4-62B0-43F9-83D8-E262B6E922F5](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-9F2F61C4-62B0-43F9-83D8-E262B6E922F5.png)
+![9F2F61C4-62B0-43F9-83D8-E262B6E922F5](http://cdn.mengqingshen.com/2017-04-22-9F2F61C4-62B0-43F9-83D8-E262B6E922F5.png)
 
 # 4 centos5.x预设启动的服务列表
 
-![89DAEB7F-A243-4419-9CB5-81E1E37BBA75](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-89DAEB7F-A243-4419-9CB5-81E1E37BBA75.png)
+![89DAEB7F-A243-4419-9CB5-81E1E37BBA75](http://cdn.mengqingshen.com/2017-04-22-89DAEB7F-A243-4419-9CB5-81E1E37BBA75.png)
 
-![4A958E57-20A6-4F51-A525-1C71DB4B94A1](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-4A958E57-20A6-4F51-A525-1C71DB4B94A1.png)
+![4A958E57-20A6-4F51-A525-1C71DB4B94A1](http://cdn.mengqingshen.com/2017-04-22-4A958E57-20A6-4F51-A525-1C71DB4B94A1.png)
 
-![473202C3-8BD3-4E05-9A50-EF4E819412F7](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-473202C3-8BD3-4E05-9A50-EF4E819412F7.png)
+![473202C3-8BD3-4E05-9A50-EF4E819412F7](http://cdn.mengqingshen.com/2017-04-22-473202C3-8BD3-4E05-9A50-EF4E819412F7.png)
 
-![F4FECB04-78DF-485C-A6F7-9B93961F286A](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-F4FECB04-78DF-485C-A6F7-9B93961F286A.png)
+![F4FECB04-78DF-485C-A6F7-9B93961F286A](http://cdn.mengqingshen.com/2017-04-22-F4FECB04-78DF-485C-A6F7-9B93961F286A.png)
 
-![7283E9DD-5246-433F-B473-177E5F91939F](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-7283E9DD-5246-433F-B473-177E5F91939F.png)
+![7283E9DD-5246-433F-B473-177E5F91939F](http://cdn.mengqingshen.com/2017-04-22-7283E9DD-5246-433F-B473-177E5F91939F.png)
 
 # 5 重点回顾 
 
-![B86812B1-AD4D-4B56-AD12-C2565733E51F](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-B86812B1-AD4D-4B56-AD12-C2565733E51F.png)
+![B86812B1-AD4D-4B56-AD12-C2565733E51F](http://cdn.mengqingshen.com/2017-04-22-B86812B1-AD4D-4B56-AD12-C2565733E51F.png)
 
 # 6 习题
 
 **案例**
 
-![969E198C-D834-4FF0-AF8F-3DD4D0AB6B7E](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-969E198C-D834-4FF0-AF8F-3DD4D0AB6B7E.png)
+![969E198C-D834-4FF0-AF8F-3DD4D0AB6B7E](http://cdn.mengqingshen.com/2017-04-22-969E198C-D834-4FF0-AF8F-3DD4D0AB6B7E.png)
 
 ```bash
 $ rpm -q telnet-server  # 查看telnet服务程序是否启动
@@ -345,5 +345,5 @@ in.telnetd:ALL
 
 **简答题**
 
-![4DAB56FB-D950-47BC-9257-16C6C686488D](http://o6ul1xz4z.bkt.clouddn.com/2017-04-22-4DAB56FB-D950-47BC-9257-16C6C686488D.png)
+![4DAB56FB-D950-47BC-9257-16C6C686488D](http://cdn.mengqingshen.com/2017-04-22-4DAB56FB-D950-47BC-9257-16C6C686488D.png)
 

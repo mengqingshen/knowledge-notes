@@ -11,13 +11,13 @@ tag:
 
 >**说明：**`JSBinding`是`JS`和`native`之间的一个桥梁，通过这个桥梁，`JS`可以调用`Native`，`Native`可以调用`JS`。
 >
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-04%20%E4%B8%8B%E5%8D%8811.35.27.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-04%20%E4%B8%8B%E5%8D%8811.35.27.png)
 
 >**注意：**`JSBinding`不是什么
 >+ not Hybrid
 >+ not a new technology
 
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-04%20%E4%B8%8B%E5%8D%8811.38.56.png)
+>![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-04%20%E4%B8%8B%E5%8D%8811.38.56.png)
 
 >**历史：**`cocos2D-X`使用`zynga`提出的一个方案(https://github.com/zynga/jsbindings)，`JS Engine`使用的是`SpiderMonkey`。
 ## 1.1	JS和Native
@@ -274,12 +274,12 @@ NSString *script = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8St
 
 >**说明：**`js`中对象的`循环引用`和`o-c`中对象的`循环引用`都不会导致内存泄漏。但`js`对象和`Native`对象之间的循环引用会导致内存泄漏。
 >+ `js`对象之间循环引用：不会内存泄漏
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1454685937810.png)
+>![Alt text](http://cdn.mengqingshen.com/img/1454685937810.png)
 >+ `o-c`对象和`js`对象之间循环引用：会内存泄漏
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1454686063492.png)
+>![Alt text](http://cdn.mengqingshen.com/img/1454686063492.png)
 
 >**解决：**`o-c`对象引用`js`对象时将后者包装为`JSManageredValue`
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1454686201162.png)
+>![Alt text](http://cdn.mengqingshen.com/img/1454686201162.png)
 *JS Code*
 
 ```javascript
@@ -331,11 +331,11 @@ JSContext *ctxB = [[JSContext alloc] initWithVirtualMachine: jsvmB];
 ## 3.3	JSBinding in the Real World
 
 >**说明：**`JSBinding`的一些实际应用。
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1454744485627.png)
+>![Alt text](http://cdn.mengqingshen.com/img/1454744485627.png)
 >+ Cocos2D
 >+ Ejecta
 >+ CocoonJS
->![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1454744686882.png)
+>![Alt text](http://cdn.mengqingshen.com/img/1454744686882.png)
 >+ node.app
 ### 3.3.1	JS Engines
 
@@ -346,7 +346,7 @@ JSContext *ctxB = [[JSContext alloc] initWithVirtualMachine: jsvmB];
 >+ SpiderMonkey(iMonkey)
 >
 >**注意：**`v8`引擎不受支持，因为其依赖于`JIT`，被苹果禁用。
-![Alt text](http://o6ul1xz4z.bkt.clouddn.com/img/1454745052574.png)
+![Alt text](http://cdn.mengqingshen.com/img/1454745052574.png)
 ### 3.3.2	JSBind VS LuaBinding
 
 >**说明：**`JSBinding`和`LuaBinding`比较

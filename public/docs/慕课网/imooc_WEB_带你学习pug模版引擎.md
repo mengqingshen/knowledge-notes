@@ -54,7 +54,7 @@ tag:
 10. 利用过滤器解析树的处理
 
 ## 1.3	pug的诞生
-![pug环境|150x150](http://o6ul1xz4z.bkt.clouddn.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-18%20%E4%B8%8B%E5%8D%8810.40.40.png)
+![pug环境|150x150](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-18%20%E4%B8%8B%E5%8D%8810.40.40.png)
 
 ### 1.4	命令行中的 pug
 
@@ -868,7 +868,7 @@ include title.html
 ## 3.3	render及renderFile方法
 
 ### 3.3.1	pug API
-![Alt text|400x150](http://o6ul1xz4z.bkt.clouddn.com/img/1461486682614.png)
+![Alt text|400x150](http://cdn.mengqingshen.com/img/1461486682614.png)
 
 
 ### 3.3.2	compile、render、renderFile
