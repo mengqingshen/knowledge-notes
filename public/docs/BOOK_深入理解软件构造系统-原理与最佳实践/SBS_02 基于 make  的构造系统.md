@@ -8,8 +8,8 @@ tag:
 ---
 
 # 1 示例
-书没有提供源码，我自己提供了另外一个 c++ 的例子
-[C-PLUS-PLUS_STUDY/IMOOC_C-PLUS-PLUS/l05_class_polymorphism/0402_RTTI at master · laputa-er/C-PLUS-PLUS_STUDY · GitHub](https://github.com/laputa-er/C-PLUS-PLUS_STUDY/tree/master/IMOOC_C-PLUS-PLUS/l05_class_polymorphism/0402_RTTI)
+书没有提供源码，我自己提供了另外一个 c++ 的[例子](https://github.com/laputa-er/C-PLUS-PLUS_STUDY/tree/master/IMOOC_C-PLUS-PLUS/l05_class_polymorphism/0402_RTTI)。
+
 
 ## 项目目录
 ```bash
@@ -78,7 +78,7 @@ Bird.o: Bird.h
 
 ```bash
 SRCS = main.cpp Bird.cpp Plane.cpp
-OBJS = $(SRCS:.cpp=.o) # 把源文件列表中美歌文件名的 .c 替换为 .o
+OBJS = $(SRCS:.cpp=.o) # 把源文件列表中每个文件名的 .c 替换为 .o
 PROG = demo # 最终打包的应用程序名
 CC = g++ # 编译工具
 CFLAGS = -g # 编译参数
