@@ -33,15 +33,15 @@ export default [
   },
   {
     title: 'Nginx架构与安装',
-    path: '/docs/Nginx网站架构与安装(誉天周老师)/NginxYTZ_01_Nginx架构与安装'
+    path: '/docs/OTHER_Nginx网站架构与安装(誉天周老师)/NginxYTZ_01_Nginx架构与安装'
   },
   {
     title: 'Nginx虚拟主机和相关配置',
-    path: '/docs/Nginx网站架构与安装(誉天周老师)/NginxYTZ_02_Nginx虚拟主机和相关配置'
+    path: '/docs/OTHER_Nginx网站架构与安装(誉天周老师)/NginxYTZ_02_Nginx虚拟主机和相关配置'
   },
   {
     title: 'Nginx地址重写',
-    path: '/docs/Nginx网站架构与安装(誉天周老师)/NginxYTZ_03_Nginx地址重写'
+    path: '/docs/OTHER_Nginx网站架构与安装(誉天周老师)/NginxYTZ_03_Nginx地址重写'
   },
   {
     type: 'sep'

@@ -9,11 +9,11 @@ export default [
   },
   {
     title: 'iOS9新特性之UIStackView',
-    path: '/docs/慕课网/imooc_iOS_iOS9新特性之UIStackView'
+    path: '/docs/IMOOC_OTHERS/imooc_iOS_iOS9新特性之UIStackView'
   },
   {
     title: 'When iOS loves JS',
-    path: '/docs/慕课网/imooc_iOS_When iOS loves JS'
+    path: '/docs/IMOOC_OTHER/imooc_iOS_When iOS loves JS'
   },
   {
     type: 'sep'

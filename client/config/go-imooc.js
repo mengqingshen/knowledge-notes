@@ -5,7 +5,7 @@ export default [
   },
   {
     title: 'Go语言第一课',
-    path: '/docs/慕课网/imooc_Go语言第一课'
+    path: '/docs/IMOOC_OTHER/imooc_Go语言第一课'
   },
   {
     type: 'sep'
