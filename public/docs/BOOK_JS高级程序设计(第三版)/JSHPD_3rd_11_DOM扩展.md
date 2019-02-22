@@ -684,7 +684,6 @@ alert(document.documentElement.contains(document.body)) // true
 ```
 
 **扩展**
-
 ----
 
 ### element.compareDocumentPosition()
@@ -804,7 +803,6 @@ div.innerText = div.innerText
 ```
 
 **扩展**
-
 ----
 
 ### element.textContent

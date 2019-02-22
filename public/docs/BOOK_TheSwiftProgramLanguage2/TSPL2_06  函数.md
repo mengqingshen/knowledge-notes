@@ -4,7 +4,6 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-
 ---
 
 >**说明：**用来完成特定任务的独立的代码。

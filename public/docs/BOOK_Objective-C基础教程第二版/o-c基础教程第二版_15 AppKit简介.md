@@ -2,7 +2,6 @@
 title: 15 AppKit简介
 categories:
   - Objective-C基础教程第二版
-
 ---
 
 >**说明：**`Application Kit`中包含`Cocoa`中关于用户界面的大量资源。

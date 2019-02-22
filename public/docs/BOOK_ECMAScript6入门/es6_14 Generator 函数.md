@@ -10,7 +10,6 @@ date: 2016-10-08 14:19
 
 ## 14.1 简介
 ### 14.1.1 基本概念
-
 ----
 #### Generator 函数
 
@@ -34,7 +33,6 @@ function *foo(x, y) { ··· }
 function* foo(x, y) { ··· }// 推荐
 function*foo(x, y) { ··· }
 ```
-
 ----
 #### 返回的便利器对象的 next() 方法
 **说明：**调用`遍历器对象`的`next`方法，使得指针移向下一个状态
@@ -65,7 +63,6 @@ hw.next()
 hw.next()
 // { value: undefined, done: true }
 ```
-
 ----
 #### yield 语句
 **说明：**是`Genertor`函数返回的`便利器对象`的暂停标志，每次调用`next`函数，运行逻辑如下
@@ -107,7 +104,6 @@ for (var f of flat(arr)) {
 }
 // 1, 2, 3, 4, 5, 6
 ```
-
 ----
 #### yeild 和 return
 **说明：**在`Genertor`函数中可以同时使用`yeild`和`return`
@@ -116,7 +112,6 @@ for (var f of flat(arr)) {
 
 + 一个函数里面，只能执行一次（或者说一个）`return`语句，但是可以执行多次（或者说多个）`yield`语句
 + 每次遇到`yield`，函数暂停执行，下一次再从该位置继续向后执行，而`return`语句不具备位置记忆的功能（遇到`return`，遍历器对象的遍历就到头了）
-
 ----
 
 #### 与`Iterator`接口的关系 

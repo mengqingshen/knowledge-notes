@@ -4,7 +4,6 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-
 ---
 
 ## 1.1 常量和变量

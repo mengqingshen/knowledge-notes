@@ -1,11 +1,9 @@
-
 ---
 title: Redis值相关命令和服务器相关命令
 categories: [Redis视频课程(兄弟连)]
 tag:
 	- redis
 	- 数据库
-
 ---
 
 ## （一）键/值命令

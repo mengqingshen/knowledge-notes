@@ -4,7 +4,6 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-
 ---
 
 >**说明：**有序的`Character`类型的值的集合，通过`String类`来表示。

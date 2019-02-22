@@ -4,7 +4,6 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-
 ---
 
 >**构造过程：**为某个类、结构体或枚举的实例中的每个属性设置初始值和为其执行必要准备和初始化任务。

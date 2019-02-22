@@ -4,7 +4,6 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-
 ---
 
 >**定义**：与某些特定类型相关联的函数。

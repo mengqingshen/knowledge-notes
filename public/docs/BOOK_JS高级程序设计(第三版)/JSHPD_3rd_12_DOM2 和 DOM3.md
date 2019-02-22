@@ -237,7 +237,6 @@ document.body.appendChild(newNode)
 ☑︎ 兼容性：`IE` 之外的所有浏览器
 
 **扩展**
-
 ----
 
 在 IE 中有一个等价的属性 `document.parentWindow`，因此，要确定文档的归属窗口，可以使用以下代码。
@@ -411,7 +410,6 @@ newDiv.getUserData('name')
 ☑ 兼容性：`Opera` `Firefox` `Safari` `Chrome` `IE8+`
 
 **扩展**
-
 ----
 IE8 之前不支持框架中的 `contentDocument` 属性，但有一个名叫 `contentWindow` 的属性，该属性返回框架的 `window` 对象，因此可以通过 `window.document` 来替代 `contentWindow`。
 

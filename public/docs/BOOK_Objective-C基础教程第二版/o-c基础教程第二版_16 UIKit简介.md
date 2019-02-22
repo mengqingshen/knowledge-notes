@@ -2,7 +2,6 @@
 title: 16 UIKit简介
 categories:
   - Objective-C基础教程第二版
-
 ---
 
 >**说明：**`Mac`应用程序使用的是`AppKit`框架，而`iOS`应用程序使用的是`UIKit`框架，它包含了所有的`UI`组件和构成`iOS`应用程序的资源。

@@ -4,7 +4,6 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-
 ---
 
 >**描述：**可以捕获和存储其所在上下文中任意常量或变量的引用的字包含的函数代码块。

@@ -2,7 +2,6 @@
 title: React Native 布局指南
 categories:
   - 极客学院_ReactNative
-
 ---
 
 **视频地址：**http://www.jikexueyuan.com/course/1489.html

@@ -4,7 +4,6 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-
 ---
 
 >**说明：**`Swift` 允许你定义嵌套类型，可以在支持的类型中定义嵌套的`枚举`、`类`和`结构体`。可以根据需要定义`多级嵌套`。

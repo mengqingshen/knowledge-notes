@@ -4,7 +4,6 @@ categories:
   - The Swift Program Language 2
 tag:
   - swift语言
-
 ---
 
 >**说明：**`类型转换`可以判断实例的类型，也可以将实例看做是其父类或者子类的实例。

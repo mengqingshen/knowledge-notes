@@ -640,7 +640,6 @@ f().then(v => console.log(v))
 
 #### 16.5.2.3 返回值（Promise 对象）的状态
 **说明：**必须等到内部所有 `await` 命令的 `Promise` 对象执行完，才会发生状态改变
-
 ----
 
 ##### 状态为 `rejected` 的场景
@@ -663,7 +662,6 @@ f()
 .catch(e => console.log(e))
 // 出错了
 ```
-
 ----
 ##### 状态为 `resolved` 的场景
 

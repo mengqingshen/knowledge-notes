@@ -2,7 +2,6 @@
 title: React Native 快速入门
 categories:
   - 极客学院_ReactNative
-
 ---
 
 **视频地址：**http://www.jikexueyuan.com/course/1504.html

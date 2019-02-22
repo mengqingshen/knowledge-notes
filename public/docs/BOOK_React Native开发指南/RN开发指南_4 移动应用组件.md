@@ -4,7 +4,6 @@ categories:
   - React Native开发指南
 tag:
   - ReactNative
-
 ---
 
 ## 4.1 类比 HTML 元素与原生组件

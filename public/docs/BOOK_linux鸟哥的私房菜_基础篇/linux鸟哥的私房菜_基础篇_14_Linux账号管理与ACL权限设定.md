@@ -503,7 +503,6 @@ $ sudo visudo
 ### 15.4.2  passwd呼叫PAM接口的过程
 
    ![A1D7EE37-F0CA-4094-AEA1-E0B7B8630812](http://cdn.mengqingshen.com/2017-04-21-A1D7EE37-F0CA-4094-AEA1-E0B7B8630812.png)
-
 ----
 **以下的学习平台更换为centos 6.4 on vmware 10.0.1**
 ----

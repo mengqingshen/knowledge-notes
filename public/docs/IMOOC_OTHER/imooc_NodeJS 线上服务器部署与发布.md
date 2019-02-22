@@ -26,7 +26,6 @@ typora-copy-images-to: ipic
 ## 课程步骤
 
 ![AA7D06D7-76C7-4058-B593-3ECE38FC6C24](http://cdn.mengqingshen.com/2017-04-22-AA7D06D7-76C7-4058-B593-3ECE38FC6C24.png)
-
 ----
 
 ## 重要知识点
@@ -480,7 +479,6 @@ $ sudo service ssh restart
 ### 5.2 配置 iptables 和 Fall2Ban 增强安全等级
 
 ### iptables
-
 ----
 
 ☑ 注意: 为了防止 iptables 设置不当导致远程无法登陆，额外开一个 ssh 远程登录。
@@ -553,7 +551,6 @@ $ sudo chmod +x /etc/network/if-up.d/iptables
 
 
 ### Fail2Ban
-
 ----
 
 ☑ 说明： 一个安防模块，可以看作一个防御性的动作库，通过监控系统的日志文件，根据检测到任意可疑的行为，出发不同的环境动作，比如对可疑的目标执行 ip 锁定等。

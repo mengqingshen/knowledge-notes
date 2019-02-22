@@ -4,7 +4,6 @@ categories:
   - React Native开发指南
 tag:
   - ReactNative
-
 ---
 
 **扩展：**如果想在`React Native`和`Web`应用之间共享样式,GitHub上的这个`React Style`项目[https:// github.com/js-next/react-style](https:// github.com/js-next/react-style)提供了一种在 Web 上使用 `React Native` 样式的解决方案。
