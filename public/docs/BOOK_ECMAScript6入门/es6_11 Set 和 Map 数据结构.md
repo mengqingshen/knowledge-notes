@@ -4,7 +4,6 @@ categories: [ECMAScript6入门]
 tag:
   - es6
   - js
-
 date: 2016-09-30 18:02
 ---
 

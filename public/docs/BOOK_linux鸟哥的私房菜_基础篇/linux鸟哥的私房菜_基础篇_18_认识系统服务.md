@@ -3,7 +3,6 @@ title: 18 认识系统服务
 categories: [linux鸟哥的私房菜_基础篇]
 tag:
  - linux
-
 date: 2013-12-08 18:20:07
 typora-copy-images-to: ipic
 ---

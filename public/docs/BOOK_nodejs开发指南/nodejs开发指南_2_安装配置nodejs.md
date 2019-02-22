@@ -3,7 +3,6 @@ title: 2 安装和配置 nodejs
 categories: [nodejs开发指南]
 tag:
   - nodejs
-
 date: 2015-01-25 15:55:10
 ---
 
