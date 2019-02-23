@@ -6,9 +6,9 @@ categories:
 
 >**说明：**`iOS`实战项目
 
-## 2.1	汤姆猫小游戏（投诉下线）
+## 2.1 汤姆猫小游戏（投诉下线）
 
-## 2.2	加法计算器
+## 2.2 加法计算器
 >**说明：**本课时讲解 `storyboard` 中利用 `UITextField`、`UILabel`、`UIButton` 快速搭建器计算器UI界面，并在 `viewController` 中用代码完成计算的业务逻辑以及排除部分隐含的 bug，让大家学会自制计算器。
 + 设置`Text Field`使用数字键盘
 + 点击“计算”后，使`Text Field`失去焦点
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 }
 ```
 
-## 2.3	制作图片浏览器
+## 2.3 制作图片浏览器
 >**说明：**本课时讲解通过 `UILable`、`UIButton`、`UIImageView` 搭建一个图片浏览器的结构，并通过字典数组完成它的业务逻辑，实现浏览趣味图片的功能。
 >+ 切换按钮的不同`State Config`要分别进行设置
 >+ 通过设置按钮控件的`enabled`属性设置按钮是否可点击
@@ -121,7 +121,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-## 2.4	LOL英雄展示
+## 2.4 LOL英雄展示
 >**说明：**通过`UITableView`和`plist`数据文件，搭建一个LOL英雄展示界面。
 >+ `UITableView`需要通过右键菜单设置`dataSource`和`delegate`
 >  ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-28%20%E4%B8%8B%E5%8D%889.29.01.png)
@@ -129,7 +129,7 @@ class ViewController: UIViewController {
 >+ 通过使用`JKHero`类封装`plist`数据
 >  ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-28%20%E4%B8%8B%E5%8D%8810.43.32.png)
 
-### 2.4.1	数据模版
+### 2.4.1 数据模版
 *JKHero.h*
 
 ```objective-c
@@ -174,7 +174,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.4.2	采纳协议
+### 2.4.2 采纳协议
 >**说明：**通过扩展采纳协议。
 
 *ViewController.m*
@@ -263,12 +263,12 @@ class ViewController: UIViewController {
 @end
 ```
 
-## 2.5	Face++人脸识别技术入门
+## 2.5 Face++人脸识别技术入门
 >**注意：**课程中的演示程项目是`Android`项目！
 
-### 2.5.1	本课概要
+### 2.5.1 本课概要
 
-#### 2.5.1.1	Face++公司简介
+#### 2.5.1.1 Face++公司简介
 >**网址：**[http://www.faceplusplus.com.cn/](http://www.faceplusplus.com.cn/)
 
 + 北京旷视科技有限公司（Face++）创立于2011年，是一家专注于机器视觉和深度学习的科技创业公司。
@@ -317,7 +317,7 @@ class ViewController: UIViewController {
   ### 2.5.2Face++介绍
 
 
-### 2.5.3	线上API分析
+### 2.5.3 线上API分析
 >**说明：**[http://www.faceplusplus.com.cn/api-overview/](http://www.faceplusplus.com.cn/api-overview/)
 
 | 术语      | 说明     | 用途         | 依赖的数据                                    |
@@ -327,18 +327,18 @@ class ViewController: UIViewController {
 | person  | 人      | 验证         | `faceid`、 `person_name(person_id)`       |
 | group   | 人群     | 匹配         | `identity`、 `url(ing)`、 `group_name(group_id)` |
 
-### 2.5.4	离线API的下载和配置
+### 2.5.4 离线API的下载和配置
 >**说明：**离线API主要用于在客户端提取图片的信息，从而与线上服务器配合完成一些处理。
 >**注意：**在`Face++`官网创建自己的应用后才能下载到相应的离线`SDK`
 >>**我的学习应用：**http://www.faceplusplus.com.cn/uc/app/home?app_id=42841
 
-### 2.5.5	Face++实例编写
+### 2.5.5 Face++实例编写
 
-### 2.5.6	Face++人脸识别总结语
+### 2.5.6 Face++人脸识别总结语
 
-## 2.6	应用管理
+## 2.6 应用管理
 
-### 2.6.1	项目讲解和模型搭建
+### 2.6.1 项目讲解和模型搭建
 1. 创建项目
 2. 设置`Storyboard`(设置`Size`为`iPhone 3.5-inch`，取消`Use Auto Layout`和`Use Size Classes`)
 3. 导入素材（图片和`plist`文件）
@@ -397,7 +397,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.6.2	Xib自定义视图
+### 2.6.2 Xib自定义视图
 1. 创建`JKAppView`（继承`UIView`）
 2. 创建`xib`文件（`iOS`->`User Interface`->`Empty`）
 + `Size`：Freeform(然后宽和高就可以设置了)
@@ -476,7 +476,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.6.3	创建自定义视图数组
+### 2.6.3 创建自定义视图数组
 >**说明：**在`ViewController`中初始化`JKAppView`数组
 
 *ViewController.m*
@@ -520,7 +520,7 @@ class ViewController: UIViewController {
 
 ```
 
-### 2.6.4	九宫格布局展示
+### 2.6.4 九宫格布局展示
 >**说明：**九宫格布局开发
 >1. 宏定义界面布局的相关参数
 >2. 确定间距
@@ -576,7 +576,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.6.5	点击效果分析与bug排除
+### 2.6.5 点击效果分析与bug排除
 >**说明：**点击`下载`时弹出等待画面
 
 *ViewController.m*
@@ -620,7 +620,7 @@ class ViewController: UIViewController {
 
 ```
 
-### 2.6.6	延时操作与块动画
+### 2.6.6 延时操作与块动画
 >**说明：**过一段时间以多线程的方式延时处理。
 
 *ViewController.m*
@@ -668,12 +668,12 @@ class ViewController: UIViewController {
 @end
 ```
 
-## 2.7	超级猜图
+## 2.7 超级猜图
 
-### 2.7.1	效果展示与业务逻辑分析
+### 2.7.1 效果展示与业务逻辑分析
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-04%2012.15.01.png)
 
-### 2.7.2	模型搭建
+### 2.7.2 模型搭建
 >**说明：**创建对应`plist`文件的数据模型。
 >1. 视图控制器基本设置
 >2. 导入相关素材（图片和`plist`）
@@ -753,7 +753,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.7.3	Storyboard 布局 UI
+### 2.7.3 Storyboard 布局 UI
 >**技巧：**
 >+ 可以在`Storyboard`中为控件设置内边距
 >+ 有时候用`Button`替代`ImageView`会更方便
@@ -761,7 +761,7 @@ class ViewController: UIViewController {
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-05%20%E4%B8%8B%E5%8D%883.20.24.png)
 
 
-### 2.7.4	拖线与注释
+### 2.7.4 拖线与注释
 >**技巧：**多个控件可以绑定同一个`action`。方式是
 >![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S2_more.gif)
 
@@ -822,7 +822,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.7.5	创建模型数组与遮罩
+### 2.7.5 创建模型数组与遮罩
 >**说明：**遮罩用来监听点`击屏幕任何地方`的事件。
 
 *ViewController.m*
@@ -881,7 +881,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.7.6	实现图片缩放
+### 2.7.6 实现图片缩放
 >**说明：**
 
 *ViewController.m*
@@ -931,7 +931,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.7.7	下一题方法实现
+### 2.7.7 下一题方法实现
 >**说明：**用户点击下一题按钮时界面做出相应的改变
 
 *ViewController.m*
@@ -990,7 +990,7 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 2.7.8	创建答案按钮
+### 2.7.8 创建答案按钮
 >**说明：**设置基本信息时创建放置答案的一排按钮集合。
 
 *ViewController.m*
@@ -1054,7 +1054,7 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 @end
 ```
 
-### 2.7.9	创建备选答案按钮
+### 2.7.9 创建备选答案按钮
 >**说明：**当`点击下一题`或`程序刚启动`时，需要设置备选答案按钮。
 >**技巧：**以懒加载的方式创建备选按钮，这样就不用每次都重新创建备选按钮。
 
@@ -1126,7 +1126,7 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 @end
 ```
 
-### 2.7.10	答案按钮点击
+### 2.7.10 答案按钮点击
 >**说明：** 点击组成答案的按钮，该按钮清除其文字，而相应的备选答案按钮会重新出现该文字。
 
 *ViewController.m*
@@ -1178,7 +1178,7 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 @end
 ```
 
-### 2.7.11	备选按钮点击
+### 2.7.11 备选按钮点击
 >**说明：**被点击的备选按钮会清除其文字，并将该文字写到答案按钮中。
 
 *ViewController.m*
@@ -1230,7 +1230,7 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 @end
 ```
 
-### 2.7.12	提示点击方法的实现
+### 2.7.12 提示点击方法的实现
 >**说明：**提示按钮每被点击一次，答案按钮就回为答案生成一个字。
 
 *ViewController.m*
@@ -1264,9 +1264,9 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 @end
 ```
 
-## 2.8	国家选择
+## 2.8 国家选择
 
-### 2.8.1	`UIPickerView`与`数据模型`的创建
+### 2.8.1 `UIPickerView`与`数据模型`的创建
 >**说明：**要点如下
 >1. 导入素材（`jpg`格式的图片不能放在`Assets.xcassets`中管理）
 >2. 创建自定义`UIView`类:`JKCountryInfo`
@@ -1275,7 +1275,7 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 >**注意：**`gif`格式的图片不能放在`Assets.xcassets`。
 
 
-#### 2.8.1.1	`UIPickerView`
+#### 2.8.1.1 `UIPickerView`
 >**说明：**类似`TableView`，可以通过让普通`ViewControll`采纳协议`UIPickerViewDelegate`和`UIPickerViewDataSource`实现
 >1. 通过拖动建立`PickerView`控件和`ViewController`类之间的关联
 >  ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-12%20%E4%B8%8B%E5%8D%884.29.09.png)
@@ -1336,7 +1336,7 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 ```
 
 
-#### 2.8.1.2	 数据模型的创建
+#### 2.8.1.2  数据模型的创建
 *JKContryInfo.h*
 
 ```objective-c
@@ -1377,10 +1377,10 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 @end
 ```
 
-### 2.8.2	自定义视图完善实例
+### 2.8.2 自定义视图完善实例
 >**说明：**自定义`PickerView`中的每一行采用的视图。
 
-#### 2.8.2.1	创建`xib`文件
+#### 2.8.2.1 创建`xib`文件
 >**说明：**要点如下
 >1. 创建的`xib`文件和要绑定的`UIVIew`的文件名要一致。
 >
@@ -1390,7 +1390,7 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 *JKCountryFlagView.xib*
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-12%20%E4%B8%8B%E5%8D%884.24.35.png)
 
-#### 2.8.2.2	创建`JKCountryFlagView`类
+#### 2.8.2.2 创建`JKCountryFlagView`类
 >**说明：**该类用来绑定上面创建的`xib`文件。
 
 *JKCountryFlagView.h*
@@ -1444,7 +1444,7 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 @end
 ```
 
-#### 2.8.2.3	完善`ViewController`
+#### 2.8.2.3 完善`ViewController`
  >**说明：**采纳协议`UIPickerViewDelegate`和`UIPickerViewDataSource`
 
 *ViewController.m*
@@ -1522,21 +1522,21 @@ NSInteger const kTipDecreaseScore = -200;// 亲求提示减分
 @end
 ```
 
-## 2.9	图片自动播放
+## 2.9 图片自动播放
 
-### 2.9.1	创建`UIScrollView`和`UIPageControl`
+### 2.9.1 创建`UIScrollView`和`UIPageControl`
 >**说明：**要点
 >1. `ViewController`采纳`UIScrollViewDelegate`
 >2. 创建`UIScrollView`
 >3. 创建`UIScrollPageControl`
 
 
-### 2.9.2	定时器与代理方法调用
+### 2.9.2 定时器与代理方法调用
 >**说明：**要点
 >1. **封装一些相关的方法：**清除`timer`、添加`timer`等
 >2. **遵守协议`UIScrollViewDelegate`：**定义滑动前、中、后需要的操作
 
-### 2.9.3	代码摘要
+### 2.9.3 代码摘要
 *ViewController.m*
 
 ```objective-c
@@ -1659,18 +1659,18 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 @end
 ```
 
-## 2.10	QQ列表展示
+## 2.10 QQ列表展示
 >**说明：**该项目使用`MVC`模式。
 >![Alt text|200x400](http://cdn.mengqingshen.com/img/JK_IOS_S2_qq.gif)![Alt text|400x300](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-16%20%E4%B8%8A%E5%8D%889.34.22.png)
 
 >**注意：**`Xcode`工程中的文件夹有两种：`黄色`的为辅助进行代码管理的“伪文件夹”，`蓝色`的为真正的文件夹。
 
-### 2.10.1	模型搭建
+### 2.10.1 模型搭建
 >**说明：**需要两个数据模型，`JKGroupModel`（好友所在分组）和`JKFriendsModel`（好友）
 >1. 导入`plist`
 >2. 创建数据模型
 
-#### 2.10.1.1	`JKGroupModel`
+#### 2.10.1.1 `JKGroupModel`
 >**说明：**好友分组的数据模型
 
 *JKGroupModel*
@@ -1718,7 +1718,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 @end
 ```
 
-#### 2.10.1.2	`JKFriendsModel`
+#### 2.10.1.2 `JKFriendsModel`
 >**说明：**好友的数据模型。
 
 *JKFriendsModel.h*
@@ -1761,7 +1761,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 @end
 ```
 
-### 2.10.2	创建`UITableView`
+### 2.10.2 创建`UITableView`
 >**说明：**要点
 >1. 在`AppDelegate`中创建二级导航（通过`UINavigationController`）
 >2. 在`ListTableViewController`完善`TableView`
@@ -1863,7 +1863,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 @end
 ```
 
-### 2.10.3	自定义头视图
+### 2.10.3 自定义头视图
 >**说明：**`MVC`的`View`部分
 >+ 不创建`xib`文件
 >+ 完全通过代码创建视图
@@ -1871,7 +1871,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 
 >**注意：**如果头视图被自定义了，则需要在`viewDidLoad`中重新设置其高度。
 
-#### 2.10.3.1	`View`部分
+#### 2.10.3.1 `View`部分
 *View/HeaderView.h*
 
 ```objective-c
@@ -1975,7 +1975,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 @end
 ```
 
-#### 2.10.3.2	`Controller`部分
+#### 2.10.3.2 `Controller`部分
 >**说明：**整个qq列表实际上是一个`UITableView`
 
 
@@ -2065,7 +2065,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 @end
 ```
 
-### 2.10.4	点击效果的实现
+### 2.10.4 点击效果的实现
 >**说明：**
 >1. 点击群组栏（`HeaderView`，继承自`UITableViewHeaderFooterView`）中的按钮
 >+ 展开群组
@@ -2151,7 +2151,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 @end
 ```
 
-## 2.11	三级控制器
+## 2.11 三级控制器
 >**说明：**项目截图
 >![Alt text|200x350](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-21%20%E4%B8%8B%E5%8D%887.09.10.png)
 
@@ -2162,7 +2162,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 | viewControllers           | `@property(nonatomic, copy) NSArray<__kindof UIViewController *> *viewControllers` | 存储着tab视图管理的所有二级控制器实例           |
 | selectedIndex             | `@property(nonatomic) NSUInteger selectedIndex` | 当前被选中的tab item的下标，修改该值会导致视图的切换 |
 
-### 2.11.1	初始化视图控制器
+### 2.11.1 初始化视图控制器
 >**说明：**本课时讲解`三级控制器`的结构，自定义视图控制器并初始化学习用新语法创建数组并赋值。用`导航控制器`构建`二级控制器`。
 >![Alt text|450x250](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-21%20%E4%B8%8B%E5%8D%887.06.44.png)
 
@@ -2225,7 +2225,7 @@ CGFloat pageCtrlWidth = 200;// 滚动指示器宽度
 ```
 
 
-### 2.11.2	自定义标签工具栏
+### 2.11.2 自定义标签工具栏
 >**说明：**本课时讲解隐藏系统自带`标签工具栏`样式，并自定义按钮和视图，根据系统的`标签工具栏`的属性实现切换。
 
 *RootViewController.m*
@@ -2287,12 +2287,12 @@ CGFloat const btnHeight = 45;// 标签工具栏中按钮的高度
 @end
 ```
 
-### 2.11.3	页面跳转的两种方式
+### 2.11.3 页面跳转的两种方式
 >**说明：**本课时讲解页面两种跳转方式。通过`导航控制器`实现 `push` 和通过`视图控制器`实现模态视图。并讲解 `iOS8` 中新的方法。
 >+ 从`三级控制器` `push`出其它页面需要隐藏`标签工具栏`，`pop`回来后需要展现`标签工具栏`
 
 
-#### 2.11.3.1	RootViewController
+#### 2.11.3.1 RootViewController
 >**说明：**在`标签控制器`中定义`标签工具栏`的显示／隐藏方法
 
 *RootViewController.h*
@@ -2353,7 +2353,7 @@ CGFloat const btnHeight = 45;// 标签工具栏中按钮的高度
 @end
 ```
 
-#### 2.11.3.2	ProfileViewController
+#### 2.11.3.2 ProfileViewController
 >**说明：**`首页`中通过两种方式跳转。
 
 ```objective-c
@@ -2442,7 +2442,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 @end
 ```
 
-#### 2.11.3.3	PushViewController
+#### 2.11.3.3 PushViewController
 >**说明：**作为`push`跳转方式的目的地视图
 
 ```objective-c
@@ -2480,7 +2480,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 @end
 ```
 
-#### 2.11.3.4	ModalViewController
+#### 2.11.3.4 ModalViewController
 >**说明：**作为`dismiss`方式跳转方式的目的地视图
 
 ```objective-c
@@ -2519,7 +2519,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 @end
 ```
 
-## 2.12	通讯录
+## 2.12 通讯录
 >**说明：**本课实现模拟通讯录的登陆、添加、删除、修改的功能，涉及到第三方类库的使用，数据存储并加深理解代理和 `UITableView`。
 >1. `Storyboard`中设置页面跳转
 >2. 第三方类库`MBProgressHUD`
@@ -2529,7 +2529,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 >![Alt text|200x350](http://cdn.mengqingshen.com/img/JK_IOS_S2_contact.gif)
 
 
-### 2.12.1	`Storyboard`实现布局和跳转
+### 2.12.1 `Storyboard`实现布局和跳转
 >**说明：**本课时讲解创建自定义视图控制器并通过 `storyboard` 来布局页面，学习手动跳转的方法。
 
 ### API
@@ -2544,7 +2544,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 | --------------- | ---- | ---- |
 | ``              |      |      |
 
-#### 2.12.1.1	布局
+#### 2.12.1.1 布局
 **1. 建立`Navigaton Controller`和`LoginViewController`之间的关联**
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-21%20%E4%B8%8B%E5%8D%8810.17.31.png)
 **2. `LoginViewController`跳转到`ContactTableViewController`**
@@ -2556,7 +2556,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 >+ 按钮中使用系统图标(`System Icon`)
 >  ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-22%20%E4%B8%8A%E5%8D%8812.23.35.png)
 
-#### 2.12.1.2	跳转
+#### 2.12.1.2 跳转
 >+ 使用`NSNotificationCenter`监控文本的变化
 >+ 使用在`Storyboard`中为视图之间建立的`连接`的`identifier`访问`连接`
 
@@ -2622,7 +2622,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 @end
 ```
 
-### 2.12.2	`UIAlertController`与添加页面布局
+### 2.12.2 `UIAlertController`与添加页面布局
 >**说明：**本课时讲解 `iOS8` 中新控制器 `UIAlertController` 的使用，并通过 `storyboard` 布局添加联系人页面，用第三方类库 [MBProgressHUD](https://github.com/jdg/MBProgressHUD) 实现网络加载进程的效果。
 
 **1. 登录过程中使用`MBProgressHUD`实现提示窗**
@@ -2743,7 +2743,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 @end
 ```
 
-### 2.12.3	添加功能与传值
+### 2.12.3 添加功能与传值
 >**说明：**本课时讲解实现添加功能，添加联系人信息后通过代理传递数据到上一层视图控制器。用 `storyboard` 布局编辑页面。
 
 **1. 创建`JKContactModel`数据模型**
@@ -2917,7 +2917,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 **4. 设置键盘类型**
 ![Alt text](./屏幕快照 2016-03-23 10.14.46.png)
 
-### 2.12.4	编辑页面功能完善
+### 2.12.4 编辑页面功能完善
 >**说明：**本课时讲解实现编辑页面的功能，点击编辑修改响应的按钮和文本框状态，并通过代理方法传值。
 
 **1. 在`Storyboard`中创建并初始化编辑页面的布局**
@@ -3093,7 +3093,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 ```
 
 
-### 2.12.5	数据存储
+### 2.12.5 数据存储
 >**说明：**本课时讲解数据存储的四种方式的区别，学习`偏好设置`和`归档`的方式存储数据，并解决添加页面不能传值的问题。
 
 | 数据存储方式    | 说明                                     |
@@ -3104,7 +3104,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 | core Data | 大型数据                                   |
 | sqpite3   | 数据库                                    |
 
-#### 2.12.5.1	便好设置
+#### 2.12.5.1 便好设置
 >**实战：**登录界面载入后采用`便好设置`方式读取配置
 >+ 页面载入时读取`便好设置`
 >+ 点击登录时存储`便好设置`
@@ -3148,7 +3148,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 @end
 ```
 
-#### 2.12.5.2	对象归档
+#### 2.12.5.2 对象归档
 >**实战：**联系人列表界面使用`对象归档方式`存储数据。
 >+ `JKContactModel`采纳`NSCoding`协议
 >+ 对`联系人列表界面`中添加、删除和读取数据模型的操作进行归档
@@ -3215,7 +3215,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 @end
 ```
 
-## 2.13	绘制小黄人
+## 2.13 绘制小黄人
 
 ### Quartz 2D
 >**说明：**是一个二维绘图引擎。`Quartz 2D`的`API`是`C`语言，来自于`CoreGraphics`框架。该框架可以用来
@@ -3231,7 +3231,7 @@ CGFloat const writeButtonHeight = 32;// 导航栏按钮高度
 >+ 保存绘图信息、绘图状态
 >+ 决定绘制的输出目标（绘制到什么地方去，输出目标可以是PDF文件、Bitmap或者显示器的窗口上）
 
-### 2.13.1	`Quartz 2D`基本图形
+### 2.13.1 `Quartz 2D`基本图形
 >**说明：**本课时讲解 `Quartz 2D` 的概念，`drawRect` 方法的调用、图形上下文、以及线段、三角形、四边形的绘制方法。
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-24%20%E4%B8%8B%E5%8D%889.51.15.png)
 
@@ -3327,7 +3327,7 @@ void drawTriangle() {
 @end
 ```
 
-### 2.13.2	绘制圆、图片与文字
+### 2.13.2 绘制圆、图片与文字
 >**说明：**本课时讲解绘制圆弧、圆形、图片与文字的方法，所用函数及函数参数的含义，并介绍多种不同的函数绘制图形，最后介绍了`Quartz 2D`中的贝塞尔曲线。
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-24%20%E4%B8%8B%E5%8D%8810.25.47.png)
 
@@ -3430,7 +3430,7 @@ void drawBezier(){
 
 ```
 
-### 2.13.3	绘制小黄人雏形
+### 2.13.3 绘制小黄人雏形
 >**说明：**本课时讲解根据所学习的 `Quartz 2D` 的绘制图形的知识绘制小黄人雏形，以此加深对绘图的理解。
 >![Alt text|200x150](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-25%20%E4%B8%8A%E5%8D%8812.28.25.png)
 
@@ -3555,7 +3555,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 @end
 ```
 
-## 2.14	手势密码锁
+## 2.14 手势密码锁
 
 ### UIGestureRecognizer
 >**说明：**所有手势操作相关的操作的类的`基类`
@@ -3569,7 +3569,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 | `UIPanGestureRecognizer`       | 拖移、慢速移动，是用于监测便宜的量的 |
 | `UILongPressGestureRecognizer` | 长按                 |
 
-### 2.14.1	点击、捏合、轻扫
+### 2.14.1 点击、捏合、轻扫
 >**说明：**本课时讲解点击手势，单击和双击，手势互斥原则的概念和解决方法，捏合手势缩放视图以及轻扫手势的使用。
 
 *ViewController.m*
@@ -3666,7 +3666,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 ```
 
 
-### 2.14.2	拖移、旋转、长按
+### 2.14.2 拖移、旋转、长按
 >**说明：**本课时讲解拖移、旋转和长按手势的声明以及响应方法，根据其属性和方法来深入理解手势。
 
 ```objective-c
@@ -3726,7 +3726,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 
 ```
 
-### 2.14.3	九宫格布局按钮
+### 2.14.3 九宫格布局按钮
 >**说明：**本课时讲解通过 `storyboard` 添加背景视图，并通过代码布局按钮，运用到了九宫格布局算法，对触摸事件和按钮的功能进行代码封装。
 1.  引入图片资源
 2.  创建`JKLockView`（`UIView`）
@@ -3735,7 +3735,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
   ![Alt text|100x180](http://cdn.mengqingshen.com/img/JK_IOS_S2_gesture.gif)
 
 
-### 2.14.4	手势连线与代理
+### 2.14.4 手势连线与代理
 >**说明：**本课时讲解将按钮根据手势触摸连线，修改按钮选中状态、手势结束后取消连线、最后设置代理方法来判断密码是否正确。
 >1. 完成连线逻辑
 >2. 在`JKLockView`中定义代理协议
@@ -3750,7 +3750,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 >**技巧：**通过 `makeObjectsPerformSelector` 向数组中的每一个对象发送信息
 
 
-## 2.15	抽奖转盘动画
+## 2.15 抽奖转盘动画
 >**说明：**`QuartzCore` 框架是常用的框架，除了绘图还有动画效果，通过这个课程理解常用的 `CAAnimation` 类，并且了解图层与视图的关系，包括 `CALayer` 的自定义方法和属性。
 + CALayer
 + CAAnimation
@@ -3761,7 +3761,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 
 >**兼容性：**`QuartzCore`与`CoreGraphics`是可以跨平台使用的，`UIKit`只能在`iOS`中使用
 
-### 2.15.1	CALayer图层介绍
+### 2.15.1 CALayer图层介绍
 ***课程介绍：**本课时讲解` CALayer` 图层的概念，介绍图层的属性和自定义图层的方法。*
 
 #### CALayer
@@ -3780,7 +3780,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 + `CAGradientLayer`、`CAShapeLayer`等等
 
 
-#### 2.15.1.1	原生控件使用`CALayer`
+#### 2.15.1.1 原生控件使用`CALayer`
 >**说明：**在每一个`UIView`中都包含一个根`CALayer`，在`UIView`上的所有视觉效果都是在这个`Layer`上进行的。
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-29%2013.11.53.png)
 
@@ -3833,7 +3833,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 @end
 ```
 
-#### 2.15.1.2	自定义CALayer
+#### 2.15.1.2 自定义CALayer
 >**说明：**两种方式
 >+ 建子类继承`CALayer`，实现 `drawInContext：`方法
 >+ 在控制器中设置代理，实现代理方法来画图层
@@ -3966,7 +3966,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 @end
 ```
 
-### 2.15.2	CAAnimation 动画
+### 2.15.2 CAAnimation 动画
 >**说明：**基本动画、关键帧动画、组动画
 
 | 基本动画类型                | 说明    | 父类            | 用途              |
@@ -4105,7 +4105,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 @end
 ```
 
-### 2.15.3	转场动画
+### 2.15.3 转场动画
 >**说明：**本课时讲解核心动画的两个子类即`转场动画`和`组动画`，并介绍了转场动画的私有 API ，全面理解 `CAAnimation`。
 >![Alt text|200x200](http://cdn.mengqingshen.com/img/JK_IOS_S2_animation.gif)
 
@@ -4150,7 +4150,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 ...
 ```
 
-### 2.15.4	实例动画按钮布局
+### 2.15.4 实例动画按钮布局
 >**说明：**本课时讲解转盘动画实例，进行效果展示并完成 `UI` 布局，介绍了裁剪图片的新方法。
 >1. 导入资源
 >2. 创建轮盘类（`WheelView`，继承`UIView`）
@@ -4159,7 +4159,7 @@ void drawEyes(CGContextRef context, CGRect rect) {
 >**要点：** 使用`CGImageCreateWithImageInRect`裁剪图片
 
 
-### 2.15.5	CADisplayLink实现动画效果
+### 2.15.5 CADisplayLink实现动画效果
 >**说明：**本课时讲解通过 `CADisplayLink` 实现动画效果，完善实例动画功能，复习了 `CABasicAnimation` 的属性和方法。
 
 >**要点：**使用`CADisplayLink`通过刷新实现动画，

@@ -180,7 +180,7 @@ alert(wrox.opener == window);
 |不允许出现在可能与系统对话框混淆的地方|Opera|
 |只允许通过用户操作弹出窗口（页面加载完后window.open()才有效）|某些|
 |非用户操作弹出的窗口只显示标题栏，并放在浏览器窗口的右下角|Chrome|
-#### 8.5.1.3	弹出窗口屏蔽程序
+#### 8.5.1.3 弹出窗口屏蔽程序
 **屏蔽方式：**
 
 + 浏览器内置弹出窗口屏蔽程序
@@ -203,7 +203,7 @@ if(blocked){
 }
 ```
 ### 8.1.6 间歇调用和超时调用
-#### 8.1.6.1	超时调用
+#### 8.1.6.1 超时调用
 #####window.setTimeout()方法
 **说明：**超时调用，在指定的时间过后执行代码
 
@@ -233,7 +233,7 @@ var timeoutId = setTimeout(function(){
 //取消
 clearTimeout(timoutId);
 ```
-#### 8.1.6.2	间歇调用
+#### 8.1.6.2 间歇调用
 #####windwo.setInterval()方法
 **说明：**间歇调用，每隔一段指定的时间就执行一次代码
 
@@ -252,7 +252,7 @@ setInterval(function(){
 }, 1000);
 ```
 #####window.clearTimeout()方法：终止间歇调用
-#### 8.1.6.3	超时调用模拟间歇调用（推荐）
+#### 8.1.6.3 超时调用模拟间歇调用（推荐）
 *间歇调用*
 
 ```js
@@ -346,9 +346,9 @@ function getQueryStringArgs(){
     return args;
 }
 ```
-### 8.2.2	位置操作
+### 8.2.2 位置操作
 **说明：**location对象可以通过很多方式改变浏览器的位置。
-#### 8.2.2.1	通过方法修改位置
+#### 8.2.2.1 通过方法修改位置
 
 |location的方法|说明|
 |---|---|
@@ -361,7 +361,7 @@ location.assign("http://www.wrox.com");
 location.reload();//重新加载（有可能从缓存中记载）
 location.reload(true);//重新加载（从服务器重新加载）
 ```
-#### 8.2.2.2	通过属性
+#### 8.2.2.2 通过属性
 **注意：**底层仍然使调用location.assign方法。
 
 **浏览器差异：**ie早起版本修改hash不会生成一条新的历史纪录。
@@ -387,7 +387,7 @@ location.pathname = "mydir";
 //将url修改为“http://www.yahoo.com:8080/WileyCDA/”
 location.port = 8080;
 ```
-## 8.3	navigator对象
+## 8.3 navigator对象
 **历史：**最早由Netscape Navigator2.0引入，现在已经成为识别客户端浏览器的事实标准。
 
 **兼容性：**所有浏览器都支持。
@@ -403,8 +403,8 @@ location.port = 8080;
 **注意：**通常用于检测显示网页的浏览器类型。
 ![Alt text](http://cdn.mengqingshen.com/屏幕快照 2015-06-23 下午9.32.00.png)
 ![Alt text](http://cdn.mengqingshen.com/屏幕快照 2015-06-23 下午9.32.25.png)
-### 8.3.1	检测插件
-#### 8.3.1.1	navigator.plugins数组
+### 8.3.1 检测插件
+#### 8.3.1.1 navigator.plugins数组
 **说明：**数组中的每一项都包含下列属性。
 
 **兼容性：**非IE
@@ -433,7 +433,7 @@ alert(hasPlugin("Flash"));
 //检测"QuickTime"
 alert(hasPlugin("Flash"));
 ```
-#### 8.3.1.2	ActiveXObject对象
+#### 8.3.1.2 ActiveXObject对象
 **说明：**IE不支持Netscape式的插件。只能通过尝试使用专有的ActiveXObject类型创建一个特定插件的实例。
 
 **唯一标识符：**IE是以`COM`对象的方式实现插件的，而 com对象使用唯一表示来标识。例如Flash的标识符`ShockwaveFlash.ShockwaveFlash`。
@@ -455,7 +455,7 @@ alert(hasIEPlugin("ShockwaveFlash.ShockwaveFlash"));
 //检测QuickTime
 alert(hasIEPlugin("QuickTime.QuickTime"));
 ```
-#### 8.3.1.3	兼容处理
+#### 8.3.1.3 兼容处理
 
 ```js
 //检测所有浏览器中的Flash
@@ -481,11 +481,11 @@ alert(hasFlash());
 //检测QuickTime
 alert(hasQuickTime());
 ```
-#### 8.3.1.4	navigator.plugins.refresh方法：刷新插件集合
+#### 8.3.1.4 navigator.plugins.refresh方法：刷新插件集合
 **参数：**是否重新加载包含页面的所有页面的一个布尔值。
-### 8.3.2	注册处理程序
+### 8.3.2 注册处理程序
 **说明：**随着RSS阅读器和在线电子邮件程序的兴起，注册处理程序就为像使用桌面程序一样默认使用这些在线应用程序提供了一种方式。
-#### 8.3.2.1	registerContentHandler()方法
+#### 8.3.2.1 registerContentHandler()方法
 **用途：**为一个站点指明它可以处理的特定类型的信息。
 
 **参数（3）：**要处理的`MIME`类型、可以处理该`MIME`类型的页面的URL、应用程序的名称。
@@ -505,7 +505,7 @@ alert(hasQuickTime());
 navigator.registerContentHandler("application/rss+xml",
 "http://www.somereader.com?feed=%s", "Some Reader");
 ```
-#### 8.3.2.2	registerProtocolHandler()方法
+#### 8.3.2.2 registerProtocolHandler()方法
 **用途：**为一个站点指明它可以处理那种协议的请求。
 
 **参数（3）：**要处理的协议（mailto、ftp等）、处理该协议个页面的URL、应用程序的名称。
@@ -518,7 +518,7 @@ navigator.registerContentHandler("application/rss+xml",
 navigator.registerProtocolHandler("mailto", "http://www.somemailclient.com?cmd=%s", "Some Mail Client");
 ```
 
-## 8.4	screen对象
+## 8.4 screen对象
 **用途：**多用来表明客户端的能力，其中包括浏览器窗口外部的显示器的信息，如像素宽度和高度等。
 
 **属性：**
@@ -530,11 +530,11 @@ navigator.registerProtocolHandler("mailto", "http://www.somemailclient.com?cmd=%
 //许多浏览器会禁用调整浏览器窗口大小的能力，因此下面的代码不一定起作用
 window.resizeTo(screen.availWidth, screen.availHeight)
 ```
-## 8.5	history对象
+## 8.5 history对象
 **说明：**window对象的属性，每个浏览器窗口、每个标签页乃至每个框架都有自己的history对象。
 
 **局限：**处于安全方面的考虑，开发人员无法得知用户浏览过的URL。
-### 8.5.1	go方法
+### 8.5.1 go方法
 **用途：**在用户的历史纪录中任意跳转。
 
 **参数：**一个整数值(负数表示向后，整数表示向前)或字符串(跳转到历史纪录中包含改字符串的第一个位置，可能向前也可能向后)
@@ -559,7 +559,7 @@ history.go(2);
 //跳转到最近的wrox.com页面
 history.go("wrox.com");
 ```
-### 8.5.2	length属性
+### 8.5.2 length属性
 **用途：**创建自定义的“后退”和“前进按钮”
 
 **说明：**保存着历史纪录的数值。

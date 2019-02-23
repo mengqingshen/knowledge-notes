@@ -7,21 +7,21 @@ tag:
 date: 2015-05-05 09:01
 ---
 
-## 1	课程介绍
+## 1 课程介绍
 `人们走进喧闹中去，是为了忘却污迹。`
 
 **Compass是什么：**简单的说，就是在`sass`的基础上构建起的一整套强大的工具。
-## 2	Compass核心模块概述&Reset模块
-### 2.1	Compass核心模块
+## 2 Compass核心模块概述&Reset模块
+### 2.1 Compass核心模块
 `当我的巴特农神庙建起来的时候，我在这遥远的地方也能感受到它的辉煌。`
 
-#### 2.1.1	核心模块
+#### 2.1.1 核心模块
 |模块|用途|引入|
 |-----|----|-------|
 |Reset|浏览器重置模块，用来减少不同浏览器之间的差异。|`@import "compass/reset"`|
 |Layout|提供页面布局的控制能力|`@import "compass/layout"`|
 
-#### 2.1.2	其它模块
+#### 2.1.2 其它模块
 **引入方式：**`@import "compass"`
 
 |模块|用途|
@@ -32,7 +32,7 @@ date: 2015-05-05 09:01
 |Utilities|辅助工具模块|
 |Browser|控制浏览器的适配，会影响其它所有模块|
 
-#### 2.1.3	安装插件获得额外模块
+#### 2.1.3 安装插件获得额外模块
 **注意：**sass中使用`@import`引入模块是简单粗暴的，重复`@import`会导致性能问题。
 
 **以引入`normalize`模块为例**
@@ -52,7 +52,7 @@ $ vim sass/screen.scss
 
 $ compass watch
 ```
-#### 2.2		Normalize核心模块
+#### 2.2 	Normalize核心模块
 **自模块引入方式：**`@import "normalize/[子模块名]"`
 
 **注意：**以子路径的方式引入子模块依赖于`@import "normalize-version"`
@@ -78,7 +78,7 @@ $ compass watch
 @import "normalize/links";
 ```
 
-#### 2.3		探究compass本身的子模块加载方式
+#### 2.3 	探究compass本身的子模块加载方式
 
 ```scss
 @import "compass/reset"
@@ -89,7 +89,7 @@ $ compass watch
 @import "compass/reset/utilities"
 @include global-reset;//没有参数的mixin调用时可省略后面的()
 ```
-#### 2.4		Reset核心mixin
+#### 2.4 	Reset核心mixin
 **说明：**和所有模块一一对应
 http://compass-style.org/reference/compass/reset/utilities/
 
@@ -109,7 +109,7 @@ http://compass-style.org/reference/compass/reset/utilities/
   border: 0;
 }
 ```
-## 3	Layout模块
+## 3 Layout模块
 **地位：**使用率最低的模块
 
 **引入：**`@import "compass/layout"`
@@ -118,7 +118,7 @@ http://compass-style.org/reference/compass/reset/utilities/
 1. `@import "compass/layout/grid-background";`
 2. `@import "compass/layout/sticky-footer";`
 3. `@import "compass/layout/strechting';"`
-### 3.1	grid-background
+### 3.1 grid-background
 **用途：**制作网格背景
 http://compass-style.org/reference/compass/layout/grid_background/
 
@@ -129,7 +129,7 @@ $grid-background-column-color:rgba(255,0,0,.25);
 	@include grid-background();
 }
 ```
-### 3.2	sticky-footer
+### 3.2 sticky-footer
 **用途：**提供设置元素固定在底部的`mix`（当页面内容不能占满窗口时目标位于窗口底部，超过窗口时，目标处在页面的底部。）
 
 **注意：**
@@ -159,7 +159,7 @@ $grid-background-column-color:rgba(255,0,0,.25);
 @import "compass/layout/sticky-footer";
 @include sticky-footer(54px)
 ```
-### 3.3	stretching
+### 3.3 stretching
 **用途：**提供了设置元素的偏移的`mixin`
 
 **API：**http://compass-style.org/reference/compass/layout/stretching/
@@ -182,8 +182,8 @@ $grid-background-column-color:rgba(255,0,0,.25);
   right: 5px; 
 }
 ```
-## 4	CSS3模块&Brower Support模块
-### 4.1	CSS3模块
+## 4 CSS3模块&Brower Support模块
+### 4.1 CSS3模块
 **地位：**主动使用频率最高的模块
 
 **用途：**提供跨浏览器的CSS3能力
@@ -201,10 +201,10 @@ $grid-background-column-color:rgba(255,0,0,.25);
   -webkit-box-shadow: 1px 1px 3px 2px #cfcecf;
   box-shadow: 1px 1px 3px 2px #cfcecf; }
 ```
-### 4.2	Brower Support模块
+### 4.2 Brower Support模块
 **注意：**引入`css3`模块时也会同时引入该模块
 
-#### 4.2.1		调试compass
+#### 4.2.1 	调试compass
 
 + scss中调试
 
@@ -227,7 +227,7 @@ $ compass interactive
 ("4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39")
 > 
 ```
-#### 4.2.2	Brower Support模块参数
+#### 4.2.2 Brower Support模块参数
 
 ```scss
 @import "compass/css3";
@@ -255,15 +255,15 @@ $ compass interactive
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3; }
 ```
-## 5	Tygography模块
-### 5.1	Tygography模块（上）
+## 5 Tygography模块
+### 5.1 Tygography模块（上）
 `人活一世，有的人成了里子，有的人成了面子。`
 **子模块：**
 1. Links
 2. Lists
 3. Text
 4. Vertical Rhythm
-#### 5.1.1	Links：链接
+#### 5.1.1 Links：链接
 
 + hover-link
 
@@ -322,7 +322,7 @@ a:active, a:focus {
   outline: none; }
 ```
 
-#### 5.1.2	Lists：有序列表和无需列表
+#### 5.1.2 Lists：有序列表和无需列表
 
 + no-bullets：去掉`ul,li`的默认样式
 
@@ -389,7 +389,7 @@ a:active, a:focus {
 .list-horizontal li.last {
   padding-left: 0; }
 ```
-#### 5.1.3	Text
+#### 5.1.3 Text
 
 + force-wrap：去掉空白符号，保留换行符，长字符串在行末强制换行。
 
@@ -483,8 +483,8 @@ $use-mozilla-ellipsis-binding:true;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 ```
-### 5.2	Tygography模块（下）
-#### 5.2.1	Vertical Rhythm
+### 5.2 Tygography模块（下）
+#### 5.2.1 Vertical Rhythm
 **用途：**做网页布局的参照（尤其是行高问题）
 ![Alt text](http://cdn.mengqingshen.com/imooc/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-05-17%20%E4%B8%8B%E5%8D%881.09.57.png)
 
@@ -572,9 +572,9 @@ p {
   margin-top: 3em;
   margin-bottom: 1.5em; }
 ```
-## 6	Helpers模块
-### 6.1	Helpers模块（上）
-#### 6.1.1	Base64取代图片下载
+## 6 Helpers模块
+### 6.1 Helpers模块（上）
+#### 6.1.1 Base64取代图片下载
 **优点：**减少请求数目，加快页面渲染
 
 **缺点：**和直接使用图片相比
@@ -593,7 +593,7 @@ p {
 .analizer-logo {
   background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQIAJgAmAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2w......A7OxGcU8Z3pESfNGFppJpgoP4p6CZo0EpB6gPUB6gPUB6gPUB6gPUAvigPUAooAqMfCgkD/uoBppmSgPYpAhoBfAoBtASwjJoCZAKFR5wAnFANX/boRULd6AZQZRQCUB6gPUB6gPUB6gP/9k='); }
 ```
-#### 6.1.2	image-url
+#### 6.1.2 image-url
 **用途：**解决引用图片的痛点
 
 **优点：**
@@ -620,8 +620,8 @@ relative_assets = true
 .analizer-logo {
   background-image: url('../images/logo.jpg?1431840294'); }
 ```
-### 6.2	Helpers模块（下）
-#### 6.2.1	调试信息
+### 6.2 Helpers模块（下）
+#### 6.2.1 调试信息
 
 ```scss
 //再终端打印出当前的编译环境（production/environment）
@@ -638,7 +638,7 @@ $ vim config.rb
 #set the Compass compile environment
 environment = :devlopent
 ```
-#### 6.2.2	font-file
+#### 6.2.2 font-file
 **说明：**针对字体文件
 
 + @debug font-files
@@ -677,8 +677,8 @@ environment = :devlopent
 p.bar, div.bar, span.bar {
   color: #000; }
 ```
-## 7	Utilities模块
-### 7.1	compass-utilities-1
-### 7.2	compass-utilities-2
-### 7.3	compass-utilities-3
+## 7 Utilities模块
+### 7.1 compass-utilities-1
+### 7.2 compass-utilities-2
+### 7.3 compass-utilities-3
 

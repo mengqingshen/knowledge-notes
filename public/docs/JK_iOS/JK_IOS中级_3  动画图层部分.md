@@ -5,15 +5,15 @@ categories:
 ---
 
 
-## 3.1	设计复杂的iOS动画效果
+## 3.1 设计复杂的iOS动画效果
 
-### 3.1.1	制定统一的动画接口
+### 3.1.1 制定统一的动画接口
 >**说明：**制定统一的动画接口有如下优点
 >+ 便于实现后续复杂的动画组合
 >+ 对于后续的代码维护极为方便
 >+ 需要优先考虑里氏代换原则
 
-### 3.1.2	动画中的高内聚低耦合原理
+### 3.1.2 动画中的高内聚低耦合原理
 >**说明：**将视图的动画效果的实现和视图本身封装到另一个`UIView`中。
 >**技巧：**
 >+ 不要把实现动画的细节暴露在外
@@ -130,7 +130,7 @@ categories:
 @end
 ```
 
-### 3.1.3	设计动画函数的注意事项
+### 3.1.3 设计动画函数的注意事项
 + 动画方法的命名统一：封装在不同的`view`的同类动画方法命名要一致
 + 预留非动画情形的设计：避免`TableView`或者其它存在重用问题的场景下的性能问题
 + 用百分比来表示动画的执行程度
@@ -310,14 +310,14 @@ categories:
 @end
 ```
 
-### 3.1.4	用里氏代换原则来处理动画类的继承问题
+### 3.1.4 用里氏代换原则来处理动画类的继承问题
 >**说明：**其实就是利用对象的`多态性`，父类变量动态调用子类对象的方法。
 >**要点：**
 >+ 里氏代换原则的基本原理
 >+ 设计中要确保父类可以直接调用子类的方法
 >+ 将父类设计成虚类（需要时，父类也可以提供实现）
 
-#### 3.1.4.1	父类
+#### 3.1.4.1 父类
 *SuperUIView.h*
 
 ```objective-c`
@@ -349,7 +349,7 @@ categories:
 @end
 ```
 
-#### 3.1.4.2	子类
+#### 3.1.4.2 子类
 >**说明：**在子类中重写集成来的`show`的`hide`方法。
 
 *SubUIView1.m*
@@ -400,7 +400,7 @@ categories:
 @end
 ```
 
-#### 3.1.4.3	演示
+#### 3.1.4.3 演示
 *ViewController.m*
 
 ```objective-c
@@ -414,7 +414,7 @@ tmpView = [[SubUIView2 alloc] init];
 [tmpView hide];
 ```
 
-### 3.1.5	动画中的模块化设计
+### 3.1.5 动画中的模块化设计
 >**说明：**模块化设计在开发中非常重要，拆分成小颗粒的模块非常便于代码的维护
 >**要点：**
 + 动画效果实现难度的判断
@@ -422,7 +422,7 @@ tmpView = [[SubUIView2 alloc] init];
 + 将写好的小模块组合成你所需要的动画效果
 
 
-#### 3.1.5.1	子模块
+#### 3.1.5.1 子模块
 *LineUIView.h、CircleUIView.h、RectUIView.h*
 
 ```objective-c
@@ -442,7 +442,7 @@ tmpView = [[SubUIView2 alloc] init];
 ...
 ```
 
-#### 3.1.5.2	组合使用
+#### 3.1.5.2 组合使用
 *BaseAnimationView.h*
 
 ```objective-c
@@ -492,7 +492,7 @@ tmpView = [[SubUIView2 alloc] init];
 @end
 ```
 
-## 3.2	iOS模糊效果的使用
+## 3.2 iOS模糊效果的使用
 >**背景：**在项目开发中，使用模糊效果或许是很多开发者并不愿意接触的东西，因为大部分都是从开源代码里获取到的代码片段，并不一定理解别人的设计思路，此时要最大程度的修改来符合自己的项目需求并不容易。本课程我将会带领大家来定制出自己需要的模糊效果，理解设计的原理，并根据不同的需求设计出符合我们期望的效果。
 >**要点：**
 1. CoreImage 中的模糊滤镜
@@ -500,7 +500,7 @@ tmpView = [[SubUIView2 alloc] init];
 3. iOS8 中 UIVisualEffectView 模糊效果的使用
 4. 设计下载图片后自动模糊的控件
 
-### 3.2.1	CoreImage中的模糊滤镜
+### 3.2.1 CoreImage中的模糊滤镜
 >**要点：**
 >+ `CoreImage`是苹果用来简化图片处理的框架
 >+ `CIImage`、`CIFilter`与`CIContext`三者之间的联系
@@ -554,7 +554,7 @@ imageView.center = self.view.center;
 [self.view addSubview:imageView];
 ```
 
-### 3.2.2	UIImage + ImageEffects的category模糊效果
+### 3.2.2 UIImage + ImageEffects的category模糊效果
 >**说明：**苹果官方提供了一段无论是性能还是效果都更优的实现图片模糊效果的代码。在此基础上封装的库在以下地址可以拿到
 >[https://github.com/YouXianMing/UIImageBlur](https://github.com/YouXianMing/UIImageBlur)
 + 性能更好
@@ -592,7 +592,7 @@ imageView.center = self.view.center;
 @end
 ```
 
-### 3.2.3	iOS8种UIVisualEffectView模糊效果的使用
+### 3.2.3 iOS8种UIVisualEffectView模糊效果的使用
 >**说明：**`UIVisyalEffectView`的模糊效果是即时渲染的，效率非常高
 >**注意：**在`UIVisualEffectView`之上的文本显示需要特殊处理
 >**兼容性：**`iOS8+`
@@ -639,7 +639,7 @@ subEffectView.frame = effecView.bounds;
 [subEffectView.contentView addSubview:label];
 ```
 
-### 3.2.4	设计下载图片后自动模糊的控件
+### 3.2.4 设计下载图片后自动模糊的控件
 >**说明：**将下载下来的图片自动模糊的控件。
 >**要点：**
 >+ KVO监听下载完成后的事件
@@ -648,7 +648,7 @@ subEffectView.frame = effecView.bounds;
 >**GDC：**https://github.com/YouXianMing/GCD-Program
 
 
-#### 3.2.4.1	控件实现
+#### 3.2.4.1 控件实现
 >**依赖:**`GDC`和`UIImage+ImageEffects`
 
 *BlurDownloadPicView.h*
@@ -729,7 +729,7 @@ subEffectView.frame = effecView.bounds;
 @end
 ```
 
-#### 3.2.4.2	使用
+#### 3.2.4.2 使用
 *ViewController.m*
 
 ```objective-c
@@ -761,9 +761,9 @@ subEffectView.frame = effecView.bounds;
 @end
 ```
 
-## 3.3	使用 maskView 设计动画
+## 3.3 使用 maskView 设计动画
 
-### 3.3.1	maskView(maskLayer)的基本原理
+### 3.3.1 maskView(maskLayer)的基本原理
 >**说明：**本课时主要讲解 `maskView(maskLayer)`的基本原理，并用示例演示。
 ![Alt text|100x200](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-06%20%E4%B8%8B%E5%8D%883.14.40.png)
 
@@ -793,7 +793,7 @@ self.addImageView.maskView = mask;
 [self.view addSubview:self.addImageView];
 ```
 
-### 3.3.2	maskView配合 CAGradientLayer的使用
+### 3.3.2 maskView配合 CAGradientLayer的使用
 >**说明：**本课时讲解如何在 maskView 中加载 `CAGradientLayer`。
 >![Alt text|100x100](http://cdn.mengqingshen.com/img/JK_IOS_S3_ga.gif)
 
@@ -833,7 +833,7 @@ imageView.maskView = containerView;
 }];
 ```
 
-### 3.3.3	maskView 配合带 alpha 通道图片的使用
+### 3.3.3 maskView 配合带 alpha 通道图片的使用
 >**说明：**本课时讲解 `maskView` 加载 `png` 图片的原理。
 >+ 直接使用带`alpha`通道的`png`图片比用`CAGradientLayer`的方式更加高效
 >+ 可以使用技巧在`maskView`上添加多张图片
@@ -886,7 +886,7 @@ baseView.maskView = mask;
 
 ```
 
-### 3.3.4	设计文本横向渐变消失的控件
+### 3.3.4 设计文本横向渐变消失的控件
 >**说明：**本课时将综合前面所学内容设计一个效果不错的文本渐变消失的控件，并做简易的扩展设计。
 >+ 接口的设计
 >+ 封装`CAGradientLayer`用以提供`mask`遮罩
@@ -895,7 +895,7 @@ baseView.maskView = mask;
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_text.gif)
 
 
-#### 3.3.4.1	文本横向渐变消失的控件
+#### 3.3.4.1 文本横向渐变消失的控件
 *FadeStrinUIView.h*
 
 ```objective-c
@@ -992,7 +992,7 @@ baseView.maskView = mask;
 @end
 ```
 
-#### 3.3.4.2	使用该控件
+#### 3.3.4.2 使用该控件
 *ViewController.m*
 
 ```objective-c
@@ -1022,11 +1022,11 @@ baseView.maskView = mask;
 @end
 ```
 
-## 3.4	使用 Facebook 开源动画库 POP 实现
+## 3.4 使用 Facebook 开源动画库 POP 实现
 >**课程说明：**`POP` 动画库是 `Facebook` 在 2014 年开源出来的一个高效的动画引擎，它与 `CoreAnimation` 的实现机制有着巨大区别，但使用方式极为相似，其动画效果逼真而优美，虽无法完全替换 `CoreAnimation`，但掌握它，将会使你的应用的交互效果惊艳而脱颖而出。
 >**Github地址：**https://github.com/facebook/pop
 
-### 3.4.1	`POP`动画引擎简介
+### 3.4.1 `POP`动画引擎简介
 >**课程说明：**本课时示例演示 `POP` 动画的强大之处，讲解 `CADisplayLink` 的作用，以及 `POP` 动画引擎与 `CoreAnimation` 之间的联系。
 1. pop动画引擎是Facebook公司开源的
 2. pop动画引擎主要实现了真实物理系的动画效果（弹簧效果与衰减效果）
@@ -1034,9 +1034,9 @@ baseView.maskView = mask;
 4. pop动画引擎自成体系，与系统的`CoreAnimation`有很大的区别，但使用非常类似
 
 
-#### 3.4.1.1	POP效果展示
+#### 3.4.1.1 POP效果展示
 
-#### 3.4.1.2	CADisplayLink
+#### 3.4.1.2 CADisplayLink
 >**说明：**`POP`通过`CADisplayLink`刷新动画的（60帧/秒，同iOS系统本身的刷新频率）。
 
 *ViewController.m*
@@ -1092,7 +1092,7 @@ baseView.maskView = mask;
 @end
 ```
 
-### 3.4.2	`POP`动画引擎中`Layer`与`CALayer`的联系与区别
+### 3.4.2 `POP`动画引擎中`Layer`与`CALayer`的联系与区别
 >**课程说明：**本课时讲解 `POP` 动画中的 Layer 与 `CALayer` 的一些共性与区别。
 >**比较：**
 >1. 使用`POP`动画与使用`CALayer`动画非常相似
@@ -1114,7 +1114,7 @@ baseView.maskView = mask;
 >>**方式3：**二进制文件`.framework`
 
 
-#### 3.4.2.1	导入`POP`框架
+#### 3.4.2.1 导入`POP`框架
 >**说明：**使用`CocoaPods`
 >**可能的出错：**http://www.tuicool.com/articles/InIBbaf
 >**注意：**安装好依赖后，需要从`项目名.xcworkspace`重启项目。
@@ -1129,7 +1129,7 @@ $ vim Podfile# 依赖配置
 $ pod install# 安装依赖
 ```
 
-#### 3.4.2.1	比较CALayer和POP CAlayer
+#### 3.4.2.1 比较CALayer和POP CAlayer
 ![Alt text|150x200](http://cdn.mengqingshen.com/img/JK_IOS_S3_pop.gif)
 
 *ViewController.m*
@@ -1229,7 +1229,7 @@ $ pod install# 安装依赖
 ```
 
 
-### 3.4.3	用`POP`动画引擎实现衰减动画
+### 3.4.3 用`POP`动画引擎实现衰减动画
 >**课程说明：**本课时用 `POP` 动画引擎实现移动`View` 并停止时衰减的动画效果。
 >**要点：**
 >1. 衰减动画由`POPDecayAnimation`来实现
@@ -1313,7 +1313,7 @@ $ pod install# 安装依赖
 @end
 ```
 
-### 3.4.4	用`POP`动画引擎实现弹簧动画
+### 3.4.4 用`POP`动画引擎实现弹簧动画
 >**课程说明：**本课时用 `POP` 动画引擎实现 View 的放大缩小等的弹簧效果。
 >**扩展：**`Shimmer`
 >**要点：**
@@ -1367,9 +1367,9 @@ $ pod install# 安装依赖
 @end
 ```
 
-## 3.5	用缓动函数模拟物理动画
+## 3.5 用缓动函数模拟物理动画
 
-### 3.5.1	缓动函数简介
+### 3.5.1 缓动函数简介
 >**课程说明：**本课时将演示缓动函数能做出来的效果，然后讲解它的基本原理。
 >1. 缓动函数的动画效果是建立在`CALayer`层级的关键帧动画基础之上
 >2. 缓动函数是一系列模拟物理效果（如抛物线）方程式的统称，用以计算给定亮点之间的插值
@@ -1379,14 +1379,14 @@ $ pod install# 安装依赖
 >**缓动函数源码：**https://github.com/YouXianMing/EasingAnimation
 
 
-#### 3.5.1.1	缓动函数类型
+#### 3.5.1.1 缓动函数类型
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-09%20%E4%B8%8B%E5%8D%8810.52.45.png)
 
-#### 3.5.1.2	缓动效果示例
+#### 3.5.1.2 缓动效果示例
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_easing.gif)
 
 
-### 3.5.2	缓动函数与关键帧动画的联系
+### 3.5.2 缓动函数与关键帧动画的联系
 >**课程说明：**本课时将讲解关键帧动画的原理，并分析关键帧动画与缓动函数之间的联系。
 >1. 关键帧动画需要提供很多的帧来完善动画效果
 >2. 关键帧动画的帧可以通过一定的数学计算来提供需要的帧数
@@ -1469,7 +1469,7 @@ $ pod install# 安装依赖
 @end
 ```
 
-### 3.5.3	用缓动函数模拟弹簧效果
+### 3.5.3 用缓动函数模拟弹簧效果
 >**课程说明：**本课时用缓动函数结合关键帧动画实现弹簧效果，并模拟秒表摆动效果。
 >![Alt text|100x90](http://cdn.mengqingshen.com/img/JK_IOS_S3_time.gif)
 
@@ -1536,7 +1536,7 @@ $ pod install# 安装依赖
 @end
 ```
 
-### 3.5.4	用缓动函数模拟碰撞效果
+### 3.5.4 用缓动函数模拟碰撞效果
 >**课程说明：**本课时用缓动函数实现碰撞动画效果，并分析用途。
 >1. 使用`easeOutBounce`函数来创建碰撞效果
 >2. 将`easeOutBounce`创建出来的帧数组添加到关键帧动画中
@@ -1582,7 +1582,7 @@ $ pod install# 安装依赖
 @end
 ```
 
-### 3.5.5	用缓动函数模拟衰减效果
+### 3.5.5 用缓动函数模拟衰减效果
 >**课程说明：**本课时用缓动函数实现衰减动画效果，并分析用途。
 >1. 使用`easeOutCubic`函数来创建弹簧效果
 >2. 将`easeOutCubic`创建出来的的帧数组添加到关键帧动画中
@@ -1634,9 +1634,9 @@ $ pod install# 安装依赖
 @end
 ```
 
-## 3.6	使用带粒子效果的 CAEmitterLayer
+## 3.6 使用带粒子效果的 CAEmitterLayer
 
-### 3.6.1	用 CAEmitterLayer 产生粒子效果
+### 3.6.1 用 CAEmitterLayer 产生粒子效果
 >**课程说明：**本课时讲解 `CAEmitterLayer` 的一些基本属性，以及基本的用法。
 >+ `CAEmitterLayer`的用途：实现粒子效果
 >+ `CAEmitterLayer`参数
@@ -1672,7 +1672,7 @@ cell.contents = (__bridge id)([UIImage imageNamed:@"snow"].CGImage);// 设置图
 emitterLayer.emitterCells = @[cell];
 ```
 
-### 3.6.2	封装 CAEmitterLayerUIVIew
+### 3.6.2 封装 CAEmitterLayerUIVIew
 >**课程说明：**本课时讲解了为了避免繁琐的设置而将 `CAEmitterLayer` 封装成一个较为通用的父类供子类使用。
 >+ 替换`CAEmitterLayer`成`UIView`子类的`backedLayer`
 >+ 将`CAEmitterLayer`封装的类作为“抽象“父类
@@ -1741,7 +1741,7 @@ emitterLayer.emitterCells = @[cell];
 @end
 ```
 
-### 3.6.3	封装下雪、下雨的粒子效果控件
+### 3.6.3 封装下雪、下雨的粒子效果控件
 >**课程说明：**本课时在封装 `CAEmitterLayer` 基础上进一步从“抽象”父类派生出下雪、下雨的子类控件。
 >+ 从封装`CAEmitterLayer`的“抽象”父类继承的原因
 >+ 下雪、下雨效果参数的设置
@@ -1777,9 +1777,9 @@ rainView.maskView = alphaView2;
 [rainView show];
 ```
 
-## 3.7	iOS 中 CAGradientLaueyer 的使用
+## 3.7 iOS 中 CAGradientLaueyer 的使用
 
-### 3.7.1	CAGradientLayer 简介
+### 3.7.1 CAGradientLayer 简介
 >**课程说明：**本课演示 `CAGradientLayer` 能做的一些动画效果，以及 `CAGradientLayer` 与 `CAShapeLayer` 配合使用的实例。
 >1. `CAGradientLayer`是用于处理渐变色的层结构
 >2. `CAGradientLayer`的渐变色可以做隐式动画
@@ -1795,7 +1795,7 @@ rainView.maskView = alphaView2;
 ![Alt text|100x160](http://cdn.mengqingshen.com/img/JK_IOS_S3_exam4.gif)作为`png`图片遮罩动画效果
 
 
-### 3.7.2	CAGradientLayer 坐标系统
+### 3.7.2 CAGradientLayer 坐标系统
 >**课程说明：**本课讲解 CAGradientLayer 的坐标系统，并延伸讲解了坐标系统影响如何颜色分配、动画效果。
 >1. `CAGradientLayer`的坐标系统是从坐标（0, 0）到（1, 1）绘制的矩形
 >![Alt text|200x180](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-11%20%E4%B8%8B%E5%8D%8811.44.12.png)
@@ -1857,7 +1857,7 @@ rainView.maskView = alphaView2;
 ```
 
 
-### 3.7.3	色差动画的实现
+### 3.7.3 色差动画的实现
 >**课程说明：**本课用 CAGradientLayer 实现色差动画效果。
 >1. 确定渐变色渐变方向
 >2. 设定两种颜色，其中一种是透明色，另外一种是自定义颜色
@@ -1922,7 +1922,7 @@ rainView.maskView = alphaView2;
 @end
 ```
 
-### 3.7.4	用 CAGradientLayer 封装带色差动画的 View
+### 3.7.4 用 CAGradientLayer 封装带色差动画的 View
 >**课程说明：**本课讲解将色差动画效果封装到 View 当中。
 >1. 确定几个属性值
 >2. 去定意义做动画的参数
@@ -1930,7 +1930,7 @@ rainView.maskView = alphaView2;
 
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_last.gif)
 
-#### 3.7.4.1	封装好的视图
+#### 3.7.4.1 封装好的视图
 >**说明：**将对视图的渐变层的设置工作整合到`setter`中。
 
 *ColorUIImageView.h*
@@ -2032,7 +2032,7 @@ typedef enum : NSUInteger {
 @end
 ```
 
-#### 3.7.4.2	使用
+#### 3.7.4.2 使用
 *ViewController.m*
 
 ```objective-c
@@ -2074,9 +2074,9 @@ typedef enum : NSUInteger {
 @end
 ```
 
-## 3.8	iOS中 CAShapeLayer 的使用
+## 3.8 iOS中 CAShapeLayer 的使用
 
-### 3.8.1	CAShapeLayer 简介
+### 3.8.1 CAShapeLayer 简介
 >**课程说明：**本课介绍 `CAShapeLayer` 与 `CALayer`、贝塞尔曲线之间的简单联系，并通过一个 demo 演示 `CAShapeLayer` 实现的路径动画效果。
 >1. `CAShapeLayer`继承自`CALayer`，可以使用`CALayer`的所有属性值
 >2. `CAShapeLayer`需要与贝塞尔曲线配合使用才有意义
@@ -2086,7 +2086,7 @@ typedef enum : NSUInteger {
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_path.gif)
 
 
-### 3.8.2	贝塞尔曲线与 CAShapeLayer 的关系
+### 3.8.2 贝塞尔曲线与 CAShapeLayer 的关系
 >**课程说明：**本课介绍多阶贝塞尔曲线的用途，并详细讲解贝塞尔曲线与 `CAShapeLayer` 之间的关系，以及使用贝塞尔曲线的一些注意事项。
 >1. `CAShapeLayer`中有`Shape`这个单词，顾名思义，它需要一个形状才能生效
 >2. 贝赛尔曲线可以创建基于矢量的路径
@@ -2133,7 +2133,7 @@ typedef enum : NSUInteger {
 @end
 ```
 
-### 3.8.3	StrokeStart 与 StrokeEnd 动画
+### 3.8.3 StrokeStart 与 StrokeEnd 动画
 >**课程说明：**本课讲解如何设置 `CAShapeLayer` 的属性值来显示出圆环并用 `CAShapeLayer` 的 `StrokeStart` 与 `StrokeEnd` 属性做动画。
 >1. 将`ShapeLayer`的`fillColor`设置成透明背景
 >2. 设置线条的宽度(`lineWidth`)的值
@@ -2208,7 +2208,7 @@ typedef enum : NSUInteger {
 @end
 ```
 
-### 3.8.4	用 CAShapeLayer 实现圆形进度条效果
+### 3.8.4 用 CAShapeLayer 实现圆形进度条效果
 >**课程说明：**本课在课时 3 的基础上将动画效果封装到控件当中。
 >1. 确定需要设定的参数
 >2. 实现细节
@@ -2216,7 +2216,7 @@ typedef enum : NSUInteger {
 
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_circle.gif)
 
-#### 3.8.4.1	圆形进度条控件
+#### 3.8.4.1 圆形进度条控件
 *CircleUIView.h*
 
 ```objective-c
@@ -2308,7 +2308,7 @@ typedef enum : NSUInteger {
 @end
 ```
 
-#### 3.8.4.2	使用
+#### 3.8.4.2 使用
 *ViewController.m*
 
 ```objective-c
@@ -2353,9 +2353,9 @@ typedef enum : NSUInteger {
 @end
 ```
 
-## 3.9	iOS中 CALayer 的使用
+## 3.9 iOS中 CALayer 的使用
 
-### 3.9.1	用 CALayer 定制下载进度条控件
+### 3.9.1 用 CALayer 定制下载进度条控件
 >**课程说明：**本课在通过对 `CALayer` 的基本原理讲解后用 `CALayer` 基本知识定制下载进度条控件。
 >1. 单独创建出`CALayer`
 >2. 直接修改`CALayer`的`frame`值执行隐式动画，实现进度条效果
@@ -2369,7 +2369,7 @@ typedef enum : NSUInteger {
 >4. `UIView`中的`CALayer`动画必须显式触发才能生效
 
 
-#### 3.9.2.1	原理
+#### 3.9.2.1 原理
 >**说明：**直接修改`CALayer`的`frame`值执行隐式动画，实现进度条效果。
 
 ```objective-c
@@ -2384,11 +2384,11 @@ layer.frame = CGRectMake(0,0, 200, 5);
 ![Alt text|200x120](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-13%2010.29.42.png)
 
 
-#### 3.9.1.2	实战
+#### 3.9.1.2 实战
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-progress.gif)
 
 
-### 3.9.2	用 CALayer 定制 UIImageView 淡入淡出切换图片效果
+### 3.9.2 用 CALayer 定制 UIImageView 淡入淡出切换图片效果
 >**课程说明：**本课将利用动画组 `CAAnimationGroup` 将 `bounds` 动画与 `contents` 动画组合起来实现切换图片时的淡入淡出效果。
 >1. 操作`UIImageView`的`CALayer`修改其`bounds`值进行显示动画
 >2. 修改`UIImageView`的`CALayer`中的`contents`属性实现切换图片的动画
@@ -2397,7 +2397,7 @@ layer.frame = CGRectMake(0,0, 200, 5);
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_fade.gif)
 
 
-#### 3.9.2.1	封装动画效果
+#### 3.9.2.1 封装动画效果
 *FadeUIView.h*
 
 ```objective-c
@@ -2441,7 +2441,7 @@ layer.frame = CGRectMake(0,0, 200, 5);
 @end
 ```
 
-#### 3.9.2.2	使用控件
+#### 3.9.2.2 使用控件
 *ViewController.m*
 
 ```objective-c
@@ -2480,7 +2480,7 @@ layer.frame = CGRectMake(0,0, 200, 5);
 @end
 ```
 
-### 3.9.3	用 CALayer 实现复杂遮罩效果
+### 3.9.3 用 CALayer 实现复杂遮罩效果
 >**课程说明：**本课将利用 CALayer 的 mask 属性作为遮罩 Layer，通过移动该遮罩 Layer 的 frame 值实现复杂的遮罩效果。
 >1. 遮罩原理分析
 >2. 用`png`图片作为`CALayer`中`mask`属性的遮罩`Layer`
@@ -2534,9 +2534,9 @@ layer.frame = CGRectMake(0,0, 200, 5);
 @end
 ```
 
-## 3.10	iOS绘图 API 绘制线条／文字／几何图形
+## 3.10 iOS绘图 API 绘制线条／文字／几何图形
 
-### 3.10.1	绘制线条
+### 3.10.1 绘制线条
 ![Alt text|100x150](http://cdn.mengqingshen.com/img/1460642543336.png)
 *DrawLines.swift*
 
@@ -2572,7 +2572,7 @@ class DrawLinesView: UIView {
 }
 ```
 
-### 3.10.2	绘制矩形
+### 3.10.2 绘制矩形
 
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-14%20%E4%B8%8B%E5%8D%8810.36.09.png)
 *DrawRectView.swift*
@@ -2605,7 +2605,7 @@ class DrawRectView: UIView {
 ```
 
 
-### 3.10.3	绘制圆形
+### 3.10.3 绘制圆形
 ![Alt text|100x150](http://cdn.mengqingshen.com/img/1460644510040.png)
 *DrawCircleView.swift*
 
@@ -2642,7 +2642,7 @@ class DrawCircleView: UIView {
 }
 ```
 
-### 3.10.4	绘制图片
+### 3.10.4 绘制图片
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-14%20%E4%B8%8B%E5%8D%8811.43.57.png)
 
 ```swift
@@ -2677,7 +2677,7 @@ class DrawImageView: UIView {
 }
 ```
 
-### 3.10.5	画板实例
+### 3.10.5 画板实例
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S3_panel.gif)
 *DrawBoardView.swift*
 

@@ -5,10 +5,10 @@ categories:
 ---
 
 
-## 3.1	iOS API视频的播放和录制
+## 3.1 iOS API视频的播放和录制
 >**注意：**`MPMoviePlayerViewController`在`iOS9中`过时了
 
-### 3.1.1	播放视频
+### 3.1.1 播放视频
 ![Alt text|200x350](http://cdn.mengqingshen.com/img/JK_IOS_video1.gif)
 
 ```swift
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 3.1.2	录制视频
+### 3.1.2 录制视频
 >**注意：** xcode 的虚拟机不支持使用相机，模拟使用相机只能选择真机！
 >**技巧：**调试时可以通过`window->Devices`，在设备管理面板选择要管理的设备进行操作（比如截屏）。
 
@@ -78,9 +78,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 }
 ```
 
-## 3.2	iOS音频相关 API 的使用
+## 3.2 iOS音频相关 API 的使用
 
-### 3.2.1	播放声音
+### 3.2.1 播放声音
 >**说明：**给出两种方式
 >+ 使用`AVAudioPlayer`播放音乐文件
 >+ 使用`MediaPlayer`播放音乐
@@ -131,7 +131,7 @@ class ViewController: UIViewController {
 ```
 
 
-### 3.2.2	播放乐库音乐
+### 3.2.2 播放乐库音乐
 >**说明：**要点如下
 >1. （`ViewController`）采纳`MPMediaPickerControllerDelegate`协议
 >2. 初始化媒体选择控制器（`MPMediaPickerController`）和音乐播放控制器（`MPMusicPlayerController`）
@@ -184,7 +184,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
 }
 ```
 
-### 3.2.3	录制声音
+### 3.2.3 录制声音
 >**疑问：**下面程序找到的`Documents`文件夹路径不可用，竟然在`Library`下面，但下面其实没有`Documents`
 
 ```bash

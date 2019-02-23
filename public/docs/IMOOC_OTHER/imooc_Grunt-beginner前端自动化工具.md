@@ -8,7 +8,7 @@ date: 2015-05-02 23:01
 ---
 
 # 第一章		课程介绍
-## 1.1	课程目标和学习内容介绍
+## 1.1 课程目标和学习内容介绍
 **前端集成解决方案**
 
 ☑ **什么是前端集成解决方案？**
@@ -49,8 +49,8 @@ date: 2015-05-02 23:01
 
 #  2 准备工作
 
-## 2.1	nodejs简介
-## 2.2	Yeoman,Bower,Grunt简介及安装
+## 2.1 nodejs简介
+## 2.2 Yeoman,Bower,Grunt简介及安装
 
 ### Yeoman
 
@@ -83,7 +83,7 @@ bower -v
 sudo npm i -g grunt-cli
 ```
 # 第3章		Yeoman实践
-## 3.1		Yeoman实践
+## 3.1 	Yeoman实践
 **Generator:**各式各样的模具
 
 **安装模具：**`npm i -g generator-[框架或工具的名称]`
@@ -161,7 +161,7 @@ bower配置文件
 bower init    ----在当前目录生成bower.json配置文件（有点像package.json）
 ```
 
-## 4.1	bower.json:配置项目依赖
+## 4.1 bower.json:配置项目依赖
 
 ```bash
 $ bower install jquery    # 在没有配置文件的情况下先安装jquery
@@ -314,7 +314,7 @@ module.exports = function (grunt) {
 $ grunt sass
 ```
 
-## 5.2	从无到有构建grunt项目
+## 5.2 从无到有构建grunt项目
 `多少年的老规矩了。		----霸王别姬`
 
 ```bash
@@ -333,8 +333,8 @@ $ cat package.json
 $ touch Gruntfile.js
 ```
 
-## 5.3	初识Grunt Files处理方式
-### 5.3.1	初始化环境
+## 5.3 初识Grunt Files处理方式
+### 5.3.1 初始化环境
 
 ```bash
 $ npm install grunt-contrib-copy --save-dev    ----grunt复制文件的工具
@@ -355,7 +355,7 @@ $ tree -L 2
 └── package.json
 ```
 
-### 5.3.2	编写Gruntfile
+### 5.3.2 编写Gruntfile
 **在target中定义简单的task：**使用src、dest、files
 
 **案例1:自定义复制和清除任务**
@@ -813,9 +813,9 @@ module.exports = function (grunt) {
   });
 
 ```
-## 5.6	剖析Grunt Tasks-grunt test
-## 5.7	剖析Grunt Tasks-grunt build
-## 5.8	剖析Grunt Tasks-grunt build
-## 5.9	剖析Grunt Tasks-grunt build
+## 5.6 剖析Grunt Tasks-grunt test
+## 5.7 剖析Grunt Tasks-grunt build
+## 5.8 剖析Grunt Tasks-grunt build
+## 5.9 剖析Grunt Tasks-grunt build
 
 

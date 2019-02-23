@@ -5,9 +5,9 @@ categories:
 ---
 
 
-## 2.1	iOS-HTTP通信
+## 2.1 iOS-HTTP通信
 
-### 2.1.1	同步加载网络数据
+### 2.1.1 同步加载网络数据
 >**说明：**介绍两种方式
 >+ `NSString`提供的构造器
 >+ `NSURLConnection.sendSynchronousRequest`方法（iOS 9中已过时）
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 ```
 
 
-### 2.2.2	异步加载网络数据
+### 2.2.2 异步加载网络数据
 >**说明：**`NSURLConnection.sendAsynchronousRequest`（在`iOS9 中过时`）
 
 ```swift
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
 
 ### 2.2.3 搭建J2E集成开发环境
 
-#### 2.2.3.1	安装 Apache Tomcat
+#### 2.2.3.1 安装 Apache Tomcat
 >**下载 Apache Tomcat：**http://tomcat.apache.org/download-80.cgi
 
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.30.32.png)
@@ -101,10 +101,10 @@ $ chown -R  tonyearth /Library/Tomcat8
 $ sudo chown -R  tonyearth /Library/Tomcat8/bin/*.sh
 ```
 
-#### 2.2.3.2	安装 Tomcat Controller
+#### 2.2.3.2 安装 Tomcat Controller
 >**下载 Tomcat Controller：**http://tomcat-controller.en.softonic.com/mac/download#downloading
 
-#### 2.2.3.3	安装 eclispe
+#### 2.2.3.3 安装 eclispe
 >**下载eclipse：**http://www.eclipse.org/downloads/
 
 
@@ -119,9 +119,9 @@ $ sudo chown -R  tonyearth /Library/Tomcat8/bin/*.sh
 ![Alt text|300x200](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-21%20%E4%B8%8A%E5%8D%8812.39.14.png)
 
 
-### 2.2.4	通过GET/POST方式与服务器通信
+### 2.2.4 通过GET/POST方式与服务器通信
 
-#### 2.2.4.1	后端
+#### 2.2.4.1 后端
 ![Alt text|200x200](http://cdn.mengqingshen.com/img/1461253557430.png)
 
 *returnParas.jsp*
@@ -141,7 +141,7 @@ else {
 ```
 
 
-#### 2.2.4.2	客户端
+#### 2.2.4.2 客户端
 >**注意：**下面请求使用的`API`在`iOS9`中已过时
 >**技巧：**网络请求交给子线程而不是主线程处理，不占用主线程的资源，从而不带来界面卡顿的问题
 ![Alt text|300x200](http://cdn.mengqingshen.com/img/1462710986603_get.gif)

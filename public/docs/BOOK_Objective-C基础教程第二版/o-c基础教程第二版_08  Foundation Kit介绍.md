@@ -14,11 +14,11 @@ categories:
 
 
 
-## 8.1	稳固的 Foundation
+## 8.1 稳固的 Foundation
 >**说明：**两类UI框架的基础，包含很多有用的、面向数据的简单类和数据类型。包含`NSString`、`NSArray`、`NSEnumerator`、和`NSNumber`等100多个类。
 >**扩展：**`Foundation`框架以`CoreFoundation`框架为（纯C编写）基础，`CoreFoundation`中的函数和变量的名称以`CF`开头。
 
-## 8.2	使用项目样本代码
+## 8.2 使用项目样本代码
 
 ```objective-c
 #import <Foundation/Foundation.h>
@@ -32,9 +32,9 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
-## 8.3	一些有用的数据类型
+## 8.3 一些有用的数据类型
 
-### 8.3.1	范围
+### 8.3.1 范围
 >**类型：**`NSRange`
 >**原型描述：**`Foundation.h`
 
@@ -57,7 +57,7 @@ NSRange range2 = {17, 4};
 NSRange range3 = NSMakeRange(17, 4);
 ```
 
-### 8.3.2	几何数据类型
+### 8.3.2 几何数据类型
 >**源：**`Cocoa`（引用`C`语言编写的`Core Graphics`框架）
 >**说明：**包括一些用来处理图形的`数据类型`和创建这些数据类型的`快捷方法`。
 >**原型：**
@@ -93,9 +93,9 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
-## 8.4	字符串
+## 8.4 字符串
 
-### 8.4.1	创建字符串
+### 8.4.1 创建字符串
 
 #### stringWithFormat方法
 >**说明：**通过格式字符串和参数来创建`NSString`
@@ -115,7 +115,7 @@ NSString *height;
 height = [NSString stringWithFormat:@"Your height is %d feet, %d inches", 5, 11];
 ```
 
-### 8.4.2	类方法
+### 8.4.2 类方法
 >**说明：**如果在声明方法时添加了`+`，就是把这个方法定义为`类方法(class method)`。
 >+ 通常用于工厂方法
 >+ 也可以用来访问全局数据
@@ -136,7 +136,7 @@ NSColor *haveTheBlues = [NSColor blueColor];
 UIColor *blueMan = [UIColor blueColor];
 ```
 
-### 8.4.4	关于大小
+### 8.4.4 关于大小
 
 #### length实例方法
 >**说明：**返回字符串中字符的个数，能够准确无误地处理各种语言的字符串。
@@ -157,7 +157,7 @@ if ([height length] > 35) {
 }
 ```
 
-### 8.4.4	字符串比较
+### 8.4.4 字符串比较
 
 #### isEqualToString实例方法
 >**说明：**比较接收方和作为参数传递过来的字符串。
@@ -207,7 +207,7 @@ enum {
 typedef NSInteger NSComparisonResult;
 ```
 
-### 8.4.5	不区分大小写的比较
+### 8.4.5 不区分大小写的比较
 
 #### compare实例方法（2个参数）
 >**说明：**比较字符串，有更多选择权，可以使用`位`或`bitwise-OR远端符（|）`来添加选项标记。
@@ -238,7 +238,7 @@ if ([thing1 compare:thing2 options:NSCaseInsensitiveSearch | NSNumericSearch] ==
 }
 ```
 
-### 8.4.6	字符串是否还包含别的字符串
+### 8.4.6 字符串是否还包含别的字符串
 
 ### hasPrefix实例方法
 >**说明：**检查字符串是否是以另一个字符串开头
@@ -292,7 +292,7 @@ NSRange range = [fileName rangeOfString:@"chapter"];
 NSLog(@"range.location:%d, range.length: %d", range.location, range.length);
 ```
 
-### 8.4.7	可变性
+### 8.4.7 可变性
 >**说明：**`NSString`是不可变（不能通过删除字符或添加字符的方式改变它）。的，`NSMutableString`是可变的。
 >**注意：**`NSMutableString`是`NSString`的子类。
 
@@ -370,9 +370,9 @@ jackRange.length++;// eat the space that follows
 NSMutableString *string = [NSMutableString strringWithFormat: @"jo%dy", 2];
 ```
 
-## 8.5	集合大家族
+## 8.5 集合大家族
 
-### 8.5.1	NSArray
+### 8.5.1 NSArray
 >**说明：**一个`Cocoa`类，用来存储对象的有序列表
 >+ 通过`工厂方法`创建
 >+ 通过`字面量`创建（不需要在结尾处不上`nil`）
@@ -434,7 +434,7 @@ NSArray *chunks = [string componentsSeparatedByString:@":"];
 string = [chunks componentsJoinedByString:@":-)"];
 ```
 
-### 8.5.2	可变数组
+### 8.5.2 可变数组
 >**说明：**`NSArray`是不可变对象的数组，`NSMutableArray`是可变数组。
 >**注意：**没有可以用来创建`NSMutableArray`对象的字面量语法。
 
@@ -461,7 +461,7 @@ string = [chunks componentsJoinedByString:@":-)"];
 - (void) removeObjectAtIndex: (NSUInteger) index;
 ```
 
-### 8.5.3	遍历
+### 8.5.3 遍历
 >**说明：**有`4`种方式
 >+ 从0到`[array count]`循环
 >+ 使用迭代器：`NSEnumerator`
@@ -516,7 +516,7 @@ while (id thingie = [enumerator nextObject]) {
 }
 ```
 
-### 8.5.4	快速迭代
+### 8.5.4 快速迭代
 >**说明：**在`Mac OS x 10.5`，`O-C`升级到`2.0`，引入了`快速枚举（迭代）`，类似一些脚本语言的`for-in`
 
 ```objective-c
@@ -545,7 +545,7 @@ for (NSString *string in array) {
 }];
 ```
 
-### 8.5.5	NSDictionary
+### 8.5.5 NSDictionary
 >**说明：**字典是关键字及其定义的合集。
 >**扩展：**字典使用的是键查询的优化方式，可以立即找到要查询的数据，而不需要遍历整个数组。
 
@@ -662,17 +662,17 @@ Tire *t4 = [Tire new];
 [tires removeObjectForKey: @"back-left"];
 ```
 
-### 8.5.6	请不要乱来
+### 8.5.6 请不要乱来
 >**类蔟：**一群隐藏在通用接口之下与实现相关的类。
 >**说明：**在`Cocoa`中，许多类实际上是以`类蔟`的方式实现。比如，创建`NSString`对象时，实际上获得的可能是`NSLiteralString`、`NSCFString`、`NSSimpleCString`、`NSBallOfString`或者其他未写入文档的与实现相关的对象。
 >**技巧：**不要尝试给一个`类蔟`创建子类，可以将`NSString`或`NSArray`复合到某个类中或者使用别类。
 
-## 8.6	其他数值
+## 8.6 其他数值
 >**说明：**`NSArray`和`NSDictionary`只能存储对象，而不能直接存储任何基本类型的数据，如`int`、`float`和`struct`。
 >**技巧：**可以用对象封装基本数据类型，然后再放入`NSArray`或`NSDictionary`。
 >**注意：**`Objective-C`不支持`自动开箱`和`自动装箱`。
 
-### 8.6.1	NSNumber
+### 8.6.1 NSNumber
 >**说明：**可以用来封装和数字相关的一些基本数据类型。
 >**工厂方法：**以最常用的为例
 >+ `+ (NSNumber *) numberWithChar: (char) value;`
@@ -706,7 +706,7 @@ NSMutableArray *array = [NSMutableArray arrayWithCapacity];
 [dictionary setObject: number forKey: @:"Bork"];
 ```
 
-### 8.6.2	NSValue
+### 8.6.2 NSValue
 >**说明：**`NSValue`可以封装任意值。
 >**扩展：**`NSNumber`是`NSValue`的子类。
 
@@ -755,7 +755,7 @@ value = [NSValue valueWithRect:rect];
 NSRect anotherRect = [value rectValue];
 ```
 
-### 8.6.3	NSNull
+### 8.6.3 NSNull
 >**说明：**集合中不能放入`nil`，但可以放入`NSNull`。
 
 #### null类方法
@@ -780,9 +780,9 @@ if (homefax == [NSNull null]) {
 }
 ```
 
-## 8.7	示例：查找文件
+## 8.7 示例：查找文件
 
-### 8.7.1	使用迭代器的版本
+### 8.7.1 使用迭代器的版本
 
 ```objective-c
 #import <Foundation/Foundation.h>
@@ -831,11 +831,11 @@ int main(int argc, const char * argv[])
 
 ```
 
-### 8.7.2	使用快速迭代的版本
+### 8.7.2 使用快速迭代的版本
 >**说明：**不支持`Leopard`之前的版本。
 
 ```objective-c
 
 ```
 
-## 8.8	小结
+## 8.8 小结

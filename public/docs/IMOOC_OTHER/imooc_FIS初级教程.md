@@ -7,9 +7,9 @@ tag:
 date: 2015-05-02 23:14
 ---
 
-## 1		初识FIS
+## 1 	初识FIS
 
-### 1.1	FIS介绍
+### 1.1 FIS介绍
 
 +  **What's FIS?**
 FIS是专为解决前端开发中自动化工具、性能优化、模块化框架、开发规范、代码部署、开发流程等问题的工具框架。
@@ -35,16 +35,16 @@ FIS提供简洁优雅的API,通过扩展可以打造出企业级的解决方案�
 3. 简化开发、提测、部署流程，来达到更快、更可靠、低成本的自动化项目交付
 4. 3条命令，解决所有前度问题
 
-### 1.2	FIS安装
+### 1.2 FIS安装
 
-#### 1.2.1	 安装
+#### 1.2.1  安装
 
 ```powershell
 $ npm i -g fis --registry=http://registry.npm.taobao.org/
 $ fis -v
 ```
 
-#### 1.2.2	使用
+#### 1.2.2 使用
 **FIS默认的产出目构**：`fis server open`打开目录
 
 ```powershell
@@ -65,7 +65,7 @@ $ fis release
 $ fis server start
 ```
 
-### 1.3	FIS静态资源压缩合并
+### 1.3 FIS静态资源压缩合并
 **插件：**
 1. fis-postpackager-simple:自动将页面中独立的资源引用替换为打包资源
 
@@ -105,7 +105,7 @@ $ fis release -p//进行合并(默认不会自动为引入者替换为打包后�
 $ fis release -pd ./output//合并并发布到指定文件夹
 ```
 
-### 1.4	FIS静态资源MD5版本
+### 1.4 FIS静态资源MD5版本
 **静态资源版本管理**：
 1. **时间戳方式：**基于当前时间（和内容无关）
 2. **md5版本号方式：**基于文件内容的hash版本冗余机制
@@ -131,9 +131,9 @@ $ fis release -pd ./output//合并并发布到指定文件夹
 $ fis release -m
 ```
 
-### 1.5	FIS图片css sprite和base64码嵌入
+### 1.5 FIS图片css sprite和base64码嵌入
 
-#### 1.5.1		图片css sprite
+#### 1.5.1 	图片css sprite
 **合并图片（利用css sprite）：**将单个的图片合并成为一个图片并修改相应的css
 
 **意义：**减少对图片的请求，降低图片的总体积
@@ -151,7 +151,7 @@ fis.config.set('settings.spriter.csssprites.margin', 20);
 $ fis release -p
 ```
 
-#### 1.5.2		base64码嵌入
+#### 1.5.2 	base64码嵌入
 **意义：**又减少一部分请求
 
 ```powershell
@@ -172,9 +172,9 @@ $ fis release -p
 $ vim ~/.fis-tmp/www/lib/base.css//查看图片以base64的形式嵌入的情况
 ```
 
-### 1.6	FIS中使用less
+### 1.6 FIS中使用less
 
-#### 1.6.1	安装和配置less支持
+#### 1.6.1 安装和配置less支持
 
 ```powershell
 $ npm i -g less
@@ -189,7 +189,7 @@ fis.config.set('modules.parser.less', 'less');
 //fis.config.set('roadmap.ext.less', 'css');
 ```
 
-#### 1.6.2	编写less
+#### 1.6.2 编写less
 
 ```powershell
 $ vim lib/box.less
@@ -226,7 +226,7 @@ $ cat ~/.fis-tmp/www/lib/box.less
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }   
 ```
-## 2	JS模块化
+## 2 JS模块化
 **github:**https://github.com/fex-team/fis
 
 + 前端编译工具有必要那么复杂吗？
@@ -239,26 +239,26 @@ $ cat ~/.fis-tmp/www/lib/box.less
 
 ### 2.1 -2.2	FIS三种语言能力
 
-#### 2.1.1	资源定位
+#### 2.1.1 资源定位
 **用途：**可以有效的分离开发路径与部署路径之间的关系。
 
 **好处：**资源可以发布到任何静态资源服务器的任何路径上而不用担心线上运行时找不到它们，而且代码具有很强的可移植性。
 
-#### 2.2.1	内容嵌入
+#### 2.2.1 内容嵌入
 **用途：**内容嵌入可以为工程师提供诸如图片base64嵌入到css、js里，前端模版编译到js文件中，将js、css、html拆分成几个文件最后合并到一起的能力。
 
 **好处：**可以有效减少http请求数，提升工程的可维护性。
 
 **注意：**不建议使用内容嵌入能力作为组件化拆分的手段，因为FIS扩展的依赖声明更适合组件化开发。
 
-#### 2.2.2	依赖声明
+#### 2.2.2 依赖声明
 **用途：**按需加载资源或者资源所在的包
 
 **工作原理：**依赖声明能力为工程师提供了声明依赖关系的编译接口。fis在执行编译的过程中，会扫描这些编译标记，从而建立一张静态资源关系表，它在编译阶段最后会被产出为一份map.json文件。
 
 **静态资源关系表：**这份文件详细纪录了项目内的静态资源id、发布后的线上路径、资源类型以及依赖关系和资源打包等信息。使用fis作为编译工具的项目，可以将这张表提交给后端或者前端框架去运行时根据组件使用情况来按需加载资源或者资源所在的包，从而提升前端页面运行性能。
 
-### 2.3	为什么要做JS模块化（mod.js）
+### 2.3 为什么要做JS模块化（mod.js）
 **问题**
 
 + 为什么要做JS模块化？
@@ -292,7 +292,7 @@ var module1 = (function($,YAHOO){
 })();
 ```
 
-#### 2.3.1		模块规范
+#### 2.3.1 	模块规范
 1. CommonJS：http://wiki.commonjs.org/wiki/Modules/1.1
 **特点**：同步装载
 
@@ -311,7 +311,7 @@ var module1 = (function($,YAHOO){
 1.**侵入性较强：**原有的js代码要全部改为异步调用的方式。跟原本写代码的方式i 不同。
 2.**影响性能：**RequireJS/SeaJS通过JavaScript运行时来支持“匿名闭包”、“依赖分析”和“模块加载”等功能。在这个过程当中，“依赖分析”需要在JavaScript运行时通过正则匹配到磨模块的依赖关系，然后顺着依赖链，把所有需要加载的模块按顺序一一加载完毕。
 
-### 2.4	FIS的Mod模块化框架
+### 2.4 FIS的Mod模块化框架
 **说明：**Mod严格上来讲并不是一个独立的模块化框架，它呗设计用来做前端工程模块化方案的js支持，需要和自动化工具、后端框架配合来使用。目的在于给工程师提供一个类似nodejs一样的开发体验，同时具备很好的线上性能。
 
 **特点：**
@@ -322,7 +322,7 @@ var module1 = (function($,YAHOO){
 1. Mod并不遵守AMD/CMD规范,开发者可以使用自然容易理解的模块定义和调用方式，不需要关注模块是否异步，不需要改变开发者的开发行为。
 
 
-#### 2.4.1	定义模块
+#### 2.4.1 定义模块
 **语法：**`define({模块id},{factory})`
 
 **注意：**
@@ -369,7 +369,7 @@ define('common:widget/menu/menu.js', function(require,exports,module){
 })
 ```
 
-#### 2.4.2		模块调用
+#### 2.4.2 	模块调用
 **特点：**
 1. 所需模块已预先加载， require可以立即（同步）返回该模块引用
 2. 不需要考虑何时该使用同步接口，何时调用异步接口
@@ -386,7 +386,7 @@ define('common:widget/menu/menu.js', function(require,exports,module){
 + demo:https://github.com/fex-team/fis-amd-demo
 + 插件：https://github.com/fex-team/fis-postprocessor-amd
 
-#### 2.5		Mod使用
+#### 2.5 	Mod使用
 **相关文章：**
 
 + Mod与RequireJS
@@ -407,11 +407,11 @@ cd fis-pure-demo/
 pure release -opm -r fis-pure-demo
 pure server start
 ```
-## 3	fis组件化思想
+## 3 fis组件化思想
 
-### 3.1	FIS组件化思想
+### 3.1 FIS组件化思想
 
-#### 3.1.1	什么是组件化？
+#### 3.1.1 什么是组件化？
 **解释：**前端的组件化并不等于JavaScript模块化
 实现一个也看功能需要JavaScript、css和Template三种语言相互组织，如果一个页面仅仅只有js实现了模块化，css和Template还是处于原始状态，调用这个功能的时候并不能完全通过模块化的方式，那么这样的模块化方案并不是完整的。需要讲Javascript、css和Template同时都考虑进去的模块化方案，而非仅仅JavaScript模块化方案。
 
@@ -473,7 +473,7 @@ $ vim index.dpl
 1. **资源加载：**引用资源繁琐；使用成本过高；连接数过多；不用了还要自己删
 2. **组件复用：**相对路径计算混乱；绝对路径迁移困难；合并后资源路径异常；资源无法随意合并
 
-#### 3.1.2	解决方案存在的各自问题
+#### 3.1.2 解决方案存在的各自问题
 
 + 组件加载自身资源方案
 + js阻塞渲染
@@ -486,9 +486,9 @@ $ vim index.dpl
 + css闪屏问题
 + 一刀切的方案
 
-#### 3.1.3	FIS组件化思想
+#### 3.1.3 FIS组件化思想
 
-##### 3.1.3.1	总体思想
+##### 3.1.3.1 总体思想
 
 + 组件维护资源依赖
 **说明：**通过生成map.json文件管理资源的依赖问题
@@ -535,7 +535,7 @@ $ vim index.dpl
  
 + 资源加载自动化
 
-##### 3.1.3.2	多种选择
+##### 3.1.3.2 多种选择
 **意义：**资源加载策略调整无需调整组件代码
 
 |资源加载模式|引用形式|同、异步|
@@ -544,7 +544,7 @@ $ vim index.dpl
 |运行时前端处理依赖|动态|异|
 |运行时模版处理依赖|动态|同、异|
 
-##### 3.1.4	总结
+##### 3.1.4 总结
 **前端工程之模块化：**http://fex.baidu.com/blog/2014/03/fis-module
 
 + 工程师只维护依赖关系
@@ -552,9 +552,9 @@ $ vim index.dpl
 + 用工具与框架解决开发与运行的冲突
 + 开发自然，使用灵活
 
-### 3.2	FIS组件化演示
+### 3.2 FIS组件化演示
 
-#### 3.2.1	fis-pure使用案例
+#### 3.2.1 fis-pure使用案例
 
 ```powershell
 $ npm i fis-pure -g
@@ -563,7 +563,7 @@ $ pure -v
 $ lights install fis-pure-demo
 ```
 
-#### 3.2.2	fis-plus使用案例
+#### 3.2.2 fis-plus使用案例
 **注意：**依赖java和php环境
 
 ```powershell

@@ -8,9 +8,9 @@ date: 2017-04-07
 ---
 
 ## 1 理解架构
-### 1.1	 课程简介
-### 1.2	 课程安排
-### 1.3	 jQuery设计理念
+### 1.1  课程简介
+### 1.2  课程安排
+### 1.3  jQuery设计理念
 **起源：**早期jQuery的作者John Resig在2005年提议改进Prototype的“Behaviour”库
 
 **核心理念：**`The Write Less,Do More`
@@ -55,7 +55,7 @@ date: 2017-04-07
 
 ![Alt text](http://cdn.mengqingshen.com/1432773215952.png)
 
-#### 1.4.3	 重要变革
+#### 1.4.3  重要变革
   ☑  1.2.3 版发布，引入数据缓存，解决循环引用与大数据保存的问题
   ☑  1.3 版发布，它使用了全新的选择符引擎Sizzle，在各个浏览器下全面超越其他同类型JavaScript框架的查询速度，程序库的性能也因此有了极大提升
   ☑  1.5 版发布，新增延缓对像(Deferred Objects)，并用deferred重写了Ajax模块
@@ -90,7 +90,7 @@ jQuery.each( [ "get", "post" ], function( i, method ) {
 });
 ```
 
-### 1.5	 立即调用表达式
+### 1.5  立即调用表达式
 **用途：**任何库与框架设计的第一个要点就是解决命名空间与变量污染的问题。jQuery就是利用了JavaScript函数作用域的特性，采用立即调用表达式包裹了自身的方法来解决这个问题。
 
 **综述：**全局变量是魔鬼, 匿名函数可以有效的保证在页面上写入JavaScript，而不会造成全局变量的污染，通过小括号，让其加载的时候立即初始化，这样就形成了一个单例模式的效果从而只会执行一次。
@@ -178,7 +178,7 @@ if (typeof module === "object" && typeof module.exports === "object") {
     factory(global);
 }
 ```
-### 1.6	 jQuery的类数组对象结构
+### 1.6  jQuery的类数组对象结构
 **说明：**jQuery就是为了获取DOM、操作DOM而存在的！所以为了更方便这些操作，让节点与实例对象通过一个桥梁给关联起来，jQuery内部就采用了一种叫“类数组对象”的方式作为存储结构。
 
 **特点：**
@@ -238,7 +238,7 @@ var aQuery = function(selector) {
 	return this;
 }
 ```
-### 1.7	 jQuery中ready与load事件
+### 1.7  jQuery中ready与load事件
 **执行顺序：**ready先执行，load后执行。
 #### 1.7.1 DOM文档加载的步骤
 **read和load：**ready在第（4）步完成之后就执行了，但是load要在第（6）步完成之后才执行
@@ -325,7 +325,7 @@ if ( document.readyState === "complete" ) {
      setTimeout( jQuery.ready );
  }
 ```
-### 1.8	 jQuery多库共存处理
+### 1.8  jQuery多库共存处理
 **说明：**多库共存换句话说可以叫无冲突处理。冲突的可能原因：
 1. `$`太火热，jQuery采用`$`作为命名空间，不免会与别的库框架或者插件相冲突。
 2. jQuery版本更新太快，插件跟不上，导致不同版本对插件的支持度不一样。

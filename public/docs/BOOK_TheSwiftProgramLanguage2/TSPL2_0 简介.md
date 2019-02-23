@@ -5,7 +5,7 @@ categories:
 tag:
   - swift语言
 ---
-## 0.1	关于Swift(About Swift)
+## 0.1 关于Swift(About Swift)
 **用途：**编写`IOS`、`OS X`、`watchOS`应用程序
 
 **特点归纳：**
@@ -17,11 +17,11 @@ tag:
 + 支持代码预览（像脚本语言一样，可以实时查看结果）
 
 
-## 0.2	Swift初见（A Swift Tour）
+## 0.2 Swift初见（A Swift Tour）
 
-### 0.2.1	简单值（Simple Values）
+### 0.2.1 简单值（Simple Values）
 
-#### 0.2.1.1	自动推断类型
+#### 0.2.1.1 自动推断类型
 **说明：**声明的同时赋值的话，如果不指定类型，编译器会自动推断其类型。
 
 ```swift
@@ -31,7 +31,7 @@ let implicitInteger = 70
 let implicitDouble = 70.0
 ```
 
-#### 0.2.1.2	指定类型
+#### 0.2.1.2 指定类型
 **说明：**指定类型会导致强制类型转换
 
 ```swift
@@ -39,7 +39,7 @@ let implicitDouble = 70.0
 let explicitDouble:Double = 70
 ```
 
-#### 0.2.1.3	显示转换（在表达式中）
+#### 0.2.1.3 显示转换（在表达式中）
 **说明：**表达式中的值任何时候都不会发生隐式转化。需要转换为其它类型必须进行显示转换。
 
 **特别：**`\(变量或表达式)`（转换成字符串类型）
@@ -63,7 +63,7 @@ let appleSummary = "I have \(apples) apples."
 let fruitSummary = "I have \(apples + oranges) pices of fruit."
 ```
 
-#### 0.2.1.4	数组和字典
+#### 0.2.1.4 数组和字典
 *声明并初始化（自动推断类型）*
 
 ```swift
@@ -93,9 +93,9 @@ let emptyDictionary = [String:Float]()
 ```
 
 
-### 0.2.2	控制流（Control Flow）
+### 0.2.2 控制流（Control Flow）
 
-#### 0.2.2.1	条件判断
+#### 0.2.2.1 条件判断
 **说明：**有两类
 
 + if
@@ -151,7 +151,7 @@ switch vegetable {
 }
 ```
 
-#### 0.2.2.2	循环
+#### 0.2.2.2 循环
 **说明：**有4类
 
 + for-in
@@ -215,9 +215,9 @@ for var i = 0; i < 4; ++i {
 print(secondForLoop)
 ```
 
-### 0.2.3	函数和闭包（Functions and Closures）
+### 0.2.3 函数和闭包（Functions and Closures）
 
-#### 0.2.3.1	简单函数
+#### 0.2.3.1 简单函数
 
 ```swift
 func greet(name: String, day: String) -> String {
@@ -226,7 +226,7 @@ func greet(name: String, day: String) -> String {
 greet("Bob", day: "Tuesday")// 第一个参数不用说明label
 ```
 
-#### 0.2.3.2	返回元组
+#### 0.2.3.2 返回元组
 
 ```swift
 // 找到元组的最大值、最小值和总和
@@ -251,7 +251,7 @@ print(statistics.sum)
 print(statistics.2)
 ```
 
-#### 0.2.3.3	可变参数
+#### 0.2.3.3 可变参数
 
 ```swift
 // 可变参数函数
@@ -267,7 +267,7 @@ sumOf()
 sumOf(42, 597, 12)
 ```
 
-#### 0.2.3.4	函数嵌套
+#### 0.2.3.4 函数嵌套
 **说明：**如果嵌套的函数被返回，调用返回的函数就会出现闭包的效果。
 
 ```swift
@@ -285,7 +285,7 @@ func returnFifteen() -> Int {
 returnFifteen()
 ```
 
-#### 0.2.3.5	返回函数
+#### 0.2.3.5 返回函数
 **说明：**返回的函数是闭包的一种
 
 ```swift
@@ -300,7 +300,7 @@ var increment = makeIncrementer()
 increment(7)
 ```
 
-#### 0.2.3.6	函数作为参数
+#### 0.2.3.6 函数作为参数
 
 ```swift
 // 使用函数作为参数
@@ -322,7 +322,7 @@ var numbers = [20, 19, 7, 12]
 hasAnyMatches(numbers, condition: lessThanThen)
 ```
 
-#### 0.2.3.7	匿名函数（匿名闭包）
+#### 0.2.3.7 匿名函数（匿名闭包）
 **说明：**匿名函数写法非常自由
 
 + 如果一个闭包的类型已知，比如作为一个回调函数，可以忽略参数的类型和返回值
@@ -347,7 +347,7 @@ let sortedNumbers = numbers.sort { $0 > $1 }
 print(sortedNumbers)
 ```
 
-### 0.2.4	对象和类（Object and Classes）
+### 0.2.4 对象和类（Object and Classes）
 **语法：**
 
 + `class 类型名 {...}`
@@ -418,7 +418,7 @@ test.area()
 test.simpleDescription()
 ```
 
-#### 0.2.4.1	计算属性
+#### 0.2.4.1 计算属性
 **说明：**计算属性有getter和setter
 
 + get：读取属性时返回计算出的属性值
@@ -459,7 +459,7 @@ print(triangle.sideLength)
 
 ```
 
-#### 0.2.4.2	属性监控
+#### 0.2.4.2 属性监控
 **说明：**不需要计算属性，但是仍然需要在设置一个新值之前或者之后运行代码。可以使用`willset`和`didSet`。
 
 + willset：在设置之前调用
@@ -501,7 +501,7 @@ print(triangleAndSquare.triangle.sideLength)
 
 ```
 
-#### 0.2.4.3	实例是可选值
+#### 0.2.4.3 实例是可选值
 **说明：**当实例是nil是，需要避免访问实例的成员导致报错。
 
 ```swift
@@ -511,9 +511,9 @@ let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
 let sideLength = optionalSquare?.sideLength
 ```
 
-### 0.2.5	枚举和结构体（Enumerations and Structures）
+### 0.2.5 枚举和结构体（Enumerations and Structures）
 
-#### 0.2.5.1	枚举
+#### 0.2.5.1 枚举
 **关键字：**`enum`
 
 **说明：**swift中的所有命名类型都可以包含方法（包括枚举）。
@@ -609,7 +609,7 @@ case let .Error(error):
 }
 ```
 
-#### 0.2.5.2	结构体
+#### 0.2.5.2 结构体
 **说明：**结构体和类有很多相同的地方，比如方法和构造器。它们之间最大的区别就是结构体是传值，类是传引用。
 
 ```swift
@@ -628,9 +628,9 @@ let threeOfSpades = Card(rank: .Three, suit: .Spades)
 let threeOfSpandesDescription = threeOfSpades.simpleDescription()
 ```
 
-### 0.2.6	协议和扩展（Protocols and Extensions）
+### 0.2.6 协议和扩展（Protocols and Extensions）
 
-#### 0.2.6.1	协议
+#### 0.2.6.1 协议
 **关键字：**`protocol`
 
 **说明：**类似于接句，类、枚举、结构体都可以实现协议。
@@ -683,7 +683,7 @@ b.adjust()
 let bDesctiption = b.simpleDescription
 ```
 
-#### 0.2.6.2	扩展
+#### 0.2.6.2 扩展
 **关键字：**`extension`
 
 **描述：**为现有的类型添加功能，比如新的方法和计算属性。
@@ -703,7 +703,7 @@ extension Int: ExampleProtocol {
 print(7.simpleDescription)
 ```
 
-### 0.2.7	范型（Generics）
+### 0.2.7 范型（Generics）
 **描述：**在`<>`中写一个名字来创建一个范型函数或者类型。
 
 **说明：**可以应用于
@@ -733,8 +733,8 @@ func anyCommonElements <T: SequenceType, U: SequenceType where T.Generator.Eleme
 anyCommonElements([1, 2, 3], [3])
 ```
 
-## 0.3	Swift版本历史记录
+## 0.3 Swift版本历史记录
 
-## 0.4	The Swift Programing language中文版
+## 0.4 The Swift Programing language中文版
 
 

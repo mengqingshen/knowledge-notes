@@ -16,7 +16,7 @@ tag:
 
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-11-25%20%E4%B8%8B%E5%8D%8811.16.16.png)
 
-## 4.1	集合的可变性
+## 4.1 集合的可变性
 >**说明：**集合的可变性依赖于声明为常量或变量。
 
 |声明|可变性|
@@ -233,7 +233,7 @@ for (index, value) in shoppingList.enumerate() {
 }
 ```
 
-## 4.3	集合
+## 4.3 集合
 >**关键字：**`Set`
 >+ 元素类型相同
 >+ 没有确定顺序
@@ -241,7 +241,7 @@ for (index, value) in shoppingList.enumerate() {
 
 >**扩展：**Swift中的`Set`类型被桥接到`Foundation`中的`NSSet`类。
 
-### 4.3.1	集合类型的哈希值
+### 4.3.1 集合类型的哈希值
 >**说明：**存储在`Set`中的类型必须是可`哈希化`的。
 
 |值类型（可哈细化）|条件|备注|
@@ -254,7 +254,7 @@ for (index, value) in shoppingList.enumerate() {
 >+ 对称性：`a == b`意味着`b == a`
 >+ 传递性：`a == b` && `b == c`意味着`a == c`
 
-### 4.3.2	声明集合类型
+### 4.3.2 声明集合类型
 >**说明：**有2种类型
 
 |形式|说明|备注|
@@ -272,7 +272,7 @@ print("letters is of type Set<Character> with \(letters.count) items.")
 var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
 ```
 
-### 4.3.3	创建和构造一个空的集合
+### 4.3.3 创建和构造一个空的集合
 >**说明：**2种形式（对应两种声明方式）
 >+ `Set<ElementType>()`
 >+ `Set()`
@@ -287,10 +287,10 @@ var emptySet2: Set<String> = Set()
 var emptySet3: Set = Set<String>()
 ```
 
-### 4.3.4	用数组字面量创建集合
+### 4.3.4 用数组字面量创建集合
 >**注意：**对应的常量或变量必须指定了`Set`类型，否则会被默认为`Array`。
 
-### 4.3.5	属性和方法（访问和修改一个集合）
+### 4.3.5 属性和方法（访问和修改一个集合）
 
 #### count属性
 >**类型：**`Int`
@@ -384,7 +384,7 @@ else {
 }
 ```
 
-### 4.3.6	遍历一个集合
+### 4.3.6 遍历一个集合
 >**说明：**如果不做任何处理，使用`for-in`遍历时`Set`时并没有确定的顺序。
 
 #### sort方法
@@ -410,9 +410,9 @@ for genre in favoriteGenres.sort() {
 }
 ```
 
-### 4.3.7	完成集合操作
+### 4.3.7 完成集合操作
 
-#### 4.3.7.1	基本集合操作
+#### 4.3.7.1 基本集合操作
 >**说明：**交、差、并、补
 
 |集合操作|方法|
@@ -444,7 +444,7 @@ oddDigits.subtract(singleDigitPrimeNumbers)// [9, 1]
 oddDigits.exclusiveOr(singleDigitPrimeNumbers).sort()// [1, 2, 9]
 ```
 
-#### 4.3.7.2	集合成员关系和相等
+#### 4.3.7.2 集合成员关系和相等
 >**说明：**集合之间的关系可以分为6中情况
 
 |关系|判定方式|说明|
@@ -469,7 +469,7 @@ farmAnimals.isSupersetOf(houseAnimals)// true
 farmAnimals.isDisjointWith(cityAnimal)// true
 ```
 
-## 4.4	字典
+## 4.4 字典
 >**类型关键字：**`Dictionary`
 >**说明：**其实就是键值对容器。
 >+ 每个`value`都关联唯一的`key`
@@ -482,7 +482,7 @@ farmAnimals.isDisjointWith(cityAnimal)// true
 
 >**扩展：**Swift中的`Dictionary`
 
-### 4.4.1	创建字典
+### 4.4.1 创建字典
 >**说明：**可划分为`3`种方式
 
 |创建形式|说明|是否只能创建空字典|备注|
@@ -505,7 +505,7 @@ var dictionary3 = Dictionary<Int, String>()
 var dictionary4: [Int: String] = Dictionary()
 ```
 
-### 4.4.2	访问和修改字典
+### 4.4.2 访问和修改字典
 
 #### 下标
 >**说明：**通过下标可以实现字典中`key-value`的增删改查。
@@ -575,7 +575,7 @@ else {
 }
 ```
 
-### 4.4.3	字典遍历
+### 4.4.3 字典遍历
 >**说明：**通过`for-in`便利字典时，每一个数据项都以`(key, value)`元组形式返回。
 >**技巧：**
 >+ 可以通过临时常量或变量分解`(key, value)`

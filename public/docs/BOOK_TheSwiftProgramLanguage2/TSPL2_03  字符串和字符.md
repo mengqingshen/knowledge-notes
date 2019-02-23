@@ -15,14 +15,14 @@ tag:
 >+ 可以调用任意的`NSString`API
 >+ 可以在任意要求传入`NSString`实例作为参数的API中用`String类`的值代替
 
-## 3.1	字符串字面量
+## 3.1 字符串字面量
 >**格式：**`"固定顺序的文本字符集"`
 >**应用：**为常量或变量提供初始值
 
 ```swift
 let someString = "Some string literal value"
 ```
-## 3.2	初始化空字符串
+## 3.2 初始化空字符串
 >**说明：**2种形式
 >1. 将空的字符串字面量赋值给变量
 >2. 初始化一个新的`String`实例
@@ -41,7 +41,7 @@ if emptyString.isEmpty {
     print("Nothing to see here")
 }
 ```
-## 3.3	字符串可变性
+## 3.3 字符串可变性
 >**说明：**和Swift中其它值类型一样，可变性取决于定义为常量还是变量
 >+ 常量：不可改变
 >+ 变量：可以改变
@@ -54,14 +54,14 @@ var variableString = "Hourse"
 // 所以可以修改
 variableString += " add carriage"
 ```
-## 3.4	字符串是值类型
+## 3.4 字符串是值类型
 >**说明：**意味着在以下操作中通过拷贝来传递值
 >+ 常量、变量赋值操作
 >+ 在函数、方法中传参
 
 >**意义：**确保传递的字符串不会被意外修改。
 >**扩展：**为了保证性能，Swift编译器只会在绝对必要的情况下才进行复制。
-## 3.5	使用字符
+## 3.5 使用字符
 >**说明：**`Character`
 >+ 字符类型的常量和字符串相似，不同点在于自能包含一个字符。
 >+ 用字符常量初始化字符类型必须指定常量或变量为`Character`，否则默认为字符串类型。
@@ -69,7 +69,7 @@ variableString += " add carriage"
 ```swift
 let exclamatuinMark: Character = "!"
 ```
-### 3.5.1	字符串的Chracters属性
+### 3.5.1 字符串的Chracters属性
 >**说明：**可以通过该属性遍历字符串对应的字符数组。
 
 ```swift
@@ -78,7 +78,7 @@ for character in "Dog".characters {
     print(character)
 }
 ```
-### 3.5.2	字符数组转换为字符串
+### 3.5.2 字符数组转换为字符串
 
 ```swift
 // 声明字符数组
@@ -87,7 +87,7 @@ let catCharacters: [Character] = ["C", "a", "t"]
 let catString = String(catCharacters)
 print(catString)// "Cat"
 ```
-## 3.6	连接字符串和字符
+## 3.6 连接字符串和字符
 >**说明：**两种方式
 >+ `+`、`+=`：字符串拼接
 >+ `append方法`
@@ -118,7 +118,7 @@ instruction += str2// look over there
 let exclamationMark: Character = "!"
 instruction.append(exclamationMark)
 ```
-## 3.7	字符串插值
+## 3.7 字符串插值
 >**用途：**构建新的字符串。
 >**语法：**`\(表达式)`
 
@@ -127,8 +127,8 @@ let multiplier = 3
 // 通过插值构建新的字符串
 let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 ```
-## 3.8	Unicode
-### 3.8.1	Unicode标量
+## 3.8 Unicode
+### 3.8.1 Unicode标量
 >**Unicode码位：**格式为`U+[1到8位16进制数字]`
 + **Unicode标量码位：**是对应字符或者修饰符的唯一的21位数字，每个`Unicode标量`都对应着一个`Unicode码位`，但反过来不成立。
 + **Unicode代理项码位：**Unicode码位中不属于Unicode标量的部分。
@@ -138,7 +138,7 @@ let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 |Unicode标量|unicode代理项|Unicode标量|
 >**应用：**Swift的`String`类型是基于Unicode标量建立的。
 
-### 3.8.2	字符串字面量的特殊字符
+### 3.8.2 字符串字面量的特殊字符
 >**说明：**分两类
 >+  转义字符
 >+ Unicode标量
@@ -161,7 +161,7 @@ let wiseWords = "\"Imagination is more importent than knowledge\" - Einstein"
 // Unocode标量
 let dollarSign = "\u{24}"
 ```
-### 3.8.3	可扩展的字形群集
+### 3.8.3 可扩展的字形群集
 >**说明：**有些字符由多个部分组成，每个部分都可以用一个Unicode标量表示。组合起来就形成了一个新字符。
 
 ```swift
@@ -179,7 +179,7 @@ let encosedEAcute: Character = "\u{E9}\u{20DD}"// é⃝
 // 🇺🇸
 let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"// 🇺🇸
 ```
-## 3.9	计算字符数量
+## 3.9 计算字符数量
 ###characters.count属性
 >**说明：**`String`类实例成员`characters`提供的记录字符总数的属性。
 >**性能问题：**字符串中可能包含可扩展字符群，只有遍历`Unicode`标量确定字符群表示的字符后才能确定字符串的长度
@@ -197,11 +197,11 @@ print("the number of characters in \(word) is \(word.characters.count)")// 4
 word += "\u{301}"// café
 print("the number of characters in \(word) is \(word.characters.count)")// 4
 ```
-## 3.10	访问和修改字符串
+## 3.10 访问和修改字符串
 >**说明：**两种方式
 >+ 字符串的属性和方法
 >+ 下标语法
-### 3.10.1	字符串索引
+### 3.10.1 字符串索引
 ####相关属性(2个)
 
 |字符串实例属性|说明|空字符串相应属性值|
@@ -264,7 +264,7 @@ for index in greeting.characters.indices {
     print("\(greeting[index])", terminator: "")
 }
 ```
-### 3.10.2	插入和删除
+### 3.10.2 插入和删除
 ####insert函数
 >**说明：**在一个字符串的指定索引插入一个字符串。
 >**原型：**`String类型的实例方法`
@@ -322,8 +322,8 @@ welcome.removeAtIndex(welcome.endIndex.predecessor())// hello there!
 let range = welcome.endIndex.advancedBy(-6)..<welcome.endIndex// 5..<11
 welcome.removeRange(range)// hello
 ```
-## 3.11	比较字符串
-### 3.11.1	字符串/字符相等
+## 3.11 比较字符串
+### 3.11.1 字符串/字符相等
 >**说明：**使用`!=`和`==`
 >+ 如果两个字符串（或字符）的可扩展字形群集是标准相等（Unicode标量不同，语言外观相同）的，那就认为它们是相等的
 
@@ -390,7 +390,7 @@ for scene in romeoAndJuliet {
 }
 print("There are \(act1SceneCount) scenes in Act 1")
 ```
-## 3.12	字符串的Unicode表示形式
+## 3.12 字符串的Unicode表示形式
 >**编码方式和字符集：**事实上，计算机存储任何数据（包括文本文件）都是以`二进制方式`存储的，但字符如何对应到二进制数据，或者说二进制数据如何解读成字符是由`编码方式`和`字符集`决定的。每种`字符集`都对应一种或多种`编码方式`。
 >**说明：**当字符串被保存到文本文件时，会按照某种编码方式存储。而Unicode标量对应的编码方式包括以下三种。
 

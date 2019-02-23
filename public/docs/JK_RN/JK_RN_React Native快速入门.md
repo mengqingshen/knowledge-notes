@@ -8,7 +8,7 @@ categories:
 
 **练习 DEMO：**https://coding.net/u/eli01/p/REACT_NATIVE_PRACTICE/git/tree/master/RN_FOR_JK_HelloWorld
 
-## 1	React Native介绍
+## 1 React Native介绍
 `Learn Once, Write Anywhere.`
 **介绍：**`React Native`是facebook在2015 React开发者大会上公开的应用开发框架，一个可以用`React`开发原生应用的框架。
 
@@ -42,7 +42,7 @@ categories:
 + 鸟巢
 + Bee Framework
 
-### 1.1	React
+### 1.1 React
 **说明：**是一套前端JacaScript框架，由Facebook开源。
 
 **特点：**JSX语法，组件化模式，Virtual DOM，单向数据流。
@@ -55,7 +55,7 @@ var Hello = React.createClass({
 	}
 });
 ```
-## 2	React Native环境搭建
+## 2 React Native环境搭建
 **环境依赖：**`OSX、Xcode、Node`
 + osx系统，目前还不支持 `Android`系统
 + Xcode,在 App Store 上下载最新版本的 Xcode，目前应该是 3.6.1
@@ -107,7 +107,7 @@ $ open RN_FOR_JK_HelloWorld/ios/RN_FOR_JK_HelloWorld.xcodeproj
 Xcode 版本更新到最新
 
 
-## 3	Movie List示例程序
+## 3 Movie List示例程序
 ```bash
 RN_FOR_JK_HelloWorld
 ├── android

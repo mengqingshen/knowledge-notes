@@ -5,7 +5,7 @@ categories:
 ---
 
 
-## 1.1	ios开发前准备
+## 1.1 ios开发前准备
 
 ### 1.1​    苹果公司介绍
 >**重要事件**
@@ -93,7 +93,7 @@ OS X 10.9.3+
 Xcode 6.0+
 
 
-## 1.2	Xcode继承开发环境的安装使用与项目建立流程
+## 1.2 Xcode继承开发环境的安装使用与项目建立流程
 
 ### 1.2.1    xcode的下载和安装
 >**说明：**两种方式
@@ -161,7 +161,7 @@ Xcode 6.0+
 
 ### 1.2.8    xcode中创建ios游戏项目
 
-## 1.3	Xcode常用项目模版
+## 1.3 Xcode常用项目模版
 >**说明：**`5`种
 >+ Master-Detail Application：`列表页-详情页`类型
 >+ Page-Based Application：`电子书`类型
@@ -169,21 +169,21 @@ Xcode 6.0+
 >+ Tabbed Application
 >+ Game
 
-### 1.3.1	Master-Detail Application
+### 1.3.1 Master-Detail Application
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.26.53.png)
 
 
-### 1.3.2	Page-Based Application
+### 1.3.2 Page-Based Application
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.38.45.png)
 
 
-### 1.3.3	Tabbed Application
+### 1.3.3 Tabbed Application
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202015-12-28%20%E4%B8%8A%E5%8D%888.56.30.png)
 
 
-## 1.4	ios用户界面开发基本流程
+## 1.4 ios用户界面开发基本流程
 
-### 1.4.1	StoryBoard的基本使用方法
+### 1.4.1 StoryBoard的基本使用方法
 >**说明：**`Storybiard(故事版)`是`Xcode4.2`才开始支持的，为了使设计`View`更加容易。
 
 + 可以在`Info.plist`文件中设置应用启动时首次加载的`storyboard`
@@ -198,7 +198,7 @@ Xcode 6.0+
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-storyboard-1.gif)
 
 
-### 1.4.2	图片控件
+### 1.4.2 图片控件
 >**说明：**在`xcode`中图片控件的创建和使用
 
 1. 将本地的图片拖入到项目中
@@ -206,7 +206,7 @@ Xcode 6.0+
 2. 创建`Image View`
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-img-02.gif)
 
-### 1.4.3	ios UI界面设计中传统方法和Assistant editor绑定代码
+### 1.4.3 ios UI界面设计中传统方法和Assistant editor绑定代码
 >**说明：**`程序`和`控件`的绑定，有两种方式
 
 #### 方式1：ios UI界面设计中传统方法
@@ -227,7 +227,7 @@ Xcode 6.0+
 >![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-bond2.gif)
 
 
-### 1.4.4	ios Story Board控制事件绑定
+### 1.4.4 ios Story Board控制事件绑定
 >**说明：**步骤如下
 >1. 编写`@IBAction`
 >2. 在`storyboard`中通过拖动在控件与`controller`中相应的`IBAction`之间建立关联
@@ -246,7 +246,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.4.5	iOS Storyboard控件与Swift类绑定
+### 1.4.5 iOS Storyboard控件与Swift类绑定
 >**说明：**新添加的`Storyboard`控件默认并没有和自定义的类绑定，和自定义的类绑定就可以通过代码自定义该控件
 >1. 设置绑定的类的类名
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-09%20%E4%B8%8B%E5%8D%8811.53.07.png)
@@ -263,7 +263,7 @@ class MyViewController: UIViewController {
 }
 ```
 
-### 1.4.6	ios源代码添加控件
+### 1.4.6 ios源代码添加控件
 
 ```objective-c
 import UIKit
@@ -283,23 +283,23 @@ class MyViewController: UIViewController {
 	...
 ```
 
-### 1.4.7	ios浏览器开发制作
+### 1.4.7 ios浏览器开发制作
 >**说明：**需要解决`http`请求受限的问题
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8A%E5%8D%881.55.08.png)
 
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8A%E5%8D%881.54.48.png)
 ![Alt text](./屏幕快照 2016-02-10 上午1.59.15.png)
 
-## 1.5	ios自定义控件实例
+## 1.5 ios自定义控件实例
 
-### 1.5.1	配置iOS自定义控件属性
+### 1.5.1 配置iOS自定义控件属性
 >**说明：**`Xcode`提供的所有控件都可以在`Storyboard`中进行一系列的配置。
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8B%E5%8D%886.02.15.png)
 
 
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-button.gif)
 
-### 1.5.2	自定义原型进度指示控件实例
+### 1.5.2 自定义原型进度指示控件实例
 >**说明：**使用绘图`API`编写自定义一个进度条控件
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-10%20%E4%B8%8B%E5%8D%8811.38.03.png)![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_xcode-progress.gif)
 
@@ -389,7 +389,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.5.3	实时预览自定义控件效果
+### 1.5.3 实时预览自定义控件效果
 >**说明：**`自定义控件`也可以使用`Storyboard`设置。步骤如下
 >**意义：**开发人员通过代码开发的`自定义控件`，也可以交给设计人员通过`Storyboard`进行设计了
 >**相关指令：**用来和`Storyboard`建立关联
@@ -446,16 +446,16 @@ import UIKit
 
 
 
-## 1.6	使用StoryBoard做ios UI界面跳转
+## 1.6 使用StoryBoard做ios UI界面跳转
 
-### 1.6.1	用iOS Storyboard做界面跳转
+### 1.6.1 用iOS Storyboard做界面跳转
 >**说明：**跳转到下一个`view`并且能够返回
 >![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_switch.gif)
 
-#### 1.6.1.2	跳转到下一页
+#### 1.6.1.2 跳转到下一页
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_next.gif)
 
-#### 1.6.1.3	返回
+#### 1.6.1.3 返回
 >**说明：**使用`IBAction`结合`dismissViewControllerAnimated`方法，步骤如下
 1.	新建一个和第二个`view`关联的类（`UIViewController`子类）
 2.	结合`辅助窗口`在第二个`view controller`做`IBAction`并在响应方法中调用`dismissViewControllerAnimated`
@@ -480,7 +480,7 @@ class ImgViewController: UIViewController {
 }
 ```
 
-### 1.6.2	使用nib文件做iOS界面设计
+### 1.6.2 使用nib文件做iOS界面设计
 >**说明：**`Xcode4`之后`IB(Interface Builder)`和`Xcode`才集成在一起。使用方式如下
 >1. 创建`Cocoa class`时勾选`Alse create XIB File`
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-12%20%E4%B8%8B%E5%8D%885.22.14.png) ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8810.47.13.png)
@@ -523,7 +523,7 @@ class MyViewController: UIViewController {
 ```
 
 
-### 1.6.3	在iOS界面间传递数据
+### 1.6.3 在iOS界面间传递数据
 >**说明：**本质上只是为和下一个`view`绑定的`controller`设置一个属性。
 >**扩展：**也可以在后一个`view`通过`parentViewController`访问前一个`view`
 
@@ -573,22 +573,22 @@ class MyViewController: UIViewController {
 }
 ```
 
-## 1.7	屏幕适配
+## 1.7 屏幕适配
 >**变动：**在`Xcode 7`中，`Editor(menu)->Pin`消失了，该菜单项中原本有一些样式设计功能。
 
-### 1.7.1	匹配父级容器
+### 1.7.1 匹配父级容器
 >**说明：**就是让`目标容器`以他的`父级容器`为参照系进行设置
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-13%20%E4%B8%8B%E5%8D%8811.56.36.png)
 >**扩展：**控件`UIImageVIew`可以设置其中图片的铺排模式
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-14%20%E4%B8%8A%E5%8D%8812.00.37.png)
 
 
-### 1.7.2	分割父级容器
+### 1.7.2 分割父级容器
 >**说明：**指的是多个兄弟`view`使用父级`view`的方式。
 >**扩展：**`Xcode 7`推出了一种新的方式`stack view`，来进行布局管理，可以将多个`view`作为一个组合进行操作。
 >**技巧：**`stack view`可以取代之前需要`Horizontal Space`（连个`view`之间的水平间距）的场景
 
-#### 1.7.2.1	左边固定，右边自适应
+#### 1.7.2.1 左边固定，右边自适应
 >**约束：**设置以下约束
 >+ 两个`View`之间：`Horizontal Spacing`
 >+ 左边`View`：`leading`、`top`
@@ -598,14 +598,14 @@ class MyViewController: UIViewController {
 
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-20%20%E4%B8%8B%E5%8D%888.00.01.png)
 
-#### 1.7.2.2	多个`View`按比例
+#### 1.7.2.2 多个`View`按比例
 >**说明：**2个或更多个`View`的宽度（或高度）按一定比例分割父级容器的剩余空间
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8A%E5%8D%889.51.01.png)
 
 ![Alt text](./http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-20%20%E4%B8%8B%E5%8D%887.47.27.png)
 
 
-### 1.7.3	复杂布局适配
+### 1.7.3 复杂布局适配
 >**说明：**上部左右均分，下部占用剩余部分
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%888.53.19.png) ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-22%20%E4%B8%8B%E5%8D%886.05.43.png) 
 
@@ -617,13 +617,13 @@ class MyViewController: UIViewController {
 
 
 
-## 1.8	iOS平台常用传感器
+## 1.8 iOS平台常用传感器
 
 #### CMMotionManager类
 >**说明：**管理传感器的类。
 >**库：**`CoreMotion`
 
-### 1.8.1	iOS平台加速度传感器的使用方式
+### 1.8.1 iOS平台加速度传感器的使用方式
 >**说明：**可以获得三个方向上的加速度。
 
 
@@ -690,7 +690,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.8.2	iOS平台陀螺仪的使用方式
+### 1.8.2 iOS平台陀螺仪的使用方式
 
 
 |CMMotionManager相关实例成员|类型|说明|
@@ -756,7 +756,7 @@ class ViewController: UIViewController {
 
 ```
 
-### 1.8.3	iOS平台距离传感器的使用方式
+### 1.8.3 iOS平台距离传感器的使用方式
 >**说明：**相关类
 >+ `UIDevice`
 >+ `NSNotificationCenter`
@@ -803,7 +803,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.8.4	iOS平台电源传感器的使用方式
+### 1.8.4 iOS平台电源传感器的使用方式
 >**说明：**相关类
 >+ `UIDevice`
 >+ `NSNotificationCenter`
@@ -847,7 +847,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.8.5	iOS平台磁场传感器的使用方式
+### 1.8.5 iOS平台磁场传感器的使用方式
 
 #### CLLocationManager类
 
@@ -886,11 +886,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 }
 ```
 
-### 1.8.6	使用磁场传感器制作指南针实例
+### 1.8.6 使用磁场传感器制作指南针实例
 
-## 1.9	多点触控
+## 1.9 多点触控
 
-### 1.9.1	触摸事件处理
+### 1.9.1 触摸事件处理
 >**说明：**触摸事件分4种，分别对应四种方法（`ViewController`的成员方法）
 
 
@@ -924,7 +924,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.9.2	处理多个触摸点
+### 1.9.2 处理多个触摸点
 >**技巧：**可以在模拟器中模拟多点触控，方式是鼠标在模拟器上滑动式按住`alt(option)`键。
 >**注意：**程序默认不启动对多点触控的支持，需要在代码中设置开启多点触控。
 
@@ -952,7 +952,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.9.3	缩放图片实例
+### 1.9.3 缩放图片实例
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_touch.gif)
 *ViewController.swift*
 
@@ -1006,9 +1006,9 @@ class ViewController: UIViewController {
 }
 ```
 
-## 1.10	常用其它功能
+## 1.10 常用其它功能
 
-### 1.10.1	打开网页
+### 1.10.1 打开网页
 >**说明：**在`Safari`中打开指定连接
 >![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S_call.gif)
 >**相关类：**`UIApplication`
@@ -1026,7 +1026,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.10.2	常用打开操作（发邮件、打电话、发短信）
+### 1.10.2 常用打开操作（发邮件、打电话、发短信）
 >**说明：**和打开网页类似，只是使用的`URL`协议不同
 
 *ViewController.swift* 
@@ -1053,12 +1053,12 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.10.3	自定义打开协议
+### 1.10.3 自定义打开协议
 >**说明：**可以通过自定一些`URL`协议
 >**案例：**通过自定义的`URL`协议`ime`打开另一个`App`
 ![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_S1_handler.gif)
 
-#### 1.10.3.1	注册协议的app
+#### 1.10.3.1 注册协议的app
 1. 在`Info.list`中设置一个`URL Schemes`
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-25%20%E4%B8%8B%E5%8D%889.42.43.png)
 
@@ -1097,7 +1097,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-#### 1.10.3.2	通过协议打开app
+#### 1.10.3.2 通过协议打开app
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-26%20%E4%B8%8A%E5%8D%889.58.00.png)
 
 *viewcontroller.swift*
@@ -1115,7 +1115,7 @@ class ViewController: UIViewController {
 ```
 
 
-### 1.10.4	获取photo
+### 1.10.4 获取photo
 *ViewController.swift*
 
 ```swift

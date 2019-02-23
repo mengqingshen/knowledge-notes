@@ -9,21 +9,21 @@ tag:
 >**视频：**http://www.imooc.com/learn/568
 >**源码：**https://git.coding.net/eli01/imooc_UIStackView.git
 
-## 1	学习指南
+## 1 学习指南
 >**说明：**`iOS`设备屏幕尺寸日益多样化，随之而来的是屏幕适配日益复杂。为了解决这个问题，`iOS9`推出了`Stack View`。
 
-## 2	UIStackView效果实现
+## 2 UIStackView效果实现
 
-### 2.1	UIStackView属性介绍
+### 2.1 UIStackView属性介绍
 >**说明：**一些常用的属性
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-18%20%E4%B8%8B%E5%8D%8810.47.51.png)
 
 
-### 2.2	美团效果实现
+### 2.2 美团效果实现
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-18%20%E4%B8%8B%E5%8D%8811.07.12.png)
 
 
-### 2.3	大众点评子控件代码实现
+### 2.3 大众点评子控件代码实现
 >**说明：**通过代码（而不是`Storyboard`）创建并添加该组件。
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-18%20%E4%B8%8B%E5%8D%8811.47.24.png)
 >**注意：**向`UIStackView`中添加子控件的时候要使用`addArrangedSubview`而不是`addSubview`，因为前者会保留控件作为`Stack View`子控件的特性
@@ -79,8 +79,8 @@ tag:
 @end
 ```
 
-### 2.4	UIStackView使用要点
+### 2.4 UIStackView使用要点
 无干货
 
-## 3	总结与预告
+## 3 总结与预告
 无干货

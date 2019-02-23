@@ -7,12 +7,12 @@ tag:
 ---
 
 
-## 5.1	for循环
+## 5.1 for循环
 >**说明：**有两种形式
 >+ `for-in`
 >+ `for initialization; condition; increment`（c语言形式）
 
-### 5.1.1	for-in
+### 5.1.1 for-in
 >**说明：**可以遍历的集合包括`区间`、`Array`、`Set`、`String中的字符`。
 >+ 其中每次循环都会被赋值的常量不需要声明
 >+ 可以使用`_`忽略每个数据项中具体的值
@@ -37,7 +37,7 @@ for (animalName, _) in numberOfLegs {
 }
 ```
 
-### 5.1.2	C语言形式
+### 5.1.2 C语言形式
 >**语法：**标准C样式。
 
 ```swift
@@ -52,12 +52,12 @@ for var index = 0; index < 3; ++index {
 }
 ```
 
-## 5.2	while循环
+## 5.2 while循环
 >**说明：**分两类
 >+ `while`
 >+ `repeat-while`
 
-### 5.2.1	while
+### 5.2.1 while
 >**说明：**每次在循环开始时计算条件是否符合。
 
 ```swift
@@ -67,7 +67,7 @@ while condition {
 ```
 
 
-### 5.2.2	repeat-while
+### 5.2.2 repeat-while
 >**说明：**和`while`的区别是在判断循环条件之前，先执行一次循环的代码块，然后重复循环直到条件为`false`。
 
 ```swift
@@ -76,13 +76,13 @@ while condition {
 } while condition
 ```
 
-## 5.3	条件语句
+## 5.3 条件语句
 >**说明：**`if`、`switch`
 >+ `if`：当条件较为简单且可能的情况很少时使用
 >+ `switch`：当条件较复杂、可能情况较多且需要模式匹配的情景使用
 
 
-### 5.3.1	if
+### 5.3.1 if
 >**语法：**`if-[else]`、`if-else if-...-[else]`
 
 ```swift
@@ -108,7 +108,7 @@ if temperatureInFahrenheit <= 32 {
 }
 ```
 
-### 5.3.2	switch
+### 5.3.2 switch
 >**语法：**类似C语言
 
 ```swift
@@ -224,7 +224,7 @@ case let (x, y):
 }
 ```
 
-## 5.4	控制转移语句
+## 5.4 控制转移语句
 >**说明：**Swift 有`5`种控制转移语句
 >+ `continue`
 >+ `break`
@@ -232,7 +232,7 @@ case let (x, y):
 >+ `return`
 >+ `throw`
 
-### 5.4.1	continue
+### 5.4.1 continue
 >**说明：**告诉一个循环体立刻停止本次循环迭代，重新开始下次循环迭代。
 
 ```swift
@@ -249,7 +249,7 @@ for character in puzzleInput.characters {
 print(puzzleOutput)
 ```
 
-### 5.4.2	break
+### 5.4.2 break
 >**说明：**立刻结束整个控制流的执行。
 
 #### switch语句中的break
@@ -279,7 +279,7 @@ if let integerValue = possibleIntegerValue {
 }
 ```
 
-### 5.4.3	fallthrough
+### 5.4.3 fallthrough
 >**说明：**使代码执行继续到下一个 `case` 中的执行代码
 
 ```swift
@@ -294,7 +294,7 @@ default:
 }
 ```
 
-### 5.4.4	标签
+### 5.4.4 标签
 >**说明：**配合`continue`或 `break`实现跳转。适用的语句包括
 >+ `while`、`repeat-while`
 >+ `for`
@@ -331,7 +331,7 @@ mainloop:for i = 0 ; i < 10 ; i++ {
 println("board[\(i)][\(j)] = 1")
 ```
 
-## 5.5	提前退出
+## 5.5 提前退出
 >**说明：**条件为真时，执行`guard`语句后的代码；不为真则执行`else`分句中的代码。
 >+ 一个`guard`语句总是有一个`else`分句
 >+ `else`分支必须通过`return`、`break`、`continue`、`throw`，或者调用一个不返回的方法或函数（比如`fatalError`函数）来退出`guard`所在的代码段。
@@ -358,7 +358,7 @@ greet(["name": "John"])
 greet(["name": "Jane", "location": "Cupertino"])
 ```
 
-## 5.6	检测API是否可用
+## 5.6 检测API是否可用
 >**用途：**确保我们不会不小心地使用对于当前部署目标不可用的 API。
 >**语法：**最后一个参数`*`是必须写的，用于处理未来潜在的平台。
 

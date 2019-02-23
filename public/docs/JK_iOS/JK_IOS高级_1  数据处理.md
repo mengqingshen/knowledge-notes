@@ -5,13 +5,13 @@ categories:
 ---
 
 
-## 1.1	操作plist数据
+## 1.1 操作plist数据
 
-### 1.1.1	plist数据介绍
+### 1.1.1 plist数据介绍
 >**课程说明：**本课讲解`plist`数据格式以及如何编辑`plist`文件。
 
 
-### 1.1.2	plist数组解析
+### 1.1.2 plist数组解析
 >**课程说明：**本课讲解如何解析plist数组。
 
 *TestArr.plist*
@@ -38,7 +38,7 @@ Optional((
 ```
 
 
-### 1.1.3	plist字典解析
+### 1.1.3 plist字典解析
 >**课程说明：**本课讲解如何解析`plist`字典。
 
 *TestDic.plist*
@@ -63,13 +63,13 @@ Optional({
 })
 ```
 
-## 1.2	CoreData
+## 1.2 CoreData
 
 ### SQLite
 >**官网：**http://sqlite.org/
 >![案例| 200x150](http://cdn.mengqingshen.com/img/JK_IOS_coredata.gif)
 
-### 1.2.1	创建使用`CoreData`的项目
+### 1.2.1 创建使用`CoreData`的项目
 >**课程说明：**本课介绍`SQLite`以及如何创建一个使用`CoreData`的项目。
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%883.32.25.png)
 
@@ -78,15 +78,15 @@ Optional({
 let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 ```
 
-### 1.2.2	设计数据结构
+### 1.2.2 设计数据结构
 >**课程说明：**本课介绍如何使用`Xcode`设计数据库的结构。
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%883.40.34.png)
 
 
-### 1.2.3	插入数据 
+### 1.2.3 插入数据 
 >**课程说明：**本课介绍如何插入一条数据。
 
-#### 1.2.3.1	插入数据
+#### 1.2.3.1 插入数据
 *ViewController.swift*
 
 ```swift
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
 }
 ```
 
-#### 1.2.3.2	查看`SQLite`文件地址
+#### 1.2.3.2 查看`SQLite`文件地址
 ![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-17%20%E4%B8%8B%E5%8D%886.00.14.png)
 *AppDelegate.swift*
 
@@ -143,7 +143,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 file:///Users/tonyearth/Library/Developer/CoreSimulator/Devices/1041D05D-4C13-45A9-BD8C-B209722B59F2/data/Containers/Data/Application/AA16281E-DE67-4A56-859C-2C96834101CE/Documents/SingleViewCoreData.sqlite
 ```
 
-### 1.2.4	读取数据
+### 1.2.4 读取数据
 >**课程说明：**本课讲解如何读取`SQLite`的数据。
 
 *UserTableViewController.swift*
@@ -161,7 +161,7 @@ catch {
 ...
 ```
 
-### 1.2.5	更新数据
+### 1.2.5 更新数据
 >**课程说明：**本课讲解如何更新数据。
 
 *UserContentViewController.swift*
@@ -211,7 +211,7 @@ class UserContentViewController: UIViewController {
 }
 ```
 
-### 1.2.6	删除数据
+### 1.2.6 删除数据
 >**课程说明：**本课讲解如何删除数据。
 
 *UserTableViewController.swift*
@@ -258,12 +258,12 @@ class UserTableViewController: UITableViewController {
 }
 ```
 
-## 1.3	操作 JSON 数据
+## 1.3 操作 JSON 数据
 
-### 1.3.1	JSON数据介绍
+### 1.3.1 JSON数据介绍
 >**课程说明：**本课时讲解 `JSON` 格式数据的语法。
 
-### 1.3.2	Swift 解析 JSON 数据
+### 1.3.2 Swift 解析 JSON 数据
 >**课程说明：**本课时讲解如何使用 `Swift` 语言解析 `JSON` 格式的数据。
 
 ```swift
@@ -281,7 +281,7 @@ catch {
 }
 ```
 
-### 1.3.3	Swift 生成 JSON 数据
+### 1.3.3 Swift 生成 JSON 数据
 >**课程说明：**本课时讲解如何使用 `Swift` 语言生成`JSON` 格式数据。
 
 ```swift
@@ -299,12 +299,12 @@ catch {
 }
 ```
 
-## 1.4	操作XML数据
+## 1.4 操作XML数据
 
-### 1.4.1	XML格式数据介绍
+### 1.4.1 XML格式数据介绍
 >**课程说明：**本课介绍XML格式数据的结构以及如何编写XML文件
 
-### 1.4.2	Swift解析XML格式的数据
+### 1.4.2 Swift解析XML格式的数据
 >**课程说明：**本课介绍如何使用Swift语言解析`XML`格式的数据
 >1. 引入资源：xml 文件
 >2. 采纳协议：`NSXMLParserDelegate`
@@ -377,23 +377,23 @@ class ViewController: UIViewController, NSXMLParserDelegate {
 }
 ```
 
-### 1.4.3	选择题实例
+### 1.4.3 选择题实例
 >**课程说明：**本课用一个实例演示如何在程序中使用`XML`格式的数据
 >1. （工程）引入 xml 文件
 >2. （storyboard）编辑界面
 >3. （ViewController.swift）绑定控件和注册事件
 
 
-## 1.5	iOS用户首选项数据
+## 1.5 iOS用户首选项数据
 
-### 1.5.1	用户首选项数据说明
+### 1.5.1 用户首选项数据说明
 >**课程说明：**本课讲解iOS首选项数据的概念及用途
 >**说明：**用户首选项数据适合以下场景
 >1. 数据量小
 >2. 键值对形式存储
 >3. 保存到首选项的数据在app关闭后不会被清空
 
-### 1.5.2	存储用户首选项数据
+### 1.5.2 存储用户首选项数据
 >**课程说明：**本课讲解如何存储用户首选项数据
 >![Alt text|200x350](http://cdn.mengqingshen.com/img/JK_IOS_shouxuanxiang.gif)
 
@@ -438,11 +438,11 @@ class ViewController: UIViewController {
 }
 ```
 
-### 1.5.3	读取用户首选项数据
+### 1.5.3 读取用户首选项数据
 >**课程说明：**本课讲解如何读取用户首选项数据
 
 
-### 1.5.4	启动时小贴士实例
+### 1.5.4 启动时小贴士实例
 >**课程说明：**本课用一个小实例演示用户首选项数据的使用场景
 >![Alt text](http://cdn.mengqingshen.com/img/JK_IOS_tip.gif)
 
@@ -486,14 +486,14 @@ class ViewController: UIViewController {
 }
 ```
 
-## 1.6	iOS文件存取
+## 1.6 iOS文件存取
 >**官方文档：**https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672-CH1-SW1
 
-### 1.6.1	iOS应用沙盒
+### 1.6.1 iOS应用沙盒
 >**笔记参考：**http://blog.csdn.net/wzzvictory/article/details/18269713
 >**沙盒机制：**出于安全考虑，iOS系统的沙盒机制规定每个应用都只能访问当前沙盒目录下面的文件（也有例外，比如系统通讯录能在用户授权的情况下被第三方应用访问）。
 
-#### 1.6.1.1	app目录
+#### 1.6.1.1 app目录
 >**说明：**每个应用的沙盒目录都是相似的，主要包如下所示的4个目录
 
 ```bash
@@ -517,7 +517,7 @@ class ViewController: UIViewController {
 | `Library/Preferences` | 应用程序的偏好设置文件                  | 读写   | 是                   | 我们使用`NSUserDefaults`写的设置数据都会保存到该目录下的一个`plist`文件中，这就是所谓的写到`plist`中! |
 | `tmp`                 | 各种临时文件，保存应用再次启动时不需要的文件       | 读写   | 否                   | 当应用不再需要这些文件时应该主动将其删除，因为该目录下的东西随时有可能被系统清理掉，目前已知的一种可能清理的原因是系统磁盘存储空间不足的时候。 |
 
-#### 1.6.1.2	获取目录 API
+#### 1.6.1.2 获取目录 API
 
 ##### NSSearchPathForDirectoriesInDomains方法
 >**说明：**用于返回指定范围内的指定名称的目录的路径集合
@@ -534,7 +534,7 @@ public func NSSearchPathForDirectoriesInDomains(directory: NSSearchPathDirectory
 ```
 
 
-### 1.6.2	写入文件
+### 1.6.2 写入文件
 
 ```swift
 /*- 获取目录路径 -*/
@@ -572,7 +572,7 @@ catch {
 }
 ```
 
-### 1.6.3	读取文件
+### 1.6.3 读取文件
 
 ```swift
 /*- 从文件中读取文本 -*/
