@@ -9,6 +9,7 @@ date: 2016-10-09 20:42
 
 ## 15.1 Promise的含义
 **说明：**`Promise`是`异步编程`的一种解决方案，比传统的解决方案——回调函数和事件，更合理和更强大
+
 **缺点：**
 
 + 一旦新建它就会立即执行，无法中途取消
@@ -136,6 +137,7 @@ getJSON("/post/1.json").then(
 1|`function`|发生错误时的回调函数|是
 
 **返回值：**一个新的 `promise` 对象
+
 **建议：**一般来说，不要在`then`方法里面定义`Reject`状态的回调函数（即`then`的第二个参数），总是使用`catch`方法
 
 *Demo1: 基本使用*
@@ -284,6 +286,7 @@ p.catch(error => console.log(error))
 
 ## 15.7 Promise.resolve()
 **说明：**将现有对象转为`Promise`对象(状态不一定就是`resolved`)
+
 **技巧：**如果希望得到一个`Promise`对象，比较方便的方法就是直接调用`Promise.resolve`方法
 
 参数|类型|说明|必需
@@ -359,6 +362,7 @@ console.log('one');
 
 ## 15.8 Promise.reject()
 **说明：**也会返回一个新的 `Promise`实例，该实例的状态为`rejected`
+
 **参数：**和`Promise.resolved()`完全一致
 
 ```javascript
@@ -377,6 +381,7 @@ p.then(null, function (s){
 
 ### done()
 **说明：**总是处于回调链的尾端，保证抛出任何可能出现的错误
+
 **参数：**和`Promise.prototype.then()`完全一致
 
 *部署*

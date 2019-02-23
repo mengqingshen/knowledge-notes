@@ -34,6 +34,7 @@ date: 2015-05-05 09:01
 
 #### 2.1.3	安装插件获得额外模块
 **注意：**sass中使用`@import`引入模块是简单粗暴的，重复`@import`会导致性能问题。
+
 **以引入`normalize`模块为例**
 
 ```shell
@@ -53,6 +54,7 @@ $ compass watch
 ```
 #### 2.2		Normalize核心模块
 **自模块引入方式：**`@import "normalize/[子模块名]"`
+
 **注意：**以子路径的方式引入子模块依赖于`@import "normalize-version"`
 
 |核心模块|用途|
@@ -109,7 +111,9 @@ http://compass-style.org/reference/compass/reset/utilities/
 ```
 ## 3	Layout模块
 **地位：**使用率最低的模块
+
 **引入：**`@import "compass/layout"`
+
 **子模块：**3个自模块
 1. `@import "compass/layout/grid-background";`
 2. `@import "compass/layout/sticky-footer";`
@@ -127,6 +131,7 @@ $grid-background-column-color:rgba(255,0,0,.25);
 ```
 ### 3.2	sticky-footer
 **用途：**提供设置元素固定在底部的`mix`（当页面内容不能占满窗口时目标位于窗口底部，超过窗口时，目标处在页面的底部。）
+
 **注意：**
 1. 需要html结构符合相关规则
 2. 也可以自定义相关id的名字（参考API:http://compass-style.org/reference/compass/layout/sticky_footer/）
@@ -156,6 +161,7 @@ $grid-background-column-color:rgba(255,0,0,.25);
 ```
 ### 3.3	stretching
 **用途：**提供了设置元素的偏移的`mixin`
+
 **API：**http://compass-style.org/reference/compass/layout/stretching/
 
 以其中一个`mixin` (`stretch`)为例
@@ -179,6 +185,7 @@ $grid-background-column-color:rgba(255,0,0,.25);
 ## 4	CSS3模块&Brower Support模块
 ### 4.1	CSS3模块
 **地位：**主动使用频率最高的模块
+
 **用途：**提供跨浏览器的CSS3能力
 
 ```scss
@@ -569,6 +576,7 @@ p {
 ### 6.1	Helpers模块（上）
 #### 6.1.1	Base64取代图片下载
 **优点：**减少请求数目，加快页面渲染
+
 **缺点：**和直接使用图片相比
 1. CPU资源多消耗50%
 2. 多使用4倍的内存
@@ -587,6 +595,7 @@ p {
 ```
 #### 6.1.2	image-url
 **用途：**解决引用图片的痛点
+
 **优点：**
 1. 自动生成md5(缓存克星)
 2. 整合compass的路径管理功能

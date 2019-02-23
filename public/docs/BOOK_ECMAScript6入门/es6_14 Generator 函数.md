@@ -80,7 +80,9 @@ hw.next()
 + 通过`yeild`调用`Genertor`函数需要在中间加上`*`
 
 **限制：**`yield`语句不能用在普通函数中，否则会报错
+
 **注意：**`yield`语句后面的表达式，只有当调用`next`方法、内部指针指向该语句时才会执行
+
 **技巧：**`Generator`函数可以不用`yield`语句，这时就变成了一个单纯的暂缓执行函数
 
 ```javascript
@@ -106,7 +108,9 @@ for (var f of flat(arr)) {
 ----
 #### yeild 和 return
 **说明：**在`Genertor`函数中可以同时使用`yeild`和`return`
+
 **相同点：**都能返回紧跟在语句后面的那个表达式的值
+
 **不同点：**
 
 + 一个函数里面，只能执行一次（或者说一个）`return`语句，但是可以执行多次（或者说多个）`yield`语句
@@ -115,6 +119,7 @@ for (var f of flat(arr)) {
 
 #### 与`Iterator`接口的关系 
 **说明：**可以把`Generator`赋值给对象的`Symbol.iterator`属性，从而使得该对象具有`Iterator`接口
+
 **注意：**调用`Genertor`函数返回的便利器对象自身也有`Symbol.iterator`属性，指向便利器对象自身
 
 *Demo1: `Generator`函数赋值给`Symbol.iterator`属性*
@@ -202,7 +207,9 @@ wrapped().next('hello!')
 
 ## 14.3 for...of循环
 **说明：**不需要调用`next`方法，`for...of`循环可以自动遍历`Generator`函数生成的`Iterator`对象
+
 **注意：**和直接调用`next`方法不同，`return`的值不会被遍历
+
 **扩展：**除了`for...of`循环以外，还有以下运算可以利用`Generator`函数
 
 + 扩展运算符
@@ -599,6 +606,7 @@ var clock = function*() {
 ```
 ### 14.9.2 Generator 与协程
 **说明：**`Generator`函数是对`协程`的实现，但属于不完全实现。
+
 **用途：**如果将`Generator`函数当作协程，完全可以将多个需要互相协作的任务写成`Generator`函数，它们之间使用`yield`语句交换控制权。
 
 ## 14.10 应用

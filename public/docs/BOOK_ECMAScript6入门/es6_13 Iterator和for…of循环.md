@@ -9,6 +9,7 @@ date: 2016-10-07 15:46
 
 ## 13.1 Iterator（遍历器）的概念
 **是什么：**它是一种接口，为各种不同的数据结构(`Array、Object、Map、Set`)提供统一的访问机制
+
 **有啥用：**
 + 为各种数据结构，提供一个统一的、简便的访问`接口`
 + 使得数据结构的成员能够按某种次序排列
@@ -87,6 +88,7 @@ interface IterationResult {
 
 ### 13.2.1 Symbol.iterator
 **类型：**一个预定义好的、类型为`Symbol`的特殊值
+
 **说明：**默认的`Iterator`接口部署在数据结构的`Symbol.iterator`属性
 + 一个数据结构只要具有`Symbol.iterator`属性，就可以认为是`可遍历的`（iterable）
 + 调用`Symbol.iterator`方法，就会得到当前数据结构默认的遍历器生成函数
@@ -213,6 +215,7 @@ let obj = {
 
 ### 13.2.3 类似数组的对象部署 Iterator 接口
 **说明：**对于`类数组对象`（存在`数值键名`和`length`属性），部署`Iterator`接口，有一个简便方法，就是`Symbol.iterator`方法直接引用数组的`Iterator`接口
+
 **注意：**普通对象部署数组的`Symbol.iterator`方法，并无效果
 
 *Demo: 类数组对象调用数组的`Symbol.iterator`方法*
@@ -414,6 +417,7 @@ for (let i of arr) {
 
 ### 13.7.2 Set 和 Map 结构
 **遍历的顺序：** 遍历的顺序是按照各个成员被添加进数据结构的顺序
+
 **遍历时的返回值：**`Map`和`Set`不同
 
 | 返回值   | 类型      | 说明             |

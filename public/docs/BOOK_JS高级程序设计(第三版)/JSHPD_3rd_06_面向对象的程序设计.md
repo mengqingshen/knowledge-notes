@@ -109,6 +109,7 @@ Object.defineProperty(persion, "name", {
 ```
 
 **[[Get]]**: 读取属性是调用的函数，默认undefined
+
 **[[Set]]**: 在写入属性时调用的函数，默认undefined
 
 **修改**

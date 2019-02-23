@@ -223,6 +223,7 @@ readOnly = require("some-decorator");
 
 ## 18.4 core-decorators.js
 **说明：**一个第三方模块，提供了几个常见的修饰器
+
 **GitHub：**https://github.com/jayphelps/core-decorators.js
 
 | 常用修饰器                          | 说明                                       |
@@ -390,12 +391,14 @@ foo.anotherMethod() // 在"/"频道发布"foo.some.other"事件，不附带数�
 `这本书之前的章节中已经出现了两次 Mixin 了，核心实现要么是 Object.assign ，要么是 Object.defineProperty ，这次则是进一步通过修饰器封装，作者对 Mixin 是真爱啊！`
 
 **Mixin模式：**就是对象继承的一种替代方案，中文译为 `混入（mix in）`，意为在一个对象之中混入另外一个对象的方法。
+
 **说明：**在修饰器的基础上，可以实现 `Mixin` 模式。下面给出两种形式
 1. 基于修饰器
 2. 基于类的继承机制
 
 ### 18.6.1 基于修饰器
 **说明：**核心是通过 `Object.assign` ，将要混入方法的引用赋值给目标类的 `prototype`
+
 **缺点：**这种混入方式修改了目标类的 `prototype` ，侵入性强，同名方法会被覆盖
 
 *Demo: 针对目标类混入一个方法*
@@ -424,6 +427,7 @@ obj.foo() // "foo"
 
 ### 18.6.2 基于继承机制
 **说明：**其实就是在原定的继承链中插入一个类
+
 **比之修饰器：**有两个好处
 1. 不会修改子类的 `prototype`
 2. 子类可以通过 `super` 调用父类方法，父类方法即使被屏蔽也还能访问到

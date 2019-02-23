@@ -313,31 +313,45 @@ Qt4 对于模块的划分相对粗糙，但是对于对 UI 要求不高的项目
 
 ## 基本模块
 **Qt Core**：不支持 JSON 和 XML 的处理。
+
 **Qt GUI**：Qt GUI + Qt Widgets
 
 **Qt Multimedia**
+
 **QtNetwork**
+
 **QtOpenGL**：被弃用，响应的功能被移动到 Qt GUI m模块
 
 **Qt OpenVG**
+
 **Qt Script与 Qt Script Tools**
 
 **Qt SVG**
+
 **QtWebkit**: Qt WebEngine
+
 **QtXml**
+
 **QtXmkPatterns**
+
 **QtDeclarative**
+
 **Phonon**
+
 **Qt3Support**
 
 ## Qt 工具模块
 **QtDesigner**
+
 **QtUiTools**
+
 **QtHelp**
+
 **QtTest**
 
 ## 特定平台模块
 **QAxContainer 和 QAxServer wnidows**
+
 **Qt D-Bus Linux**
 
 

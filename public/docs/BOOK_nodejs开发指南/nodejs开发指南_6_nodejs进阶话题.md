@@ -40,6 +40,7 @@ require('./hello')
 
 ## 1.3 通过查找node_modules目录加载模块
 **时机**：当 require 遇到一个既不是核心模块又不是以路径形式表示的模块名称时
+
 **路径**：首先试图在当前目录下的 node_modules 目录中查找，如果没有找到则会在当前目录的上一层中的node_modules目录中继续查找。反复重复，直到根目录。
 
 */home/byvoid/develop/foo.js*
@@ -159,6 +160,7 @@ app.configure('production', function(){
 
 ### child_process
 **说明**：也是一个核心模块，区别于cluster，允许跨进程端口复用
+
 **案例**
 
 + 利用多核资源

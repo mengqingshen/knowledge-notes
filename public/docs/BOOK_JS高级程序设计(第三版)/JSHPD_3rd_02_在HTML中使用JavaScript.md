@@ -10,6 +10,7 @@ date: 2014-08-26 14
 ## 2.1  script元素
 
 **历史：**   由Netscape创造并在Netscape Navigator 2中首先实现。之后被加入HTML规范。
+
 **元素（HTML4.01）:**   6个，全部非必需
 
 + async：    异步方式下载脚本

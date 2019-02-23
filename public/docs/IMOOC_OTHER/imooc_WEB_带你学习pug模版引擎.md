@@ -9,6 +9,7 @@ tag:
 
 # 1	课程简介
 **模版引擎：**将动态的数据和静态的页面糅合在一起的实现机制或技术
+
 **流行的模版：**
 
 |实现语言|模版引擎例子|
@@ -19,6 +20,7 @@ tag:
 |JavaScript|`Mustache`、 `Handlebars`、 `Juicer`、 `Xtemplate`、 `EJS`、 `pug`|
 
 **官网：**http://pug-lang.com/
+
 **提示：**`jade`改名为`pug`了
 
 

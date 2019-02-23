@@ -13,7 +13,9 @@ date:  2016-12-06 21:14
 ### 25.1.1 早期动画循环
 
 **动画循环：** 比如淡入淡出，如果要用 JS 实现的话，需要循环渐进地改变节点的样式。
+
 **原理：** 利用计时器并设置好合适的时间间隔。
+
 **缺点：** `setTimeout` 和 `setInterval` 的第二个参数实际上只是制定了动画代码添加到浏览器 UI 线程队列中以等待执行的时间。
 
 **案例：** 使用 `setInterval()` 的基本动画循环。
@@ -60,7 +62,9 @@ Chrome|4
 #### window.mozRequestAnimationFrame()
 
 **说明：** 使浏览器调用传递进去的回调函数，并在合适的某一帧绘制 DOM。
+
 **参数：** 负责改变 DOM 样式的函数，会被立即调用，并在下一次重绘时绘制该函数对 DOM 的改变。该函数被调用时会接收一个时间戳，表示下一次重绘的实际发生时间。
+
 **技巧：**通过递归调用 `mozRequestAnimationFrame` 实现动画的平滑改变。
 
 *递归调用 mozRequestAnimationFrame`实现动画的平滑改变*
@@ -116,6 +120,7 @@ mozRequestAnimationFrame()|Firefox 4
 + `chrome` 提供了 `webkitCancelAnimationFrame()`，用于取消之前计划执行的重绘操作。
 
 **技巧：**在 `chorme` 和 `IE` 中可以使用 `Date` 对象替代获得大致的时间间隔。
+
 **扩展：** 目前 `W3C` 已经着手起草 `requestAnimationFrame() API`，而且作为 `Web Performance Group` 的一部分， `Mozilla` 和 `Google` 正共同参与该标准草案的制定工作。
 
 *兼容性更好的的动画循环*
@@ -147,11 +152,14 @@ mozRequestAnimationFrame()|Firefox 4
 
 ## 25.4    File API
 **背景：**2000年以前，处理文件的唯一方式就是在表单中加入 `<input type="file">` 
+
 **用途：**提供一种安全的方式访问计算机中的文件
+
 **兼容性：** `IE10+`、	`Firefox 4+`、	`Safari5.05+`、	`Opera11.1+`、	`Chrome`
 
 ### Files集合（File对象的集合）
 **说明：** HTML5 在 DOM 中为文件输入元素添加了一个 files 集合
+
 **用途：** 通过文件输入字段选择了一个或多个文件时， files 集合中将包含一组 `File` 对象，每个 `File` 对象对应着一个文件。
 
 **File对象属性（只读）**
@@ -237,7 +245,9 @@ EventUtil.addhandler(filesList, 'change',function(event){
 ### 25.4.2    读取部分内容
 #### slice()方法
 **说明：** `File` 对象方法
+
 **参数（2）：** 起始字节，要读取的字节数
+
 **返回值：** Blob类型的实例（Blob是File的父类型）
 
 浏览器|slice()实现
@@ -287,11 +297,14 @@ EventUtil.addHandler(filesList, 'change', function(event){
 
 ### 25.4.3    对象URL
 **说明：** 也叫做blob URL,指的是引用保存在File或Blob中数据的URL。
+
 **优点：** 不必把文件内容读到JavaScript中而直接使用文件内容，只在需要文件内容的地方提供文件的URL即可，标签会自动找到响应的内存地址
+
 **兼容性：** `IE10+`	`Firefox 4`	`Chrome`
 
 #### 创建方式： `window.URL.createObjectURL()` 方法
 **参数：** File或Blob对象
+
 **返回值：** 字符串（URL），指向一块内存地址，可以在DOM中使用
 
 浏览器|实现
@@ -354,9 +367,13 @@ EventUtil.addHandler(fileList, 'change', function(event){
 ```
 ### 25.4.4 读取拖放的文件
 **技术背景：** HTML5拖放API和文件API
+
 **用途：** 在页面上创建了自定义的防止目标之后，可以从桌面上把文件拖放到该目标。
+
 **注意：** 必需取消 dragenter、dragover、drop 的默认行为
+
 **事件：** drop 事件    文件被放置到目标上并松开鼠标时触发
+
 **属性：** `event.dataTransfer.files`  (包含被放置的文件集合)
 
 **案例：**将放置在页面中自定义的放置目标中的文件信息显示出来
@@ -386,6 +403,7 @@ EventUtil.addHandler(droptarget, 'drop', handleEvent);
 
 ### 25.4.5    使用XHR上传文件
 **方式一：**通过File API访问文件内容，使用send()通过POST请求上传文件
+
 **方式二（推荐）：**模拟表达提交。首先，创建FormData对象，调用其append()方法，传入相应的File对象作为参数。然后，再把FormData对象传递给XHR的send方法。
 
 ```javascript

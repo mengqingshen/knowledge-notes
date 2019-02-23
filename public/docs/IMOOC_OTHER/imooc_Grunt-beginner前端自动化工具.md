@@ -74,7 +74,9 @@ bower -v
 ### Grunt
 
 **简介:**: Build tool，实现开发自动化（减少像压缩、编译、单元测试、代码校验这种重复且无业务关联的工作。）
+
 **官方站点**: http://gruntjs.com
+
 **优点**: 生态庞大
 
 ```bash
@@ -83,7 +85,9 @@ sudo npm i -g grunt-cli
 # 第3章		Yeoman实践
 ## 3.1		Yeoman实践
 **Generator:**各式各样的模具
+
 **安装模具：**`npm i -g generator-[框架或工具的名称]`
+
 **案例：**angular项目
 
 ```bash
@@ -469,6 +473,7 @@ module.exports = function(grunt){
 ```
 
 **案例3：在案例一的基础上使用files增加复制的文件，比案例二更精简**
+
 **files：**成对设置原文件和目标文件（数组方式）
 
 ```js
@@ -579,6 +584,7 @@ module.exports = function(grunt){
 ```
 
 **案例6：综合使用各种options**
+
 **使用通配符和其它options**
 
 | 序号                         |                    options |  功能  |
@@ -649,7 +655,9 @@ module.exports = function(grunt){
 ## 5.4-5.5	剖析Grunt Tasks-Grunt serve
 `我，胡汉三，又回来啦！		----《闪闪的红星》`
 **hostname配置项：**设置server的hostname(0.0.0.0代表允许外部访问)
+
 **Grunt原子插件搜索**：https://github.com/search?utf8=%E2%9C%93&Q=GRUNT
+
 **注意：**参数配置
 
 1. **动态注入：**`grunt {task}:abc:def:ghi`：动态地在`{task}`的注册函数(`grunt.registerMultitask`除外)体内的`this`对象的`flags`对象中创建属性，相当于

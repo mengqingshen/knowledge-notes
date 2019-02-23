@@ -118,6 +118,7 @@ btn.onclick = null;    //删除通过DOM0级方法指定的事件处理程序
 
 #### removeEventListener()
 **说明：**移出addEventListener()添加的事件处理程序，参数和 addEventListener() 保持一致 
+
 **注意：**  将事件添加到事件的冒泡阶段而不是捕获阶段可以最大程度兼容各种浏览器，除非需要在事件到达目标之前截获事件。
 
 ```c
@@ -196,6 +197,7 @@ var EventUtil = {
 ```
 ## 13.3    事件对象
 **说明：** 触发DOM上的某个事件是会产生一个事件对象event（DOM0或DOM2），包含所有与时间有关的信息。
+
 **特点**
 
 + 所有浏览器都支持event对象，但支持方式不同
@@ -517,6 +519,7 @@ EventUtil.addHandler(window, 'load', function(){
 
 
 **案例五：link属性**
+
 **说明：**和script类似
 
 **兼容性问题**IE	Opera
@@ -528,7 +531,9 @@ EventUtil.addHandler(window, 'load', function(){
 
 
 **发生时机举例：**只要用户从一个页面切换到另外一个页面，就会发生unload事件；
+
 **用途举例：**清除引用避免内存泄漏;
+
 **限制：**DOM2级事件规定应该在<body>元素而不是window对象上触发unload事件。
 
 *方式一：    JS*
@@ -557,6 +562,7 @@ EventUtil.addHandler(window, 'unload', function(event){
 #### 13.4.1.3.    resize事件
 
 **注意：**浏览器最大化最小化时也会触发resize事件。
+
 **event差异：**
 
 | 浏览器    | event.target | 备注   |
@@ -620,7 +626,9 @@ EventUtil.addHandler(window, 'scroll', function(event){
 ### 13.4.2    焦点事件
 
 **触发：**  页面获得或失去焦点
+
 **使用：** 利用这些事件并与`document.hasFocus()`方法及`document.activeElement`属性配合来知晓用户在页面上的行踪
+
 **顺序：**以焦点由A元素移动到B元素为例
 1. focusout(A)
 2. focusin(B)
@@ -650,6 +658,7 @@ var isSupported = document.implementaation.hasFeature('FocusEvent','3.0');
 ### 13.4.3    鼠标与滚轮事件
 
 **版本：**DOM3级
+
 **注意：**
 
 + 冒泡可以被取消，但会影响其他事件
@@ -1092,6 +1101,7 @@ setTime(function(){
 ```
 #### 4. readystatechange事件
 **说明：**提供与文档加载或元素加载状态有关的信息。
+
 **特点：**
 
 + 对象不一定经历所有阶段，属性变化也不总是连续的；
@@ -1099,6 +1109,7 @@ setTime(function(){
 + 与load事件一起使用时，无法预测两个事件触发的先后顺序。
 
 **注意：**可以很接近地模拟DOMContentLoaded事件，不能保证和load事件以相同的方式触发。
+
 **兼容性：**IE	Firefox4+	Opera
 
 | readyState属性值 | 含义               |
@@ -1240,6 +1251,7 @@ EventUtil.addHandler(window, 'load', function(event){
 ### 13.4.9    触摸与手势事件
 #### 1. 触摸事件（IOS 2.0开始）
 **注意：**所有元素都可以触发下面的事件
+
 **触摸事件（和鼠标事件）发生顺序：**
 1. touchstart
 2. mouseover
@@ -1304,6 +1316,7 @@ function handleTouchEvent(event){
 ```
 #### 2. 手势事件（IOS 2.0开始）
 **触发：**两个手指触摸屏幕时就会产生手势
+
 **用途：**
 1. 改变显示项的大小
 2. 旋转显示项
@@ -1412,7 +1425,9 @@ btn.onclick = function(){
 ### 13.6.1    DOM中的事件模拟
 ####（1）创建事件
 **document.createEvent()：创建event对象**
+
 **返回值：**事件对象
+
 **参数：**
 
 | DOM2           | DOM3          | 说明          | 备注                |
@@ -1424,11 +1439,14 @@ btn.onclick = function(){
 
 ####（2）触发事件
 **dom.dispatchEvent()：触发事件，dom是任何支持事件的dom节点**
+
 **参数：**document.createEvent()创建的事件对象
 ### 13.6.1	模拟鼠标事件
 #### event.initMouseEvent():指定与鼠标事件有关的信息
 **调用者：**document.createEvent('MouseEvents')的返回值
+
 **参数（15）：**与鼠标事件中每个典型的属性一一对应
+
 **注意：**
 
 + 前4个参数对正确激发事件至关重要，因为浏览器要用到

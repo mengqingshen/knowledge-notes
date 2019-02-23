@@ -10,6 +10,7 @@ categories:
 
 ## 1 Flexbox 布局详解
 **课程说明：** Flexbox 布局的基本原理和方法
+
 **说明：**`Flexbox`是`css3`里边引入的布局模型－弹性盒子模型，旨在通过弹性的方式来对齐和分布容器中内容的空间，使其能够适应不同屏幕的高度。`React Native`中`Flexbox`是这个规范的一个子集。
 
 ![Alt text](http://cdn.mengqingshen.com/img/1473689485972.png)
@@ -125,6 +126,7 @@ var pixelRation = PixelRatio.get();
 
 ### 2.4 定位模式
 **说明：**支持`absolute`和`relative`定位
+
 **注意：**和 css 的标准不同的是，父元素容器不用设置 `position : absolute|relative`
 
 **absolute定位**
@@ -170,6 +172,7 @@ var pixelRation = PixelRatio.get();
 ### 3.1 引入图片
 ### 网络图片
 **说明：**通过设置 `source`的`uri`
+
 **注意：**网络引入的必须设置其宽高
 ```javascript
 <Image
@@ -234,6 +237,7 @@ resizeMode|enum(`cover`, `contain`, `stretch`)|改变图片显示效果，类似
 
 ### 4.3 Text 嵌套和Text 样式继承
 **说明：**文本元素可以嵌套文本元素，内部使用`NAAttributedString`
+
 **注意：**不同于 web 的 css 标准，`React Native`中文本元素不能继承上级`View`的样式，不过`Text`内部可实现局部继承，如下组件中，`and red`是`bold`家`red`
 
 ```javascript

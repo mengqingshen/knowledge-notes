@@ -70,7 +70,9 @@ h1{
 ##### 2.2.2	安装
 ###### 2.2.2.1	RVM
 **rvm：**http://rvm.io/
+
 **pgp：** pretty good privacy
+
 **gpg：**GunPG
 
 + 安装
@@ -276,6 +278,7 @@ $ vim screen.scss
 ```
 #### 4.3	继承
 **关键字：**`@extend`
+
 **特点：**
 
 1. 子类会同时继承父类修饰过的其他选择器
@@ -332,6 +335,7 @@ $ vim screen.scss
 #### 5.1	响应式布局
 ##### 5.1.1	sass和css区别之`media query`
 **说明：**`sass`中的`media query`可以内嵌在`css`规则中，在生成`css`的时候，`media query`才会被提到样式的最该层级。
+
 **优点：**避免重复书写选择器，避免打乱样式
 
 ```scss

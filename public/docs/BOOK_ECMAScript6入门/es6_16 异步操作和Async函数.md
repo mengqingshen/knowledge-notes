@@ -27,6 +27,7 @@ date: 2016-10-10 22:55
 
 ### 16.1.2 回调函数
 **说明：**`JS`语言对异步编程的实现，就是回调函数（就是把任务的第二段单独写在一个函数里面，等到重新执行这个任务的时候，就直接调用这个函数）
+
 **注意：**执行分成两段，在这两段之间抛出的错误，程序无法捕捉，只能当作参数，传入第二段。所以，`Node.js`约定，回调函数的第一个参数，必须是错误对象`err`（如果没有错误，该参数就是`null`）
 
 *Demo： 读取文件*
@@ -43,7 +44,9 @@ fs.readFile('/etc/passwd', function (err, data) {
 
 ### 16.1.3 Promise
 **说明：**它不是新的语法功能，而是一种新的写法，允许将回调函数的嵌套，改成链式调用，解决多重回调函数嵌套导致的`callback hell`问题
+
 **分析：**`Promise` 的写法只是回调函数的改进，使用then方法以后，异步任务的两段执行看得更清楚了
+
 **缺点：**代码冗余，原来的任务被`Promise` 包装了一下，不管什么操作，一眼看去都是一堆 `then`，原来的语义变得很不清楚
 
 *Demo: 连续读取多个文件*
@@ -69,6 +72,7 @@ readFile(fileA)
 ## 16.2 Generator函数
 ### 16.2.1 协程
 **说明：**协程是一种多任务的解决方案，有点像函数，又有点像线程。`es6`是通过`Generator`函数实现`协程`的。
+
 **Generator函数：**遇到`yield`命令就暂停，等到执行权返回，再从暂停的地方继续往后执行。它的最大优点，就是代码的写法非常像同步操作
 
 
@@ -168,7 +172,9 @@ result.value.
 
 #### 传名调用（`call by name`）
 **说明：**直接将作为参数的表达式传入函数体，只在用到它的时候求值
+
 **实现方式：**编译器的`传名调用`实现，往往是将参数放到一个临时函数之中，再将这个临时函数传入函数体。这个临时函数就叫做`Thunk`函数。
+
 **采纳者举例：**`Haskell`语言
 
 ### 16.3.2 Thunk 函数的含义
@@ -428,7 +434,9 @@ run(g);
 ### 16.4.1 基本用法
 #### co函数
 **说明：**`Generator`函数只要传入`co`函数，就会自动执行
+
 **返回值：**返回一个`Promise`对象，因此可以用`then`方法添加回调函数
+
 **注意：**`co`的前提条件是，`Generator`函数的`yield`命令后面，只能是`Thunk`函数或`Promise`对象。
 
 ```javascript
@@ -900,10 +908,12 @@ async function dbFuc(db) {
 
 ### 16.5.6 与 Promise、Generator 的比较
 **说明：**通过一个案例进行比较
+
 **案例：**某个 `DOM` 元素上面，部署了一系列的动画，前一个动画结束，才能开始后一个。如果当中有一个动画出错，就不再往下执行，返回上一个成功执行的动画的返回值
 
 #### Promise 实现
 **优点：**比回调函数的写法大大改进
+
 **缺点：**代码完全都是 `Promise` 的 `API`（`then` 、 `catch`等等），操作本身的语义反而不容易看出来
 
 ```javascript
@@ -935,6 +945,7 @@ function chainAnimationsPromise(elem, animations) {
 
 #### Generator 实现
 **优点：**语义比 `Promise` 写法更清晰
+
 **缺点**
 
 + 必须有一个任务运行器，自动执行 `Generator` 函数
@@ -977,13 +988,16 @@ async function chainAnimationsAsync(elem, animations) {
 
 ## 16.6 异步遍历器
 **背景：** `Iterator`接口提供的 `next()`调用后需要同步地取得 `{value, done}`，但如果执行的是异步操作，无法同步地取得 `{value, done}`。
+
 **目前的解决方法（以 Generator 为例）：** `Generator` 函数里面的异步操作，返回一个 `Thunk` 函数或者 `Promise` 对象，即 `value` 属性是一个 `Thunk` 函数或者 `Promise` 对象，等待以后返回真正的值，而 `done` 属性则还是同步产生的
 
 **异步遍历器：**为异步操作提供原生的遍历器接口，即 `value` 和 `done` 这两个属性都是异步产生
+
 **兼容性：**提案阶段
 
 ### 16.6.1 异步遍历的接口
 **部署：**部署在 `Symbol.asyncIterator` 属性上
+
 **使用：**异步便利器的 `next()` 返回一个 `Promise` 对象，可以在随后的 `then` 中提供回调获取 `value` 和 `done`
 
 ```javascript
@@ -1009,7 +1023,9 @@ for await (const line of readLines(filePath)) {
 
 ### 16.6.3 异步Generator函数
 **说明：**返回一个异步遍历器对象
+
 **语法：** `async` 函数与 `Generator` 函数的结合
+
 **注意：**普通的 `async` 函数返回的是一个 `Promise` 对象，而异步 `Generator` 函数返回的是一个异步 `Iterator` 对象。
 
 ```javascript

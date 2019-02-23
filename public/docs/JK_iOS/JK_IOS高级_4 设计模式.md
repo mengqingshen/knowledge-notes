@@ -114,6 +114,7 @@ BusinessCardAdapter *modelAdapter = [[CardAdapter alloc] initWithData:model];
 
 ### 4.2.4	适配器模式的优缺点
 **优点：**降低数据层和视图层之间的耦合度
+
 **缺点：**对不理解适配器模式的人可读性不好
 
 
@@ -227,6 +228,7 @@ BusinessCardAdapter *modelAdapter = [[CardAdapter alloc] initWithData:model];
 
 ### 4.3.4	策略模式的优缺点
 **优点：**避免大量`if-else`的使用，精简逻辑，可维护性高
+
 **缺点：**使用场景受限，使用之前就需要确定对应的策略。
 
 ## 4.4	观察者

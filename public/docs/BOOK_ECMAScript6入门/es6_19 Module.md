@@ -163,6 +163,7 @@ foo()
 + 如果在一个模块之中，先输入后输出同一个模块，`import`语句可以与`export`语句写在一起（不推荐，可读性不好）
 
 **扩展：**ES7有一个[提案](https://github.com/leebyron/ecmascript-more-export-from)，简化先输入后输出的写法，拿掉输出时的大括号
+
 **技巧：**`import`语句会执行所加载的模块，可以只执行不输入
 
 ```javascript
@@ -221,6 +222,7 @@ export default 42;
 ```
 # 6 模块的继承
 **说明：**模块之间也可以继承
+
 **注意：**`export *`命令会忽略`circle`模块的`default`方法
 
 ```javascript
@@ -290,6 +292,7 @@ $ compile-modules convert -o out.js file1.js
 
 ## 10.2 SystemJS
 **用途：**一个垫片库（`polyfill`），可以在浏览器内加载`ES6`模块、`AMD`模块和`CommonJS`模块，将其转为`ES5`格式
+
 **说明：**它在后台调用的是`Google`的`Traceur`转码器
 
 *app/es6-file.js：定义模块*

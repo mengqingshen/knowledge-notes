@@ -5,12 +5,15 @@ categories:
 ---
 
 **视频地址：**http://www.jikexueyuan.com/course/1504.html
+
 **练习 DEMO：**https://coding.net/u/eli01/p/REACT_NATIVE_PRACTICE/git/tree/master/RN_FOR_JK_HelloWorld
 
 # 1	React Native介绍
 `Learn Once, Write Anywhere.`
 **介绍：**`React Native`是facebook在2015 React开发者大会上公开的应用开发框架，一个可以用`React`开发原生应用的框架。
+
 **意义：**Web和Native的结合是未来，目前对于这种跨端开发方式而言，React Native应该是首选方案。
+
 **案例：**
 1. Facebook Group
 2. 天猫ipad
@@ -41,7 +44,9 @@ categories:
 
 ## 1.1	React
 **说明：**是一套前端JacaScript框架，由Facebook开源。
+
 **特点：**JSX语法，组件化模式，Virtual DOM，单向数据流。
+
 **基本模式：**每个React应用可视为组件的组合，而每个React组件由属性（property）和状态（state）来配置，当状态发生变化时更新UI，组件的结构是由虚拟的DOM来维护的，确保了实际更新的DOM只包括真正产生了状态变化的部分。
 ```js
 var Hello = React.createClass({

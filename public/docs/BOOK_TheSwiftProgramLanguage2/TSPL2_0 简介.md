@@ -7,6 +7,7 @@ tag:
 ---
 ## 0.1	关于Swift(About Swift)
 **用途：**编写`IOS`、`OS X`、`watchOS`应用程序
+
 **特点归纳：**
 
 + 基于`Cocoa`和`Cocoa Touch`框架
@@ -40,6 +41,7 @@ let explicitDouble:Double = 70
 
 #### 0.2.1.3	显示转换（在表达式中）
 **说明：**表达式中的值任何时候都不会发生隐式转化。需要转换为其它类型必须进行显示转换。
+
 **特别：**`\(变量或表达式)`（转换成字符串类型）
 
 ```swift
@@ -513,6 +515,7 @@ let sideLength = optionalSquare?.sideLength
 
 #### 0.2.5.1	枚举
 **关键字：**`enum`
+
 **说明：**swift中的所有命名类型都可以包含方法（包括枚举）。
 
 + 可以不设置枚举值的原始值类型
@@ -629,7 +632,9 @@ let threeOfSpandesDescription = threeOfSpades.simpleDescription()
 
 #### 0.2.6.1	协议
 **关键字：**`protocol`
+
 **说明：**类似于接句，类、枚举、结构体都可以实现协议。
+
 **注意：**
 
 + 使用结构体实现协议时，如果实现的方法会修改结构体，需要用`mutating`标记。
@@ -680,7 +685,9 @@ let bDesctiption = b.simpleDescription
 
 #### 0.2.6.2	扩展
 **关键字：**`extension`
+
 **描述：**为现有的类型添加功能，比如新的方法和计算属性。
+
 **说明：**你可以使用扩展在别处修改定义，甚至是从外部库活着框架引入的一个类型，使得这个类型遵循某个协议。
 
 ```swift
@@ -698,6 +705,7 @@ print(7.simpleDescription)
 
 ### 0.2.7	范型（Generics）
 **描述：**在`<>`中写一个名字来创建一个范型函数或者类型。
+
 **说明：**可以应用于
 
 + 函数

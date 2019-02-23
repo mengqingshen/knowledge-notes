@@ -10,6 +10,7 @@ date: 2016-09-13 11:08
 
 ## 10.1 概述
 **说明：**`ES6`引入了一种新的原始数据类型`Symbol`，表示独一无二的值
+
 **用途：**防止命名冲突
 
 JS的7种数据类型|说明
@@ -78,7 +79,9 @@ var sym = Symbol('My symbol');
 
 ## 10.2 作为属性名的 Symbol
 **说明：**这对于一个对象由多个模块构成的情况非常有用，能防止某一个键被不小心改写或覆盖
+
 **注意：**`Symbol`值作为属性名时，该属性还是公开属性，不是私有属性
+
 **用法**：分为三种
 
 ```javascript
@@ -120,6 +123,7 @@ function getComplement(color) {
 
 ## 10.3 实例：消除魔术字符串
 **魔术字符串：**在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值
+
 **说明：**风格良好的代码，应该尽量消除`魔术字符串`，该由含义清晰的变量代替，如果用哪一个值并不重要，则适合用`Symbol`值
 
 ```javascript
@@ -203,6 +207,7 @@ Object.getOwnPropertySymbols(x) // [Symbol(size)]
 
 ### Symbol.for()
 **说明：**它接受一个字符串作为参数，然后搜索有没有以该参数作为名称的`Symbol`值。如果有，就返回这个`Symbol`值，否则就新建并返回一个以该字符串为名称的`Symbol`值。
+
 **注意：**`Symbol.for`为`Symbol`值登记的名字，是全局环境的，可以在不同的`iframe`或`service worker`中取到同一个值。
 ```javascript
 var s1 = Symbol.for('foo');
@@ -235,6 +240,7 @@ Symbol.keyFor(s2) // undefined
 
 ### 10.6.1 挂载到 global
 **说明：**其中一个办法就是把实例放到顶层对象`global`（nodejs）或`window`（浏览器）。
+
 **缺点：**`global`或`window`上面的任何属性都可以被轻易覆盖。
 
 *单例模块*
@@ -257,6 +263,7 @@ global._foo = 123;
 
 ### 10.6.2 使用Symbol
 **说明：**因为开发者在外部不会故意用一个某个`Symbol`值定义变量，因此使用`Symbol`就避免了那种无意的覆盖。
+
 **注意：**如果要避免用户有意的覆盖，可以使用`Symbol()`而不是`Symbol.for()`，但这样在`node`平台会存在隐患，就是用户如果手动清除了`node`的缓存，那么将引用不到这个单例
 
 ```javascript
@@ -293,6 +300,7 @@ module.exports = global[FOO_KEY];
 
 ## 10.7.1 Symbol.hasInstance
 **指向的value类型：**`function`
+
 **说明：**使用`instanceof`时会调用定义类时以该值命名的方法
 
 *Demo1*
@@ -323,9 +331,13 @@ class Even {
 
 ## 10.7.2 Symbol.isConcatSpreadable
 **指向的value类型：**`boolean`
+
 **说明：**拼接数组时，对象作为参数传递给`Array.prototype.concat()`时，是否展开
+
 **访问形式：**实例属性
+
 **注意：**默认情况下`value`为`undefined`，此时和值为`true`效果相同
+
 **扩展：**`类数组对象`也可以拼接给数组，不同于数组，其`Symbol.isConcatSpreadable`默认为`false`（不展开）
 
 *方式一：给数组或对象直接指定该属性值：针对数组或类数组对象：*
@@ -367,6 +379,7 @@ a2[1] = 6;
 
 ## 10.7.3 Symbol.species
 **指向的value类型：**`function`
+
 **说明：**如果`this.constructor[Symbol.species]`存在，就会使用这个属性作为构造函数，来创造新的实例对象
 
 *默认的`getter`*
@@ -378,6 +391,7 @@ static get [Symbol.species]() {
 
 ## 10.7.4 Symbol.match
 **指向的value类型：**`function`
+
 **说明：**当执行`str.match(myObject)`时，如果该属性存在，会调用它，返回该方法的返回值
 
 ```javascript
@@ -392,11 +406,13 @@ class MyMatcher {
 
 ## 10.7.5 Symbol.replace
 **指向的value类型：**`function`
+
 **说明：**当该对象被`String.prototype.replace`方法调用时，会返回该方法的返回值
 
 
 ## 10.7.6 Symbol.search
 **指向的value类型：**`function`
+
 **说明：**当该对象被`String.prototype.search`方法调用时，会返回该方法的返回值
 
 ```javascript
@@ -413,11 +429,13 @@ class MySearch {
 
 ## 10.7.7 Symbol.split
 **指向的value类型：**`function`
+
 **说明：**当该对象被`String.prototype.split`方法调用时，会返回该方法的返回值
 
 
 ## 10.7.8 Symbol.iterator
 **指向的value类型：**`function`
+
 **说明：**指向该对象的默认遍历器方法
 
 ```javascript
@@ -444,6 +462,7 @@ for(let value of myCollection) {
 
 ## 10.7.9 Symbol.toPrimitive
 **指向的value类型：**`function`
+
 **说明：**对象被转为原始类型的值时，会调用这个方法，返回该对象对应的原始类型值
 
 三种模式|说明
@@ -476,6 +495,7 @@ String(obj) // 'str'
 
 ## 10.7.10 Symbol.toStringTag
 **指向的value类型：**`function`
+
 **说明：**`function`|可以用来定制`[object Object]`或`[object Array]`中object后面的那个字符串
 
 ```javascript
@@ -513,6 +533,7 @@ GeneratorFunction.prototype|`GeneratorFunction`
 
 ## 10.7.11 Symbol.unscopables
 **指向的value类型：**`object`
+
 **说明：**指定了使用`with`关键字时，哪些属性会被`with`环境排除
 
 *观察内置对象类型（以`数组`为例）*

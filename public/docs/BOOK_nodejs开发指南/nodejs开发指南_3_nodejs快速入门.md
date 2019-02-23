@@ -76,6 +76,7 @@ $ supervisor app.js    ---用supervisor的方式创建服务器
 
 # 2 异步式I/O与事件式编程
 **说明**：控制流很大程度上靠事件和回调函数来组织。
+
 **注意**：I/O操作不占用CPU资源。
 
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897522679347.jpg)
@@ -322,6 +323,7 @@ $ npm i express
 
 ### 创建全局链接
 **说明**：解决全局模式安装的包不能通过`require`引用的问题
+
 **注意**：不支持`windows`
 
 **全局包转本地包**

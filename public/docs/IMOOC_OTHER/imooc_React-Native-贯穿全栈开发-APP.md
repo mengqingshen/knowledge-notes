@@ -1228,7 +1228,9 @@ uploadContainer: {
 ```
 
 **轮播去掉容器样式**
+
 **轮播按钮有些丑**
+
 **imoocApp/app/creation/index.js**
 
 ```js
@@ -1340,6 +1342,7 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 ### 5.6.2 Rap 和 Mockjs
 
 **Rap**: 处理网络请求和输入数据规则。
+
 **Mockjs**: 本地解析数据规则来生成更佳个性化的具体数据，避免大量数据传输的体积。
 
 
@@ -1773,6 +1776,7 @@ const styles = StyleSheet.create({
 
 ## 7.6 RN 的 AsyncStorage 异步存储
 **说明**: RN 官方为我们提供了 AsyncStorage 这个异步持久化方案，它采用键值对存储系统，跟浏览器的 localStorage 本地存储有相似之处。
+
 **注意**: 官方是建议我们对 AsyncStorage 进行抽象封装之后再使用，而不是直接使用它，因为 AsyncStorage 是全局操作的。
 
 

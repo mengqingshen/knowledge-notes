@@ -10,6 +10,7 @@ tag:
 ## 2.1 React Native 是如何工作的？
 ### 2.1.1 React 的一个特 点:Virtual DOM
 **用途：**执行 Virtual DOM 的计算,减少浏览器 DOM 的重复渲染
+
 **潜力：**潜力在于提供了强大的抽象能力。在开 发者的代码与实际的渲染之间加入一个抽象层,这带来了很多可能性。
 ![Alt text](http://cdn.mengqingshen.com/img/1473752946136.png)
 
@@ -21,7 +22,9 @@ tag:
 
 ## 2.2 渲染周期
 **说明：** `React`的
+
 **注意：**至于 `React Native`,生命周期与 `React` 基本相同,但渲染过程有一些区别
+
 **React 组件挂载过程**
 ![Alt text](http://cdn.mengqingshen.com/img/1473753275389.png)
 
@@ -32,6 +35,7 @@ tag:
 
 ###  2.3.1 编写视图
 **DEMO：**[https://github.com/facebook/react- native#examples](https://github.com/facebook/react- native#examples)
+
 **web与React Native 基础元素比较**
 
 React| React Native
@@ -71,6 +75,7 @@ React.render(React.createElement(HelloMessage, { name: "Bonnie" }), mountNode);
 
 ### 2.3.3 原生组件的样式
 **DEMO：**[https:// github.com/facebook/react-native/tree/master/Examples/UIExplorer](https:// github.com/facebook/react-native/tree/master/Examples/UIExplorer)
+
 **说明：**`React` 和宿主平台之间的“桥接”包含了一 个`缩减版 CSS 子集`的实现。这个 `CSS `子集主要通过 `flexbox`进行布局,做到了尽量简单 化,而不是去实现所有的 `CSS` 规则。
 
 ```javascript

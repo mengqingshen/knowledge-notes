@@ -9,6 +9,7 @@ date: 2016-10-06 20:49
 
 ## 12.1 Proxy概述
 **说明：**在目标对象之前架设一层`拦截`，外界对该`对象`或`函数`的访问，都必须先通过这层拦截，因此提供了一种机制，可以对外界的访问进行过滤和改写
+
 **注意：**要使得Proxy起作用，必须针对`Proxy实例`进行操作，而不是针对目标对象进行操作。
 
 ### Proxy构造函数
@@ -286,6 +287,7 @@ var p = new Proxy(obj, {
 
 ### 12.2.4 deleteProperty(target, propKey)
 **功能：**拦截`delete`操作
+
 **注意：**如果这个方法`抛出错误`或者`返回false`，当前属性就无法被`delete`命令删除
 
 *Demo：删除内部属性（第一个字符为`_`的属性）会报错*
@@ -357,6 +359,7 @@ Object.getOwnPropertyDescriptor(proxy, 'baz')
 
 ### 12.2.7 defineProperty(target, propKey, propDesc)
 **功能：**拦截了`Object.defineProperty`操作
+
 **注意：**返回false，导致添加新属性会抛出错误
 
 ```javascript
@@ -373,7 +376,9 @@ proxy.foo = 'bar'
 
 ### 12.2.8 preventExtensions(target)
 **功能：**拦截`Object.preventExtensions()`。该方法必须返回一个布尔值
+
 **限制：**只有当`Object.isExtensible(proxy)`为`false`（即不可扩展）时，`proxy.preventExtensions`才能返回`true`，否则会报错
+
 **技巧：**为了防止出现`限制`中提到的问题，通常要在`proxy.preventExtensions`方法里面，调用一次`Object.preventExtensions`
 
 ```javascript
@@ -411,6 +416,7 @@ Object.getPrototypeOf(p) === proto // true
 
 ### 12.2.10 isExtensible(target)
 **功能：**拦截`Object.isExtensible`操作
+
 **限制：**这个方法有一个强限制，如果不能满足下面的条件，就会抛出错误
 
 ```javascript
@@ -445,6 +451,7 @@ proxy.setPrototypeOf(proxy, proto);
 
 ### 12.2.12 apply(target, ctx, args)
 **功能：**拦截`函数的调用`、`call`和`apply`操作
+
 **注意：**直接调用`Reflect.apply`方法，也会被拦截
 
 参数|类型|说明
@@ -471,6 +478,7 @@ Reflect.apply(proxy, null, [9, 10]) // 38（直接调用Reflect.apply方法，�
 
 ### 12.2.13 construct(target, args)
 **功能：**用于拦截`new`命令
+
 **注意：**`construct`方法返回的必须是一个对象，否则会报错
 参数|说明
 -|-

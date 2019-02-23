@@ -132,6 +132,7 @@ try-catch
 #### 1、为什么要使用DOM
 
 **问题：**IE4和Navigator4支持不同形式的DHTML，需要加以控制。
+
 **解决：**负责制定Web通信标准的W3C开始着手规划DOM.
 
 #### 2、DOM级别

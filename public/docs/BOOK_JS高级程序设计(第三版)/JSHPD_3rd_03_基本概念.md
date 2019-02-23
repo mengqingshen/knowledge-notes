@@ -151,6 +151,7 @@ var message = "hi",
 ### 3.4.1 typeof操作符
 
 **说明：**检测给定变量的数据类型，返回字符串
+
 **注意：**
 
 - null被认为是一个空对象；
@@ -201,6 +202,7 @@ alert(typeof age);//"undefined"
 
 
 **特点：**    只有一个值（null）得数据类型
+
 **null:**   空对象指针
 
 ```js
@@ -227,6 +229,7 @@ alert(null == undefined);//true
 
 ### 3.4.4 Boolean类型
 **两个字面值:    true和false**区分大小写
+
 **各种类型转换为Boolean类型：**
 
 ![Alt text](http://cdn.mengqingshen.com/1450437407740.png)
@@ -297,6 +300,7 @@ alert(NaN == NaN);//false
 ### 3.4.6 String类型
 
 **说面：**    用于表示由零个或多个16位Unicode字符组成的字符序列
+
 **注意：**以单引号开头必需以单引号结尾，双引号亦。
 
 #### 1. 字面直接量
@@ -334,6 +338,7 @@ alert(num.toString(16));//"a"
 
 ### 3.4.7 Object 类型
 **注意：**ECMA-262不负责定义宿主对象，因此BOM和DOM中的宿主对象可能会也可能不会继承Object。
+
 **Object的每个实例都具有下列属性和方法：**
 
 - Constructor：    保存着用于创建当前对象的函数；
