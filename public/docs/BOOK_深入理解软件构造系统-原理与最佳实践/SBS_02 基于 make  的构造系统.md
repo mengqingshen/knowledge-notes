@@ -6,11 +6,11 @@ tag:
     - 构造系统
 ---
 
-# 1 示例
+## 1 示例
 书没有提供源码，我自己提供了另外一个 c++ 的[例子](https://github.com/laputa-er/C-PLUS-PLUS_STUDY/tree/master/IMOOC_C-PLUS-PLUS/l05_class_polymorphism/0402_RTTI)。
 
 
-## 项目目录
+### 项目目录
 ```bash
 .
 ├── Bird.cpp
@@ -22,7 +22,7 @@ tag:
 └── makefile
 ```
 
-## 依赖关系图
+### 依赖关系图
 程序有两个类，Plane 和 Bird，他们继承了一个公共的抽象类 Flayable。
 ![](http://cdn.mengqingshen.com/SBS_02%20%E5%9F%BA%E4%BA%8E%20make%20%20%E7%9A%84%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F/5930A389-B098-4396-A7B2-834A5AA83817.png)
 
@@ -30,7 +30,7 @@ tag:
 ![](http://cdn.mengqingshen.com/SBS_02%20%E5%9F%BA%E4%BA%8E%20make%20%20%E7%9A%84%E6%9E%84%E9%80%A0%E7%B3%BB%E7%BB%9F/0D4E3353-A787-46BF-B5A1-1E272856CF03.png)
 其中，`.cpp(.c)`文件都有对应的 .o 文件，但 `.h` 文件没有对应的目标文件，而是被引入到 `.cpp(.c)`文件中。
 
-# 2 创建一个简单的 makefile
+## 2 创建一个简单的 makefile
 说明：makefile 通过一条条规则描述，一条规则用来完成相应的动作。规则的基本语法为
 
 ```bash
@@ -55,7 +55,7 @@ Bird.o: Bird.cpp Bird.h Flyable.h
 ```
 
 
-# 3 对这个 makefile 进行简化
+## 3 对这个 makefile 进行简化
 下面逐步对之前的 demo 进行修改：
 (1) GNU Make 对常见的操作提供了内置规则。
 例如编译时，如果采用默认的编译输出，编译过程的规则描述可以简化，如下
@@ -63,7 +63,7 @@ Bird.o: Bird.cpp Bird.h Flyable.h
 ```bash
 demo: main.o Bird.o Plane.o
 	g++ -o demo main.o Bird.o Plane.o
-# 仅提供依赖描述
+## 仅提供依赖描述
 main.o: Plane.h Bird.h
 Plane.o Bird.o: Flyable.h # 规则名部分可以是多个文件，用空格分开
 Plane.o: Plane.h
@@ -88,7 +88,7 @@ Plane.o: Plane.h Flyable.h
 Bird.o: Bird.h Flyable.h
 ```
 
-# 4 额外的构造任务
+## 4 额外的构造任务
 构造系统能做的不仅是是编译程序，也可以处理其它事务，包括删除文件，拷贝文件等。
 例如，两个最常见的操作是“清空”和“安装”。
 
@@ -112,7 +112,7 @@ install:
 	cp $(PROG) $(INSTALL_ROOT)/bin
 ```
 
-# 5 框架的运用
+## 5 框架的运用
 程序越复杂，构造系统就越复杂，makefile 也随之变得复杂。为了方便维护，可以将需要配置的部分放在 makefile 中，其它部分封装在`框架(.mk)`文件，并引入到 makefile 中。例如：
 
 makefile

@@ -6,8 +6,8 @@ tag:
 date: 2014-11-03 16:43:36
 ---
 
-# 1 全局对象（global）
-## 1.1 全局对象与全局变量
+## 1 全局对象（global）
+### 1.1 全局对象与全局变量
 **技巧**：永远使用 var 定义变量以避免全局变量，因为全局变量会污染命名空间，提高代码的耦合风险。
 
 **全局变量（ECMAScript）**
@@ -16,7 +16,7 @@ date: 2014-11-03 16:43:36
 + 全局对象的属性；
 + 隐式定义的变量（未定义直接赋值的变量）。
 
-## 1.2 process(全局变量)
+### 1.2 process(全局变量)
 **说明**：用于描述当前Node.js进程状态的对象，提供与操作系统的简单接口，常用在本地程序中。
 
 成员方法（仅列举几个）|说明
@@ -26,17 +26,17 @@ process.stdout|标准输出流
 process.stdin|标准输入流
 process.nextTick(calback)|针对占用大量CPU时间的事件进行拆分的工具
 
-## 1.3 console
+### 1.3 console
 成员方法|列举几个
 ---|---
 console.log() |标准输出
 console.error()|标准错误输出
 console.trace()|向标准错误流输出当前的调用栈
 
-# 2 常用工具util
+## 2 常用工具util
 util是一个Node.js核心模块，提供常用函数的集合。
 
-## 2.1 util.inherits
+### 2.1 util.inherits
 **用途**：实现原型继承的函数
 
 **参数（2）**：子类，父类
@@ -75,7 +75,7 @@ objSub.showName();    //sub
 objSub.sayHello();    //报错
 console.log(objSub);    //{name:'sub'}
 ```
-## 2.2 util.inspect
+### 2.2 util.inspect
 **用途**：将任意对象转换为字符串的方法，通常用于调试和错误输出。
 
 **参数（1[3]）**：object, [showHidden], [depth], [colors]
@@ -87,19 +87,19 @@ console.log(objSub);    //{name:'sub'}
 
 **特点**：不会调用 `toString()` 方法，不会将对象简单的转化为字符串
 
-## 2.3 类型测试相关
+### 2.3 类型测试相关
 util.isArray()
 util.isRegExp()
 util.isDate()
 util.isError()
-## 2.4 其它
+### 2.4 其它
 util.format()
 util.debug()
 
 
-# 3 事件驱动events（几乎被所有模块依赖）
-## 3.1 事件发射器
-### events.EventEmitter
+## 3 事件驱动events（几乎被所有模块依赖）
+### 3.1 事件发射器
+#### events.EventEmitter
 **说明**：事件发射与事件监听功能的封装
 
 **特点**：每个事件支持注册多个监听器，按照注册的顺序被调用
@@ -128,7 +128,7 @@ emitter.on('someEvent', function(arg1, arg2){
 //发射事件
 emitter.emit('someEvent', 'byvoid', 1991);//会一次调用两个监听器
 ```
-## 3.2 error事件
+### 3.2 error事件
 **说明**：EventEmitter定义的一个特殊的事件
 
 **注意**：如果没有响应的监听器，会退出程序并打印调用栈
@@ -141,14 +141,14 @@ var emitter = new events.EventEmitter();
 emitter.emit('error');    //导致程序崩溃
 ```
 
-## 3.3 继承EventEmitter
+### 3.3 继承EventEmitter
 
 支持事件响应的核心模块都是EventEmitter的子类。
 
-# 4 文件系统fs
+## 4 文件系统fs
 **特点**：所有操作都提供了同步和异步两个版本。
 
-## 4.1 fs.readfile
+### 4.1 fs.readfile
 
 `fs.readFile(filename, [encoding], [callback(err, data)])`
 
@@ -192,7 +192,7 @@ fs.readFile('content.txt','utf-8', function(err, data){
 });
 ```
 
-## 4.2 fs.readFileSync
+### 4.2 fs.readFileSync
 `fs.readFileSync(filename, [encoding])`
 **说明**：fs.readFile同步的版本
 
@@ -200,7 +200,7 @@ fs.readFile('content.txt','utf-8', function(err, data){
 
 **特点**：如果有错误发生，fs将会抛出异常，需要用 try-catch 进行处理
 
-## 4.3 fs.open
+### 4.3 fs.open
 `fs.open(path, flags, [mode], [callback(err, fd)])`
 **说明**： POSIX open函数的封装
 
@@ -211,7 +211,7 @@ fs.readFile('content.txt','utf-8', function(err, data){
 3|[mode]|创建文件时指定文件权限，默认0666|r（读取）、r+（读写）、w（写入，不存在则创建）、w+（读写，不存在则创建）、a（追加，不存在则创建 ）
 4|[callback(err, fd)]|err:如果出错，会是一个Err对象的实例。fd：文件描述符|一个非负整数，表示当前进程维护的打开文件的记录索引
 
-# 4 fs.read(不推荐)
+## 4 fs.read(不推荐)
 `fs.read(fs, buffer, offset, length,position, [callback(err, bytesRead, buffer)])`
 **说明**：POSIX read函数的封装
 
@@ -225,7 +225,7 @@ fs.readFile('content.txt','utf-8', function(err, data){
 4|length|从文件中读取的字节数
 5|position|文件读取的起始位置（如果position的值为null，则会从当前文件指针的位置读取）
 
-# 6 [callback(err, bytesRead, buffer)]
+## 6 [callback(err, bytesRead, buffer)]
 回调函数传递bytesRead和buffer，分别表示读取的字节数和缓冲区对象
 
 ```JS
@@ -251,14 +251,14 @@ fs.open('content.txt', 'r', function(err, fd){
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897570929764.jpg)
 
  
-# 5 HTTP服务器与客户端
+## 5 HTTP服务器与客户端
 `http.Server`: 一个基于事件的HTTP服务器，核心由Node,js下层C++部分实现，接口由JS封装
 `http.request`: 一个HTTP客户端工具，用于向HTTP服务器发起请求，例如实现Pingback或者内容抓取
 
-## 5.1 HTTP服务器
+### 5.1 HTTP服务器
 用Node.js做的所有基于HTTP协议的系统都是基于http,Server实现的。
 
-### http模块相关方法和属性
+#### http模块相关方法和属性
 
 `http.createServer(reqHandler)
 `：创建一个http.Server实例
@@ -283,7 +283,7 @@ http.createServer(function(req, res){
 }).listen(3000);
 console.log('HTTP server is listening at port 3000.');
 ```
-### http.Server的事件
+#### http.Server的事件
 **常用**
 
 事件名|触发|传给处理函数的参数|备注
@@ -310,7 +310,7 @@ var server = new http.Server();
 server.listen(3000);
 console.log('HTTP Server is listening at port 3000');
 ```
-### http.ServerRequest
+#### http.ServerRequest
 **说明**：HTTP请求的信息，通常作为一个参数（req）传递给request事件的处理函数
 
 **qu**：请求头和请求体
@@ -324,7 +324,7 @@ close|请求结束||用户强制终止传输还是会调用close（不同于end�
 **属性**
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897577156045.jpg)
 
-### 获得get请求内容
+#### 获得get请求内容
 
 `url.parse(urlStr, [parseQueryString], [slashesDenoteHost])`
 **特点**：GET 请求的请求内容在URL中
@@ -356,7 +356,7 @@ path:'/user?name=byvoid&email=byvoid@byvoid.com',    //路径
 href:'/user?name=byvoid&email=byvoid@byvoid.com'}
 ```
 
-### 获取post请求的内容
+#### 获取post请求的内容
 
 `querystring.parse(str, [sep], [eq], [options])`
 **说明**：将请求体字符串转化为真正的POST请求格式，然后向客户端返回
@@ -386,7 +386,7 @@ res.end(util.inspect(post));
 }).listen(3000);
 ```
 
-### http.ServerResponse
+#### http.ServerResponse
 **说明**：HTTP响应给客户端的信息，通常作为一个参数（res）传递给request事件的处理函数
 
 成员方法|参数|用途|备注
@@ -395,10 +395,10 @@ response.writeHead(statusCode, [headers])|HTTP状态码，包含响应头的对�
 response.write(data, [encoding])|要发送的内容（Buffer或者字符串），编码类型|向客户端发送响应内容|可以多次调用（必须在response.end()被调用之前）
 response.end([data], [encoding])|同response.write 结束响应|必需被调用一次（否则客户端将永远处于等待状态）
 
-## 5.2 HTTP客户端
+### 5.2 HTTP客户端
 模拟客户端向HTTP服务器发起请求。
 
-### http.request(options, [callback])
+#### http.request(options, [callback])
 **用途**：发起HTTP请求。
 
 **返回值**：：http.ClientRequest的实例
@@ -458,7 +458,7 @@ array(3){
 }
 ```
 
-### http.get(options, callback)
+#### http.get(options, callback)
 **说明**：专门用来处理GET请求，http.request的简化版
 
 **参数（2）**：同http.request
@@ -481,7 +481,7 @@ http.get({host:'www.byvoid.com'}, function(res){
 });
 ```
 
-### http.ClientRequest
+#### http.ClientRequest
 **说明**：`http.request()`或`htttp.get()`的返回值，表示一个正在进行中的 HTTP 请求
 
 **为request事件绑定事件处理程序**
@@ -516,7 +516,7 @@ request.setTimeout(timeout, [callback])|毫秒数，超时后的回调函数|设
 + request.setSocketKeepAlive([enable], [initialDelay])
 + 等
 
-### http.ClientResponse
+#### http.ClientResponse
 **说明**：对客户端的响应可以理解成来自服务器的请求（有点别扭），所以类似http.ServerRequest
 
 **相关事件**（同http.ServerRequest）

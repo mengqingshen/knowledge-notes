@@ -7,10 +7,10 @@ tag:
 date: 2014-08-29 17:55:08
 ---
 
-# 1 理解对象
-## 1.1 属性类型
+## 1 理解对象
+### 1.1 属性类型
 
-### 数据属性(ecma-262第五版)
+#### 数据属性(ecma-262第五版)
 用于实现JavaScript引擎，JavaScript不能直接访问
 
 **[[Configurable]]**: true（默认）或false, 限制以下行为
@@ -35,7 +35,7 @@ date: 2014-08-29 17:55:08
 
 **[[Value]]**: undefined（默认）或属性的数据值
 
-### 修改数据属性 Object.defineProperty()
+#### 修改数据属性 Object.defineProperty()
 
 调用该方法时，如果不指定，configurable、enumerable 和 writable 特性的默认值都是 false。
 
@@ -90,7 +90,7 @@ Object.defineProperty(persion, "name", {
 ```
 
 
-### 访问器属性
+#### 访问器属性
 
 读取访问器属性时调用 `getter` 函数，写入访问器属性时调用 `setter` 函数
 
@@ -178,7 +178,7 @@ book.year = 2005;
 alert(book.edition);//2
 ```
 
-## 1.2 定义多个属性(ECMAScript5)
+### 1.2 定义多个属性(ECMAScript5)
 
 ```js
 IE9+  Firefox 4+  Safari 5+ Opera 12+ Chrome
@@ -207,7 +207,7 @@ Object.defineProperties(book, {
 });
 ```
 
-## 1.3 读取实例对象属性的特性 Object.getOwnPropertyDescriptor()
+### 1.3 读取实例对象属性的特性 Object.getOwnPropertyDescriptor()
 
 ```js
 IE9+  Firefox 4+  Safari 5+ Opera 12+ Chrome
@@ -240,8 +240,8 @@ alert(descriptor.enumerable);    //false
 alert(typeof descriptor.get);    //"function"
 ```
 
-# 2 创建对象
-## 2.1 工厂模式
+## 2 创建对象
+### 2.1 工厂模式
 ```js
 function createPersion(name, age, job){
     var o = new Object();
@@ -257,7 +257,7 @@ var persion1 = createPersion('Nicolas', 29, 'Software Engineer');
 var persion2 = createPersion('Gerg', 27, 'Doctor');   
 ```
 
-## 2.2 构造函数模式
+### 2.2 构造函数模式
 
 ```js
 不显示创建对象
@@ -309,7 +309,7 @@ o.sayName();    //'Kristen'
 
 缺点：每个方法在每个实例上都要重复创建一遍！
 
-## 2.3 原型模式
+### 2.3 原型模式
 每个函数都有一个 prototype (原型)属性，这个属性是一个指针，指向一个对象，而这个对象的用途是包含可以由特定类型的所有实例共享的属性和方法。所有对象实例共享它所包含的属性和方法。
 
 ```js
@@ -330,7 +330,7 @@ persion2.sayName();//'Nicholas'
 alert(persion1.sayName == persion2.sayName);    //true
 ```
 
-### 理解原型对象
+#### 理解原型对象
 
 **prototype、constractor、_proto_**
 
@@ -362,7 +362,7 @@ alert(Object.getPrototypeOf(persion1) == Persion.prototype);     //true
 继承自Object,用于检测一个属性存在于实例中还是原型中。
 
 
-### 原型与in操作符
+#### 原型与in操作符
 
 ```
 ☑︎ 通过对象能够访问给定属性（实例或原型中的）时返回true
@@ -439,7 +439,7 @@ var keys = Object.getOwnPropertyNames(Persion.prototype);
 alert(keys);    //'constructor, name, age, job, sayName'
 ```
 
-### 更简单的原型语法
+#### 更简单的原型语法
 避免每次为原型添加属性都重复一遍 Person.prototype.
 
 ```
@@ -500,7 +500,7 @@ Object.defineProperty(Person.prototype, 'constructor', {
 });
 ```
 
-### 原型的动态性
+#### 原型的动态性
 
 ```
 ☑︎ 对于重写原型之前创建的实例，引用的仍然是之前的原型。
@@ -525,7 +525,7 @@ friend.sayName();    //error
 
 ![B41C999C-6783-4FEA-A757-EAFD81FC6F68](http://cdn.mengqingshen.com/2017-04-09-B41C999C-6783-4FEA-A757-EAFD81FC6F68.png)
 
-### 原生对象的原型
+#### 原生对象的原型
 
 所有原生引用类型（Object、Array、String，等等）都在其构造函数的原型上定义了方法。
 
@@ -547,10 +547,10 @@ var msg = 'Hello World!';
 alert(msg.startWith('Hello'));    //true
 ```
 
-### 原型对象的问题
+#### 原型对象的问题
 实例一般都是要有属于自己的属性，不同实例的属性值如果不一样就不能放到原型中。
 
-## 2.4 组合使用构造函数模式和原型模式(推荐)
+### 2.4 组合使用构造函数模式和原型模式(推荐)
 
 ```
 构造函数模式用于定义实例属性；
@@ -577,7 +577,7 @@ alert(person1.friends);    //'Shelby, Cont, Van'
 alert(person2.friends);    //'Shelby, Count'
 ```
 
-## 2.5 动态原型模式
+### 2.5 动态原型模式
 将所有信息都封装在构造函数中；通过检查某个方法是否有效来决定是否需要初始化原型。
 
 **注意**: 该模式下不能使用对象字面量重写原型，否则某些实例已经创建的情况下重写原型会切断现有实例与新原型之间的联系。
@@ -599,7 +599,7 @@ var friend = new Person('Nicolas',. 29, 'Software Engineer');
 friend.sayName();
 ```
 
-## 2.6 寄生构造函数模式
+### 2.6 寄生构造函数模式
 
 ```
 缺陷
@@ -625,7 +625,7 @@ var colors = new SpecialArray('red', 'blue', 'green');
 alert(colors.toPipedString());    //'red|blue|green'
 ```
 
-## 2.7 稳妥构造函数模式
+### 2.7 稳妥构造函数模式
 
 ```
 ☑︎ 没有公共属性；
@@ -653,13 +653,13 @@ var friend = Person('Nicholas', 29, 'Software Engineer');
 friend.sayName();    //'Nicholas'
 ```
 
-# 3 继承
+## 3 继承
 继承分两类
 
 + 接口继承（JS没有函数签名，因此无法实现）
 + 实现继承
 
-## 3.1 原型链
+### 3.1 原型链
 实现原型链的一种基本模式：
 
 ![C71C6BF1-7718-4DB5-AF08-8B9187226DF0](http://cdn.mengqingshen.com/2017-04-09-C71C6BF1-7718-4DB5-AF08-8B9187226DF0.png)
@@ -760,7 +760,7 @@ alert(instance.getSuperValue());    //error
 ☑︎ 在创建子类型的实例时，不能向超类型的构造函数中传递参数。
 ```
 
-## 3.2 借用构造函数
+### 3.2 借用构造函数
 通过call()方法（或apply()方法）,在（未来将要）新创建的SubType实例的环境下调用SuperType构造函数。
 
 ```js
@@ -804,7 +804,7 @@ alert(instance.age);    //29
 ☑︎ 所有类型只能使用构造函数模式。
 ```
 
-## 3.3 组合继承(推荐)
+### 3.3 组合继承(推荐)
 
 ```
 ☑︎ 避免了原型链和借用构造函数的缺点，融合了它们的优点；
@@ -840,7 +840,7 @@ instance1.sayName();    //'Nicholas'
 instance1.sayAge();    //27
 ```
 
-## 3.4 原型式继承
+### 3.4 原型式继承
 不使用构造函数，借助原型基于已有的对象创建新对象，同时不必因此创建自定义类型。
 
 ```js
@@ -851,7 +851,7 @@ function object(o){
 }
 ```
 
-### Object.create()
+#### Object.create()
 `ECMAScripe 5`
 原型继承被规范化为此方法
 
@@ -880,7 +880,7 @@ alert(anotherPerson.name);    //'Gerg'
 IE9+  Firefox4+ Safari 5+ Opera12+  Chrome
 ```
 
-## 3.5 寄生式继承
+### 3.5 寄生式继承
 寄生式（parasitic）继承是与原型式继承紧密相关的一种思路，即创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象。
 
 ```js
@@ -904,7 +904,7 @@ var anotherPerson = createAnother(person);
 anotherPerson.sayHi();    //'hi'
 ```
 
-## 3.6 寄生组合式继承（最理想）
+### 3.6 寄生组合式继承（最理想）
 ```js
 ☑︎ 只调用一次超类构造函数；
 ☑︎ 避免在超类原型上创建不必要的多余的属性；

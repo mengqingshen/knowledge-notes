@@ -7,12 +7,12 @@ date: 2015-02-01 08:43:40
 typora-copy-images-to: ipic
 ---
 
-# 1 网站
+## 1 网站
 http://news.netcraft.com    # 各类服务器市场份额统计
 http://nginx.org/    # 官方网站
 http://wiki.nginx.org/Chs    # nginx中文wiki
 
-# 2 特性
+## 2 特性
 
 + 高并发：采用最新 epoll(linux2.6内核) 和 kqueue(freeebsd) 网络 i/o 模型，能够支持3w左右并发连接
 + 内存消耗小：Nginx+PHP 在3w并发下，开启10个 Nginx 进程消耗150MB
@@ -20,11 +20,11 @@ http://wiki.nginx.org/Chs    # nginx中文wiki
 + 支持反向代理
 + 成本低廉
 
-# 3 安装
+## 3 安装
 
 centos7(最小安装)
 
-## 基本环境
+### 基本环境
 
 ```bash
 $ ip address show    # 查看联网情况
@@ -39,8 +39,8 @@ $ sudo yum update
 $ sudo yum install net-tools 
 ```
 
-## Nginx
-### 依赖
+### Nginx
+#### 依赖
 
 ```bash
 $ sudo yum install gcc gcc-c++ autoconf automake
@@ -50,7 +50,7 @@ openssl:Nginx提供ssl功能
 pcre:支持地址重写rewrite功能
 ```
 
-### 安装
+#### 安装
 
 ```bash
 $ groupadd -r nginx
@@ -80,14 +80,14 @@ $ make    # 加速编译（make -j [cpu核心数目]）
 $ sudo make install
 ```
 
-### 启动
+#### 启动
 ```bash
 $ /usr/sbin/nginx -c /etc/nginx/nginx.conf    # $ nginx -c /etc/nginx/nginx.conf
 $ ps aux | grep nginx    # 查看主进程
 $ netstat -tunlp | grep nginx    # 查看默认监听的端口
 ```
 
-### 关闭
+#### 关闭
 
 ```bash
 $ kill -QUIT $(cat /var/run/nginx/nginx.pid)    # 从容关闭（正常关闭）
@@ -95,19 +95,19 @@ $ kill-TERM $(cat /var/run/nginx/nginx.pid)    # 快速关闭
 $ kill -9 nginx    # 强制结束所有的nginx进程
 ```
 
-### 重启
+#### 重启
 
 ```bash
 $ kill -HUP $(cat /var/run/nginx/nginx.pid)
 ```
 
-### 检测配置文件语法
+#### 检测配置文件语法
 
 ```bash
 $ /usr/sbin/nginx -t -c /etc/nginx/nginx.conf
 ```
 
-### 使nginx接受service管理
+#### 使nginx接受service管理
 
 ```bash
 $ cd nginx-1.2.5
@@ -122,7 +122,7 @@ $ vim nginx    # 修改默认路径配置，和编译时指定的配置保持一
 $ service nginx restart
 ```
 
-### 配置
+#### 配置
 
 ```bash
 $ grep "physical id" /proc/cpuinfo | sort -u | wc -l    # 查看cpu数量

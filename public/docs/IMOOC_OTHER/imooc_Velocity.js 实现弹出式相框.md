@@ -13,14 +13,14 @@ tag:
 本课程将使用 velocity.js 开发一个弹出式相框。首先和大家一起去认识和了解 velocity.js 强大的动画制作功能，然后通过一些小案例由浅入深地掌握它的的用法，最后通过一个真实案例来体会 velocity.js 在项目开发中的威力。让我们武装上 velocity.js ，从此网页变得生动起来。  
 
 
-# 1 课程介绍（略）
-# 2 Velocity.js 基础
+## 1 课程介绍（略）
+## 2 Velocity.js 基础
 [Velocity.js官网](http://velocityjs.org)
 
-## 2.1 Velocity.js 简介
+### 2.1 Velocity.js 简介
 + 比 css3动画兼容性更好（支持到 IE8 和 Android 2.3）
 
-## 2.2 Velocity.js 基本用法
+### 2.2 Velocity.js 基本用法
 *index.html*
 
 ```html
@@ -58,7 +58,7 @@ tag:
 })(jQuery)
 ```
 
-## 2.3 制作动画序列的三种方法
+### 2.3 制作动画序列的三种方法
  动画序列（顺序执行的一系列动画）可以有三种实现方式：
 
 + 方式一：通过 delay  让后面的动画延迟到前面的动画完成后执行
@@ -134,8 +134,8 @@ var seq = [
 $.Velocity.RunSequence(seq)
 ```
 
-## 2.4 预定义动画和自定义动画
-### 预定义动画（pre-registered effects）
+### 2.4 预定义动画和自定义动画
+#### 预定义动画（pre-registered effects）
 **说明：** `Velocity.js` 预定义的动画，可以在官网查看预定义动画的效果
 
 ![](http://o7m5xjmtl.bkt.clouddn.com/930EE28C-87CC-4D25-826C-862F5797D1ED.png)
@@ -147,7 +147,7 @@ $('div1').on('mouseover', function () {
 })
 ```
 
-### 自定义动画效果
+#### 自定义动画效果
 定义自定义动画效果，有两个方式，用法完全一样:
 1. $.Velocity.RegisterEffect
 2. $.Velocity.RegisterUI
@@ -169,15 +169,15 @@ $('#div2').on('mouseover', function () {
 })
 ```
 
-# 3 弹出式相框案例实现
-## 3.1 卡片正面
+## 3 弹出式相框案例实现
+### 3.1 卡片正面
 ![](http://o7m5xjmtl.bkt.clouddn.com/93B77F5C-4CB9-45E7-977A-8547EC87D031.png)
 
 
-## 3.2 卡片背面
+### 3.2 卡片背面
 ![](http://o7m5xjmtl.bkt.clouddn.com/F7D10F55-D46A-462B-BC35-1877DD81A96C.png)
 
-## 3.3 入场动画和按钮点击后的动画
+### 3.3 入场动画和按钮点击后的动画
 ![](http://o7m5xjmtl.bkt.clouddn.com/imooc_velocityJS_photoframe.gif)
 
 *index.html*

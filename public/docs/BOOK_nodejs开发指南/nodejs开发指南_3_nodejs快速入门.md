@@ -6,8 +6,8 @@ tag:
 date: 2015-01-26 12:31:36
 ---
 
-# 1 开始用Node.js编程
-## 1.1 Hello World
+## 1 开始用Node.js编程
+### 1.1 Hello World
 
 *helloworld.js*
 
@@ -24,7 +24,7 @@ console.log('Hello World!%s:%d.', 'I\'m', 1900);
 $ node helloworld.js
 ```
 
-## 1.2 Node.js命令行工具
+### 1.2 Node.js命令行工具
 
 ```bash
  $ node # help
@@ -32,7 +32,7 @@ $ node helloworld.js
  $ node -e "console.log('Hello World');"    # 将要执行的语句作为 node -e的参数直接执行
 ```
 
-### 使用node的 REPL（Read-eval-print loop）
+#### 使用node的 REPL（Read-eval-print loop）
 
 **说明**: js 的交互 sheel
 
@@ -43,10 +43,10 @@ $ node
 >[CTRL+C]*2 ----退出REPL模式
 ```
 
-## 1.3 建立HTTP服务器
+### 1.3 建立HTTP服务器
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897522386036.jpg)
 
-### 创建一个简单的服务器
+#### 创建一个简单的服务器
 
 ```bash
 $ vim app.js # 写一个http服务器脚本
@@ -67,14 +67,14 @@ console.log('HTTP Server is listening at port 3000');    ---在交互Sheel中打
 $ node app.js   # 创建这个服务器
 ```
 
-### 使用supervision(js代码改动时自动重启nodejs）
+#### 使用supervision(js代码改动时自动重启nodejs）
 
 ```bash
 $ sudo npm install -g supervisor    ----安装supervisor
 $ supervisor app.js    ---用supervisor的方式创建服务器
 ```
 
-# 2 异步式I/O与事件式编程
+## 2 异步式I/O与事件式编程
 **说明**：控制流很大程度上靠事件和回调函数来组织。
 
 **注意**：I/O操作不占用CPU资源。
@@ -82,7 +82,7 @@ $ supervisor app.js    ---用supervisor的方式创建服务器
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897522679347.jpg)
 
 
-## 2.2 回调函数
+### 2.2 回调函数
 
 **案例一**：Node.js中异步方式读取一个文件
 
@@ -117,7 +117,7 @@ console.log(data);
 console.log('end.');
 ```
 
-## 2.3 事件
+### 2.3 事件
 **说明**：事件由 EventEmitter 对象提供，所有的异步I/O操作在完成时都会发送一个事件到事件队列，包括 `fs.readFile` 和 `http.createServer`。
 
 **案例一**：注册一个事件并触发之
@@ -138,7 +138,7 @@ setTimeout(function(){
 }, 1000);
 ```
 
-### Node.js的事件循环机制
+#### Node.js的事件循环机制
 **特点**：
 1. 所有逻辑都是事件的回调函数；
 2. 没有显示的事件循环，libev支持的 ev_io、ev_timer、ev_signal/ev_idle 等均被 EventEmitter 封装；
@@ -147,17 +147,17 @@ setTimeout(function(){
 
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897522845999.jpg)
 
-# 3 模块和包
+## 3 模块和包
 **说明**：Node.js 提供 require 函数来调用其他模块，而且模块都是基于文件的，机制十分简单。实现参照 CommonJS 标准，但并未完全遵守。
 
-## 3.1 什么是模块
+### 3.1 什么是模块
 **说明**：模块和文件（夹）一一对应，可能是 JS 代码、JSON 或者编译过的 C/C++ 扩展。
 
 + `exports`(指定模块公开的接口)
 + `require`(从外部获取一个模块的接口)
 
-## 3.2 创建及加载模块
-### (1) 创建模块
+### 3.2 创建及加载模块
+#### (1) 创建模块
 **案例一**：创建模块，其中的一些方法开放给其它模块
 
 ```bash
@@ -185,10 +185,10 @@ myModule.setName('HYVoid');
 myModule.sayHello();
 ```
 
-### (2) 单次加载
+#### (2) 单次加载
 **说明**：require 不会重复加载模块，多次调用 require 获得的都是同一个模块的实例。
 
-### (3) 覆盖 exports
+#### (3) 覆盖 exports
 
 
 ```bash
@@ -226,7 +226,7 @@ hello.setName('BYVoid');
 hello.sayHello();
 ```
 
-## 3.3 创建包
+### 3.3 创建包
 **说明**：CommonJS 规范的包的特征：
 
 + package.json 必须在包的顶层目录下（必需）；
@@ -235,7 +235,7 @@ hello.sayHello();
 + 文档应该在doc目录下；
 + 单元测试应该在test目录下。
 
-### 作为文件夹的模块(不遵守CommonJS规范)
+#### 作为文件夹的模块(不遵守CommonJS规范)
 
 ```bash
 $ mkdir somepackage # 作为模块的文件夹
@@ -261,7 +261,7 @@ somePackage.hello();
 $ node getPackage.js # 运行
 ```
 
-### package.json（遵守CommonJS）
+#### package.json（遵守CommonJS）
 **说明**：CommonJS 规范用来描述包的文件
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897532257176.jpg)
 
@@ -294,8 +294,8 @@ $ mkdir somepackage/lib
 $ cp -a  somepakge/index.js somepackage/lib/
 ```
 
-## 3.4 Node.js包管理器
-### 获取一个包
+### 3.4 Node.js包管理器
+#### 获取一个包
 **理器**：`npm [install/i] [-g] [package_name]
 `
 ```bash
@@ -304,7 +304,7 @@ or
 $ npm i express
 ```
 
-### 本地模式和全局模式
+#### 本地模式和全局模式
 
 **本地模式（默认）**
 
@@ -321,7 +321,7 @@ $ npm i express
 + 可以在命令行中直接运行模块的bin目录下的二进制文件（被链接到了`/usr/local/bin）`；
 + `require`不会搜索`/usr/local/lib/node_modules`。
 
-### 创建全局链接
+#### 创建全局链接
 **说明**：解决全局模式安装的包不能通过`require`引用的问题
 
 **注意**：不支持`windows`
@@ -341,7 +341,7 @@ $ cd somepackage # 到package.json所在的目录
 $ npm link # 将本地安装的包连接到全局
 ```
 
-### 包的发布
+#### 包的发布
 
 ```bash
 $ npm init    # 根据交互式问答产生一个符合标准的package.json,该标准基于CommonJS但不完全一致
@@ -354,8 +354,8 @@ $ npm install byvoidmodule    # 尝试在任何一台计算机安装发布的包
 $ npm unpublish   # 取消发布
 ```
 
-# 4 调试
-## 4.1 命令行调试(V8)
+## 4 调试
+### 4.1 命令行调试(V8)
 
 ```bash
 $ vim debug.js    ---编写调试文件
@@ -376,7 +376,7 @@ $ node debug debug.js    ----启用调试工具
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897523019710.jpg)
 
 
-## 4.2 远程调试(V8 TCP)
+### 4.2 远程调试(V8 TCP)
 **注意**：默认端口5858
 
 **方式一**：脚本正常执行不会暂停，调试客户端可以连接调试服务器
@@ -398,17 +398,17 @@ $ node --debug-brk debug.js  # 在服务器端启动node.js调试服务器
     debugger listening on port 5858
 $ node debug 127.0.0.1:5885 # 客户端连接调试服务户端连接调试
 ```
-## 4.3 使用Eclipse调试Node.js
+### 4.3 使用Eclipse调试Node.js
 
-### 配置调试环境
+#### 配置调试环境
 (1) 安装JDK和Eclipse：JDK->Eclipse
 (2) Help->Install New Software...->Add...->
 `Location`:http://chromedevtools.googlecode.com/svn/update/dev/
 `Name`:Chrome Developer->Google Chrome Developer Tools
 
-### 使用Eclipse调试Node.js程序
+#### 使用Eclipse调试Node.js程序
 
-## 4.4 使用 node-inspector调试Node.js
+### 4.4 使用 node-inspector调试Node.js
 **说明**：完全基于Node.js的在线调试工具。支持单步、断点调用栈侦察等功能。
 
 ```bash

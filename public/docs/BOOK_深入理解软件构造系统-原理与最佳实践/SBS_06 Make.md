@@ -8,7 +8,7 @@ tag:
 
 诞生：1977
 
-# 1 GNU Make 编程语言
+## 1 GNU Make 编程语言
 GNU Make 语言可以堪称是由 3 种单独的编程语言整合而成，分别是
 
 + 文件依赖：这是一种基于规则的语法，用来描述文件之间的依赖关系。
@@ -31,10 +31,10 @@ touch yourfile.done
 VARS := $(sort $(filter srcs-% cflags-%, $(.VARIABLES)))
 ```
 
-## 1.1 makefile 规则：用来建立依赖关系图
+### 1.1 makefile 规则：用来建立依赖关系图
 **说明：**规则的实际执行状况是由`依赖关系图`和`源文件和标的文件的时间戳`共同决定了。而依赖关系图是根据标的文件名的匹配来实现的，事实上，标的文件可以包含通配符和变量名，因此对匹配规则的查找定位并不总是那么简单。
 
-### makefile 规则语法
+#### makefile 规则语法
 **说明：**一个 makefile 中包含多个规则，每个规则描述如何根据若干`预备输入文件`(prerequisites)，生成特定的`标的文件`(target)。
 
 规则的最基本形式是这样的
@@ -43,7 +43,7 @@ VARS := $(sort $(filter srcs-% cflags-%, $(.VARIABLES)))
 [tab]shell命令序列
 ```
 
-### 依赖关系图
+#### 依赖关系图
 **说明：**依赖关系图决定了某个或某些文件的更新后，哪些规则会被重新执行。
 
 举例说明
@@ -83,10 +83,10 @@ sub.o: sub.c numbers.h
 	gcc -g -c sub.c
 ```
 
-## 1.2 makefile 规则的类型
+### 1.2 makefile 规则的类型
 GNU Make 是一种灵活而强大的语言，包含许多用来表达文件间关系的语法特性。下面就介绍几种常用的
 
-### 1.2.1 多个标的文件
+#### 1.2.1 多个标的文件
 **说明：** 规则的左边可以有多个标的。
 
 **应用：** 当左边的多个标的文件有同样的`预备文件集合`，并且可以由相同的 `shell 命令列表`生成，就可以用这种快捷语法。
@@ -96,7 +96,7 @@ file1.o file2.o: source1.c source2.c source3.c
 	shell命令列表
 ```
 
-### 1.2.2 没有预备文件的规则
+#### 1.2.2 没有预备文件的规则
 **应用：**有时你像定义一个不依赖任何预备文件的标的文件，就可以用这种语法，来定义不与实际磁盘文件关联的`伪标的文件`。
 
 ```bash
@@ -106,7 +106,7 @@ help: # 显示开发人员可以使用的命令清单
 	@echo "       make clean"
 ```
 
-### 1.2.3 有文件名模式的规则
+#### 1.2.3 有文件名模式的规则
 **说明：** 通过使用通配符`%`，一些相似的规则可以合并成一条规则，举例来说
 
 ```bash
@@ -131,7 +131,7 @@ calculator: add.o calc.o mult.o sub.o
 	gcc -g -c $^
 ```
 
-### 1.2.4 只适用于某些文件的规则
+#### 1.2.4 只适用于某些文件的规则
 **说明：**  就是在为上一节的匹配设置匹配范围。
 
 ```bash
@@ -141,7 +141,7 @@ add.o calc.o mult.o sub.o: %.o: %.c # 指定匹配的清单，缩小匹配的范
 	gcc -g -c $^
 ```
 
-### 1.2.5 有相同标文件的多个匹配
+#### 1.2.5 有相同标文件的多个匹配
 **说明：** 虽然可以在一个规则行中，定义标的文件对应的多个预备文件，单如果把他们切分成多个规则，常常更有用。
 
 ```bash
@@ -152,8 +152,8 @@ add.o calc.o mult.o sub.o: %.o: %.c
 %.o: numbers.h # 用来补充预备文件
 ```
 
-## 1.3 makefile 变量
-### 1.3.1 基本用法
+### 1.3 makefile 变量
+#### 1.3.1 基本用法
 **说明：** GNU Make 变量与其它编程语言的变量类似，但有一些独特的行为特征。规则如下
 
 + 变量的值是通过赋值获得的，赋值有多重形式。
@@ -172,10 +172,10 @@ $(info $(MESSAGE) - The files are $(FILES)) // $(info …) # Hello there World -
 
 其中， $(info …) 指令用于在输出设备上显示消息。
 
-### 1.3.2 赋值语句
+#### 1.3.2 赋值语句
 **说明：** 有 3 种赋值语句类型
 
-#### (1) 立即求值
+##### (1) 立即求值
 **操作符：** :=
 
 **说明：**赋值语句的右边经过完全求值，形成常量字符串，然后赋值给左边的变量。
@@ -188,7 +188,7 @@ SECOND := World
 MESSAGE := $(FIRST) $(SECOND)
 ```
 
-#### (2) 延迟求值
+##### (2) 延迟求值
 **操作符：** =
 
 **说明：** 不是立即将其转换为常量字符串，而是知道实际使用变量时再进行求值。
@@ -204,7 +204,7 @@ CC := i386-linux-gcc
 $(info Compiler is $(CCOMP)) # i386-linux-gcc -g
 ```
 
-#### (3) 条件赋值
+##### (3) 条件赋值
 **操作符：**?=
 
 **说明：** 如果变量没有值，才会真正执行赋值，否则什么也不做。
@@ -216,8 +216,8 @@ CFLAGS := -g
 CFLAGS ?= -O # 由于 CFLAGS 已经有了，因此这步赋值会被忽略
 ```
 
-## 1.4 内置变量和规则
-### 1.4.1 自动变量
+### 1.4 内置变量和规则
+#### 1.4.1 自动变量
 **解释：** 内置的变量，变量的值根据随处的环境自动设定，因而称为`自动变量 (automatic variable)`。
 
 列举几个自动变量|值|应用场景
@@ -233,8 +233,8 @@ $(@F)|同$@，标的文件的文件名|自动插入标的文件名
 	gcc -g -o $@ $<
 ```
 
-### 1.4.2 内置规则
-#### (1) 通配符规则
+#### 1.4.2 内置规则
+##### (1) 通配符规则
 
 ```bash
 SRCS := add.o calc.o mult.o sub.o
@@ -246,12 +246,12 @@ OBJS := $(SRCS:.c = .o)
 $(PROG):$(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
 $(OBJS): numbers.h
-# 内置规则 --- 通配符规则，所有目标文件的生成都匹配到这条规则
+## 内置规则 --- 通配符规则，所有目标文件的生成都匹配到这条规则
 $(OBJS): %.o: %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
 ```
 
-#### (2) 隐式规则
+##### (2) 隐式规则
 
 **说明：**所有指定如何将 c 源文件编译成目标文件的规则，都可以从 makefile 中去掉，因为隐士规则已经处理了这种情况。
 
@@ -267,10 +267,10 @@ $(PROG): $(OBJS)
 $(OBJS): numbers.h
 ```
 
-## 1.5 数据结构与函数
+### 1.5 数据结构与函数
 **说明：** 所有GNU Make 变量都是字符串类型，但 GNU Make 提供了许多特性使字符串表达数字、列表、结构等其它数据类型。
 
-### 1.5.1 字符串处理函数
+#### 1.5.1 字符串处理函数
 
 常用的字符串处理函数|功能描述
 ---|---
@@ -290,55 +290,55 @@ LIST_OF_SRCS := calc.c main.c math.h lib.c # 列表
 COLORS := red FF000 green 00FF00 blue 0000FF purple FF00FF # 字典
 ORDERS := 100 green cups 200 blue plates # 结构
 
-# words
+## words
 NUM_FILES := $(words $(LIST_OF_SRCS)) # 4
 
-# word
+## word
 SECOND_FILE := $(word 2, $(LIST_OF_SRCS)) # main.c
 
-# filter
+## filter
 C_SRCS := $(filter %.c, $(LIST_OF_SRCS)) # calc.c main.c lib.c
 
-# patsubst
+## patsubst
 OBJECTS := $(patsubst %.c,%.o, $(C_SRCS)) # calc.o main.o lib.o
 
-# addprefix
+## addprefix
 OBJ_LIST := $(addprefix objs/, $(OBJECTS)) # objs/calc.o objs/main.o objs/lib.o
 
-# foreach
+## foreach
 OBJ_LIST_2 := $(foreach file, $(OBJECTS), objs/$(file)) # objs/calc.o objs/main.o objs/lib.o
 
-# dir
+## dir
 DEFN_PATH := src/headers/idl/interface.idl
 DEFN_DIR := $(dir $(DEFN_PATH)) # src/headers/idl/
 
-# notdir
+## notdir
 DEFN_BASENAME := $(notdir $(DEFN_PATH)) # interface.idl
 
-# shell
+## shell
 PASSWD_OWNER := $(word 3, $(shell ls -l /etc/passwd)) # root
 ```
 
-### 1.5.2 GNU Make 宏
+#### 1.5.2 GNU Make 宏
 **说明：** CNU Make 也有宏这一概念，定义宏和定义变量类似。通过宏，可以为复杂的 GNU Make 表达式命名，并向表达式传递参数。
 
 **应用：** 利用宏编写自己的 GNU Make 函数，有效地扩展基础语言。
 
 ```bash
-# 定义宏：查看文件的大小
+## 定义宏：查看文件的大小
 file_size = $(word 5, $(shell ls -l $(1)))
 
-# 使用宏
+## 使用宏
 PASSWD_SIZE := $(call file_size,/etc/passwd) # 5925
 ```
 
-### 1.5.2 define 指令
+#### 1.5.2 define 指令
 **说明：** 用来定义一个 shell 命令的封装序列。
 
 **应用：** 在 GNU Make 规则中指定要执行的 shell 命令时，就不必每次都写出这些命令，而是通过调用封住序列的形式。
 
 ```bash
-# 使用 define 定义一个 shell 命令的封装序列 start-banner
+## 使用 define 定义一个 shell 命令的封装序列 start-banner
 define start-banner
 	@echo ==============
 	@echo Starting build
@@ -352,8 +352,8 @@ all:
 	$(MAKE) -C lib1
 ```
 
-## 1.6 理解构造程序执行流程
-### 1.6.1 make 命令调用后
+### 1.6 理解构造程序执行流程
+#### 1.6.1 make 命令调用后
 ![](http://cdn.mengqingshen.com/SBS_06%20Make/618FBFA5-B926-482E-8385-01C96C88A858.png)
 
 强调一下，变量在第一阶段赋值，shell 命令在第二阶段执行！
@@ -365,7 +365,7 @@ print:
 X := Goodbye
 ```
 
-### 1.6.2 文件包含和条件编译
+#### 1.6.2 文件包含和条件编译
 **说明：** GNU Make 提供了一些特性，使我们对更灵活地使用调整构造过程 ，它们是
 
 + 文件包含（类似 c 语言的文件包含）
@@ -392,18 +392,18 @@ else
 endif
 ```
 
-### 1.6.3 依赖关系图生成算法
+#### 1.6.3 依赖关系图生成算法
 
 ![](http://cdn.mengqingshen.com/SBS_06%20Make/64A00628-C75E-481A-B21C-42122EB3B7A2.png)
 
-## 1.7 进一步阅读资料
+### 1.7 进一步阅读资料
 [在线文档](http://www.gnu.org/software/make/)
 入门级指导-Mecklenburg,Robert.2005.《Managing Project with GNU Make》.Sebastopol,CA:O’Reilly
 [GMU Make 标准库](http://gmsl.sourceforge.net/)
 
-# 2 现实世界的构造系统场景
-## 2.1 源代码放在单个目录中
-### 方案1：最简单
+## 2 现实世界的构造系统场景
+### 2.1 源代码放在单个目录中
+#### 方案1：最简单
 **说明：** 对规模较小的项目来说比较常见。如果要增加新的源代码，只要追加到 SRCS 变量即可。
 
 **缺点：** 当源代码中引入了头文件的情况发生变化时，比如增加了新的头文件或不在需要某个头文件等，需要大量手工调整。
@@ -420,12 +420,12 @@ $(PROG):$(OBJS)
 $(OBJS): numbers.h
 ```
 
-### 方案2（方案1的改进版）：自动检查头文件
+#### 方案2（方案1的改进版）：自动检查头文件
 **说明：**  自动检查头文件，对源文件进行扫描，并计算出正确的依赖关系集合。
 
 这个方案涉及到两个之前没有提到的知识点，先对其简要说明，如下
 
-#### 预备知识
+##### 预备知识
 **-MM 选项**
 功能： 针对输入的源文件，返回其引用的 .c 或 .h 文件的清单。
 应用：*这个清单可以作为一条规则直接应用到 makefile 中。
@@ -461,7 +461,7 @@ $ gcc -MM -g calc.c # calc.o: calc.c numbers.h
 $ gcc -MM -g calc.c | sed 's#\(.*\)\.o: #\1.o \1\.d: #g' > $@ # calc.o calc.h: calc.c numbers.h
 ```
 
-#### 例子
+##### 例子
 [book_software_build_system_demos/part2/06_make/0602_scene/scene1_single_dir/src at master · laputa-er/book_software_build_system_demos · GitHub](https://github.com/laputa-er/book_software_build_system_demos/tree/master/part2/06_make/0602_scene/scene1_single_dir/src)
 通过下面的 makefile，每当 .c 文件或 .h 文件发生变化，都会重新生成 .d 文件，而 .d 包含源文件对头文件的依赖规则描述。由于通过  `-include` 引入了所有的 .d 文件，也就更新了依赖关系图，从而实现了依赖关系的自动更新。
 
@@ -475,18 +475,18 @@ OBJS := $(SRCS:.c = .o)
 $(PROG):$(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
 
-# 将包含依赖信息的 .d 文件都包含进来
+## 将包含依赖信息的 .d 文件都包含进来
 -include $(SRCS:.c=.d)
 
-# 所有 .d 文件都会匹配到这个规则来生成
+## 所有 .d 文件都会匹配到这个规则来生成
 %.d: %.c
 	$(CC) -MM $(CFLAGS) $< | sed 's#\(.*\)\.o: #\1.o \1\.d: #g' > $@
 ```
 
-### 方案3：使用 makedepend 命令
+#### 方案3：使用 makedepend 命令
 **说明：** 该工具本质上本质上与 `gcc -MM` 类似，但它自带用来分析 c 源文件的扫描程序（而非依赖编译器本身）。
 
-##  2.2 源代码放在多个目录中
+###  2.2 源代码放在多个目录中
 ```bash
 .
 ├── calc # 主程序源码
@@ -507,7 +507,7 @@ $(PROG):$(OBJS)
 
 ![](http://cdn.mengqingshen.com/SBS_06%20Make/4BF1FB3B-F143-471A-9711-9A0AADE9F732.png)
 
-### (1) 方案 a：最简单
+#### (1) 方案 a：最简单
 **说明：** 以单个目录中的方案为基础编写 makefile ，需要文件都带有目录路径。
 
 **应用：** 对简单程序来说正常有效，但对大型程序难以使用。
@@ -516,27 +516,27 @@ $(PROG):$(OBJS)
 [book_software_build_system_demos/part2/06_make/0602_scene/scene2_mult_dir_a/src at master · laputa-er/book_software_build_system_demos · GitHub](https://github.com/laputa-er/book_software_build_system_demos/tree/master/part2/06_make/0602_scene/scene2_mult_dir_a/src)
 
 ```c++
-# 静态库
+## 静态库
 LIBMATH := libmath/libmath.a
 LIBPRINT := libprint/libprint.a
 
-# 源文件
+## 源文件
 CALC_LIST := calc/calc.c
 LIBPRINT_LIST := libprint/banner.c libprint/center.c libprint/normal.c
 LIBMATH_LIST := libmath/clock.c libmath/letter.c libmath/numbers.c
 
-# 目标文件
+## 目标文件
 CALC_OBJS := $(CALC_LIST:.c=.o)
 LIBMATH_OBJS := $(LIBMATH_LIST:.c=.o)
 LIBPRINT_OBJS := $(LIBPRINT_LIST:.c=.o)
 
-# 可执行程序
+## 可执行程序
 PROG := calculator
 CC := gcc
 C_FLAGS := -g
 LIB_COMMAND := ar -rs
 
-# 规则
+## 规则
 $(PROG):$(CALC_OBJS) $(LIBMATH) $(LIBPRINT) # 链接
 	$(CC) $(CFLAGS) -o $@ $^
 $(LIBMATH):$(LIBMATH_OBJS) # 静态库 libmath
@@ -605,7 +605,7 @@ clock.o: libmath/clock.c libmath/math.h
 
 +  无法对程序进行分解。
 
-### (2) 方案 b：迭代式 make 操作
+#### (2) 方案 b：迭代式 make 操作
 **说明：** 在每个源文件目录中放一个不同的 makefile ，并用一个高层次 makefile 迭代式地调用每个下级目录的 makefile。
 
 **应用：**软件业中一种常见的解决方案。
@@ -624,7 +624,7 @@ clock.o: libmath/clock.c libmath/math.h
 下面给出这种方案的一个实现。
 [book_software_build_system_demos/part2/06_make/0602_scene/scene2_mult_dir_b/src at master · laputa-er/book_software_build_system_demos · GitHub](https://github.com/laputa-er/book_software_build_system_demos/tree/master/part2/06_make/0602_scene/scene2_mult_dir_b/src)
 
-#### Makefile 文件分布情况
+##### Makefile 文件分布情况
 
 ```bash
 .
@@ -647,16 +647,16 @@ clock.o: libmath/clock.c libmath/math.h
     └── printers.h
 ```
 
-#### Makefile 详情
+##### Makefile 详情
 *顶层 makefile* 
 
 ```bash
 ################
-# 顶层的 makefile
+## 顶层的 makefile
 ################
 .PHONY: all clean
 
-# 必须以正确的顺序对其它 makefile 进行相应的迭代式调用
+## 必须以正确的顺序对其它 makefile 进行相应的迭代式调用
 all:
 	$(MAKE) -C libmath
 	$(MAKE) -C libprint
@@ -716,16 +716,16 @@ OBJS = $(SRCS:.c=.o)
 $(LIB): $(OBJS)
 	$(AR) -rs $(LIB) $(OBJS)
 
-# 将包含依赖信息的 .d 文件都包含进来
+## 将包含依赖信息的 .d 文件都包含进来
 -include $(SRCS:.c=.d)
 
-# 所有 .d 文件都会匹配到这个规则来生成
+## 所有 .d 文件都会匹配到这个规则来生成
 %.d: %.c
 	$(CC) -MM $(CFLAGS) $< | sed 's#\(.*\)\.o: #\1.o \1\.d: #g' > $@
 
 ```
 
-#### 实际的构建过程
+##### 实际的构建过程
 
 ```bash
 ➜  src git:(master) ✗ make
@@ -789,7 +789,7 @@ gcc -o calculator calc.o ../libmath/libmath.a ../libprint/libprint.a
 3 directories, 29 files
 ```
 
-### (3) 方案 c：包含式 make
+#### (3) 方案 c：包含式 make
 **说明：** 吸收迭代式 Make 方法的良好经验，通过使用框架替代大量独立的 makefile 文件，确保只有一个 GNU Make 进程实例在执行。这样依赖，就可以充分利用 GNU Make 依赖关系体系的全部能力，不会丢失重要的依赖关系。
 
 **优点**
@@ -823,10 +823,10 @@ gcc -o calculator calc.o ../libmath/libmath.a ../libprint/libprint.a
 
 **建议：** 如果要实现一整套，绝对要做好时间预算。可以参考已有的实现，以他们为起点继续扩展。
 
-## 2.3 定义新的编译工具
+### 2.3 定义新的编译工具
 **说明：** 如果编译过程中需要加入其它编译器来辅助编译过程，需要 Makefile 中提供对额外的构造过程的支持。
 
-### 示例
+#### 示例
 构造过程中使用一种假想的的编译器 mathcomp 。
 
 mathcomp 编译器参数|说明
@@ -863,16 +863,16 @@ equations.dl equations.c: equations.math equ1.mathinc equ2.mathinc
 *Makefile*
 ```bash
 ############################################################
-# 1. 一份源文件清单，以 .math 文本格式保存，由 mathcomp 编译器读取。
-# 2. 一套 GNU Make 规则，其中描述了如何把 .math 文件编译成 .c 文件。
-# 3. 一种新的依赖关系文件（后缀名为 .dl），其中记录了 .math 文件与其所依赖的 .mathinc 文件之间的关系。
+## 1. 一份源文件清单，以 .math 文本格式保存，由 mathcomp 编译器读取。
+## 2. 一套 GNU Make 规则，其中描述了如何把 .math 文件编译成 .c 文件。
+## 3. 一种新的依赖关系文件（后缀名为 .dl），其中记录了 .math 文件与其所依赖的 .mathinc 文件之间的关系。
 ############################################################
 
-# mathcomp 的绝对路径（不依赖 $PATH 变量是否正确设置）
+## mathcomp 的绝对路径（不依赖 $PATH 变量是否正确设置）
 MATHCOMP := /tools/bin/mathcomp
 CC := gcc
 
-# .math 源文件清单
+## .math 源文件清单
 MATHSRC := equtions.math
 
 CSRC := calculator.c
@@ -881,25 +881,25 @@ OBJS := $(CSRC:.c=.o) $(MATHSRC:.math=.o)
 $(PROG): $(OBJS)
 	$(CC) -o $@ $^
 
-# 生成 .c 文件的依赖关系规则
+## 生成 .c 文件的依赖关系规则
 %.c: %.math
 	$(MATHCOMP) -c $<
 
 -include $(CSRC:.c=.d)
 
-# 引入.math 对 .mathinc 的依赖
+## 引入.math 对 .mathinc 的依赖
 -include $(MATHSRC:.math=.dl)
 
 %.d: %c
 	@$(CC) -MM $(CPPFLAGS) $< | sed 's#\(.*\)\.o: #\1.o \1.d: #g' > $@
 
-# 通过生成所包含的其它片段的情况，实现自动依赖检测
+## 通过生成所包含的其它片段的情况，实现自动依赖检测
 %.dl: %.math
 	echo -n "$@ $(*F).c: " > $@; \
 	$(MATHCOMP) -d $< >> $@
 ```
 
-## 2.4 针对多个变量进行构造
+### 2.4 针对多个变量进行构造
 [如何在Mac上做嵌入式开发？ - 简书](http://www.jianshu.com/p/f044c14777c5)
 [GNU ARM Embedded Toolchain in Launchpad](https://launchpad.net/gcc-arm-embedded)
 
@@ -915,38 +915,38 @@ $(PROG): $(OBJS)
 └── sub.c
 ```
 
-### 交叉构造过程示意图
+#### 交叉构造过程示意图
 ![](http://cdn.mengqingshen.com/SBS_06%20Make/19CFF532-32E7-42D3-87D7-C26F388C70CC.png)
 
-### 依赖关系图
+#### 依赖关系图
 ![](http://cdn.mengqingshen.com/SBS_06%20Make/B612B82D-4D36-46E0-AE4B-BC595952CAC8.png)
 
-### Makefile 实现
+#### Makefile 实现
 
 ```bash
 SRCS := add.c calc.c mult.c sub.c
 PROG := calculator
 CFLAGS := -g
 
-# 提供了 PLATFORM 默认值，用户不在命令行指定的话，默认 i386(其实也可以用 = ，因为在命令行定义的任何变量都会自动覆盖 make file中的值)
+## 提供了 PLATFORM 默认值，用户不在命令行指定的话，默认 i386(其实也可以用 = ，因为在命令行定义的任何变量都会自动覆盖 make file中的值)
 PLATFORM ?= i386
 
-# 有效平台列表
+## 有效平台列表
 VALID_PLATFORMS := i386 powerpc alpha
 
-# 对 $(PLATFORM) 的值的有效性进行检验，如果不在有效平台列表中，则显示相应的错误提示
+## 对 $(PLATFORM) 的值的有效性进行检验，如果不在有效平台列表中，则显示相应的错误提示
 ifeq ($(filter $(PLATFORM), $(VALID_PLATFORMS)),)
 	$(error Invalid PLATFORM: $(PLATFORM))
 endif
 
-# 将不同架构平台的目标文件放在与架构关联的目录中
+## 将不同架构平台的目标文件放在与架构关联的目录中
 OBJDIR := obj/$(PLATFORM)
-# 确保对应架构的目标文件的存放目录存在
+## 确保对应架构的目标文件的存放目录存在
 $(shell mkdir -p $(OBJDIR))
 
-# 使用合适的编译器
+## 使用合适的编译器
 CC := gcc-$(PLATFORM)
-# 目标文件清单
+## 目标文件清单
 OBJS := $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 
 $(OBJDIR)/$(PROG): $(OBJS)
@@ -962,7 +962,7 @@ clean:
 	rm -rf obj
 ```
 
-### 世纪构造过程
+#### 世纪构造过程
 
 ```bash
 ➜  scene4_mult_var git:(master) ✗ make
@@ -1014,10 +1014,10 @@ gcc -g -o obj/alpha/calculator obj/alpha/add.o obj/alpha/calc.o obj/alpha/mult.o
 4 directories, 21 files
 ```
 
-## 2.5 清除构造树
+### 2.5 清除构造树
 **说明：** 清除操作必须仅针对构造过程中生成的文件，采用那种方式取决于构造系统的工作机制。
 
-### 迭代式 Make 系统
+#### 迭代式 Make 系统
 **清除机制：** 每个 makefile 都负责生成本目录的目标文件，因此，它也应当负责清除本目录中的目标文件。
 
 例如,  [book_software_build_system_demos/part2/06_make/0602_scene/scene2_mult_dir_b/src at master · laputa-er/book_software_build_system_demos · GitHub](https://github.com/laputa-er/book_software_build_system_demos/tree/master/part2/06_make/0602_scene/scene2_mult_dir_b/src)
@@ -1080,7 +1080,7 @@ rm -f banner.o center.o normal.o libprint.a *.d
 ```
 
 
-### 包含式 Make 系统
+#### 包含式 Make 系统
 **清除机制：** 由于拥有已编译的源文件的完整清单，因此也知道目标文件的完整集合。即便是更复杂的情况，也可以通过一些代码逻辑记录文件名，并过滤出需要删除的文件的路径，今儿将他们集中清除。
 
 **好的实践：** 下面给出一些清除构造系统的好的原则
@@ -1088,9 +1088,9 @@ rm -f banner.o center.o normal.o libprint.a *.d
 + clean 标的定义好后，先完全构造，然后测地清除，比对下文件列表，确保没有遗漏。
 + 最好把所有生成的文件保存在特定的目录，而不是源文件目录中，从而简化清除实现。
 
-## 2.6 对不正确的构造结果进行调试
+### 2.6 对不正确的构造结果进行调试
 
-### GNU Make 提供了一些调试选项
+#### GNU Make 提供了一些调试选项
 
 调试选项|说明
 ---|---
@@ -1098,7 +1098,7 @@ make -n|显示要执行的 shell 命令清单，但不实际执行这些命令�
 make -p|显示 GNU Make 内部数据库的内容。其中包括每个 makefile 中定义的规则和变量的完整清单，以及 GNU Make 的内置规则。其中还记录了行号信息，有注意轻松追踪到各种定义所在的位置。
 make -d| 显示 GNU Make 的模式匹配算法在解析和执行 makefile 过程中形成的跟踪日志。这些输出信息会非常冗长，但其中提供了你需要知道的一切。
 
-### 打印调试 - $(warning)
+#### 打印调试 - $(warning)
 **说明：** 使用 `$(warning)`函数，在程序输出中显示有用的信息。
 
 **返回值：** 不返回任何值，因此可以插到 makefile 中允许出现函数的任何地方。
@@ -1123,10 +1123,10 @@ SRCS := add.c calc.c mult.c sub.c
 PROG := calculator
 CC := gcc
 
-# 在变量定义中使用 $(warning) 函数，结合延迟赋值 = ，当系统调用该变量时显示适当消息
+## 在变量定义中使用 $(warning) 函数，结合延迟赋值 = ，当系统调用该变量时显示适当消息
 CFLAGS = $(warning Accessing CFLAGS) -g # CFLAGS := -g
 
-# 规则下的 shell 列表是调用 $(SHELL)变量表示的 shell 程序执行的，因此任何规则下的 shell 列表的执行都会触发打印信息
+## 规则下的 shell 列表是调用 $(SHELL)变量表示的 shell 程序执行的，因此任何规则下的 shell 列表的执行都会触发打印信息
 SHELL = $(warning Target is $@) /bin/sh
 
 OBJS := $(SRCS:.c=.o)
@@ -1159,16 +1159,16 @@ makefile:14: Target is calculator
 gcc  -g  -o calculator add.o calc.o mult.o sub.o
 ```
 
-### 第三方调试工具
+#### 第三方调试工具
 **说明：** 在调试复杂的 makefile 时，可以考虑使用第三方工具，比如  [GNU Make Debugger](http://gmd.sourceforget.net)
 
 + 可以交互式地打印变量
 + 找出变量是如何定义的
 + 对特定的 makefile  规则设置断点
 
-# 3 赞扬和批评
+## 3 赞扬和批评
 
-## 3.1 赞扬
+### 3.1 赞扬
 
 + 得到广泛支持
 + 运行速度极快
@@ -1176,7 +1176,7 @@ gcc  -g  -o calculator add.o calc.o mult.o sub.o
 + 提供全功能的编程语言
 + 有史以来第一种构造工具
 
-## 3.2 批评
+### 3.2 批评
 
 + 语言设计前后不一致
 + 没有标准框架
@@ -1184,7 +1184,7 @@ gcc  -g  -o calculator add.o calc.o mult.o sub.o
 + 调试困难
 + 语言完整性与易用性的权衡
 
-## 3.3 评价
+### 3.3 评价
 **质量指标**
 
 + 易用性： 差
@@ -1199,14 +1199,14 @@ gcc  -g  -o calculator add.o calc.o mult.o sub.o
 
 **注意：** 这些标准都是主观的。
 
-# 4 其他类似工具
-## 4.1 Berkeley Make 工具 
+## 4 其他类似工具
+### 4.1 Berkeley Make 工具 
 **诞生：** 20 世纪 70 年代。
 
 **应用平台：**  BSD 系统（包括其它变体 BSD 系统）。
 ![](http://cdn.mengqingshen.com/SBS_06%20Make/69A824BA-56FE-45BD-B0D5-3307DFE2CB8B.png)
 
-### 用法
+#### 用法
 **说明：** 与 GNU Make 基本相同，差异体主要体现在一下两点
 区别|Berkeley Maker| GNU Make
 ---|---|---
@@ -1216,22 +1216,22 @@ gcc  -g  -o calculator add.o calc.o mult.o sub.o
 *修饰符（modifiers）*
 
 ```bash
-# 从文件名序列中取出各个文件名的后缀
+## 从文件名序列中取出各个文件名的后缀
 $(MY_VAR:E) # $(suffix $(MY_VAR))
 
-# 从文件名徐磊中取出各个文件的目录部分
+## 从文件名徐磊中取出各个文件的目录部分
 $(MY_VAR:H) # $(dir $(MY_VAR))
 
-# 以指定模式过滤字符串中的单词，过滤出符合模式的单词
+## 以指定模式过滤字符串中的单词，过滤出符合模式的单词
 $(MY_VAR:M<模式>) # $(filter <模式>,$(MY_VAR))
 ```
 
 *条件和循环*
 
 ```bash
-# -----------------------------------------------------------------------
-# 这个 makefile 的执行结果是各字目录中所有 Sub.mk 文件都被包含到顶层 makefile 中。
-# ------------------------------------------------------------------------
+## -----------------------------------------------------------------------
+## 这个 makefile 的执行结果是各字目录中所有 Sub.mk 文件都被包含到顶层 makefile 中。
+## ------------------------------------------------------------------------
 SUBDIRS = application database libraries storage
 ALLTARGS = 
 
@@ -1247,24 +1247,24 @@ all: $(ALLTARGS)
 	@echo All targets up to date
 ```
 
-## 4.2  NMake
+### 4.2  NMake
 **说明：** 是 Make 的另一种变体，一般是微软 Visual Studio 的组成部分。
 
 **应用：** 开发人员使用 Visual Studio 图形化用户界面完成日常开发工作，而 NMake则更多用于面向批处理的、从命令行执行的任务，例如软件大包。由于微软 MS Build 工具，NMake 用得更少了。
 
 **语法：** NMake 提供了与 GNU Male 和 Berkeley Make 相同的基本语法，特别是在规则和变量的定义方面。但其 shell 命令明显是面向 Windows 命令提示符的，而且使用 Visual Studio 的编译工具。
 
-## 4.3 ElectricAccelerator 和 Spark Build
+### 4.3 ElectricAccelerator 和 Spark Build
 **说明：** 来自 `Electric Cloud` 公司的两款产品。
 
-### ElectricAccelerator
+#### ElectricAccelerator
 **说明：** 商业化工具，可以加速软件构造过程。
 
 **原理：** 通过把任务分发给网络集群中的多个 CPU ，并协调各项任务对磁盘文件的访问，确保它们按照正确顺序执行。从而实现加速目的。
 
 **应用：** 可以解析 GNU Make 和 NMake 语法，因此旧有构造系统的用户可以利用这一工具，花少量代价实现性能大幅增长。
 
-### Spark Build
+#### Spark Build
 **说明：** ElectricAccelerator 的功能缩水版，用来解决 GNU Make 的一些基础缺陷。
 
 **原理：** 通过生成依赖关系数据库，记录构造过程的有用信息，方便构造过程分析。

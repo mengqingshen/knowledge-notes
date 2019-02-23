@@ -9,9 +9,9 @@ tag:
 [视频地址](http://www.jikexueyuan.com/course/1737.html)
 > Axure 变量分为全局变量和局部变量，Axure 本身也内置了一些变量，也允许我们自己定义全局变量或者局部变量供我们自己使用，变量在交互效果上使用的很频繁，结合变量的使用，我们可以制作出软件丰富效果，让用户体验到最真实的感受。   
 
-# 1 Axure 全局变量和局部变量的使用
+## 1 Axure 全局变量和局部变量的使用
 全局变量能够在所有 case 中使用，局部变量的作用域仅限于一个 case。
-## 全局变量
+### 全局变量
 + 全局变量管理面板
 *(Menu)Project > Global Variables*
 
@@ -21,16 +21,16 @@ tag:
 + 读全局变量值
 *Case Editor > Widgets > Set Text*
 
-## 局部变量
+### 局部变量
 + 读写局部变量
 *fx > Text Editor > Local Variables*
 
-# 2 Axure 内置变量/函数的介绍
+## 2 Axure 内置变量/函数的介绍
  `Text Editor > Insert Variables or Functions…`   
 
 ![](http://o7m5xjmtl.bkt.clouddn.com/A511D5F4-2E82-4B03-94AB-5987A15F7FBB.png)
 
-# 3 变量值在页面间传递
+## 3 变量值在页面间传递
 利用全局变量来实现。
 
 (1) `Projects > Global Variables…` ： 创建全局变量，来存储需要传递的值；
@@ -42,7 +42,7 @@ tag:
 ![](http://o7m5xjmtl.bkt.clouddn.com/303C5DB6-BA10-4B9B-90A6-6D480C195F0A.png)   ![](http://o7m5xjmtl.bkt.clouddn.com/A1507933-BDF0-44AD-A1A2-A1FF34395E6A.png)
 
 
-# 4 实例：制作简易计算器 
+## 4 实例：制作简易计算器 
 (1) 绘制界面
 
 ![](http://o7m5xjmtl.bkt.clouddn.com/28E8B002-E7BA-4028-B05F-475489C9048E.png)

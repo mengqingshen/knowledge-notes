@@ -8,24 +8,24 @@ date: 2014.01.26 10:57:24
 typora-copy-images-to: ipic
 ---
 
-# 1    认识防火墙    
+## 1    认识防火墙    
 
-## 1.1 开始之前来个提醒事项    
+### 1.1 开始之前来个提醒事项    
 
-## 1.2 为何需要防火墙 
-### 防火墙外最基本的安全防护
+### 1.2 为何需要防火墙 
+#### 防火墙外最基本的安全防护
 + 关闭不需要且危险的服务；
 + 将系统所有软件保持在最新的状态
 + 权限设定妥当且定时进行备份
 + 教育用户具有良好的网络、系统操作习惯 
 
-### 防火墙的作用实例 
+#### 防火墙的作用实例 
 
 + 限制文件传输服务，只在子域的主机才能使用，不对整个Internet开放
 + 限制主机仅可以接受客户端的WWW请求，其它服务关闭 
 + 限制主机仅能主动对外联机，即如果客户端对主机发送主动联机的封包（TCP封包的SYN flag）就予以抵挡 
 
-### 防火墙任务总结 
+#### 防火墙任务总结 
 
 + 切割被信任（如子域）与不被信任（如Internet）的网段  
 + 划分出可提供 Internet 的服务与必须受保护的服务 
@@ -33,7 +33,7 @@ typora-copy-images-to: ipic
 + 更加细部深入的NAT设定
 + 更弹性的IP封包伪装功能    
 
-## 1.3 Linux系统上防火墙的主要类别        
+### 1.3 Linux系统上防火墙的主要类别        
 依据防火墙管理的范围分类:
 
 ☑ 单一主机型控管
@@ -44,16 +44,16 @@ typora-copy-images-to: ipic
 + Netfilter;
 + proxy server;   
 
-### Netfilter(封包过滤机制，OSI的2,3,4层) 
+#### Netfilter(封包过滤机制，OSI的2,3,4层) 
 ☑ 重点：将风暴表头的数据捉出来，直接分析封包表头数据，包括硬件地址（MAC），软件地址（IP）,TCP,UDP,ICMP等信息进行过滤分析。     
 
-### TCP Wrappers(程序控管)                
+#### TCP Wrappers(程序控管)                
 ☑ 重点：分析谁对某程序进行存取，透过规则分析该服务器程序谁能够联机，谁不能联机。
 
-### Proxy(代理服务器) 
+#### Proxy(代理服务器) 
 ☑ 重点：client 并没有直接连上 Interent，而是 proxy server，因此想要攻击主机必须先攻破代理服务器    
 
-## 1.4 防火墙的一般网络布线示意图
+### 1.4 防火墙的一般网络布线示意图
 ☑ 1 单一网域，仅有一个路由器
 
 ![2177B981-C6B6-4A85-995A-108C53E071F6](http://cdn.mengqingshen.com/2017-04-30-2177B981-C6B6-4A85-995A-108C53E071F6.png)
@@ -66,21 +66,21 @@ typora-copy-images-to: ipic
 
 ![7CD55EC1-2DC0-4BA9-8150-0C15D3373C0A](http://cdn.mengqingshen.com/2017-04-30-7CD55EC1-2DC0-4BA9-8150-0C15D3373C0A.png)
 
-## 1.5 防火墙的使用限制 
+### 1.5 防火墙的使用限制 
 ☑ 1. 拒绝让Internet的封包进入主机的某些端口
 ☑ 2. 拒绝让某些来源IP的封包进入
 ☑ 3. 拒绝让带有某些特殊旗标的封包进入
 ☑ 4. 分析硬件地址（MAC）来决定联机与否
 ☑ 5. 防火墙并不能很有效的抵挡病毒或木马程序
 ☑ 6. 防火墙对于来自内部LAN的攻击较五承受力
-# 2 TCP Wrappers
-## 2.1 哪些服务有支持：ldd 
+## 2 TCP Wrappers
+### 2.1 哪些服务有支持：ldd 
 ☑ TCP Wrappers使用的配置文件
 + /etc/hosts.allow
 + /etc/hosts.deny
 
-### 由super daemon（xinetd）所管理的服务
-### 有支持libwrap.so模块的服务
+#### 由super daemon（xinetd）所管理的服务
+#### 有支持libwrap.so模块的服务
 范例一：查询xinted管理的服务有哪些
 
 ```bash
@@ -100,7 +100,7 @@ $ for name in rsyslogd sshd xinted httpd; \
   done
 ```
 
-## 2.2 /etc/hosts.{allow|deny}的设定方式
+### 2.2 /etc/hosts.{allow|deny}的设定方式
 范例一：先开放本机的127.0.0.1可以进行任何本机的服务，然后让区网（192.168.1.0/24）可以使用rsync,同事是10.0.0.100也能够使用rsync,但其它来源则不允许使用rsync。 
 
 **首先需要知道rsync的服务启动的档名**
@@ -135,37 +135,37 @@ rsysnc:192.168.1.0/255.255.255.0 10.0.0.100
 rsync:ALL
 ```
 
-# 3 Linux的封包过滤软件：iptables
+## 3 Linux的封包过滤软件：iptables
 
-## 3.1 不同Linux核心版本的防火墙软件
+### 3.1 不同Linux核心版本的防火墙软件
 ☑ **version2.0**:    ipfwadm 
 ☑ **version2.2**:    ipchains 
 ☑ **version2.4/2.6**:    iptables(主要)
 
-## 3.2 封包进入流程：规则顺序的重要性     
+### 3.2 封包进入流程：规则顺序的重要性     
 ![FD376D93-3290-4B66-AEDC-506F32AE3025](http://cdn.mengqingshen.com/2017-04-30-FD376D93-3290-4B66-AEDC-506F32AE3025.png)
 
-## 3.3 iptables的表格(table)与链（chain）
+### 3.3 iptables的表格(table)与链（chain）
 ☑ 注意：Linux的iptables至少有三个表格     
 + 管理本机进出的Filter
 + 管理后端主机（防火墙内部计算机）的nat
 + 管理特殊旗标使用managle(较少使用) 
 
-### iptables内建各表格与链的相关性（三种流向）
+#### iptables内建各表格与链的相关性（三种流向）
 （1）封包进入Linux使用资源;
 
 （2）封包经Linux主机转递，不使用主机资源；
 （3）封包由Linux主机发出；
 
-## 3.4 本机的iptables语法        
+### 3.4 本机的iptables语法        
 
-## 3.4.1 规则的观察与清除     
-### 观察
+### 3.4.1 规则的观察与清除     
+#### 观察
 
-#### iptables
+##### iptables
 
 ```bash
-# 防火墙规则的设定
+## 防火墙规则的设定
 $ iptables [-t tables][-L] [-nv]
 ```
 
@@ -197,10 +197,10 @@ $ iptables -L -n   # 列出目前的table规则
 $ iptables -t nat -L -n 
 ```
 
-#### iptables-save
+##### iptables-save
 
 ```bash
-# 列出完整的防火墙规则，包括每条规则针对的接口
+## 列出完整的防火墙规则，包括每条规则针对的接口
 $ iptables-save [-t table]              
 ```
 
@@ -212,7 +212,7 @@ $ iptables-save [-t table]
 $ iptables-save     
 ```
 
-### 清除
+#### 清除
 
 
 ```bash
@@ -233,7 +233,7 @@ $ iptables -X
 $ iptables -Z        
 ```
 
-## 3.4.2 定义预设规则（policy）
+### 3.4.2 定义预设规则（policy）
 `iptables [-t net] -P [INPUT,OUTPUT,FORWARD][ACCEPT,DROP]`
 
 | 选项与参数  | 说明                       |
@@ -252,7 +252,7 @@ $ iptables -t nat -P PREROUTING ACCEPT  # 设定net table的PREROUTING链为可�
 $ iptables-save  # 查看防火墙规则        
 ```
 
-## 3.4.3 封包的基础比对：IP,网域及接口装置：新人装置，信任网域
+### 3.4.3 封包的基础比对：IP,网域及接口装置：新人装置，信任网域
 `iptables [-AI 链名][-io 网络接口] [-p 协议][-s 来源IP/网域] [-d 目标IP/网域] -j [ACCEPT|DROP|REJECT|LOG]`
 
 | 选项与参数                                  | 说明                                       |
@@ -296,7 +296,7 @@ $ iptables -A INPUT -s 192.168.1.200 -j LOG # 只要是来自192.168。2.200这�
 $ iptables -L -n # 查看防火墙记录        
 ```
 
-## 3.4.4 TCP,UDP的规则比对：针对端口设定 
+### 3.4.4 TCP,UDP的规则比对：针对端口设定 
 
 
 `iptables [-AL 链][-io 网络接口] [-p tcp,udp][-s 来源IP/网域] [--sport 端口范围][-d 目标IP/网域] [--dport 端口范围] -j [ACCEPT|DROP|REJECT]`
@@ -335,7 +335,7 @@ $ iptables -A INPUT -i eth0 -p tcp --sport 1:1023 --dport 1:1023 --syn -j DROP  
 ```
 
 
-## 3.4.5 iptables 外挂模块：mac与state
+### 3.4.5 iptables 外挂模块：mac与state
 
 ```bash
 $ iptables -A INPUT [-m state][--state 状态]
@@ -359,7 +359,7 @@ $ iptables -A INPUT -m state --state RELATED,ESTABLIEHED -j ACCEPT
 $ iptables  -A INPUT -m mac --mac-source aa:bb:cc:dd:ee:ff -j ACCEPT        
 ```
 
-## 3.4.6 IMCP封包规则的比对：针对是否响应ping来设计
+### 3.4.6 IMCP封包规则的比对：针对是否响应ping来设计
 
 ```bash
 iptables -A INPUT [-p icmp][--icmp-type 类型] -j ACCEPT 
@@ -391,14 +391,14 @@ done
 $ sh icmpFirewall.sh        
 ```
 
-## 3.4.7 超阳春客户端防火墙设计与防火墙规则存储         
-### 1. 主机作为客户端的基本防火墙设置                    
+### 3.4.7 超阳春客户端防火墙设计与防火墙规则存储         
+#### 1. 主机作为客户端的基本防火墙设置                    
 （1）规则清零：清除所有已经存在的规则                    
 （2）预设政策：除了INPUT这个自定义链设定为DROP外，其它为预设ACCEPT                    
 （3）信任本机：由于lo对本机来说相当重要，因此lo必须设定为信任装置                    
 （4）回应封包：让本机主动向外要求二响应的封包进入本机                    
 （5）信任用户：这是非必要的，如果你想要让区网的来源可用你的主机资源时         
-### 2. 实作基本防火墙（有点弱）
+#### 2. 实作基本防火墙（有点弱）
 方式一：将命令写成脚本执行
 
 ```bash
@@ -408,16 +408,16 @@ $ vim bin/firewall.sh
 ```bash
 #!/bin/bash
 export PATH=/sbin;/bin;/usr/### sbin;/usr/bin                        
-# 1. 清除规则                        
+## 1. 清除规则                        
 
 iptables -F                        
 iptables -X                        
 iptables -Z                        
-# 2.设定政策                        
+## 2.设定政策                        
 iptables -P INPUT DROP                        
 iptables -P OUTPUT ACCEPT                        
 iptables -P FORWARD ACCEPT                        
-# 3-5.指定各项规则                        
+## 3-5.指定各项规则                        
 iptables -A INPUT -i lo -j ACCEPT                        
 iptables -A INPUT -i eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT                        
 #iptables -A INPUT -i eth0 -s 192.168.1.0/24 -j ACCEPT                        #6.写入防火墙规则配置文件                        
@@ -436,11 +436,11 @@ $ vim /etc/sysconfig/iptables  # 将规则写入配置文件
 $ /etc/init.d/iptables restart    
 ```
 
-## 3.5 IPv4的核心管理功能：/proc/sys/net/ipv4/*
+### 3.5 IPv4的核心管理功能：/proc/sys/net/ipv4/*
 ☑ 注意：查看核心的说明文件需要安装kernel-doc软件（/usr/share/doc/kernel-doc-2.6.32/Documentation/networking/ip-sysctl.txt）
 下面给出几个核定预设的攻击低档模块的设置档案： 
 
-### SYN Cookie模块：/proc/sys/net/ipv4/tcp_syncookies            
+#### SYN Cookie模块：/proc/sys/net/ipv4/tcp_syncookies            
 ☑ 功能：三次握手过程中，服务器端发送SYN/ACK确认封包前会要求客户端短时间内恢复一个序号，客户端能正确回应才发送SYN.ACK封包            
 ☑ 应对攻击类型：SYN Flooding            
 ☑ 启动方式： 档系统的1024-65535端口即将用完时启动 
@@ -453,7 +453,7 @@ $ echo "1" > /proc/sys/net/ipv4/tcp_syncookies
 + tcp_synack_retries
 + tcp_abort_on_overflow 
 
-### /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts            
+#### /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts            
 ☑ 功能：取消ping回应            
 ☑ 应对攻击类型
 + ping flooding(不断发ping)
@@ -469,7 +469,7 @@ $ echo "1"  /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
 + icmp_echo_ignore_broadcasts（仅ping broadcast地址时才取消回应）
 + icmp_echo_ignore_all(全部ping 都不予回应)。 
 
-### 对不同网络接口个别设置： /proc/sys/net/ipv4/conf/网络接口/*            
+#### 对不同网络接口个别设置： /proc/sys/net/ipv4/conf/网络接口/*            
 ☑ 功能：
 + rp_filter:逆向路径过滤，藉由网络接口的路由信息配合封包的来源地址，过滤不合理封包；
 + log_martians: 启动记录不合法的IP来源
@@ -491,7 +491,7 @@ $ vim /etc/sysctl.conf  # 将上面那几个功能通通启动
 ```
 
 ```bash
-# added by nemo 2014/1/27                    
+## added by nemo 2014/1/27                    
 net.ipv4.tcp_syncookies=1
 net.ipv4.icmp_echo_ignore_broadcasts=1
 net.ipv4.conf.all.rp_filter=1
@@ -505,19 +505,19 @@ net.ipv4.conf.lo.rp_filter=1
 $ sysctl -p  # 重启防火墙
 ```
 
-# 4 单机防火墙的一个实例    
+## 4 单机防火墙的一个实例    
 
-## 4.1 规则草拟    
+### 4.1 规则草拟    
 
-## 4.2 实际设定
-# 5 NAT服务器的设定    
+### 4.2 实际设定
+## 5 NAT服务器的设定    
 
-## 5.1 什么是NAT?SNAT?DNAT?    
+### 5.1 什么是NAT?SNAT?DNAT?    
 
-## 5.2 最阳春NAT服务器：IP分享功能    
+### 5.2 最阳春NAT服务器：IP分享功能    
 
-## 5.3 iptables的额外核心模块功能    
+### 5.3 iptables的额外核心模块功能    
 
-## 5.4 在防火墙后端之网络服务器DNDAT设定
-# 6 重点回顾
-# 7 本章习题
+### 5.4 在防火墙后端之网络服务器DNDAT设定
+## 6 重点回顾
+## 7 本章习题

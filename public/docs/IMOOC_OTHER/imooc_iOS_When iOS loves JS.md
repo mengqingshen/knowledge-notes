@@ -6,7 +6,7 @@ tag:
     - iOS
 ---
 
-# 1	JSBinding概述
+## 1	JSBinding概述
 
 >**说明：**`JSBinding`是`JS`和`native`之间的一个桥梁，通过这个桥梁，`JS`可以调用`Native`，`Native`可以调用`JS`。
 >
@@ -19,7 +19,7 @@ tag:
 >![Alt text](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-02-04%20%E4%B8%8B%E5%8D%8811.38.56.png)
 
 >**历史：**`cocos2D-X`使用`zynga`提出的一个方案(https://github.com/zynga/jsbindings)，`JS Engine`使用的是`SpiderMonkey`。
-## 1.1	JS和Native
+### 1.1	JS和Native
 
 >**说明：**两者结合初衷如下
 
@@ -29,7 +29,7 @@ tag:
 |更底层，更强大|免编译|
 |平台特性|热部署|
 
-## 1.2	iOS 7 and JavaScriptCore
+### 1.2	iOS 7 and JavaScriptCore
 
 >**说明：**在`iOS 7`之后，苹果公布了`JavaScriptCore`的`API`，在这之前一直是`iOS `系统私有的。
 >**扩展：**`Mac`的`JavaScriptCore`一直是开放的。
@@ -39,7 +39,7 @@ tag:
 >+ `JSValue`类：
 >+ `JSExport`类
 
-### 1.2.1	Eval JavaScript Code
+#### 1.2.1	Eval JavaScript Code
 
 >**说明：**利用引擎执行`JS`代码
 
@@ -57,7 +57,7 @@ int main(int argc, char * argv[]) {
 }
 ```
 
-### 1.2.2	Call JavaScript Function
+#### 1.2.2	Call JavaScript Function
 
 >**说明：**假设一个叫做`sum`的`JS`方法已经被加载
 
@@ -71,7 +71,7 @@ JSValue *result = [sum callWithArguments:@[@1, @2]];
 NSLog(@"sum(1, 2) = %f", [result toDouble]);
 ```
 
-### 1.2.3	Create JavaScript Value
+#### 1.2.3	Create JavaScript Value
 
 >**说明：**可以先创建`JS`的值，再赋值给相应变量。
 
@@ -90,7 +90,7 @@ context[@"bar"] = intVar;
 [context evaluateScript: @"var bar = 231;bar++;"];
 ```
 
-### 1.2.4	Type Conversion
+#### 1.2.4	Type Conversion
 
 >**说明：**`JS`和`O-C`之间对应类型的转换
 
@@ -107,7 +107,7 @@ context[@"bar"] = intVar;
 |id|Wrapper object|
 |Class|Constructor object|
 
-## 1.3	完整实例
+### 1.3	完整实例
 
 
 ```objective-c
@@ -148,9 +148,9 @@ int main(int argc, char * argv[]) {
 }
 ```
 
-# 2	初始iOS7 JavaScriptCore API
+## 2	初始iOS7 JavaScriptCore API
 
-## 2.1	Call Native Code via Block
+### 2.1	Call Native Code via Block
 
 >**说明：**`JS`调用`Native`
 
@@ -166,7 +166,7 @@ result = [context evaluateScript:@"sum(1, 2)"];
 NSLog(@"sum(1, 2) = %f", [result toDouble]);
 ```
 
-## 2.2	Call Native Code via JSExport
+### 2.2	Call Native Code via JSExport
 
 >**说明：**通过`jsExport`调用`Native`
 >+ Create a js export Class in Objective-C（创建`jsExport`类）
@@ -251,7 +251,7 @@ result = [context evaluateScript:script];
 NSLog(@"Result of %@ is %f", script, [result toDouble]);
 ```
 
-## 2.3	载入js文件来执行
+### 2.3	载入js文件来执行
 
 >**说明：**加入`js`文件比起在`Native`代码中创建`js`脚本子串要通用、易用的多。
 
@@ -267,9 +267,9 @@ NSString *script = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8St
 [context evaluateScript:script];
 ```
 
-# 3	JavaScriptCore API 进阶
+## 3	JavaScriptCore API 进阶
 
-## 3.1	Memory Leak
+### 3.1	Memory Leak
 
 >**说明：**`js`中对象的`循环引用`和`o-c`中对象的`循环引用`都不会导致内存泄漏。但`js`对象和`Native`对象之间的循环引用会导致内存泄漏。
 >+ `js`对象之间循环引用：不会内存泄漏
@@ -300,7 +300,7 @@ boy.girlFriend = girl;
 @end
 ```
 
-## 3.2	Threding and parallelism
+### 3.2	Threding and parallelism
 
 >**说明：**要点
 >+ API is thread safe（API是线程安全的）
@@ -327,7 +327,7 @@ JSVirtualMachine *jsvmB = [[JSVirtualMachine alloc] init];
 JSContext *ctxB = [[JSContext alloc] initWithVirtualMachine: jsvmB];
 ```
 
-## 3.3	JSBinding in the Real World
+### 3.3	JSBinding in the Real World
 
 >**说明：**`JSBinding`的一些实际应用。
 >![Alt text](http://cdn.mengqingshen.com/img/1454744485627.png)
@@ -336,7 +336,7 @@ JSContext *ctxB = [[JSContext alloc] initWithVirtualMachine: jsvmB];
 >+ CocoonJS
 >![Alt text](http://cdn.mengqingshen.com/img/1454744686882.png)
 >+ node.app
-### 3.3.1	JS Engines
+#### 3.3.1	JS Engines
 
 >**说明：**2种`JS`引擎比较，`JavaScriptCore`和`SpiderMonkey`
 >+ JavaScriptCore
@@ -346,14 +346,14 @@ JSContext *ctxB = [[JSContext alloc] initWithVirtualMachine: jsvmB];
 >
 >**注意：**`v8`引擎不受支持，因为其依赖于`JIT`，被苹果禁用。
 ![Alt text](http://cdn.mengqingshen.com/img/1454745052574.png)
-### 3.3.2	JSBind VS LuaBinding
+#### 3.3.2	JSBind VS LuaBinding
 
 >**说明：**`JSBinding`和`LuaBinding`比较
 >+ `LUA`为什么在游戏编程领域被广泛运用
 >https://www.zhihu.com/question/21717567
 >+ `Cocos2dx+LUA`合适还是`Cocos2dx+JS`合适
 >https://www.zhihu.com/question/21130385
-## 3.3.3	Which to Choose
+### 3.3.3	Which to Choose
 
 + Native
 + Web

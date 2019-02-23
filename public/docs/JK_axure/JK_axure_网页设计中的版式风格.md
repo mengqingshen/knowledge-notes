@@ -6,12 +6,12 @@ tag:
   - Axure
 ---
 
-# 1 基本的版式布局理论
-## 1.1 美的概念
+## 1 基本的版式布局理论
+### 1.1 美的概念
 ![](http://o7m5xjmtl.bkt.clouddn.com/58177851decdde161f000013.png)
 
 
-## 1.2 黄金分割
+### 1.2 黄金分割
 **黄金分割的概念**
 ![](http://o7m5xjmtl.bkt.clouddn.com/58177898decdde161f000014.png)
 
@@ -19,7 +19,7 @@ tag:
 **黄金分割在网页中的应用**
 ![](http://o7m5xjmtl.bkt.clouddn.com/581778d1decdde161f000015.png)
 
-## 1.3 九宫格
+### 1.3 九宫格
 **九宫格的概念**
 ![](http://o7m5xjmtl.bkt.clouddn.com/5817790ddecdde161f000016.png)
 
@@ -32,7 +32,7 @@ tag:
 **常见的九宫格排版**
 ![](http://o7m5xjmtl.bkt.clouddn.com/58177962decdde161f000019.png)
 
-## 1.4 节奏
+### 1.4 节奏
 **节奏的概念**
 ![](http://o7m5xjmtl.bkt.clouddn.com/58177986decdde161f00001a.png)
 
@@ -50,7 +50,7 @@ tag:
 ![](http://o7m5xjmtl.bkt.clouddn.com/58177a4ddecdde161f00001f.png)
 
 
-# 2 文字、图片等元素在板式中的不同作用
+## 2 文字、图片等元素在板式中的不同作用
 **文字的节奏**
 ![](http://o7m5xjmtl.bkt.clouddn.com/58177ab4decdde161f000020.png)
 
@@ -82,7 +82,7 @@ tag:
 **人像以生动、形象感，更容易吸引眼球**
 ![](http://o7m5xjmtl.bkt.clouddn.com/58177bfcdecdde161f00002b.png)
 
-# 3 常见的网页设计版式布局
+## 3 常见的网页设计版式布局
 **一栏&三栏**
 ![](http://o7m5xjmtl.bkt.clouddn.com/58177c35decdde161f00002c.png)
 

@@ -6,9 +6,9 @@ tag:
 date: 2015-02-08 15:38:31
 ---
 
-# 1 模块加载机制
-## 1.1 模块的类型
-### require(path):加载模块
+## 1 模块加载机制
+### 1.1 模块的类型
+#### require(path):加载模块
 
 + 核心模块： Node.js标准API中提供的模块，编译成二进制代码
 + 文件模块： 存储为文件或者文件夹的模块
@@ -20,9 +20,9 @@ JavaScript|.js|文件模块|2
 JSON|.json|文件模块|3
 C/C++扩展|.node|文件模块|4
 
-## 1.2 按路径加载模块
+### 1.2 按路径加载模块
 
-### 绝对路径
+#### 绝对路径
 参数以`/`开头
 
 ```js
@@ -30,7 +30,7 @@ C/C++扩展|.node|文件模块|4
 require('/home/byvoid/module')
 ```
 
-### 相对路径
+#### 相对路径
 参数以`./`或`../`开头
 
 ```js
@@ -38,7 +38,7 @@ require('/home/byvoid/module')
 require('./hello')
 ```
 
-## 1.3 通过查找node_modules目录加载模块
+### 1.3 通过查找node_modules目录加载模块
 **时机**：当 require 遇到一个既不是核心模块又不是以路径形式表示的模块名称时
 
 **路径**：首先试图在当前目录下的 node_modules 目录中查找，如果没有找到则会在当前目录的上一层中的node_modules目录中继续查找。反复重复，直到根目录。
@@ -56,10 +56,10 @@ require('bar.js')
 */
 ```
 
-## 1.4 加载缓存
+### 1.4 加载缓存
 **说明**：Node.js根据实际文件名缓存加载过的文件模块，因此Node.js模块不会被加载两次
 
-## 1.5 加载顺序
+### 1.5 加载顺序
 ```js
 require(some_module)
 
@@ -68,8 +68,8 @@ require(some_module)
 // (3)通过node_modules目录加载模块
 ```
 
-# 2   控制流
-## 2.1 循环的陷阱
+## 2   控制流
+### 2.1 循环的陷阱
 **陷阱案例**
 
 ```js
@@ -113,7 +113,7 @@ files.forEach(function(filename){
 });
 ```
 
-## 2.2 解决控制流难题
+### 2.2 解决控制流难题
 **解决深层回调函数嵌套带来的耦合问题**
 
 项目|说明|原理
@@ -122,8 +122,8 @@ async|一个控制流解耦模块|实现复杂逻辑时使用该模块提供的�
 streamlinejs、jscex|变同步为异步|实现了一个将同步js代码编译为异步js的编译器
 eventproxy|对事件发射器的深度封装|基于事件松耦合的方式实现控制流
 
-# 3 Node.js应用部署
-## 3.1 日志功能
+## 3 Node.js应用部署
+### 3.1 日志功能
 **第一步**：设置使用产品模式运行服务器
 ```bash
 $ NODE_ENV = production # 设置环境变量
@@ -154,11 +154,11 @@ app.configure('production', function(){
 });
 ```
 
-## 3.2 使用cluster功能
-### cluster
+### 3.2 使用cluster功能
+#### cluster
 **说明**：cluster时Node.js的一个核心模块，功能是生成与当前进程相同的子进程，并且允许父、子进程之间共享端口
 
-### child_process
+#### child_process
 **说明**：也是一个核心模块，区别于cluster，允许跨进程端口复用
 
 **案例**
@@ -177,7 +177,7 @@ if(!module.parent){
 }
 ```
 
-### cluster.js
+#### cluster.js
 **说明**：主进程生成若干工作进程，并监听工作进程结束事件
 
 ```js
@@ -217,7 +217,7 @@ process.on('SIGTERM', function(){
 });
 ```
 
-## 3.3 启动脚本
+### 3.3 启动脚本
 脚本功能：通过nohup启动服务器，同时将主进程的pid写入microblob.pid文件；当调用结束命令时，从microblob.pid读取pid的值，终止主进程以关闭服务器
 
 ```bash
@@ -252,7 +252,7 @@ exit 0
 ./microblob start
 ```
 
-## 3.4 共享80端口（以Nginx为例）
+### 3.4 共享80端口（以Nginx为例）
 **案例**：监听mysite.com 80端口的请求，并设置反向代理，将所有的请求转发给http://localhost:3000，即我们的node.js服务器 
 
 ```js
@@ -268,6 +268,6 @@ exit 0
 
 **注意**：还可以在Nginx配置文件中添加访问静态文件的规则，让Nginx处理静态文件，减少反向代理以及Node.js开销
             
-# 4 Node.js不是银弹
-# 5 参考资料
+## 4 Node.js不是银弹
+## 5 参考资料
 

@@ -8,14 +8,14 @@ date: 2015-07-09 21:33
 
 
 **函数（function）：**可以起个名字并在代码中的任何位置重用的代码块。
-# 1	基本的简本函数
-## 1.1	创建函数
+## 1	基本的简本函数
+### 1.1	创建函数
 **规则：**
 
 + 函数定义不必是shell脚本中最前面的事
 + 如果在函数被定义前使用函数，会收到一条错误信息
 + 函数名必须是唯一的，因为如果重新定义了函数，新定义将会覆盖原来函数的定义，而不会产生任何错误信息。
-### 两种方式
+#### 两种方式
 *格式一*：采用关键字`function`，后跟分配给该代码的函数名。
 
 ```bash
@@ -32,7 +32,7 @@ name(){
 }
 ```
 
-## 1.2	使用函数
+### 1.2	使用函数
 **注意：**函数定义不必是shell脚本中最前面的事，但如果在函数被定义前使用函数，会收到一条错误信息。
 
 ```bash
@@ -53,9 +53,9 @@ func1
 echo "Now this is the end of the script"
 ```
 
-# 2	返回值
+## 2	返回值
 **状态码：**bash shell会把函数但做小型脚本，运行结束时回返回一个退出状态码。有3种不同的方式来为函数生成退出状态码。
-## 2.1	默认退出状态码
+### 2.1	默认退出状态码
 **说明：**默认情况下，函数的退出状态码是函数中最后一条命令返回的退出状态码。在函数执行结束后，你可以用标准的`$?`变量来决定函数的退出状态码。
 
 **注意：**使用函数默认退出状态码是很危险的，因为无法判断函数中其它命令是否运行成功。
@@ -72,7 +72,7 @@ func1
 echo "The exit status is: $?"
 ```
 
-## 2.2	使用return命令
+### 2.2	使用return命令
 **说明:**bash shell允许使用return命令退出函数并返回特定的退出状态码。return命令允许制定一个整数值来定义函数的退出状态码，从而提供了编程设定函数退出状态码的简便途径。
 
 **限制：**
@@ -94,7 +94,7 @@ db1
 echo "The new value is $?"
 ```
 
-## 2.3	使用函数输出
+### 2.3	使用函数输出
 **说明：**使用变量捕捉函数的输出而不是看函数的退出状态码。
 
 **推荐：**通过这种方法，还可以返回浮点数和字符串值。这让它非常适合返回函数值。
@@ -110,16 +110,16 @@ result = `db1`
 echo "The new value is $result"
 ```
 
-# 3	在函数中使用变量
-## 3.1	 向函数传递参数
+## 3	在函数中使用变量
+### 3.1	 向函数传递参数
 *在脚本中完成参数的传递*
 
 ```bash
 #!/bin/bash
 
-# 没有参数或多于两个参数：显示-1
-# 一个参数：会计算其自身和自身相加
-# 两个参数：计算两个参数的和
+## 没有参数或多于两个参数：显示-1
+## 一个参数：会计算其自身和自身相加
+## 两个参数：计算两个参数的和
 function addem{
 	if [ $# -eq 0 ]|| [ $# -gt 2 ]
 	then
@@ -131,10 +131,10 @@ function addem{
 		echo $[ $1 + $2 ]
 	fi
 }
-# 计算10+15并将结果赋给value
+## 计算10+15并将结果赋给value
 echo -n "Adding 10 and 15:"
 value = `addem 10 15`
-# 查看结果
+## 查看结果
 echo $value
 ```
 
@@ -143,7 +143,7 @@ echo $value
 
 ```bash
 #!/bin/bash
-# trying to access script parameters inside a function
+## trying to access script parameters inside a function
 
 function func7{
 	echo $[ $1 * $2 ]
@@ -166,7 +166,7 @@ $ ./test7 10 15
 	The result is 150
 ```
 
-## 3.2	在函数中处理函数
+### 3.2	在函数中处理函数
 **函数作用域：**函数中定义的变量可以跟普通变量的作用域不同。
 
 **变量类型：**
@@ -174,12 +174,12 @@ $ ./test7 10 15
 + **全局变量**：在shell脚本中任何地方都有效的变量
 + **局部变量**：函数内部的任何变量都可以通过`local`声明为局部变量
 
-### 全局变量
+#### 全局变量
 **说明：**默认情况下，你在脚本中定义的任何变量都是全局变量。在函数外定义的变量可在函数内正常访问。
 
 ```bash
 #!/bin/bash
-# using a global variable to pass a value
+## using a global variable to pass a value
 
 function db1{
 	value = $[ $value * 2 ]
@@ -189,7 +189,7 @@ db1
 echo "The new value is : $value"
 ```
 
-### 局部变量
+#### 局部变量
 **声明方式：**`local 变量名`
 
 **声明位置：**函数内部
@@ -201,7 +201,7 @@ echo "The new value is : $value"
 
 ```bash
 #!/bin/bash
-# demonstrating the local keyword
+## demonstrating the local keyword
 
 function func1{
 	#不会影响在主体脚本中赋给$temp变量的值
@@ -221,9 +221,9 @@ else
 fi
 ```
 
-# 4	数组变量和函数
+## 4	数组变量和函数
 **说明：**在函数中使用数组变量值稍微麻烦一些，而且需要做一些特殊考虑。
-## 4.1	向函数传数组参数
+### 4.1	向函数传数组参数
 **规则：**
 
 + 将数组变量当作单个参数传递的话，它不会起作用
@@ -234,7 +234,7 @@ fi
 !/bin/bash
  adding values in an array
 
-# 计算数组元素的和
+## 计算数组元素的和
 function addArr {
 	local sum=0
 	local newarray
@@ -253,19 +253,19 @@ function addArr {
 myarray=(1 2 3 4 5)
 echo "The original array is: ${myarray[*]}"
 
-# 将数组转换为参数形式（以空格作为间隔的字符串）
+## 将数组转换为参数形式（以空格作为间隔的字符串）
 arg1=`echo ${myarray[*]}`
 
-# 调用函数
+## 调用函数
 result=`addArray $arg1`
 ```
 
-## 4.2	从函数返回数组
+### 4.2	从函数返回数组
 **说明：**函数用`echo`语句来按正确顺序输出单个数组值，然后脚本再将它们重新放进一个新的数组变量中。
 
 ```bash
 #!/bin/bash
-# returning an array value
+## returning an array value
 function arraydblr{
 	local origarray
 	local newarray
@@ -284,16 +284,16 @@ function arraydblr{
 
 echo "The original array is: ${myarray[*]}"
 
-# 原数组的参数形式
+## 原数组的参数形式
 arg1=`echo ${myarray[*]}`
 
-# 调用函数，返回新数组
+## 调用函数，返回新数组
 result=(`arraydblr $arg1`)
 
 echo "The new array is: ${result[*]}"
 ```
 
-# 5	函数递归
+## 5	函数递归
 **说明：**局部函数变量提供的一个特性是自成体系（self-containment）。
 
 **递归：**通常递归函数都有一个最终可以迭代的基准值。许多高级数学算法用递归来一级一级地降解复杂的方程，直到基准值定义的那级。
@@ -316,7 +316,7 @@ result=`factorial $value`
 echo "The factorial $value is: $result"
 ```
 
-# 6	创建库
+## 6	创建库
 **说明：**bash shell允许创建函数库文件，然后再需要时再多个脚本中引用该文件。使用函数库的关键在于`source`命令。
 
 **引入库文件：**可以使用`source`命令来在`shell`脚本中运行库文件脚本。`source`命令会在当前的shell上下文中执行命令，而不是创建一个新的shell来执行命令。
@@ -337,17 +337,17 @@ function addem{
 
 ```bash
 !/bin/bash
-# using functions defined in a library file
+## using functions defined in a library file
 . ./myfuncs	#执行库文件
 
 result=`addem 10 15`
 echo "The result is $result"
 ```
 
-# 7	在命令行使用函数
-## 7.1	在命令行上创建函数
+## 7	在命令行使用函数
+### 7.1	在命令行上创建函数
 **缺点：**当退出shell时，函数就消失了。
-### *方法1:*在一行内定义整个函数
+#### *方法1:*在一行内定义整个函数
 **说明：**每个命令后面要加个`;`，这样shell就能知道在哪里分开命令了。
 
 ```bash
@@ -360,7 +360,7 @@ $ doubleit
 	40
 ```
 
-### *方法2:*用多行定义函数
+#### *方法2:*用多行定义函数
 **说明：**
 
 + bash shell会使用次提示符来提示输入更多命令
@@ -375,17 +375,17 @@ $ multem 2 5
 	10
 ```
 
-## 7.2	在.bashrc文件中定义函数
+### 7.2	在.bashrc文件中定义函数
 **说明：**bash shell会在每次启动时在主目录查找这个文件，不管是交互式的函数还是从现有shell中启动一个新的shell。
 
 **特点：**shell还会将定义号的函数传给子shell进程，这样这些函数在该shell会话中的任何shell脚本中也可以用。
-### 1.	直接定义函数
+#### 1.	直接定义函数
 **注意：**许多Linux发行版已经在.bashrc文件中定义了一些东西了，所以注意别删掉这些内容，只要在已有文件的末尾加上你写的函数就行。
 
 *.bashrc*
 
 ```bash
-# Source global definitions
+## Source global definitions
 if [ -r /etc/bashrc ]:then
 	. /etc/bashrc
 fi
@@ -395,7 +395,7 @@ function adden{
 }
 ```
 
-### 2.读取函数文件
+#### 2.读取函数文件
 **注意：**确保引用库文件路径正确。
 
 ```bash

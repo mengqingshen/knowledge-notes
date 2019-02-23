@@ -15,7 +15,7 @@ date: 2017-04-09
 
 
 
-# 1 能力检测
+## 1 能力检测
 
 能力检测的目标不是识别特定的浏览器，而是识别浏览器的功能。
 
@@ -41,7 +41,7 @@ function getElement(id) {
 
 
 
-## 1.1 更可靠的能力检测
+### 1.1 更可靠的能力检测
 
 尽量使用 typeof 进行能力检测，而不仅仅是检测某个属性存不存在。
 
@@ -57,7 +57,7 @@ function getElement(id) {
 ☑︎ IE8- 的宿主对象(DOM 对象)是通过 COM 而非 JScript 实现的，因此"type 宿祖对象.方法" 返回 "object"。
 ```
 
-### 举例：测试任何对象是否包含某个方法
+#### 举例：测试任何对象是否包含某个方法
 
 ```js
 /**
@@ -84,7 +84,7 @@ result = isHostMethod(xhr, 'foo') // false
 
 
 
-## 1.2 能力检测，不是浏览器检测
+### 1.2 能力检测，不是浏览器检测
 
 在实际开发中，应该将能力检测作为确定下一步解决方案的依据，而不是用它来判断用户使用的是什么浏览器。
 
@@ -95,7 +95,7 @@ result = isHostMethod(xhr, 'foo') // false
 ☑︎ 根据客户端的能力来判断浏览器类型不能保证总是可靠，比如，有时需要假设某个特性某种浏览器支持，其它不支持，但这种假设是不完全成立的，因为你无法知道浏览器后续版本的变化。
 ```
 
-### 浏览器检测（错误）
+#### 浏览器检测（错误）
 
 ```js
 // 错误！还不够具体（Safari 也实现了这两个属性）
@@ -105,7 +105,7 @@ var isFirefox = !!(navigator.vendor && navigator.vendorSub)
 var isIE = !!(document.all && document.uniqueID)
 ```
 
-### 能力检测
+#### 能力检测
 
 ```js
 // 确定浏览器是否支持 Netscape 风格的插件
@@ -115,7 +115,7 @@ var basNSPlugins = !!(navigator.plugins && navigator.plugins.length)
 var hasDOM1 = !!(document.getElementById && document.createElement && document.getElementsByTagName)
 ```
 
-# 2 怪癖检测
+## 2 怪癖检测
 
 与能力检测确认浏览器支持什么能力不同，怪癖检测是想要知道浏览器存在什么缺陷。通常需要运行一小段代码，以确定某一特性能否正常工作。
 
@@ -123,7 +123,7 @@ var hasDOM1 = !!(document.getElementById && document.createElement && document.g
 由于检测“怪癖”设计运行代码，因此我们建议仅检测那些对你有直接影响的“怪癖”，而且最好在脚本一开始就执行此类检测，以便尽早解决问题。
 ```
 
-## 案例1：和原型上属性同名的实例属性不可被 for-in 遍历的问题
+### 案例1：和原型上属性同名的实例属性不可被 for-in 遍历的问题
 
 在 `IE8-` 中，如果某个实例属性与标记为 `[[DontEnum]]` 的某个非原型属性同名，那么该实例属性将不会出现在 `for-in` 循环中。
 
@@ -143,7 +143,7 @@ var hasDontEnumQuirk = function () {
 
 ```
 
-## 案例2：隐藏的属性可被 for-in 遍历的问题
+### 案例2：隐藏的属性可被 for-in 遍历的问题
 
 在`Safari2-`中，`for-in` 会枚举被隐藏的属性。
 
@@ -165,7 +165,7 @@ var hasEnumShadowsQuirk = function () {
 
 
 
-# 3 用户代理检测
+## 3 用户代理检测
 
 通过检测用户代理字符串来确定实际使用的浏览器。
 
@@ -189,11 +189,11 @@ var hasEnumShadowsQuirk = function () {
 
 
 
-## 3.1 用户代理字符串的历史
+### 3.1 用户代理字符串的历史
 
 HTTP(1.0 和 1.1) 规范明确规定，浏览器应该发送间断的用户代理字符串，指明浏览器的名称和版本号。用户代理字符串应该以一组产品的行医给出，字符串格式为：`标识符/产品版本号`。
 
-### 3.1.1 早期的浏览器
+#### 3.1.1 早期的浏览器
 
 **Mosaic/1993**
 
@@ -213,7 +213,7 @@ Mozilla/2.02 [fr] (winNT;I)
 
 
 
-### 3.1.2 Netscape Navigator3 和 Internet Explorer 3
+#### 3.1.2 Netscape Navigator3 和 Internet Explorer 3
 
 **Netscape Navigator 3/1996**
 
@@ -235,7 +235,7 @@ Mozilla/3.0 (Win95; U)
 Mozilla/2.0 (compatible; MSIE 3.02; Windows 95)
 ```
 
-### 3.1.3 Netscape Communicator 4 和 IE4~IE8
+#### 3.1.3 Netscape Communicator 4 和 IE4~IE8
 
 **Netscape Communicator 4**
 
@@ -280,7 +280,7 @@ Mozilla/4.0 (compatiable; MSIE 7.0; Windows NT 5.1; Trident/5.0) // IE9 运行 I
 
 
 
-### 3.1.4 Gecko
+#### 3.1.4 Gecko
 
 Firefox 的呈现引擎。第一个使用 Gecko 引擎的是 Netscape 6。
 
@@ -314,7 +314,7 @@ Mozilla/5.0 (Windows NT 6.1; en; rv:2.0.1) Gecko/20100101 Firefox 4.0.1
 
 
 
-### 3.1.5 WebKit
+#### 3.1.5 WebKit
 
 Linux 平台中 Konqueror 浏览器的呈现引擎 KHTML 的一个分支。
 
@@ -334,7 +334,7 @@ Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebkit/124 (KHTML, like Gecko)
 Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebkit/124 (KHTML, like Gecko) Version/3.0.3 Safari/522.15.5
 ```
 
-### 3.1.6 Konqueror
+#### 3.1.6 Konqueror
 
 **Konqueror 3.2之前**
 
@@ -350,7 +350,7 @@ Mozilla/5.0 (compatible; Konqueror/3.5; SunOS) KHTML/3.5.0 (like Gecko)
 
 
 
-### 3.1.7 Chrome
+#### 3.1.7 Chrome
 
 **chrome 0.2**
 
@@ -360,7 +360,7 @@ Mozilla/5.0 (compatible; Konqueror/3.5; SunOS) KHTML/3.5.0 (like Gecko)
 Mozilla/5.0 (windows; U; Windows NT 5.1; en-US) AppleWebkit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
 ```
 
-### 3.1.8 Opera
+#### 3.1.8 Opera
 
 **opera 8 之前**
 
@@ -399,7 +399,7 @@ Opera/9.80 (Windows NT 6.1; U; en) Presto/2.6.30 Version/10.63
 
 
 
-### 3.1.9 iOS 和 Android
+#### 3.1.9 iOS 和 Android
 
 **iOS**
 
@@ -419,11 +419,11 @@ Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebkit/53
 
 
 
-## 3.2 用户代理字符串检测技术
+### 3.2 用户代理字符串检测技术
 
 
 
-## 3.3 完整的代码
+### 3.3 完整的代码
 
 ```js
 var client = function () {
@@ -616,7 +616,7 @@ var client = function () {
 
 
 
-## 3.4 使用方法
+### 3.4 使用方法
 
 **适用场景**
 

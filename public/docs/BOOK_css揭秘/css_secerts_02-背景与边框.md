@@ -8,9 +8,9 @@ date: 2017-07-19 12:53
 typora-copy-images-to: ipic
 ---
 
-# 1 半透明边框
+## 1 半透明边框
 
-## 说明
+### 说明
 
 **方案**：采用 `rgba()` 或者 `hsla()`,为边框设置半透明色。
 
@@ -41,7 +41,7 @@ typora-copy-images-to: ipic
 
 
 
-## 示例
+### 示例
 
 ```html
 <!DOCTYPE html>
@@ -83,5 +83,5 @@ typora-copy-images-to: ipic
 
 
 
-# 2 多重边框
+## 2 多重边框
 

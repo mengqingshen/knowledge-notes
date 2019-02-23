@@ -12,26 +12,26 @@ tag:
 
 [个人练习](https://coding.net/u/eli01/p/imooc_frame_animation/git)
 
-# 1 认识帧动画
-## 1.1 认识帧动画
-### 什么是帧动画？
+## 1 认识帧动画
+### 1.1 认识帧动画
+#### 什么是帧动画？
 所谓帧动画就是在“连续的关键帧”中分解动画动作，在时间轴的每帧上逐帧绘制不同的内容，使其连续播放而成动画。
 
 由于是一帧一帧地画，所以帧动画具有非常大的灵活性，几乎可以表现任何想表现的内容。
 
 [动画库演示](http://ustbhuangyi.github.io/animation/demo/)
 
-### 常见帧动画方式
+#### 常见帧动画方式
 + GIF
 * CSS3 animation
 * JavaScript
 
-### GIF 和 CSS3 animation 实现帧动画的不足
+#### GIF 和 CSS3 animation 实现帧动画的不足
 1. (GIF 、 CSS3 animation)不能灵活地控制动画的 `暂停` 和 `播放`
 2. (GIF)不能 `捕捉` 到动画完成的 `事件`
 3. (GIF 、 CSS3 animation)不能对帧动画做更加灵活的扩展
 
-### JS 实现帧动画的原理
+#### JS 实现帧动画的原理
 1. 如果有多张帧图片，用一个  image 标签承载图片，`定时改变 image 的 src 属性`（不推荐）
 2. 把所有动画关键帧 `绘制在一张图片` 里，把图片作为元素的 background-image，定时改变元素的 background-position 属性（推荐）
 
@@ -102,10 +102,10 @@ function animation(ele, positions, imgUrl) {
 $ python -m SimpleHTTPServer 8080 # 启动一个 python 自带的简单的静态服务器 
 ```
 
-## 1.2 设计通用帧动画库
+### 1.2 设计通用帧动画库
 ![](http://o7m5xjmtl.bkt.clouddn.com/BEBCEE9F-9F4B-42B8-9EBB-B4E9EBB62B2A.png)
 
-### 01 需求分析
+#### 01 需求分析
 1. 支持图片 `预加载`。
 2. 支持 `两种` 动画播放方式（img src、backgroundPosition），及自定义每帧动画。
 3. 支持单组动画控制`循环次数`（可支持无限次）。
@@ -114,7 +114,7 @@ $ python -m SimpleHTTPServer 8080 # 启动一个 python 自带的简单的静态
 6. 支持动画`暂停`和`继续`播放。
 7. 支持`动画完成后`执行回调函数。
 
-### 02 编程接口
+#### 02 编程接口
 ```javascript
 loadImage(imglist) // 预加载图片
 
@@ -141,7 +141,7 @@ restart() // 动画从上一次暂停处重新执行
 dispose() // 释放资源
 ```
 
-### 03 调用方式
+#### 03 调用方式
 + 支持链式调用
 + 期望用`动词的方式`描述接口
 
@@ -158,7 +158,7 @@ var demoAnimation = animation()
 demoAnimation.start(80)
 ```
 
-### 04 代码设计
+#### 04 代码设计
 1. 我们把 “图片与加载->动画执行->动画结束”等一系列操作看成一条 `任务链（数组）`。
    任务链有两种类型的任务：
    a. 同步执行完毕的。
@@ -170,8 +170,8 @@ demoAnimation.start(80)
 ![](http://o7m5xjmtl.bkt.clouddn.com/B6CBEEF6-D283-4FFE-B4A7-F3D4713ACA45.png)
 
 
-# 2 设计帧动画库
-## 2.1 接口定义
+## 2 设计帧动画库
+### 2.1 接口定义
 ```javascript
 'use strict'
 /**
@@ -254,7 +254,7 @@ Animation.prototype.restart = function () {}
 Animation.prototype.dispose = function () {}
 ```
 
-## 2.2 图片预加载实现
+### 2.2 图片预加载实现
 >  封装图片预加载功能为独立的 cmd 模块。  
 
 + 图片信息数据格式检查
@@ -372,7 +372,7 @@ function getId() {
 module.exports = loadImage
 ```
 
-## 2.3 图片预加载的应用
+### 2.3 图片预加载的应用
 + 导入与图片预加载模块（cmd）
 * 作为一个同步任务加入到任务链
 
@@ -399,7 +399,7 @@ Animation.prototype.loadImage = function (imglist) {
 
 ```
 
-## 2.4 从入口函数开始
+### 2.4 从入口函数开始
 + 任务对象
 * 同步任务和异步任务
 * 任务链实现
@@ -462,7 +462,7 @@ Animation.prototype._next = function () {
 }
 ```
 
-## 2.5 timeline 的实现
+### 2.5 timeline 的实现
 **说明：** timeline 作为一个模块，用来实现平滑的帧动画。
 + 使用 requestAnimationFrame  API 避免丢帧
 * 包装 requestAnimationFrame  API，兼容低版本浏览器
@@ -590,7 +590,7 @@ function startTimeline(timeline, startTime) {
 module.exports = Timeline
 ```
 
-## 2.6 剩余接口实现
+### 2.6 剩余接口实现
 + changePosition
 * changeSrc
 * then
@@ -601,9 +601,9 @@ module.exports = Timeline
 * pause
 * dispose
 
-# 3 webpack打包及帧动画库演示
-## 3.1 webpack打包和 demo 编写
-### 环境
+## 3 webpack打包及帧动画库演示
+### 3.1 webpack打包和 demo 编写
+#### 环境
 (1) 全局安装 webpack
 ```bash
 $ npm i webpack -g
@@ -639,7 +639,7 @@ module.exports = {
 }
 ```
 
-### 简单的 DEMO
+#### 简单的 DEMO
 *demo.html*
 ```html
 <!DOCTYPE html>
@@ -680,7 +680,7 @@ var repeatAnimation = animation() // 获取实例
 repeatAnimation.start(80)
 ```
 
-## 3.2 demo 的完整实现
+### 3.2 demo 的完整实现
 
 *demo.html*
 ```html

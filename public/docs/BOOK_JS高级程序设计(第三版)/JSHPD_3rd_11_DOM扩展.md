@@ -7,13 +7,13 @@ tag:
 date: 2014-11-08 21:20:29
 ---
 
-# 1 选择符API
+## 1 选择符API
 **Selectors API**
 ☑︎ 官方API：www.w3.org/TR/selectors-api
 ☑︎ 用途：通过CSS选择符查询DOM文档取得元素的引用
 ☑︎ 兼容性：`IE8+` ` Firefox3.5+` `Safari3.1+` ` Chrome` ` Opera10+`
 
-## 1.1 querySelector()方法
+### 1.1 querySelector()方法
 **querySelector(cssSelector)**：通过css选择符查询DOM节点
 ☑︎ 参数：CSS选择符
 ☑︎ 返回值：返回与该模式匹配的第一个元素，如果没有匹配的元素，返回null
@@ -27,7 +27,7 @@ var myDiv = document.querySelector("#myDiv");
 var img = document.body.querySelector("img.button");
 ```
 
-## 1.2 querySelectorAll()方法
+### 1.2 querySelectorAll()方法
 **querySelectorAll(cssSelector)**：通过css选择符查询包含所有匹配的DOM节点的NodeList对象
 ☑︎ 参数：CSS选择符
 ☑︎ 返回值：NodeList对象（快照而非动态查询），如果没有匹配的元素，NodeList就是空的
@@ -46,7 +46,7 @@ for(i=0,len=strongs.length; i < len; i++){
 }
 ```
 
-## 1.3 matchesSelector()方法
+### 1.3 matchesSelector()方法
 **matchsSelector(cssSelector)**：检测调用元素与指定css选择符是否匹配
 ☑︎ 参数：css选择符
 ☑︎ 返回值：如果匹配返回true；否则返回false
@@ -86,7 +86,7 @@ if (matchesSelector(document.body, 'body.page1')) {
 
 
 
-## 2 元素遍历
+### 2 元素遍历
 
 ```
 背景：浏览器旧的 API 处理元素间的空格存在差异
@@ -135,11 +135,11 @@ while (child != element.lastElementChild) {
 ```
 
 
-# 3 HTML 5
+## 3 HTML 5
 
-## 3.1 与类相关的扩展
+### 3.1 与类相关的扩展
 
-### getElementsByClassName() 方法
+#### getElementsByClassName() 方法
 
 ☑︎ 调用：包括 document 对象在内的所有 HTML 元素都可以调用。
 
@@ -159,7 +159,7 @@ var allCurrentUsernames = document.getElementsByClassName('username current')
 var selected = document.getElementById('myDiv').getElementsByClassName('selected')
 ```
 
-### classList 属性
+#### classList 属性
 
 该属性是新集合类型 `DOMTokenList` 的实例。
 
@@ -231,9 +231,9 @@ div.className = classNames.join(' ')
 div.classList,remove('user')
 ```
 
-## 3.2 焦点管理
+### 3.2 焦点管理
 
-### document.activeElement 属性
+#### document.activeElement 属性
 
 ☑︎ 读：这个属性始终会引用 DOM 中当前获得了焦点的元素。
 
@@ -248,9 +248,9 @@ div.classList,remove('user')
 
 ☑︎ 兼容性：`IE4+` `Firefox3+` `Safari4+` `Chrome` 和 `Opera8+`
 
-## 3.3 HTMLDocument 的变化
+### 3.3 HTMLDocument 的变化
 
-### document.readState
+#### document.readState
 
 ☑︎ 读： `loading`  正在加载文档，`complete` 已经加载完文档
 
@@ -268,7 +268,7 @@ if (document.readyState == 'complete') {
 
 
 
-### document.compatMode
+#### document.compatMode
 
 ☑︎ 读：`CSS1Compat` 标准模式，`BackCompat` 混杂模式。
 
@@ -287,7 +287,7 @@ else {
 
 
 
-### document.head
+#### document.head
 
 ☑︎ 读：引用文档的 `<head>` 元素
 
@@ -299,9 +299,9 @@ var head = document.head || document.getElementsByTagName('head')[0]
 
 
 
-## 3.4 字符集属性
+### 3.4 字符集属性
 
-#### document.charset
+##### document.charset
 
 ☑︎ 读：文档中实际使用的字符集，默认 `UTF-16`
 
@@ -314,7 +314,7 @@ alert(document.charset) // 'UTF-16'
 document.charset = 'UTF-8'
 ```
 
-#### document.defaultCharset
+##### document.defaultCharset
 
 `只读`
 
@@ -329,9 +329,9 @@ if (document.charset != document.defaultCharset) {
 }
 ```
 
-## 3.5 自定义数据属性
+### 3.5 自定义数据属性
 
-### element.dataset
+#### element.dataset
 
 ☑︎ 类型： `DOMStringMap`
 
@@ -365,11 +365,11 @@ if (div.dataset.myname) {
 
 
 
-## 3.6 插入标记
+### 3.6 插入标记
 
 一般来说，在插入大量新 HTML 标记时，用 `inserHTML`、`outerHTML`、`insertAdjacentHTML()` 比通过多次 DOM 操作先创建节点再插入的方式效率要高很多。
 
-### 3.6.1 element.innerHTML
+#### 3.6.1 element.innerHTML
 
 ☑︎ 读：与调用元素的所有子节点（包括元素、注释和文本节点）对应的 HTML 标记。
 
@@ -413,7 +413,7 @@ div.innerHTML = 'Hello & welcome, <b>\"reader\"!</b>'
 <div id="content">Hello &amp; welcome, <b>&quot;reader&quot;!</b></div>
 ```
 
-#### (1) 限制
+##### (1) 限制
 
 **插入 script 标签**
 
@@ -480,7 +480,7 @@ div.removeChild(div.firstChild)
 
 Firefox 对在内容类型为`application/xhtml+xml` 的 XHTML 文档中设置 `innerHTML`有严格的限制。在 XHTML 文档中使用 innerHTML 时，XHTML 代码必须完全符合要求。如果代码格式不正确，设置 innerHTML 将会静默的失败。
 
-#### (2) window.toStaticHTML()
+##### (2) window.toStaticHTML()
 
 ☑︎ 用途：对字符串进行无害化处理。
 
@@ -496,7 +496,7 @@ var sanitized = window.toStaticHTML(text) // IE8 only
 alert(sanitized) // <a href="#">Click Me</a>
 ```
 
-### 3.6.2 element.outerHTML
+#### 3.6.2 element.outerHTML
 
 ☑︎ 读：调用它的元素及所有子节点的 HTML 标签。
 
@@ -518,7 +518,7 @@ p.appendChild(document.createTextNode('This is a paragraph.'))
 div.parentNode.replaceChild(p, div)
 ```
 
-### 3.6.3 element.insertAdjacentHTML()
+#### 3.6.3 element.insertAdjacentHTML()
 
 ☑︎ 用途：在特定的位置插入 HTML 字串儿。
 
@@ -549,7 +549,7 @@ element.insertAdjacentHTML('afterend', "<p>Hello World!</p>")
 
 ☑︎ 兼容性：`IE` `Firefox8+` `Safari` `Opera` `Chrome`
 
-### 3.6.4 内存与性能问题
+#### 3.6.4 内存与性能问题
 
 说明：假设某个元素有一个事件处理程序或者引用了一个 JavaScript 对象作为属性，在使用 `innerHTML`、 `outerHTMl`、 `inserAdjacentHTML()` 方式将该元素从文档树中删除后，元素与时间处理程序或 JavaScript 对象之间的绑定关系在内存中并不一定会被删除。
 
@@ -569,7 +569,7 @@ for (var i = 0, len = values.length; i < len; i++) {
 ul.innerHTML = itemsHtml
 ```
 
-## 3.7 element.scrollIntoView()
+### 3.7 element.scrollIntoView()
 
 ☑︎ 用途：通过滚动浏览器窗口或某个容器元素，调用元素就可以出现在视口中。
 
@@ -583,9 +583,9 @@ document.forms[0].scrollIntoView()
 
 
 
-# 4 专用扩展
+## 4 专用扩展
 
-## 4.1 文档模式
+### 4.1 文档模式
 
 **说明**：`文档模式` 决定了可以使用什么功能
 
@@ -606,7 +606,7 @@ document.forms[0].scrollIntoView()
 
 ☑︎ 默认文档模式：浏览器会通过文档类型声明来确定是使用最佳的可用文档模式，还是使用混杂模式。
 
-### 设置浏览器的渲染模式
+#### 设置浏览器的渲染模式
 
 **有两种方式：**
 
@@ -635,7 +635,7 @@ document.forms[0].scrollIntoView()
 
 
 
-### 读取当前页面的文档模式
+#### 读取当前页面的文档模式
 
 **document.documentMode**
 
@@ -651,7 +651,7 @@ document.forms[0].scrollIntoView()
 var mode = document.documentMode
 ```
 
-## 4.2 element.children
+### 4.2 element.children
 
 `只读`
 
@@ -668,7 +668,7 @@ var childCount = element.children.length
 var firstChild = element.children[0]
 ```
 
-## 4.3 element.contains()
+### 4.3 element.contains()
 
 ☑︎ 参数：要检测的后代节点。
 
@@ -686,7 +686,7 @@ alert(document.documentElement.contains(document.body)) // true
 **扩展**
 ----
 
-### element.compareDocumentPosition()
+#### element.compareDocumentPosition()
 
 `DOM Level 3`
 
@@ -750,11 +750,11 @@ function contains (refNode, otherNode)
 
 
 
-## 4.4 插入文本
+### 4.4 插入文本
 
 `innerText` 和 `outerText` 没有被纳入 HTML 5 规范。
 
-### innerText
+#### innerText
 
 ☑︎ 读：节点包含的所有文本拼接成的字符串。
 
@@ -805,7 +805,7 @@ div.innerText = div.innerText
 **扩展**
 ----
 
-### element.textContent
+#### element.textContent
 
 `DOM Level 3`
 
@@ -840,7 +840,7 @@ setInnerText(div, 'Hello world!')
 alert(getInnerText(div)) // 'Hello world!'
 ```
 
-### outerText 属性
+#### outerText 属性
 
 **说明：**除了作用范围扩大到了包含调用它的节点之外，`outerText` 与 `innerText` 基本上没有多大区别。
 
@@ -867,11 +867,11 @@ div.parentNode.replaceChild(text, div)
 
 
 
-## 4.5 滚动
+### 4.5 滚动
 
 几个对 `HTMLElement` 类型扩展的专有方法，只有`Safari` `Chrome`支持。
 
-### element.scrollIntoViewNeeded(alignCenter)
+#### element.scrollIntoViewNeeded(alignCenter)
 
 **说明**：只有当前元素在视口中不可兼得情况下，才滚动浏览器窗口或容器元素，最终让它可见。如果当前元素在视口中可见，这个方法什么也不做。
 
@@ -879,13 +879,13 @@ div.parentNode.replaceChild(text, div)
 
 ☑︎ 参数：boolean,  是否尽量将元素先是在视口中部（垂直方向）。
 
-### element.scrollByLines(lineCount)
+#### element.scrollByLines(lineCount)
 
 ☑︎ 功能：将元素的内容滚动指定的行高。
 
 ☑︎ 参数：number, 滚动几行。可正（向下滚）可负（向上滚）。
 
-### element.scrollByPages(pageCount)
+#### element.scrollByPages(pageCount)
 
 ☑︎ 功能：将元素的内容滚动 pageCount 页，也就是说具体高速有元素的高度和 pageCount 共同决定。
 

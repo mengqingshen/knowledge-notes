@@ -12,9 +12,9 @@ typora-copy-images-to: ipic
 
 [课程网址](http://coding.imooc.com/class/56.html)
 
-# 0 课程介绍
+## 0 课程介绍
 
-## 0.1 谁需要这门课程？
+### 0.1 谁需要这门课程？
 
 **课程价值**
 
@@ -32,27 +32,27 @@ typora-copy-images-to: ipic
 
 ![AED8B097-DB89-4C53-8CB2-E3139B18D44A](http://cdn.mengqingshen.com/2017-05-01-AED8B097-DB89-4C53-8CB2-E3139B18D44A.png)
 
-## 0.2 实战项目介绍
+### 0.2 实战项目介绍
 
 **完整的 APP 开发流程**
 
 ![570D9EFE-A0CC-469F-BCA4-91C211CA3979](http://cdn.mengqingshen.com/2017-05-01-570D9EFE-A0CC-469F-BCA4-91C211CA3979.png)
 
-## 0.3 APP 功能介绍
+### 0.3 APP 功能介绍
 
-### 桌面图标和启动画面
+#### 桌面图标和启动画面
 
 ![2F3BB186-3327-4570-9A2E-E5A045F7B577](http://cdn.mengqingshen.com/2017-05-01-2F3BB186-3327-4570-9A2E-E5A045F7B577.png)
 
-### 过度页面和轮播效果
+#### 过度页面和轮播效果
 
 ![18A3986C-D085-4AB6-9ADF-840A6F430F78](http://cdn.mengqingshen.com/2017-05-01-18A3986C-D085-4AB6-9ADF-840A6F430F78.png)
 
-### 注册登录和账户管理
+#### 注册登录和账户管理
 
 ![130F9764-04B8-4F04-9ED5-AF3AB490607C](http://cdn.mengqingshen.com/2017-05-01-130F9764-04B8-4F04-9ED5-AF3AB490607C.png)![52A268EC-E64E-4474-9165-F49A79918AAD](http://cdn.mengqingshen.com/2017-05-01-52A268EC-E64E-4474-9165-F49A79918AAD.png)![F9E03C12-AB29-4BC0-85DD-39C1CD318FCD](http://cdn.mengqingshen.com/2017-05-01-F9E03C12-AB29-4BC0-85DD-39C1CD318FCD.png)  
 
-### 视频的配音制作页面
+#### 视频的配音制作页面
 
 ![FB55C162-8EEB-4D53-BFBF-84D8088EB6D5](http://cdn.mengqingshen.com/2017-05-01-D01D4730-8B82-4239-BBE2-36F344EC6C70.png)![673134D8-1109-491F-8847-F350D1C15D21](http://cdn.mengqingshen.com/2017-05-01-673134D8-1109-491F-8847-F350D1C15D21.png)
 
@@ -62,29 +62,29 @@ typora-copy-images-to: ipic
 
 
 
-### 展现所有制作完毕的创意视频列表
+#### 展现所有制作完毕的创意视频列表
 
 ![9D5AE200-A2A3-493F-98F7-E556D9A0E7F6](http://cdn.mengqingshen.com/2017-05-01-9D5AE200-A2A3-493F-98F7-E556D9A0E7F6.png)![F5A2E11D-8BCE-41F9-910B-ED6ED175665A](http://cdn.mengqingshen.com/2017-05-01-F5A2E11D-8BCE-41F9-910B-ED6ED175665A.png)![CAE44957-D7E2-49C9-9AFF-C62A01C947BD](http://cdn.mengqingshen.com/2017-05-01-CAE44957-D7E2-49C9-9AFF-C62A01C947BD.png)
 
-## 0.4 APP 后台
+### 0.4 APP 后台
 
 ![A91AFC02-5CD0-4503-9F50-0D7FD254E490](http://cdn.mengqingshen.com/2017-05-01-A91AFC02-5CD0-4503-9F50-0D7FD254E490.png)  
 
 
 
-## 0.5 要点
+### 0.5 要点
 
-### 环境搭建
+#### 环境搭建
 
 ![557CE284-84C8-48C0-912E-B785D565264F](http://cdn.mengqingshen.com/2017-05-01-557CE284-84C8-48C0-912E-B785D565264F.png)
 
-### 服务器端
+#### 服务器端
 
 
 
 ![17B2329A-63D9-4F63-B913-719BD59CFE20](http://cdn.mengqingshen.com/2017-05-01-17B2329A-63D9-4F63-B913-719BD59CFE20.png)
 
-### 前后端连调
+#### 前后端连调
 
 ![5B6CDA95-0E79-4BA9-923F-71673D97C9F9](http://cdn.mengqingshen.com/2017-05-01-5B6CDA95-0E79-4BA9-923F-71673D97C9F9.png)
 
@@ -92,9 +92,9 @@ typora-copy-images-to: ipic
 
 
 
-# 1 课程预热
+## 1 课程预热
 
-## 1.1 React 与 React Native
+### 1.1 React 与 React Native
 
 React 是 Facebook 推出的一种解决页面组建的抽象和形态的技术方案。它有两个工程上的实现
 
@@ -104,7 +104,7 @@ React 是 Facebook 推出的一种解决页面组建的抽象和形态的技术�
 
 
 
-### React Native 的性能
+#### React Native 的性能
 
 ![B37DFE6F-B67F-4087-B827-0BD00621E4EA](http://cdn.mengqingshen.com/2017-05-01-B37DFE6F-B67F-4087-B827-0BD00621E4EA.png)
 
@@ -126,7 +126,7 @@ RN 可以看作是基于 React 之上的一种针对特定平台的技术开发�
 
 
 
-## 1.2 为何选择 React Native
+### 1.2 为何选择 React Native
 
 ☑ 职业发展
 
@@ -156,13 +156,13 @@ RN 可以看作是基于 React 之上的一种针对特定平台的技术开发�
 
 **总而言之，学会 React 的基本语法以后，可以去开发网页，可以去开发 iOS APP ,可以去开发 Android APP，一招走遍天下。**
 
-## 1.3 RN 适合你吗？
+### 1.3 RN 适合你吗？
 
 ![DBAAAD84-B012-49AD-A19A-D3CE9237EEE3](http://cdn.mengqingshen.com/2017-05-01-DBAAAD84-B012-49AD-A19A-D3CE9237EEE3.png)
 
-# 2 初识 React Native
+## 2 初识 React Native
 
-## 2.1 本地环境搭建
+### 2.1 本地环境搭建
 
 **参考**
 
@@ -216,7 +216,7 @@ $ npm install cnpm -g
 
 
 
-## 2.2 忍不住尝尝鲜
+### 2.2 忍不住尝尝鲜
 
 ```bash
 $ cnpm install -g react-native-cli -g
@@ -231,7 +231,7 @@ $ react-native init imoocApp
 
 
 ```bash
-# 使用在 iOS 模拟器中启动的第一种运行方式
+## 使用在 iOS 模拟器中启动的第一种运行方式
 $ cd imoocApp && react-native run-ios
 ```
 
@@ -239,9 +239,9 @@ $ cd imoocApp && react-native run-ios
 
 
 
-## 2.3 了解 RN 项目代码结构
+### 2.3 了解 RN 项目代码结构
 
-### 准备
+#### 准备
 
 **sublime text 代码高亮**
 
@@ -262,7 +262,7 @@ $ npm install -g eslint babel-eslint --registry=http://registry.npm.taobao.org
 
 
 
-### 目录
+#### 目录
 
 ```bash
 .
@@ -278,9 +278,9 @@ $ npm install -g eslint babel-eslint --registry=http://registry.npm.taobao.org
 
 
 
-# 3 RN 入门知识学习
+## 3 RN 入门知识学习
 
-## 3.1 如何选择 RN 版本
+### 3.1 如何选择 RN 版本
 
 RN 版本升级很频繁，好的一面是，社区狂热的氛围保障了 RN 未来的影响力，坏的一面是，一旦跟定某个版本进行开发，可能某些问题只有这些版本才会有，同时有些组件没有来得及更新或者升级，你就不敢升级，导致自己动手修改或者规避，会有一个维护的成本，因此选择本本确实是一个非常头疼的问题。
 
@@ -294,9 +294,9 @@ RN 版本升级很频繁，好的一面是，社区狂热的氛围保障了 RN �
 
 
 
-## 3.2 React 的组件生命周期
+### 3.2 React 的组件生命周期
 
-### 3.2.1 传统的 web  开发中的组件
+#### 3.2.1 传统的 web  开发中的组件
 
 **基本生命周期**
 
@@ -317,7 +317,7 @@ CSS 的部分需要全局先加载好，JS 也要提前加载好，因为如果�
 
 
 
-### 3.2.2 React 的组件
+#### 3.2.2 React 的组件
 
 传统的 WEB 组件， WEB 中交互以及交互带来的变化要通过 JS 明确操作 DOM 结构来完成，而 RN 中都需要通过状态来控制组件。
 
@@ -329,7 +329,7 @@ React 的思想主要是通过构建可复用组件来构建用户界面。可�
 
 
 
-#### React 生命周期图示
+##### React 生命周期图示
 
 先不管父亲儿子孙子这种多层嵌套的组件，先来看一下一个单一组件的生命周期。如下
 
@@ -372,7 +372,7 @@ React 的思想主要是通过构建可复用组件来构建用户界面。可�
 
 
 
-### 3.2.3 RN 示例
+#### 3.2.3 RN 示例
 
 统计屏幕点击次数。
 
@@ -459,11 +459,11 @@ AppRegistry.registerComponent('imoocApp', () => imoocApp);
 
 
 
-## 3.3 父子组件撕逼大战
+### 3.3 父子组件撕逼大战
 
 对于嵌套的组件的生命周期, 下面借助一个例子分析。
 
-### 3.3.1 代码
+#### 3.3.1 代码
 
 **index.ios.js**
 
@@ -632,7 +632,7 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('imoocApp', () => imoocApp)
 ```
 
-### 3.3.2 分析
+#### 3.3.2 分析
 
 **(1) 父组件初始化渲染和加载**
 
@@ -664,9 +664,9 @@ AppRegistry.registerComponent('imoocApp', () => imoocApp)
 
 
 
-## 3.4 ES5 和 ES6 两种组件形态
+### 3.4 ES5 和 ES6 两种组件形态
 
-### 3.4.1 ECMAScript 历史
+#### 3.4.1 ECMAScript 历史
 
 ECMAScript 规范的历史就是浏览器厂商、规范制订者和开发者的撕逼史。
 
@@ -683,9 +683,9 @@ ECMAScript 规范的历史就是浏览器厂商、规范制订者和开发者的
 
 
 
-### 3.4.2 ES5 和 ES6 两种组件实现方式的对比
+#### 3.4.2 ES5 和 ES6 两种组件实现方式的对比
 
-#### 要点
+##### 要点
 
 | 要点                    | ES5 方式            | ES6 方式                                   |
 | --------------------- | ----------------- | ---------------------------------------- |
@@ -697,7 +697,7 @@ ECMAScript 规范的历史就是浏览器厂商、规范制订者和开发者的
 
 
 
-#### 案例
+##### 案例
 
 前面父子组件撕逼大战的例子`index.ios.js`。
 
@@ -1025,11 +1025,11 @@ AppRegistry.registerComponent('imoocApp', () => imoocApp)
 
 
 
-# 4 升级 React Native 的重要补录
+## 4 升级 React Native 的重要补录
 
-## 4.1 一期答疑总结
+### 4.1 一期答疑总结
 
-### 好习惯
+#### 好习惯
 
 + 培养自己选找答案的功能
 
@@ -1037,7 +1037,7 @@ AppRegistry.registerComponent('imoocApp', () => imoocApp)
 
   ​
 
-### 常见问题
+#### 常见问题
 
 **xcode 升级导致的问题**
 
@@ -1051,9 +1051,9 @@ AppRegistry.registerComponent('imoocApp', () => imoocApp)
 
 
 
-## 4.2 Run 起来课程源代码
+### 4.2 Run 起来课程源代码
 
-### 4.2.1 检查环境
+#### 4.2.1 检查环境
 ```bash
 $ node -v
 $ react-native -v
@@ -1067,26 +1067,26 @@ $ react-native -v
 | react-native-cli | 0.1.10 | 2.0.1          |
 | react-native     | 0.22.2 | 0.44.0         |
 
-### 4.2.2 升级项目
+#### 4.2.2 升级项目
 ```bash
 $ cd imoocApp
 
-# 依赖的包可能过时了，替换为最新的
+## 依赖的包可能过时了，替换为最新的
 $ rm -rf node_modules && npm install
 ```
 
-### 4.2.3 保持环境干净
+#### 4.2.3 保持环境干净
 + 关闭全局的翻墙
 + 关闭已有的 RN 服务进程(如果有的话)
 + 关闭模拟器
 
-### 4.2.4 跑起来
+#### 4.2.4 跑起来
 
 ```bash
 $ react-native run-ios
 ```
 
-### 4.2.5 错误修复
+#### 4.2.5 错误修复
 **技巧**: 如果报错且没有头绪，可以用 xcode 编译运行项目, 一般报错信息更丰富些。
 
 **(1) Semantic Issue**
@@ -1099,17 +1099,17 @@ $ react-native run-ios
 
 ```bash
 $ cd imoocApp
-# 在项目中建立和第三方模块的链接
+## 在项目中建立和第三方模块的链接
 $ rnpm link
 ```
 
-## 4.3 暴力升级到 0.36 (上)
+### 4.3 暴力升级到 0.36 (上)
 ```bash
-# 升级 nodejs
+## 升级 nodejs
 $ nvm install v7.9.0
 $ nvm alias default v7.9.0
 
-# 升级 react-native、react-native-cli、rnpm
+## 升级 react-native、react-native-cli、rnpm
 $ npm i react-native-cli@2.0.1 -g
 $ npm i rnpm@1.9.0 -g
 ```
@@ -1117,7 +1117,7 @@ $ npm i rnpm@1.9.0 -g
 **项目小升级**
 
 ```bash
-# 升级项目
+## 升级项目
 $ cd imoocApp
 $ rnpm unlink
 $ rm -rf node_modules
@@ -1128,7 +1128,7 @@ $ rnpm link
 ```
 
 
-## 4.4 暴力升级到 0.36(下)
+### 4.4 暴力升级到 0.36(下)
 **项目大升级(脱胎换骨)**
 
 + 优点: 能抹平环境差异带来的问题。
@@ -1181,13 +1181,13 @@ $ rnpm link
 <true/>
 ```
 
-## 4.4 课程进阶拥抱 ES6(上)
+### 4.4 课程进阶拥抱 ES6(上)
 
 + 模块引入使用 import
 + 组件声明换成 class 方式(记得 export 出去)
 + 事件绑定加上 bind
 
-## 4.5 课程进阶拥抱 ES6(下)
+### 4.5 课程进阶拥抱 ES6(下)
 
 **一些第三方组件通过 import 引入方式需要使用包名**
 
@@ -1242,10 +1242,10 @@ uploadContainer: {
 ...
 ```
 
-# 5 项目初始准备
-## 5.1 狗狗说 App 功能介绍
+## 5 项目初始准备
+### 5.1 狗狗说 App 功能介绍
 
-### 狗狗说功能分析
+#### 狗狗说功能分析
 
 + 启动画面
 + 轮播图
@@ -1267,16 +1267,16 @@ uploadContainer: {
 
 ![0F99F927-3486-4087-9003-EDB6D5E67F8E](http://cdn.mengqingshen.com/2017-05-11-0F99F927-3486-4087-9003-EDB6D5E67F8E.png)
 
-## 5.2 TabBarIOS 开启 App 首页
+### 5.2 TabBarIOS 开启 App 首页
 
 ![D49EBA1A-7626-49FF-9346-83D5A5B8D8D1](http://cdn.mengqingshen.com/2017-05-11-D49EBA1A-7626-49FF-9346-83D5A5B8D8D1.png)
 
 从大往小作，一开始不要纠结样式、功能等琐碎的小细节，先把大框架描出来。放眼整个 APP，先把几个主要的视图界面狑出来 ，然后组合一下，再对着这个大的结构进行更加详细的功能模块的拆解和具体方案的架构。
 
-### RN 插件: 图标工具
+#### RN 插件: 图标工具
 [react-native-vector-icons@4.1.1](https://github.com/oblador/react-native-vector-icons): 一个流行的图标库管理工具
 
-### RN 插件包管理器: rnpm
+#### RN 插件包管理器: rnpm
 
 作用是把模块链接到 iOS 工程中，把必要的资源文件比如图标字体也拷贝到工程中，方便 RN 调用。
 
@@ -1288,20 +1288,20 @@ uploadContainer: {
 显然 rnpm 已经被合并到了 react-native core ，用法和 rnpm 类似，[以 react-native-vector-icons 为例](http://www.jianshu.com/p/188c19387853)
 
 ```bash
-# rnpm link react-native-vector-icons
+## rnpm link react-native-vector-icons
 $ react-native link react-native-vector-icons
 ```
 
-### RN 升级
+#### RN 升级
 
 ```bash
-# 本地环境升级，除了升级 RN 核心库外，配置文件也会相应进行升级到最新。
+## 本地环境升级，除了升级 RN 核心库外，配置文件也会相应进行升级到最新。
 $ react-native upgrade
 ```
 
-## 5.3 TabBarIOS 开启 APP 首页(2)
+### 5.3 TabBarIOS 开启 APP 首页(2)
 
-### 5.3.1 使用 react-native-vector-icons
+#### 5.3.1 使用 react-native-vector-icons
 ![9B23DCB1-CE53-45DF-BF53-95F3640FAF02](http://cdn.mengqingshen.com/2017-05-12-9B23DCB1-CE53-45DF-BF53-95F3640FAF02.png)
 
 项目中具体使用的是 [Ionicons](http://ionicons.com)图标库。
@@ -1311,23 +1311,23 @@ import Icon from 'react-native-vector-icons/Ionicons'
 ```
 **注意**: 链接后需要重新编译才能生效。
 
-### 5.3.2 使用 Icon.TabBarItem 取代 TabBarIOS.Item
+#### 5.3.2 使用 Icon.TabBarItem 取代 TabBarIOS.Item
 Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 
-## 5.4 APP 流程结构及开发计划
+### 5.4 APP 流程结构及开发计划
 下面先开发哪个页面？理论上选择哪个都可以，只不过如果先对项目有一个功能的拆解和梳理之后，在选择项目的开发顺序，心里更有底。在前期的开发中，能有一些适当的扩展和接口，给到后面的页面，真个开发顺序会更加自然。
 为了让大家印象更加深刻，先来对 APP 的功能进行一下细化，过一下用户的交互流程。
 
 
 ![8ED42960-E255-4E4F-B77D-AF81B3DAC6F6](http://cdn.mengqingshen.com/2017-05-12-8ED42960-E255-4E4F-B77D-AF81B3DAC6F6.png)
 
-## 5.5 页面重构
+### 5.5 页面重构
 将 Tab 对应的视图分别放在单独文件中。
 
 ![B1F170F2-BD34-4B34-ACB2-D18C948BCBCF](http://cdn.mengqingshen.com/2017-05-12-B1F170F2-BD34-4B34-ACB2-D18C948BCBCF.png)
 
-## 5.6 飞速创建后台和 Mock 假数据
-### 5.6.1 传统 Mock 假数据
+### 5.6 飞速创建后台和 Mock 假数据
+#### 5.6.1 传统 Mock 假数据
 一般开发网页的时候伪造数据，包括
 
 + 在代码中写死一个 JS 对象或数组存放假数据。
@@ -1339,7 +1339,7 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 + 如果本地开发后台，比较辛苦，需求如果频繁变化，本地后台的规则也需要频繁变化，造成开发成本过高。
 + 不能满足定制化的需求，比如随机返回数据的个数，返回不同的图片地址或者返回变化的数据，包括无法验证传参的正确性。
 
-### 5.6.2 Rap 和 Mockjs
+#### 5.6.2 Rap 和 Mockjs
 
 **Rap**: 处理网络请求和输入数据规则。
 
@@ -1363,15 +1363,15 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 
 
 
-# 6 开发视频配音界面
+## 6 开发视频配音界面
 
-## 6.1 视频列表挖坑开发(1)
+### 6.1 视频列表挖坑开发(1)
 
 
 
 ![9E15FAF0-4397-418C-BE0E-D177ABB003BA](http://cdn.mengqingshen.com/2017-05-12-9E15FAF0-4397-418C-BE0E-D177ABB003BA.png)
 
-## 6.2 视频列表挖坑开发(2)
+### 6.2 视频列表挖坑开发(2)
 
 完成视频列表的基本雏形，这个雏形远远没有完成，留下许多问题需要解决:
 1. resizeMode 是啥？(图片的显示模式)
@@ -1380,8 +1380,8 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 
 ![C88BC6E4-8DDC-4492-9101-0FA459384A9F](http://cdn.mengqingshen.com/2017-05-12-C88BC6E4-8DDC-4492-9101-0FA459384A9F.png)
 
-## 6.3 RN 的异步请求与封装
-### 6.3.1 RN 的 3 种异步请求方式
+### 6.3 RN 的异步请求与封装
+#### 6.3.1 RN 的 3 种异步请求方式
 ![B6D9792B-84CC-4A93-8B3E-AA17DA78ABDB](http://cdn.mengqingshen.com/2017-05-12-B6D9792B-84CC-4A93-8B3E-AA17DA78ABDB.png)
 
 在 RN 中获取网络数据常见的有上面[3种方式](http://facebook.github.io/react-native/docs/network.html)，分别说明下。
@@ -1400,7 +1400,7 @@ Icon.TabBarItem是对TabBarIOS.Item的封装，用来生成图标列表项。
 (3) XMLHttpRequest
 就是我们常说的异步请求接口，是对 iOS 网络层 API 的一个上层封装，类似浏览器提供的 XMLHttpRequest。两者用法差不多，最大的区别是，在浏览器呦同源策略，请求会受到安全限制，不能发起跨域的请求，在 RN 中就没有这个限制。因此可以通过 XHR 实现无后台的 APP，请求第三方开发的接口。如果是在浏览器中的话，往往要借助 JSONP，或者服务端设置，或者通过服务端发送异步请求，在来转发这个数据，最后给到浏览器。
 
-### 6.3.2 列表页使用 fetch 请求数据
+#### 6.3.2 列表页使用 fetch 请求数据
 **异步请求的时机**:  一般会在组件挂载之后(componentDidMount)发起异步请求来获取数据。
 
 (1) 使用 [mockjs](https://www.npmjs.com/package/mockjs) 将来自 Rap 的规则转换为数据。
@@ -1417,13 +1417,13 @@ $ npm i mockjs -S
 + 将请求相关的请求 URL 和请求头等放在配置文件中；
 + 使用上面封装的 get 方法完成对列表数据的请求。
 
-## 6.4-6.5 列表页上滑预加载和下拉刷新效果
+### 6.4-6.5 列表页上滑预加载和下拉刷新效果
 
 ![dig_talk_list](http://cdn.mengqingshen.com/2017-05-13-dig_talk_list.gif)
 
-## 6.6 iOS 屏幕尺寸及分辨率知识点解析
+### 6.6 iOS 屏幕尺寸及分辨率知识点解析
 
-### 6.6.1 基础知识
+#### 6.6.1 基础知识
 
 **显示单元**
 
@@ -1433,7 +1433,7 @@ $ npm i mockjs -S
 
 ![E6892C1C-FDCF-4C0B-A10B-F0F83F4186C6](http://cdn.mengqingshen.com/2017-05-13-E6892C1C-FDCF-4C0B-A10B-F0F83F4186C6.png)
 
-### 6.6.2 iphone 6
+#### 6.6.2 iphone 6
 
 **屏幕尺寸**
 
@@ -1443,7 +1443,7 @@ $ npm i mockjs -S
 
 ![3FB67D4A-A0ED-49AD-9873-209D0C05FA0B](http://cdn.mengqingshen.com/2017-05-13-3FB67D4A-A0ED-49AD-9873-209D0C05FA0B.png)
 
-### 6.6.3 iphone 6 plus
+#### 6.6.3 iphone 6 plus
 
 ![3297081A-DCD1-4CB1-85B2-AE09391D60D0](http://cdn.mengqingshen.com/2017-05-13-3297081A-DCD1-4CB1-85B2-AE09391D60D0.png)
 
@@ -1451,7 +1451,7 @@ $ npm i mockjs -S
 
 实际上，对于 Retina 屏，屏幕上实际的采样会低于真实的设备分辨率，比如 iphone 6 plus 的采样率为 87%，所以 1242 x 2208 的分辨率实际能渲染的像素点为 1080 x 1920。密度有所下降，但肉眼无法分辨。这种把高分辨率以倍数的方式缩小到一个特定分辨率的做法，也就是我们通常所说的视网膜技术。
 
-### 6.6.4 iPhone 尺寸分布
+#### 6.6.4 iPhone 尺寸分布
 
 市面上有很多中高清屏，像素密度不同，像素比也不同，有1倍的、1.5倍的、4倍的。相关的概念有很多，这里不一一涉及。关于苹果设备的分辨率，下面提供一个像素表。基本包括所有我们需要关心的参数。
 
@@ -1470,16 +1470,16 @@ $ npm i mockjs -S
 + iPhone 4 到 iPhone 5 为什么宽度不变，高度增加了 88 个点？
 + iPhone 5 及之后，屏幕的宽高比为什么维持在 0.56 附近，依据是什么？
 
-## 6.7 列表页点赞功能
+### 6.7 列表页点赞功能
 (1) 在 Rap 增加点赞的接口
 (2) 在 Item 组件中实现点赞功能
 
-## 6.8 RN 导航器 Navigator 的用法
+### 6.8 RN 导航器 Navigator 的用法
 利用 [Navigator](http://reactnative.cn/docs/0.44/navigation.html#content) 实现从列表页跳转到详情页的功能。
 
 ![navigate_from_list_to_detail](http://cdn.mengqingshen.com/2017-05-13-navigate_from_list_to_detail.gif)
 
-## 6.9 详情页视频播放控制
+### 6.9 详情页视频播放控制
 
 ```bash
 $ npm i -S react-native-video
@@ -1488,36 +1488,36 @@ $ react-native link react-native-video
 
 ![1B3A7CAD-DBEC-4669-95AD-DDC92206FB03](http://cdn.mengqingshen.com/2017-05-13-1B3A7CAD-DBEC-4669-95AD-DDC92206FB03.png)
 
-## 6.10 详情页视频播放控制 loading-进度条 -重播功能
+### 6.10 详情页视频播放控制 loading-进度条 -重播功能
 (1) 视频载入前显示 loading 图标
 (2) 视频播放中显示进度条
 (3) 视频播放到最后时，显示重播按钮
 
-## 6.11 详情页视频播放控制--暂停、播放控制
+### 6.11 详情页视频播放控制--暂停、播放控制
 (1) 视频播放时，点击播放器会暂停播放，并显示继续播放按钮；
 (2) 点击继续播放，会隐藏暂停播放的按钮并让视频继续播放。
 
-## 6.12 详情页视频播放控制--容错处理、返回导航
+### 6.12 详情页视频播放控制--容错处理、返回导航
 
 ![1EBF2D97-BC73-44B1-8603-6AFD12601ED7](http://cdn.mengqingshen.com/2017-05-13-1EBF2D97-BC73-44B1-8603-6AFD12601ED7.png)
 
-## 6.13 详情页视频信息补全
+### 6.13 详情页视频信息补全
 
 ![C302B147-4C39-4B10-B7B1-470758992807](http://cdn.mengqingshen.com/2017-05-13-C302B147-4C39-4B10-B7B1-470758992807.png)
 
-## 6.14 获取视频评论列表(1)
+### 6.14 获取视频评论列表(1)
 详情页
 (1) 在 componentDidMount 时异步加载数据评论；
 (2) 使用 ListView 外实现评论列表。
 
 ![9EE0C411-9DAE-422B-A349-9309C8CBE507](http://cdn.mengqingshen.com/2017-05-13-9EE0C411-9DAE-422B-A349-9309C8CBE507.png)
 
-## 6.15 获取视频评论列表(2)
+### 6.15 获取视频评论列表(2)
 详情页
 (1) 用 ListView 的 renderHeader 方案取代 ScrollView 嵌套 ListView 的方案；
 (2) 实现评论列表的分页加载。
 
-## 6.16 RN 里面提交评论表单(1)
+### 6.16 RN 里面提交评论表单(1)
 (1) 评论列表顶部添加评论框；
 
 ![EA055CC9-F6FF-4047-A891-A41A76302A0A](http://cdn.mengqingshen.com/2017-05-13-EA055CC9-F6FF-4047-A891-A41A76302A0A.png)
@@ -1526,11 +1526,11 @@ $ react-native link react-native-video
 
 ![6CF1C956-66FF-4347-AE7F-1F99D564D36D](http://cdn.mengqingshen.com/2017-05-13-6CF1C956-66FF-4347-AE7F-1F99D564D36D.png)
 
-## 6.17 RN 里面提交评论表单
+### 6.17 RN 里面提交评论表单
 (1) 使用 react-native-button 组件创建评论提交按钮
 
 ```bash
-# 注意:  不需要 react-native link ，可以直接使用！
+## 注意:  不需要 react-native link ，可以直接使用！
 $ npm i -S react-native-button
 ```
 
@@ -1541,9 +1541,9 @@ $ npm i -S react-native-button
 
 ![D58D76CE-3E13-4090-95F1-ABC1799EDD95](http://cdn.mengqingshen.com/2017-05-13-D58D76CE-3E13-4090-95F1-ABC1799EDD95.png)
 
-# 7 RN 知识进阶串讲
+## 7 RN 知识进阶串讲
 
-## 7.1 React 与 MVC
+### 7.1 React 与 MVC
 
 ![BB444226-6690-4063-AA7C-D31047EAB84F](http://cdn.mengqingshen.com/2017-05-14-BB444226-6690-4063-AA7C-D31047EAB84F.png)
 
@@ -1571,8 +1571,8 @@ React 并不是清清白白的 View，因为每一个组件的内部都可以自
 
 ![520EFCE0-6500-4B8A-8487-672A09457A84](http://cdn.mengqingshen.com/2017-05-14-520EFCE0-6500-4B8A-8487-672A09457A84.png)
 
-## 7.2 RN 的 30+ 组件
-### 7.2.1 组件
+### 7.2 RN 的 30+ 组件
+#### 7.2.1 组件
 
 | 序号   | v0.45.0-rc.0 版本控件         | 说明   |
 | ---- | ------------------------- | ---- |
@@ -1607,7 +1607,7 @@ React 并不是清清白白的 View，因为每一个组件的内部都可以自
 | 29   | WebView                   |      |
 
 
-### 7.2.2 运行官方 RN 示例
+#### 7.2.2 运行官方 RN 示例
 
 [react-native GitHub](https://github.com/facebook/react-native)，当下的最新版本为 `v0.45.0-rc.0`。官方提供了 RN 使用的 demos ，路径为[react-native/RNTester](https://github.com/facebook/react-native/tree/master/RNTester)。
 
@@ -1638,7 +1638,7 @@ $ cd RNTester && open .
 
 
 
-## 7.3 Flexbox 弹性布局的魔法属性
+### 7.3 Flexbox 弹性布局的魔法属性
 
 RN 使用的是 flexbox (弹性盒子伸缩布局，或者叫伸缩容器布局)。当页面适配不同屏幕不同宽度的时候，让所有元素能够以一种合适的方式来呈现。有两点需要注意：
 1. RN 的 flexbox 跟 css3 的 flexbox 属性名称写法不同， RN 里面全部是驼峰标示；
@@ -1650,21 +1650,21 @@ RN 使用的是 flexbox (弹性盒子伸缩布局，或者叫伸缩容器布局)
 (2) 子项目扔到父容器
 (3) 子项目定义个性对齐样式
 
-### flexDirection
+#### flexDirection
 
 | 值          | 说明                    |
 | ---------- | --------------------- |
 | row        | 子项目一律从左往右，一个挨一个地排列到右侧 |
 | column(默认) | 子项目竖着排列，从上往下一个一个挨着排   |
 
-### flexWrap
+#### flexWrap
 
 | 值          | 说明               |
 | ---------- | ---------------- |
 | wrap       | 主轴上排不下，就折行继续排    |
 | nowrap(默认) | 主轴上排不下也不折行，溢出父容器 |
 
-### justifyContent
+#### justifyContent
 沿主轴方向的排列方式。
 
 | 值              | 说明       |
@@ -1675,7 +1675,7 @@ RN 使用的是 flexbox (弹性盒子伸缩布局，或者叫伸缩容器布局)
 | space-around   | 沿主轴平分空间  |
 | center         | 沿主轴居中排列  |
 
-### alignItems
+#### alignItems
 沿侧轴方向的空间利用（排列）方式。在父元素上定义，作用在子元素。
 
 | 值              | 说明                    |
@@ -1685,9 +1685,9 @@ RN 使用的是 flexbox (弹性盒子伸缩布局，或者叫伸缩容器布局)
 | flex-end       | 沿侧轴居后                 |
 | stretch        | 沿侧轴方向拉伸子元素，直到填充完父容器边界 |
 
-## 7.4 Flex 弹性布局的魔法属性
+### 7.4 Flex 弹性布局的魔法属性
 
-### alignSelf
+#### alignSelf
 类似 alignItems，不同的地方在于它声明在子元素上也作用在子元素。覆盖在父元素上设置的 alignItems 对子元素的作用。
 
 ![7DEE610A-EEC2-4962-A55A-DC69C9A4E8F3](http://cdn.mengqingshen.com/2017-05-14-7DEE610A-EEC2-4962-A55A-DC69C9A4E8F3.png)
@@ -1748,16 +1748,16 @@ const styles = StyleSheet.create({
 })
 ```
 
-### flex
+#### flex
 控制元素沿主轴方向所占空间的多少。
 
-## 7.5 如何甄选第三方组件
+### 7.5 如何甄选第三方组件
 
-### 搜索
+#### 搜索
 + [Github Search](https://github.com/search.html)
 + [react.parts Search](https://react.parts/native)
 
-### 比较
+#### 比较
 
 + 在 GitHub 比较
 
@@ -1774,7 +1774,7 @@ const styles = StyleSheet.create({
 + 文档是否规范，最好有效果示意图
 + 示例代码是否丰富
 
-## 7.6 RN 的 AsyncStorage 异步存储
+### 7.6 RN 的 AsyncStorage 异步存储
 **说明**: RN 官方为我们提供了 AsyncStorage 这个异步持久化方案，它采用键值对存储系统，跟浏览器的 localStorage 本地存储有相似之处。
 
 **注意**: 官方是建议我们对 AsyncStorage 进行抽象封装之后再使用，而不是直接使用它，因为 AsyncStorage 是全局操作的。
@@ -1825,7 +1825,7 @@ const styles = StyleSheet.create({
       })
 ```
 
-## 7.7 如何在手机上安装演示 RN 原型项目
+### 7.7 如何在手机上安装演示 RN 原型项目
 (1) 数据线连接 Mac
 (2) 清理 Mac 上的 RN 环境
 (3)  localhost 改为 Wi-Fi 环境下的 IP 地址
@@ -1837,27 +1837,27 @@ const styles = StyleSheet.create({
 
 (4) Xcode 选择 iphone 真机来启动
 
-# 8 App 內注册登录
+## 8 App 內注册登录
 
-## 8.1 伪造 Rap 注册登录接口
+### 8.1 伪造 Rap 注册登录接口
 
 ![92F80514-7EE1-439A-BA4C-77F915B1BF8D](http://cdn.mengqingshen.com/2017-05-16-92F80514-7EE1-439A-BA4C-77F915B1BF8D.png)
 
 
 
-## 8.2 实现注册登录页面1(输入验证码)
+### 8.2 实现注册登录页面1(输入验证码)
 
 (1) 伪造发送验证码接口;
 (2) 完成登录界面基本 UI 部分；
 
-## 8.3 实现注册登录页面2(倒计时)
+### 8.3 实现注册登录页面2(倒计时)
 
 (1) 伪造登录接口；
 
 (2) 使用 [react-native-sk-countdown](https://github.com/laputa-er/react-native-sk-countdown)实现倒计时重新获取验证码功能;
 由于[第三方的react-native-sk-countdown](https://github.com/shigebeyond/react-native-sk-countdown)似乎已经停止维护，对 RN 0.44 不兼容，因此我[Fork 了一个新项目](https://github.com/laputa-er/react-native-sk-countdown)，修复了部分兼容问题。
 
-## 8.4 本地管理应用登录状态
+### 8.4 本地管理应用登录状态
 
 登录流程
 
@@ -1865,9 +1865,9 @@ const styles = StyleSheet.create({
 
 
 
-# 9 用户账户页面
+## 9 用户账户页面
 
-## 9.1-9.3 头像展示与相册选取
+### 9.1-9.3 头像展示与相册选取
 
 - 使用 react-native-image-native 从本地选择图片作为头像
 
@@ -1877,7 +1877,7 @@ const styles = StyleSheet.create({
 - [参考1](https://github.com/react-community/react-native-image-picker/issues/562)
 - [参考2](http://www.jianshu.com/p/c212cde86877)
 
-## 9.4-9.5 XHR 异步上传图片到 cloudinary 图床
+### 9.4-9.5 XHR 异步上传图片到 cloudinary 图床
 
 [cloudinary.com](https://cloudinary.com/console/settings/account)
 
@@ -1893,9 +1893,9 @@ const styles = StyleSheet.create({
 - 发起异步请求
 - 针对图床个性化的签名
 
-## 9.6-9.7 饼状图显示图片上传进度
+### 9.6-9.7 饼状图显示图片上传进度
 
-### 1  安装 react-native-progress
+#### 1  安装 react-native-progress
 
 安装 [react-native-progress](https://github.com/oblador/react-native-progress) 组件，并通过 xcode 手动添加到工程中（ART 不支持通过 `react-native link` 引入）
 
@@ -1913,22 +1913,22 @@ const styles = StyleSheet.create({
 
 (3) 重启调试环境，包括 `run-ios`、模拟器
 
-### 2 完成上传进度
+#### 2 完成上传进度
 
-### 3 完成图像上传成功后的后续处理
+#### 3 完成图像上传成功后的后续处理
 
 - 更新服务器上用户的头像数据
 - 将更新的数据留一份在本地(AsyncStorage)，从而每次打开都是最新上传的那个头像
 
-## 9.8-9.9 编辑和保存用户资料
+### 9.8-9.9 编辑和保存用户资料
 
 (1) 丰富“用户资料更新”接口的字段
 (2) 实现在弹出 Modal 编辑用户资料界面功能
 (3) 实现保存资料和退出登录
 
-# 10 用 Koa 开发本地 API 后台
+## 10 用 Koa 开发本地 API 后台
 
-## 10.1 本地安装 Mongodb 数据库
+### 10.1 本地安装 Mongodb 数据库
 
 **注意**： 因为之前在虚拟机(Arch Linux)上装过一个 MongoDB 数据库(参见[《NodeJS线上服务器部署与发布-2.2.2》](http://laputa-er.github.io/2017/04/22/%E6%85%95%E8%AF%BE%E7%BD%91/imooc_NodeJS%20%E7%BA%BF%E4%B8%8A%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%8F%91%E5%B8%83/))，所以后面实际的练习是在用的虚拟机上的数据库。如果没有特别的原因，并不推荐在 OS X 上装一个数据库，因为污染开发环境。
 
@@ -1963,11 +1963,11 @@ $ sudo mongo
 $ brew unlink mongodb && brew uninstall mongodb
 ```
 
-## 10.2 搭建 Koa 初始项目架构
+### 10.2 搭建 Koa 初始项目架构
 
 **注意**： 课程中使用的是 koa1 ，我实践中使用的是 koa2，两者 api 还有有不少差异的，主要是 koa2 全面使用了 async/await 这种 ES2017 语法。
 
-### 目录和 package.json
+#### 目录和 package.json
 
 ```bash
 $ mkdir dogtalk-server
@@ -1976,7 +1976,7 @@ $ npm init
 $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lodash uuid xss bluebird speakeasy
 ```
 
-### 依赖的第三方库
+#### 依赖的第三方库
 
 - [koa](https://www.npmjs.com/package/koa)
 - [koa-logger](https://www.npmjs.com/package/koa-logger): 开发环境下的日志中间件，作用于请求的最先和最后环节，建议放到应用的最开始部分。
@@ -1991,25 +1991,25 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 - [bluebird](https://www.npmjs.com/package/bluebird): 对于 promise 规范实现封装后的 promise 库，有更优雅的 API 和更好的性能。
 - [speakeasy](https://www.npmjs.com/package/speakeasy): 基于一系列安全算法，能生成随机数字的工具库，比如短信验证码。
 
-## 10.3 Koa 中配置使用 Mondodb
+### 10.3 Koa 中配置使用 Mondodb
 
-### 10.3.1 增加需要的数据库用户
+#### 10.3.1 增加需要的数据库用户
 
 ```bash
-# 创建超级用户
+## 创建超级用户
 > use admin
 > db.createUser({user: 'imooc_cases_owner', pwd: 'Safe1*24$', roles: [{role: 'userAdminAnyDatabase', db: 'admin'}]})
 > db.auth('imooc_cases_owner', 'Safe1*24$')
-# 创建 dogtalk 数据库用户
+## 创建 dogtalk 数据库用户
 > use dogtalk
 > db.createUser({user: 'dogtalk_runner', pwd: 'F**k9001$', roles: [{role: 'readWrite', db: 'dogtalk'}]})
 ```
 
-### 10.3.2 mongoose model
+#### 10.3.2 mongoose model
 
 **技巧**: 由于 Model 可能会很多，因此推荐动态递归遍历加载需要的数据库对应的 Model。
 
-## 10.5-10.6 用螺丝帽在 Koa 中发送短信
+### 10.5-10.6 用螺丝帽在 Koa 中发送短信
 
 [螺丝帽](https://luosimao.com/)可以为开发者提供一系列服务，包括
 
@@ -2018,7 +2018,7 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 - 邮件服务
 - 人机验证
 
-### 螺丝帽短信服务
+#### 螺丝帽短信服务
 
 使用螺丝帽配置短信服务：
 (1) 注册账号
@@ -2031,7 +2031,7 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 
 (4) 查看接口文档的[示例](https://luosimao.com/docs/api/30)
 
-### 实现短信发送
+#### 实现短信发送
 
 (1) 在官方示例代码的基础上进行修改
 
@@ -2040,7 +2040,7 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 
 (2) 实现`发送短信验证码`-`校验短信验证码`逻辑
 
-## 10.7 用 DHC 插件(Restlet Client)快速测试本地 API 服务
+### 10.7 用 DHC 插件(Restlet Client)快速测试本地 API 服务
 
 **说明**: DHC 看样子改名为 Restlet Client 了。
 (1) 根据从 RAP 到处的接口文档实现后台接口，然后通过 Restlet Client  测试接口能否正常工作。以 `用户资料更新`接口为例：
@@ -2052,7 +2052,7 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 
 **知识点**: 用户提交的需要持久化到数据库或用于查询数据库的字段都需要经过 trim 和 xss 处理。
 
-## 10.8 服务器端实现图床签名接口
+### 10.8 服务器端实现图床签名接口
 
 (1) 原先的签名信息是由客户端生成的，这种方式不够安全，现在改为在服务器端生成。
 (2) 发现原来 koa-router 中间件写法有错误，修正了下。
@@ -2063,7 +2063,7 @@ $ npm i -S koa koa-logger koa-session koa-bodyparser koa-router mongoose sha1 lo
 - 更具上传的头像相关信息，从服务器获取签名信息(`/api/signature`)
 - 上传用户头像到 cloudinary.com，然后更新用户头像信息(`/api/u/update`)
 
-## 10.9-10.10 用七牛上传图片资源
+### 10.9-10.10 用七牛上传图片资源
 
 (1) 在七牛的对象存储中新建一个空间，拿到测试域名
 
@@ -2080,13 +2080,13 @@ $ npm i qiniu -S
 (4) 重构服务端签名接口代码，增加对七牛对象存储服务的签名支持。
 (5) 重构客户端上传图片的代码，将图片上传到七牛。参考[七牛提供的 upload 接口文档](https://developer.qiniu.com/kodo/api/1312/upload)。
 
-# 11 开发视频配音页面
+## 11 开发视频配音页面
 
 ![FB63992D-F55C-496E-A9EE-D158F2654E19](http://cdn.mengqingshen.com/2017-06-08-FB63992D-F55C-496E-A9EE-D158F2654E19.png)
 
 ![3D9347CA-8904-4E17-8972-F47DD2278486](http://cdn.mengqingshen.com/2017-06-08-3D9347CA-8904-4E17-8972-F47DD2278486.png)
 
-## 11.1-11.2 视频选择器与视频预览
+### 11.1-11.2 视频选择器与视频预览
 
 `华龙先画骨，盖房子先画图😊。`
 
@@ -2098,7 +2098,7 @@ $ npm i qiniu -S
 
 
 
-## 11.3-11.4 用七牛上传视频资源
+### 11.3-11.4 用七牛上传视频资源
 
 (1) 重新规划七牛对象存储，创建三个新的存储空间 `dogtalkavatar`、`dogtalkvideo`、`dogtalkaudio`
 
@@ -2145,7 +2145,7 @@ $ npm i qiniu -S
 (4) 利用上一步得到的元信息中的操作后新资源的 key，得到处理后资源的链接
 http://org5nla9w.bkt.clouddn.com/tif2A2xwqtgaelwOgLOIfPiOteo=/FqzqKrAA25Sj4apuKmmryPdnU4RA
 
-## 11.5-11.6 服务端存储视频信息
+### 11.5-11.6 服务端存储视频信息
 
 (1) 视频信息存储到 MongoDB
 
@@ -2155,13 +2155,13 @@ http://org5nla9w.bkt.clouddn.com/tif2A2xwqtgaelwOgLOIfPiOteo=/FqzqKrAA25Sj4apuKm
 
 
 
-## 11.7 控制录音倒计时
+### 11.7 控制录音倒计时
 
 (1) [react-native-sk-countdown](https://github.com/shigebeyond/react-native-sk-countdown) 这个组件在倒计时组件有 BUG，作者一年没维护了，所以就 copy 一份改吧改吧算了。
 
 (2) 上传视频 -> 点击开始录音->录音准备倒计时->Go->生成静音视频文件->完成录音。
 
-## 11.8-11.9 实现视频录音功能
+### 11.8-11.9 实现视频录音功能
 
 **注意**：课程适用的版本比较老，老版本支持声音的回放，新版本移除了相关 API ，回放声音需要使用另外一个库 react-native-sound。
 
@@ -2179,7 +2179,7 @@ $ react-native link react-native-audio react-native-sound
 
 (4) 更换视频时，重置整个页面的 state
 
-## 11.10-11.11 上传音频到云空间
+### 11.10-11.11 上传音频到云空间
 
 ![EA6EFEC3-4747-4689-9AD0-994FAC892318](http://cdn.mengqingshen.com/2017-06-25-EA6EFEC3-4747-4689-9AD0-994FAC892318.png)
 
@@ -2203,13 +2203,13 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 
 
-## 11.12 服务器端存储音频数据
+### 11.12 服务器端存储音频数据
 
 (1) 服务端添加对应音频数据表的 schema
 
 (2) 客户端在将音频上传到 cloudinary 后，将相关信息存储到服务器
 
-## 11.13-11.14 合并音频视频并同步封面图到七牛
+### 11.13-11.14 合并音频视频并同步封面图到七牛
 
 为什么不在自己的服务器上合并音频和视频？
 
@@ -2224,7 +2224,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 
 
-## 11.15-11.16 发布整个视频音频创意
+### 11.15-11.16 发布整个视频音频创意
 
 先实现交互逻辑，一个以假乱真的效果
 
@@ -2232,7 +2232,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 (2) 弹窗中填写表单，提交后关闭弹窗。
 
-## 11.17 服务器端保存创意视频
+### 11.17 服务器端保存创意视频
 
 在后端真正实现保存视频创意的逻辑
 
@@ -2242,7 +2242,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 
 
-## 11.18 视频列表页对接后台数据
+### 11.18 视频列表页对接后台数据
 
 (1) 后端增加创意列表页和详情页接口以及相关配置
 
@@ -2254,7 +2254,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 (5) 防止 defaultState 覆盖掉状态中的 user
 
-## 11.19 完善评论和点赞后台
+### 11.19 完善评论和点赞后台
 
 (1) 后端增加 /api/up 的处理函数和路由
 
@@ -2262,9 +2262,9 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 
 
-# 12 APP 上线准备工作
+## 12 APP 上线准备工作
 
-## 12.1 制作并导出 APP 各中尺寸的图标
+### 12.1 制作并导出 APP 各中尺寸的图标
 
 介绍 APP 图表制作方面的一些简单途径。
 
@@ -2295,7 +2295,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 
 
-### 12.1.1 方式一：基于图标模版（PS）
+#### 12.1.1 方式一：基于图标模版（PS）
 
 **网址:** https://appicontemplate.com/
 
@@ -2349,7 +2349,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 ![E4102DA6-84C6-46F7-A418-46B98F9D371E](http://cdn.mengqingshen.com/2017-07-02-E4102DA6-84C6-46F7-A418-46B98F9D371E.png)
 
-### 12.1.2 方式二：在线傻瓜式导出
+#### 12.1.2 方式二：在线傻瓜式导出
 
 **网址**：http://makeappicon.com/
 
@@ -2365,9 +2365,9 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 
 
-## 12.2 配置启动画面和 App 名字
+### 12.2 配置启动画面和 App 名字
 
-### 12.2.1 App 名字
+#### 12.2.1 App 名字
 
 (1) 修改 `ios/imoocApp/Info.plist`
 
@@ -2377,7 +2377,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 ![F7E182E5-AA7C-436D-9A79-47BBC4D88CC6](http://cdn.mengqingshen.com/2017-07-06-F7E182E5-AA7C-436D-9A79-47BBC4D88CC6.png)
 
-### 12.2.2 启动画面
+#### 12.2.2 启动画面
 
 (1) 修改文案
 
@@ -2430,7 +2430,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 (2) 启动画面之后修复出现登录页闪烁的问题（获取用户信息前先显示一个 loading 浮层）
 
-## 12.3 为 App 开发轮播图功能
+### 12.3 为 App 开发轮播图功能
 
 (1) 安装 react-native-swiper
 
@@ -2438,7 +2438,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 (3) 只在安装后第一次进入应用显示轮播图
 
-## 12.4 打包 App 安装文件并借助蒲公英分发测试
+### 12.4 打包 App 安装文件并借助蒲公英分发测试
 
 
 
@@ -2547,14 +2547,14 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
 ![B420B1A9-B0D3-4104-9697-81DF74533406](http://cdn.mengqingshen.com/2017-07-13-B420B1A9-B0D3-4104-9697-81DF74533406.png)
 
-## 12.5 利用蒲公英做 BUG 探索测试
+### 12.5 利用蒲公英做 BUG 探索测试
 
 - 测试覆盖率高
 - 测试报告很详尽
 
 ![EAD302AA-631B-447B-BF1B-D49D02707514](http://cdn.mengqingshen.com/2017-07-16-EAD302AA-631B-447B-BF1B-D49D02707514.png)
 
-# 13 二期课程-初识 Redux 框架
+## 13 二期课程-初识 Redux 框架
 
 **Redux 和 React 什么关系？**
 
@@ -2570,7 +2570,7 @@ http://res.cloudinary.com/dox3udxny/video/upload/e_volume:400/audio/ehzacj6smav4
 
   ​
 
-## 13.1 先了解下 Immutable Data
+### 13.1 先了解下 Immutable Data
 
 **可变数据的副作用**
 
@@ -2625,20 +2625,20 @@ a === b // false
 
 通过 `fromJS` 返回的其实是一个结构树，通过节点共享（没有更改过的节点共享，更改后就拉出来分支）保证了性能的同时，保证每次返回不同的对象。甚至可以进行回溯，得到历史的状态。
 
-## 13.2 React 蛋疼的数据通信
+### 13.2 React 蛋疼的数据通信
 
 重新回顾下 React 的几个点
 
-### 生命周期
+#### 生命周期
 
 ![895B60EC-1169-4555-A9C1-649E6A045070](http://cdn.mengqingshen.com/2017-07-05-895B60EC-1169-4555-A9C1-649E6A045070.png)
 
-### state(状态) 和 props(属性)
+#### state(状态) 和 props(属性)
 
 - state，往往是内含的、封闭的，只和自身有关；
 - props，往往和外界有关联，可能会影响到内部的状态。
 
-### 数据流
+#### 数据流
 
 ![71CDB834-A9EB-442B-B5AA-48217B0AE5FE](http://cdn.mengqingshen.com/2017-07-05-71CDB834-A9EB-442B-B5AA-48217B0AE5FE.png)
 
@@ -2697,11 +2697,11 @@ AppRegistry.registerComponent('App', () => App)
 
 
 
-### 总结
+#### 总结
 
 上面的办法逻辑会比较绕，当项目比较复杂时，可能会不知道回调函数被多少组件使用。如果状态这样一层层往上提，在子组件的代码中并不容易看出来到底它有哪些状态或属性。导致这样子写代码非常辛苦。
 
-## 13.3 理解 Redux 工作原理和基本用法
+### 13.3 理解 Redux 工作原理和基本用法
 
 ![EB0B0649-445B-4B89-9D53-34D37F951A12](http://cdn.mengqingshen.com/2017-07-05-EB0B0649-445B-4B89-9D53-34D37F951A12.png)
 
@@ -2769,11 +2769,11 @@ store.dispatch({ type: 'CHANGE_AGE', payload: 29})
 
 
 
-# 14 二期课程-React Native 升级到 0.42.3
+## 14 二期课程-React Native 升级到 0.42.3
 
-## 14.1 获取一期源码进行升级降级
+### 14.1 获取一期源码进行升级降级
 
-### 软升级
+#### 软升级
 
 在老项目源码上升级。
 
@@ -2798,7 +2798,7 @@ $ react-native upgrade
 
 
 
-### 硬升级（课程实战是用的这种方式）
+#### 硬升级（课程实战是用的这种方式）
 
 新加一个项目，将老项目的部分源码迁移过来。
 
@@ -2812,7 +2812,7 @@ $ npm i react-native@2.0.1 -g
 （2）新建项目
 
 ```bash
-# 新建 0.42.3 的 RN 项目
+## 新建 0.42.3 的 RN 项目
 $ react-native init imoocApp --version 0.42.3
 ```
 
@@ -2834,7 +2834,7 @@ $ react-native init imoocApp --version 0.42.3
 
 
 
-## 14.2 依赖模块升级与Link
+### 14.2 依赖模块升级与Link
 
 （4）安装依赖
 
@@ -2892,7 +2892,7 @@ $ react-native run-ios
 
 
 
-## 14.3 重新划分项目目录结构
+### 14.3 重新划分项目目录结构
 
 ```bash
 ├── app
@@ -2924,7 +2924,7 @@ $ react-native run-ios
 
 
 
-## 14.4 利用 Redux 组装 store
+### 14.4 利用 Redux 组装 store
 
 ```bash
 $ npm i redux react-redux redux-immutable immutable redux-thunk redux-logger redux-promise -S
@@ -2966,11 +2966,11 @@ export default function configureStore(initialState = fromJS({})) {
 
 
 
-## 14.5 重构主控页面引入 connect 连接组件
+### 14.5 重构主控页面引入 connect 连接组件
 
-## 14.6 dispatch 异步请求控制 App 加载次序
+### 14.6 dispatch 异步请求控制 App 加载次序
 
-## 14.7 引入 React Navigation 解决导航及嵌套路由跳转
+### 14.7 引入 React Navigation 解决导航及嵌套路由跳转
 
 （1）给配置 ESlint
 
@@ -3055,13 +3055,13 @@ module.exports = {
 
 （2）使用 react-navigation 重构 Tab
 
-## 14.8 抽象列表页容器组件重构数据流
+### 14.8 抽象列表页容器组件重构数据流
 
 `app/containers/creation.js`
 
 - 容器组件没有具体的页面组件，只负责业务逻辑的跳转、属性的传递和一些 action 的分发。
 
-## 14.9 完善列表页功能成功运行 Redux 集成效果
+### 14.9 完善列表页功能成功运行 Redux 集成效果
 
 1. 用 redux 重构创意列表页下拉列表；
 
@@ -3069,31 +3069,31 @@ module.exports = {
 
    ​
 
-## 14.10 重构详情页进行代码减肥
+### 14.10 重构详情页进行代码减肥
 
 用 redux 重构创意视频详情页。
 
-## 14.11 抽象主要页面的容器组件
+### 14.11 抽象主要页面的容器组件
 
 ![B993348E-F26A-4B43-B946-2EE3252F5DD1](http://cdn.mengqingshen.com/2017-10-15-B993348E-F26A-4B43-B946-2EE3252F5DD1.png)
 
-## 14.12 实现评论与详情页的跳转和数据更新
+### 14.12 实现评论与详情页的跳转和数据更新
 
 1. RN 0.45 有一个 BUG，由于默认开启了滚动性能的优化，导致布局不正常，需要将 removeClippedSubviews 设置为 false 来关闭滚动性能的提升。
 
-## 14.13 重新配置注册登录的数据状态同步
+### 14.13 重新配置注册登录的数据状态同步
 
-## 14.14 抽离信息提示组件状态到全局完善评论
+### 14.14 抽离信息提示组件状态到全局完善评论
 
-## 14.15 抽象升级配音页面及导航容器
+### 14.15 抽象升级配音页面及导航容器
 
-## 14.16 重新组织账户页面
+### 14.16 重新组织账户页面
 
-## 14.17 升级账户更新页同步新数据
+### 14.17 升级账户更新页同步新数据
 
-# 15 二期课程-兼容开发 Android App
+## 15 二期课程-兼容开发 Android App
 
-## 15.1 配置 Android 本地开发环境
+### 15.1 配置 Android 本地开发环境
 
 文档（中文翻译）：https://reactnative.cn/docs/0.49/getting-started.html
 
@@ -3142,7 +3142,7 @@ $ vim ~/.bash_Profile
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-# 确保使用 on-my-zsh 终端也能正确使用 sdkmanager 和 avdmanager 等工具
+## 确保使用 on-my-zsh 终端也能正确使用 sdkmanager 和 avdmanager 等工具
 $ vim ~/.zshrc
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
@@ -3150,9 +3150,9 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 
 
-## 15.2 第一次尝试运行 Android RN 项目
+### 15.2 第一次尝试运行 Android RN 项目
 
-### 1. 启动 Android Studio
+#### 1. 启动 Android Studio
 
 有因为 GFW 需要设置代理的情况。以我的情况为例，自建的 SS 服务，客户端用 [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG/releases/)（mac），本地 Sock5 情况如下：
 
@@ -3166,17 +3166,17 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 
 
-### 2. Configure | SDK Manager
+#### 2. Configure | SDK Manager
 
-### 3. 创建一个新的项目（为了进入编辑器开启 AVD Maneger）
+#### 3. 创建一个新的项目（为了进入编辑器开启 AVD Maneger）
 
 **注意：**创建一个新 Android 项目，项目打开后，初始化时如果有提示错误，根据提示安装缺少的 SDK 和工具即可。
 
-### 4. 开启 AVD Maneger
+#### 4. 开启 AVD Maneger
 
 **注意：**务必确保 `ANDROID_HOME` 环境变量设置正确，否则AVD Manager 图标会被禁用。
 
-### 5. 启动模拟器
+#### 5. 启动模拟器
 
 **注意：**可能会遇到 HAXM 问题，如下：
 
@@ -3197,12 +3197,12 @@ $ open .
 
 
 
-### 6. 启动 RN 项目
+#### 6. 启动 RN 项目
 
 （1）编辑 `android/local.properties`
 
 ```bash
-# 如果用 Android Studio 打开过这个项目，会自动生成这个文件，则不需要编辑
+## 如果用 Android Studio 打开过这个项目，会自动生成这个文件，则不需要编辑
 sdk.dir=/Users/tonyearth/Library/Android/sdk
 ```
 
@@ -3230,7 +3230,7 @@ $ react-native run-android
 
 
 
-### 7. 运行应用程序
+#### 7. 运行应用程序
 
 **注意：**如果程序需要联网，需要对请求进行代理，例如
 
@@ -3240,7 +3240,7 @@ $ adb reverse tcp:1234 tcp:1234
 
 
 
-### 8. 调试
+#### 8. 调试
 
 - 呼出启动 debug menu: `command + m`
 
@@ -3248,15 +3248,15 @@ $ adb reverse tcp:1234 tcp:1234
 
 
 
-## 15.3 兼容 Android 平台样式
+### 15.3 兼容 Android 平台样式
 
 （1）轮播图中的按钮样式
 
 （2）Tab 拦样式
 
-## 15.4 兼容 Android 录制功能
+### 15.4 兼容 Android 录制功能
 
-### 15.4.1 [react-native-image-picker](https://github.com/react-community/react-native-image-picker)
+#### 15.4.1 [react-native-image-picker](https://github.com/react-community/react-native-image-picker)
 
 （1）权限配置`android/app/src/main/AndroidManifes.xml`
 
@@ -3275,13 +3275,13 @@ dependencies {
 
 （3）确保被引入`android/app/src/main/java/com/imoocapp/MainApplication.java`
 
-### 15.4.2 Android Device Monitor
+#### 15.4.2 Android Device Monitor
 
 `Tools>Android>Android Device Monitor`
 
 ![](http://cdn.mengqingshen.com/2017-11-13-190730.png)
 
-# 总结
+## 总结
 
 简单说几个 Scott 的代码存在以下几个可以优化的地方：
 

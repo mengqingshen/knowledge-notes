@@ -11,7 +11,7 @@ tag:
 > Axure 是一个专业的快速原型设计工具，对于有些需要协作的项目时，可以允许多个团队成员共同编辑同一个项目文件，并且同时保存项目的历史版本，掌握 Axure 的团队协作将大大增加了工作中的项目进度。   
 
 
-# 1 搭建 Axure 团队项目
+## 1 搭建 Axure 团队项目
 本课时讲解如何搭建 Axure 团队项目，多个用户同时编辑同一个项目文件。
 
 *Team > Create Team Project From Current File*
@@ -26,20 +26,20 @@ tag:
 * 签入:  `签入` 共享项目中的某个文件相当于提交了修改，团队其它成员这时才能进行签入操作。
 
 
-# 2 获取、编辑、提交团队项目
+## 2 获取、编辑、提交团队项目
 本课时讲解如何获取团队项目、编辑团队项目以及提交团队项目。
 
 (1) 获取团队项目（Team > Get and Open Team Project）或打开本地已经获取过的团队项目的本地副本；
 (2)  `签出` 需要修编辑的文件（如果是之前就获取的项目，则需要先更新一下）；
 (3) 编辑完成后 `签入` 编辑过的文件。
 
-# 3 Axure 使用技巧
+## 3 Axure 使用技巧
 本课时讲解 Axure 的使用技巧，便于我们快速的进行原型设计。
 
-## 辅助线使用
+### 辅助线使用
 
 ![](http://o7m5xjmtl.bkt.clouddn.com/D4861CFB-704C-487C-8D4C-A79056837FBB.png)
-## 元素选择
+### 元素选择
 + 锁定：用于避免意外改变了某些 widget 的位置（选中一批 widget, 通过拖动改变它们的位置，其中被锁定的 widget 不会发生位移）
 ![](http://o7m5xjmtl.bkt.clouddn.com/97177FD7-6E2E-433E-A5FE-75A75170F391.png)
 
@@ -49,13 +49,13 @@ tag:
 * 单击：用于选中被遮盖的 widget，通过不断 `单击` ，会从上往下一个一个切换选中的 widget
 ![](http://o7m5xjmtl.bkt.clouddn.com/axureclicktoselect.gif)
 
-## 元素对齐设置
+### 元素对齐设置
 ![](http://o7m5xjmtl.bkt.clouddn.com/BD78CF30-5B28-45E2-AC23-84B5855F72BC.png)
 
 + Align:  对齐设置
 * Distribute: 分布设置
 
-## 图片裁剪使用
+### 图片裁剪使用
 + 裁剪图像
 （1）插入图片 widget
 ![](http://o7m5xjmtl.bkt.clouddn.com/BCD5C140-15C8-40C6-BDAE-10A381F4A532.png)
@@ -79,7 +79,7 @@ tag:
 ![](http://o7m5xjmtl.bkt.clouddn.com/CA0F80EB-EAAF-434D-8068-C249EEBFACFF.png)
 
 
-## 图形的使用
+### 图形的使用
 + 将普通形状转换并组合为更为丰富的形状
 （1）创建一个形状 widget （以矩形为例）
 
@@ -92,8 +92,8 @@ tag:
 ![](http://o7m5xjmtl.bkt.clouddn.com/FB15870D-2FD8-4DA4-B973-E6AB37B0B234.png)
 
 
-## 手绘风格使用
+### 手绘风格使用
 ![](http://o7m5xjmtl.bkt.clouddn.com/B2B2B47F-60B8-4F9C-A552-D896FA66BC89.png)     ![](http://o7m5xjmtl.bkt.clouddn.com/CFCBCAF7-61DF-46AC-94DA-1BADE57CC644.png)
 
-## 智能手机图片滑动效果
-## 图片文件上传
+### 智能手机图片滑动效果
+### 图片文件上传

@@ -7,7 +7,7 @@ date: 2015-02-06 10:16:22
 typora-copy-images-to: ipic
 ---
 
-# 1 Nginx rewrite基础
+## 1 Nginx rewrite基础
 功能: 实现URL或URI的重写
 
 **PCRE**
@@ -23,11 +23,11 @@ Uniform Resource Location: 统一资源定位符
 **URI**
 Uniform Resouce Location: 通用资源标志符
 
-# 指令
+## 指令
 
-### 语法规则
+#### 语法规则
 
-#### 变量和运算符
+##### 变量和运算符
 | 变量     | 说明      |
 | ------ | ------- |
 | $host  | 请求的host |
@@ -42,7 +42,7 @@ Uniform Resouce Location: 通用资源标志符
 | -e   | 判断文件或者目录是否存在 | !-e    |
 | -x   | 判断文件是否可执行    | !-x    |
 
-#### if指令
+##### if指令
 
 ```
 if($http_user_agent ~MSIE){    # 如果用户浏览器的user_agent指明自己使用的是IE(~:不区分大小写)
@@ -53,7 +53,7 @@ if（!-f $request_filename）{    # 如果请求的文件不存在
 }
 ```
 
-#### return指令
+##### return指令
 ☑ 用途：返回状态码（如果为状态码设置了替换页面，则会进入替换的页面）
 
 案例：如果访问的URL以".sh"或"*.bash"结尾，则返回状态码403
@@ -64,7 +64,7 @@ location ~ .*\.(sh|bash)?${
 }
 ```
 
-#### set、write指令
+##### set、write指令
 
 **set**
 ☑ 用途: 为变量赋值

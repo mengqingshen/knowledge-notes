@@ -23,10 +23,10 @@ typora-copy-images-to: ipic
 /etc/default/useradd
 ```
 
-# 1 /etc/passwd 和 /etc/shadow
+## 1 /etc/passwd 和 /etc/shadow
 ☑ 注意: 修改`/etc/passwd`中的帐号信息会导致文档属性无法显示拥有者的姓名，取而代之的是UID。
 
-## 1.1 /etc/passwd
+### 1.1 /etc/passwd
 
 ![0C2B36EE-892B-4015-9C48-94CC8B3B0F96](http://cdn.mengqingshen.com/2017-04-21-0C2B36EE-892B-4015-9C48-94CC8B3B0F96.png)
 
@@ -34,21 +34,21 @@ typora-copy-images-to: ipic
 
 ![C187449A-BD80-42BE-B19A-CC015189480C](http://cdn.mengqingshen.com/2017-04-21-C187449A-BD80-42BE-B19A-CC015189480C.png)
 
-## 1.2 /etc/shadow
+### 1.2 /etc/shadow
 
 ![4AF8EA21-281D-4410-8122-4E7C95FD0A27](http://cdn.mengqingshen.com/2017-04-21-4AF8EA21-281D-4410-8122-4E7C95FD0A27.png)
 
 ![41ADC233-E4D6-4FE1-BAAA-66AA46E59734](http://cdn.mengqingshen.com/2017-04-21-41ADC233-E4D6-4FE1-BAAA-66AA46E59734.png)
 
-## 1.3  找回丢失的密码
+### 1.3  找回丢失的密码
 
 ![4D06D232-DC7E-442A-9BE3-4EB790C03732](http://cdn.mengqingshen.com/2017-04-21-4D06D232-DC7E-442A-9BE3-4EB790C03732.png)
 
-# 2 改变默认 home 目录
+## 2 改变默认 home 目录
 
 通过修改`/etc/passwd`第7栏的信息来改变默认home目录(usermod)，对我个人很实用;或者通过修改第8栏给用户一个登录后的默认sheel。
 
-# 3 /sbin/nologin
+## 3 /sbin/nologin
 
 `/sbin/nologin`这个sheel可以让用户在不获得sheel环境，可以用来做为纯pop邮件帐号
 ![C2355F13-6CFA-4600-8209-793FC5E5C02F](http://cdn.mengqingshen.com/2017-04-21-C2355F13-6CFA-4600-8209-793FC5E5C02F.png)
@@ -57,11 +57,11 @@ typora-copy-images-to: ipic
 
 ![BE41DC14-1FF2-4227-9E74-79EB5B2E80F8](http://cdn.mengqingshen.com/2017-04-21-BE41DC14-1FF2-4227-9E74-79EB5B2E80F8.png)
 
-# 4 关于群组
+## 4 关于群组
 
 有效群组，与初始群组，groups,newgrp
 
-## 4.1 /etc/group
+### 4.1 /etc/group
 
 ![62A6A107-D3C8-433F-9BCF-D06991BBF9E0](http://cdn.mengqingshen.com/2017-04-21-62A6A107-D3C8-433F-9BCF-D06991BBF9E0.png)
 
@@ -81,7 +81,7 @@ $ groups # 查看当前用户支持的群组（第一个是有效群组）
 $ newgrp  adm # 切换到adm这个群组为有效群组(现在创建的新文档将属于当前用户，并属于当前有效群组)
 ```
 
-## 4.2 实战
+### 4.2 实战
 
 **默认方式建立用户**
 
@@ -128,7 +128,7 @@ CREATE_MAIL_SPOOL=no     # ==no时不会在/var/spool/mail下建立文档
 ![D9F62C51-2C09-4342-A448-2794D3AAE392](http://cdn.mengqingshen.com/2017-04-21-D9F62C51-2C09-4342-A448-2794D3AAE392.png)
 
 
-# 5.使用standard input建立用户的密码
+## 5.使用standard input建立用户的密码
 
 ```bash
 $ sudo echo "truman"  | passwd --stdin vbird1
@@ -136,7 +136,7 @@ $ sudo echo "truman"  | passwd --stdin vbird1
 
 ![83479858-21B6-4F64-A157-733AD7BF70DD](http://cdn.mengqingshen.com/2017-04-21-83479858-21B6-4F64-A157-733AD7BF70DD.png)
 
-# 6. passwd命令
+## 6. passwd命令
 
 ```
 /etc/passwd
@@ -158,7 +158,7 @@ $ sudo grep yxl /etc/shadow
     8B.OJHx6QdItzTis1p/4LYhx7EhFx.:16023::60::10::
 ```
 
-# 7.chage命令
+## 7.chage命令
 
 ```bash
 $ sudo chage -l yxl # 查看yxl的详细密码属性信息（比passwd -S好用多了）
@@ -167,7 +167,7 @@ $ sudo chage -l yxl # 查看yxl的详细密码属性信息（比passwd -S好用�
 ![0E372DCD-3F35-46C4-80BF-9F67F1A4D2F7](http://cdn.mengqingshen.com/2017-04-21-0E372DCD-3F35-46C4-80BF-9F67F1A4D2F7.png)
 
 
-## 案例1
+### 案例1
 给别人一个初始密码，当该用户登录时必须修改密码，否则无法登录
 
 ```bash
@@ -175,7 +175,7 @@ $ sudo useradd nemo
 $ sudo echo "yxl694852" | passwd --stdin nemo(ubuntu不支持)    or $ sudo passwd nemo
 $ sudo sudo chage -d 0 nemo 
 ```
-# 8.usermod
+## 8.usermod
 
 ![1AC96545-A23D-4D96-AC7F-9625F4D221BC](http://cdn.mengqingshen.com/2017-04-21-1AC96545-A23D-4D96-AC7F-9625F4D221BC.png)
 
@@ -201,7 +201,7 @@ $ sudo chown -R nemo:nemo  /home/nemo # 改变其拥有者和所属组
 $ sudo chmod 700 /home/nemo    # 改变目录的权限
 ```
 
-# 9 userdel
+## 9 userdel
 
 ![3AF64043-2EC7-4163-8828-AF924FD4358C](http://cdn.mengqingshen.com/2017-04-21-3AF64043-2EC7-4163-8828-AF924FD4358C.png)
 
@@ -212,11 +212,11 @@ $ find / -user vbird1 # 全盘查找属于vbird1的档案
 $ sudo userdel -r vbird1 # 连同vbird1的home目录一起清除
 ```
 
-# 10 finger
+## 10 finger
 
 ![64C5B158-6C77-4981-961F-E3058C9595DA](http://cdn.mengqingshen.com/2017-04-21-64C5B158-6C77-4981-961F-E3058C9595DA.png)
 
-## 案例一
+### 案例一
 
 ```bash
 $ finger anderson  # 观察anderson帐号相关属性
@@ -230,40 +230,40 @@ $ finger anderson  # 观察anderson帐号相关属性
   No Plan.
 ```
 
-## 案例二
+### 案例二
 建立自己的计划档
 
 ```bash
 $ echo   "I will go to BeiJIng the day after tomorrow." > ~.plan # 不知道为什么我的机器上没有~/.plan   ~./project   ~/.pgpkey
 ```
 
-## 案例三
+### 案例三
 目前登录的用户与登录时间
 
 ```bash
 $ finger 
 ```
 
-# 11 chfn: 修改/添加个人属性信息
+## 11 chfn: 修改/添加个人属性信息
 
-# 12 chsh :change sheel
-## 案例一
+## 12 chsh :change sheel
+### 案例一
 用anderson的身份列出系统上所有合法的sheel,并制定/bin/sh为自己的sheel       
 
 ```bash
 $ chsh -l        <==>     $ cat /etc/shells  # ubuntu上没有-l 参数
 ```
 
-## 案例二
+### 案例二
 修改当前用户的shell
 
 ```bash
 $ chsh -s /bin/rbash;grep anderson /etc/passwd                
-# <==> 
-# $ sudo usermod -s /bin/rbash anderson
+## <==> 
+## $ sudo usermod -s /bin/rbash anderson
 ```
 
-# 13 id
+## 13 id
 查看某人或自己的UID/GID等信息，还可以用来判断有没有某个用户
 
 ```bash
@@ -271,8 +271,8 @@ $ id      <==>    $ who am i | id # 查看当前用户的信息
 $ id yxl # 查看yxl的UID/GID等信息
 ```
 
-# 14.groupadd, groupmod, groupdel, gpaasswd
-## groupadd  
+## 14.groupadd, groupmod, groupdel, gpaasswd
+### groupadd  
 **案例一: 新建一个群组**
 
 ```bash
@@ -282,7 +282,7 @@ $sudo  grep webteam /etc/group  /etc/shadow
             /etc/gshadow:webteam:!::
 ```
 
-## groupmod
+### groupmod
 ☑ 注意：不要随便更改GID
 
 **案例二：将案例一新建的webeam组名改为myteam,GID改为**
@@ -293,7 +293,7 @@ $ sudo grep myteam /etc/group  /etc/gshadow
             /etc/group:myteam:x:139:
             /etc/gshadow:myteam:!::
 ```
-## groupdel
+### groupdel
 ☑ 注意：如果该组中还有其他帐号则无法顺利删除（可以先更改帐号的GID或者删除那个帐号）
 
 
@@ -302,7 +302,7 @@ $ sudo grep myteam /etc/group  /etc/gshadow
 ```bash
 $ sudo groupdel myteam
 ```
-## gpasswd
+### gpasswd
 
 **案例四：建立一个新的群组myteam，交给yxl管理（群组管理员）**
 
@@ -315,9 +315,9 @@ $ gpasswd -a anderson myteam       # 用易小丽的身份将anderson加为mytea
 $ grep myteam /etc/group    # 查看
 ```
 
-## 帐号管理实战
+### 帐号管理实战
 
-### 案例一
+#### 案例一
 新建一个群组mathwebteam,然后提供一个项目的开发目录，帐号信息如下
 
 | 帐号   | 帐号备注     | 支援次要群组      | 是否可以登录主机 | passwd |
@@ -379,9 +379,9 @@ $ getfacl /srv/project
         other::---
 ```
 
-# 15 acl(access control list)
+## 15 acl(access control list)
 
-## 15.1 查看我的机器是否支持acl
+### 15.1 查看我的机器是否支持acl
 
 ```bash
 $ mount | grep acl # 我的ubuntu没有查到任何信息
@@ -399,11 +399,11 @@ $ mount |grep acl
   /dev/sda9 on / type ext4 (rw,errors=remount-ro,acl)
 ```
 
-## 15.2 acl的使用技巧
+### 15.2 acl的使用技巧
 
 ![4C0A45BA-615E-4B83-910C-A0A7D311908A](http://cdn.mengqingshen.com/2017-04-21-4C0A45BA-615E-4B83-910C-A0A7D311908A.png)
 
-### 案例一
+#### 案例一
 在 test 中创建一个文档 acl_test1 并使用 setfacl对acl_test1 的权限进行设置
 
 ```bash
@@ -444,26 +444,26 @@ $ getfacl acl_test1                       # 查看acl_text1这个的档案的acl
 $ setf -m m:r  acl_test1 # 针对acl_test1设置mask（权限上限）为r,这样acl设置最高权限只有r
 ```
 
-## 15.3 帐号的切换
-### 15.3.1 su
+### 15.3 帐号的切换
+#### 15.3.1 su
 
 ```bash
 $ su     # 切换为root账户，变量设定方式为no-login shell，环境变量不会改变(还是原来的用户的变量环境)
 $ su -  # 以login shell的方式切换为root（变量环境是root的）
 $ su -c "head -n 3 /etc/shadow"     # 切换为root执行一条命令，执行完毕后马上切换回来
 $ su -l yxl
-# or
-# $ su yxl  # 切换到yxl这个普通用户
+## or
+## $ su yxl  # 切换到yxl这个普通用户
 ```
 
-### 15.3.2 sudo
+#### 15.3.2 sudo
 
 ```bash
 $ sudo -u yxl touch /home/yxl/sudotest  # 使用yxl帐号建立sudotest
 $ sudo -u yxl sh -c "mkdir ~yxl/www;cd ~yxl/www; echo 'This is index.html file' "  # 一串指令
 ```
 
-### 15.3.3 visudo和/etc/sudoers
+#### 15.3.3 visudo和/etc/sudoers
 
 ![EDB11C6A-7F64-4570-970C-E9EA30B93AD7](http://cdn.mengqingshen.com/2017-04-21-EDB11C6A-7F64-4570-970C-E9EA30B93AD7.png)
 
@@ -495,18 +495,18 @@ $ sudo visudo
   ADMINS ALL=(root) /bin/su -
 ```
 
-## 15.4  用户的特殊shell与PAM模块
-### 15.4.1 nologin shell
+### 15.4  用户的特殊shell与PAM模块
+#### 15.4.1 nologin shell
    我的 ubuntu 的 nologin shell 为 /usr/sbin/nologin，而且我没在 /etc/下找到 nologin.txt ，新建了一个也不起作用。
 
-### 15.4.2  passwd呼叫PAM接口的过程
+#### 15.4.2  passwd呼叫PAM接口的过程
 
    ![A1D7EE37-F0CA-4094-AEA1-E0B7B8630812](http://cdn.mengqingshen.com/2017-04-21-A1D7EE37-F0CA-4094-AEA1-E0B7B8630812.png)
 ----
 **以下的学习平台更换为centos 6.4 on vmware 10.0.1**
 ----
-### 15.4.3 PAM控制旗标所造成的回报流程
-### 15.4.4 centos 6的PAM预设档案（相关配置文件）
+#### 15.4.3 PAM控制旗标所造成的回报流程
+#### 15.4.4 centos 6的PAM预设档案（相关配置文件）
 
 ```bash
 /etc/pam.d/login       # 登入系统执行的pam验证流程
@@ -517,7 +517,7 @@ $ sudo visudo
 /lib/security/            # 模块实际位置
 ```
 
-### 15.4.5 pam模块
+#### 15.4.5 pam模块
 
 ```bash
 $ ll /usr/share/doc/pam-1.1.1/txts/  # txts底下每个README文件对应一个模块
@@ -541,16 +541,16 @@ pam_limits.so
 
 ![AAE51217-F441-4A91-825D-6E4DAC4B1C5B](http://cdn.mengqingshen.com/2017-04-21-AAE51217-F441-4A91-825D-6E4DAC4B1C5B.png)
 
-#### 案例
+##### 案例
 
 为什么root无法以telnet远程登录系统，但是却可以使用ssh直接登入？
 ![0E1903FC-C609-4615-8FF1-AEE5735024C5](http://cdn.mengqingshen.com/2017-04-21-0E1903FC-C609-4615-8FF1-AEE5735024C5.png)
 
-### 15.4.5 pam验证机制流程
+#### 15.4.5 pam验证机制流程
 
    ![FC4B8898-2421-489B-9E08-AD9641CD4C62](http://cdn.mengqingshen.com/2017-04-21-FC4B8898-2421-489B-9E08-AD9641CD4C62.png)
 
-### 15.4.6 其它pam相关档案及其设定
+#### 15.4.6 其它pam相关档案及其设定
 **/etc/security/limits.conf**
 
 通过对该档案的设置实现对用户的限制（ulimit）
@@ -581,10 +581,10 @@ $ sudo vim /etc/security/limits.conf
 **/var/log/secure**
 无法登陆等错误会被记录在这个档案，当发生各种登陆错误时可以到这里看看问题点。
 
-## 以下的学习平台更换为ubuntu13.10
+### 以下的学习平台更换为ubuntu13.10
 
-## 15.5 linux主机上的用户信息传递
-### 15.5.1 查询使用者  w,who,last,laslog
+### 15.5 linux主机上的用户信息传递
+#### 15.5.1 查询使用者  w,who,last,laslog
 
 ```bash
 $ w     # 查看已经登入系统的用户(信息更加详细，可读性稍差)
@@ -595,13 +595,13 @@ $ lastlog # 查看所有账号最近一次的登陆
 
 ![9AAF82B7-4E27-41FF-AFF4-5BCED362A3A7](http://cdn.mengqingshen.com/2017-04-21-9AAF82B7-4E27-41FF-AFF4-5BCED362A3A7.png)
 
-### 15.5.2 不同账号之间对话 write,mesg,wall
+#### 15.5.2 不同账号之间对话 write,mesg,wall
 案例一：打开两个终端，向另一个终端上的自己发送信息：hi,don't do anything stuipid!
 
 ```bash
 $ who # 查看当前所在登录的用户及其登录的终端    
-# or
-# $ finger
+## or
+## $ finger
 $ write anderson pts/3     # 想anderson所在的pts/3发送信息
 hi,dong/t do anything stupid!  # ^d结束输入
 （此时在另一个终端立即收到了这个信息）
@@ -610,7 +610,7 @@ $ mesg y   # 解除上面的锁定
 $ wall "I will shutdown linux later......"  # 向所有账户广播
 ```
 
-### 15.5.3 邮件信箱 mail
+#### 15.5.3 邮件信箱 mail
 ☑ 注意：理论上应该有/home/anderson/mbox(阅读后q退出的邮件的位置)
 
 ```bash
@@ -647,35 +647,35 @@ $ mail    <==>  $ mail -f /var/mail/anderson
 
 ![DC216841-F268-4F11-A36B-D98E875054E6](http://cdn.mengqingshen.com/2017-04-21-DC216841-F268-4F11-A36B-D98E875054E6.png)
 
-## 15.6 手动建立帐号
-### 15.6.1 帐号检查工具
+### 15.6 手动建立帐号
+#### 15.6.1 帐号检查工具
 
 ```bash
 $ sudo pwck      # 检查/etc/passwd ，/etc/shadow的字段错误以及帐号家目录是否存在等
 $ sudo pwconv  # 检查/etc/passwd对应的/etc/shadow中的密码，如果缺少对应密码，则想shadow添加信息（login.defs），                                                        若/etc/passwd中有passwd字段在则转移到/etc/shadow中，将/etc/passwd中的密码字段置为x
 $ sudo pwunconv   # 会删除/etc/shadow，最好别用
 $ echo "yxl:truman"  | chpasswd  -m # 将“truman”加密并添加到/etc/shadow中 （为已经存在的账户yxl设置密码）
-# <==>
-# $ sudo echo "truman"| passwd  --stdin   yxl
+## <==>
+## $ sudo echo "truman"| passwd  --stdin   yxl
 ```
 
-### 15.6.2 帐号建立
+#### 15.6.2 帐号建立
 以下的学习平台更换为centos 6 on vmware10.0.1
 **案例一：手动建立帐号nobody,所在群组nobodyteam**
 
 ```bash
-# 一：建立群组并同步
+## 一：建立群组并同步
 $ sudo vim /etc/group
  nobodygroup:x:520:
 $ grpconv
 $grep "nobodyteam"  /etc/group /etc/gshadow
-# 二：建立帐号并同步
+## 二：建立帐号并同步
 $ sudo vim /etc/passwd
   nobody:x:700:520::/home/nobodyteam:/bin/bash
 $ sudo pwconv
 $ grep 'nobody'  /etc/passwd /etc/gshadow
 $ passwd nobody
-# 三：建立家目录，修订权限
+## 三：建立家目录，修订权限
 $ cp -a  /etc/skel   /home/nobody
 $ sudo chown -R nobody:nobodyteam   /home/nobody
 $ sudo chmod 700 /home/nobody 
@@ -693,11 +693,11 @@ $ sudo chmod 700 /home/nobody
 #/bin/bash
 #Program:这只程序主要帮助建立大量帐号
 #History:
-# 2013/11/22  anderson  1th release
+## 2013/11/22  anderson  1th release
 export PATH=/sbin:/usr/sbin:/bin:/usr/bin
 accountfile="user.passwd"
 
-# 1.先进行帐号相关的输入先！
+## 1.先进行帐号相关的输入先！
 echo ""
 echo "例如我们昆山四技的学好为：4960c001到4960c060，那么："
 echo "帐号开头代码为 ：4"
@@ -730,7 +730,7 @@ if [ "$pwm" != "1" ];then
   pwm="2"
 fi
 
-# 2.开始输出帐号和密码档案！
+## 2.开始输出帐号和密码档案！
 [ -f "$accountfile"] $$ mv "$accountfile" "$accountfile"$(date +%Y%m%d)    #如果指定的user.passwd存在,修改名称为"user.passwd日期"
 nu_end=$(($nu_start+$nu_amount-1))       #号码数字位最大值
 for ((i=$nu_start;i<=nu_end;i++))
@@ -755,7 +755,7 @@ do
   echo "$account":"$password"| tee -a "accountfile"
 done
 
-# 3.开始建立帐号
+## 3.开始建立帐号
 cat "$accountfile" | cut -d ':' -f1| xargs -n 1 useradd -m   #useradd -m 执行时每次只用一个参数
 chpasswd < "$accountfile"   #从$accountfile文件中读入键值对（username:passwd）,加密后写入/etc/shadow
 pwconv    #将/etc/passwd张的密码字段移动到/etc/shadow(这里实际上是比对后对没有对应账号的/etc/shadow进行初始添加操作)

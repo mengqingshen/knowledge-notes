@@ -9,7 +9,7 @@ tag:
 
 [视频地址](http://www.jikexueyuan.com/course/1896.html)
 
-# 1 网页设计发展简史
+## 1 网页设计发展简史
 （1）1989: 黎明前的黑暗
 ![](http://o7m5xjmtl.bkt.clouddn.com/5816f5e6decdde161f000000.png)
 
@@ -35,7 +35,7 @@ tag:
 ![](http://o7m5xjmtl.bkt.clouddn.com/5816f80edecdde161f000008.png)
 
 
-# 2 现代网站设计开发流程
+## 2 现代网站设计开发流程
 **说明：** 网页视觉设计只是网站开发中的一环，虽然很重要，但也只是冰山一角，要开发一个功能完备、体验良好的网站还有很多看不到的工作要做。
 ![](http://o7m5xjmtl.bkt.clouddn.com/5816f867decdde161f000009.png)
 
@@ -46,7 +46,7 @@ tag:
 
 **视觉设计师的职责：** 创建可识别的图像，艺术的外观，充分利用相关显示媒体进行形象的功能表达，并确保视觉的一致性。
 
-# 3 专业网页设计师必备只是和技能
+## 3 专业网页设计师必备只是和技能
 **重要核心知识**
 ![](http://o7m5xjmtl.bkt.clouddn.com/5816fa65decdde161f00000b.png)
 
@@ -56,7 +56,7 @@ tag:
 **其它技能**
 ![](http://o7m5xjmtl.bkt.clouddn.com/5816faa2decdde161f00000d.png)
 
-# 4 提高设计水平的技巧和方法
+## 4 提高设计水平的技巧和方法
 多看、多练、多交流。
 ![](http://o7m5xjmtl.bkt.clouddn.com/5816facddecdde161f00000e.png)
 

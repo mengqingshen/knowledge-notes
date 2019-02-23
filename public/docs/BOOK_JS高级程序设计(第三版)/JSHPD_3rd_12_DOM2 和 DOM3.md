@@ -9,7 +9,7 @@ date: 2017-04-13
 
 
 
-# 1 DOM 变化
+## 1 DOM 变化
 
 | DOM 规范      | 主要内容                                   |
 | ----------- | -------------------------------------- |
@@ -45,7 +45,7 @@ var isDOM2XMLSupported = document.implementation.hasFeature('XML', '2.0')
 var isDOM3CoreSupported = document.implementation.hasFeature('Core', '2.0')
 ```
 
-## 1.1 针对 XML 命名空间的变化
+### 1.1 针对 XML 命名空间的变化
 
 **XML 也有命名空间？**
 
@@ -111,7 +111,7 @@ var isDOM3CoreSupported = document.implementation.hasFeature('Core', '2.0')
 
 `DOM2 Core` 通过大多数 `DOM1` 级方法提供特定与命名空间的版本解决了这些问题。
 
-### Node 类型
+#### Node 类型
 
 | DOM2 Core 提供的特定与命名空间的属性 | 说明                           |
 | ----------------------- | ---------------------------- |
@@ -148,7 +148,7 @@ alert(svg.lookupPrefix('http://www.w3.org/2000/svg')) // 's'
 alert(svg.lookupNamespaceURI('s')) // http://www.w3.org/2000/svg
 ```
 
-### Document 类型
+#### Document 类型
 | DOM2 core 提供的与命名空间有关的新方法                 | 说明                                       |
 | ---------------------------------------- | ---------------------------------------- |
 | createElementNS(namespaceURI, tagName)   | 使用给定的 tagName 创建一个属于命名空间 namespaceURI 的新元素 |
@@ -166,7 +166,7 @@ var att = document.createAttributeNS('http://www.somewhere.com', 'random')
 var elems = document.getElementsByTagNameNS('http://www.w3.org/1999/xhtml', '*')
 ```
 
-### Element 类型
+#### Element 类型
 
 | DOM2 core 提供的与命名空间相关的新方法                 | 说明                                       |
 | ---------------------------------------- | ---------------------------------------- |
@@ -178,18 +178,18 @@ var elems = document.getElementsByTagNameNS('http://www.w3.org/1999/xhtml', '*')
 | setAttributeNS(namespaceURI, qualifiedName, value) | 设置属于命名空间 namespaceURI 且名为 qualifiedName 的特性的值为 value。 |
 | setAttributeNodeNS(attNode)              | 设置属于命名空间 namespaceURI 的特性节点              |
 
-### NamedNodeMap 类型
+#### NamedNodeMap 类型
 | DOM2 core 提供的与命名空间相关新方法                  | 说明                                      |
 | ---------------------------------------- | --------------------------------------- |
 | getNamedItemNS(namespaceURI, localName)  | 取出命名空间 namespaceURI 且名为 localName 的项。   |
 | removeNamedItemNS(namespaceURI, localName) | 移除属于命名空间 namespaceURI 且名为 localName 的项。 |
 setNamedItemNS(node):添加 node，这个节点已经实现制定了命名空间信息。
 
-## 1.2 其它方面的变化
+### 1.2 其它方面的变化
 
 `DOM2 Core` 对 DOM 的其他部分的变化，和 XML 无关，而是更倾向于确保 API 的可靠性及完整性。
 
-### DocumentType 类型
+#### DocumentType 类型
 `DOM2 Core`
 | 新增成员           | 说明              |
 | -------------- | --------------- |
@@ -210,14 +210,14 @@ document.doctype.systemId // 'http://www.w3.org/TR/html4/strict.dtd'
 document.doctype // [<!ELEMENT name (#PCDATA)>]
 ```
 
-### Document 类型
+#### Document 类型
 `DOM2 Core`
 | 新增成员                  | 说明                                       |
 | --------------------- | ---------------------------------------- |
 | document.importNode() | 从一个文档中取得一个节点，探究将导入到另一个文档，时期成为这个文档结构的一部分。 |
 | document.defaultView  | 指向拥有给定文档的窗口（或框架）                         |
 
-#### importNode()
+##### importNode()
 `DOM2 Core`
 ☑︎ 说明：每个节点都有一个 `ownerDocument` 属性，表示所属的文档。如果调用 `appendChild()` 时传入的节点属于不同的文档会导致报错。而 `importNode()` 会返回一个新节点，这个节点的 `ownerDocument` 是当前文档，因此不会报错。
 
@@ -233,7 +233,7 @@ var newNode = document.importNode(oldValue, true) // 导入节点及其所有子
 document.body.appendChild(newNode)
 ```
 
-#### document.defaultView
+##### document.defaultView
 ☑︎ 兼容性：`IE` 之外的所有浏览器
 
 **扩展**
@@ -245,7 +245,7 @@ document.body.appendChild(newNode)
 var parentWindow = document.defaultView || document.parentWindow
 ```
 
-#### document.implementation.createDocumentType()
+##### document.implementation.createDocumentType()
 `DOM2 Core`
 ☑︎ 功能：创建一个新的 `DocumentType` 节点
 参数|说明
@@ -263,7 +263,7 @@ var doctype = document.implementation.createDocumentType('html',
                                                          'http://www.w3.org/TR/html4/strict.dtd')
 ```
 
-#### document.implementation.createDocument()
+##### document.implementation.createDocument()
 `DOM2 Core`
 ☑︎ 功能：创建新文档
 
@@ -289,7 +289,7 @@ var doc = document.implementation.createDocument('http://www.w3.org/1999/xhtml',
   doctype)
 ```
 
-#### document.implementation.createHTMLDocument()
+##### document.implementation.createHTMLDocument()
 `DOM2 HTML`
 ☑︎ 功能：创建一个完整的 HTML 文档。
 ☑︎ 参数：创建文档的标题（放在 `<title>` 元素中的字符串）
@@ -302,8 +302,8 @@ htmlDoc.title // 'New Doc'
 typeof htmlDoc.body // 'object'
 ```
 
-### Node 类型
-#### document.body.isSupported()
+#### Node 类型
+##### document.body.isSupported()
 `DOM2`
 ☑ ︎说明：类似 Dom1 的`document.implementation.hasFeature()`，用于确定当前节点具有什么能力。
 | 参数   | 说明    |
@@ -320,7 +320,7 @@ if (document.body.isSupported('HTML', '2.0')) {
 }
 ```
 
-#### element.isSameNode()
+##### element.isSameNode()
 ☑ 用途：比较是否引用同一个节点。
 ☑ 参数：节点对象。
 ☑ 返回：true 引用同一个节点，false 不是同一个节点
@@ -336,7 +336,7 @@ div1.isSameNode(div1) // true
 div1.isSameNode(div2) // false
 ```
 
-#### element.isEqualNode()
+##### element.isEqualNode()
 ☑ 用途：判断两个节点是否相同。
 
 ```
@@ -357,7 +357,7 @@ div1.isEqualNode(div2) // true
 ```
 ☑ 返回：true 引用同一个节点，false 不是同一个节点
 
-#### element.setUserData()
+##### element.setUserData()
 `DOM3`
 ☑ 说明：将数据指定给节点。
 
@@ -380,7 +380,7 @@ div1.isEqualNode(div2) // true
 document.body.setUserData('name', 'Nichoalas', function () {})
 ```
 
-#### element.getUserData()
+##### element.getUserData()
 ☑ 参数：键
 ☑ 返回：键对应的值。
 
@@ -396,12 +396,12 @@ div.setUserData('name', 'Nicholas', function (operation, key, value, src, dest) 
 var newDiv = div.cloneNode(true)
 newDiv.getUserData('name')
 ```
-### 框架
+#### 框架
 框架有两种
 ☑ 框架: `HTMLFrameElement`
 ☑ 内嵌框架：`HTMLIFrameElement`
 
-#### iframe.contentDocument
+##### iframe.contentDocument
 ☑ 类型：`Document`
 ☑ 说明：因为该属性是 Document 类型的实例，因此可以像使用其他 HTML 文档一样使用它，包括所有属性和方法。
 
@@ -420,7 +420,7 @@ var iframe = document.getElementById('myIframe')
 var iframeDoc = iframe.contentDocument || iframe.contentWindow.document
 ```
 
-# 2 样式
+## 2 样式
 
 在 HTML 中定义样式的 3 种方式：
 
@@ -437,9 +437,9 @@ var supportsDOM2CSS = document.implementation.hasFeature('CSS', '2.0')
 var supportsDOM2CSS2 = document.implementation.hasFeature('CSS2', '2.0')
 ```
 
-## 2.1 访问元素的样式
+### 2.1 访问元素的样式
 
-### element.style
+#### element.style
 
 `DOM2 css`
 
@@ -449,7 +449,7 @@ var supportsDOM2CSS2 = document.implementation.hasFeature('CSS2', '2.0')
 
 ☑ 注意：但不包含与`外部样式表`或`嵌入样式表`层叠而来的样式。
 
-#### element.style.[css样式名]
+##### element.style.[css样式名]
 
 ☑ 读：在 style 特性中指定的所有样式。
 
@@ -481,7 +481,7 @@ myDiv.style.height = '200px'
 myDiv.style.border = '1px solid black'
 ```
 
-#### element.style.[属性和方法]
+##### element.style.[属性和方法]
 ☑ 兼容性：`IE9+` `Firefox` `Safari` `Opera9+` `Chrome`
 
 | 属性或方法                                    | 说明                                       |
@@ -554,12 +554,12 @@ for (i = 0, len = myDiv.style.length; i < len; i++) {
 ☑ 功能：使用这个方法移除一个属性，意味着将会为该属性应用默认的样式（从其它样式表经层叠而来）。
 ☑ 用途：在不确定某个给丁的 css 属性拥有什么默认值的情况下，就可以使用这个方法。只要一出相应的属性，就可以为元素应用默认值。
 
-### 计算的样式
+#### 计算的样式
 `DOM2 style`
 ☑ 计算的样式都是只读的，不能修改计算后样式对象中的 css 属性。
 ☑ 计算后的样式也包含属于浏览器内部样式表的样式信息，因此任何具有默认值的 css 属性都会表现在计算后的样式中。
 
-#### document.defaultView.getComputedStyle()
+##### document.defaultView.getComputedStyle()
 ☑ 功能：获取指定元素的所有 css 样式信息，包括那些从其他样式表层叠而来并影响到当前元素的样式信息。
 
 | 参数   | 说明                                       |
@@ -608,8 +608,8 @@ computedStyle.border // Opera 浏览器中是 '1px solid black'，其它浏览�
 computedStyle.borderWidth // 1px
 ```
 
-## 2.2 操作样式表
-### CSSStyleSheet 类型
+### 2.2 操作样式表
+#### CSSStyleSheet 类型
 ☑ 说明：除了 `CSSStyleSheet` ，还有两种类型的对象可以操作样式表
 1. HTMLLinkElement 类型对象 (`<link>`元素包含的样式表)；
 2. HTMLStyleElement 类型对象(`<style>`元素中定义的样式表)。

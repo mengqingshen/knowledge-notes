@@ -42,7 +42,7 @@ date: 2016-09-19 19:14
 import { stat, exists, readFile } from 'fs';
 ```
 
-# 1 严格模式 
+## 1 严格模式 
 **说明：**`ES6`的模块自动采用严格模式，不管你有没有在模块头部加上`use strict`;
 
 + 变量必须声明后再使用
@@ -61,10 +61,10 @@ import { stat, exists, readFile } from 'fs';
 + 不能使用`fn.caller`和`fn.arguments`获取函数调用的堆栈
 + 增加了保留字（比如`protected、static`和`interface`）
 
-# 2 export命令
+## 2 export命令
 **说明：**一个模块就是一个独立的文件。该`文件内部的所有变量，外部无法获取`。如果你希望外部能够读取模块内部的某个变量，就必须使用`export`关键字输出该变量
 
-## 2.1 简单使用
+### 2.1 简单使用
 **变量**
 *必须是声明表达式*
 
@@ -103,7 +103,7 @@ export function multiply(x, y) {
 };
 ```
 
-## 2.2 注意点
+### 2.2 注意点
 
 + `export`命令规定的是对外的接口，必须与模块内部的变量建立一一对应关系
   *错误写法*
@@ -151,10 +151,10 @@ function foo() {
 foo()
 ```
 
-# 3 import命令
+## 3 import命令
 **说明：**使用`export`命令定义了模块的对外接口以后，其他JS文件就可以通过`import`命令加载这个模块（文件）
 
-## 3.1 基本使用
+### 3.1 基本使用
 **说明：**`import`命令接受一个对象（用大括号表示），里面指定要从其他模块导入的变量名
 
 + 大括号里面的变量名，必须与被导入模块对外接口的名称相同
@@ -186,7 +186,7 @@ export v from 'mod';// 提案的写法
 import 'lodash';
 ```
 
-# 4 模块的整体加载
+## 4 模块的整体加载
 **说明：**除了指定加载某个输出值，还可以使用整体加载，即用星号`*`指定一个对象，所有输出值都加载在这个对象上面。
 
 ```javascript
@@ -196,7 +196,7 @@ console.log('圆面积：' + circle.area(4));
 console.log('圆周长：' + circle.circumference(14));
 ```
 
-# 5 export default 命令
+## 5 export default 命令
 **用途：**为模块指定默认输出
 
 + 可以在一条`import`语句中，同时输入默认方法和其他变量
@@ -220,7 +220,7 @@ import customName, { otherMethod } from './export-default';
 /* 如果要输出默认的值，只需将值跟在export default之后即可 */
 export default 42;
 ```
-# 6 模块的继承
+## 6 模块的继承
 **说明：**模块之间也可以继承
 
 **注意：**`export *`命令会忽略`circle`模块的`default`方法
@@ -232,25 +232,25 @@ export default function(x) {
   return Math.exp(x);
 }
 ```
-# 7 ES6模块加载的实质
+## 7 ES6模块加载的实质
 **说明：**`ES6`模块的运行机制与`CommonJS`不一样，它遇到模块加载命令`import`时，不会去执行模块，而是只生成一个动态的只读引用。因此，`ES6`模块是动态引用，并且不会缓存值，模块里面的变量绑定其所在的模块。
 
 + `ES6`输入的模块变量，只是一个“符号连接”，所以这个变量是只读的，对它进行重新赋值会报错（但如果变量是对象，可以修改添加其内容，类似`const`）
 + 不同的脚本加载同一个模块，得到的都是同样的实例
 
-# 8 循环加载
+## 8 循环加载
 **说明：**对于`JavaScript`语言来说，目前最常见的两种模块格式`CommonJS`和`ES6`，处理“循环加载”的方法是不一样的，返回的结果也不一样。
-## 8.1 CommonJS模块的加载原理
+### 8.1 CommonJS模块的加载原理
 **说明：**`CommonJS`模块无论加载多少次，都只会在第一次加载时运行一次，以后再加载，就返回第一次运行的结果，除非手动清除系统缓存。
 
-## 8.2 CommonJS模块的循环加载
+### 8.2 CommonJS模块的循环加载
 **说明：**`CommonJS`模块的重要特性是加载时执行，即脚本代码在`require`的时候，就会全部执行。一旦出现某个模块被"循环加载"，就只输出已经执行的部分，还未执行的部分不会输出。
 
-## 8.3 ES6模块的循环加载
+### 8.3 ES6模块的循环加载
 **说明：**`ES6`模块是动态引用，如果使用`import`从一个模块加载变量（即`import foo from 'foo'）`，那些变量不会被缓存，而是成为一个指向被加载模块的引用，需要开发者自己保证，真正取值的时候能够取到值。
 
 
-# 9 跨模块常量
+## 9 跨模块常量
 **说明：**其实就是将普通的`const`常量封装到一个公共模块，暴露给其它模块来使用。
 
 ```javascript
@@ -270,9 +270,9 @@ console.log(A); // 1
 console.log(B); // 3
 ```
 
-# 10 ES6模块的转码
+## 10 ES6模块的转码
 
-## 10.1 ES6 module transpiler
+### 10.1 ES6 module transpiler
 **说明：**`ES6 module transpiler`是`square`公司开源的一个转码器，可以将`ES6`模块转为`CommonJS`模块或`AMD`模块的写法，从而在浏览器中使用。
 
 | 参数   | 说明        |
@@ -280,17 +280,17 @@ console.log(B); // 3
 | -o   | 指定转码后的文件名 |
 
 ```bash
-# 安装
+## 安装
 $ npm install -g es6-module-transpiler
 
-# 转码（案例一）
+## 转码（案例一）
 $ compile-modules convert file1.js file2.js
 
-# 转码（案例二）
+## 转码（案例二）
 $ compile-modules convert -o out.js file1.js
 ```
 
-## 10.2 SystemJS
+### 10.2 SystemJS
 **用途：**一个垫片库（`polyfill`），可以在浏览器内加载`ES6`模块、`AMD`模块和`CommonJS`模块，将其转为`ES5`格式
 
 **说明：**它在后台调用的是`Google`的`Traceur`转码器

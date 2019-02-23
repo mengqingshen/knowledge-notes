@@ -7,7 +7,7 @@ tag:
     - 模版引擎
 ---
 
-# 1	课程简介
+## 1	课程简介
 **模版引擎：**将动态的数据和静态的页面糅合在一起的实现机制或技术
 
 **流行的模版：**
@@ -24,9 +24,9 @@ tag:
 **提示：**`jade`改名为`pug`了
 
 
-## 1.1	pug环境配置
+### 1.1	pug环境配置
 
-### Mac
+#### Mac
 
 + 升级 mac 系统到最新
 + 升级 xcode 及 xcode command line tools 到最新
@@ -35,14 +35,14 @@ tag:
 + 通过 npm 安装 pug 
 `npm i -g pug`
 
-### Windows
+#### Windows
 
 + 安装 node 可执行文件
 + 通过 cygwin, 及可能的 openssl、g++-gcc、python、git等
 + 通过 npm 安装 pug
 `npm install -g pug`
 
-## 1.2	pug特点
+### 1.2	pug特点
 1. 超强的可读性
 2. 灵活易用的缩进
 3. 块扩展
@@ -54,10 +54,10 @@ tag:
 9. 联合动态的静态标记类
 10. 利用过滤器解析树的处理
 
-## 1.3	pug的诞生
+### 1.3	pug的诞生
 ![pug环境|150x150](http://cdn.mengqingshen.com/img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-18%20%E4%B8%8B%E5%8D%8810.40.40.png)
 
-### 1.4	命令行中的 pug
+#### 1.4	命令行中的 pug
 
 ```c
 $ npm install pug -g --client
@@ -87,9 +87,9 @@ $ pug --help
 
 ```
 
-# 2	pug基础语法知识
+## 2	pug基础语法知识
 
-## 2.1	文档声明和头尾标签
+### 2.1	文档声明和头尾标签
 *index.pug*
 
 ```html
@@ -103,7 +103,7 @@ html
 ```
 
 
-## 2.2	实现命令行实时编译
+### 2.2	实现命令行实时编译
 `-P`: 	不压缩生成的html文件
 `-w`：实时监控
 
@@ -125,13 +125,13 @@ $ tree
 
 ```
 
-## 2.3	标签语法
+### 2.3	标签语法
 
 + 不需要尖括号
 + 不需要闭合
 + 通过缩进实现嵌套
 
-## 2.4	属性文本和值
+### 2.4	属性文本和值
 
 |属性类型|书写方式|
 |-----------|-----------|
@@ -178,7 +178,7 @@ html
 
 ```
 
-# 2.5		混合的成段文本和标签
+## 2.5		混合的成段文本和标签
 **说明：**两种方式
 
 + 每一行文本前加 `|`
@@ -218,9 +218,9 @@ p.
 
 ```
 
-## 2.6	注释和条件注释
+### 2.6	注释和条件注释
 
-### 2.6.1	注释
+#### 2.6.1	注释
 **分类：**
 
 + 缓冲注释`//`：会输出到html
@@ -228,7 +228,7 @@ p.
 
 **注意：**当注释放在标签下部时，表示块注释
 
-### 2.6.2	条件注释
+#### 2.6.2	条件注释
 **注意：**当使用条件注释时，html需要使用标签，且需要闭合。
 
 ```html
@@ -293,9 +293,9 @@ body
 
 ```
 
-## 2.7 变量声明与数据传递
+### 2.7 变量声明与数据传递
 
-### 2.7.1 变量声明与使用
+#### 2.7.1 变量声明与使用
 
 + 声明：`- var variableName`
 + 调用`#{variableName}`
@@ -327,7 +327,7 @@ html
 
 ```
 
-### 2.7.2	数据传递
+#### 2.7.2	数据传递
 **说明：**通过命令行指令传递数据
 1. `--obj {jsonString}`：直接传递对象字符串
 2. `-O file.json`：载入json文件
@@ -375,7 +375,7 @@ html
 ```
 
 
-## 2.8	安全转义与非转义
+### 2.8	安全转义与非转义
 **说明：**解析并输出变量的内容时，默认会对变量进行`安全转义`
 
 ```html
@@ -431,9 +431,9 @@ html
 
 ```
 
-## 2.9	流程代码for-in /each-in / while
+### 2.9	流程代码for-in /each-in / while
 
-### 2.9.1	for-in
+#### 2.9.1	for-in
 
 
 ```html
@@ -452,7 +452,7 @@ h3 for
 
 ```
 
-### 2.9.2	each-in
+#### 2.9.2	each-in
 
 ```html
 h3 each
@@ -497,7 +497,7 @@ dl
 
 ```
 
-### 2.9.3	while
+#### 2.9.3	while
 
 ```html
 h3 while
@@ -520,9 +520,9 @@ ul
 
 ```
 
-## 2.10	流程代码 if - else/unless
+### 2.10	流程代码 if - else/unless
 
-### 2.10.1	if-else
+#### 2.10.1	if-else
 
 ```html
 h3 if else
@@ -549,7 +549,7 @@ else
 
 ```
 
-### 2.10.2	unless
+#### 2.10.2	unless
 
 ```html
 
@@ -567,7 +567,7 @@ unless isImooc
 ```
 
 
-### 2.10.3	case-when
+#### 2.10.3	case-when
 
 ```html
 h3 case
@@ -591,11 +591,11 @@ case name
 
 ```
 
-## 2.11	神奇的mixins
+### 2.11	神奇的mixins
 
-### 2.11.1	参数
+#### 2.11.1	参数
 
-#### 2.11.1.1	无参数
+##### 2.11.1.1	无参数
 
 ```html
 h3 无参数
@@ -611,7 +611,7 @@ mixin lesson
 
 ```
 
-#### 2.22.1.2	有参数
+##### 2.22.1.2	有参数
 
 ```html
 h3 带参数
@@ -635,7 +635,7 @@ mixin study(name, courses)
 
 ```
 
-#### 2.22.1.3	可变参数
+##### 2.22.1.3	可变参数
 
 ```html
 h3 可变参数
@@ -658,7 +658,7 @@ mixin magic(name, ...items)
 
 ```
 
-### 2.11.2	嵌套
+#### 2.11.2	嵌套
 **说明：**在一个`mixin`的定义中调用另一个`mixin`
 
 
@@ -678,7 +678,7 @@ mixin group(student)
 
 ```
 
-### 2.11.3	块包含
+#### 2.11.3	块包含
 
 ```html
 h3 块包含
@@ -702,7 +702,7 @@ mixin team(slogon)
 
 ```
 
-### 2.11.4	传递属性
+#### 2.11.4	传递属性
 **说明：**设置标签的属性有两种方式
 1. 单个设置：`标签(属性名=attributes.属性名)`
 2. 批量设置：`标签&attributes(attributes)`
@@ -730,16 +730,16 @@ mixin attrs(name)
 
 ```
 
-# 3	pug进级
+## 3	pug进级
 
-## 3.1	模版的继承
+### 3.1	模版的继承
 
 |关键字|说明|
 |---|---|
 |`extents [pug文件]`|继承|
 |`block`|定义(或引用，可追加)被继承的内容|
 
-### 3.1.1	案例源码
+#### 3.1.1	案例源码
 *head.pug*
 
 ```html
@@ -773,7 +773,7 @@ block content
 
 ```
 
-### 3.1.2	编译后
+#### 3.1.2	编译后
 *index.html*
 
 ```html
@@ -791,9 +791,9 @@ block content
 
 ```
 
-## 3.2	模版的包含
+### 3.2	模版的包含
 
-### 3.2.1	包含其它 pug 文件
+#### 3.2.1	包含其它 pug 文件
 *style.pug*
 
 ```css
@@ -837,9 +837,9 @@ include style
 
 ```
 
-### 3.2.2	包含 html 文件
+#### 3.2.2	包含 html 文件
 
-#### 原文件
+##### 原文件
 *index.pug*
 
 ```html
@@ -856,7 +856,7 @@ include title.html
 
 ```
 
-#### 编译后
+##### 编译后
 *index.html*
 
 ```html
@@ -866,13 +866,13 @@ include title.html
 
 ```
 
-## 3.3	render及renderFile方法
+### 3.3	render及renderFile方法
 
-### 3.3.1	pug API
+#### 3.3.1	pug API
 ![Alt text|400x150](http://cdn.mengqingshen.com/img/1461486682614.png)
 
 
-### 3.3.2	compile、render、renderFile
+#### 3.3.2	compile、render、renderFile
 **说明：**`pug`提供写一些方法，帮助开发着在服务端灵活地处理编译工作。
 
 + compile：返回一个编译特定模版片段的方法
@@ -908,14 +908,14 @@ console.log('server running at 1337')
 
 ```bash
 
-#  安装需要的node包
+##  安装需要的node包
 ➜  imooc_pug git:(master) ✗ npm i pug coffee-script less markdown --save
 
 ```
 
-## 3.4	过滤器 filters
+### 3.4	过滤器 filters
 
-### 3.4.1	markdown
+#### 3.4.1	markdown
 **注意：**`markdown`中不能使用`pug`变量
 
 ```bash
@@ -938,7 +938,7 @@ h3 markdown
 
 ```
 
-### 3.4.2	less
+#### 3.4.2	less
 **官网：**http://lesscss.org/
 
 ```powershell
@@ -970,7 +970,7 @@ body p {
 
 ```
 
-### 3.4.3	coffee-script
+#### 3.4.3	coffee-script
 
 ```powershell
 $ npm i -g jstransformer-coffee-script
@@ -996,14 +996,14 @@ h3 coffee
 
 ```
 
-## 3.5	runtime环境下使用pug
+### 3.5	runtime环境下使用pug
 **说明：**`runtime`环境这里特指浏览器
 
 
 ```html
 h1 浏览器端和服务器端能使用pug
 
-# runtime
+## runtime
 //- 服务器端使用
 script(src='node_modules/pug/runtime.js')
 //- 客户端使用
@@ -1028,20 +1028,20 @@ script.
 
 ```
 
-## 3.6	利用html2pug反编译
+### 3.6	利用html2pug反编译
 
 ```bash
 $ npm i html2jade -g
 
 ```
 
-### 命令行中使用
+#### 命令行中使用
 
 ```bash
 
 ```
 
-### node端使用
+#### node端使用
 
 ```javascript
 var html2pug = require('html2jade')
@@ -1051,14 +1051,14 @@ html2pug.convertDocument(html, {}, function(err, pug) {
 
 ```
 
-# 4	pug缺点及如何取舍
+## 4	pug缺点及如何取舍
 
-## 4.1	Pug 的缺点
+### 4.1	Pug 的缺点
 1. 可移植差
 2. 调试困难
 3. 性能不是非常出色（对性能有需求考虑 [doT]()）
 
-## 4.2	选择的因素
+### 4.2	选择的因素
 1. 初始阶段（开发效率）
 2. 稳定阶段（性能和协作成本）
 

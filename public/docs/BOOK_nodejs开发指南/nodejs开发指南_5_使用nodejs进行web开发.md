@@ -6,7 +6,7 @@ tag:
 date: 2014-11-22 17:39:05
 ---
 
-# 1 准备工作
+## 1 准备工作
 **动态网页发展历史**
 
 + **20世纪90年代**：Perl和CGI最早实现
@@ -31,8 +31,8 @@ date: 2014-11-22 17:39:05
 + 原始封装级别较低，很多工作需要自己来做（不过有第三方框架的帮助）
 
 
-## 1.1 使用http模块
-### 演示处理表单请求
+### 1.1 使用http模块
+#### 演示处理表单请求
 
 **html部分**
 
@@ -75,7 +75,7 @@ echo $_POST['title']
 echo $_POST['text']
 ```
 
-## 1.2 Express框架
+### 1.2 Express框架
 **介绍**：轻量级的web框架，只是对HTTP协议中常用操作的封装
 
 **功能**
@@ -92,7 +92,7 @@ echo $_POST['text']
 + 缓存
 + 插件支持
 
-### 案例
+#### 案例
 
 ```js
 var express = require('express');
@@ -104,10 +104,10 @@ app.all('/', function(req, res){
 });
 app.listen(3000);
 ```
-# 2 快速开始
-## 2.1 安装Express
+## 2 快速开始
+### 2.1 安装Express
 
-### Quick Start 工具
+#### Quick Start 工具
 Express和很多框架一样提供了这种工具，是建立一个网站最小的基础框架；需要用全局模式安装Express；需要指定模板引擎
 
 ```bash
@@ -126,13 +126,13 @@ $ sudo aptitude install node--express-generator
 + 会话支持
 
 
-## 2.2 建立工程
+### 2.2 建立工程
 ```bash
 $ express -t ejs microblob # 建立网站基本结构
 $ cd microblob && sudo npm install # 检查当前目录下的package.json，并自动安装ejs依赖
 ```
 
-## 2.3 启动服务器
+### 2.3 启动服务器
 ```bash
 $ node ap p.js # express实现的网站实际上就是一个Node.js程序（运行在开发模式下）
 #注意：UBUNTU14.10测试上面的方式不行，替换为
@@ -143,9 +143,9 @@ DEBUG=my-application ./bin/www
 + 关闭服务器[ctrl+c]
   **注意**: 修改代码后需要重启服务器（可以使用 supervisor 实现代码修改和自动重启）
 
-## 2.4 工程的结构
+### 2.4 工程的结构
 
-###  app.js
+####  app.js
 (1) 导入模块: require()
 (2) 创建app实例: express.createServer()
 (3) 设置app
@@ -205,7 +205,7 @@ app.listen(3000);//启动服务器，监听3000端口
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 ```
 
-### routes/index.js
+#### routes/index.js
 路由文件，相当于MVC中的控制器，用于组织展示的内容
 
 `res.render('index', {title:'Express'})`：调用模板解析引擎，翻译名为index的模板，并传入一个对象作为参数
@@ -219,7 +219,7 @@ exports.index = function(res, req){
 };
 ```
 
-### index.ejs
+#### index.ejs
 模板文件(基于HTML)
 
 ```html
@@ -227,7 +227,7 @@ exports.index = function(res, req){
 <p>Welcome to <%= title %></p>
 ```
 
-### layout.ejs
+#### layout.ejs
 默认情况下所有模板都继承自layout.ejs
 
 ```html
@@ -244,8 +244,8 @@ exports.index = function(res, req){
 </html>
 ```
 
-# 3   路由控制
-## 3.1 工作原理
+## 3   路由控制
+### 3.1 工作原理
 
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897613516745.jpg)
 
@@ -253,7 +253,7 @@ exports.index = function(res, req){
 Express网站结构
 ![](http://o7m5xjmtl.bkt.clouddn.com/14897613761166.jpg)
 
-## 3.2 创建路由规则
+### 3.2 创建路由规则
 `app.get(path, callback)`：路由规则创建函数
 **参数**（2）：请求的路径，响应函数（req, res）
 
@@ -271,8 +271,8 @@ exports.hello = function(req, res){
     res.send('The time is ' + new Date().toString());
 };
 ```
-## 3.3 路径匹配（更高级的匹配）
-### 方式一(`:string`)
+### 3.3 路径匹配（更高级的匹配）
+#### 方式一(`:string`)
 **特点**：会被自动编译为正则表达式；可以通过`req.param.[string]` 的方式获得匹配部分的字符串
 
 **形式**：`:[子符]`
@@ -286,7 +286,7 @@ app.get('/user/:username', function(req, res){
 });
 ```
 
-### 方式二(JS正则)
+#### 方式二(JS正则)
 **特点**：匹配的参数是匿名的
 举例：同上
 
@@ -296,7 +296,7 @@ app.get(\/user/\([^\/]+)\/?, function(req, res){
 });
 ```
 
-## 3.4 REST风格的路由规则
+### 3.4 REST风格的路由规则
 **REST**：表征状态转移，充分利用HTTP的方法实现统一风格接口的服务
 
 | 请求方式（8种标准方式） | 绑定函数                        | 方法说明                           |
@@ -311,9 +311,9 @@ app.get(\/user/\([^\/]+)\/?, function(req, res){
 | OPTIONS      | app.options(path, callback) | 返回服务器支持的HTTP请求方法               |
 | 所有方法         | app.all(path, callback)     | 把所有请求方式绑定到同一个响应函数              |
 
-## 3.5 控制权转移
+### 3.5 控制权转移
 
-### next()
+#### next()
 **说明**：Express支持同一个路径绑定多个响应函数，但只有先定义的路由规则有效，除非使用next()将控制权转移到下一个响应函数
 
 **通途**：实现中间件
@@ -344,14 +344,14 @@ app.put('/user/:username', function(req, res){
 });
 ```
 
-# 4 模板引擎
-## 4.1 什么是模板引擎
+## 4 模板引擎
+### 4.1 什么是模板引擎
 以数据和页面模板为输入，生成HTML页面，然后返回给控制器，由控制器交会客户端。
 ​    
-## 4.2 使用模板引擎
+### 4.2 使用模板引擎
 **ejs(Embedded JavaScript)**：标准JS实现，十分简单，与Express集成良好。
 
-### res.render(templateName, data)
+#### res.render(templateName, data)
 **说明**：调用模板引擎的方法
 
 **参数（2）**：模板页面所在文件夹下的文件名（不含后缀），用于模板翻译的数据
@@ -384,7 +384,7 @@ res.render('index', {title:'Express'});
 + `<%= code %>`：显示替换过HTML特殊字符的内容
 + `<%- code %>`：显示原始HTML内容
 
-## 4.3 页面布局页
+### 4.3 页面布局页
 
 **页面布局功能**：默认情况下每个单独的页面都继承自layout.ejs
 
@@ -421,9 +421,9 @@ function(req, res){
 }
 ```
 
-## 4.4 片段视图
+### 4.4 片段视图
 
-### partial
+#### partial
 **说明**：一个可以在视图中使用的函数
 
 **参数**（2）：片段视图的名称（不包括后缀），对象（上下文变量引用就是这个对象）或数组（会被迭代应用片段视图中，上下文变量名就是视图文件名）
@@ -447,22 +447,22 @@ pp.get('/list', function(req, res){
 <li><%= listitem %></li>
 ```
 
-## 4.5 视图助手
+### 4.5 视图助手
 **用途**：给所有视图注册全局变量，因此无需每次在调用模板引擎时传递数据对象
 
 **分类**：静态视图助手和动态视图助手
 
-### 静态视图助手
+#### 静态视图助手
 **特点**：静态视图助手可以是任意类型的对象（必须是与用户请求无关的）或接受任意参数的函数
-#### app.helpers()
+##### app.helpers()
 **说明**：注册静态视图助手
 
 **参数**：一个对象（属性名称为视图助手的名称，属性值对应视图助手的值）
 
-### 动态视图助手
+#### 动态视图助手
 **特点**：只能是一个函数，而且不能接受参数，但可以访问req和res对象
 
-#### app.dynamicHelpers()
+##### app.dynamicHelpers()
 **说明**：注册动态视图助手
 
 **参数**：一个对象（每个属性值必需为一个函数）
@@ -492,12 +492,12 @@ app.get('/heiper', {
 <%=inspect(headers)%>
 ```
 
-# 5 建立微博网站
-## 5.1 功能分析
+## 5 建立微博网站
+### 5.1 功能分析
 + 登陆注册
 + 信息发表
 
-## 5.2 路由规划
+### 5.2 路由规划
 
 | 路由        | 页面    |
 | --------- | ----- |

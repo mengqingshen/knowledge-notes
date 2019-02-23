@@ -7,7 +7,7 @@ tag:
 date: 2014-10-07 16:40:28
 ---
 
-# 1 节点层次
+## 1 节点层次
 
 **文档元素**：文档的最外层元素，文档中所有其它元素都包含在文档元素中，一个文档中只能有一个文档元素。HTML文档的文档元素始终是`<html>`。
 
@@ -41,7 +41,7 @@ date: 2014-10-07 16:40:28
 ```
 ![91A4B32B-788D-402E-BB53-87C0ADE3E9A1](http://cdn.mengqingshen.com/2017-04-11-91A4B32B-788D-402E-BB53-87C0ADE3E9A1.png)
 
-## 1.1 Node类型
+### 1.1 Node类型
 
 **历史**：DOM1 定义的 Node 接口的 JS 实现类 Node
 
@@ -70,9 +70,9 @@ if(someNode.nodeType == 1){//兼容所有浏览器
 }
 ```
 
-###  nodeName 和 nodeValue 属性
+####  nodeName 和 nodeValue 属性
 取值情况取决于节点类型
-### 节点关系
+#### 节点关系
 
 **childNodes属性**
 
@@ -169,7 +169,7 @@ if(someNode.nextSibling === null){
 
 
 
-### 操作节点（必需先取得父节点，如果节点类型没有子节点将会出错)
+#### 操作节点（必需先取得父节点，如果节点类型没有子节点将会出错)
 
 **appendChild()方法**
 
@@ -242,7 +242,7 @@ returnNode = someNode.replaceChild(newCode, someNode.lastChild):
 var formerFirstChild = someNode.removeChild(someNode.firstCihld);
 ```
 
-### 其它方法（所有类型节点都有）
+#### 其它方法（所有类型节点都有）
 
 **cloneNode()**
 
@@ -277,7 +277,7 @@ console.log(shallowList.childNodes.length);    //0
 ☑︎ 参数：父节点
 ```
 
-## 1.2 Document类型
+### 1.2 Document类型
 + Document 类型
 
 ```
@@ -317,7 +317,7 @@ console.log(shallowList.childNodes.length);    //0
 | Document     | FF、Safri、Chrome、Opera |
 | HTMLDocument | 所有                    |
 
-### 1.2.1 文档的子节点
+#### 1.2.1 文档的子节点
 
 **body 节点**
 
@@ -369,11 +369,11 @@ var docType = docuemnt.doctype;    //取得对<!DOCTYPE>的引用
 | IE9+                         | 为两条注释分别创建注释节点 | 注释节点，document.childNodes中的节点    |
 | FF、Safari3.1-                | 完全忽视这两条注释     |                                 |
 
-### 1.2.2 文档信息
+#### 1.2.2 文档信息
 
 HTMLDocument 的实例 document 包含的 Document 对象没有的属性。
 
-#### document.title属性
+##### document.title属性
 
 ```
 ☑︎ 作用：可以取得当前页面的标题，也可以修改当前页面的标题并反映在浏览器的标题栏。
@@ -388,7 +388,7 @@ var originalTitle = document.title;
 document.title = 'new page title';
 ```
 
-#### document.URL属性
+##### document.URL属性
 
 ```
 ☑︎ 作用：取得页面完整的URL
@@ -396,7 +396,7 @@ document.title = 'new page title';
 ☑︎ 特点：只读
 ```
 
-#### document.domain属性
+##### document.domain属性
 
 ```
 ☑︎ 作用：取得页面的域名或通过改变页面中包含的来自其它子域框架或内嵌框架的domain实现跨域通信
@@ -410,7 +410,7 @@ document.domain = 'wrox.com';
 document.domain = 'www.wrox.com';//出错！
 ```
 
-#### docuemnt.referrer属性
+##### docuemnt.referrer属性
 
 ```
 ☑︎ 作用：取得链接到当前页面的那个页面的URL
@@ -429,9 +429,9 @@ var referrer = dicument.referrer;
 
 
 
-### 1.2.3 查找元素
+#### 1.2.3 查找元素
 
-#### getElementById()方法
+##### getElementById()方法
 
 ```
 ☑︎ 用途：通过ID获得元素
@@ -447,7 +447,7 @@ var referrer = dicument.referrer;
 ☑︎ IE7-怪癖：name值匹配的表单元素（input、textarea、button、select）也会被该方法返回，因此注意不让表单字段的name和其它元素ID相同
 ```
 
-#### getElementByTagName()方法
+##### getElementByTagName()方法
 
 ```
 ☑︎ 用途：通过标签名获得元素集合
@@ -483,7 +483,7 @@ var myImage = images.namedItem('myImage');
 var myImage  = images['myImage'];
 ```
 
-#### getElementsByName()
+##### getElementsByName()
 
 ```
 ☑︎ 用途：返回给定name特性的所有元素
@@ -514,7 +514,7 @@ var radios = document.getElementsByName('color');
 
 
 
-### 1.2.4 特殊集合（HTMLCollection）
+#### 1.2.4 特殊集合（HTMLCollection）
 
 特点：会随着文档的更新而更新
 | 集合               | 说明               | 备注                                       |
@@ -525,8 +525,8 @@ var radios = document.getElementsByName('color');
 | document.images  | 文档中所有img元素       | document.getElementByTagName("img")得到相同结果 |
 | document.lnks    | 文档中所有带href特性的a元素 |                                          |
 
-### 1.2.5 DOM一致性检测
-#### document.implementation属性
+#### 1.2.5 DOM一致性检测
+##### document.implementation属性
 
 可用于检测浏览器实现了DOM的哪些部分
 
@@ -545,7 +545,7 @@ var hasXmlDom = document.implementation.hasFeature("XML","1.0");
 
 ![C8E4D61B-9AE3-48A2-9BFD-D6D3907A1DE5](http://cdn.mengqingshen.com/2017-04-11-C8E4D61B-9AE3-48A2-9BFD-D6D3907A1DE5.png)
 
-### 1.2.6 文档写入
+#### 1.2.6 文档写入
 
 ```
 不支持文档写入的情况
@@ -553,7 +553,7 @@ var hasXmlDom = document.implementation.hasFeature("XML","1.0");
 ☑︎ 按照 application/xml+xhtml 内容类型提供的页面
 ```
 
-#### document.write()
+##### document.write()
 
 ```
 ☑︎ 用途：原样写入输出流到文本
@@ -562,7 +562,7 @@ var hasXmlDom = document.implementation.hasFeature("XML","1.0");
 ，关闭输出流后才会将内容添加进文档。
 ```
 
-#### document.writeln()
+##### document.writeln()
 
 ```
 ☑︎ 用途：写入输出流到文本，会自动在字符串的末尾添加一个换行符(\n)
@@ -570,21 +570,21 @@ var hasXmlDom = document.implementation.hasFeature("XML","1.0");
 ☑︎ 注意：加载文档阶段调用直接向其中输出内容；加载结束后调用会重写整个页面，而且需要自己打开/关闭输出流。
 ```
 
-#### document.open()
+##### document.open()
 
 ```
 ☑︎ 用途：HTML 文档加载完后使用，用来打开网页输出流
 ☑︎ 注意：会导致之前 body 中的所有内容被删除
 ```
 
-#### document.close()
+##### document.close()
 
 ```
 ☑︎ 用途：关闭输出流
 ☑︎ 注意：open() 和 close() 之间执行的 write() 会依次往后插入到 body 中
 ```
 
-## 1.3 Element类型
+### 1.3 Element类型
 **节点特征**
 
 | 序号   | 属性         | 值                                        |
@@ -632,7 +632,7 @@ if(element.tagName.toLowerCase() == 'div'){
 | ---------------- | ---------------------- |
 | safari2-、Opera8- | 不能访问Element类型的构造函数     |
 | 其它               | 可以访问Element类型的构造函数及其原型 |
-### 1.3.1 HTML元素
+#### 1.3.1 HTML元素
 
 | 属性        | 说明                            |
 | --------- | ----------------------------- |
@@ -661,9 +661,9 @@ console.log(div.dir);    //"ltr"
 
 ![2D7C17AF-ABB5-45AE-9CEE-AD6E7EC1105F](http://cdn.mengqingshen.com/2017-04-11-2D7C17AF-ABB5-45AE-9CEE-AD6E7EC1105F.png)
 
-### 1.3.2 取得特性
+#### 1.3.2 取得特性
 
-#### getAttribute() 方法
+##### getAttribute() 方法
 
 ```
 ☑︎ 用途：获得特性值（推荐只在获得自定义特性时使用）
@@ -703,8 +703,8 @@ console.log(div.align);    //“left”
 | div.getAttribute("onclick") | 代码字符串 |
 | div.onclick                 | 函数    |
 
-### 1.3.3 设置特性
-#### setAttribute()方法
+#### 1.3.3 设置特性
+##### setAttribute()方法
 
 ```
 ☑︎ 用途：设置或创建特性值（可以自定义，HTML5要求data_前缀）
@@ -720,7 +720,7 @@ div.setAttribute("lang",  "fr");
 div.setAttribute("dir",  "rtl");
 ```
 
-#### removeAttribute()方法
+##### removeAttribute()方法
 
 ```
 ☑︎ 用途：彻底删除元素的特性
@@ -729,7 +729,7 @@ div.setAttribute("dir",  "rtl");
 ☑︎ 兼容性：IE6-不支持
 ```
 
-### 1.3.4 attributes属性
+#### 1.3.4 attributes属性
 
 ```
 ☑︎ 用途：包含元素的特性,适合用来遍历元素的特性
@@ -807,7 +807,7 @@ function outputAttributes(element){
 }
 ```
 
-### 1.3.5 创建元素
+#### 1.3.5 创建元素
 
 **document.createElement()方法**
 
@@ -852,9 +852,9 @@ if(client.bowser.ie && client.browser.ie<=7){
 }
 ```
 
-### 1.3.6 元素的子节点
+#### 1.3.6 元素的子节点
 
-#### 遍历子节点
+##### 遍历子节点
 问题：IE会将空白符也解析为子节点
 
 ```html
@@ -876,7 +876,7 @@ for(var i=0,len=element.childNodes.length; i< len;i++){
 }
 ```
 
-#### 通过标签名取得子节点
+##### 通过标签名取得子节点
 注意：会递归各个层次获取子节点
 
 ```js
@@ -884,7 +884,7 @@ var ul = document.getElementById("myList"):
 var items = ul.getElementByTagName("li");
 ```
 
-## 1.4 Text类型
+### 1.4 Text类型
 **节点特征**
 | 序号   | 属性         | 值       |
 | ---- | ---------- | ------- |
@@ -919,8 +919,8 @@ var div = docuemnt.getElementByTagName('div')[0];
 var textNode = div.firstChild.nodeValue = "Some <strong>other</strong> message";
 ```
 
-### 1.4.1 创建文本节点
-#### document.createTextNode() 方法
+#### 1.4.1 创建文本节点
+##### document.createTextNode() 方法
 
 ```
 ☑︎ 用途：创建新文本节点（会同时设置ownerDocument属性）
@@ -938,9 +938,9 @@ document.body.appendChild(element);
 
 
 
-### 1.4.2 规范化文本节点
+#### 1.4.2 规范化文本节点
 
-#### normalize()方法
+##### normalize()方法
 
 ```
 ☑︎ 调用：定义在Node类型中，所有节点类型都可以调用
@@ -966,8 +966,8 @@ alert(element.childBodes.length);    //1
 alert(element.firstChild.nodeValue);    //"Hello world!Yippee!"
 ```
 
-### 1.4.3 分割文本节点
-#### spliteText()方法
+#### 1.4.3 分割文本节点
+##### spliteText()方法
 
 ```
 ☑︎ 调用：定义在Node类型中，所有节点类型都可以调用
@@ -989,8 +989,8 @@ console.log(newNode.nodeValue);    //" world!"
 console.log(element.childNodes.length);    //2
 ```
 
-## 1.5 Comment类型
-### 节点特征
+### 1.5 Comment类型
+#### 节点特征
 
 | 序号   | 属性         | 值                |
 | ---- | ---------- | ---------------- |
@@ -1000,7 +1000,7 @@ console.log(element.childNodes.length);    //2
 | 4    | parentNode | Docuemnt或Element |
 | 5    | childNodes | 不支持子节点           |
 
-### 重要属性
+#### 重要属性
 
 nodeValue、data：取得注释的内容
 
@@ -1014,11 +1014,11 @@ var comment = div.firstChild;
 alert(comment.data);    //"A comment"
 ```
 
-### 方法
+#### 方法
 
 和Text继承自相同基类，拥有除splitText()之外的所有字符串操作方法
 
-#### document.createComment()方法
+##### document.createComment()方法
 
 ```
 ☑︎ 用途：创建注释节点
@@ -1038,8 +1038,8 @@ var comment = document.createComment("A comment");
 | IE8                         | 标签名为"!"的元素         | 通过getElementByTagName()访问 |
 | IE9                         | HTMLCommentElement |                           |
 
-## 1.6 CDATASelection类型
-### 节点特征
+### 1.6 CDATASelection类型
+#### 节点特征
 | 序号   | 属性         | 值                |
 | ---- | ---------- | ---------------- |
 | 1    | nodeType   | 4                |
@@ -1064,18 +1064,18 @@ var comment = document.createComment("A comment");
 
 
 
-### 方法
+#### 方法
 
-#### document.createCDataSelection()方法
+##### document.createCDataSelection()方法
 
 ```
 ☑︎ 用途：创建CDATA区域
 ☑︎ 参数：传入节点的内容
 ```
 
-## 1.7 dcumentType类型
+### 1.7 dcumentType类型
 
-### 节点特征
+#### 节点特征
 | 序号   | 属性         | 值          |
 | ---- | ---------- | ---------- |
 | 1    | nodeType   | 10         |
@@ -1084,7 +1084,7 @@ var comment = document.createComment("A comment");
 | 4    | parentNode | Docuemnt   |
 | 5    | childNodes | 不支持子节点     |
 
-### 属性
+#### 属性
 ☑︎ name: 文档类型的名称，也就是`<!DOCTYPE`之后的文本
 ☑︎ entities:  由文档类型描述的实体的NamedNodeMap对象
 ☑︎ notations:  由文档类型描述的符号的NamedNodeMap对象
@@ -1104,8 +1104,8 @@ alert(document.doctype.name);    //"HTML"
 | IE8- | 不支持              | null               |
 | IE9  | 不支持              | 正确赋值               |
 
-## 1.8 docmentFragment 类型
-### 文档片段介绍
+### 1.8 docmentFragment 类型
+#### 文档片段介绍
 ☑︎ 说明：只有该类型没有对应的标记。是一种“轻量级”的文档，可以包含并控制节点，但不会像完整的文档那样占用额外的资源。
 ☑︎ 用途：不能把文档片段直接添加到文档，但可以将它作为一个“仓库”来使用，即可以在里面保存将来可能添加到文档中的节点。
 
@@ -1117,8 +1117,8 @@ alert(document.doctype.name);    //"HTML"
 | 4    | parentNode | null                                     |
 | 5    | childNodes | Element、ProcessingInstruction、Comment、Text、CDATASection、EntityReference |
 
-### 创建
-#### document.createDocumentFragment()方法
+#### 创建
+##### document.createDocumentFragment()方法
 ☑︎ 用途：创建文档片段
 ☑︎ 注意：一个节点append文档片段会导致文档片段中的所有节点都被移动到这个节点
 
@@ -1138,7 +1138,7 @@ for(var i=0; i<3; i++){
 ul.appendChild(fragment);
 ```
 
-## 1.9 tr 类型
+### 1.9 tr 类型
 注意: 不被认为是 DOM 树的一部分
 
 **节点特征**
@@ -1156,7 +1156,7 @@ ul.appendChild(fragment);
 | nodeValue、value | 特性值                  |
 | specified       | 代码中指定了值true;否则为false |
 
-### 创建
+#### 创建
 
 ```js
 document.createAttribute()方法
@@ -1168,24 +1168,24 @@ alert(element.getAttributeNode("align").value);    //"left"
 alert(element.getAttribute("align"));    // "left"
 ```
 
-### 获得/设置特性
+#### 获得/设置特性
 
-#### getAttrbuteNode()方法
+##### getAttrbuteNode()方法
 ☑︎ 用途：获得特性节点
 ☑︎ 参数：特性名称
 ☑︎ 返回值：特性节点
 ☑︎ 定义于：Node
 
-#### setAttrbuteNode()方法
+##### setAttrbuteNode()方法
 ☑︎ 用途：设置特性
 ☑︎ 参数：特性节点
 ☑︎ 定义于：Node
 
-# 2 DOM操作技术
-## 2.1 动态脚本
+## 2 DOM操作技术
+### 2.1 动态脚本
 页面加载时不存在,但将来的某一时刻通过修改 DOM 动态添加的脚本。
 
-### 方式一：插入外部文件
+#### 方式一：插入外部文件
 ☑︎ 特点：元素被加入到页面中时才会开始加载
 
 **案例一**：插入到body最后面
@@ -1254,14 +1254,14 @@ function loadScriptString(code){
 loadScriptString("function sayHi(){alert('hi');}");
 ```
 
-## 2.2 动态样式
+### 2.2 动态样式
 
 ```
 ☑︎ 必需将<link>元素添加到<head>元素中才能保证所有浏览器行为一致
 ☑︎ 异步加载
 ```
 
-### 方式一
+#### 方式一
 插入外部文件
 
 **插入目标**
@@ -1284,7 +1284,7 @@ function loadStyles(url){
 loadStyles("style.css");
 ```
 
-### 方式二
+#### 方式二
 插入包含嵌入式CSS的style节点(解决IE不允许访问style的子节点的问题)
 
 **插入目标**
@@ -1328,7 +1328,7 @@ function loadStyleString(css){
 loadStyleString("body{background:red;}");
 ```
 
-## 2.3 操作表格
+### 2.3 操作表格
 HTMLDOM 还为 `table`、`tbody`、`tr` 元素添加了一些属性和方法
 | table的属性或方法     | 说明                       |
 | --------------- | ------------------------ |
@@ -1396,7 +1396,7 @@ tbody.rows[1].insertCell(1);
 tbody.rows[1].cells[1].appendChild(document.createTextNode("Cell 2,2"));
 ```
 
-## 2.4 使用 NodeList
+### 2.4 使用 NodeList
 
 ☑︎ 减少对 NodeList 的访问，或将 NodeList 的值缓存起来，因为每次访问都会运行一次基于文档的查询；
 ☑︎ 遍历 NodeList 最好将其 length 属性值保存在另外一个变量
