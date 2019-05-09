@@ -1,7 +1,6 @@
 ---
 title: 11 Dom扩展
 categories: [JS高级程序设计(第三版)]
-
 tag:
     - js
 date: 2014-11-08 21:20:29

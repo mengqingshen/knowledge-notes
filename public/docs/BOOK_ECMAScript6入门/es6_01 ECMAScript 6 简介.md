@@ -1,7 +1,6 @@
 ---
 title: 1 ECMAScript 6 简介(ECMAScript6入门)
 categories: [ECMAScript6入门]
-
 tag:
   - es6
   - js

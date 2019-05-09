@@ -95,7 +95,7 @@ tag:
 
 #### 让我们一起体会算法之美
 
->  Computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better. —— Donald Knuth
+Computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better. —— Donald Knuth
 
 
 
@@ -103,7 +103,7 @@ tag:
 
 ## 2.1 排序基础
 
-> 为什么要学习 O(n^2) 的排序算法？
+为什么要学习 O(n^2) 的排序算法？
 
 + 基础
 + 编码简单，易于实现，是一些简单情景的首选
@@ -189,18 +189,16 @@ function selectSort (arr) {
 
 #### C++
 
-```shell
 .
 ├── main.cpp
 ├── makefile
 └── student.h
-```
 
 
 
-*makefile*
+**makefile**
 
-```she
+```makefile
 SRCS = main.cpp # 源文件
 PROG = demo # 最终打包的应用程序名
 CC = g++ # 编译工具
@@ -228,7 +226,7 @@ install:
 
 
 
-*Student.h*
+**Student.h**
 
 ```c++
 #ifndef SELECTIONSORT_STUDENT_H
@@ -257,7 +255,7 @@ struct Student {
 
 
 
-*main.cpp*
+**main.cpp**
 
 ```c++
 #include <iostream>
@@ -327,4 +325,147 @@ int main() {
 
 
 ### 2.3 随机生成算法测试用例
+
+>  为了方便测试，对数组生成和打印两个环节进行封装。
+
+
+
+#### 2.3.1 vscode 配置
+
+为了方便测试 demo，可以在 vscode 上配置 C/C++ 语言的编译环境。
+
+```
+.vscode
+├── c_cpp_properties.json
+├── launch.json
+└── tasks.json
+```
+
+
+
+**c_cpp_properties.json**
+
+配置 C++ 编译环境
+
+```
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "intelliSenseMode": "clang-x64"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "c:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}
+```
+
+**tasks.json**
+
+配置编译过程
+
+```json
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build", // 1. F5 快捷键默认会执行 label 为 build 的任务;2. launch.json 中可以通过这个名字指定在运行前执行哪些人物
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "${file}",
+        "-Wall",
+        "-ggdb3",
+        "-o",
+        "demo.out",
+        "-std=c++17"
+      ],
+      "group": "build",
+      "presentation": {
+        // Reveal the output only if unrecognized errors occur.
+        "reveal": "silent"
+      },
+      // Use the standard MS compiler pattern to detect errors, warnings and infos
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
+
+```
+
+
+
+**launch.json**
+
+配置执行过程
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "C++ Launch",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "${workspaceRoot}/demo.out",
+          "stopAtEntry": false,
+          "cwd": "${workspaceRoot}",
+          "externalConsole": true,
+          "preLaunchTask": "build", // 指定先执行 build 这个 task
+          "MIMode": "lldb"
+      }
+  ]
+}
+```
+
+
+
+#### 2.3.2 源码
+
+```shell
+imooc_algorithms
+└── selection_sort
+    ├── main.cpp
+    ├── makefile
+    ├── sort_test_helper.h # 
+    └── student.h
+```
+
+
+
+
 

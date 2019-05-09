@@ -1,7 +1,6 @@
 ---
 title: 2 let和const命令(ECMAScript6入门)
 categories: [ECMAScript6入门]
-
 tag:
   - es6
   - js

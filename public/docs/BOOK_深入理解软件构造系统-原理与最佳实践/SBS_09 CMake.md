@@ -530,7 +530,7 @@ $ make
 
 + [官方帮助文档](https://cmake.org/cmake/help/v3.8/index.html)
 
-## 2 显示世界的构造系统场景
+## 2 现实世界的构造系统场景
 ### （1） 源代码放在单个目录中
 例如， [laputa-er](https://github.com/laputa-er/book_software_build_system_demos/tree/master/part2/09_cmake/0902_single_dir/src)
 

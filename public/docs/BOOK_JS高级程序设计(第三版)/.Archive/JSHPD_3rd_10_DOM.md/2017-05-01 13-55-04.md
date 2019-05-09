@@ -1,7 +1,6 @@
 ---
 title: 10 Dom
 categories: [JS高级程序设计(第三版)]
-
 tag:
     - js
 date: 2014-10-07 16:40:28

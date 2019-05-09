@@ -1,7 +1,6 @@
 ---
 title: 03 基本概念
 categories: [JS高级程序设计(第三版)]
-
 tag:
     - js
 date: 2014-08-26 14

@@ -1,7 +1,6 @@
 ---
 title: 02 在HTML中使用JavaScript
 categories: [JS高级程序设计(第三版)]
-
 tag:
     - js
 date: 2014-08-26 14

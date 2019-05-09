@@ -1,7 +1,6 @@
 ---
 title: 08 BOM
 categories: [JS高级程序设计(第三版)]
-
 tag:
     - js
 date: 2014-10-17 23:45:56
