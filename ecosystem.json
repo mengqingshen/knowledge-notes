@@ -8,7 +8,7 @@
       },
       "env_production": {
         "NODE_ENV": "production",
-        "PORT": "8082"
+        "PORT": "8080"
       },
       "instances": 3
     }
@@ -16,8 +16,8 @@
   "deploy": {
     "production": {
       "user": "saber",
-      "host": ["140.143.59.137"],
-      "port": "2012",
+      "host": ["47.111.177.161"],
+      "port": "2019",
       "ref": "origin/master",
       "repo": "https://github.com/mengqingshen/knowledge-notes.git",
       "path": "/www/notehub.mengqingshen.com",
