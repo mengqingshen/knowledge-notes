@@ -37,7 +37,6 @@ module.exports = {
             scss: extractForIframes.extract({
               use: [
                 'css-loader',
-                'sass-loader'
               ],
               fallback: 'vue-style-loader'
             })
@@ -112,7 +111,7 @@ module.exports = {
     extractForIframes,
     new WebpackBrowserPlugin({
       browser: 'Chrome',
-      port: 8082,
+      port: 8080,
       url: 'http://localhost'
     })
   ],
