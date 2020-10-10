@@ -32,9 +32,9 @@ tag:
 
 > 推荐 Mac + Android Studio
 
-![image-20191201005727578](/Users/threewood/Library/Application Support/typora-user-images/image-20191201005727578.png)
+![image-20191201005727578](./images/image-20191201005727578.png)
 
-![image-20191201005832009](/Users/threewood/Library/Application Support/typora-user-images/image-20191201005832009.png)
+![image-20191201005832009](./images/image-20191201005832009.png)
 
 
 
@@ -124,7 +124,7 @@ $  cd demo_flutter_from_imooc
 $  flutter run
 ```
 
-<img src="/Users/threewood/Library/Application Support/typora-user-images/image-20191211073758284.png" alt="image-20191211073758284" style="zoom:25%;" />
+<img src="./images/image-20191211073758284.png" alt="image-20191211073758284" style="zoom:25%;" />
 
 7. 安装到真机
 
@@ -149,7 +149,7 @@ $ flutter run
 
    https://developer.android.com/studio
 
-   ![image-20191217021406025](/Users/threewood/Library/Application Support/typora-user-images/image-20191217021406025.png)
+   ![image-20191217021406025](./images/image-20191217021406025.png)
 
 注意：这是因为还没安装 Android SDK，没有配置 Android SDK 的环境变量，点击 cacel（直接跳过）
 
@@ -157,15 +157,15 @@ $ flutter run
 
 1) 启动 SDK Manager
 
-![image-20191225073854525](/Users/threewood/Library/Application Support/typora-user-images/image-20191225073854525.png)
+![image-20191225073854525](./images/image-20191225073854525.png)
 
 2) 配置路径&安装
 
-![image-20191225074857105](/Users/threewood/Library/Application Support/typora-user-images/image-20191225074857105.png)
+![image-20191225074857105](./images/image-20191225074857105.png)
 
 3. Flutter 插件安装
 
-![image-20191225075800117](/Users/threewood/Library/Application Support/typora-user-images/image-20191225075800117.png)
+![image-20191225075800117](./images/image-20191225075800117.png)
 
 4. 配置虚拟机加速
    + 安装 Itel x86 Emulator Accelerator（HAXM insteller）
