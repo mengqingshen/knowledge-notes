@@ -28,7 +28,7 @@ Container(
 
 + 第三方库：https://pub.dev
 
-  ![image-20191128235924140](./images/image-20191128235924140.png)
+  ![image-20191128235924140](http://cdn.mengqingshen.com/2020-10-12-033035.png)
 
 ## 1 Android 开发者如何快速上手 Flutter 开发
 
