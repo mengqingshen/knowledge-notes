@@ -10,7 +10,7 @@ tag:
 
 ## 概述
 
-+ 强类型语言，静态类型（比如 Java、C# 等）
++ 强类型语言，静态类型 （比如 Java、C# 等）
 + 面向对象的语言，OOP（比如 Python、C++、Objective-C、Java、Kotlin、Swift、C#、Ruby 与 PHP 等）
 + JIT（即时编译，开发期间，更快编译，更快的重载） & AOT（事前编译，release 期间，更快更流畅）
 
@@ -140,7 +140,7 @@ for(var key in ages.keys) {
 }
 ```
 
-## 科普小姿势
+## 科普小知识
 
 > 变量声明: dynamic、var、object 三者的区别
 

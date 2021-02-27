@@ -196,8 +196,8 @@ $ echo export PATH=\${PATH}:\${ANDROID_HOME}/platform-tools >> ~/.zshrc
 $ echo export ANDROID_NDK_HOME=\${ANDROID_HOME}/ndk >> ~/.zshrc
 
 # Andorid 镜像（如果不能科学上网）
-# $ echo export PUB_HOSTED_URL=https://pub.flutter-io.cn >> .zshrc
-# $ echo export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn >> .zshrc
+# $ echo export PUB_HOSTED_URL=https://pub.flutter-io.cn >> ~/.zshrc
+# $ echo export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn >> ~/.zshrc
 
 # Flutter 路径（前面配置过了）
 # $ echo export PATH=`echo ~/Programs/flutter/bin`:\$PATH >> .zshrc
