@@ -68,3 +68,11 @@ $ tree -L 3
 
 ## 3 Flutter Android混合开发实战-集成与调用【Android技术与Flutter融合】
 
+1. 在 flutter_module 下创建 Android 项目
+
+![image-20210227082749318](http://cdn.mengqingshen.com/2021-02-27-002750.png)
+
+2. 在指定的 flutter module 下创建一个新的 android 工程
+
+![image-20210227085404869](http://cdn.mengqingshen.com/2021-02-27-005405.png)
+
